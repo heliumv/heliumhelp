@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="jhelpbuilder/lib/cjh.jar"/>
+	<classpathentry kind="lib" path="jhelpbuilder/lib/commons-io-1.0.jar"/>
+	<classpathentry kind="lib" path="jhelpbuilder/lib/hsviewer.jar"/>
+	<classpathentry kind="lib" path="jhelpbuilder/lib/jeditsyntax221.jar"/>
+	<classpathentry kind="lib" path="jhelpbuilder/lib/jhall.jar"/>
+	<classpathentry kind="lib" path="jhelpbuilder/lib/looks-1.2.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

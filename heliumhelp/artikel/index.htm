@@ -1,0 +1,722 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Artikel</title>
+</head>
+
+<body>
+
+<h1>Artikel</h1>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Finden von
+Artikeln</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: In Helium V stehen
+bei der Artikelauswahl immer folgende Direktfilter zur Verfügung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Artikelnummer_Auswahl.gif" width="582" height="51"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wie in allen
+Direktfiltern von Helium V können auch hier die Suchkombinationen</p>
+<div align="left">
+  <table border="1" width="526" height="9">
+    <tr>
+      <td width="65" height="9">%</td>
+      <td width="987" height="9">für beliebige Zeichen</td>
+    </tr>
+    <tr>
+      <td width="65" height="9">_</td>
+      <td width="987" height="9">für EIN beliebiges Zeichen an dieser Stelle (_
+        = Unterstrich)</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">verwendet
+werden.&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beispiel:</p>
+<div align="left">
+  <table border="1" width="524" height="12">
+    <tr>
+      <td width="194" height="12">Suchstring</td>
+      <td width="758" height="12">findet</td>
+    </tr>
+    <tr>
+      <td width="194" height="12">Kabel_aum%1</td>
+      <td width="758" height="12">Kabelbaum 123</td>
+    </tr>
+    <tr>
+      <td width="194" height="12">V%kabel%L=__m</td>
+      <td width="758" height="12">Verbindungskabel L=19m<br>
+ Verbindungskabel Lang am Bagger L=17m<br>
+        Resolverkabel L=10m</td>
+    </tr>
+  </table>
+</div>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Alternative
+Artikelsuche</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: In manchen
+Bereichen ist es erwünscht die
+Auswahlliste der Artikel auf Artikelgruppen bzw. Artikelklassen einzuschränken.<br>
+Stelle Sie dazu unter System den Parameter
+DIREKT_FILTER_GRUPPE_KLASSE_STATT_REFERENZNUMMER auf 1 und starten Sie das
+Artikelmodul neu. Nun kann anstelle der Referenznummer die Artikelklasse bzw.
+Gruppe als einschränkendes Direktfilter eingegeben werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Anlegen von
+(fast) gleichen Artikeln</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Wird in der
+Auswahlliste des Artikelmoduls auf <img border="0" src="Artikel_kopieren.gif" width="32" height="26">
+geklickt, so starten Sie damit das Kopieren eines fast gleichlautenden Artikels.
+Wählen Sie nun den zu kopierenden Artikel aus und geben Sie danach
+anschließende die neue Artikelnummer an.&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Es werden nun
+folgende Daten in den neuen Artikel kopiert:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Alle Daten in der Artikeltabelle,
+das sind im wesentlichen die Panels</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;
+Detail</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;
+Technik</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;
+Bestelldaten</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;
+Sonstiges</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; Artikellieferant und
+EK-Staffelpreis<br>
+&nbsp;&nbsp;&nbsp; VK-Preise und VK-Staffelpreise<br>
+&nbsp;&nbsp;&nbsp; Katalog<br>
+&nbsp;&nbsp;&nbsp; Alle Eigenschaften des Eigenschaftspanels<br>
+</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wurde &quot;mit
+Kommentar&quot; ebenfalls angehakt, so werden zusätzlich noch die
+Kommentardateien des Artikels mitkopiert.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Im
+Artikel besteht die Möglichkeit Hersteller anzulegen.&nbsp;<br>
+ Welchen Sinn / Funktion
+erfüllt die zusätzliche Eingabe des Partners beim Hersteller?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: In Helium V wird
+klar zwischen Hersteller und Lieferant(en) eines Artikels unterschieden. Gerade
+in der Elektronik Branche werden oft Artikel verwendet, die von der Bezeichnung
+her identisch sind, aber Ihr Kunde schreibt einen bestimmten Hersteller vor.
+Durch die Angabe des Herstellers können auch diese Artikel unterschieden
+werden. D.h. für jeden gleichlautenden Artikel wird für jeden Hersteller ein
+eigener Artikel angelegt. Bitte beachten Sie dazu auch die Ersatztypenverwaltung
+im Modul Stücklisten.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Warum sind im
+Warenbewegungsjournal nur Spaltensummen vorhanden, bzw. warum ist das kein
+Lagerstand?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Weil das
+Warenbewegungsjournal durch 2 Datumswerte eingeschränkt werden kann und die
+Summen dann nicht mehr den Lagerstand bilden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wozu dient
+&quot;zugehöriger Artikel&quot;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Dies ist quasi
+eine Erinnerungsfunktion in den Belegen. D.h. wenn Sie einen Artikel auswählen,
+bei dem ein dazugehöriger Artikel hinterlegt ist, so erhalten Sie in allen
+Verkaufsmodulen die Meldung. Zu diesem Artikel gehört .... . Sie können nun sofort die
+Übernahme veranlassen oder dies trotzdem überspringen. Einen zugehörigen
+Artikel definieren Sie im Ursprungsartikel im Modulreiter <img border="0" src="Modulreiter_Sonstiges.gif" width="83" height="20"></p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ich
+einen zugehörigen Artikel wieder löschen?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Klicken Sie erneut
+auf <img border="0" src="Button_Zugehoeriger_Artikel.gif" width="232" height="24"> und in der
+Auswahlliste auf <img border="0" src="Button_loeschen.gif" width="33" height="25"> (löschen).</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Welchen Artikellieferanten muss ich eingeben, wenn ich meine eigene Arbeitszeit
+als Artikel anlegen will?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Als Lieferant
+sollte hier der eigene Mandant verwendet werden. Wichtig ist jedoch, dass für
+die Bewertung der Arbeitszeit der Einkaufspreis des ersten Lieferanten verwendet
+wird. Unabhängig vom Namen des Lieferanten.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Bei Arbeitszeit von eigenem Personal, wo die Arbeitsschritte / Arbeitsabläufe
+als Artikel angelegt wurden, muss man Stunden sozusagen auf Lager legen.?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Dies ist eine
+Möglichkeit. Besser ist jedoch, Artikel die keinen Warenzugang haben auf nicht
+Lagerbewirtschaftet zu setzen. Sie finden diese Eigenschaft im Artikel unter Sonstiges.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hinweis: Die
+Eigenschaft eines Artikels ob Lagerbewirtschaftet oder nicht kann nur dann
+verändert werden, wenn der Artikel auf keinem der Läger einen Lagerstand hat.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Nicht
+Lagerbewirtschaftet wozu ist dies?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Siehe oben, aber
+auch ganz allgemein. Es gibt immer wieder Artikel, von denen Sie gerne eine
+Statistik haben möchten, aber die nicht mit der üblichen Lagerbewirtschaftung
+gekoppelt sein sollten. Kennzeichnen Sie diese(n) Artikel als nicht
+Lagerbewirtschaftet. Mögliche Artikel: Arbeitszeiten Ihrer Mitarbeiter,
+Tagesdiäten, Reisekilometer, Softwareprodukte, usw.<br>
+Hinweis: Die Eigenschaft Lagerbewirtschaftet kann nur dann umgeschaltet werden,
+wenn der Artikel auf allen Lägern des Mandanten einen Lagerstand von 0 (null)
+hat.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Was passiert, wenn
+nun so ein nicht lagerbewirtschafteter Artikel auf lagerbewirtschaftet
+umgestellt wird und danach alte Wareneingänge bebucht bzw. geändert werden.?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Da in diesem Falle
+die Buchung auf ein anderes Lager erfolgen würde, erscheint die Fehlermeldung
+UPDATE_AUF_LAGER_NICHT_MÖGLICH. Hintergrund: Es würde nun eine Aktualisierung
+der (alten) Lagerbuchung erfolgen. Diese wurde ja, da nicht lagerbewirtschaftet
+nicht gemacht und ist somit nicht vorhanden und kann daher auch nicht geändert
+werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Wo lege ich ein neues Lager an?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Im Modul Artikel
+ist in den unteren Modulreitern der Reiter Grunddaten. Dort können</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Artikelklassen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Artikelgruppen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lager</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Hersteller</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; angelegt
+werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Lager und
+Lagerort, wo ist der Unterschied?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Der Unterschied
+zwischen diesen beiden Begriffen ist ein gravierender.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ein Lager hat mehrere
+Lagerorte. Nur auf einem Lager können Lagerstände gebucht werden. In diesem
+Lager liegen die Artikel dann in den verschiedenen Lagerorten. Üblicherweise
+werden Lager für verschiedene Standorte oder Klassifizierungen verwendet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">So haben Sie einen
+Artikel bei Ihnen in der Zentrale. Daneben gibt es noch ein Außenlager in dem
+z.B. die Ware in Paletten gelagert liegt. Wenn nun die Ware im Hauptlager zu
+wenig wird, wird Ware vom Außenlager genommen und ins Hauptlager umgebucht.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für Lager sind viele
+Anwendungsfälle möglich, wie z.B. Lager eines Fahr-Verkäufers, eines
+Servicetechnikers, Konsignationslager usw.. Jedes dieser Läger hat seinen
+eigenen Lagerort in dem der Artikel in diesem Lager liegt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nur ein Lager hat
+einen Lagerstand, ein Lagerort ist nur die örtliche Zuordnung des Artikels in
+diesem Lager.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: wenn ich einen
+neuen Auftrag anlege und den neuen mit Artikel füttern will, kommt Meldung:
+&quot;Für diesen Artikel wurde kein Einzelverkaufspreis hinterlegt&quot;. Wo
+lege ich aber den Einzelverkaufspreis im Artikelmodul an?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: In der
+Artikelverwaltung muss bei dem jeweiligen Modul der Einzelverkaufspreis
+hinterlegt, für diesen Zeitraum, abgespeichert sein. Die Verkaufspreise werden
+anhand einer Verkaufspreisbasis und den sich darauf beziehenden
+Verkaufsrabatten, welche auch negative (Aufschläge) sein können, definiert.
+Bitte bedenken Sie, dass alle Verkaufspreise kalenderfähig sind.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ich als
+Anwender die Artikeldaten, Bezeichnungen, Artikelnummern, Einkaufs- und
+Verkaufspreise automatisch einpflegen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: a.) ist teilweise
+branchenabhängig.<br>
+&nbsp;&nbsp;&nbsp; Z.B. in der Elektrotechnik gibt es in der Öffentlichkeit
+bekannte sogenannte Brutto-Brutto Preise. Das ist der Preis den der Häuslbauer
+an den Elektriker bezahlt.<br>
+Beim Import (z.B. Datanorm oder auch Excel usw.) wird der Listenpreis (=Brutto-Brutto)
+als Einzel(Einkaufs)preis und als Verkaufspreisbasis übernommen. Dazu wird die
+Lieferantenrabattgruppe ebenfalls übernommen. Über die Verkaufsrabattgruppen
+oder Artikelgruppen werden die Verkaufsrabatte gesteuert, über die
+Lieferantenrabattgruppen die Einkaufspreise.</p>
+<p style="margin:0cm;margin-bottom:.0001pt" class="answer">Voraussetzung: Importfunktion im
+Artikel.</p>
+<p style="margin:0cm;margin-bottom:.0001pt" class="question">Q: Wo können
+Verkaufspreislisten definiert werden?</p>
+<p style="margin:0cm;margin-bottom:.0001pt" class="answer">A: Wählen Sie im
+Artikel unterer Reiter Preisliste. Hier können nun neue Preislisten angelegt
+werden, bestehende Preislisten umgereiht bzw. deaktiviert oder aktiviert werden.</p>
+<p style="margin:0cm;margin-bottom:.0001pt" class="answer">Bitte beachten Sie,
+dass die Anzeige der geänderten Preislistendefinition nur nach einem Neustart
+des Artikelmoduls aktualisiert wird. Aus Platzgründen ist die Anzeige der
+aktiven Verkaufspreislisten auf 10Listen eingeschränkt.</p>
+<p style="margin:0cm;margin-bottom:.0001pt" class="question">Q: Wann genau ist der Moment, dass
+ein (bestellter) Artikel auf Lager ist?</p>
+<p style="margin:0cm;margin-bottom:.0001pt" class="answer">A: Ein Artikel wird mit der
+Lagerzubuchung auf Lager gelegt. Er ist solange auf Lager, bis er wieder
+entnommen wurde.<br>
+D.h. durch die Betätigung des Speicherns wird die Lagerbewegungsbuchung
+gestartet. Konnte sie durchgeführt werden, so wurde, in diesem Moment der
+Artikel zugebucht. Konnte sie nicht durchgeführt werden, so wird der gesamte
+Vorgang aufgerollt und der Zustand wieder hergestellt, wie er vor der Buchung
+war (Transaction Rollback).<br>
+Beispiel: Wenn die Menge in einer Wareneingangsposition eingegeben wird und
+danach speichern gedrückt wird, wird exakt diese Menge auf Lager gelegt. Aber:
+Wurde nur die Menge verändert, so wird natürlich die Differenzmenge auf Lager
+gebucht. Dies kann auch eine Abbuchung sein. In diesem Fall wird vorher
+geprüft, ob die Menge dieser Zubuchung noch tatsächlich verfügbar ist.</p>
+<p style="margin:0cm;margin-bottom:.0001pt" class="question">Q: Wieso kann ich
+in der Artikelnummer keine Leerzeichen eingeben.</p>
+<p style="margin:0cm;margin-bottom:.0001pt" class="answer">A: Da die Leerstellen bei den
+Ausdrucken (z.B. Artikel-Etikette) optisch nicht erkannt werden können, sind
+diese auch bei der Eingabe nicht erlaubt. Zusätzlich sollten die Artikelnummern
+nur Zeichen enthalten, die auch in den üblichen Barcodes (Code 39)&nbsp; mit
+ausgedruckt werden können.</p>
+
+<p style="margin:0cm;margin-bottom:.0001pt" class="question"><a name="Erlaubte Zeichen in der Artikelnummer"></a>Q:
+Welche Zeichen können für die Artikelnummer verwendet werden?</p>
+
+<p style="margin:0cm;margin-bottom:.0001pt" class="answer">A: Die erlaubten
+Zeichen für die Artikelnummer können im System, Parameter,
+ARTIKELNUMMER_ZEICHENSATZ definiert werden. Bitte beachten Sie in jedem Fall ob
+die gewünschten Zeichen auch mit dem bei Ihnen verwendeten Barcode gedruckt
+werden können. Siehe dazu auch <a href="../System/barcodes.htm">Drucken von
+Barcode</a>.</p>
+
+<p style="margin:0cm;margin-bottom:.0001pt" class="question">Q: wo gibt man die
+Kosten einer zu verkaufenden Einheit Arbeit (in Helium V ist das&nbsp;ja ein eigener
+Artikel) ein?</p>
+
+<p style="margin:0cm;margin-bottom:.0001pt" class="answer">A: In Helium V ist unter anderem
+auch die Arbeitszeit ein Artikel. Also kann für die Artikeldefinition die
+gesamte Palette des Artikelstammes verwendet werden. Um die Kosten einer
+Arbeitseinheit, wir sprechen hier auch von den Kosten der sogenannten
+Lohnmittelstunde, zu definieren, wird der bevorzugte Lieferant dieses Artikels
+verwendet. Also der Einkaufspreis des Artikels des ersten Lieferanten.</p>
+
+<p style="margin:0cm;margin-bottom:.0001pt">Hinweis: Arbeitseinheiten sollten
+derzeit immer zur Basis Stunden definiert werden.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Wo kann ich einen neuen Hersteller anlegen?</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Wählen Sie dazu im Artikelmodul den unteren Reiter <img border="0" src="Hersteller.gif" width="104" height="20"></p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Legen
+Sie nun mit Neu einen neuen Hersteller aus oder ändern Sie die Zuordnung
+entsprechend ab.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Wie organisiere ich meine Läger, meine Lagerorte?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Es hat sich in der Praxis bewährt, wenn die Lagerorte nach einem
+Koordinatensystem beschriftet werden. </p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Also
+z.B. A/II/30/d wobei die verschiedenen Stellen folgende Bedeutung haben.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A
+.... die Kennzeichnung des Regals</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">II
+.... die laufende Nummer der Regalreihe in einem Regal</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">30
+... der Regalboden, hier so organisiert, dass einfach der Abstand des
+Regalbodens vom Gebäudeboden gemessen wird, was den Vorteil hat, dass man
+jederzeit Zwischenböden einziehen kann.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">d
+.... eine eventuell erforderliche zusätzliche Unterteilung innerhalb des
+Regalfaches.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="../Bilder/Lagerort.jpg" width="575" height="376"></p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Der
+Vorteil ist, dass damit von jedem Mitarbeiter die Artikel sehr rasch
+gefunden werden können und da alle relevanten Listen mit der Lagerort
+Information versehen werden können und diese auch danach sortiert werden
+können und so eine einfache Optimierung der Wege erreicht wird.<br>
+Denken Sie bei der Organisation des Lagers auch immer an die Wege Ihrer
+Mitarbeiter und an die optimale Ausnützung des zur Verfügung stehenden
+Platzes.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Lagermindeststand"></a>Q:
+Lagermindestbestand &lt;-&gt; Lagersollbestand wozu brauch ich das?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Diese Schwellwerte
+sind für den Bestellvorschlag wichtig. Wenn bei der verfügbaren Menge des /
+der Läger der Lagermindestbestand unterschritten wird, wird auf den
+Lagersollbestand aufgefüllt. Das bedeutet für Sie, dass damit gesteuert werden
+kann, wie oft eine Bestellung ausgelöst wird, aber auch wie groß die jeweilige
+Bestellung dieses Artikels ist, um immer ausreichen auf Lager zu haben, aber auch
+um eine entsprechend günstige Anzahl an Bestellungen zu haben.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wozu dient die
+Materialangabe unter Technik?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Verschiedene
+Artikel beinhalten Materialien, welche zum Zeitpunkt des Verkaufes zum
+Börsenpreis gehandelt werden.<br>
+D.h. beim Artikel selber wird das Material und das Materialgewicht angegeben.
+Unter dem unteren Modulreiter Material definieren Sie nun Ihre
+Zuschlagsbehafteten Materialien und deren Zuschlagssätze ab einem bestimmten
+Datum.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Damit kann von Helium
+V der aktuelle (Kupfer-) Zuschlag berechnet und ausgepreist werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie pflegt man
+die EK-Preise richtig?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: In Helium V
+können beliebig viele Lieferanten für einen Artikel definiert werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Definieren Sie im
+Modulreiter Artikellieferant die Lieferanten des Artikels. Sie können hier für
+jeden Lieferanten die Artikelnummer und die Bezeichnung des Artikels beim
+Lieferanten hinterlegen. Zusätzlich kann hier der Preis, inkl. Rabatt und
+Netto-Preis für den Einzelartikel hinterlegt werden. Für Staffelmengen steht
+der Reiter EK-Staffelpreise zur Verfügung. Hier werden die Staffelpreise für
+den ausgewählten Lieferanten eingetragen. Bitte beachten Sie, dass die
+Preisbasis der Einzelpreis des
+Artikellieferanten ist. Im Modulreiter EK-Staffelpreise kann daher dieser Preis
+nicht verändert werden. Die Staffelpreise können sowohl über die Rabatte als
+auch über die Nettopreise gepflegt werden. Die Pflege über die Rabatte hat den
+Vorteil, dass nur der Einzelpreis verändert werden muss. Die Staffelpreise
+ändern sich damit automatisch mit. Die Preise werden in der Lieferantenwährung
+eingepflegt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie
+dazu auch die automatische Preisrückpflege durch das Bestellmodul.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Bei manchen
+Bestellungen sollten Einkaufsrabatte aufscheinen und bei anderen nicht.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Sie können dies
+durch die Eingabe der Einkaufspreise steuern. Wenn bei den Einkaufspreisen
+Rabatte angegeben werden, so werden diese auch ausgedruckt. Wurden keine Rabatte
+angegeben, so werden diese nicht mitgedruckt.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie legt man
+Artikel in Fremdwährungen an?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Wenn Artikel in
+Fremdwährungen eingekauft werden, so gelten die Preisvereinbarung in dieser
+Währung. D.h. die Währungsschwankungen wirken sich auf Ihre Einstandspreise
+aus, der Preis in z.B. USD bleibt stabil.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Einkaufspreise werden
+in der Währung des Lieferanten definiert. D.h. um Artikeleinkaufspreise in
+Fremdwährungen zu definieren muss der Lieferant in der entsprechenden Währung
+definiert werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie wird der Mindest-VK errechnet?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: <a href="Verkaufspreis.htm#Mindest-VK">Siehe</a>.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Was bewirken
+Aufschlag und Soll?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Diese dienen einer
+theoretischen Abschätzung von Verkaufspreisen auf Basis des Gestehungspreise.
+Zur Auswirkung des Aufschlags <a href="Verkaufspreis.htm#Tiefster-VK">siehe</a>
+und zur Auswirkung des Soll <a href="Verkaufspreis.htm#Soll-Vk">siehe</a>.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wo
+werden Seriennummern verwaltet?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+<a href="SerienChargennummern.htm">Siehe</a>.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wo
+werden Chargennummern verwaltet?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+<a href="SerienChargennummern.htm">Siehe</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was bedeutet die Fehlermeldung &quot;Der zugehörige Artikel kann nicht
+gespeichert werden&quot;?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Zugehoeriger_Artikel.jpg" width="443" height="115"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+Meldung bedeutet, dass ein Verkettungsfehler in den zugehörigen Artikeln
+vorliegt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bereinigen
+Sie diesen Fehler, die Verknüpfung der Dazugehörigen Artikel finden Sie unter
+Sonstiges im Artikel, danach können Änderungen auf diesem Artikel gespeichert
+werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Lagerumschlagshäufigkeit</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Lagerumschlagshäufigkeit gibt an, wie oft ein durchschnittlicher
+Lagerbestand eines Produktes in einem bestimmten Zeitbereich komplett aus dem
+Lager entnommen wurde. Er wird wie folgt ermittelt:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lagerabgang im Zeitraum</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Umschlagshäufigkeit
+= ----------------------------</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+durchschnittlichen Lagerbestand</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+durchschnittliche Lagerbestand wird vereinfacht durch das arithmetische Mittel
+aus Anfangs- und Endbestand ermittelt. D.h. also</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Anfangsbestand + Endbestand</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">durchschnittlicher
+Lagerbestand = --------------------------------</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+durchschnittliche Lagerdauer ergibt sich, indem man das Jahr mit 360Tagen
+ansetzt und durch die Lagerumschlagshäufigkeit dividiert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(Frei
+nach Wikipedia)</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Materialzuschläge auf Wareneingängen / Warenausgängen, welche Preise sind zu
+buchen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Das Ziel der Definition der Materialzuschläge ist, die Kursschwankungen der
+Börsennotierten Materialien, wie z.B. Kupfer oder spezielle Legierungen, in der
+Form abzufangen, dass die zusätzlichen Materialkosten an den Endkunden
+weiterverrechnet werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+übliche Vorgehensweise ist hier so, dass die Verkaufspreise zu den standart
+Materialfaktoren (z.B. bei Kupfer zur Kupferzahl 100) definiert werden. Nun
+werden täglich / wöchentlich die Materialzuschlagsfaktoren gepflegt. Aus den
+hinterlegten Materialgewichten und den Materialzuschlagsfaktoren kann über die
+fakturierte Menge der Materialzuschlag errechnet werden. Dieser wird auf der
+Rechnung in einer eigenen Zeile ausgewiesen. Dadurch ergibt sich einerseits dass
+Sie einerseits die vereinbarten Verkaufspreise stabil belassen können und
+andererseits doch die Schwankungen der Werkstoffbörse an Ihre Kunden
+weitergeben können.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">WICHTIG:
+Bei der Buchung des Wareneinganges muss der Materialzuschlag zusätzlich zum
+Positionspreis angegeben werden bzw. im Positionspreis enthalten sein. Nur
+dadurch ist sichergestellt, dass die Gestehungspreise der Artikel den echten
+Kosten entsprechen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Sortierung der Artikel?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Sortierung der Artikel nach Artikelnummern ist abhängig von der
+eingesetzten Datenbank.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+eine MS-SQL Datenbank eingesetzt, so werden bei der Sortierung nach
+Artikelnummern ' (Hochkomma) und - (Bindestrich) ignoriert. Wir haben diese
+Darstellung gewählt, da dadurch die Umlaute in der richtigen Position, also Ö
+nach O, dargestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+eine PostgresQL Datenbank (Version 8.3) eingesetzt, so werden Hochkomma und
+Bindestrich richtig einsortiert. Es werden allerdings die Umlaute am Ende des
+Alphabetes eingereiht.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Zeichnungen hinterlegen"></a>Q:
+Zeichnungen hinterlegen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Im Artikelkommentar können sowohl Texte als auch Bilder hinterlegt werden. Bei
+den Kommentaren kann auch angegeben werden, bei welchen Modulen (Angebot,
+Fertigung, ..) diese mitgedruckt werden. Für das Erzeugen von mehrseitigen
+Ausdrucken steht das MultiPage Tiff Format zur Verfügung. <a href="../Installation/Installation_Tiff_Drucker.htm">Siehe
+dazu auch</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Artikelhinweise hinterlegen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Im Artikelkommentar kann <img border="0" src="Hinweis_Artikelauswahl.gif" width="148" height="18">
+angehackt werden. Damit wird gekennzeichnet, dass dieser Text nicht angedruckt
+werden soll, sondern, dass bei Verwendung des Artikels im angegebenen Modul der
+eingegebene Text in einer Hinweismeldung erscheinen soll. Damit können Sie
+spezifische Nachrichten an den Benutzer bei der Auswahl exakt dieses Artikels,
+z.B. bei der Auswahl in einer Bestellung senden.&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warenverkehrsnummern?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Warenverkehrsnummern können im Artikel unter Sonstiges hinterlegt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+beim Klick auf <img border="0" src="Warenverkehrsnummer.gif" width="270" height="23"> keine
+Warenverkehrsnummern angezeigt werden, so wurden die Warenverkehrsnummern,
+welche von den Statistischen Zentralämtern zur Verfügung gestellt werden, noch
+nicht importiert. Siehe dazu bitte <a href="../Finanzbuchhaltung/Intrastat.htm">Intrastatmeldung</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Pflegefunktionen im Artikel</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Im Artikelmodul gibt es, bei entsprechender Berechtigung, den Menüpunkt Pflege.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+hier angeführten Programmfunktionen sollten nur auf Anweisung der Helium V
+Techniker aufgerufen werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:
+Diese Pflegefunktionen wirken immer für alle Mandanten.</b></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Verschnittbasis / Verschnittfaktor"></a>Q:
+Verschnittbasis / Verschnittfaktor?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Im Artikel können unter Bestelldaten Verschnittbasis und Verschnittfaktor [%]
+definiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Verschnittfaktor in % definiert um welchen Prozentsatz die Menge der
+Stücklistenposition bei der Überleitung der Stückliste in den
+Fertigungsauftrag erhöht werden soll.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Verschnittbasis löst das Stangenproblem.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+in der Verschnittbasis die Länge des Stangenmaterials eingetragen wird, so wird
+davon ausgegangen, dass für die Überleitung der Stückliste in einen
+Fertigungsauftrag auf diese Länge Rücksicht genommen werden muss.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+wird die Menge so umgerechnet, dass um so viel mehr Stangen (Material) bestellt
+werden dass ausreichend ganze Stangen vorhanden sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+benötigen für eine Stücklistenposition ein Material mit 3,1m Länge. Es ist
+nur Stangenmaterial mit 6m verfügbar. D.h. die Verschnittbasis des Artikels ist
+auf 6m eingestellt. Es wird nun ein Los mit 50Stk aufgelegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">50
+x 3,1 m = 155m würden ohne Verschnittbasis für dieses Los reserviert werden.
+Aufgrund der Verschnittbasis werden aber</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">50
+x 6m = 300m reserviert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+weiteres Beispiel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Materiallänge
+1,6m, Stangenmaterial 6m, Losgröße 50Stk</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">50
+x 1,6 m = 80m</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
+einer 6m Stange gewinnen Sie 3,75 Stk, also 3Stk Das ergibt, dass </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">17
+x 6m = 102m eingekauft werden müssen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet die Logik reserviert so viel, wie ganze Stangen aus dem Material zur
+Verschnittbasis gewonnen werden können.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wozu dient die Referenznummer im Artikel Detail?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Damit können Sie eine zweite / alternative Artikelnummer für den Artikel
+vergeben. Nach dieser Artikelnummer kann in der Artikelauswahl ebenfalls gesucht
+werden. Manche Anwender übersetzen die Referenznummer auf Zeichnungsnummer und
+haben So ein eindeutiges Feld für diese wichtige Nummer und haben damit
+zusätzlich die Verwaltung nach Zeichnungsnummern gewonnen.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Die Referenznummer muss nicht eindeutig sein. D.h. es kann durchaus die gleiche
+Referenznummer für verschiedene Artikel vergeben werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Artikel Status / Sperren für bestimmte Bereiche?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Unter dem oberen Modulreiter Sperren können Sperren für verschiedene Bereiche
+für diesen Artikel angegeben werden. Definieren Sie vorher unter Grunddaten,
+Sperren die in Ihrem Unternehmen benötigten Artikelsperren.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Artikel_Sperr_Status.gif" width="357" height="103"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+Einkauf, Verkauf, Fertigung und Stückliste können Sie die Sperren für den
+jeweiligen Bereich definieren. Zusätzlich steht die Sperre Allgemein für die
+Sperre des Artikels in allen Bereichen zur Verfügung. Beachten Sie die
+Verbindung mit den definierten Ersatztypen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+bei einem Artikel eine Sperre hinterlegt, so erscheint bei der Übernahme des
+Artikels in einem Modul des jeweiligen Bereiches der Hinweis, dass dieser
+Artikel gesperrt ist.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ersatzartikel</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+Sonstiges kann für jeden Artikel auch ein Ersatzartikel definiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Je
+nach Sperr-Status des Artikels wirkt dies in unterschiedlicher Weise:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Der Artikel ist nicht allgemein gesperrt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet dies ist nur eine Information, welche weiteren Artikel anstelle dieses
+verwendet werden könnten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Der Artikel ist allgemein gesperrt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet, dass anstelle dieses Artikels der definierte Ersatzartikel verwendet
+werden sollte.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+ein gesperrter Artikel verwendet, so beantworten Sie bitte die nachfolgende
+Frage entsprechend.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Ersatzartikel_verwenden.jpg" width="422" height="115"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Statistik der Artikel"></a>Q:
+Statistik der Artikel<br>
+Wo sehe ich die Bewegungen am Artikel</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es stehen dafür zwei verschiedene Journale zur Verfügung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Artikelstatistik. Diese finden Sie unter Info, Statistik.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+beinhaltet eine chronologische Auflistung der Artikelbewegungen, wobei sie so
+gestaltet ist, dass die jüngsten Buchungen zuerst kommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Das Warenbewegungsjournal. Dieses finden Sie unter Info, Warenbewegungsjournal</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
+dem Warenbewegungsjournal sind die aufgrund der Fifo bzw. Chargen bzw.
+Seriennummern Buchungszusammenhänge zwischen Zugangs- und Abgangsbuchungen
+ersichtlich. Das bedeutet: Wurden Ihre Artikel auch tatsächlich nach dem Fifo
+Prinzip vom Lager entnommen, so sehen Sie hier eine eindeutige Verknüpfung der
+Zu- und Abgänge.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
+dieser Liste sind auch die Verbrauchsbuchungen jedes Warenzugangs ersichtlich.
+D.h. sollte eine Warenzugangsbuchung verändert werden, dies ist aber im ersten
+Versuch nicht möglich, so liegt es meist daran, dass die Zubuchung schon
+verbraucht wurde. Die Ursache kann aus dem Warenbewegungsjournal herausgelesen
+werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ermittlung
+der Gestehungspreise bei &quot;nicht lagerbewirtschaftet&quot;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gerade
+bei nicht lagerbewirtschafteten Artikeln ist es je nach Unternehmensausrichtung
+manchmal erforderlich, dass diese Artikel trotzdem Gestehungspreise haben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aufgrund
+der Helium V internen Logik werden </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+dazu auch Parameter GESTPREISBERECHNUNG_HAUPTLAGER. Wenn dieser auf Ja (=1)
+gestellt ist, so wird für die Berechnung nur der Lagerwert des Hauptlagers
+herangezogen, wenn der Artikel lagerbewirtschaftet ist. Ist der Artikel <b>NICHT</b>
+lagerbewirtschaftet, so wird der Gestehungspreis des Lagers KeinLager verwendet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Nur wenn der Artikel nicht lagerbewirtschaftet ist, steht Ihnen bei der Auswahl
+des Lagers im oberen Modulreiter Lager, auch das KeinLager zur Verfügung.
+Beachten Sie bitte, dass bei nicht lagerbewirtschafteten Artikeln der jeweilige
+Gestehungspreis nur von diesem Lager genommen wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+der Parameter GESTPREISBERECHNUNG_HAUPTLAGER auf Nein (=0) gestellt, so wird der
+Gestehungspreis für allgemeine Betrachtungen immer aus dem Durchschnittspreis
+aller Läger berechnet. Ist hier der Artikel nicht Lagerbewirtschaftet, so
+ergibt sich aufgrund dieser Durchschnittsberechnung immer ein Gestehungspreis
+von 0 (Null).</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

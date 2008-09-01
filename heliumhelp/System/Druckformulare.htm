@@ -1,0 +1,427 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Druckformulare</title>
+</head>
+
+<body>
+
+<h1>Druckformulare</h1>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Helium V finden Sie eine Vielzahl von Druckformularen / Druckvorlagen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+dem Anwender die freie Gestaltungsmöglichkeit bei gleichzeitiger Forderung nach
+jederzeitiger Erweiterbarkeit / Updatemöglichkeit zu erfüllen und die
+Mehrsprachen- und Mandantenvarianten zu berücksichtigen wurde folgende
+Vorgehensweise / Verzeichnisstruktur gewählt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../Bilder/Report_Struktur.jpg" width="881" height="249"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">WICHTIG:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Alle
+Formulare / Definitionen in der Helium V Schicht werden bei jedem Update Ihrer
+Helium V Installation überschrieben, um sicherzustellen, dass in der
+Anwenderinstallation die aktuellen Formulare verfügbar sind. Formulare und
+Definitionen in der Anwenderschicht sind Anwenderspezifisch erstellte
+Definitionen / Vorlagen und werden bei Updates nicht gepflegt / aktualisiert,
+damit Sie immer Ihre Formulare vorfinden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+in Helium V hinterlegte Logik ist folgende:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+wird die Formulardefinition wie folgt durchsucht:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+erstes wird versucht anhand der Mandanten und Sprachdefinition des Beleges ein
+entsprechendes Formular (einen Report) entsprechend der Sprachebene (dem Locale)
+zu finden. Ist hier kein Formular eingetragen, wird versucht dieses Formular
+eine Ebene höher (ausgehend von der Report-Ebene als Wurzel hin zu den tiefer
+gelegenen Anwender-/ Sprachdefinitionen), also in der Mandanteneben ohne Sprachabhängigkeit zu finden.
+Ist auch hier keine Formular vorhanden, so wird in der Modulebene Anwender das
+Formular gesucht. Ist das Formular auch hier nicht eingetragen, so wird in der
+Modulebene Helium V das Formular gesucht. Wird auch hier kein Formular gefunden, wird eine entsprechende Fehlermeldung ausgegeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Modulebene Anwender ist dafür gedacht, dass Anwenderweit, also in Ihrer
+gesamten Helium V Installation, ein und das selbe Formular verwendet wird, z.B.
+für ein Rechnungsjournal, welches zwar nicht dem Helium V Standard
+entspricht, aber bei Ihnen für alle Mandanten und Zweigniederlassungen
+einheitlich sein soll.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Formularen gibt es die Sonderdefinition der Firmenlogo Subvorlagen. Diese
+dienen dazu, Ihr &quot;Briefpapier&quot; direkt auf den Vorlagen mitzudrucken.
+Diese befinden sich in der Regel im Verzeichnis allgemein, wobei die Mandanten
+bzw. sprachabhängigen Varianten nach dem selben Schema definiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
+weitere Definition sind die Vorlagen für den EMail Versand. Diese werden
+grundsätzlich unter allgemein abgelegt. Nur die Beleg spezifischen
+Ausprägungen werden bei den Belegen abgelegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Namen der Unterverzeichnisse der Mandanten sind die Mandantennummern. Z.B. 001,
+002 usw.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Trennung
+der Druckformulare nach Kostenstellen:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Helium V besteht zusätzlich die Möglichkeit die offiziellen Druckformulare
+Kostenstellenspezifisch zu trennen. Dies wird z.B. für unterschiedliche Logos
+je Kostenstelle von Angebot bis Rechnung benötigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dazu
+kann in der Kostenstellendefinition (System, Mandant, Kostenstelle) ein <img border="0" src="Kostenstellen_Subdirectory.gif" width="289" height="25">
+angegeben werden. Das Subdirectory ist von obiger Schichtenstruktur <b>neben</b>
+der anwender Schicht zu sehen. Bitte beachten Sie, dass abhängig vom
+Betriebssystem Groß-/Kleinschreibung unterschieden wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b><a name="KostenstellenDruckersteuerung"></a>Hinweis:</b></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Diese
+Kostenstellendefinition ist dafür gedacht, um für unterschiedliche
+Kostenstellen unterschiedliche Briefpapiere verwenden zu können.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wenn
+von Ihnen für den Druck nur weißes Papier verwendet wird, so reicht es aus
+wenn nur die Kopf- und Fußlogos je Kostenstelle definiert werden. Sollte jedoch
+je nach Kostenstelle auf unterschiedliche Drucker(-schächte) gedruckt werden,
+so ist es erforderlich, dass auch die Reports, auch wenn sie vollständig ident
+sind, in die Kostenstellen Subdirectorys aufgeteilt werden. Nur damit ist die
+automatische Druckersteuerung über die Formularnamen möglich.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bearbeiten
+der Druckformulare</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Formularvorlagen können mit dem iReport Generator bearbeitet werden. Bitte
+achten Sie darauf nur die zu Ihrer Version von Helium&nbsp;V passende Version des iReports zu
+verwenden. Diese Version wird auf der Helium&nbsp;V Installations CD
+mitgeliefert. Sie finden diese aber auch auf unserer
+Homepage (www.heliumV.com). Bitte beachten Sie die Versionshinweise. Für Ihre Änderungen an den Formularen
+oder Probleme die durch die Verwendung einer falschen Version des iReports
+entstehen, wird von uns
+keine Verantwortung übernommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Basispfad (Report) des obigen Diagramms liegt in einer Standardinstallation auf
+Ihrem Helium V Server auf <a href="file:///c:/jboss-4.0.1/server/helium/report">c:\jboss-4.0.4.GA\server\helium\report</a>,
+bzw. /opt/jboss-4.0.4.GA/server/helium/report.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Ab Version 5.10.042.3637 finden Sie diese im zentralen Helium V Verzeichnis: <a href="file:///c:/helium_v/jboss-4.04.GA/">c:\helium_v\jboss-4.04.GA\</a>....
+bzw. /opt/helium_v/jboss-4.04.GA/...</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Subreports</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
+zu Berichten Subreports angelegt, so müssen diese immer in der Ebene des (Haupt-)Reports
+sein. Davon ausgenommen sind die Subreports der Kopf- und Fußzeilen. Diese sind
+IMMER unter allgemein abgelegt. Wenn für einen speziellen Report die Kopf- oder
+Fußzeilen geändert werden müssen, so dürfen diese nur als gewöhnlicher
+Subreport angelegt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Beispiel:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auftrag
+und der Subreport 2 sollte geändert werden.<br>
+&nbsp;&nbsp;&nbsp; Ebene report</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Ebene auftrag</p>
+
+<blockquote>
+  <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+  Auftragsbestätigung</p>
+
+  <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+  Auftragsbestätigung_Sub1</p>
+
+  <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+  Auftragsbestätigung_Sub2</p>
+
+  <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+  Auftragsbestätigung_Sub3</p>
+
+</blockquote>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Verschieben
+Sie nun sowohl den Hauptreport und alle Subreports in das Anwender Verzeichnis.
+Ändern Sie hier den Subreport wie gewünscht ab.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann man das Logo selber definieren?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Es ist auf allen offiziellen Belegen rechts oben auf der ersten Seite ein Logo
+vorgesehen. Das Standard Helium V Logo finden Sie unter <a href="file:///c:/jboss-4.0.1/server/helium/report/allgemein/logo.png">c:\jboss-4.0.4.GA\server\helium\report\allgemein\logo.png</a>.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Legen
+Sie in diesem Verzeichnis ein weiteres Verzeichnis anwender an.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Kopieren
+Sie an diese Stelle Ihr Firmenlogo im png Format mit dem Namen Logo.png.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Ab
+sofort wird der Report mit Ihrem Logo gedruckt.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">HINWEIS:
+Das Logo.png kann eine Größe bis zu ca. 775x325 Pixel (BxH) in 300dpi
+Auflösung besitzen.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Hinweis2:
+Um auf das Logo tatsächlich einzubinden, benötigen Sie noch zusätzlich die
+Datei logo.jasper im entsprechenden Anwenderverzeichnis.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann ich Fußzeilen auch selber definieren?</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Im gleichen Verzeichnis wie oben beschrieben, steht der allgemeine Report für
+die Fußzeilen unter&nbsp; <a href="file:///c:/jboss-4.0.1/server/helium/report/allgemein/logo.png">c:\jboss-4.0.4.GA\server\helium\report\allgemein\</a> fuss.jasper
+zur Verfügung.<br>
+Bitte denken Sie daran auch diesen in das anwender Verzeichnis zu kopieren.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Welche Dateien benötige ich in meinem spezifische Anwenderverzeichnis um Logo
+und Fußzeilen zu drucken?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Um auf den Belegdrucken (Angebot - Bestellung) Ihre spezifischen Logos und
+Fußtexte mitzudrucken benötigen Sie im allgemeinen Anwender Verzeichnis
+folgende Dateien:</p>
+
+<div align="left">
+  <table border="1" width="615" height="19">
+    <tr>
+      <td width="301" height="19">Reportname</td>
+      <td width="505" height="19">Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="301" height="19">logo.jasper</td>
+      <td width="505" height="19">Logo Reportdatei</td>
+    </tr>
+    <tr>
+      <td width="301" height="19">logo.png</td>
+      <td width="505" height="19">Bild Ihres Firmenlogos / Briefpapiers</td>
+    </tr>
+    <tr>
+      <td width="301" height="19">fuss.jasper</td>
+      <td width="505" height="19">Report für die Fußzeilen</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bitte
+beachten Sie, dass diese nur im Verzeichnis report\allgemein\anwender verändert
+werden dürfen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo können die Texte für den automatischen EMail-Versand verändert werden?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Sie finden unter report\allgemein die Datei mail.xsl.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Dies
+ist die Basisvorlage (Style-Sheet) für den Inhalt des Plain-Text Emails,
+welches an den EMail-Empfänger gesandt wird.&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Anmerkung:
+An dieses EMail wird ein PDF Anhang angefügt, in welchem das eigentliche
+Dokument z.B. Angebot enthalten ist.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Sie
+können nun Ihre eigene mail.xsl für allgemeine EMails erstellen oder auch ganz
+spezielle für den jeweiligen Modulbereich z.B. Angebot.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wird
+die Datei mail.xls nach allgemein\anwender kopiert, so ist dies die
+Standarddatei für Ihre gesamte Helium V Installation.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wird
+die Datei mail.xls unter allgemein in die Unterverzeichnisse der Mandanten
+kopiert, so gilt sie nur für den jeweiligen Mandanten.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wird
+die Datei mail.xls hingegen in das anwender Verzeichnis eines Moduls kopiert, so
+gilt sie nur für das jeweilige Modul.&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">In
+beiden Fällen gelten die weiter oben beschriebenen Regeln für die Mandanten
+und Sprachen.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Folgende
+Parameter können in dieser Datei verwendet werden:</p>
+
+<div align="left">
+  <table border="1" width="614" height="21">
+    <tr>
+      <td width="199" height="21">Parameter</td>
+      <td width="1027" height="21">Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">anrede_ansprechpartner</td>
+      <td width="1027" height="21">Anredestring für den Ansprechpartner des
+        Beleges. Z.B. sehr geehrter Herr xy</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bezeichnung</td>
+      <td width="1027" height="21">Bezeichnung des Beleges z.B. Angebot, oder
+        Auftrag usw.</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">belegnummer</td>
+      <td width="1027" height="21">Z.B. die Angebotsnummer</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">belegdatum</td>
+      <td width="1027" height="21">Z.B. das Angebotsdatum</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">projekt</td>
+      <td width="1027" height="21">Das Projekt aus dem Modul, z.B. Angebot</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter</td>
+      <td width="1027" height="21">Der Bearbeiter des Moduls, z.B. Angebotes</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">fusstext</td>
+      <td width="1027" height="21">Der Fußtext des Moduls, z.B. Angebot</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">text</td>
+      <td width="1027" height="21"></td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
+Bearbeitung des Style-Sheets setzt Kenntnisse in der XML / XSL Programmierung
+voraus.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Für
+weitere Infos wenden Sie sich bitte an Ihren Helium V Händler oder direkt an
+uns.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Verifizierung
+des Style-Sheets mit <a href="msxsl.exe">msxsl.exe</a> <a href="HeliumV_Muster_EMail_Daten.xml">HeliumV_Muster_EMail_Daten.xml</a>
+mail.xsl oder mit Xalan <font color="#C0C0C0">***???***</font></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Können auch Bilder mitgedruckt werden?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Ja, genauso wie die verschiedenen Textmodule und Artikelkommentare mitgedruckt
+werden können, können auch Bilder mitgedruckt werden. Bitte achten Sie bei der
+Angabe von Dateinamen aber darauf, dass diese nur Kleinbuchstaben, Ziffern und _
+(Unterstrich) beinhalten. Alle anderen Zeichen erschweren die
+Betriebssystemübergreifende Verwendung in sehr hohem Ausmaß.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo bekomme ich eine Beschreibung des iReport?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Eine <a href="http://xenon/wiki/index.php/FAQ_Drucken#iReport_Kurzanleitung_für_Kunden">Kurzform
+der Beschreibung</a>, wie verschiedene einfache Änderungen an den
+Reportvorlagen in Zusammenhang mit Helium V mit iReport durchgeführt werden
+können, erhalten Sie von Ihrem Helium V Händler. Eine detaillierte
+Beschreibung ist direkt von Jasper Soft Corporation (www.jaspersoft.com)
+kostenpflichtig erhältlich.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
+Was sind Styles?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">In
+iReport können Styles folgendermaßen angelegt werden: Style Bibliothek -&gt;
+Neuer Style (Symbol). Daraufhin öffnet sich ein Popup, in welchem der neue
+Style zu definieren ist. Bei <i>Style Name</i> ist ein Name für den aktuellen
+Style anzugeben, damit man beim Anlegen mehrerer Styles den Überblick behalten
+kann. Der <i>Standardstyle</i> beinhaltet alle Formatierungen, die ein Feld
+standardmäßig haben soll, z.B. ist das häufig schwarzer Vordergrund auf
+weißem Hintergrund. Mit dem Button 'Hinzufügen' kann man eine neue Bedingung
+erstellen, an welche andere Formatierungen geknüpft sind. Z.B. legt man als
+Bedingung <a href="new%20Boolean%20($F{Projektbezeichnung}.contains(%22Fehler%22))"><i>new Boolean ($F{Projektbezeichnung}.contains("Fehler"))</i></a><i>
+</i>fest, was bedeutet, dass wenn in dem Feld 'Projektbezeichnung' das Wort
+'Fehler' vorkommt, der definierte Style angewendet wird. </p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Report_Style.jpg" alt="Beispiel für einen Style" width="700" height="450"></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Anwendung
+des definierten Styles im Report:</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Man
+wählt in ein oder mehreren Reportfeld-Eigenschaften im Register 'Allgemein'
+unter 'Style' den zuvor definierten Style aus. </p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
+Worauf ist bei Verwendung von Styles speziell zu achten?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Damit die definierten Styles auch angezeigt werden, gibt es folgende Punkte zu
+beachten:</p>
+<ul>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Beim
+    Style in der Style Bibliothek:
+    <ul>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Es
+        sollten unter 'Allgemein' Vorder-, Hintergrundfarbe und Modus definiert
+        sein (Modus nicht undurchsichtig, Standard wäre am Besten)</li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Beim
+        Standardstyle soll ein aussagekräftiger Name definiert werden</li>
+    </ul>
+  </li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Beim
+    Report-Feld, auf das der Style angewendet wird (Feld-Eigenschaften):
+    <ul>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Im
+        Register 'Allgemein' ist beim Style der anzuwendende Style auszuwählen</li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Im
+        Register 'Allgemein' ist das Feld auf NICHT transparent zu setzen</li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Im
+        Register 'Alle' sind die Vorder- und die Hintergrundfarbe zu löschen
+        (Bei Vorder- und Hintergrund rechts daneben das Kreis-Symbol anklicken)</li>
+    </ul>
+  </li>
+</ul>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" align="center"><img border="0" src="Report_Style_Feldeigenschaften.jpg" width="370" height="381"></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" align="center">&nbsp;</p>
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
+Meine im iReport definierten Feldgrößen passen nicht zu den Ausdrucken</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Vermutlich sind die für den Helium V Server verfügbaren Fonts (Schriften)
+nicht identisch mit den von Ihnen beim Design der Reports verwendeten
+Schriftvorlagen. Gerade bei Linux und MAC-Servern müssen diese aus
+Lizenzgründen extra installiert werden. Siehe dazu bitte auch auf Ihrer
+Installations-CD unter Tools/Linux/Fonts.</p>
+
+</body>
+
+</html>

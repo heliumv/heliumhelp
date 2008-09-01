@@ -1,0 +1,279 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Interne Bestellung</title>
+</head>
+
+<body>
+
+<h1>Interne Bestellung</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Genauso wie Sie
+Artikel / Material bei Ihren Lieferanten bestellen müssen, muss auch Ihre
+Fertigung wissen, wann welcher Fertigungsauftrag zu produzieren ist. Dazu dient
+die Interne Bestellung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der grundsätzlich
+Gedanke ist, dass der Vertrieb nur die Aufträge anzulegen braucht. Wenn die
+Fertigungsleitung / Arbeitsvorbereitung dann regelmäßig die Aufträge
+überprüft werden alle Produkte rechtzeitig hergestellt. Soweit die Idee.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Grundsätzlich ist
+die Berechnungslogik der Internen Bestellung gleich wie der Bestellvorschlag,
+hat jedoch die Besonderheit, dass zusätzlich die Stücklistenhierarchien
+aufgelöst werden. D.h. die angelegten Reservierungen / Fehlmengen werden
+solange durch iteriert / die Stücklisten-Hierarchien aufgelöst, bis alle
+erforderlichen Unterstücklisten angelegt sind. Da dieser Lauf auch während des
+Fertigungsprozesses durchgeführt werden muss, werden die offenen Lose ebenfalls
+berücksichtigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Dazu ein Beispiel:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>1. Stücklisten</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">1.1 Stückliste
+A-Kopf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dies
+ist eine sogenannte Kopfstückliste in der mehrere Unterstücklisten enthalten
+sind</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; 1
+Stk Unterstückliste U1</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; 2
+Stk Unterstückliste U2&nbsp;&nbsp;&nbsp; In dieser Unterstückliste ist noch
+eine weitere Unter-Unterstückliste enthalten</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 3 Stk Unter-Unterstückliste U2A</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">1.2 Stückliste
+B-Kopf</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; 1
+Stk Unterstückliste U2&nbsp;&nbsp;&nbsp; Daraus ergibt sich automatisch, dass
+auch hier die Unter-Unterstückliste U2A enthalten ist.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 3 Stk Unter-Unterstückliste U2A</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>2. Aufträge</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">2.1 Auftrag Müller
+100 Stk Stückliste A-Kopf, Liefertermin 20.12.2006</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">2.2 Auftrag Maier 75
+Stk Stückliste B-Kopf, Liefertermin 18.11.2006</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">2.3 Auftrag
+Ersatzteil 2 Stk Unterstückliste U2, Liefertermin 4.11.2006</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>3. Lagerstände</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">3.1 Stückliste
+A-Kopf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 Stk</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">3.2 Unterstückliste
+U1&nbsp;&nbsp;&nbsp;&nbsp; 2 Stk</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">3.3 Unterstückliste
+U2&nbsp;&nbsp;&nbsp;&nbsp; 3 Stk</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">3.4 Unter-Unterstkl
+U2A&nbsp;&nbsp; 1 Stk </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>4. offene
+Fertigungsaufträge</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">4.1 Stückliste
+A-Kopf 50Stk Endtermin 18.12.2006</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">4.2 Unterstückliste
+U1 48(50)Stk Endtermin 15.12.2006, davon 2Stk erledigt -&gt; liegen auf Lager</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">4.3 Unterstückliste
+U2 97(100)Stk Endtermin 15.12.2006, davon 3Stk erledigt -&gt; liegen auf Lager</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">4.4
+Unter-Unterstückliste U2A 290(300)Stk Endtermin 10.12.2006, davon 10Stk
+erledigt -&gt; 1 liegt auf Lager, 9 (3x3) sind in der U2 verbaut worden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>5. Zeitlicher
+Zusammenhang der Unterstücklisten</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wie ist der zeitliche
+Zusammenhang vom Auftragstermin (Liefertermin bzw. Positionstermin) zum
+Fertigungstermin, also Beginn und Ende über die Stücklistenhierarchie.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="../Bilder/Interne_Bestellung.png" width="514" height="223"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Durchlaufzeit
+wird in den Stücklisten (Kopfdaten) definiert und wird für die Berechnung der
+Rückwärtsterminierung ausgehend vom Auftragsliefertermin, welcher auch in den
+Reservierungen eingetragen ist, ermittelt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wie ist nun die
+Vorgehensweise zu Ermittlung der anzulegenden Lose?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">anhand der
+Lagerstände, der Reservierungen, der Fehlmengen, der offenen Fertigungsmengen
+werden die anzulegenden Stücklisten ermittelt. (Anmerkung: Die offenen
+Fertigungsmengen können wie Bestellungen unterwegs betrachtet werden). Offene
+Fertigungsmengen sind die angelegte Losgröße einer Stückliste abzüglich der
+bereits zurückgemeldeten Menge (Abliefermenge). Die abgelieferte Menge ist
+bereits im Lagerstand berücksichtigt, die noch benötigte Menge ist in der
+Reservierung bzw. in den Fehlmengen berücksichtigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wichtig: Wenn bei der
+Rückmeldung der Ablieferungsmengen Fehlermeldungen Sollsatzgröße
+Unterschritten angezeigt wird, so kann dies bei der Internen Bestellung
+bewirken, dass eventuell eine zu große Menge für die Produktion vorgeschlagen
+wird.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<div align="left">
+  <table border="1" width="639" height="16">
+    <tr>
+      <td width="327" height="16"><b>Stückliste</b></td>
+      <td width="1172" height="16"><b>Auslöser</b></td>
+      <td width="383" height="16"><b>Bedarf</b></td>
+      <td width="507" height="16"><b>Menge</b></td>
+      <td width="574" height="16"><b>Termin / Ende</b></td>
+      <td width="488" height="16"><b>DLZ</b></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">A-Kopf</td>
+      <td width="1172" height="16">1...Auftrag Müller</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">100</td>
+      <td width="574" height="16">20.12.2006</td>
+      <td width="488" height="16">7 AB-Vorlauf</td>
+    </tr>
+    <tr>
+      <td width="327" height="16">&nbsp; --&quot;--</td>
+      <td width="1172" height="16">2...Lagerstand</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">0</td>
+      <td width="574" height="16"></td>
+      <td width="488" height="16"></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">&nbsp; --&quot;--</td>
+      <td width="1172" height="16">3...offene Fert.Mng</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">50</td>
+      <td width="574" height="16">18.12.2006</td>
+      <td width="488" height="16"></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">&nbsp; --&quot;--</td>
+      <td width="1172" height="16">4...zus.Bedarf 1</td>
+      <td width="383" height="16">50</td>
+      <td width="507" height="16"></td>
+      <td width="574" height="16">13.12.2006</td>
+      <td width="488" height="16">3</td>
+    </tr>
+    <tr>
+      <td width="327" height="16">U1</td>
+      <td width="1172" height="16">5...offene Fert.Mng</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">48</td>
+      <td width="574" height="16">15.12.2006</td>
+      <td width="488" height="16"></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">-&quot;-</td>
+      <td width="1172" height="16">6...Lagerstand</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">2</td>
+      <td width="574" height="16"></td>
+      <td width="488" height="16"></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">-&quot;-</td>
+      <td width="1172" height="16">7...zus.Bedarf 2 aus 4</td>
+      <td width="383" height="16">50</td>
+      <td width="507" height="16"></td>
+      <td width="574" height="16">10.12.2006</td>
+      <td width="488" height="16">4</td>
+    </tr>
+    <tr>
+      <td width="327" height="16">U2</td>
+      <td width="1172" height="16">8...offene Fert.Mng</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">97</td>
+      <td width="574" height="16">15.12.2006</td>
+      <td width="488" height="16"></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">-&quot;-</td>
+      <td width="1172" height="16">9...Lagerstand</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">3</td>
+      <td width="574" height="16"></td>
+      <td width="488" height="16"></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">-&quot;-</td>
+      <td width="1172" height="16">10...zus.Bedarf 3 aus 4</td>
+      <td width="383" height="16">100</td>
+      <td width="507" height="16"></td>
+      <td width="574" height="16">10.12.2006</td>
+      <td width="488" height="16">9</td>
+    </tr>
+    <tr>
+      <td width="327" height="16">U2A</td>
+      <td width="1172" height="16">11...offene Fert.Mng</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">290</td>
+      <td width="574" height="16">10.12.2006</td>
+      <td width="488" height="16"></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">-&quot;-</td>
+      <td width="1172" height="16">12...Lagerstand</td>
+      <td width="383" height="16"></td>
+      <td width="507" height="16">1</td>
+      <td width="574" height="16"></td>
+      <td width="488" height="16"></td>
+    </tr>
+    <tr>
+      <td width="327" height="16">-&quot;-</td>
+      <td width="1172" height="16">13...zus.Bedarf 4 aus 10</td>
+      <td width="383" height="16">300</td>
+      <td width="507" height="16"></td>
+      <td width="574" height="16">1.12.2006</td>
+      <td width="488" height="16">3</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Vorlaufzeitzeiten
+Aufträge: Hier wird Ihr Sicherheitszeitraum angegeben um den der Endtermin des
+Fertigungsloses früher fertig sein muss, als der tatsächliche Liefertermin
+ist. Dieser wird in den Mandantenparametern eingestellt und kann für jede
+interne Bestellung neu definiert werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Liefertermin für
+Artikel ohne Reservierungen. Für Artikel die nur aufgrund von
+Lagermindestbeständen in die interne Bestellung kommen, wird dieser Termin als
+Endtermin herangezogen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durchlaufzeiten: In
+diesem Beispiel wurden bei den Durchlaufzeiten die Wochenenden und Feiertage aus
+Gründen der leichteren Verständlichkeit NICHT berücksichtigt. In Helium V
+werden nur Arbeitstage für die Ermittlung der Durchlaufzeiten herangezogen.
+Arbeitstage sind jene, die kein Samstag und kein Sonntag und kein Feiertag bzw.
+Betriebsurlaubstag sind.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In diesem Beispiel
+wird davon ausgegangen, dass alle erforderlichen Artikel in Helium V angelegt
+sind.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In jeder
+Stücklistenebene können auch Zukaufsartikel enthalten sein. Diese wurden aus
+Gründen der Übersichtlichkeit nicht mit angeführt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Versuch einer anderen
+<a href="Interne_Bestellung.xls">Darstellung</a>.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Häufig gestellte
+Fragen zur Internen Bestellung:</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Mein Artikel xy
+aus Auftrag 4711 erscheint nicht in der internen Bestellung.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Damit ein Artikel
+in der internen Bestellung ermittelt wird, muss er eine eigengefertigte
+Stückliste sein.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">D.h. bitte prüfen
+Sie, ob der gewünschte Artikel auch in der Stücklistenverwaltung angelegt ist.
+Ist dies der Fall, so stellen Sie bitte sicher, dass in den Kopfdaten der
+Stückliste bei Fremdfertigung KEIN Hacken eingetragen ist.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sollte dies alles
+richtig sein, so prüfen Sie bitte auch die Bewegungsvorschau. Wenn von diesem
+Artikel ausreichend auf Lager bzw. bereits in Fertigung ist, so muss ebenfalls
+kein Fertigungslos angelegt werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+</body>
+
+</html>

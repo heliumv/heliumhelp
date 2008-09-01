@@ -1,0 +1,610 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" media="print, embossed" href="../css/druck.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Shortcuts</title>
+</head>
+
+<body>
+
+<h1>Tastaturbedienung von Helium V</h1>
+<p>Um Helium V schnell bedienen zu können wurden Tastaturbedienung und Direkt Filter
+implementiert.</p>
+<p>Die Tastaturbedienung
+erfolgt im wesentlichen über die allgemein üblichen Shortcuts
+(Schnellzugriffstasten). Die direkt Filter finden Sie praktisch in jeder
+Auswahlliste über den Spaltenüberschriften.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Direktfilter"></a>Direkt Filter</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Mit dem Direkt Filter
+kann sehr schnell ein bestimmter Datensatz, z.B. ein Lieferschein, ausgewählt
+werden. Um die verschiedenen Funktionalitäten zu beschreiben, wird hinter dem
+Feldnamen die Funktionalität symbolhaft dargestellt<br>
+ <img border="0" src="Shortc1.gif" width="193" height="24"></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Dabei bedeutet:</p>
+<table border="1" width="896">
+  <tr>
+    <td width="56">Aa
+...</td>
+    <td width="824">Die Eingabe ist nicht von Groß-/Kleinschreibung abhängig.</td>
+  </tr>
+  <tr>
+    <td width="56">A* ...</td>
+    <td width="824"> Es werden jene Datensätze angezeigt, bei denen im Feldnamen (Kunde) von
+links herein die entsprechenden Zeichen vorhanden sind.</td>
+  </tr>
+  <tr>
+    <td width="56">*A
+...&nbsp;</td>
+    <td width="824">
+<p> Kommt meistens bei der Eingabe einer Belegnummer zur Anwendung. <br>
+        <img border="0" src="Shortc2.gif" width="179" height="26"><br>
+Bedeutet, dass die eingegebenen Zeichen (normalerweise Zahlen), nach links anhand der Regel der Nummernerzeugung des Beleges aufgefüllt werden.<br>
+  Mit diesem Direktfilter kann sehr komfortabel auch auf Belege aus früheren
+  Jahren gesprungen werden. Geben Sie hier lediglich nach der Belegnummer durch
+  Komma oder Punkt getrennt das Jahr an. z.B. 567,05 bringt Sie zum Beleg
+  05/0000567, wenn dieser vorhanden ist.
+  </p></tr>
+</table>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Sind mehrere Direkt Filter angegeben, und wurde in diese auch Daten eingegeben, so bewirken diese
+ein logisches Und. D.h. es müssen für beide Felder die Filterregeln erfüllt
+sein.<br>
+Die Anwendung des
+Filters wird durch Betätigen der Enter-Taste ausgelöst. Mit der Tab-Taste
+können Sie vom ersten zum zweiten direkt Filter wechseln.
+</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Zusätzlich können Sie im Direkt Filter auch nach Teilen von Namen suchen. Mit der Eingabe von %
+wird ein beliebiges Zeichen für die Suche definiert. Ein Beispiel:</p>
+
+<p><img border="0" src="Shortc3.gif" width="494" height="77"><br>
+  Das bedeutet: Wird als erstes Zeichen % eingegeben, so wird nach dem Auftreten 
+  der Folgezeichen in dem zu durchsuchenden Datenfeld gesucht. In unserem Beispiel 
+  sollten alle Partner angezeigt werden, die schw(arz) im Namen haben. Also wird 
+  %schw eingegeben und sie erhalten die &quot;Apotheke Zum Schwarzen Adler&quot; 
+  und die &quot;Kreis-Apotheke zum Schwarzen Falken&quot;
+</p>
+
+
+<p><b>WICHTIG:</b> 
+Wenn eine
+Filterbedingung wieder gelöscht werden soll, müssen Sie die Eingaben daraus
+entfernen und mit Enter bestätigen.</p>
+
+<p class="question" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Q:
+Welche Suchfunktionen können bei den Filtern eingegeben werden?</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">A:
+Bei der Suche können folgende Platzhalterzeichen (Wildcards) eingegeben werden.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">%
+... bedeutet der dem % folgende Text kann irgendwo danach kommen</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">_
+.... bedeutet beliebiges Zeichen an dieser Stelle.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Bitte
+beachten Sie, dass bei % die Suche trotzdem immer von links nach rechts
+durchgeführt wird.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Ein
+Beispiel:</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Textstring
+z.B. in der Artikelbezeichnung:</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;&nbsp;&nbsp;
+Faston isoliert rot 6,8mm</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Wird
+nun F%rot%6 im Direktfilter eingegeben, so wird der Artikel gefunden. Ist aber
+von der Eingabe her nicht klar, ob als Dezimaltrenner der Punkt (.) oder das
+Komma (,) eingegeben wurden, und Sie müssen exakt auf 6,8 suchen, so sollte
+F%rot%6_8 eingegeben werden.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Wichtig:
+Die %-Suche ist immer von Links nach rechts. Das bedeutet wenn Sie in unserem
+Beispiel nach F%rot%iso% suchen, werden Sie keine Suchergebnisse erhalten.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Spezielle
+Suche in der Elektronikbranche.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">In
+der Elektronikbranche werden bei vielen Artikeln die Genauigkeiten in %
+angegeben. Um exakt z.B. nach 1% suchen zu können geben Sie bitte ***???***
+ein.</p>
+
+  <p class="question" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Q: Wie kann die Auswahlliste
+  weiter eingeschränkt werden?</p>
+
+  <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">In
+  vielen Auswahllisten steht die Funktionalität der sogenannten Zusatzfilter
+  zur Verfügung. Die Bedienung dieser zusätzlichen Einschränkung der
+  angezeigten Daten ist grundsätzlich wie folgt, wobei als Beispiel die Auswahl
+  der Partnerart im Modul Partner verwendet wird.
+  <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Klicken
+  Sie auf&nbsp; <img border="0" src="Zusatzfilter.gif" width="32" height="27">.</p>
+  <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Nun
+  wählen Sie das zusätzliche Filterkriterium aus. In unserem Fall Partnerart.</p>
+  <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Direktfilter1.gif" width="236" height="34"></p>
+  <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Klicken
+  Sie nun auf das Plus neben dem gewählten Kriterium.</p>
+  <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Sie
+  können nun den Text für das gewählte Kriterium eingeben.</p>
+  <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Direktfilter2.gif" width="264" height="28"></p>
+  <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Klicken
+  Sie nach der Eingabe auf aktualisieren <img border="0" src="Direktfilter_aktualiseren.gif" width="32" height="26">,
+  damit die Filterbedingung ausgeführt wird.</p>
+  <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Durch
+  einen erneuten Klick auf das grüne Plus können weitere Filterbedingungen,
+  bis zu drei, hinzugefügt werden. Durch Klick auf Minus kann die gewählte
+  Filterbedingung wieder entfernt werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Sortierung Spaltenüberschriften"></a>Q: Können
+Auswahllisten sortiert werden?</p>
+<p class="answer" style="line-height: 100%; word-spacing: 0; text-indent: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">A:
+Die Auswahllisten können normalerweise sortiert werden. Die Grundsortierung ist
+meist so, dass der aktuellste Eintrag oben ist. Sollte eine andere Sortierung
+erwünscht sein, so klicken Sie mit der Maus bitte auf die gewünschte Spalte.
+Durch diesen Klick wird die Sortierung nach der Spalte in aufsteigender Form
+vorgenommen. <img border="0" src="Spalten_Sortierung.gif" width="259" height="25"> Für eine absteigende
+Sortierung klicken Sie bitte erneut auf die Spalte. Eine mit <img border="0" src="Nicht_sortierbar.gif" width="20" height="22">
+gekennzeichnete Spalte kann nicht sortiert werden.</p>
+<p class="answer" style="line-height: 100%; word-spacing: 0; text-indent: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Die
+Sortierungen können auch bei angewendeten (Direkt-) Filtern verwendet werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Auswahllisten</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Die Auswahllisten
+werden über den sogenannten FLR (FastLaneReader) zusammengestellt.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Üblicherweise sind
+den Auswahllisten auch die Direkt Filter zugeordnet. Damit können Sie sehr
+komfortabel und schnell auf ausgewählte Belege / Datensätze springen.
+Üblicherweise kann die Anzeige einer Liste nach jeder der Spalten auf oder
+absteigend sortiert werden. Klicken Sie dazu einfach auf die gewünschte
+Spaltenüberschrift. Wenn nach einer Spalte nicht sortiert werden kann, so ist
+diese mit <img border="0" src="Nicht_sortierbar.gif" width="20" height="22"> gekennzeichnet.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Textsuche bei den Auswahllisten</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">In
+einigen Auswahllisten steht auch eine Textsuchen in den zugehörigen
+Positionsdaten zur Verfügung. Die Textsuche erstreckt sich immer auf die bisher
+eingegebene Filterbedingung. Das bedeutet: Ihre Textsuche führt um so schneller
+zum Ergebnis, desto weniger Einträge zu durchsuchen sind. Suchen Sie zum
+Beispiel Texte nur für einen bestimmten Kunden, so empfiehlt sich, den Kunden
+und dann den gesuchten Text einzugeben. Durch den Kunden reduzieren Sie die zu
+durchsuchenden Datenmengen und erhalten so sehr rasch das gewünschte Ergebnis.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Anlegen neuer
+Stammdaten direkt aus den Auswahllisten heraus.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Bei
+einigen ausgewählten Auswahllisten finden Sie neben dem Refresh Button auch
+einen&nbsp; <img border="0" src="Neu_aus_Auswahl.gif" width="101" height="28"> Neu Knopf. Damit wird
+signalisiert, dass diese Auswahlliste direkt erweitert werden kann. Um z.B.
+einen Ansprechpartner oder einen Ort neu anzulegen, klicken Sie einfach auf den
+Neu Knopf. Die entsprechende Modulberechtigung vorausgesetzt, werden Sie vom
+Programm direkt in das entsprechende Modul geführt und können hier die Daten
+für die neue Stammdate eingeben. Z.B. den neuen Ansprechpartner definieren.</p>
+<p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0">Tastaturbedienung</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">In einer Auswahlliste
+werden Tasteneingaben immer in das erste Direkt Filter geleitet. Dies bedingt
+zugleich, dass der Fokus am ersten direkt Filter sitzt. Wird dieser Filter nun
+mit Enter bestätigt, so werden die Filterbedingungen auf die Daten angewandt
+und die daraus resultierende Liste der Daten dargestellt. Nun sitzt der Fokus
+der Eingabe wieder in der Auswahlliste und Sie können mit den Cursortasten in
+der Auswahlliste positionieren und mit der Enter-Taste den gewünschten
+Datensatz auswählen. Wurden aufgrund der Filterbedingung keine Ergebnisse
+geliefert, so bleibt der Fokus auf dem Direkt Filter erhalten, damit Sie die
+Filterbedingung entsprechend ändern können.</p>
+
+<p>Die Cursortasten
+wirken als Positionierung des Cursorbalkens in der Auswahlliste.<br>
+Durch Betätigen von
+Enter gelangen Sie in den logisch nächstfolgenden Modulreiter. Das ist bei den
+Bewegungsdaten üblicherweise die Position, bei den Stammdaten die Detailsicht.<br>
+Derzeit sind folgende
+Shortcuts implementiert / geplant:</p>
+<table border="1" width="100%">
+  <tr> 
+    <td ><strong>Funktion</strong></td>
+    <td ><strong>Shortcut</strong></td>
+    <td ><strong>Bemerkung</strong></td>
+  </tr>
+  <tr> 
+    <td >Neu</td>
+    <td >Strg+N</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr> 
+    <td >Speichern</td>
+    <td >Strg+S</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr> 
+    <td >Ändern</td>
+    <td >Strg+U</td>
+    <td >U ... für Update</td>
+  </tr>
+  <tr> 
+    <td >Löschen</td>
+    <td >Strg+D</td>
+    <td >D ... für Delete</td>
+  </tr>
+  <tr> 
+    <td >Drucken</td>
+    <td >Strg+P</td>
+    <td >P ... für Print</td>
+  </tr>
+  <tr> 
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr> 
+    <td >Zurück in die Auswahlliste</td>
+    <td >ESC</td>
+    <td >geplant</td>
+  </tr>
+  <tr> 
+    <td >Verwerfen</td>
+    <td >Strg+Z</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr> 
+    <td >Aktualisieren</td>
+    <td >Strg+R</td>
+    <td >Refresh oder auch Read</td>
+  </tr>
+  <tr> 
+    <td >Schließen des Moduls</td>
+    <td >Strg+F4</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr> 
+    <td >Schließt Helium V</td>
+    <td >Alt+F4</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr> 
+    <td >Vorblättern in der Detailsicht</td>
+    <td >Strg+ + am Numerischen Ziffernblock</td>
+    <td >Anhand des aktuellen Filters der Auswahlliste wird, ohne die 
+      Detailsicht (das Panel) zu verlassen um einen Datensatz vorgeblättert, z.B. 
+      auf den nächst höheren Auftrag.</td>
+  </tr>
+  <tr> 
+    <td >Rückblättern in der Detailsicht</td>
+    <td >Strg+ - am Numerischen Ziffernblock</td>
+    <td >Wie oben, aber um einen Datensatz zurückblättern.</td>
+  </tr>
+  <tr> 
+    <td >Übernehmen Vorgänger</td>
+    <td >F2</td>
+    <td >z.B. Lieferschein in Rechnung</td>
+  </tr>
+  <tr> 
+    <td >Übernehmen Vorgänger aus alternativ Modul</td>
+    <td >Shift+F2</td>
+    <td >z.B. Reparatur in Rechnung</td>
+  </tr>
+  <tr> 
+    <td >Kopieren des Beleges </td>
+    <td >F3</td>
+    <td >z.B. ein neues Angebot aus einem bestehenden erstellen</td>
+  </tr>
+  <tr> 
+    <td >Artikel Dauereingabe</td>
+    <td >F9</td>
+    <td >Verlangt solange nach einer neuen Position der Positionsart 
+      Artikel, bis das Neu abgebrochen wird.</td>
+  </tr>
+  <tr> 
+    <td >Wechseln des aktiven Moduls</td>
+    <td >Strg+Tab</td>
+    <td >wechselt das aktive Modul sinngemäß vorwärts</td>
+  </tr>
+  <tr> 
+    <td >Wechseln des aktiven Moduls</td>
+    <td >Shift+Strg+Tab</td>
+    <td >wechselt das aktive Modul sinngemäß rückwärts</td>
+  </tr>
+  <tr> 
+    <td >Wechseln des aktiven Modulreiters</td>
+    <td >Strg+Bild ab</td>
+    <td >wechselt nach rechts / vorwärts</td>
+  </tr>
+  <tr> 
+    <td >Wechseln des aktiven Modulreiters</td>
+    <td >Strg+Bild auf</td>
+    <td >wechselt nach link / rückwärts</td>
+  </tr>
+  <tr> 
+    <td >Wechseln des aktiven unteren Modulreiters</td>
+    <td >Alt+Bild ab</td>
+    <td >wechselt in den unteren Modulreitern nach rechts / vorwärts</td>
+  </tr>
+  <tr> 
+    <td >Wechseln des aktiven unteren Modulreiters</td>
+    <td >Alt+Bild auf</td>
+    <td >wechselt in den unteren Modulreitern nach links / rückwärts</td>
+  </tr>
+  <tr> 
+    <td >Kopieren der aktuellen Helium V Ansicht<br>
+      in die Zwischenablage</td>
+    <td >Shift+Alt+Druck</td>
+    <td >Kopiert die aktuelle Modulmaske in die Zwischenablage um sie 
+      von dort z.B. in anderen Programmen weiterverwenden zu können.</td>
+  </tr>
+  <tr> 
+    <td >Drucken der aktuellen Helium V Ansicht</td>
+    <td >Ctrl+Alt+Druck</td>
+    <td >Sendet die aktuelle Modulmaske an den Standard-Drucker</td>
+  </tr>
+</table>
+&nbsp;
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><strong>Mnemonics:</strong></p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Als Mnemonics bezeichnet man die Tasten für die Menüsteuerung. Da in Helium V zwei Menüs
+zur Verfügung stehen, haben wir folgende Lösung gewählt:<br>
+
+Wenn Sie die
+Alt-Taste alleine drücken und wieder loslassen, gelangen Sie in das Hauptmenü.
+Um durch das Menü zu navigieren drücken Sie nun die unterstrichenen Buchstaben
+/ Zeichen.<br>
+
+Wenn Sie die
+Alt-Taste drücken und danach einen Buchstaben drücken, so wirkt dies im Modul
+Menü wiederum auf den unterstrichenen Buchstaben.<br>
+
+Grundsätzlich kann
+man sich folgende Regel merken:<br>
+  <strong>Strg+Taste</strong> wirkt im aktuellen Panel und ist auch für Sonderfunktionen 
+  reserviert<br>
+  <strong>Alt+Taste</strong> wirkt im Modulmenü<br>
+
+Alt drücken und
+wieder loslassen und danach eine Taste wirkt im Hauptmenü.<br>
+<br>
+
+Die Funktionstasten
+haben wir für folgende Spezialfunktionen reserviert, wobei wir auch hier
+versucht haben eine einheitliche Verwendung in allen Modulen zu erreichen.</p>
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" >Beschreibung
+der Tastaturbedienung des Druckdialoges</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" >Auch
+im Druckdialog steht die Tastatur für die schnelle Navigation zur
+Verfügung.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" >Bitte
+beachten Sie den Unterschied zwischen Druckdialog<br>
+<img border="0" src="../System/DruckVorschau_Dialog.jpg" width="513" height="164"></p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" >&nbsp;</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" >
+und
+der reinen Druckvorschau.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" ><a href="ReineDruckvorschau.gif"><img border="0" src="ReineDruckvorschau.gif" width="30%" height="30%"></a></p>
+<table border="1" width="100%">
+  <tr>
+    <td >Vergrößern der Ansicht</td>
+    <td >+ am Numerischen Ziffernblock</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Verkleinern der Ansicht</td>
+    <td >- am Numerischen Ziffernblock</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Um eine Seite vorblättern</td>
+    <td >Bild ab</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Um eine Seite zurückblättern</td>
+    <td >Bild auf</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Zur ersten Seite</td>
+    <td >Pos1</td>
+    <td >(Home)</td>
+  </tr>
+  <tr>
+    <td >Zur letzten Seite</td>
+    <td >Ende</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Aktualisieren des Inhaltes des Druckdialoges</td>
+    <td >F5</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Exportieren / Speichern des Druckdialoges</td>
+    <td >Strg+S</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Anzeige der Daten in der reinen Vorschau</td>
+    <td >Strg+R</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Tatsächliches Drucken an den Drucker</td>
+    <td >Strg+P</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Als Fax versenden</td>
+    <td >Strg+F</td>
+    <td >Hier muss die Faxnummer angegeben werden.</td>
+  </tr>
+  <tr>
+    <td >Als EMail versenden </td>
+    <td >Strg+E</td>
+    <td >Hier muss die EMail-Adresse angegeben werden</td>
+  </tr>
+  <tr>
+    <td >Verlassen des Druckdialoges</td>
+    <td >ESC</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td >Verlassen des Vorschaufenster</td>
+    <td >
+      Alt+F4</td>
+    <td >&nbsp;</td>
+  </tr>
+</table>
+&nbsp;
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" >Verwendete Tastenkombinationen in Eingabefeldern. <strong>ACHTUNG:</strong> 
+  Dies ist auch Betriebssystemabhängig!</p>
+
+  <center>
+  <table border="1" width="895">
+    <tr>
+      <td width="297" >Taste</td>
+      <td width="598" >Zweck</td>
+    </tr>
+    <tr>
+      <td width="297" >F1</td>
+      <td width="598" >Anwendungshilfe anzeigen</td>
+    </tr>
+    <tr>
+      <td width="297" >UMSCHALT+F1</td>
+      <td width="598" >Tipps (kontextbezogene Hilfe) neben dem ausgewählten
+        Steuerelement anzeigen</td>
+    </tr>
+    <tr>
+      <td width="297" >Strg+C</td>
+      <td width="598" >Ausgewählte Elemente kopieren</td>
+    </tr>
+    <tr>
+      <td width="297" >Strg+X</td>
+      <td width="598" >Ausgewählte Elemente ausschneiden</td>
+    </tr>
+    <tr>
+      <td width="297" >Strg+V</td>
+      <td width="598" >Ausgeschnittene oder kopierte Elemente einfügen</td>
+    </tr>
+    <tr>
+      <td width="297" >Strg+Z</td>
+      <td width="598" >Letzten Vorgang rückgängig machen</td>
+    </tr>
+    <tr>
+      <td width="297" >Strg+Y</td>
+      <td width="598" >Letzten Vorgang wiederholen</td>
+    </tr>
+    <tr>
+      <td width="297" >Esc</td>
+      <td width="598" >Aktuellen Task abbrechen</td>
+    </tr>
+    <tr>
+      <td width="297" >Entf</td>
+      <td width="598" >Ausgewählte Elemente löschen</td>
+    </tr>
+  </table>
+  </center>
+&nbsp;
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0" >Für
+Windows® Betriebssysteme gibt es noch eine nützliche Tastenkombination:</p>
+
+  <center>
+  <table border="1" width="894">
+    <tr>
+      <td width="296">Windows-Taste+D</td>
+      <td width="598">Anzeige des Desktops bzw. wenn nur der Desktop
+        angezeigt wird, dann wiederherstellen der letzten Ansicht</td>
+    </tr>
+  </table>
+  </center>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Eingabe
+von Sonderzeichen:</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Grundsätzlich wird von
+Helium V der Unicode Zeichensatz unterstützt. Sie können damit praktisch alle
+Zeichen welche auf nationalen PCs verfügbar sind darstellen. Sei dies
+Kyrillisch, Griechisch, .... usw.<br>
+Trotzdem möchten wir hier die Erzeugung einiger Sonderzeichen anführen welche
+im deutschen Sprachraum oft zusätzlich gebraucht werden, aber auf den Standard
+Tastaturen nicht verfügbar sind.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Vom
+HeliumV Client wird der Tahoma Zeichensatz verwendet. Alle darin vorkommenden
+Zeichen werden auch von Helium V dargestellt.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">In
+den Texteingaben wird der von Ihnen eingestellte Zeichensatz verwendet. In
+Multiclient Umgebungen beachten Sie bitte dass alle Schriften auf allen
+unterschiedlichen Plattformen vorhanden sein müssen.</p>
+<p align="left">
+  <table border="1" width="50%" >
+    <tr>
+      <td  >Zeichen</td>
+      <td  >Tastatureingabe</td>
+    </tr>
+    <tr>
+      <td  >ø</td>
+      <td  >ALT+155 am numerischen Ziffernblock</td>
+    </tr>
+    <tr>
+      <td  >Ø</td>
+      <td  >ALT+157 am numerischen Ziffernblock</td>
+    </tr>
+  </table>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><a href="../System/ascii.pdf">Siehe dazu auch ASCII-Tabelle.</a>
+</p>
+&nbsp;
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Belegung
+von Funktionstasten</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Insbesondere
+für die rasche Erfassung mit Barcodes sind in Helium V in einigen
+Programmmodulen hinter den jeweiligen Icons auch Shortcuts der Funktionstasten
+hinterlegt. Diese sind vor dafür gedacht, dass die Barcodescanner als
+Pre-ScannCode diese Taste senden um damit sofort in die Erfassungsmaske springen
+zu können. Die Funktionalität der Erfassung steht immer in der Ausahllist zur
+Verfügung.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Derzeit
+sind folgende Funktionstasten verwendet:</p>
+<div align="left">
+  <table border="1" width="559" height="22">
+    <tr>
+      <td width="559" height="22">Modul</td>
+      <td width="559" height="22">Funktionstaste</td>
+      <td width="559" height="22">Funktionalität</td>
+    </tr>
+    <tr>
+      <td width="559" height="22">Los (Fertigung)</td>
+      <td width="559" height="22">F12</td>
+      <td width="559" height="22">Setzen Los Zusatzstatus</td>
+    </tr>
+    <tr>
+      <td width="559" height="22">Los (Fertigung)</td>
+      <td width="559" height="22">F11</td>
+      <td width="559" height="22">Erledigen/Abliefern Lose anhand
+        Auftrags-Packliste</td>
+    </tr>
+    <tr>
+      <td width="559" height="22">Los (Fertigung)</td>
+      <td width="559" height="22">F10</td>
+      <td width="559" height="22">Tops Artikel abliefern</td>
+    </tr>
+    <tr>
+      <td width="559" height="22">Artikel</td>
+      <td width="559" height="22">F12</td>
+      <td width="559" height="22">Lagerort definieren</td>
+    </tr>
+    <tr>
+      <td width="559" height="22">Auftrag</td>
+      <td width="559" height="22">F11</td>
+      <td width="559" height="22">Auftrags-Positions-Seriennummern Etiketten
+        drucken</td>
+    </tr>
+  </table>
+</div>
+
+
+</body>
+
+</html>

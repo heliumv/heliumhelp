@@ -1,0 +1,204 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>iReport</title>
+</head>
+
+<body>
+
+<h1>Report Editor</h1>
+<p class="answer">In Helium V wird der iReport für das editieren der mitgelieferten Reports
+verwendet.<br>
+Bitte achten Sie darauf die exakt richtige Version des iReports für die
+Bearbeitung der Formulare zu verwenden.<br>
+Die passende Version finden Sie auf Ihrer Helium V Installations-CD. Sie können
+die erforderliche iReport Version auch von unserer Homepage, www.HeliumV.com
+herunterladen. Bitte beachten Sie die Versionszuordnungen zwischen iReport und
+Helium V.</p>
+<p class="answer">Nachfolgend Hinweise zu den Eigenheiten von iReport welche bei der Gestaltung
+der Reports beachtet werden sollten.</p>
+
+<p class="answer"><b>Hinweis:</b> Für das Arbeiten mit iReport sollte
+mindestens eine Zwei-Tasten Maus zur Verfügung stehen. Eine Bearbeitung der
+Druckformulare mit nur eine Maustaste (MAC) ist nicht möglich.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0"><a name="Breite der Barcodes"></a>Breite
+der Barcodes:</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
+Größe der gedruckten Barcodes richtet sich nach der Größe des definierten
+Feldes. Der Barcode wird so gedruckt, dass er sowohl von der Breite her, als
+auch von der Höhe her in die gedachte Umrahmung des Feldes passt. Zugleich wird
+das für den Barcode erforderliche Strich/Lücken Verhältnis beibehalten.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Anmerkung:
+Die Angabe erfolgt in 1/72&quot; (Punkt bzw. Dezidot) Für die Umrechnung von
+Punkten auf mm verwenden Sie als Näherung bitte einen Multiplikator von 0,353.
+So ergeben 220 Punkte eine Breite von 77,66mm</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">In
+der Praxis hat sich bewährt, eine Höhe von 10mm (28Punkte) zu verwenden und
+die Breite ausreichend Breit zu definieren.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">(100/72
+= Inch * 25,4 = mm = 1/72*25,4 = 0,35277)</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bitte
+bedenken Sie, dass ein gut lesbarer Barcode zu anderen Strichen und Kanten einen
+ausreichenden Abstand haben muss. Als mindest Abstand ist die Breite zweier
+Zeichen zu empfehlen.&nbsp;</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bitte
+bedenken Sie auch, dass Barcodescanner üblicherweise eine maximale
+Erfassungsbreite von 70mm haben. D.h. mit einem Rand von wenigen Zeichen darf
+ein Barcode maximal 220Punkte breit sein.</p>
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0"><a name="Barcodetype"></a>Definition
+der Barcodetype</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Definition der Barcodetype wird über den Formulareditor (iReport -&gt; wird auf
+der CD mitgeliefert) vorgenommen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Üblicherweise
+wird der Code 39 verwendet. Bitte beachten Sie dazu auch <a href="barcodes.htm">Drucken
+von Barcodes</a>.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Welche
+Parameter können wo verwendet werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Alle
+Parameter sind in den vordefinierten, von uns gepflegten Reports enthalten.
+Sollten Sie in Ihrem eigenen (Anwender) Report Parameter vermissen, so öffnen
+Sie bitte den original Report, gehen Sie auf Ansicht, Reportparameter. Hier
+sehen Sie nun alle definierten Felder, Variablen und Parameter. Sie können den
+gewünschten Parameter nun mit der rechten Maustaste kopieren, in Ihren eigenen
+Report wechseln und dort mit rechter Maustaste und Einfügen in Ihre
+Reportparameterliste aufnehmen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ACHTUNG:
+Die Parameter werden nur innerhalb der gleichen Reports unterstützt. Das
+Einfügen ungültiger Parameter in einen Report kann zum Abbruch des Programms
+führen.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Drucken
+des Pageheaders aus dem Summary heraus, wenn im Summary ein Seitenumbruch ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+ist im Konzept des JasperReports nicht direkt vorgesehen. Als Work Around gehen
+Sie bitte wie folgt vor:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie eine neue Gruppe mit Namen Summary und als äußerste Gruppe definieren.
+D.h. sie muss in der Ansicht der Reportgruppen als erstes stehen. Die Summary-Gruppe
+mit Header Höhe 0 und Footer Höhe 78 anlegen.<br>
+Die Felder aus dem original Summary in den Footer der (neuen) Summary-Gruppe (=SummaryFooter)
+verschieben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+original Summary auf Höhe 0 setzen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anmerkung:
+Sind in den Detailpositionen Felder mit Höhe 0 enthalten, werden sie beim
+Einfügen der neuen Gruppe nicht mitverschoben. Diese müssen manuell an die
+richtige Position gebracht werden, also an die richtigen Position in der
+richtigen Gruppe per Hand nachziehen. Beispiel: $F{Lerrzeile} im Detail des
+Rechnungsreports.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Dringende
+Empfehlung:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bilder,
+die auf einem Report ausgedruckt werden sollten, dürfen im Dateinamen keine
+Leerzeichen enthalten. Der Dateiname sollte nur aus Kleinbuchstaben und _ bestehen.
+Er darf nur mit Buchstaben beginnen, im weiteren Namen dürfen Ziffern
+vorkommen, aber nicht an erster Stelle.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Definition
+der Abmessungen des Reports:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Abmessungen eines Reports / eines Formulares, z.B. einer Etiketten können im
+Reportgenerator unter Ansicht, Reporteigenschaften definiert werden.
+    Definieren Sie hier Abmessungen, Ausrichtungen und Ränder.<br>
+    <b>WICHTIG:</b> Es hat sich bewährt, den Drucker immer im Porträt bzw.
+    Hochformat zu definieren, auch wenn ein Formular verwendet wird, welches
+    Breiter als Hoch ist. Um dies für die Reportvorlage richtig definieren zu
+    können, müssen Sie die Höhe etwas höher als die Breite angeben. Die
+    eigentliche Höhe des Etikettes definieren Sie dann mit der Höhe des
+    Druckbereiches im jeweiligen Druck-Band (Detail, bzw. Title). Siehe dazu
+auch <a href="Etikettendruck.htm">Etikettendruck</a>.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Sie die Abmessungen des Reports verringern, so achten Sie bitte unbedingt
+darauf, dass auch die Höhen der einzelnen Elemente der Dokumentenstruktur (pageHeader,
+Detail usw.) angepasst werden müssen. Sind diese zu groß erhalten Sie
+Fehlermeldungen wie:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&quot;1.&nbsp;The&nbsp;detail&nbsp;section,&nbsp;the&nbsp;page&nbsp;and&nbsp;column&nbsp;headers&nbsp;and&nbsp;footers&nbsp;and&nbsp;the&nbsp;margins&nbsp;do&nbsp;not&nbsp;fit&nbsp;the&nbsp;page&nbsp;height.&quot;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gehen
+Sie in diesem Falle in die verwendeten Elemente (Bands) und klicken Sie in die
+Band height. Geben Sie hier einen Wert ein der passt (mm -&gt; DeziDots =
+mm/0,353) oder höher ist. Beim Verlassen des Feldes wird dieser Wert dann
+automatisch auf die richtige Höhe gesetzt.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Der
+Druck des Lieferscheins ist nach unten verschoben</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn man ein Feld mit einer bestimmten Höhe aus einem Report löscht, dann
+bleibt der dafür reservierte Platz bestehen, da dieser über die Bandbreite jenes Bandes bestimmt wird, in dem sich das Feld befindet. Um also den
+entstehenden Leerraum zu entfernen, der durch das Löschen des Feldes entsteht, muss man die Bandbreite entsprechend anpassen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel: Es wird ein Feld "P_BEZEICHNUNG" mit Höhe 24 Pixel aus dem Band
+"Title" entfernt. In der Folge muss die Bandbreite des Bandes "Title" ebenfalls um 24 Pixel
+verringert werden.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Seit
+meiner letzten Änderungen werden die Texte mit Style Informationen gedruckt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+in Ihrem Report ähnliches wie <img border="0" src="Report_Style.gif" width="157" height="17">
+angedruckt, so muss für das jeweilige Textfeld unter Font, Is styled text
+angehackt sein, damit die Formatierungsinformationen aus den Kommentardateien,
+aus den Textdateien usw. mit angedruckt werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="report_Einstallung.gif" width="370" height="380"></p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Praktische
+Kommandos, Bedingungen im iReport</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nachfolgend
+eine lose Sammlung praktischer Kommandos für den iReport.</p>
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nur
+    Drucken wenn String Leer ist:<br>
+    <a href="new%20Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()%3e0)">new Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()>0)</a><br>
+    F_POSITION ist hier der String</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="new%20Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()%3e0%20&amp;&amp;%20$F{F_POSITIONSART}.equals(%22Ident%20%20%20%20%20%20%20%20%20%20%22))">new Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()>0 &amp;&amp; $F{F_POSITIONSART}.equals("Ident          "))</a></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte, dass auch jeder Abschnitt seine Bedingung hat. So sind die
+Bedingungen für den PageHeader üblicherweise in diesem abgebildet (<a href="$V{IS_CURRENT_PAGE_NOT_ONE}">$V{IS_CURRENT_PAGE_NOT_ONE}</a>)
+und nicht bei jedem einzelnen Feld.
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Datenexport
+aus der Druckvorschau</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+insbesondere Listen in anderen Programmen weiterverarbeitet werden können, wird
+dringend empfohlen die Spalten und Zeilen auszurichten. Nur so wird erreicht,
+dass auch in den exportierten Daten die Spalten untereinander stehen. Es reicht <b>NICHT</b>
+dies optisch auszurichten. Es muss dies mit den Jasper Werkzeugen, gleiche
+Breite <b>UND </b>links bzw. rechtsbündig ausgerichtet werden. Auch die Höhen
+müssen gleich und ausgerichtet sein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den eigentlichen Export verwenden Sie am Besten den CSV Export.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Datei in Excel zu übernehmen benennen Sie nun die Erweiterung der Datei
+bitte auf .TXT um. Nun mit Excel öffnen, Getrennte Breite, Trennzeichen Komma,
+Texterkennung &quot;&quot;, markieren Sie nun alle Spalten und Kennzeichnen Sie
+diese als Text und nun Fertigstellen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+haben Sie die Daten optimiert importiert.</p>
+
+</body>
+
+</html>

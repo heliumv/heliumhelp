@@ -1,0 +1,109 @@
+body {
+	background-color: #e0e5ea;
+	font-size: 10pt;
+	font-family: verdana, arial, "lucida console", sans-serif;
+}
+
+table {
+	background-color: transparent;
+	font-family: verdana, arial, "lucida console", sans-serif;
+}
+
+td, tr { 
+  font-size: 10pt;
+  vertical-align : top;
+}
+
+h1 {
+	text-align : center;
+	color : #336699;
+}
+
+h2 {
+	color : #336699;
+}
+
+h3 {
+	color : #336699;
+}
+
+.liAbstand { 
+  line-height: 130%;
+  padding-bottom: 2%;
+}
+
+.abb {
+	font-weight: bolder;
+	padding-right: 10%;
+}
+
+.abstand {
+	height : 10pt;
+}
+
+
+a:link {
+	color: #336699;
+	text-decoration:none;
+}
+		   
+a:visited {
+	color: #114477;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #6688BB;
+	text-decoration:none;
+}
+
+a:active {
+	color:#4466DD;
+    text-decoration:none;
+}
+
+.question {
+	font-variant: normal;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.subquestion {
+	font-variant: normal;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.answer {
+}
+
+.code {
+ font-family:Courier,monospace;
+ font-size: bigger;
+}
+
+.entwickler {
+	margin-left:20px;
+        font:1em/1.3em;
+	color: #CC3300;
+	margin-bottom:1.5em
+}
+
+.modul {
+	font-style : italic;
+	font-variant : small-caps;
+}
+
+.reiter {
+	font-style : italic;
+}
+
+.pfad {
+	font-style: italic;
+	font-variant: small-caps;
+}
+
+.fachlich {
+	font-style : italic;
+}
+

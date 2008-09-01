@@ -1,0 +1,258 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Drucken</title>
+</head>
+
+<body>Deutsche_Mehrwerts
+
+<h1>Tipps und Tricks</h1>
+<p>Mit dieser Seite wollen wir zusätzliche Hilfestellung beim Einsatz von
+Helium V leisten.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Installation des
+Helium V Clients <a href="Client_Install.htm">siehe</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Helium
+V Server ist nach IP Änderung nicht mehr erreichbar?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+die IP des Rechners mit dem Helium V Server geändert, so muss der Helium V
+Server neu gestartet werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Unterschiedliche Eigenschaften am gleichen Drucker"></a>Ich habe zwei Grundeinstellungen bei meinem Drucker,
+zwischen denen ich laufend hin- und herschalten muss</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">z.B. für den Ausdruck von firmeninternen und -externen
+Dokumenten (Papier mit Firmenlogo)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei lokalem Drucker:</p>
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Start &gt; Einstellungen &gt; Drucker und Faxgeräte
+    öffnen</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucker hinzufügen</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">den selben Drucker auswählen, ihm einen anderen Namen
+    zuweisen</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">die Einstellungen ändern</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab jetzt werden &quot;beide&quot; Drucker in Helium V zur
+    Auswahl stehen</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei einem Netzwerkdrucker muss er zuerst am Server eingerichtet werden:</p>
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">beim Server einen neuen lokalen Drucker anlegen, den gleichen Port, wie beim bestehenden Drucker auswählen&nbsp;</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Namen sprechend wählen&nbsp;</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">richtig konfigurieren&nbsp;</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">bei Workstations anlegen</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucker bei den Workstations einzeln konfigurieren</li>
+</ul>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es wurden Änderungen an den Fußzeilen vorgenommen, seither
+kommt nur mehr OK und die Fußzeilen fehlen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier ist der Hintergrund, dass der für die
+Fußzeilen(=Subreport) im Ausgangsreport vorgesehene Platz zu gering ist.
+Üblicherweise ist der vorgesehene Platz nicht hoch genug.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bestimmen Sie anhand des Fußzeilen-Subreports die
+erforderliche Höhe und korrigieren Sie den Ausgangsreport.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis: Achten Sie bei Subreports auch darauf, dass Sie die
+Höhe und Breite so wie auch im Ausgangsreport definieren.<br>
+Hinweis: Es werden für die Fußzeilen nur mehr die Fuss.jrxml verwendet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe dazu unbedingt auch?:\jboss-4.0.4.GA\server\helium\log\server.log
+</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ich
+will in den Auswahllisten auch die rundherum befindlichen Daten sehen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Manchmal
+ist es praktisch z.B. bei Rechnungen nicht nur die eine Rechnung Nr: 06/0000001
+zu sehen, sondern auch die rundherum befindlichen Rechnungen. Um dies
+darzustellen gibt es einen Trick.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Bestimmen Sie mit dem Direktfilter den gesuchten Datensatz. Z.B. Rechnung
+06/0000001. Nun löschen Sie die Eingabe des Direktfilters wieder ohne Enter zu
+drücken. Nun wechseln Sie z.B. in die Kopfdaten oder in die Positionen und
+wechseln sofort wieder zurück in den Auswahlfilter. Durch die Logik, dass
+Helium V auf dem ausgewählten Datensatz stehen bleibt, befinden Sie sich auf
+dem gewünschten Datensatz. Da aber die Filterbedingung inzwischen entfernt
+wurde, werden alle Rechnungen angezeigt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Faxversand"></a>Woran
+kann man erkennen, ob ein Fax tatsächlich versandt wurde?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+den Versandstatus des Faxversandes zu sehen, starten Sie bitte das System-Modul.
+Wählen Sie den unteren Modulreiter Versandauftrag. Nun wählen Sie im oberen
+Modulreiter Gesendet. Nun sollten Sie das gesuchte Fax in der Versandliste
+sehen. Ist es hier nicht enthalten, so sehen Sie bitte unter Fehlgeschlagen oder
+Papierkorb nach. Ist das Fax unter Fehlgeschlagen, so kann die Ursache eventuell
+unter Status ermittelt werden. Ist das Fax unter versendet eingetragen, so wurde
+uns von der darunter liegenden Faxversandsoftware, welche
+Betriebssystemabhängig ist, gemeldet, dass das Fax ordentlich versandt wurde.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Microsoft Umgebungen wird hierzu der Faxdienst des Servers verwendet. Starten
+Sie zur Überprüfung die <img border="0" src="Faxkonsole_Icon.gif" width="67" height="54"> (Start,
+Programme, Zubehör, Kommunikation, Fax, Faxkonsole). Hier wählen Sie nun
+Gesendete Elemente. Es muss hier das gesuchte Fax als versandt mit einem grünen
+Haken versehen eingetragen sein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Faxkonsole.gif" width="668" height="248"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+können nun davon ausgehen, dass vom empfangenden Fax eine Empfangsbestätigung
+an Ihren Faxversand übermittelt wurde.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>WICHTIG:</b>
+Die Faxkarte, genauer die Faxanbindung, darf nur von einem Dienst verwendet
+werden. Sollten Sie also im Fax-Ausgangsfach als Status &quot;ausstehend&quot;
+angezeigt bekommen, so bedeutet dies, dass die Kommunikation zur Faxkarte
+unterbrochen wurde. Die Kommunikation wird erst nach einem Neustart des
+Faxdienstes erneut initialisiert. Wird diese Meldung angezeigt, so gehen Sie
+bitte unbedingt der Ursache nach und beseitigen Sie den Fehler. Nur dadurch ist
+ein stabiler Faxbetrieb möglich. So ist z.B. ein Parallelbetrieb von Tobit-TLD
+und dem Windowsfaxdienst NICHT möglich.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+meinem Client-Update erhalte ich beim Start des Helium V Clients ein
+Fehlermeldung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Could
+not find main class.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Start_Fehler.gif" width="305" height="119"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+bedeutet, dass auf Ihrem PC eine falsche Java-Version installiert ist.
+Aktualisieren Sie Ihre Java Virtual Machine, gemäß den Anweisungen Ihres
+Administrators (Siehe z.B. Release Notes). Für Helium V ab Version 5.10 ist
+eine JRE von 1.5 erforderlich.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Installation
+des automatischen Starts des Helium V Clients über den Taskplaner</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Manchmal
+ist es praktisch, wenn der/ein Helium V Client automatisch gestartet wird, z.B.
+für die Stiftzeiterfassung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+kann auch durch den Taskplaner, wie er in Windows Betriebssystemen zur
+Verfügung steht, realisiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+ist wichtig, dass das zu startende Programm direkt und nicht über den
+lpclientpc.bat Batch gestartet wird, da sonst der Taskplaner nicht erkennen
+kann, dass Helium V bereits läuft.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ausführen:
+javaw -Xms128m -Xmx256m -Djava.naming.provider.url=jnp://HeliumVServer:2099 -Djava.naming.factory.initial=org.jnp.interfaces.NamingContextFactory -jar
+C:\Programme\helium_v\lpclientpc.jar %*</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Taskplaner_Erweiterte_Optionen.gif" width="368" height="293"></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Übersetzung
+von Texten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Helium V können alle Lables (Beschriftungen der Knöpfe, Eingabefelder usw.)
+dynamisch übersetzt werden. Bei der Verwendung einer PostgresQL Datenbank ist
+zu berücksichtigen, dass die eingetragenen C_TOKEN <u><b>OHNE</b></u> endende
+Leerstellen eingegeben werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der MS-SQL Datenbank macht dies keinen Unterschied, in der PostgresQL sind das
+zwei unterschiedliche Tokens / Datensätze.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Herunterfahren
+meines Helium V Linux-Server</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zum
+Herunterfahren Ihres Helium V Linuxservers gehen Sie wie folgt vor:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+Stellen Sie eine Verbindung mittels Putty zu Ihrem Server her. Putty finden Sie
+auch der Installations-CD unter Tools\Linux\putty.exe <img border="0" src="putty.gif" width="57" height="38"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.
+Bei Host Name geben Sie die IP-Adresse Ihres Helium V Linuxservers an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="putty_connect.gif" width="294" height="103"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Klicken
+Sie danach auf open.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.
+Melden Sie sich als root an und geben Sie das definierte Passwort ein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+erhalten Sie das Consolen Prompt. Nun geben Sie shutdown -h now ein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="putty_login.gif" width="471" height="90"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+der Eingabe von Enter fährt Ihr Linuxserver sofort herunter.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Richtige
+Einstellung der Mehrwertsteuersätze für Deutschland</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+in Deutschland seit 1999 einige Mehrwertsteueränderungen waren, hier die
+richtige Einstellung der Mehrwertsteuersätze für allgemeine Waren. Eine
+Luxussteuer, wie sie in Österreich bekannt ist, gibt es in Deutschland derzeit
+nicht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Deutsche_Mehrwertsteuersaetze.gif" width="764" height="104"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Server kann nicht mehr erreicht werden</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Dienst läuft nicht mehr, beim Starten wird die Meldung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&quot;Der
+Dienst Helium V Application Server konnte nicht gestartet werden. Der Dienst
+wurde unerwartet beendet&quot; ausgegeben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
+Sie die am Server installierte Java-Version.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
+Sie den Datenbankzugriff z.B. über Dbamgr2k</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Starten
+Sie den Server per Hand. Wechseln Sie dazu in das Verzeichnis <a href="file:///c:/jboss-4.0.4.GA/bin">c:\jboss-4.0.4.GA\bin</a></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geben
+Sie in unter der Eingabeaufforderung run -c helium ein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beobachten
+Sie die Ausgaben an der Konsole.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Helium V Client kann keine Hilfe mehr angezeigt werden</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Vermutlich
+kommt eine ähnliche Fehlermeldung wie die nachfolgend abgebildete:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Proxyserver_Fehler.gif" width="283" height="164"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Überprüfen
+Sie bitte die Verbindungseinstellungen Ihres Browsers. Vermutlich haben Sie
+über einen Proxyserver Zugang zum Internet. Stellen Sie bitte die
+Verbindungsdefinition so ein, dass für Lokale Adressen der Proxyserver umgangen
+wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Internetexplorer gehen Sie unter Extras, Internetoptionen, Verbindungen, <br>
+<img border="0" src="Lan-Einstellungen.gif" width="366" height="84"> bei Lan-Einstellungen klicken Sie
+auf Einstellungen und hacken unter dem Bereich Proxyserver <img border="0" src="Proxy_umgehen.gif" width="235" height="27">
+an.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Firefox gehen Sie unter Extras, Einstellungen, Allgemein,
+Verbindungseinstellungen und geben unter &quot;Kein Proxy für&quot; den
+entsprechenden Netzwerkkreis an.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

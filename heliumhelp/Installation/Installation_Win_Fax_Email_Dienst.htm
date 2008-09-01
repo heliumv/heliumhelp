@@ -1,0 +1,462 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Installation_Win_Fax_Email_Dienst</title>
+</head>
+
+<body>
+
+<h1>Installation des Fax und EMail Dienstes</h1>
+<p>Hier finden Sie die Beschreibung der Einrichtung des Helium V EMail- und Faxversand
+- Dienstes für Windows Betriebssysteme.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Systemvoraussetzungen:</p>
+<UL>
+	<LI><P STYLE="text-decoration: none; text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">Helium V
+	Installation mit MSSQL Server 2000, 2003 oder MSDE 2000 oder<br>
+      Helium V Installation mit PostgresQL Server</P>
+</UL>
+<UL>
+	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">Windows XP oder Windows 2003 mit
+	installierter Faxfunktion<br>
+      Mit Einschränkungen auch Windows2000 Server.</P>
+</UL>
+<UL>
+	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">SMTP Mail Provider</P>
+	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">Für
+      den Faxversand mit ISDN Karten darf im Versandrechner nur eine ISDN Karte
+      eingebaut sein.<br>
+      Diese muss ausschließlich für Helium V zur Verfügung stehen</P>
+	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">Alternativ:
+      Tobit / David ab Version 6.6</P>
+</UL>
+<P STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Hinweis:
+</P>
+<P STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Für
+die Installation muss der Server mehrfach neu gestartet werden. Bedenken Sie
+dies bei Ihrer Planung.
+</P>
+<P STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">1.)
+Installation des Windows-Faxdienstes:
+</P>
+<P STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Voraussetzungen:
+</P>
+<ul>
+  <li>
+    <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Diva
+    Server Faxmodem: Siehe dazu auch <a href="../System/Getestete_Konstellationen.htm#Faxkarten">getestete
+    ISDN Karten</a></li>
+  <li>
+    <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Alternativ
+    kann auch ein Faxmodem verwendet werden.</li>
+  <li>
+    <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Betriebssystem
+    CD</li>
+  <li><P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Das
+    Setup-Programm für den Helium V Fax und EMail-Dienst finden Sie unter
+    &quot;helium-v_versand\setup.exe&quot;<br>
+    Denken Sie daran die aktuellste Version zu verwenden.
+</P>
+  </li>
+  <li><P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Zugangsdaten
+    zu Ihrem SMTP Server
+</P>
+  </li>
+</ul>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Für
+den Faxversand wird eine Eicon Diva Server 2FX verwendet. Diese muss im Server
+installiert sein.<br>
+<b>
+ACHTUNG:</b> Es darf nur eine ISDN Karte installiert sein und diese muss
+ausschließlich für Helium V zur Verfügung stehen.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Von
+der Verwendung eine Fritz-Karte (aktiv oder passiv) muss leider abgeraten
+werden.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Vorgehensweise:
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">a.)
+ISDN Karte über die CD installieren, mit default Einstellungen
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">b.)
+Nun richten Sie über den Diva Server Konfigurationsmanager die Faxfunktion
+entsprechend ein.<br>
+Rechtsklick in der Ebene Dienste, Modem. Nun wählen Sie in der rechten Spalte
+Eicon Diva Fax Modem.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Erneut
+Rechtsklick auf Fax und Zum Verbinden auswählen.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Nun
+Rechtsklick auf die Karte (2FX) und Verbindung herstellen. Damit wird der
+Faxdienst von dieser Karte bedient.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Der
+RAS Dienst wird derzeit nicht benötigt.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Diva_Server_konfig.jpg" width="284" height="311">
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Nach
+der Konfiguration muss diese aktiviert werden. Wählen Sie dazu File, activate.
+ACHTUNG: Danach muss der Server neu gestartet werden.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">c.)
+Nun den Faxdienst über die Windows-Komponentenauswahl installieren.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Die Komponentenauswahl finden Sie bei Windows2003 Standardserver unter
+Systemsteuerung, Software, Windowskomponenten Hinzufügen / Entfernen, detto bei
+Windows XP.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Fax_Software_Deinstall.gif" width="503" height="414">
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">d.)
+Nun installieren Sie die Windows-Faxdienste.<br>
+Unter Windows2003 Standardserver verwenden Sie bitte obiges Auswahlbild.<br>
+Der Faxdrucker muss nicht freigegeben werden.<br>
+Unter Windows2003 Standardserver wird das Verzeichnis für die gesendeten Faxe
+nicht abgefragt.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">e.)
+Im Windows2003 Standardserver finden Sie nun unter Start, Programme, Zubehör,
+Kommunikation, Fax den Fax Dienstmanager und die Fax Konsole.<br>
+Im Windows XP steht in diesem Pfad nur die Faxkonsole zur Verfügung.<br>
+Starten Sie die Fax Konsole. Beim ersten Start werden Sie durch den
+Konfigurationsassistenten geführt.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Sie
+können dies auch später in der Fax Konsole unter Extras, Fax konfigurieren
+durchführen.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">f.)
+In der Fax Konsole erstellen Sie nun ein erstes Textfax unter Datei, Fax senden
+und senden Sie dieses an ein entsprechend verfügbares Fax um den erfolgreichen
+Versand zu überprüfen.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Wurde
+das Testfax erfolgreich versandt, so ist die Konfiguration der ISDN Karte und des Faxdienstes für den Versand abgeschlossen.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Setzen
+Sie nun mit der Konfiguration des Helium V Versanddienstes fort.
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Hinweis:<br>
+Unter Windows2000 wird der Faxdrucker nur unter bestimmten Umständen
+installiert, siehe nachfolgend. D.h. um den Faxdrucker einzurichten muss zuerst
+ein Modem installiert werden.
+</P>
+<p class="question" STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">MORE INFORMATION</p>
+<p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">
+  Windows 2000 has been designed to create the Fax Printer component whenever
+  one of the following two scenarios occurs:</p>
+<ul>
+  <li>
+    <p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">When a modem is detected by means of a device installer
+          that operates in a subordinate or partnership role, and not during
+          Windows 2000 Setup.</li>
+  <li>
+    <p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">When the Fax component is installed by means of the
+          Optional Component Manager (OCM) and a modem is detected during
+          Windows 2000 Setup.</li>
+</ul>
+<p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">
+  During Mini-Setup, OCM does not start, and the Fax Printer component is not
+created.</p>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;
+</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;
+</P>
+<P STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">2.)
+Installation und Konfiguration des Helium V Versanddienstes:</P>
+<OL>
+	<LI><P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Setup.exe ausf&uuml;hren und die
+	Anwendung installieren<br>
+      <b>Hinweis:</b> Wird bei der Installation FXSAPI.dll konnte nicht
+      registriert werden angezeigt, so ist der Windows-Faxdienst nicht
+      installiert. Es <b>muss</b> vor der Installation des Helium V
+      Versanddienstes der Windowsfaxdienst installiert sein, ansonsten kann die
+      Installation nicht ordnungsgemäß durchgeführt werden.</P>
+	<LI><P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Windows Fax
+	konfigurieren</P>
+	<LI><P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Helium_V_Versanddienst
+	mit der Option -c aufrufen,</P>
+</OL>
+<UL>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">folgendes
+	Fenster wird angezeigt:</P>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Versanddienst_htm_x1.jpg" width="632" height="237"></P>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;
+		</P>
+	<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><SPAN STYLE="text-decoration: none"><b>Mail
+	Server:</b>	Geben Sie hier den Namen des SMTP Servers ihres Providers
+	ein</SPAN></P>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Port:</b>		Port f&uuml;r
+	das SMTP-Protokoll (Standard ist 25)</P>
+    <P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Authentifizierung:</b>	Anhaken
+	falls der SMTP-Server eine Authentifizierung ben&ouml;tigt. Hinweis: Pop vor
+    SMTP kann nicht verwendet werden, da Pop ja Daten vom EMail Server abholen
+    würde. Dies wird jedoch derzeit von Helium V nicht unterstützt.</P>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Benutzer/Kennwort:</b>	Benutzername
+	und Kennwort für den Zugang zum SMTP-Servers</P>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Datenbankserver:</b>	Name
+	des Datenbankservers von Helium V (Name des Rechners auf dem 		der
+	SQL-Server ausgef&uuml;hrt wird)</P>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Datenbank:</b>	Name
+	der Helium V Datenbank (Standard LP)</P>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Fax
+	Server:</b>	Name des Rechners mit der Windows-Fax Software, also auf dem gefaxt
+    wird. Dies wird üblicherweise der Rechner sein, auf dem auch der HeliumV
+    Versanddienst läuft. <b>Hinweis:</b> Die IP-Adresse darf <b>NICHT</b>
+    angegeben werden.</P>
+    <P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Mailadresse
+    Admin:</b> Emailadresse des Versanddienst Administrators. An diese EMail-Adresse
+    werden Probleme beim Faxversand gemeldet. Ist diese leer, so werden keine
+    Meldungen versandt.</P>
+	<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><SPAN STYLE="text-decoration: none"><BR>F&uuml;llen
+	Sie alle Felder aus und Best&auml;tigen Sie die Eingaben mit [OK].</SPAN></P>
+	<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
+	<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none"><b>WICHTIG:</b>
+    Für den Zugriff auf die PostgresQL Datenbank muss:</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none">a.)
+    Postgres ausgewählt werden</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none">b.)
+    der ODBC Treiber für die Postgresdatenbank installiert werden. Diesen
+    Treiber finden Sie auf Ihrer Installations-CD unter helium-v_versand\PostgresODBC.</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none">c.)
+    der ODBC Treiber muss so konfiguriert werden, dass er alle binären
+    Datenfiles überträgt. Siehe dazu Ihre Installations-CD unter
+    helium-v_versand\PostgresODBC\Eventuell Datenquelle einrichten.<br>
+    <br>
+    <b>
+    Hinweis:</b> Wenn nur der Emailversand verwendet werden sollte, dann muss der
+    Faxserver leer gelassen werden.</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none"><b>Hinweis:</b>
+    Acrobat Read muss installiert sein. Getestete Versionen 7, deutsch.</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none"><b>Hinweis:</b>
+    Geben Sie immer die Servernamen an. Keine IP-Adressen. Nur damit kann der
+    Verbindungstest entsprechend durchgeführt werden.&nbsp;</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none"><b>***
+    ACHTUNG *** *** ACHTUNG *** *** ACHTUNG *** *** ACHTUNG ***&nbsp;</b></span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none">Installieren
+    Sie den Helium V Versanddienst nur über die Console (nicht über
+    Remotedesktop)<br>
+    Wenn bei der Installation Probleme auftreten, so werden diese von den
+    Diensten eventuell <b>ohne</b> Einträge im Ereignisprotokoll auf die
+    Console ausgegeben. In einer Remotedesktop Sitzung sehen Sie diese Anzeigen
+    nicht und können diese daher auch nicht beheben.</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none">Alternativ
+    können Zugriffe über VNC, PC-anywhere oder ähnlichem verwendet werden,
+    oder am Besten vor Ort.<br>
+    <br>
+    Installation für Tobit /David</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Versanddienst_mit_Tobit.gif" width="632" height="173"></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Ab
+    der Version 1.0.0.16 steht auch die Ansteuerung des Tobit zur Verfügung. Es
+    werden die EMails über die File-Scan-Service und die Faxe über den PCL
+    Konverter übergeben.</P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Achten
+    Sie bei der Installation dieser Variante darauf, dass sich der Systemdienst
+    am Server mit dem Installierten Tobit-Verzeichnissen anmelden darf. Für die
+    Konvertierung der Faxe in ein PCL Dokument muss ein entsprechender PCL
+    Drucker installiert werden. Details siehe bitte Dokumentation auf Ihrer
+    Helium V Installations-CD.</P>
+</UL>
+<OL START=4>
+	<LI><P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">
+	mit der Option -i aufrufen um den Dienst in Windows zu installieren</P>
+	<LI><P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Helium_V_Versanddienst
+	mit der Option -r aufrufen um den Dienst zu starten.</P>
+</OL>
+<OL START=3>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Folgendes
+	Fenster wird angezeigt:</P>
+</OL>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><IMG SRC="Versanddienst_htm_24e80b80.jpg" NAME="Grafik2" ALIGN=LEFT width=235 height=202 BORDER=0><BR CLEAR=LEFT>
+Durch Klick auf Ausblenden kann diese Anzeige unterdrückt werden. Zum erneuten
+Anzeigen starten Sie den Versanddienst wieder.
+</P>
+	<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Bedeutung der
+	Felder:</P>
+<ul>
+  <li>
+    <p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Auftr&auml;ge	Anzahl
+		der offenen Fax Versandauftr&auml;ge (Email wird sofort weitergereicht
+    und wird daher nicht angezeigt)</li>
+  <li>
+    <p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Aktiver
+		Auftrag	Nummer des Auftrags in Bearbeitung</li>
+  <li>
+    <p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Faxe in
+		Arbeit	Anzahl der Faxe in den Versandauftr&auml;gen des Faxservers</li>
+</ul>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Weitere Kommandozeilenoptionen:</P>
+<blockquote>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">	-?	Anzeige der verf&uuml;gbaren
+Optionen</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">	-u	Dienst deinstallieren</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">	-s	Dienst stoppen</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">	-v	Versionsinfo anzeigen</P>
+</blockquote>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b>
+Nach der Installation empfiehlt es sich, den Faxserver neu zu starten.</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b>
+ Denken Sie daran, dass per default der Helium V Versanddienst auf Manuell
+gestellt ist. Nach den Erfolgreichen Tests muss dieser auf automatisch gestellt
+werden.</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b>
+ Wenn mit der Diva-Karte auch eingehende ISDN Verbindungen, z.B. für PCanywhere,
+möglich sein sollten, so muss auch der Capi-Dienst der Diva Karte installiert
+sein. <img border="0" src="Diva_Capi.gif" width="58" height="57">. Für die Konfiguration des Kanals
+klicken Sie auf die Verbindungslinie zwischen Capi und Karte <img border="0" src="Diva_Verbindung.gif" width="79" height="108">und
+definieren Sie im rechten Bereich den Anruftyp durch Klick in das entsprechende
+Feld. <img border="0" src="Diva_Anruftyp.gif" width="303" height="23">&nbsp;</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="question">3.)
+Installation des Acrobate Readers</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Für
+die Übergabe des Faxinhaltes wird der kostenlose Acrobate Reader benötigt.
+Hier konnte nur die Version 7.07 freigegeben werden.</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Sie
+finden die Version 7.07 auf der Helium V Installations CD unter Adobe.</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>ACHTUNG:</b>
+Nach erfolgreicher Installation des Acrobate Reader muss dieser einmal per Hand
+gestartet werden und die Copyright Meldungen müssen bestätigt werden. Schalten
+Sie bitte die automatische Suche nach Updates aus (Bearbeiten,
+Grundeinstellungen, Updates, Keine automatische Suche nach Updates).</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Nach
+der Installation des Acrobate Readers den Helium V Versanddienst neu starten.</P>
+<p STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">4.)
+Versenden Sie nun ein Testfax und ein Test-Email aus Ihrer Helium V Installation</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Am
+Einfachsten unter Kunden, Auswahl eines Testkunden, Kurzbrief.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Nach
+der Erstellung des Text-EMails, des Test-Faxes prüfen Sie unter System,
+Versandauftrag ob dieses in den Versandaufträgen eingetragen ist.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Bei
+einem Erfolgreichen Versand finden Sie Ihren Versandauftrag unter <img border="0" src="Gesendet.gif" width="55" height="20">.
+Mit den entsprechenden Versanddaten.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Bei
+einem nicht erfolgreichen Versand finden Sie Ihren Versandauftrag unter
+Fehlgeschlagen. Dort ist auch die Ursache ersichtlich. Beheben Sie diese um den
+Versand durchzuführen.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Sollte
+sich der Status des Versandauftrags nicht ändern, so läuft der Helium V
+Versanddienst nicht ordnungsgemäß. Prüfen Sie in der Ereignisanzeige des
+Server unter Anwendung, ob der Helium V Versanddienst installiert und gestartet
+ist und ob nicht weitere Meldungen des Helium V Versanddienstes eingetragen
+sind.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Wird
+die Meldung &quot;Error: [-2147023741] Error during SendFax: Operation failed.&quot;
+angezeigt, so ist der Acrobate Reader nicht ordnungsgemäß installiert.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Sind
+keine weiteren Meldungen im Ereignisslog eingetragen, so starten Sie bitte die
+Faxkonsole (Start, Programme, Zubehör, Kommunikation, Fax, Faxkonsole). Dort
+muss das zu versendende Fax unter Ausgangsfach ersichtlich sein. Hier ist auch
+ein eventueller Abbruch des Faxversandes ersichtlich. Für genauere Details
+wählen Sie bitte Extras, Faxmonitor. Klicken Sie auf Mehr, so werden
+entsprechende Fehlerprotokolle angezeigt.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Hinweis:</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Faxkonsole.gif" width="594" height="192"></p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">In
+der Faxkonsole dürfen für die Faxnummern ausschließlich Ziffern und
+Leerstellen angezeigt werden. Alle anderen Zeichen verursachen Versandabbrüche.
+Deshalb sind auch die obigen Faxe nicht versandt worden.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Zur
+Prüfung / Überwachung der Faxkommunikation können Sie den Faxmonitor laufen
+lassen.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b>
+Läuft der Faxdienst auf einem anderen Server als der Helium V Versanddienst, so
+muss der Helium V Versanddienst auf den Faxserver zugreifen dürfen. D.h. auf
+dem Faxserver muss ein entsprechendes Benutzerkonto für den Helium V
+Versanddienst eingerichtet sein und der Helium V Versanddienst muss unter diesem
+Konto laufen.</p>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b></P>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Nach
+erfolgreicher Installation und erfolgreichem Test muss der Helium V
+Versanddienst auf automatischen Start im Dienstemanager gestellt werden.</P>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b></P>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Wir
+der Windows Faxdienst beendet, so wird er automatisch durch den Helium V
+Versanddienst wieder neu gestartet.</P>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Bitte
+beachten Sie, dass vor dem Start des Helium V Versanddienstes der Windows
+Faxdienst ordnungsgemäß konfiguriert ist.</P>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
+
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b></P>
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Die
+Fehlermeldungen des Helium V Versanddienstes werden in der Ereignisanzeige,
+Anwendung protokolliert.</P>
+
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
+
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Vorgehensweise
+um Fehler zu finden:</b></P>
+
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Es
+wird in der Ereignisanzeige, Anwendung das Starten und das Beenden des Helium V
+Versanddienstes protokolliert. Dies muss eingetragen sein, ansonsten gibt es
+generelle Installationsprobleme.</P>
+
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Sie
+können dazu den Filter auf die Quelle Helium_V_Versand einschränken.</P>
+
+<P STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Versanddienst_Ereignis_Anzeige.gif" width="911" height="379"></P>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Versanddienst_Ereignis_Anzeige1.gif" width="404" height="448"></p>
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Wird
+in der Fehlerbeschreibung <i>Could not send Query(connection dead)</i>
+angezeigt, so bedeutet dies, dass keine Verbindung zur Helium V Datenbank
+möglich ist. Prüfen Sie die Einstellungen des Versanddienstes, ob Sie von
+diesem Rechner aus mit einem Datenbanktool (PGAdmin, dbamgr) auf die Datenbank
+zugreifen können.</p>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b></p>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Finden
+Sie hier Einträge wie folgt:</p>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Error: [91] Error during NTServiceOCX_Start event, Objektvariable oder With-Blockvariable nicht festgelegt<br>
+</p>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">so
+bedeutet dies, , dass keine Verbindung zum Faxserver mehr aufgebaut werden kann.
+Überprüfen Sie dies bitte, indem Sie in der Konfiguration des Versanddienstes
+den Namen des Faxserver entfernen und dann den Versanddienst erneut starten.
+Wird nun keine Fehlermeldung mehr ausgegeben, so kann keine Verbindung zum
+Faxserver-Dienst aufgebaut werden. Versuchen Sie in den Diensten den Fax-Dienst
+zu stoppen und neu zu starten.</p>
+
+<p STYLE="text-decoration: none; text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Wenn
+der Faxdienst ordnungsgemäß neu gestartet werden kann, so kann dieser vom
+Versanddienst, ev. nach erneutem Eintrag des Namens des Faxservers, neu
+gestartet werden.</p>
+
+</body>
+
+</html>
