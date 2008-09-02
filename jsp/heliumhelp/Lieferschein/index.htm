@@ -1,0 +1,347 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Lieferschein</title>
+</head>
+
+<body>
+
+<h1>Lieferschein</h1>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="../Statusdiagramme/lieferschein.png">Statusübergang</a></p>
+
+<p><b>Q: Statuswechsel im Lieferschein</b></p>
+<ol>
+  <li>Angelegt (nach anlegen des Lieferschein)</li>
+  <li>Offen (nachdem der Lieferschein das erste Mal gedruckt wurde); dieser
+    Status wird nur erreicht, wenn der Mandantenparameter XY definiert: Angelegt
+    -&gt; Drucken -&gt; Offen. Wird derzeit nicht unterstützt. D.h. ein
+    Lieferschein wird beim Drucken sofort von Angelegt auf Geliefert geändert.
+  <li>Geliefert (nachdem der Lieferschein manuell auf geliefert gesetzt wurde
+    oder nachdem gedruckt wurde); wann dieser Status erreicht wird, wird durch
+    den Mandantenparameter XY festgelegt.
+  <li>Verrechnet (nachdem der gesamte Lieferschein verrechnet wurde)
+  <li>Erledigt (der Lieferschein wurde manuell auf erledigt gesetzt)
+  <li>Storniert (der Lieferschein wurde manuell storniert) -&gt; alle Positionen
+    wurden ans Lager zurückgebucht.</li>
+</ol>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ich
+Auftragspositionen übernehmen?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Legen Sie einen
+Auftragsbezogenen Lieferschein an. Verwenden Sie dazu am Besten den Knopf <img border="0" src="Lsch_anhand_Auftrag.gif" width="32" height="27">
+ Lieferschein aus Auftrag übernehmen in der Auswahlliste der Lieferscheine. </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach der Auswahl des
+Auftrags werden Sie
+automatisch in die Sicht Auftrag geführt. D.h. in dieser Auswahlliste sehe Sie
+alle noch nicht vollständig ausgelieferten mengenbehafteten Positionen des
+Auftrags. Wählen Sie hier die auszuliefernde Position aus. </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Unter Menge LS wird
+automatisch die noch offene bzw. auf diesem Lager verfügbare Menge
+vorgeschlagen. Ändern Sie diese gegebenenfalls entsprechend ab.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">HINWEIS:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte unterscheiden
+Sie klar zwischen der Lieferscheinbuchung im Modulreiter <img border="0" src="LS_Positionen.gif" width="76" height="22"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">und der
+Auftragsbezogenen Lieferscheinbuchung im Modulreiter <img border="0" src="LS_Sicht_Auftrag.gif" width="32" height="27"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Unter Positionen
+werden für einen Auftragsbezogenen Lieferschein <u><b>zusätzliche</b></u>
+Positionen ausgeliefert. Diese reduzieren <u><b>Nicht</b></u> die offenen Mengen
+des Auftrages. Die offenen Mengen des Auftrages werden nur in der Sicht Auftrag
+entsprechend berücksichtigt. </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ich kann meinen Auftrag bei der Auswahl aus dem Lieferschein nicht finden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In der Auswahlliste der Aufträge werden nur Freie Aufträge und Abrufaufträge
+angezeigt, welche im Status offen oder im Status teilerledigt sind. Ist Ihr
+Auftrag noch im Status angelegt, so muss er zuerst gedruckt werden (an den
+Kunden versandt werden).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Rahmenaufträge
+werden durch Abrufe (Abrufaufträge) erfüllt und werden daher in der
+Auftragsauswahlliste aus dem Lieferschein nicht angezeigt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann ich alle offenen Auftragspositionen auf einmal in den Lieferschein buchen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Klicken Sie dazu in der Sicht Auftrag auf das <img border="0" src="LS_Sicht_Auftrag.gif" width="32" height="27">
+Icon. Damit werden alle
+offenen Positionen des Auftrages, soweit ein Lagerstand vorhanden ist, in den
+Lieferschein übernommen und somit der Auftrag soweit wie möglich erfüllt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q: Wieso
+sind nach der Übernahme eines Auftrags im Lieferschein keine Positionen
+abgebucht?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bei der Anlage eines Auftragsbezogenen Lieferscheines wird die Verknüpfung des
+Lieferscheines mit dem Auftrag hergestellt und die Kopfdaten des Auftrags in den
+Lieferschein übernommen. Inhalte des Auftrags werden nicht automatisch
+übernommen. D.h. Sie können dadurch die einzelnen Positionen des Auftrags, je
+nach der gewünschten auszuliefernden Menge in den Lieferschein übernehmen.
+Zugleich werden mit der durch die Übernahme hergestellten Verknüpfung die
+offenen Auftragspositionen mitverwaltet. D.h. es ist für Sie jederzeit
+ersichtlich, wieviel von einem Auftrag noch auszuliefern ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der Sicht Auftrag kann jede einzelne noch offene Position des Auftrags in
+den Lieferschein übernommen werden. Zur Übernahme aller offenen
+Auftragspositionen siehe bitte oben.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wo sehe ich den
+aktuellen Lagerstand eines Artikels?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Während der
+Übernahme der Auftragspositionen in den Lieferschein wird in der Statuszeile
+der aktuelle Lagerstand des Artikel, des für den Lieferschein gewählten Lagers
+angezeigt. (Anzeige neben dem Lieferscheinstatus)</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="LS_Statuszeile1.gif" width="365" height="26"></p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ich
+eine Auftragspositionen überliefern?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Übernehmen Sie
+vorerst die offene Auftragsmenge im Reiter <img border="0" src="LS_Sicht_Auftrag.gif" width="32" height="27">.
+Nun wechseln Sie in den Reiter <img border="0" src="LS_Positionen.gif" width="76" height="22">
+und korrigieren Sie die Menge auf die gewünschte Menge. Dadurch haben Sie
+bewusst eine Überlieferung einer Auftragsposition herbeigeführt. </p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann ich
+Auftragspositionen überliefern?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Ja. Übernehmen
+Sie zuerst die noch offene Auftragsmenge im Modulreiter Sicht Auftrag. Ist die
+gewünschte Position nun laut Auftrag vollständig geliefert, so können Sie
+trotzdem die ausgelieferte Menge noch einmal ändern, indem Sie in die
+Positionen wechseln und dort die Menge entsprechend abändern. Hier sind&nbsp;
+auch Überlieferungen erlaubt. </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie wird ein Auftrag erledigt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Automatisch wenn alle mengenbehafteten Positionen des Auftrags geliefert wurden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<a name="Wieso kann ich bei der Erstellung eines Auftragsbezogenen Lieferscheines den soeben angelegten Auftrag nicht auswählen"></a>Wieso
+kann ich bei der Erstellung eines Auftragsbezogenen Lieferscheines den soeben
+angelegten Auftrag nicht auswählen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Damit ein Auftrag in der Liste der offenen Aufträge aufscheint muss er den
+Status offen (=gedruckt) oder teilgeliefert haben. Aufträge die angelegt,
+storniert oder bereits erledigt sind scheinen in der Liste nicht auf.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was passiert beim Stornieren eines Lieferscheines?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn ein Lieferschein storniert wird, werden alle Buchungen, die gemacht wurden, rückgängig gemacht. Das betrifft Lagerbuchungen,
+Auftragreservierungen und die offenen Mengen in den zugehörigen Auftragpositionen. Die Lieferscheinpositionen behalten dabei ihre
+Informationen (Menge, Preis,...), der Status des Lieferscheins wechselt auf storniert. Der Storno eines Lieferscheins kann nicht rückgängig gemacht
+werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im Auftrag Sicht Lieferstatus scheinen die Positionen von stornierten
+Lieferscheinen nicht auf.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Es wurde versehentlich der falsche Auftrag verknüpft. Kann ich das Ändern?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Um die Auftragszuordnung eines Lieferscheines zu ändern, oder auch die
+Verknüpfung zu einem Auftrag zu entfernen, müssen alle Positionen aus diesem Lieferschein
+entfernt werden. Dann gehen Sie wiederum in die Kopfdaten und wählen ändern.
+Es kann nun auch der Auftrag geändert oder die Zuordnung gelöscht werden. Zum
+Löschen der Verknüpfung mit dem Auftrag wählen Sie die Auftragsauswahl <img border="0" src="Auftragsauswahl1.gif" width="123" height="23">
+und in der Auftragsauswahlliste dann löschen <img border="0" src="Loeschen.gif" width="31" height="26">.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+aus einem Auftragsbezogenen Lieferschein einen Freien Lieferschein zu machen,
+muss zusätzlich noch die Lieferscheinart geändert werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ich habe einen Lieferschein angelegt und kann ihn nicht mehr löschen. Warum?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn Sie mit neu einen Lieferschein angelegt haben, dann alle Pflichtfelder
+befüllt haben und danach die Kopfdaten des Lieferscheines abgespeichert haben,
+so wird von Helium V eine eindeutige Nummer für diesen Lieferschein vergeben.
+Laut Rechnungslegungsgesetz müssen Belege fortlaufend nummeriert sein. Aus
+diesem Grund kann der Lieferschein nicht mehr gelöscht werden. Er kann jedoch
+mit Klick auf <img border="0" src="LS_Storno.gif" width="32" height="27"> storniert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zum
+Storno ist folgendes zu beachten:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Beim Storno bleibt die Lieferscheinnummer erhalten, auch der Inhalt des
+Lieferscheines bleibt erhalten. Die auf dem stornierten Lieferschein
+angeführten Artikel mit Lagerbuchungen wurden jedoch durch das Storno wieder an
+das Lager zurückgegeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Es kann (braucht) nur ein Lieferschein im Status offen storniert werden.<br>
+Ein Lieferschein der bereits verrechnet oder erledigt ist darf nicht mehr
+storniert werden.<br>
+Ein Lieferschein der nur angelegt ist kann jederzeit verändert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Dieses Verhalten ist für alle Bewegungsmodule (Angebot - Bestellung) gleich.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ich keine eine Artikelposition im Lieferschein nicht mehr ändern. Warum?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Aus Gründen der strengen Lagerlogik ist es derzeit nicht möglich, bei einer
+Lieferscheinposition einfach die Artikelnummer zu ändern bzw. die Positionsart
+von Ident auf z.B. Handeingabe zu ändern. Sie müssen derzeit die Position
+löschen und mit neu oder einfügen eine neue Position übernehmen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Anzeige der Detaildaten in der Sicht Auftrag eines Lieferscheines</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Anzeige ist von der Bearbeitung der einzelnen Position abhängig.</p>
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Lesen:
+    Es werden die tatsächlich erfassten Lieferscheinpositionen und Mengen
+    angezeigt.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bearbeiten:
+    Hier wird zwischen einer neu erfassten und der Bearbeitung einer bereits
+    erfassten Lieferschein Position unterschieden.
+    <ol>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erfassen
+        einer neuen Lieferscheinposition (eigentlich Übernahme einer
+        Auftragsposition in den Lieferschein).<br>
+        Als Menge wird die offene Menge der Auftragsposition oder die auf Lager
+        verfügbare Menge, welche auch immer kleiner ist, vorgeschlagen. Die
+        kleinste eingebbare Menge ist 0,001. Ist ein Artikel Chargen oder
+        Seriennummern pflichtig, so muss auch diese Information mit angegeben
+        werden.</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+        eine bestehende Lieferscheinposition geändert, so wird hier die bereits
+        erfasste / gebuchte Menge zur Bearbeitung vorgeschlagen.</li>
+    </ol>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+    Speichern der Lieferscheinposition wird:
+    <ol>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">nach
+        der Erfassung einer neuen Lieferscheinposition diese angelegt.</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">nach
+        der Änderung einer bestehenden Lieferscheinposition diese mit der
+        entsprechenden Änderung abgespeichert.<br>
+        Danach ist die Lieferscheinposition auch in der Ansicht Positionen des
+        Lieferscheines sichtbar und kann von dort gelöscht werden.</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">wurde
+        ein Auftragsposition nur zum Teil ausgeliefert, so wechselt zugleich mit
+        dem Speichern der Auftragsposition diese in den Status teilerledigt.</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">wurde
+        eine Auftragsposition vollständig als geliefert gebucht, so scheint sie
+        in der Sicht Auftrag nicht mehr auf. Für den Fall, dass trotzdem diese
+        Lieferschein Position geändert werden sollte, muss dies vom Panel
+        Positionen aus vorgenommen werden.</li>
+    </ol>
+  </li>
+</ol>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was ist unter Bestellnummer einzugeben? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bei einem Großteil der Geschäftsfälle ist es, schon aus Gründen der
+rechtlichen Sicherheit, erforderlich dass sich die Lieferung auf eine Bestellung
+Ihres Kunden bezieht. Diese Bestellnummer Ihres Kunden tragen Sie hier ein.
+Bezieht sich der Lieferschein auf einen Auftrag so wird dieses Feld automatisch
+durch den Auftrag vorbesetzt. Ist der Lieferschein das erste Papier in diesem
+Geschäftsfall, hat also der Lieferschein keinen Auftragsbezug, so kann die
+Bestellnummer hier direkt eingetragen werden. Die Bestellnummern werden in die
+Rechnung übernommen. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
+in der Rechnung steht dieser Bezug zur Kundenbestellnummer zur Verfügung. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Nach dem Druck des&nbsp; Lieferscheines kann ich die Positionen nicht mehr
+verändern. Alle Knöpfe sind grau:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Durch den Druck ist der Lieferschein in den Status Geliefert gewechselt. In
+diesem Status dürfen die Lieferscheinpositionen nicht verändert werden. Zum
+Ändern des Lieferscheines wechseln Sie bitte in die Kopfdaten und Klicken Sie
+auf Ändern. Speichern Sie nun und beantworten Sie die Frage nach dem
+Zurücknehmen des Statuses mit Ja. Nun ist der Lieferschein wieder im Status
+angelegt und Sie können die Positionen wieder ändern.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann auch ein Lieferschein an einen Lieferanten gesandt werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Wählen Sie einfach bei der Lieferscheinart Lieferant.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Verrechenbare / nicht verrechenbare Lieferscheine? Wozu ist das?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Grundsätzlich darf ja Ware Ihr Unternehmen nur dann verlassen, wenn es dafür
+zumindest einen Lieferschein gibt. Hier gibt es nun manchmal die Situation, dass
+Sie Ware versenden müssen, die im Endeffekt nicht verrechnet werden kann, wobei
+der dahinter liegende Vorgang aber noch nicht erledigt ist. Z.B. wenn Sie Ware
+an Ihren Lieferanten senden und auf eine Gutschrift warten. Trotzdem sollte klar
+zwischen noch nicht fakturierten Lieferscheinen und noch zu fakturierenden
+Lieferscheinen unterschieden werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Verwenden
+Sie dafür in den Konditionen des Lieferscheins die Checkbox <img border="0" src="LS_Verrechenbar.gif" width="87" height="18">.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+ist die Checkbox nicht angehackt, so rechnen Sie auch nicht damit, dass dieser
+Lieferschein verrechnet werden wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+nun eine Auswertung über nur Verrechenbare bzw. nicht verrechenbare
+Lieferscheine zu erhalten, wählen Sie bitte Journal, offene Lieferschein und
+wählen in der Combobox unten <img border="0" src="Lieferscheine_verrechenbar_nicht_verrechenbar.gif" width="94" height="74">
+die gewünschte Art aus.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was bedeuten die einzelnen Spalten der Umsatzübersicht?</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Sie
+finden in Helium V in den Verkaufsmodulen jeweils eine Umsatzübersicht. <a href="../Angebot/index.htm#Umsatzübersicht">Siehe
+dazu auch</a>. </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Vor
+der eigentlichen Auswertung muss die Auswertungsart definiert werden. Wählen
+Sie aus:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="LieferscheinUmsatzÜbersicht1.gif" width="75" height="85"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="LieferscheinUmsatzÜbersicht2.gif" width="746" height="25"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+erhalten, passen zur obigen Definition, den Tage, Wochen oder Monatsweisen
+Umsatz anhand der Lieferscheine. Als grobe Orientierung der ausgelieferten
+Werte. Zusätzlich wird die Anzahl der Lieferscheine angegeben um Ihnen ein
+Gefühl für die Größe der Lieferungen zu vermitteln. Als Basis werden die
+Nettopreise der Lieferscheinpositionen, korrigiert um die
+Lieferscheinkonditionen verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gerechnet
+wird immer vom aktuellen Datum aus 20 Einträge (Tage, Wochen, Monate) in die
+Vergangenheit.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

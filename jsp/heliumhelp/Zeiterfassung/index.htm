@@ -1,0 +1,1692 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Zeiterfassung</title>
+</head>
+
+<body>
+
+<h1>Zeiterfassung</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In Helium V steht
+Ihnen mit dem Modul Zeiterfassung <img border="0" src="ZE.gif" width="31" height="36"> ein umfassendes
+Werkzeug zur Erfassung und Bearbeitung der Zeitbewegungsdaten zur Verfügung. Im
+Zeiterfassungsmodul werden sowohl die Mitarbeiter Anwesenheitszeiten als auch
+die Projektzeiten der Mitarbeiter erfasst bzw. bearbeitet.&nbsp;Für die
+effiziente Erfassung der Zeiten im Unternehmen stehen verschiedene <a href="#Erfassungsarten / Terminals">Erfassungsgeräte</a>
+zur Verfügung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Siehe bitte auch <a href="Zusatzinformationen.htm">Zusatzinformationen</a>.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Warum ist die
+Projektzeiterfassung für Ihr Unternehmen und für Ihre Mitarbeiter wichtig?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die
+Projektzeiterfassung dient grundsätzlich der Sicherstellung des
+unternehmerischen Erfolges und damit direkt der Sicherung der Arbeitsplätze
+Ihrer Mitarbeiter.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sie werden sich nun
+fragen wieso das?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In verkürzter Form
+kann man folgendes festhalten:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn Projekte
+verkauft werden, so werden in irgendeiner Form immer Angebote gelegt und sei es
+nur mündlich. Die Projektzeiterfassung stellt nun die verbrauchten Zeiten den
+geplanten Zeiten gegenüber und sei es nur in Form eines direkten Kosten /
+Erlös-Vergleiches.&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wurde nun der Aufwand
+für dieses Projekt beim Angebot unterschätzt, so ergibt dies einen negativen
+Erfolg. Wenn dieses Wissen an den Verkauf weitergegeben wird, so kann beim
+nächsten Projekt besser und richtiger angeboten werden. Auch im umgekehrten
+Fall, also einem viel zu hohen Ertrag ist dieses Wissen enorm wichtig, da gerade
+KMUs immer zu marktfähigen Preisen anbieten müssen. Wenn nun ein Produkt viel
+zu teuer eingeschätzt wird, würde dies bedeuten, dass es für den Mitbewerb
+ein leichtes ist, Ihre Preise zu unterlaufen und damit verlieren Sie den
+nächsten Auftrag und damit den Kunden. Also ist eine sehr umfassende, genaue
+und zeitnahe Erfassung der Projektkosten und damit auch der Zeiten für Ihr
+Unternehmen überlebensnotwendig und trägt dadurch zur Erhaltung der
+Arbeitsplätze ganz entscheidend bei.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Grundzüge der
+Erfassung der Zeitdaten</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das Ziel der
+Zeiterfassung ist eine möglichst genaue Erfassung alle angefallenen Zeiten. Es
+wurde aus diesem Grunde die Zeiterfassung so aufgebaut, dass jede Zeitbuchung
+einen Beginn am diesen Zeitpunkt darstellt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">D.h. bei der Kommt
+Buchung läuft die Anwesenheitszeit ab diesem Zeitpunkt. Bei einer
+Tätigkeitsbuchung läuft die Zeit auf dieser Tätigkeit (auf dem Auftrag) ab
+dem eingebuchten Zeitpunkt. Da ein Mensch nur eine Tätigkeit zur gleichen Zeit
+ausführen kann, ist es auch so realisiert, dass bei Beginn einer neuen
+Tätigkeit automatisch die alte Tätigkeit beendet wird. Einzige Ausnahme ist
+die Mehrmaschinenbedienung, siehe dort.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Tätigkeiten werden
+entweder durch andere Tätigkeiten beendet oder durch eine Ende oder Geht
+Buchung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Eine Ende Buchung
+bedeutet, dass eine Tätigkeit jetzt beendet wird, und die Anwesenheitszeit des
+Mitarbeiters nun auf kein Projekt mehr gebucht wird. Die Geht Buchung beendet
+ebenfalls eine ev. aktive Tätigkeit und beendet zugleich auch die Anwesenheit
+des Mitarbeiters.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie
+den Unterschied zwischen Kommt, Geht und Unterbrechung. Eine Geht Buchung besagt,
+dass der Mitarbeiter nicht mehr vor hat an diesem Arbeitstag noch ins
+Unternehmen zu kommen. Eine Unterbrechungsbuchung sagt aus, dass er, z.B. nach
+der Mittagspause, wieder ins Unternehmen kommen will. Diese Information ist für
+die Anwesenheitsliste wichtig. Es informiert damit jeder Mitarbeiter seine
+Kollegen über seine geplante Anwesenheit im Unternehmen.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Zeitverbuchung"></a>Q:
+Mit welcher Zeit werden die Daten verbucht?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Die Buchung der
+Zeiten erfolgt immer von dem Gerät aus, auf dem die Zeit erfasst wird. Erfolgt
+die Erfassung also auf einem Client-PC so wird die Zeit vom Client als die zu
+verbuchende Zeit in die Datenbank übernommen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wichtig: Bitte sorgen
+Sie dafür, dass</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">a.) Ihr Server immer
+die aktuelle Systemzeit hat. Verwenden Sie dazu z.B. die im Internet frei
+verfügbaren Synchronisierungen mit&nbsp; Atomuhren.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">b.) Stellen Sie
+sicher, dass die Systemzeit aller Clients mit der Systemzeit des Servers
+synchron laufen.<br>
+Von Helium V wird beim Login eine Meldung ausgegeben, wenn die Systemzeiten
+zwischen Client und Server um mehr als eine Minute untereinander abweichen. <a href="Zeitserver.htm">Siehe
+dazu auch</a>.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Wie gibt man die Zeitdaten korrekt ein?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Die Zeitdaten
+stellen immer den Beginn einer Tätigkeit, eines Vorganges dar. Dies ist auch
+der übliche in sehr vielen Unternehmen verwendete Buchungsvorgang. Er deckt
+sich auch mit der Art der Buchungen auf den Zeiterfassungsterminals.<br>
+Es gibt lediglich bei den Administrativen Tätigkeiten und bei Tätigkeiten
+welche sehr oft unterbrochen werden, die Forderung einer Zeiteingabe nach Dauer.
+Diese wird in Helium V über die sogenannte relative Zeiteingabe realisiert.
+Hier geben Sie lediglich die Dauer einer Tätigkeit ein. Das System bucht den
+Beginn der Tätigkeit so früh wie möglich und das Ende der Tätigkeit
+entsprechend der angegebenen Dauer.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Beachten Sie
+bitte:</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit der relativen
+Zeitbuchung wurde nur ein Hilfsmittel geschaffen, mit dem eine Dauer eingegeben
+werden kann. Beim Klick auf Speichern wird die angegebene Dauer in eine Beginn
+und Ende Buchung umgesetzt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Diese Eigenschaft&nbsp;bewirkt
+auch, das wenn eine Zeitbuchung herausgelöscht wird, die vorige Tätigkeit, der
+vorige Auftrag (Job) entsprechend länger dauert, bis er eben durch die nächste
+Tätigkeit beendet wird. Eine einfache Abhilfe ist, statt des Löschens
+einer Tätigkeit die Buchung auf Ende zu ändern.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ein Beispiel dazu:</p>
+<div align="left">
+  <table border="1" width="793" height="19">
+    <tr>
+      <td width="251" height="19">Buchung</td>
+      <td width="239" height="19">Beginn-Zeit</td>
+      <td width="219" height="19">Dauer</td>
+    </tr>
+    <tr>
+      <td width="251" height="19">Kommt</td>
+      <td width="239" height="19">8:00</td>
+      <td width="219" height="19"></td>
+    </tr>
+    <tr>
+      <td width="251" height="19">Tätigkeit 1</td>
+      <td width="239" height="19">8:00</td>
+      <td width="219" height="19">2 Std.</td>
+    </tr>
+    <tr>
+      <td width="251" height="19">Tätigkeit 2</td>
+      <td width="239" height="19">10:00</td>
+      <td width="219" height="19">1 Std.</td>
+    </tr>
+    <tr>
+      <td width="251" height="19">Tätigkeit 3</td>
+      <td width="239" height="19">11:00</td>
+      <td width="219" height="19">5 Std.</td>
+    </tr>
+    <tr>
+      <td width="251" height="19">Geht</td>
+      <td width="239" height="19">16:00</td>
+      <td width="219" height="19"></td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Eine Tätigkeit wird
+immer durch das Beginn einer neuen Tätigkeit beendet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das bedeute aber
+auch, wird die Tätigkeit 2 herausgelöscht, so ist die gesamte Zeit auf
+Tätigkeit 1 (3Std). Ändern Sie dagegen die Buchung von Tätigkeit 2 auf eine
+Ende Buchung, so dauert die Tätigkeit 1 weiterhin 2Std und es wird zusätzlich
+eine Stunde auf nicht produktiv gebucht. Genau um diese Information geht es.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Bei der relative
+Zeitbuchung erhalte ich eine Fehlermeldung</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Sondertaetigkeit_beenden.gif" width="650" height="105"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Die relative
+Zeitbuchung bucht die Dauer der Tätigkeit, wie oben beschrieben, in die noch
+nicht verbrauchte Tagesarbeitszeit. Um diese richtig berechnen zu können,
+müssen die Unterbrechungsbuchungen abgeschlossen sein. In obigem Fall, wurde
+mit einer relativen Zeitbuchung mehr Zeit beansprucht, als zwischen Kommt und
+dem Unterbrechungsbeginn zur Verfügung steht. Da daher das Ende der relativen
+Buchung nicht ermittelt werden kann, wird obige Fehlermeldung ausgegeben.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Sondertaetigkeit_beenden_Muster.gif" width="709" height="364"></p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wieso sind
+Auftrag und Position Pflichtfelder?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das Ziel der Auftrags
+/ Job bezogenen Zeiterfassung ist, die Zeiten der Mitarbeiter den Aufträgen
+zuzuordnen. Wenn nun die Freiheit geschaffen würde, dass man hier auch
+Handeingaben buchen könnte, so würde damit dem Wildwuchs Tür und Tor geöffnet
+werden. Wer von den Anwendern / Benutzer würde nachträglich die Handeingaben
+auf die richtigen Auftrags- (Job-) nummern umändern. Darum eben müssen
+Zeitbuchungen die eine Auftragszuordnung haben sollen, einem Auftrag zugeordnet
+werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Welcher Unterschied besteht zwischen Sondertätigkeit und Auftragszeit?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sondertätigkeiten
+sind grundsätzlich Tätigkeiten, welche sich direkt auf die Anwesenheit im
+Unternehmen auswirken. Denken Sie z.B. an die Sondertätigkeit Arzt. Diese
+besagt, dass der Mitarbeiter beim Arzt ist. Zugleich ist diese Nichtanwesenheit
+normalerweise vom Unternehmer wie Anwesenheit zu bezahlen, aber auf die
+Produktivitätsstatistik des Mitarbeiters hat diese Zeit keinen Einfluss.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auftragszeiten sind
+jene Zeiten die ein Mitarbeiter für einen Auftrag aufwendet.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Welche verschiedenen Eingabemöglichkeiten gibt es bei Sondertätigkeiten und
+was verwende ich wozu?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die
+Sondertätigkeiten werden vom Helium V Administrator an die in Ihrem Unternehmen
+erforderlichen Sondertätigkeiten angepasst. Es werden immer solche Begriffe
+gewählt, die möglichst eineindeutig die Art der Sondertätigkeit
+widerspiegelt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beispiel:
+Berufsschule bedeutet, dass der Mitarbeiter außer Hause ist und er in der
+Berufsschule sein sollte.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beispiel: ZA bedeutet
+Zeitausgleich. Der Mitarbeiter hat für diesen Tag einen Zeitausgleich geplant
+und ist deshalb voraussichtlich nicht im Unternehmen.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie verhält man sich, wenn
+Auftrag, Position oder Tätigkeit<br>
+&nbsp;&nbsp;&nbsp; im Moment der Zeiteingabe nicht bekannt sind (alle oder
+einzelne)?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In diesem Falle kann
+der Beginn der Tätigkeit nicht verbucht werden. Als Möglichkeit können Sie
+die Tätigkeit auf einen anderen Auftrag buchen und dies nachträglich ändern.
+Helium V unterscheidet bei den Änderungsbuchungen zwischen Änderungen des
+Zeitpunktes und Änderungen des Auftrags.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Wie korrigiert man eine falsche Eingabe bei der Zeiterfassung?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ändern <img border="0" src="aendern.gif" width="31" height="26">
+Sie den Eintrag entsprechend ab.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Was bedeutet das
+H neben der Dauer?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Hand_Zeit.gif" width="135" height="48"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit diesem Zeichen
+soll symbolisiert werden, dass die Zeitbuchung manipuliert wurde. Das bedeutet,
+dass die Zeitbuchung für diesen Mitarbeiter nicht innerhalb des eingestellten
+Toleranzzeitraums erfolgte. Bei einer Standardeinstellung bedeutet dies, dass
+der Mitarbeiter z.B. um 8:03 gekommen ist, aber ein Kommt für 8:00 gebucht hat.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beachten Sie dazu
+bitte auch, dass anstelle des H (für Handbuchung) ein B angezeigt werden kann.
+Dies bedeutet, dass zwar der Zeitpunkt der Buchung korrekt verbucht wurde, aber
+nachträglich die Bewegungsart geändert wurde. Also es hatte z.B. der
+Mitarbeiter versehentlich ein (Auftrags-) Ende gebucht, wollte aber ein Geht
+buchen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Finden Sie ein <b> A</b> in
+der Bemerkung, so ist das ein Hinweis darauf, dass dies eine Automatikbuchung
+ist. Diese also Aufgrund definierter Pausen bzw. zum Mitternachtssprung
+erfolgte.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Warum muss ich meine Tätigkeiten am Anfang erfassen und kann nicht den
+Endzeitpunkt eingeben?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Siehe dazu bitte
+oben, Grundzüge der Erfassung der Zeitdaten</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Die angezeigte
+Dauer stimmt nicht / verwirrt.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Dauer.gif" width="414" height="70"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie,
+dass die angezeigte Dauer einer Tätigkeit sich auf die mit dieser Buchung
+beendete Tätigkeit bezieht. D.h. vom Beginn der vorigen Tätigkeit, in unserem
+Falle zwischen Kommt und der ersten Unterbrechungsbuchung sind 4,52Std
+vergangen. Die Unterbrechung selbst dauerte, wie in der dritten Zeile
+ersichtlich 0,75 Std.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Darstellung der
+Zeiten?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Werden Zeiten mit
+: (Doppelpunkt) getrennt dargestellt, so sind dies Angaben im Zeitsystem, also
+Stunden:Minuten:Sekunden. Es gibt maximal 59 Minuten bzw. 59 Sekunden. Z.B.
+2:30:00</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Werden Zeiten mit , (Dezimaltrenner)
+getrennt dargestellt, so sind das Zeiten in der definierten Mengeneinheit,
+üblicherweise Stunden. Z.B. 2,5Std (passend zu obigem Beispiel).</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Wozu dient die Sonderzeitenliste?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Es gibt
+verschiedene Arten von Sonderzeiten die Tageweise verbucht werden müssen. Z.B.
+Urlaub. Diese Sonderzeiten sehen Sie in der Sonderzeitenliste, jeweils für den
+in der Auswahlliste gewählten Mitarbeiter. </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Beim Eintragen
+einer Sonderzeit (Urlaub) erhalte ich die Fehlermeldung? </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Sonderzeit_Fehlermeldung.gif" width="436" height="115"> </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier fehlt ein
+gültiges Zeitmodell für den Mitarbeiter für den gewünschten Zeitraum. Tragen
+Sie das Zeitmodell für den Mitarbeiter im Personalmodul nach. </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Hintergrund:</b>
+Sonderzeiten werden nur dann gebucht, wenn für den entsprechenden Tag
+Sollstunden definiert sind. Denken Sie hier z.B. an Teilzeitkräfte, welche nur
+2Tage in der Woche anwesend sein sollten, oder auch an Feiertage. D.h. auch für
+die Feiertag darf kein Urlaub gebucht werden. </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Was drückt die Nettoanwesenheitszeit in der Produktivitätsstatistik aus? </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Die
+Nettoanwesenheitszeit ist jene Zeit, die der Mitarbeiter im Unternehmen ist um
+seiner Tätigkeit seiner Aufgabe nachzugehen. Also die Zeit zwischen Kommt und
+Geht abzüglich der Unterbrechungen (Pausen), ev. Arzt und Krank Meldungen usw. </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Gültigkeit der
+Zeit-Statistiken<br>
+Die Zeit der Produktivität ist höher als die Nettoanwesenheit? </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Für die
+Zeitberechnungen / Zeitstatistiken wird davon ausgegangen, dass pro Mitarbeiter
+und Tag für den Betrachtungszeitraum ausschließlich gültige und vollständige
+Zeitbuchungen enthalten sind. Um dies sicherzustellen, führen Sie bitte vor
+Statistikauswertungen immer die Monatsabrechnung des Mitarbeiters durch. Erst
+wenn hier keine Fehler mehr aufgezeigt werden, sind auch die weiteren
+Statistiken richtig. </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ich
+exakte Auftragszeiten nachträglich erfassen?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Exakte
+Auftragszeiten erhält man nur, wenn der Beginn und das Ende der Tätigkeiten in
+&quot;exakt&quot; diesem Moment gebucht werden. Die nachträgliche Erfassung von
+Auftragszeiten sind reine Schätzwerte und sollten deshalb vermieden werden.
+Wenn es aufgrund organisatorischer Gründe nicht anders möglich ist, als
+Auftragszeiten nachträglich zu erfassen, so aktivieren Sie bitte die relative
+Zeiteingabe im Zeiterfassungspanel. </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wozu diese
+komplizierte Erfassung?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Die Helium V
+Zeiterfassung ist grundsätzlich für eine positionsgenaue Erfassung der
+Auftragszeiten ausgelegt. </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das bedeutet für die
+Erfassung einer Tätigkeit müssen </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="ZE_Auftrag.gif" width="186" height="123"> </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">angegeben werden. Das
+bedeutet dass eine exakte Zeiterfassung auf die einzelne Position möglich ist. </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ein Beispiel aus der
+Softwarebranche: </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Auftrag
+05/0000024 lautet auf Entwicklung Finanzbuchhaltungsprogramm </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im Auftrag sind die
+Positionen: </p>
+
+<div align="left">
+  <table border="1" height="1">
+    <tr>
+      <td height="1" align="right">Pos</td>
+      <td height="26" align="right">Dauer</td>
+      <td height="26">Bezeichnung</td>
+    </tr>
+    <tr>
+      <td height="1" align="right">1</td>
+      <td height="27" align="right">10 Std</td>
+      <td height="27">Konzept</td>
+    </tr>
+    <tr>
+      <td height="1" align="right">2</td>
+      <td height="25" align="right">100 Std</td>
+      <td height="25">Design</td>
+    </tr>
+    <tr>
+      <td height="1" align="right">3</td>
+      <td height="25" align="right">80 Std</td>
+      <td height="25">Programmierung</td>
+    </tr>
+    <tr>
+      <td height="1" align="right">4</td>
+      <td height="25" align="right">5 Std</td>
+      <td height="25">QS/Test</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Während der
+Abwicklung dieses Auftrages ergibt sich nun folgendes: </p>
+
+<div align="left">
+  <table border="1" width="641" height="22">
+    <tr>
+      <td width="120" height="22">MA</td>
+      <td width="100" height="22" align="right">Dauer</td>
+      <td width="200" height="22">Tätigkeit</td>
+      <td width="400" height="22">Auftragsposition</td>
+      <td width="902" height="22">Bemerkung</td>
+    </tr>
+    <tr>
+      <td width="120" height="22">JO</td>
+      <td width="100" height="22" align="right">3 Std</td>
+      <td width="200" height="22">Analyse</td>
+      <td width="400" height="22">1 ... Konzept</td>
+      <td width="902" height="22"></td>
+    </tr>
+    <tr>
+      <td width="120" height="22">MB</td>
+      <td width="100" height="22" align="right">8 Std</td>
+      <td width="200" height="22">Analyse</td>
+      <td width="400" height="22">1 ... Konzept</td>
+      <td width="902" height="22"></td>
+    </tr>
+    <tr>
+      <td width="120" height="22">MB</td>
+      <td width="100" height="22" align="right">25 Std</td>
+      <td width="200" height="22">Entwurf</td>
+      <td width="400" height="22">2 ... Design</td>
+      <td width="902" height="22"></td>
+    </tr>
+    <tr>
+      <td width="120" height="22" valign="top">VF</td>
+      <td width="100" height="22" valign="top" align="right">15 Std</td>
+      <td width="200" height="22" valign="top">Test</td>
+      <td width="400" height="22" valign="top">2 ... Design</td>
+      <td width="902" height="22" valign="top">geht also trotz der anderen
+        Tätigkeit auf die Auftragsposition Design, wodurch die Nachkalkulation
+        wesentlich transparenter wird.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch die Buchung der
+Tätigkeit Test auf die Designphase kann man in der Nachkalkulation ohne lange
+Rückfrage erkennen, dass hier gänzlich andere Tätigkeiten als geplant
+erforderlich waren, um diese Auftragsposition zu erfüllen. </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp; </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>ABER!</b> </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In vielen Branchen /
+Unternehmen ist diese sehr detaillierte Erfassung zu genau, verursacht einen zu
+hohen Aufwand. Daher kann im System, Parameter die positionsweise Erfassung
+abgeschaltet werden. Zusätzlich kann dort auch die Erfassung der Tätigkeit so
+umgestellt werden, dass keine Tätigkeit abgefragt wird und immer nur auf die in
+den Mandantenparametern fix hinterlegte Tätigkeit gebucht wird. </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Dies bewirkt, dass
+nur die Auftragsnummer angegeben werden muss. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie findet man heraus, welchem Mitarbeiter welches Kurzzeichen gehört?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wechseln Sie in das Modul Benutzer.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+finden Sie eine Übersicht aller definierten Benutzer. In der letzten Spalte
+wird das Kurzzeichen des jeweiligen Benutzers angezeigt. Durch einen Klick auf
+die Spaltenüberschrift Kurzzeichen wird diese Liste nach Kurzzeichen sortiert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich
+sehen Sie in der Detailsicht in der Zeile Personal ebenfalls das Kurzzeichen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="personal_detail.jpg" width="491" height="296"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Monatsabrechnung"></a>Q:
+Wie ist die Zeitenzusammenfassung der Monatsabrechnung zu lesen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Monatsabrechnung.gif" width="742" height="291"></p>
+
+<div align="left">
+  <table border="1" width="718" height="33">
+    <tr>
+      <td width="359" height="33">Resturlaub</td>
+      <td width="359" height="33">Noch bestehender Urlaubsanspruch aus den
+        Vorjahren des Auswertejahres</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Anspruch aliquot</td>
+      <td width="359" height="33">Der aliquote Urlaubsanspruch wird wie folgt
+        berechnet:<br>
+        Januar bis November je zwei Tage pro Monat. Für den Dezember drei Tage.
+        Die Stunden werden anhand des jeweiligen Zeitmodells jeweils für die
+        durchschnittlichen Monatsstunden pro Tag aus den Urlaubstagen errechnet.
+        <p>Die Berechnung der Tage des Beginnmonates werden auf die Arbeitstage (inkl. Feiertagen) des Monates umgerechnet und kaufmännisch gerundet.</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Anspruch aktuell verbraucht</td>
+      <td width="359" height="33">Seit 1.1. des Auswertejahres bis zum Ende des
+        Abrechnungszeitraums verbrauchter Urlaub</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Verfügbarer Urlaub</td>
+      <td width="359" height="33">daraus ergibt sich der noch nicht verbrauchte
+        Urlaub zur Basis des aliquoten Anspruches</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Urlaubsanspruch aktuell</td>
+      <td width="359" height="33">Gesamtanspruch des Abrechnungsjahres</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Urlaub geplant</td>
+      <td width="359" height="33">Nach dem Abrechnungszeitpunkt bereits
+        eingeplanter Urlaub</td>
+    </tr>
+    <tr>
+      <td width="359" height="33"></td>
+      <td width="359" height="33"></td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Ist</td>
+      <td width="359" height="33">Echte Anwesenheit im Unternehmen</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Summe zus. Sondertätigkeiten</td>
+      <td width="359" height="33">Plus ... Summe aus Feiertagsstunden, Arzt,
+        Krank, Behörde, Urlaubsstunden und sonstiger bezahlter Stunden</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Tatsächliches Ist</td>
+      <td width="359" height="33">Ergibt ... anerkannte Stunden für die
+        Abrechnung</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Soll</td>
+      <td width="359" height="33">Abzüglich ... Sollstunden des Monates</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Gleitzeitsaldo für Monat Jahr</td>
+      <td width="359" height="33">Ergibt ... Gleitzeitsaldo für das gedruckte
+        Monat</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Überstundenpauschale</td>
+      <td width="359" height="33">Abzüglich ... Überstundenpauschale</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Übertrag vom Vormonat</td>
+      <td width="359" height="33">Plus ... Übertrag aus Vormonat</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Ausbezahlte Stunden</td>
+      <td width="359" height="33">Abzüglich ... Ausbezahlte Stunden</td>
+    </tr>
+    <tr>
+      <td width="359" height="33">Gleitzeitsaldo</td>
+      <td width="359" height="33">Ergibt ... den aktuellen Gleitzeitsaldo des
+        Monates. Dies ist zugleich der Übertrag für das Folgemonat</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../artikel/warning.png" width="48" height="48">ACHTUNG:
+Wichtige Voraussetzung für die richtige Urlaubsabrechnung ist neben der
+richtigen Eingabe der Ansprüche, vor allem, dass ab dem Eintritt des
+Mitarbeiters auch entsprechende Zeitmodelle hinterlegt sind. Wurde dem
+Mitarbeiter erst nach seinem Eintritt ein Zeitmodell zugeordnet, so erfolgen die
+Abrechnungen wie wenn der Mitarbeiter erst mit dem Zeitmodell eingetreten wäre.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo sehe ich wer anwesend ist und wer nicht?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Dies sehe Sie in der Anwesenheitsliste. Diese kann auf zwei Arten abgerufen
+werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Im Helium V Client im Modul Zeiterfassung <img border="0" src="Zeiterfassung.gif" width="31" height="36">,
+Modul Menü Journal die Anwesenheitsliste. Hier wird der Status aller Personen
+des jeweiligen Mandanten angezeigt. Voraussetzung ist, dass die Anzeige in der
+Anwesenheitsliste im Personalmodul nicht abgeschaltet wurde (Personal, Daten, <img border="0" src="Anwesenheitsliste.gif" width="196" height="21">)<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Im ihrem Internetbrowser. Geben Sie als Adresse: <a href="http://Servername:8080/heliumv/heliumv">http://Servername:8080/heliumv/heliumv</a>/Mandantennummer ein.<br>
+Anstelle des Servername geben Sie den Namen Ihres Helium V Servers oder die
+IP-Adresse an. Anstelle der Mandantennummer geben Sie die tatsächliche
+Mandantennummer an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Dieser Zugriff ist nicht durch Benutzerberechtigungen geschützt. Die Daten stehen also
+Allen die in Ihrem Netzwerk Zugriff auf Ihren Server haben zur Verfügung.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was sind Sollstunden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Sollstunden oder auch Sollzeiten sind jene Stunden, die der Mitarbeiter laut
+Vereinbarung (Arbeitsvertrag o.ä.) erbringen sollte. Die Sollstunden werden in
+den Zeitmodellen definiert.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was sind Iststunden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Iststunden oder auch Istzeiten sind jene Stunden die der Mitarbeiter
+tatsächlich geleistet hat. Um die auszubezahlenden, im Gleitzeitsaldo zu
+berücksichtigende Stunden zu ermitteln werden zu den Iststunden noch weitere
+Stunden für bezahlte Nichtanwesenheit hinzugerechnet. Z.B. Urlaub, Feiertag,
+Krank usw.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie werden Feiertage berechnet / eingerechnet?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für die Berücksichtigung der Feiertage müssen diese im Feiertagskalender
+eingetragen sein. Bitte beachten Sie für die Gültigkeit auch die&nbsp;
+Konfessionen der Mitarbeiter (des Personals) wichtig ist. Beispiel: Karfreitag
+für Angehörige der Evangelischen Glaubensgemeinschaft in Österreich.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Grundsätzlich
+sind Feiertagsstunden so zu sehen wie Ist-Stunden, die aber nicht geleistet
+wurden. Die Berechnung der Feiertagsstunden, welche dem Mitarbeiter als quasi
+Iststunden gutgeschrieben werden, erfolgt folgendermaßen:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Tages-Sollstunden
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">abzgl.
+Feiertags-Sollstunden</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ergibt
+Feiertags-Gutstunden</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel:
+Nationalfeiertag 26.10.2005, ist ein Mittwoch</p>
+
+<div align="left">
+  <table border="1" width="713" height="44">
+    <tr>
+      <td width="143" height="44"></td>
+      <td width="143" height="44">Mitarbeiter A (Normalfall)</td>
+      <td width="143" height="44">Mitarbeiter B muss an diesem Tag 3Stunden
+        arbeiten</td>
+      <td width="142" height="44">Mitarbeiter C (Pflege-Vereinbarung) hat eine
+        volle Arbeitsverpflichtung</td>
+    </tr>
+    <tr>
+      <td width="143" height="44">Tagessollstunden für Mittwoch</td>
+      <td width="143" height="44">8</td>
+      <td width="143" height="44">8</td>
+      <td width="142" height="44">8</td>
+    </tr>
+    <tr>
+      <td width="143" height="44">Feiertagssollstunden für die Tagesart
+        Feiertag1</td>
+      <td width="143" height="44">0</td>
+      <td width="143" height="44">3</td>
+      <td width="142" height="44">8</td>
+    </tr>
+    <tr>
+      <td width="143" height="44">Feiertagsgutstunden</td>
+      <td width="143" height="44">8</td>
+      <td width="143" height="44">5</td>
+      <td width="142" height="44">0</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+ganze oder halbe Feiertage für Tage mit anderen Sollzeiten verwenden zu
+können, müssen eigene Feiertagstagesarten in den Zeitmodellen definiert
+werden. Um dies etwas zu vereinfachen, haben wir dies so definiert, dass es
+keine negativen Feiertagsgutstunden geben kann. D.h. würde die
+Feiertagssollzeit größer als die Tagessollzeit sein so wird die
+Feiertagssollzeit für die Berechnung dieses Tages auf die Tagessollzeit
+reduziert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel:
+Der 24.Dezember, welcher in vielen Branchen ein halber Feiertag ist, fiel 2004
+auf einen Freitag mit 6Tagessollstunden und fiel 2003 auf einen Mittwoch mit
+8Tagessollstunden. Um dies korrekt abzubilden müssen zwei unterschiedliche
+Feiertagsarten in den Zeitmodellen definiert werden. Einer mit
+4Feiertagssollstunden und einer mit drei Feiertagssollstunden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Für Teilzeitkräfte gilt normalerweise ein Durchrechnungszeitraum von 13Wochen.
+D.h. für die anerkannten Stunden anhand der Feiertage gilt der
+Tagesdurchschnitt der letzten 13 Wochen anhand der Wochentage mit Sollstunden.
+Diese werden bei der Feiertagsberechnung als quasi Iststunden verwendet. Der
+Umrechnungsfaktor vom theoretischen Soll (wie in der Tabelle oben) zum
+tatsächlichen Ist wird ebenfalls anhand obigem Beispiel durchgeführt. D.h.
+für einen Teilzeitmitarbeiter würden im Fall 2 (3Std. Sollzeit) 5/8 seines
+Tagesdurchschnitts als Feiertagsgutstunden gewertet.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Anrechnung von Urlaubsteilen auf den Gleitzeitsaldo</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Buchen Sie einfach die vereinbarten Urlaubstage zusätzlich zu den geleisteten
+Arbeitsstunden auf die gewünschten Tage. Dadurch erhält der Mitarbeiter
+zusätzliche Urlaubs-Gut-Stunden was seinen Gleitzeitsaldo wiederum erhöht
+(ausgleicht) und zusätzlich werden die verbuchten Urlaubstage in der
+Urlaubsabrechnung berücksichtigt.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum werden in der Urlaubsabrechnung keine / falsche Stunden angezeigt</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaubsabrechnung.gif" width="560" height="437"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
+diesem Bild ist ersichtlich, dass keine Urlaubsstunden berechnet werden konnten.
+Der Hintergrund ist meist, dass für diese Person für diesen Zeitraum kein
+gültiges Zeitmodell hinterlegt ist. Daher können die Urlaubstage nicht in
+Urlaubsstunden umgerechnet werden. Bitte definieren Sie ein gültiges Zeitmodell
+für Ihren Mitarbeiter.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Stundenweise Urlaubsabrechnung, was ist zu beachten?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Stundenweise Urlaubsabrechnung wurde als zusätzliches Feature erstellt.
+Laut Gesetzgeber ist Urlaub grundsätzlich nur Tagesweise, in Ausnahmefällen
+Halbtageweise zu gewähren. Kürzere freie Zeiten sind nicht als Urlaub zu
+werten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Trotzdem
+kann, auch für eine gerechtere Abrechnung, in Helium V der Urlaubsanspruch
+stundenweise definiert werden. Bitte beachten Sie, dass die Definition der
+Sollstunden derzeit aus dem Zeitmodell kommt und diese mit dem Stundenweisen
+Urlaubsanspruch übereinstimmen muss. Gerade bei Teilzeitkräften kann es hier
+durch die Umrechnung von Stunden:Minuten auf das Dezimalsystem in seltenen
+Fällen zu Abweichungen kommen.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Mitarbeiter hat eine Soll Wochenarbeitszeit von 12Std, 25Minuten. Dies wird auf
+fünf Tage á 2:29 aufgeteilt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
+Sie darauf, dass der Urlaubsanspruch exakt umgerechnet wird. So ergeben fünf
+Urlaubswochen á 12Std 25Min 62:05 Std. pro Jahr oder im Dezimalsystem 62,08
+Std. Dieser Wert ist als Stundenweiser Urlaubsanspruch einzutragen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Überstunden, Mehrstunden"></a>Q:
+Überstunden, Mehrstunden, steuerfrei und steuerpflichtig, wie wird das
+berechnet?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Verteilung der geleisteten Stunden auf die verschiedenen Stundenarten
+erfolgt nach folgender Regel. Hierzu muss noch angeführt werden, dass die
+Eckwerte je nach Land unterschiedlich sind und daher hier Beispielhaft für
+Österreich angeführt werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Grundsätzlich
+ist hier zu beachten, dass es sich hier um eine Vermischung von Tages, Wochen
+und Monatsbetrachtungen handelt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<div align="center">
+  <center>
+  <table border="1" width="868" height="15">
+    <tr>
+      <td width="299" height="15">Stundenart</td>
+      <td width="227" height="15">Steuersatz</td>
+      <td width="227" height="15"></td>
+      <td width="2078" height="15"></td>
+    </tr>
+    <tr>
+      <td width="299" height="15">Normalstunden</td>
+      <td width="227" height="15"></td>
+      <td width="227" height="15"></td>
+      <td width="2078" height="15">Stunden die während der Normalarbeitszeit
+        geleistet werden bzw. innerhalb des Zeitraums / der Dauer der
+        Sollarbeitszeit liegen.</td>
+    </tr>
+    <tr>
+      <td width="299" height="15">Mehrstunden</td>
+      <td width="227" height="15"></td>
+      <td width="227" height="15">Wochenbetrachtung</td>
+      <td width="2078" height="15">Stunden die über die Normalarbeitszeit
+        hinausgehen aber noch innerhalb der 40Stunden Wochenarbeitszeitregel
+        liegen und keine 100%igen Überstunden sind.</td>
+    </tr>
+    <tr>
+      <td width="299" height="15">Überstunden 50%</td>
+      <td width="227" height="15">steuerfrei</td>
+      <td width="227" height="15">Tages- und<br>
+        Monatsbetrachtung</td>
+      <td width="2078" height="15">Stunden die über die Mehrstunden hinausgehen
+        und im Zeitraum zwischen 6:00-20:00 geleistet werden.<br>
+        Im Monat sind 5Stunden steuerfrei</td>
+    </tr>
+    <tr>
+      <td width="299" height="15"></td>
+      <td width="227" height="15">steuerpflichtig</td>
+      <td width="227" height="15">Tages- und<br>
+        Monatsbetrachtung</td>
+      <td width="2078" height="15">Siehe oben, ab dem Beginn der 6.Stunde ist
+        diese steuerpflichtig.</td>
+    </tr>
+    <tr>
+      <td width="299" height="15">Überstunden 100%</td>
+      <td width="227" height="15">steuerfrei</td>
+      <td width="227" height="15">Tagesbetrachtung</td>
+      <td width="2078" height="15">Stunden im Zeitraum zwischen 20:00-6:00 oder
+        an Sonn- und Feiertagen.<br>
+        Ab drei zusammenhängenden Überstunden sind diese steuerfrei</td>
+    </tr>
+    <tr>
+      <td width="299" height="15"></td>
+      <td width="227" height="15">steuerpflichtig</td>
+      <td width="227" height="15">Tagesbetrachtung</td>
+      <td width="2078" height="15">Siehe oben, jedoch für Überstunden(teile)
+        bis zu drei Stunden.</td>
+    </tr>
+    <tr>
+      <td width="299" height="15">Überstundenpauschale</td>
+      <td width="227" height="15"></td>
+      <td width="227" height="15">Monatsbetrachtung</td>
+      <td width="2078" height="15">Eine Vereinbarung zwischen Arbeitnehmer und
+        Arbeitgeber im Zeitraum zusätzliche Stunden zu erbringen. Diese
+        erhöhen die monatliche Verpflichtung der Soll-Stundenleistung des
+        Arbeitnehmers.</td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+die Monatsabrechnungen meistens mitten in der Woche sind und um, vor allem bei
+Teilzeitkräften, eine möglichst gerechte Abrechnungsart der
+Wochenbetrachtungen für die Teilwoche zu erreichen, wird bei Teilzeitmodellen
+ein Referenzmodell angegeben, auf dessen Basis die Ermittlung der Mehrstunden
+für die Teilwoche erfolgt. Denken Sie in diesem Zusammenhang an
+Monats-Erste/Letzte die auf einen Donnerstag fallen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../Bilder/ueberstunden.jpg" width="481" height="207"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie können die Überstunden definiert werden ?<br>
+Q: Kann für den Überstunden-Saldo auch ein Zeitfaktor hinterlegt werden ?<br>
+Q: Wie werden die ausbezahlten Überstunden ausgeglichen ?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Siehe dazu bitte <a href="Ueberstundenabrechnung.htm">Überstundenabrechnung</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie bucht man Zeiten die über Mitternacht gehen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Tragen Sie den Buchungsbeginn wie üblich mit Kommt und der entsprechenden
+Uhrzeit (z.B. 22:00) ein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+Ende tragen Sie das Buchungsende am jeweils richtigen Tag ein z.B. Geht um
+06:00.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Geht-Buchung kann nun ein automatischer Mitternachtssprung gebucht werden.
+Voraussetzung dafür ist, dass im, am jeweiligen Tag gültigen Zeitmodell eine <img border="0" src="Erlaubte_Anwesenheitszeit.gif" width="206" height="24">
+eingestellt ist. Diese Zeitdauer bestimmt, ob für ein offenes Kommt ein
+Tagesübertrag auf den nächsten Tage gebucht werden soll oder nicht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet, ist die Zeit zwischen Kommt und 24:00 kleiner als die erlaubte
+Anwesenheitszeit, so wird davon ausgegangen, dass der Mitarbeiter über
+Mitternacht durcharbeitet. Es die Zeit zwischen Kommt und 24:00 größer als die
+erlaubte Anwesenheitszeit, so werden keine Automatikbuchungen gemacht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+der Mitternachtssprung zu buchen ist, so werden folgende Automatik Buchungen
+gemacht:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geht
+    um 23:59:59</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kommt
+    um 00:00:00 des folgenden Tages</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">automatische
+    Fortsetzungsbuchung für Mitarbeiter und Maschine(n) um 00:00:01.</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+kann natürlich auch der Mitternachtssprung per Hand gebucht werden. Das
+bedeutet, Sie buchen ein Geht um 23:59 und ein Kommt um 00:00 für den folgenden
+Tag. Denken Sie daran, dass mit Geht die Aufträge beendet werden. D.h. es muss
+am nächsten Tag der Auftrag wieder neu gestartet werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Korrektur der automatischen Buchungen"></a>Q:
+Korrektur der automatischen Buchungen, Nachtragen von Automatik-Buchungen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Manchmal kommt es vor, dass automatische Pausen definiert und auch eingetragen
+wurden. Im nachhinein stellt sich aber heraus, dass diese Annahmen / Vorgaben
+nicht korrekt waren und daher geändert werden müssen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Verwenden
+Sie dafür in der Zeiterfassung die Funktion Pflege, Automatikbuchungen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Automatikbuchungen.gif" width="489" height="94"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie hier, für welchen Zeitraum und für welche Personen die Automatikbuchungen
+neu durchgeführt / überprüft werden sollten. Sind in dem Zeitraum bereits
+Automatikbuchungen eingetragen und sollten diese entfernt werden, so haken Sie
+bitte zusätzlich noch Alte Automatik Buchungen löschen an. Hinweis: Beim
+Löschen werden nur die mit Automatik Buchung gekennzeichneten Buchungen
+entfernt. Diese sind in der Spalte Bemerkung mit <b>A</b> ersichtlich.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Können automatisch Pausen abgezogen werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja hierzu stehen zwei Funktionen zur Verfügung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Pausen zu bestimmten Zeiten, anhand des Zeitmodells</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+eine Pause nach einer Mindestanwesenheitsdauer</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Was_ist_bei_Zeitmodelländerungen_zu_beachten"></a>Q:
+Was ist bei Zeitmodelländerungen zu beachten ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bitte beachten Sie, bei Zeitmodelländerungen, egal ob dies ausgehend von der
+Zeiterfassung über den Knopf Zeitmodell <img border="0" src="Zeitmodell_aendern.gif" width="335" height="51">
+oder im Personalmodul, durch Zuordnung eines anderen Zeitmodells zum Benutzer
+durchgeführt wird, mit dieser Änderung werden <b><u>keine</u></b>
+Automatikbuchungen nachgezogen. D.h. sind z.B. im Zeitmodell A keine
+automatischen Pausen definiert und im Zeitmodell B schon, so werden durch die
+reine Änderung des Zeitmodells diese automatischen Buchungen nicht nachgezogen.
+Verwenden Sie dafür die oben beschriebene Funktion <a href="#Korrektur der automatischen Buchungen">Korrektur
+der automatischen Buchungen</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum können manche Benutzer ihre eigene Zeitbuchungen nicht löschen bzw. ändern?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ist einer Systemrolle das einschränkende Recht PERS_ZEITEINGABE_NUR_BUCHEN
+zugewiesen, so können die Benutzer Ihre Zeitdaten nur hinzufügen. Bestehende
+Daten können nur von berechtigten Benutzern verändert werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum können manche Benutzer bei ihrer Zeitbuchung die Zeit und das Datum nicht
+auswählen und ändern?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+A: Ist einer Systemrolle das einschränkende Recht PERS_ZEITEINGABE_NUR_BUCHEN
+zugewiesen, so können die Benutzer nur
+die aktuelle Zeit buchen, aber nicht selbst z.B. um 9:10 Uhr eine Zeitbuchung
+mit 9:00 Uhr erstellen.
+Es können nur Zeitbuchung für&nbsp; den aktuellen Tag erstellt werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann die Sicht auf die Personendaten eingeschränkt werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Default ist die Sicht für Personal und Zeiterfassung auf die eigene Person
+eingeschränkt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hat
+ein Benutzer das Recht Pers_Sichtbarkeit_Abteilung, so darf er die Daten aller
+Mitarbeiter seiner Abteilung einsehen und wenn er für das Personalmodul auch
+das Pers_Benutzer_CUD Recht hat, diese auch bearbeiten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hat
+ein Benutzer das Recht Pers_Sichtbarkeit_Alle, so darf er alle Mitarbeiter des
+Mandanten einsehen und abhängig vom Personalmodul Recht diese gegebenenfalls
+auch bearbeiten.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie werden Artikelzuschläge verbucht?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In manchen Unternehmen werden Zulagenpflichtige Tätigkeiten durchgeführt. Dies
+können z.B. Schmutz oder Gefahrenzulagen sein. Damit diese automatisch auf den
+Monatsabrechnungen gelistet / angeführt werden, können in Helium V diese
+Zulagen pro Tätigkeit = Arbeitszeitartikel definiert werden.&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie dazu als erstes im Personal unter Grunddaten die in Ihrem Unternehmen
+benötigten Zulagen. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Danach
+wählen Sie den unteren Modulreiter Artikelzulage und definieren die Artikeln
+bei denen entsprechende Zulagen gewährt werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="zulage1.jpg" width="779" height="412"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dadurch,
+dass nun in der Zeiterfassung ein Zulagenbehafteter Artikel verwendet
+wird,&nbsp;&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="zulage2.jpg" width="811" height="203"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">erscheint
+auch der Stundeneinsatz dieser Zulagenpflichtigen Tätigkeit auf der
+Monatsabrechnung des Mitarbeiters.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="zulage3.jpg" width="670" height="158"></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Erfassungsarten / Terminals"></a>Q:
+Welche Erfassungsarten stehen zur Verfügung?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In Helium V stehen derzeit folgende Erfassungsarten für die Zeiterfassung zur
+Verfügung. </p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Manuelle
+    Zeiterfassung</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="BDE_Station.htm">BDE-Station</a></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Zeiterfassungsterminal.htm">Zeiterfassungsterminal</a>
+    mit <a href="Fingerprint.htm">Fingerprint</a></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Zeiterfassungsstifte.htm">Zeiterfassungsstifte
+    (OffLine)</a></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">WAP-Handy</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ZE
+    am PDA (in Vorbereitung)</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">BDE-Station,
+Zeiterfassungsterminals und Zeiterfassungsstifte werden üblicherweise mittels
+Barcodescanner bedient. Die dafür erforderlichen Barcodes können direkt aus
+Helium V erzeugt werden. Die Barcodes können gleichwertig auf allen
+Erfassungsgeräten verwendet werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Unterschied zwischen Personalzeiten und Maschinenzeiten?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Aus Gründen der Mehrmaschinenbedienung unterscheiden sich die Buchungen
+zwischen Maschinenzeiten und Personalzeiten. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Personen können nur eine Tätigkeit zur gleichen Zeit ausführen </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Maschinen können je Maschine ebenfalls nur einen Arbeitsgang ausführen, aber
+annähernd gleichzeitig von einer Person bedient werden. In diesem Falle
+sprechen wir von der <a href="Maschinenzeiterfassung.htm">Mehrmaschinenbedienung</a>. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
+diesem Grund müssen in der Regel bei Zeitbuchungen von Personen / Tätigkeiten
+nur Beginnbuchungen durchgeführt werden. Wurde eine Tätigkeit begonnen, so
+wird diese durch den Beginn einer anderen Tätigkeit beendet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Maschinenbuchung können die Maschinen parallel laufen und auch von der
+gleichen Person bedient werden. Daher muss jede Maschinenzeit auch beendet
+werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bucht
+eine Person ein GEHT, so wird damit auch die Tätigkeit beendet. Am nächsten
+Tag muss, zur Bestätigung, der erneute Beginn des Auftrages / der Tätigkeit
+eingebucht werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Maschinenzeit wird anhand der Einstellung automatisches Ende bei Geht, bei
+der Geht-Buchung des Mitarbeiters für die Maschinen ein Stopp gebucht (wenn
+dieses angehackt ist) oder die Maschinen läuft auch darüber hinaus weiter,
+z.B. für eine sogenannte Geisterschicht.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Zeitverbuchung_Falsch"></a>Q:
+Ich habe Zeiten auf einen Auftrag / ein Los erfasst und sehe diese nicht?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Zeitauswertung ist grundsätzlich eine richtige Zeitbuchung erforderlich.
+D.h. die Zeiten der Mitarbeiter müssen <b>IMMER</b> zwischen Kommt und Geht
+eingebettet sein. Nur diese Zeiten sind anwesende Zeiten und werden in den
+Zeitauswertungen berücksichtigt. Sind, so wie im untenstehenden Beispiel,
+Zeiten außerhalb der Kommt/Geht-Zeiten oder gänzlich ohne Kommt/Geht gebucht,
+so sind diese zwar in den Buchungen enthalten, werden aber in den Auswertungen
+nicht berücksichtigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Zeiteingabe1.gif" width="778" height="196"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Fehlbuchungen werden aus Geschwindigkeitsgründen nur bei der Monatsabrechnung
+analysiert. D.h. wenn sichergestellt werden soll, dass alle Buchungen richtig
+verbucht sind, muss vorher die Monatsauswertung durchgeführt werden. In dieser
+dürfen für den Mitarbeiter keine Fehlermeldungen vorhanden sein. In obigem
+Fall wird bei der Monatsauswertung folgende Meldung mit angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Monatsauswertung_Fehlermeldung.gif" width="1034" height="25"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Bei den Mitarbeitern wurden Zeitmodelle hinterlegt, aber in der Monatsabrechnung
+werden keine Sollzeiten angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Sowohl die Zeitmodelle selbst als auch deren Gültigkeitszeitpunkt sind
+kalenderfähig. D.h.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+das Zeitmodell muss zum gewünschten Zeitpunkt gültig sein, siehe dazu
+Personal, unterer Reiter Zeitmodelle definieren. In der Übersichtsliste der
+Zeitmodelle sehen Sie rechts das Datum ab dem jedes Zeitmodell gültig ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Nun kann ein Zeitmodell einem Mitarbeiter ab einem gewissen Zeitpunkt zugeordnet
+werden. Stellen Sie auch hier sicher, dass das Zeitmodell zum gewünschten
+Zeitpunkt gültig ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>Wichtiger
+Hinweis:</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zeitmodelle
+sind global gültig. Das bedeutet: Werden Zeitmodelle bzw. Zeitmodellzuordnungen
+aus der Vergangenheit geändert, so ändern Sie damit auch die Datenbasis für
+die Berechnung der Überstunden, Gleitzeitsaldi usw..</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie dies, wenn Sie an bestehenden Zeitmodellen oder deren
+Gültigkeitsdaten etwas ändern.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+es in der Praxis immer wieder erforderlich ist, dass Zeitmodelle an die
+Gegebenheiten fein angepasst werden müssen, ist eine programmtechnische
+Verriegelung nicht möglich.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie wird ein Arztbesuch richtig verbucht?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Helium V können auch stundenweise Nichtanwesenheitszeiten, welche
+Sondertätigkeiten genannt werden, Minutengenau verbucht werden. Wie bereits
+oben ausgeführt müssen alle Zeiten zwischen Kommt und Geht eingebettet sein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Mitarbeiter ist von 8:00 bis 8:45 beim Arzt und kommt mit 8:45 ins Unternehmen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="ZE_Arzt.jpg" width="782" height="173"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">damit
+ist der Mitarbeiter 0,75 Std beim Arzt. Diese Arztzeit wird auch in der
+Monatsabrechnung entsprechend ausgewiesen. Ab 8:45 ist der Mitarbeiter wieder im
+Unternehmen anwesend und kann produktive Zeiten erbringen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+Buchungsweise gilt für alle Stundenweise verbuchbaren Sondertätigkeiten.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum stimmt die IST-Zeit in der Mitarbeiterübersicht nicht mit der IST-Zeit in
+der Monatsabrechnung zusammen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In der Mitarbeiterübersicht werden die IST- Zeiten nur dann angedruckt, wenn an
+diesem Tag keine ganztägigen Sondertätigkeiten (Urlaub/ Krank usw.) verbucht
+sind.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wir arbeiten kurze / lange Woche, wie kann man das abbilden ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In manchen Branchen ist es üblich, dass abwechselnd in den Kalenderwochen kurz
+bzw. lange gearbeitet wird. Das hat für die Mitarbeiter den Vorteil, dass jeden
+zweiten Freitag freigegeben werden kann.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+es auch immer wieder vor kommt, dass Mitarbeiter den kurze / lange Woche Rhythmus verlassen, kann dies nicht starr an die Kalenderwoche gebunden werden.
+Verwenden Sie dafür die Möglichkeit der Schichtzeitdefinition <img border="0" src="Schichtzeit.gif" width="30" height="25">.
+Damit kann für jeden Mitarbeiter sein eigener Zeitmodell-Wechsel-Plan
+hinterlegt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Definition der Kurzen/Langen Woche definieren Sie zuerst zwei Zeitmodelle.
+Z.B. <img border="0" src="Kurze_Lange.gif" width="291" height="34">.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Summe ergeben die Sollstunden der beiden Zeitmodelle wieder die in Ihrer Branche
+übliche Wochenstundenanzahl, z.B. 38,5Std, also 77Std. für zwei Wochen. D.h.
+bei der kurzen Woche wird am Freitag keine Sollzeit definiert, bei der Lange
+Woche schon.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+wählen Sie im Personal den Mitarbeiter aus, für den dieser kurze/lange Woche
+Rythmuss definiert werden soll. Klicken Sie auf Schichtzeit <img border="0" src="Schichtzeit.gif" width="30" height="25">
+und definieren Sie im nun folgenden Dialog die Schichten, also die
+Zeitmodell-Folge für den Mitarbeiter.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Schichtzeit_Definition.jpg" width="500" height="270"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+Speichern <img border="0" src="Schichtzeit_Speichern.gif" width="30" height="25"> werden die
+definierten Reihenfolgen der Zeitmodellwechsel festgelegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+werden die Reihenfolgen der Zeitmodelldefinitionen für den Mitarbeiter
+festgelegt. Das bei&nbsp; Schicht 1 angegebene Zeitmodell wird in der Gültig ab
+Woche eingetragen, das bei Schicht 2 angegebene Zeitmodell eine Woche später.
+Wurden, so wie oben, keine weiteren Schichtzeiten definiert, so wird für die
+dritte Woche wieder das bei Schicht 1 definierte Zeitmodell eingetragen,
+usw..&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+hat den Vorteil, sollten sich die Sollzeiten ändern, kann dies einfach durch
+löschen und neu eintragen der Gültigkeit eines Zeitmodells umdefiniert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Schichtzeit_Reihenfolge.gif" width="752" height="94"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+erhalten nun in der Monatsabrechnung folgende Sollstunden:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Kurze_Lange_Sollstunden.gif" width="726" height="169"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie werden Schichtzeiten definiert?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für die Definition von Schichtzeitmodellen verwenden Sie bitte ebenfalls die
+oben unter Kurze / Lange Woche beschriebene Vorgehensweise. Definieren Sie hier
+auch noch die Schicht3 und ev. Schicht4.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Je
+nachdem wieviele Schichtzeitmodelle Si</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie buche ich Arztzeiten über die Pausen hinweg richtig?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In Unternehmen bei denen die exakten Anwesenheitszeiten auch ausbezahlt werden,
+ist es manchmal erforderlich, dass auch die Pausen während bezahlter
+Abwesenheiten richtig gebucht werden. Es kommt dazu, dass, aus Gründer der
+Nachvollziehbarkeit die Buchungen der Mitarbeiter nicht verändert werden
+sollten. Gehen Sie dafür z.B. wie unten beschrieben vor.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Arztzeiten_ueber_Pausen.gif" width="747" height="151"></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Die Mitarbeiter stempeln vor dem offiziellen Arbeitsbeginn, die Zeiten sollen
+aber erst ab dem Arbeitsbeginn gerechnet werden. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Im Zeitmodell gibt es die früheste erlaubte Kommt-Zeit. Zeiten, die vorher
+gebucht werden, werden nicht berücksichtigt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+späteste erlaubte Geht-Zeit bewirkt, dass nur die Arbeitszeiten bis zu diesem
+Zeitpunkt verbucht werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie können meine Mitarbeiter Überstunden machen, wenn es fixe frühest
+erlaubte Kommt-Zeiten und späteste erlaubte Geht-Zeiten gibt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Legen Sie ein zweites Zeitmodell an, mit denselben Zeiten, aber keiner späteste
+erlaubte Geht-Zeit. Über das Benutzerrecht
+PERS_ZEITERFASSUNG_ZEITMODELL_TAGEWEISE_AENDERN kann ein Zeitmodell für die
+Tage, an denen Überstunden gemacht werden, geändert werden. Das Zeitmodell
+wird von einem Befugten geändert. Pro Tag kann nur ein Zeitmodell verwendet
+werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Einige Mitarbeiter arbeiten auf Stundenbasis, die stark variieren.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Erstellen Sie ein Zeitmodell, ohne eine bestimmte Anzahl an Sollstunden. Die
+ausbezahlten Stunden tragen Sie dann zum Auszahlungsdatum unter
+Stundenabrechnung ein. SO haben Sie immer einen exakten Status der für diesen
+Mitarbeiter noch nicht ausbezahlten Stunden. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Müssen in den Zeitmodellen alle Tage definiert werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Jein oder auch, das kommt darauf an. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Ihre Mitarbeiter selbst konsequent und richtig alle Tage erfassen, so müssen im
+jeweiligen Zeitmodell nur die Tage definiert werden für die auch Sollzeiten
+gegeben sind. Arbeiten Ihre Mitarbeiter aber auch manchmal an Tagen, an denen
+üblicherweise nicht gearbeitet wird oder vergessen sie manchmal die
+gesetzlichen Pausen einzuhalten, so empfiehlt es sich jede Tagesart zu
+definieren. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedenken
+Sie bitte dass als Tagesart nicht nur die sieben Wochentage definiert sind,
+sondern zumindest zwei Feiertagsarten (Halb und Ganz-Tags). Und es können für
+den Betriebskalender in den Personal, Grunddaten noch zusätzliche Tagesarten
+definiert sein. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+sollte also jeder Tag an dem gearbeitet werden könnte vollständig definiert
+sein. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was ist bei der Definition der Sollstunden in den Zeitmodellen zu beachten?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Hier ist insbesondere die Thematik der Umrechnung zwischen dem Stunden:Minuten
+System und dem Dezimalsystem zu beachten. Insbesondere die Umrechnung von z.B.
+8:25 ergibt 8,4166666667 Std. Für diese Stunden werden z.B. in der
+Monatsabrechnung 8,42 Stunden angedruckt. Um bei einer 38,5Std Woche auf 38,5
+Std. zu kommen muss der Freitag mit 4:50 definiert werden, was wiederum 4,833333
+Std. im Dezimalsystem ergibt. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Andruck der Monatsabrechnung erfolgt gerundet, also 8,42 und 4,83 Std. Zählt
+man diese Stunden nun am Papier zusammen, so erhält man 38,51 Std., obwohl nur
+38,50 Std. definiert sind. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+raten daher leicht zu konvertierende Sollzeiten zu verwenden. Z.B. auf Basis der
+15Minuten = 0,25 Std. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Alternativ
+könnte auch die Formulardefinition für Sie geändert werden und damit die
+Rundungsthematik dem&nbsp; Mitarbeiter dargestellt werden. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Fehlermeldung Auftragsposition wurde gelöscht</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Diese Meldung besagt, dass in den Zeitbuchungen auf eine Auftragsposition Bezug
+genommen wurde. Wurde nun die Auftragsposition gelöscht, so erscheint zu Ihrer
+Information diese Fehlermeldung, da der Bezug nicht mehr gegeben ist. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Auftragsposition_Geloescht.jpg" width="448" height="122"> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Derzeit
+hat dieser Hinweis, keine Auswirkungen auf die Auswertungen. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie erfasse Loszeiten in der manuellen Zeiterfassung. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wählen Sie nach dem Neu in der Zeiteingabe in der Zeile unter der Zeiteingabe <img border="0" src="Loszeiterfassung.gif" width="382" height="25"><br>
+Belegzeit
+und dann rechts daneben Los. Somit kann direkt in das Los gebucht werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie beende ich Arbeiten auf einem Los ohne bei einem anderen Los fortzusetzen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Verwenden Sie dazu die Ende Buchung. Damit wird die Zeit eines Mitarbeiters
+nicht mehr dem Los / Projekt zugeordnet, sondern es ist diese Zeit nur mehr
+Anwesenheitszeit. Diese Buchung steht in allen Erfassungsarten zur Verfügung.
+Verwenden Sie dazu die entsprechenden Codes z.B. aus der Liste der
+Sondertätigkeiten. Sie finden diese Liste unter Zeiterfassung, unterer
+Modulreiter Sondertätigkeiten, Menüeintrag Info, Sondertätigkeitenliste.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie den Unterschied zwischen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ende
+... beenden einer Tätigkeit eines Mitarbeiters</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geht
+... Beenden der Anwesenheit des Mitarbeiters im Unternehmen, damit zugleich
+beenden seiner ev. Tätigkeit</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stop
+... Beenden der Maschinenlaufzeit in der Mehrmaschinenbedienung.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo können weitere Sonderzeiten definiert werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade in Österreich gibt es neben den üblichen Freistunden auch
+kollektivvertraglich zugesicherte Bezahlte Abwesenheiten wie z.B. Pflegeurlaub,
+Verehelichung usw. Diese zusätzlichen Sondertätigkeiten können in der
+Zeitverwaltung im unteren Modulreiter Sondertätigkeiten definiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie mit neu die gewünschte Sondertätigkeit an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie die drei Einstellungsmöglichkeiten:</p>
+
+<div align="left">
+  <table border="1" width="665" height="9">
+    <tr>
+      <td width="425" height="9">Bezahlt</td>
+      <td width="770" height="9">Dies ist eine bezahlte Abwesenheit. D.h. diese
+        Stunden werden in der Monatsabrechnung in den Ist-Stunden mitgerechnet.
+        D.h. sie werden unter bezahlte Sondertätigkeit geführt.</td>
+    </tr>
+    <tr>
+      <td width="425" height="9">Nur tageweise buchbar</td>
+      <td width="770" height="9">Diese Tätigkeit kann nur tageweise gebucht
+        werden. D.h. sie wird in der Tages-Detailbuchung in der
+        Auswahlmöglichkeit der Sondertätigkeiten nicht angezeigt.</td>
+    </tr>
+    <tr>
+      <td width="425" height="9">Auf der BDE Station buchbar</td>
+      <td width="770" height="9">Diese Sondertätigkeit wird auf in der
+        Sondertätigkeitenliste für die BDE-Stationen mit ausgedruckt.
+        Zusätzlich werden nur diese Tätigkeiten bei Benutzern mit
+        PERS_ZEITEINGABE_NUR_BUCHEN in der Auswahlliste der Sondertätigkeiten
+        angezeigt.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Damit Stundenweise (also die nicht tagesweise buchbaren) buchbare Tätigkeiten
+angezeigt werden, muss das Zeiterfassungsmodul neu gestartet werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie geht man am Besten mit Urlaubsansprüchen aus Datenübernahmen / Neustart
+um?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade wenn Daten aus früheren Systemen, das können auch manuelle
+Aufzeichnungen sein, übernommen werden müssen, hat sich folgende
+Vorgehensweise bewährt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ermitteln
+Sie den Urlaubsanspruch in Tagen und Stunden getrennt in das aktuelle laufende
+Jahr und für den Resturlaub aus den Vorjahren. In Helium V geben Sie nun beim
+Urlaubsanspruch den Resturlaub aus den Vorjahren unter dem Jahr vor dem
+aktuellen ein und den Anspruch für das gesamte aktuelle Jahr unter dem
+aktuellen Jahr ein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+pflegen Sie die im aktuellen Jahre alle tatsächlich konsumierten Urlaubstage
+und Stunden in Helium V ein. Selbstverständlich können auch die in der Zukunft
+geplanten Urlaubstage eingegeben werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+erhalten Sie eine exakte Urlaubsabrechnung, in der auch der aliquote
+Urlaubsanspruch richtig dargestellt wird.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ein Mitarbeiter tritt während des Jahres ein, welcher Urlaubsanspruch muss
+eingegeben werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Geben Sie auch für diese Mitarbeiter den vollen Jahresanspruch ein. Von Helium
+V wird für die Berechnung des aliquoaten Anspruches folgende Formel angewandt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Urlaubsanspruch
+vom 1.1. bis zum Anspruchsdatum (z.B. Stichtag der Monatsabrechnung)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">abzgl.
+Urlaubsanspruch vom 1.1. bis zum Eintrittsdatum</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ergibt
+den tatsächlichen aliquoten Urlaubsanspruch zum gewünschten Stichtag.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie bringe ich alte/falsche Urlaubsansprüche raus?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade nach Datenübernahmen aus Alt-Systemen ergibt sich, dass manchmal
+Urlaubsansprüche korrigiert werden müssen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaub.gif" width="318" height="84"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollte
+z.B. hier der Resturlaub von 8Tagen auf 0 gesetzt werden, so ist dazu der
+zusätzliche Urlaub des Vorjahres entsprechend zu korrigieren.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gehen
+Sie dazu unter Personal, Urlaubsanspruch folgendes ein:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaub2.gif" width="459" height="40"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Voraussetzung:
+Die Abrechnung ist für 2007.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+der Resturlaub auf den Monatsabrechnungen von 2007 nicht mehr aufscheint, muss
+die Korrektur in 2006 eingetragen werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+könnte z.B. wie folgt aussehen:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="urlaub5.gif" width="460" height="71"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+sieht die nun korrigierte und aktualisierte Monatsabrechnung wie folgt aus.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaub4.gif" width="300" height="78"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass die zusätzlichen Urlaubstage und auch die zusätzlichen
+Urlaubsstunden auch in den Folgejahren gelten. Daher ist es erforderlich, dass,
+wenn zusätzliche Tage definiert werden mussten, eine Neudefinition für das
+danach folgende Jahr durchgeführt wird.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie wird ein Gleitzeit Minus mit Urlaubstagen gegenverrechnet?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:&nbsp;Hat
+ein Mitarbeiter ein deutliches Gleitzeit Minus so wird dieses oft mit
+Urlaubstagen gegenverrechnet.<br>
+D.h. es werden die nicht konsumierten Urlaubstage mit den zu viel konsumierten
+Gleitzeit Abwesenheitszeiten ausgeglichen.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bestimmen
+Sie dazu wieviele Urlaubstage erforderlich sind, um das Gleitzeit Minus
+abzudecken.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+buchen Sie dem Mitarbeiter die ermittelte Gutstundenanzahl und reduzieren seinen
+Urlaubsanspruch um die Stunden und Tage, in dem Sie für das Jahr unter
+zusätzliche Tage die entsprechenden Tage mit Minus angeben. Zusätzlich geben
+Sie auch unter zusätzliche Stunden die Dauer als negativen Wert an.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Beispiel:</u>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter hat ein Gleitzeit Minus von 42Std.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Er
+arbeitet 38,5 Std an 5 Tagen die Woche. D.h. pro Tag ergeben sich
+durchschnittlich 7,7Std.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">42
+/ 7,7 = 5,45 Std.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet Sie könnten nun dem Mitarbeiter 5,5 Urlaubstage gutschreiben.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ändern
+Sie nun den Urlaubsanspruch für das Jahr und geben Sie unter zusätzliche Tage
+-5,5Tage ein.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+zusätzliche Stunden geben Sie -42,35 Std. ein.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der Stundenabrechnung geben Sie zum gewünschten Stichtag, in unserem Beispiel
+der 31.12. 42,35 Gutstunden ein.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+hat der Mitarbeiter letztendlich ein Saldo von 0,35Std auf seinem
+Gleitzeitguthaben.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eingaben
+unter Urlaubsabrechnung:
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaubs-Gleitzeitausgleich1.gif" width="768" height="75">
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eingaben
+unter Stundenabrechnung:
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaubs-Gleitzeitausgleich2.gif" width="767" height="42">
+</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Mein Mitarbeiter hat deutlich länger Urlaub gemacht.<br>
+Wie kann das gegen sein Gleitzeitguthaben aufgerechnet werden ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gehen Sie wie oben unter &quot;Wie wird mein Gleitzeit Minus mit Urlaubstagen
+gegenverrechnet&quot; vor, jedoch mit umgekehrten Vorzeichen.<br>
+Hinweis:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Während
+des Jahres sollten eventuell zuerst die Gleitzeitguthaben abgebaut werden und
+dann erst die Urlaubstage. Damit vermeiden Sie am Jahresende Umbuchungen dieser
+Art. Verwenden Sie zur Protokollierung, zum Vorbuchen die Sondertätigkeit
+Zeitausgleich. Buchen Sie diese, so wie Sie den Urlaubsanspruch buchen in die
+Sondertätigkeiten des Mitarbeiters im Modul Zeiterfassung, Sondertätigkeiten
+beim jeweiligen Mitarbeiter ein.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Die Arbeitszeitstatistik kann nicht gedruckt werden ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Um die Arbeitszeitstatistik (Zeitverwaltung, Journal) auch tatsächlich
+ausdrucken zu können, ist das Recht PERS_SICHTBARKEIT_ALLE erforderlich.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Überstundenabrechnung, Blockzeit, Steuerfrei/Steuerpflichtig usw.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Laut
+österreichisches
+Arbeitsrecht sind Zeiten die in der sogenannten Blockzeit anfallen
+steuerfrei.
+Unter Nachtzeit im steuerlichen Sinn versteht man den Zeitraum zwischen 19.00
+Uhr und 7.00 Uhr. Begünstigt sind nur Zuschläge für Arbeitsstunden, die während
+einer zusammenhängenden Nachtarbeitszeit von mindestens drei Stunden
+(Blockzeit) geleistet werden.<br>
+<b>WICHTIG:</b><br>
+Die Blockzeit ist die Voraussetzung für die steuerfreien Stunden.<br>
+Parallel dazu können dies 50%ig oder 100%ig Überstunden sein.<br>
+</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ausgleich der Überstunden
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es ergibt sich immer wieder, dass Mitarbeiter einerseits Überstunden machen
+und andererseits dafür an den nächsten Tagen Zeitausgleich nehmen.<br>
+Das bedeutet, dass die angesammelten Überstunden durch die Minusstunden wieder
+verbraucht werden müssen.<br>
+Hier gehen wir so vor, dass am Monatsende diese Stunden ausgeglichen werden.<br>
+Hat der Mitarbeiter am Monatsende ein negatives Gleitzeitsaldo, so werden
+solange Überstunden verbraucht, bis sein Gleitzeitsaldo ausgeglichen ist. Es
+werden immer die teuersten Stunden zuerst verbraucht. Der Verbrauch erfolgt also
+in folgender Reihenfolge:</p>
+<ul>
+  <li>Überstunden 100%ig steuerpflichtig
+  <li>Überstunden 100%ig steuerfrei
+  <li>Überstunden 50%ig steuerpflichtig
+  <li>Überstunden 50%ig steuerfrei
+  <li>Mehrstunden</li>
+</ul>
+<p style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Dieser <b>Stundenausgleich</b> wird, falls erforderlich, auf der
+Monatsabrechnung angedruckt.</p>
+<p style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><img border="0" src="Stundenausgleich.gif" width="599" height="191"></p>
+<p style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Eventuell verbleibende negative Gleitzeitsaldi
+werden ins nächste
+Monat übertragen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Automatische
+Auszahlung von Überstunden</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei einigen Firmen werden immer alle Überstunden ausbezahlt, die negativen
+Stunden bleiben aber bestehen.<br>
+Die Auszahlung der Überstunden wird üblicherweise erst im nächsten Monat
+abgerechnet. D.h. wenn beim Mitarbeiter diese Automatik aktiviert ist, wird die Auszahlung auf den 1. des
+Folgemonates gebucht.<br>
+Für die Aktivierung der Auszahlungsautomatik gehen Sie bitte auf Personalgehalt
+des gewünschten Mitarbeiters. Hier hacken Sie bitte ab dem gewünschten Monat
+bei &quot;Überstunden monatl.
+auszahlen.&quot; an. Nun wird das Feld &quot;Verbleibender
+Puffer&quot; freigeschaltet. Hier geben Sie den verbleibenden Überstundenpuffer
+an. Dieser Wert kann auch 0 sein.<br>
+Ist
+nun &quot;Überstunden monatl.
+auszahlen.&quot; angehakt, so werden alle Überstunden, inkl. den Stunden des
+Vormonates, zum 1. des nächsten Monates ausbezahlt, solange &quot;Verbleibender Puffer&quot; nicht unterschritten wird. Es werden die
+teuersten Überstunden zuerst abgebaut.<br>
+Damit hängt auch Überstundenabrechnung/Stundenausgleich zusammen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Überstundenabrechnung/Stundenausgleich:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+jeweiligen Kollektivvertrag können die Multiplikatoren für die sogenannten
+50%igen und 100%igen
+Überstunden definiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Am
+Ende eines jeden Monats werden vorhandene Überstunden aufgeschlüsselt (inkl.
+die des Vormonates).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dabei
+werden&nbsp;wochenweise 50%igen Überstunden&nbsp;zu den steuerpflichtigen
+50%igen&nbsp;Überstunden hinzugerechnet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+der gesamte Gleitzeitsaldo (also der&nbsp;des aktuellen Monates&nbsp;inkl. der
+des Vormonates) negativ ist, werden die verfügbaren Überstunden dazu
+verwendet, den negativen Saldo zu decken.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b> Eine 100%ige Überstunde
+entspricht einer Überstunde, multipliziert mit dem im
+Kollektivvertrag hinterlegten Faktor.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Die Überstunden werden nur &quot;verbraucht&quot;, wenn im Personal ein
+Kollektivvertrag hinterlegt ist.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Buchen
+in alten / vergangenen Monaten:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+auch Korrekturen in alten Zeiten vornehmen zu können, ist das Recht
+FB_CHEFBUCHHALTER erforderlich.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hat
+eine Rolle dieses Recht nicht, so können bis zu dem unter
+ZEITBUCHUNGEN_NACHTRAEGLICH_BUCHEN_BIS eingestellten Zeitraum noch im vorigen
+Monat Buchungen vorgenommen werden. Für Tage danach kann nur mehr im aktuellen
+Monat gebucht werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Voraussetzung:
+das Chefbuchhalterrecht ist nicht gegeben und Zeitbuchungen können bis zum 15.
+nachträglich verändert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+heute sei der 14.7. ... so kann ich ab 1.6. Korrekturbuchungen machen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+heute sei der 16.7. ... es können Korrekturbuchungen nur ab dem 1.7. gemacht
+werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Tag ab dem diese Regel greifen sollte muss in Abstimmung mit Ihrer Personal /
+Lohnverrechnung festgelegt werden und kann im System unter Parameter
+ZEITBUCHUNGEN_NACHTRAEGLICH_BUCHEN_BIS eingestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aliquoter
+Urlaubsanspruch</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+Tag genau gerechnet. D.h. Der eingegebene Jahres-Urlaubsanspruch wird durch 365
+dividiert und mit dem Tag des Jahres multipliziert. Dies ergibt den aliquoten
+Urlaubsanspruch zum Stichtag.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

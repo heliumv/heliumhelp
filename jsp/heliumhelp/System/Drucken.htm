@@ -1,0 +1,586 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Drucken</title>
+</head>
+
+<body>
+
+<h1>Drucken in Helium V</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um den üblichen
+Druckvorgang in Helium V so rasch wie möglich und so flexibel wir notwendig
+durchführen zu können wurden folgende Zuordnungsmöglichkeiten geschaffen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zuerst aber einige
+Definitionen / Erklärungen:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Grundsätzlich:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Je größer /
+verzweigter die Anwenderinstallation, also Ihre Installation, ist, desto
+komplexer wird auch die Druckaufgabe und vor allem die optimale Steuerung des
+Ausdruckes möglichst ohne Benutzerinteraktion und mit geringer
+Netzwerkbelastung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="../Bilder/Drucken_Umfeld.jpg" width="494" height="691"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In dieser Darstellung
+gibt es also verschiedene Druckertypen, verschiedene Kommunikationswege.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Natürlich will der
+Anwender eines externen Standortes auf einen bestimmten Drucker in der Zentrale
+drucken, damit von da aus wieder weitere Aktionen eingeleitet werden können.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Grundsätzlich
+müssen folgende Druckertypen unterschieden werden:</p>
+
+<div align="left">
+  <table border="1" width="650" height="28">
+    <tr>
+      <td width="186" height="28">Druckertype</td>
+      <td width="228" height="28">Besonderheiten</td>
+      <td width="236" height="28">Bemerkung</td>
+    </tr>
+    <tr>
+      <td width="186" height="28">Laserdrucker</td>
+      <td width="228" height="28">Schächte<br>
+        Formulare</td>
+      <td width="236" height="28">Keine Durchschläge</td>
+    </tr>
+    <tr>
+      <td width="186" height="28">Endlosdrucker</td>
+      <td width="228" height="28">ev. 2 Traktore</td>
+      <td width="236" height="28">Druckerspezifische Fonts verwenden<br>
+        eigene Druckersprache</td>
+    </tr>
+    <tr>
+      <td width="186" height="28">Etikettendrucker</td>
+      <td width="228" height="28">Thermo Transfer Drucker<br>
+        Cutter</td>
+      <td width="236" height="28">Drucker Fonts<br>
+        eigene Druckersprache</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Unterscheidung der
+Drucker aus der Sicht des Anwenders:</p>
+
+<div align="left">
+  <table border="1" width="645" height="25">
+    <tr>
+      <td width="425" height="25">Listendrucker</td>
+      <td width="738" height="25">Schnell, robust, viele Seiten</td>
+      <td width="772" height="25"></td>
+    </tr>
+    <tr>
+      <td width="425" height="25">Briefpapierdrucker</td>
+      <td width="738" height="25">Erste Seiten, folge Seiten</td>
+      <td width="772" height="25">Schnell erreichbar, an Zentraler Stelle</td>
+    </tr>
+    <tr>
+      <td width="425" height="25">Etikettenausdrucke</td>
+      <td width="738" height="25">Schneller Ausdruck von Einzeletiketten</td>
+      <td width="772" height="25">direkt am Arbeitsplatz</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Möglichkeiten der
+Druckerdefinition:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Selbstverständlich
+sind diese Definitionen wiederum Mandantenabhängig.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">a.) Benutzer /
+Benutzerstandort spezifisch</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">b.) Formular
+spezifisch</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">c.) Arbeitsplatz
+spezifisch</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In Helium V gibt es
+von der Anschlusstechnik, von der Verfügbarkeit her gesehen zwei
+Anschlussarten:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">a.) der Drucker ist
+dem Helium V Server bekannt</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">b.) der Drucker ist
+nur auf dem Helium V Client verfügbar.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Direkte Ausdrucke,
+ohne Vorschau (ohne Client Interaktion) erfolgen grundsätzlich nur auf dem
+Server bekannte Drucker. Für die Definition und Konfiguration dieser Drucker
+finden Sie unter System ein entsprechendes Werkzeug.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ausdrucke die
+ausnahmsweise auf einen anderen Drucker erfolgen sollten, müssen immer in die
+Vorschau gedruckt werden. Von der Vorschau aus kann dann ein, dem Client
+bekannter Drucker, ausgewählt werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach erfolgter
+Konfiguration der Server-Drucker können Druckergruppen gebildet werden. Diese
+Druckergruppen sind nach der obigen Anwendersicht aufgebaut. D.h. hier
+definieren Sie welche (Standort) Gruppe (z.B. Verkauf im ersten Stock)
+normalerweise auf welche Drucker druckt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In der
+BenutzerMandanten Definition (Modul Benutzer) kann jedem Benutzer eine
+Druckergruppe zugeordnet werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie
+bei diesen Zuordnungen, dass es zusätzlich die oben beschriebenen
+Definitionsmöglichkeiten für die Druckerzuordnung gibt.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie / wo kann
+ein Druck ausgelöst werden?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Das ist davon
+abhängig welche Art von Information Sie wünschen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Grundsätzlich
+unterscheiden wir drei Gruppen</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">a.) Drucke auf
+offizielles Papier, z.B. eine Rechnung</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">b.) Erstellen von
+Informationen für einen Datensatz, z.B. Statistik für einen Kunden</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">c.) Erstellen von
+Journalen über alle Datensätze, z.B. Umsatzstatistik.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Drucke auf
+offizielles Papier finden Sie immer unter dem linken oberen Menüpunkt, welcher
+zugleich mit dem Namen des Moduls gekennzeichnet ist. Darunter finden Sie den
+Menüpunkt Drucken. Dies ist der speziell für den Druck einer offiziellen
+Rechnung aufbereitete Druck. Sehr oft finden Sie diese Funktion auch im
+Druckknopf in den Positionsdaten des Moduls.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Druck von
+Informationen zu einem Datensatz. Die Informationen zu einem Datensatz finden
+Sie immer unter dem Menüpunkt Info. Also z.B. die Lieferstatistik eines Kunden,
+die Reservierungen eines Artikels usw.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Informationen über
+eine Summe von Daten, z.B. über alle Kunden, finden Sie im Menüpunkt Journal.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wozu dient die Lupe?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In jeder Helium V Liste finden Sie in der rechten oberen Ecke eine Lupe <img border="0" src="Listen_Drucken_Lupe.gif" width="31" height="25">.
+Mit dieser Lupe kann die aktuell angezeigt Liste ausgedruckt werden. Bitte
+beachten Sie, dass dies nur die Daten der aktuellen Liste sind und nichts mit
+der Druckfunktion des z.B. Angebotes gemein haben.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Bedeutung der Druck
+/ Kommunikationsknöpfe</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch den Aufruf
+eines Druckes, eines Journals oder ähnlichem gelangen Sie in den sogenannten
+Druckdialog. Hier finden
+Sie für jeden Report / jeden Ausdruck folgende Knöpfe, mit denen der Ausdruck
+nach Ihren Wünschen gesteuert werden kann.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Leiste.jpg" width="482" height="28"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Grundsätzlich
+besteht das Fenster des Druckdialoges aus drei Teilen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">- Der Knopfzeile</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">- einem Auswahl
+Dialog in dem Sie die Bedingungen für diesen Druck / diese Auswertung
+einstellen</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">- einem kleinen
+Vorschaufenster</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Refresh.gif" width="32" height="27">
+Aktualisieren. Mit diesem Knopf werden die im Druckdialog angezeigten Daten aktualisiert.
+Bitte beachten Sie, dass der Refresh Knopf nur für den Inhalt des Reports, aber
+nicht für die den Report umgebenden Daten gilt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Vorschau.gif" width="33" height="26">
+ Vorschau. Damit werden die Daten im Druckdialog in einem eigenen
+größeren Vorschaufenster dargestellt. Wurden im Druckdialog noch keine
+Daten angezeigt, so werden diese vorher ermittelt. Wurden bereits Daten
+ermittelt, so werden diese <u><b>NICHT neu errechnet</b></u> um entsprechende
+Rechenzeit usw. zu sparen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Direkt.gif" width="29" height="26">
+Drucken. Wie Vorschau, jedoch werden die Daten an den Drucker gesandt, der
+diesem Report hinterlegt ist.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Email.gif" width="33" height="26">
+EMail. Wie Vorschau, jedoch werden Sie zur Eingabe eines EMail Empfängers
+aufgefordert. Der Report wird als EMail mit PDF-Anhang versendet. Konnte
+Aufgrund der Daten des Drucks ein EMail Empfänger ermittelt werden, so wird
+dieser vorgeschlagen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Fax.gif" width="31" height="27">
+ Fax. Wie Vorschau, jedoch werden Sie zur Eingabe eines Fax Empfängers
+aufgefordert. Konnte Aufgrund der Daten des Drucks ein Fax Empfänger ermittelt
+werden, so wird dessen Faxnummer vorgeschlagen. <a href="../Client/tipps_und_tricks.htm#Faxversand"> Siehe
+auch</a>.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Speichern.gif" width="32" height="25">
+ Speichern. Speichert den angezeigten Report inkl. Inhalt in verschiedenen
+Formaten. Wurden im Druckdialog noch keine Daten angezeigt, so
+müssen diese erst mit Aktualisieren erzeugt werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Formate sind: </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" src="Drucken_Formate.gif" width="269" height="158"></p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Hinweise zur
+Übernahme in eine Tabellenkalkulation:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Da der
+Reportgenerator versucht in den Zielformaten möglichst das Aussehen zu
+erzielen, wie es auch in der Druckvorschau aussieht, dies aber gerade bei
+weiterführenden Auswertungen oft nicht erwünscht ist, empfiehlt es sich die
+Datei als *.csv Datei abzuspeichern. In diesem Dateiformat sind keine
+Formatierungen enthalten. Benennen Sie nun diese Datei vor dem Export auf *.txt
+um. Danach geben Sie beim Import unter Dateityp, getrennt an, Trennzeichen ,
+(Komma), Texterkennung keine. Markieren Sie nun alle Spalten und definieren Sie
+als Feldtype Text. Nun haben Sie die einzelnen Spalten bestmöglich importiert.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Alternativ können
+Sie die Datei auch direkt als CSV Datei importieren. Sie erhalten nun (im
+deutschsprachigen Raum) alle Daten in einer Spalte, der Spalte A. Markieren Sie
+diese Spalte durch Klick auf die Spaltenüberschrift. Nun wählen Sie Daten,
+Text in Spalten. Nun erscheint ebenfalls der Textkonvertierungsassistent. Gehen
+Sie wie oben beschreiben vor. Für die Konvertierung von Zahlen muss unter
+Umständen der Dezimaltrenner von , auf . umgestellt werden. Dies kann im
+Schritt 3 von 3 unter weitere definiert werden.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Hinweise zur
+Übernahme nach Word:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um einen Ausdruck
+nach MS-Word zu übernehmen exportieren Sie den Druck bitte zuerst im ODT Format
+(OpenDocument-Text). Dieses Format kann mit dem Writer von <a href="http://de.openoffice.org/downloads/quick.html">OpenOffice</a>
+geöffnet werden. Speicher Sie diese Datei dann als *.DOC Datei um sie in
+MS-Word wiederum weiterverwenden zu können.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wann wird das EMail / das Fax versandt?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Im Sendedialog kann unter anderem auch der Sendzeitpunkt angegeben werden.</p>
+
+<p style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Sendezeitpunkt.gif" width="282" height="24"></p>
+
+<p style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wir
+dieser leer belassen, so werden vom Helium V Server zum aktuellen Sendezeitpunkt
+fünf Minuten hinzugerechnet und dieser Zeitpunkt als Sendezeitpunkt verwendet.
+Dies hat den Vorteil, dass, sollten Sie nach dem Senden bemerken, dass Sie
+dieses EMail, dieses Fax doch nicht versenden wollten, Sie innerhalb von fünf
+Minuten, gerechnet ab dem Zeitpunkt des Klicks auf Senden, über System,
+Versandaufträge, diesen Versandauftrag löschen können. (Basis für den
+Versandzeitpunkt ist die Zeit des Servers).</p>
+
+<p style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Tipp:
+Wenn Sie ein Email ein Fax sofort versenden wollen, so ist es am Einfachsten,
+wenn Sie zwar das Datum des Sendezeitpunktes auswählen, aber die Sendeuhrzeit
+leer lassen. Damit ist der Versandzeitpunkt bereits verstrichen und wird sofort
+versandt.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Wie stelle ich eine firmeninterne Vorwahl zur Amtsleitung ein?</p>
+
+<p style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Es
+gibt im System, unterer Reiter Parameter, den Mandantenparameter
+AMTSLEITUNGSVORWAHL. Diese Vorwahl wird im Druckdialog nicht
+angezeigt, sondern erst beim Anlegen des Versandauftrages dazugefügt. Das
+bedeutet im im Modul System unterer Reiter Versandauftrag werden die
+Faxversandaufträge inkl. der Amtsleitungsvorwahl angezeigt.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Wo werden die Absenderadressen für EMail und Fax definiert?</p>
+
+<p style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Diese werden im Partner definiert. Siehe <a href="../Partner/index.htm#Kontaktdaten"> Kommunikation im
+Partner</a>.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Wo werden die Empfängeradressen für EMail und Fax definiert?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Diese werden durch den empfangenden Partner definiert.<br>
+Beispiel: Sie senden eine Rechnung an einen Kunden und haben in den Kopfdaten
+zusätzlich zur Rechnungsadresse einen Ansprechpartner definiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+EMail Empfänger wird die EMail-Adresse des Ansprechpartners vorgeschlagen. Ist
+beim Ansprechpartner keine EMail-Adresse hinterlegt, so wird die EMail-Adresse
+des Rechnungsempfängers vorgeschlagen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Fax Nummer wird ähnlich vorgegangen, es greift jedoch zusätzlich die
+Funktionalität der sogenannten Direkt-Faxnummer. D.h. ist beim Ansprechpartner
+eine Direktfaxnummer eingetragen, so wird diese Nummer vorgeschlagen. Ist nur
+die Fax-Durchwahl beim Ansprechpartner hinterlegt, so wird die Faxnummer der
+Rechnungsadresse herangezogen. Bei dieser wird der Teil Faxdurchwahl der
+Zentrale abgetrennt, siehe <a href="../Partner/index.htm#Wie erfasst man Telefon und Faxnummern">
+Wie erfasst man Telefon und Faxnummern richtig</a>, und durch die Faxdurchwahl
+des Ansprechpartners ersetzt. Die daraus resultierende Nummer wird
+vorgeschlagen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+beim Ansprechpartner auch keine Faxdurchwahl definiert, so wird die Faxnummer
+der Rechnungsadresse vorgeschlagen.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Können mehrere Empfängeradressen für das EMail angegeben werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Trennen Sie die unterschiedlichen Adressen mittels ; Strichpunkt. z.B.
+Support@LogistikPur.com;Support@HeliumV.com</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q: Wo kann man Drucker definieren und auswählen (z.B.
+Als Standarddrucker oder Stockwerkdrucker)?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Die für den Ausdruck auf jedem Client zur Verfügung stehenden Drucker müssen
+im Client-Betriebssystem definiert werden.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Zusätzlich
+kann je Client-PC und Report ein Standarddrucker für den jeweiligen Druck
+definiert werden.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Grundsätzlich
+wird bei einem Ausdruck der im Betriebssystem definierte Standarddrucker
+vorgeschlagen. Sollten nun ein anderer Drucker, z.B. für den Etikettendruck
+gewünscht werden, so wählen Sie anstelle des vorgeschlagenen
+Standarddruckers&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Drucker_Auswahl.gif" width="414" height="27"></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">den
+entsprechenden Etikettendrucker aus. Um diesen Drucker auf Ihrem Arbeitsplatz
+dauerhaft diesem Formular zuzuordnen klicken Sie bitte auf <img border="0" src="Drucker_Speichern.gif" width="104" height="24">.&nbsp;<br>
+Um eine gewählte Druckerdefinition wieder auf Ihren Standard-Drucker
+zurückzusetzen, wählen Sie bitte <img border="0" src="Drucker_Loeschen.gif" width="103" height="22">.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Beachten
+Sie dazu bitte <a href="Druckformulare.htm#KostenstellenDruckersteuerung">auch</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Mein neuer Drucker ist in der Auswahlliste nicht enthalten.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Die Drucker werden nur beim Start des Helium V Clients geladen. D.h. wenn in der
+Auswahlliste der Drucker Ihre, vermutlich soeben neu definierter Drucker noch
+nicht enthalten ist, muss Ihr Helium V Client neu gestartet werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Woher kommt der EAN-Code / der Barcode?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: In Helium V steht
+Ihnen bei allen Drucken die Verwendung eines Barcodes zur Verfügung.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Üblicherweise wird
+dies für den Ausdruck von Artikelnummern, Losnummer, Auftragsnummern usw.
+verwendet.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">EAN-Code:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der EAN-Code ist
+einer unter einer Vielzahl von verschiedenen Barcodes.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+EAN steht für International Article Number (früher European Article number)
+und ist eine Produktkennzeichnung für Handelsartikel. Die EAN ist eine Zahl,
+bestehend aus 13 oder 8 Ziffern, die zentral verwaltet und an Hersteller auf
+Antrag vergeben wird und auf Handelsartikel (z.B. im Lebensmittelhandel)
+aufgedruckt wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Jeder
+Barcode hat seine spezifischen Merkmale und seine spezifischen Einsatzgebiete.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Von
+Helium V wird üblicherweise der Code 39 verwendet, da dieser den Vorteil hat,
+dass damit Großbuchstaben, Ziffern und einige wenige Sonderzeichen in relativ
+kompakter Form als Strichcode kodiert ausgegeben werden können.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definition
+der Barcodetype <a href="ireport.htm#Barcodetype">siehe</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was passiert, wenn die EMail-Adresse geändert wird, während jemand im
+Druckmenü ist?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Aus Geschwindigkeits- und Netzwerktraffic- gründen werden die Versanddaten nur
+beim Aufruf des Druckes / des Druckdialoges ermittelt. Das bedeutet, wenn,
+während Sie im Druckdialog stehen, die EMail oder Fax Daten Ihres Kunden, Ihres
+Ansprechpartners verändert werden, so werden diese Informationen erst durch den
+erneuten Aufruf des Druckens aktualisiert.<br>
+Bitte beachten Sie, dass der Refresh Knopf nur für den Inhalt des Reports, aber
+nicht für die den Report umgebenden Daten gilt.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Tipp:</b>
+Wurde eine Faxnummer oder eine EMail Adresse geändert, so schließen Sie bitte
+den Druckdialog und rufen danach den Ausdruck erneut auf.
+</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Drucken auf Briefpapier / unterschiedliche Seiten usw.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Die Ansteuerung
+unterschiedlicher Druckerschächte können Sie in Helium V über verschiedene
+Drucker realisieren. D.h. wenn z.B. die Rechnung auf Briefpapier, aber die
+Packliste auf weißes Papier gedruckt werden soll, so muss auf jedem
+Arbeitsplatz ein Drucker installiert werden, welcher die Ausdrucke automatisch
+an den richtigen Druckerschacht sendet. Das bedeutet also, dass Sie den
+Standarddrucker (=weißes Papier) und einen eigenen Drucker(treiber) für das
+Briefpapier installiert haben müssen. Für den Druck der Rechnung wählen Sie
+im Druckdialog von Helium V den passenden Briefpapierdrucker aus und klicken auf speichern. Damit wird für Ihren PC-Client diesem Formular der
+Briefpapierdrucker zugeordnet und die Rechnung an diesen Drucker gesandt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Einrichten des selben
+Druckers mit unterschiedlichen Eigenschaften siehe <a href="../Client/tipps_und_tricks.htm#Unterschiedliche Eigenschaften am gleichen Drucker">Tipps
+und Tricks</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Es wurde ein neuer Drucker eingerichtet, er ist aber in der Druckerauswahl nicht
+sichtbar?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Aus Performance Gründen werden die am Client installierten Drucker nur beim
+Start des Clients eingelesen. D.h. wenn ein neuer Drucker nach dem Start des
+Helium V Clients installiert wurde, so ist dieser nicht sichtbar. Damit er
+sichtbar wird, beenden Sie bitte den Helium V Client und starten Sie ihn erneut.
+Nun ist er sichtbar.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Das hinterlegte Firmenlogo ist nicht sichtbar?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Üblicherweise werden farbige Logos auf Briefpapier gedruckt. D.h. es darf bei
+Ausdrucken das Logo nicht mitgedruckt werden. Wird der Ausdruck aber per Fax
+oder EMail versendet so ist dies trotzdem anzuführen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+nun, z.B. für Testzwecke das Logo trotzdem angeführt werden soll, so muss
+schalten Sie dies
+in den Mandantenparametern (System, Parameter) unter LOGO_IMMER_DRUCKEN ein
+(Wert = 1).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Q:
+Warum werden manche Drucke automatisch gestartet und andere erst manuell?</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn ein Druck über Kriterien verändert werden kann, wird er erst manuell
+gestartet, damit Sie nicht unnötig auf Reports warten müssen, die Sie nicht
+bestellt haben und um dem Server überflüssige Arbeit zu ersparen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Alle
+anderen Drucke kommen automatisch.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Einrichten des Faxdienstes auf Windows2003 Server?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Neben diesem
+Dienst muss auch der Acrobate Reader (ab Version 7.07) installiert sein,
+<a href="../Installation/Installation_Win_Fax_Email_Dienst.htm">siehe</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+EMAIL / Fax Versanddienste?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+<a href="../Installation/Installation_Win_Fax_Email_Dienst.htm">siehe</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum ist das Datum am Druck 'falsch'/nicht deutsch geschrieben?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn es sich um einen Belegdruck handelt, kann es sein, dass der Kunde/Lieferant
+eine andere Sprache hinterlegt hat. Überprüfen Sie auch, ob Sie mit der
+richtigen Sprache eingeloggt sind (Sichtbar ist das in der Titelleiste von
+HeliumV 'UI-Sprache:' <a href="../Allgemein/Mehrsprachigkeit.htm">siehe auch</a>.)</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Im Druck werden Formatierungsbefehle angezeigt, im Helium V Client sind diese
+nicht ersichtlich</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es kann bei alten Texten vorkommen, dass intern die Formatierungen noch falsch
+abgespeichert wurden. Diese werden seit der Version 5.10.028 angezeigt. Um diese
+zu korrigieren, bearbeiten Sie bitte die Texte, indem Sie die Formatierungen
+entfernen, danach neu eintragen und danach speichern. Durch das Speichern werden
+die internen Formatierungsanweisungen richtiggestellt und damit auch beim
+Ausdrucken entsprechend dargestellt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Falsche_Formatierungen.jpg" width="1024" height="740"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Druck von Etiketten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für den Druck von Etiketten ist es in manchen Firmen üblich, A4
+Etikettenvorlagen mit z.B. 24Etiketten (Zweckform, Herma, ...) zu verwenden.
+Diese A4 Vorlagen haben den Vorteil, dass sie mit üblichen Laserdruckern
+ausgedruckt werden können. Sie haben aber den gravierenden Nachteil, dass
+praktisch kein einzelnes Etikett ausgedruckt werden kann.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Warum
+werden einzelne Etiketten benötigt?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der Regel werden die Artikel etikettiert. Das hat den Zweck, zu erkennen, wie
+alt Artikel sind um so immer die ältesten Artikel zuerst zu verwenden. Damit
+erreichen Sie, dass das in Helium V implementierte FiFo Prinzip unterstützt
+wird und sie so automatisch die Zuordnung der Wareneingänge zu den
+Warenausgängen und umgekehrt erhalten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+dieses FiFo Prinzip beibehalten zu können, muss nach der einmal erfolgten
+Etikettierung / Auszeichnung jeder Wareneingang sofort gekennzeichnet werden.
+Das bedeutet es muss für jeden Artikel eines Wareneingangs ein einzelnes
+Etikett ausgedruckt werden. Wenn Sie dies nun mit den 3x8 Etiketten-Formularen
+auf einem Laserdrucker machen, ist das Etiketten-Formular spätestens nach dem
+dritten Druckvorgang unbrauchbar, weil schwarz, im Drucker hängen geblieben
+usw.. D.h. spätestens zu diesem Zeitpunkt kommen Drucker zum Einsatz, die
+einzelne Etiketten drucken können. Wir haben uns daher dafür entschieden nur
+den Druck einzelner Etiketten zu unterstützen. Bei der Entscheidung welcher
+Drucker und welche Etiketten für welchen Anwendungsfall am Besten geeignet ist,
+unterstützen wir Sie gerne.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Barcode Definitionen</title>
+</head>
+
+<body class="answer">
+
+<h1 class="answer" align="left">Drucken von Barcode</h1>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Barcodes
+werden für die rasche und sichere Erfassung von Artikel und Seriennummern sowie
+zur Erfassung von BDE Daten usw. verwendet. Überall wo Auftragsnummern,
+Tätigkeiten, Maschinenzeiten oder Artikel erfasst werden müssen, können durch
+die Verwendung von Barcodes entsprechende Vereinfachungen verbunden mit der
+Reduzierung der Eingabezeit und der Reduzierung der Erfassungsfehler erzielt
+werden.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Von
+Helium V werden die durch den iReport unterstützten Barcodes verwendet.
+Üblicherweise wird der Code 39 verwendet.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Um
+eine entsprechende Bedienerführung und Bedienungssicherheit zu erreichen, ist
+jeder durch Helium V generierte Barcode mit einem sogenannten LeadIn versehen,
+welcher die Art des Codes definiert.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Derzeit
+sind folgende LeadIn Zeichen definiert:</p>
+
+<div align="left">
+  <table border="1" width="578" height="19">
+    <tr>
+      <td width="214" height="19">Lead In</td>
+      <td width="942" height="19">Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">$P</td>
+      <td width="942" height="19"> Ausweisnummer muss exakt dreistellig sein.<br>
+        Danach kommt der Name des Mitarbeiters für die Personenumschaltung.</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$L</td>
+      <td width="942" height="19"> Losnummer</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$R</td>
+      <td width="942" height="19"> Reparaturnummer</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$T</td>
+      <td width="942" height="19"> Tätigkeit (Arbeitszeitartikel)</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$M</td>
+      <td width="942" height="19"> Maschinen ID (einzelne Maschine)</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$V</td>
+      <td width="942" height="19"> Vorgang bestehend aus Los, Maschinen ID,
+        Tätigkeit<br>
+        oder anstelle der Tätigkeit $STOP für das Ende der Maschinenzeit.</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$O</td>
+      <td width="942" height="19"> Lagerort</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$F</td>
+      <td width="942" height="19"> Fehlernummer</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$A</td>
+      <td width="942" height="19"> Auftragsnummer z.B. auf Packliste</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$EA</td>
+      <td width="942" height="19"> Auftragsende mit Abfrage der
+        Gut/Schlechtstück&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$EL</td>
+      <td width="942" height="19">
+        Losende mit Abfrage der Gut/Schlechtstück</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$B</td>
+      <td width="942" height="19"> Bestellung Nummer</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$KS</td>
+      <td width="942" height="19"> Kabelschneider Nummer (= Losnummer in Fertigungsauftrag)</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$KOMMT</td>
+      <td width="942" height="19">Anwesenheitszeit Kommt</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$GEHT</td>
+      <td width="942" height="19">Anwesenheitszeit Geht</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$UNTER</td>
+      <td width="942" height="19">Unterbrechungsbeginn oder Ende</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$ENDE</td>
+      <td width="942" height="19">Tätigkeits Ende</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$DOS</td>
+      <td width="942" height="19"> Konfiguration Stift</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">$ARZT</td>
+      <td width="942" height="19">Arzt Beginn oder Ende</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$KRANK</td>
+      <td width="942" height="19">Krank Beginn oder Ende</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">$BEHOERDE</td>
+      <td width="942" height="19">Behördengang Beginn oder Ende</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$ANZEIGE</td>
+      <td width="942" height="19">Anzeige von Zeitsalden des Mitarbeiters</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">$ESC</td>
+      <td width="942" height="19">Abbruch</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$REISE</td>
+      <td width="942" height="19">Dienstreise Beginn oder Ende</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">$UEBER</td>
+      <td width="942" height="19">Überstunden Beginn</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$URLAUB</td>
+      <td width="942" height="19">Urlaubsbeginn oder Ende</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">$STOR</td>
+      <td width="942" height="19"> Stornobuchung mit F630</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$STORNO</td>
+      <td width="942" height="19"> Stornobuchung definierbar mit F734</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$STOP</td>
+      <td width="942" height="19"> Stop der Maschinentätigkeit</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$DIENST</td>
+      <td width="942" height="19"> Dienstgang</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$_????</td>
+      <td width="942" height="19"> Sonderurlaub (frei definierbar, siehe
+        Personal, Sondertätigkeiten)</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">$ZMxx</td>
+      <td width="942" height="19"> Zeitmodell Änderung für einen Tag für den gewählten
+        Mitarbeiter. Nur auf der
+BDE Station.</td>
+    </tr>
+    <tr>
+      <td width="214" height="19"> $ und Kundennummer</td>
+      <td width="942" height="19">Kundennummer auf Kundenkarte</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">$ZHHMMSS&nbsp;</td>
+      <td width="942" height="19"> Absolute Zeiteingabe</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$I123456789012345</td>
+      <td width="942" height="19"> Material Ident danach muss $Q oder $ESC
+        eingegeben werden</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$Q123,4</td>
+      <td width="942" height="19"> Menge</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$QENDE</td>
+      <td width="942" height="19"> Beenden der mehrfachen Mengeneingabe</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$+</td>
+      <td width="942" height="19"> Letzte Mengeneingabe erhöhen</td>
+    </tr>
+    <tr>
+      <td width="214" height="19">
+$-</td>
+      <td width="942" height="19"> Letzte Mengeneingabe reduzieren</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Freie
+LeadIn Buchstaben:</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">CDGHJKNSUWXY&nbsp;&nbsp;&nbsp;
+Dies sind immer nur einzelne Buchstaben mit führendem $</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">HINWEIS: Code39 kann keine _______</span></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><a name="Von den Barcodes unterstützte Zeichen"></a>Von
+den Barcodes unterstützte Zeichen:</p>
+<div align="left">
+  <table border="1" width="741" height="14">
+    <tr>
+      <td width="268" height="16">Barcode</td>
+      <td width="1052" height="16">Unterstützte Zeichen</td>
+    </tr>
+    <tr>
+      <td width="268" height="16">Code 39</td>
+      <td width="1052" height="16">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-.$/+%Space</td>
+    </tr>
+    <tr>
+      <td width="268" height="14">Code 128</td>
+      <td width="1052" height="14">!#$%'()0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Drucken
+von Barcodes aus anderen Programmen:</b></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Manchmal
+ist es nützlich Barcodes aus anderen Programmen (Textverarbeitung) zu drucken.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wenn
+Sie eine passende TrueType Schrift besitzen, so können Sie den Code 39 direkt
+als Schrift verwenden.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Hier
+ist zu beachten, dass Barcodes noch zusätzliche Steuerzeichen am Beginn und am
+Ende des Codes besitzen. Diese müssen üblicherweise mitgedruckt, also in Ihren
+Zeichen enthalten sein.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Der
+Code 39 muss in ** eingebettet sein (=VERKETTEN("*";D85;"*")). Wenn Sie also die
+Zahlen 1234 als Barcode ausgeben wollen müssen die Zeichen *1234* mit dem Code
+39 TrueType Font ausgegeben werden.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Warum
+werden manche Artikelnummern nicht als Barcode gedruckt?</b></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Es
+kommt z.B. beim Ausdruck der Inventur Zählliste dazu, dass manche Artikel nicht
+als Barcode angedruckt werden.<br>
+Ursache ist hier immer dass in der Artikelnummer für den Barcode ungültige
+Zeichen enthalten sind.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Ungueltige-Barcodes.gif" width="272" height="68"></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">So
+ist in der zweiten Artikelnummer ein Umlaut enthalten, welcher im Code 39 nicht
+gedruckt werden kann.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Siehe
+dazu auch <a href="../artikel/index.htm#Erlaubte Zeichen in der Artikelnummer">erlaubte
+Zeichen in der Artikelnummer</a>.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Barcodes
+sind schlecht lesbar, können mit einem CCD Scanner nur mühsam gelesen werden</b></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Für
+die Akzeptanz der Zeiterfassung, bzw. der gesamten Datenerfassung mittels
+Barcode ist das schnelle und sichere Lesen der Codes von enormer Bedeutung. Um
+dies zu erreichen beachten Sie bitte folgendes:</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
+Codes müssen etwas schmäler sein als der CCD-Scanner. Wir setzen
+üblicherweise Touchscanner ein, also bitte sehr nahe an den Barcode
+heranführen und dann den Scannknopf drücken. Es hat sich bewährt, während
+des Scannens eine leichte Bewegung nach unten zu machen.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Zu
+den Codes selbst: Diese MÜSSEN vor und nach dem eigentlichen Code eine Ruhezone
+haben. D.h. links und rechts vom Barcode darf im Bereich von ca. 1cm kein Druck
+sein. Bitte beachten Sie, dass auch Papierkanten als Linien gelesen werden und
+daher den Barcode verfälschen können, unlesbar machen.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Oft
+werden die Barcodes auch in Klarsichtfolien eingelegt. Es gibt nur wenige
+Klarsichtfolien, die für den Einsatz von Barcodes geeignet sind. Bitte achten
+Sie darauf, dass die Folien 1.) nicht spiegeln und 2.) trotzdem einen
+klaren/scharfen Blick (für den Scanner) auf den Barcode ermöglichen.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wenn
+Codes in Folien schlecht lesbar sind, so prüfen Sie bitte zuerst, ob der
+Barcode direkt vom Papier gut lesbar ist. Ist dies der Fall, so muss eine andere
+Klarsichtfolie verwendet werden.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Der
+Scannvorgang sollte bei normalem Licht erfolgen. Bei direkter Sonneneinstrahlung
+konnten wir bisher keinen Barcode vernünftig einlesen.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Für
+Einstellung der Barcodescanner <a href="../Zeiterfassung/BDE_Station.htm">siehe
+auch</a>.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
+</body>
+
+</html>

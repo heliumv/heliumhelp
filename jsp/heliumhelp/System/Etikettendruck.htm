@@ -1,0 +1,165 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Drucken</title>
+</head>
+
+<body>
+
+<h1>Etikettendruck</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Besonderheiten des
+Etikettendruckes.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Da es beim Drucken,
+Formatieren und Ansteuern der Etikettendrucker viele Dinge zu beachten gibt,
+hier eine Sammlung von zu beachtenden Punkten:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das Formular, die
+Reportvorlage muss zum Etikett passen. D.h. sowohl die Abmessungen des Reports
+als auch die Abmessung der Etikette müssen übereinstimmen. Zusätzlich, muss
+die Abmessung der Etikette dem Drucker mitgeteilt / beim Drucker hinterlegt
+werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Formularvorlage</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achten Sie unbedingt
+darauf, dass auch Ihr Etikettendruck weiß, welche Etiketten eingelegt sind.
+Durch diese Einstellung wird auch die zu bedruckende Fläche für den
+Druckertreiber gesetzt. Wird eine falsche Etikette, also eine falsche Abmessung
+der Papierabmessungen im Drucker vorgenommen, so erscheint der Druck versetzt
+(horizontal oder vertikal) oder ähnliches.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Einstellungen für
+den Zebra TLP2844-Z</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Einstellung_Zebra_TLP2844Z.gif" width="439" height="443"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Diese finden Sie
+unter Eigenschaften, Druckeinstellungen (in Windows-Systemen)</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achten Sie darauf,
+dass diese Einstellungen für jeden Arbeitsplatz vorgenommen werden müssen.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Reportvorlage</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Inhalt der
+Etiketten wird üblicherweise im Dokumentenbereich Title definiert. D.h. die
+Größe der zu bedruckenden Etikette wird hier in Punkten angegeben. Ein Punkt
+ist ca. 0,353 mm oder 1/72&quot; (Zoll bzw. Inches). </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beispiel: Einrichten
+des Etikettendruckes für einen Zebra TLP 2844-Z</p>
+<ol>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Installieren des
+    richtigen Druckertreibers. Hier hat sich für Windows-Systeme der Treiber
+    von seagull bewährt.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Einstellen des
+    Etikettes 62x36mm -&gt; siehe auch Formulardefinition unter Windows 2000 und
+    höher<br>
+    Einstellung unter Drucker, Eigenschaften, Druckereinstellungen, Seite
+    einrichten.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Stellen Sie nun
+    mittels Testdruck sicher, dass der Drucker richtig druckt. D.h. mit dem
+    Seagull-Treiber wird TEST mit einem entsprechenden Rahmen herum in die linke
+    obere Ecke der Etikette gedruckt.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Richten Sie nun
+    den entsprechenden Report ein. In unserem Beispiel: ww_artikeletikett.jrxml<br>
+    <b>ACHTUNG:</b> Bitte ausschließlich Reports im Bereich Anwender
+    verändern!</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach dem Öffnen
+    des Reports gehen Sie auf Ansicht, Reporteigenschaften.<br>
+    Definieren Sie hier Abmessungen, Ausrichtungen und Ränder.<br>
+    <b>WICHTIG:</b> Es hat sich bewährt, den Drucker immer im Porträt bzw.
+    Hochformat zu definieren, auch wenn ein Etikett verwendet wird, welches
+    Breiter als Hoch ist. Um dies für die Reportvorlage richtig definieren zu
+    können, müssen Sie die Höhe etwas höher als die Breite angeben. Die
+    eigentliche Höhe des Etikettes definieren Sie dann mit der Höhe des
+    Druckbereiches im jeweiligen Druck-Band (Detail, bzw. Title).<br>
+    <b>Trick:</b> Sollte es gewünscht sein, dass auch im Druckdialog / in der
+    Vorschau die richtige Etikettenhöhe angezeigt wird, so muss die zugehörige
+    Datei *.jrxml mit einen Texteditor bearbeitet werden. Ändern Sie hier den
+    Wert für die Höhe auf die entsprechenden DeziDots ab (pageHeight=&quot;102&quot;).
+    Danach muss der Report erneut kompiliert werden. Bedenken Sie dabei, dass
+    die Ränder des Reports ebenfalls zu berücksichtigen sind. D.h. falls Sie
+    eine Fehlermeldung (Report passt nicht mehr in die Definition) erhalten,
+    muss die Höhe des Details (Band) reduziert werden.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Eventuell sollte
+    kann hier auch die Ausrichtung des Etikettes entsprechend angepasst werden.<br>
+    Da iReport die Ausrichtung automatisch umschaltet, dies aber nicht immer
+    gewünscht / die richtige Ausrichtung ist, können Sie dies in der
+    zugehörigen *.jrxml Datei unter orientation=&quot;Portrait&quot; oder
+    Landscape einstellen. Auch nach dieser Änderung muss der Report neu
+    kompiliert werden.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Definieren Sie
+    nun die Höhe des Druckbereiches. (Document structure, detail, Rechtsklick,
+    Band properties)<br>
+    Etikettenbreite = 62mm = 175DeziDot<br>
+    Etikettenhöhe&nbsp; = 36mm = 102DeziDot<br>
+    <b>Hinweis:</b> Wenn die Abmessungen des Reports verändert werden, werden
+    eventuell die Höhen der Detail (Band) auf die maximale Reporthöhe
+    reduziert.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Gestalten Sie nun
+    das Etikett wie gewünscht.<br>
+    Hinweis: Sie sollten nur Schriften ab Schriftgröße 6Punkt oder höher
+    verwenden.<br>
+    Hinweis: Der Platzbedarf der Höhe des Textfeldes ist bei 6Punkt + 1 Punkt,
+    ab 8Punkt +2Punkte<br>
+    Wird der Platzbedarf geringer angegeben, so sehen Sie zwar im iReport Ihre
+    Eingaben, es wird jedoch nichts gedruckt.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beim Einsatz von
+    Zebra-Etikettendruckern hat sich ein Rand von 3mm (in den
+    Reporteigenschaften) bewährt.</li>
+</ol>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Formulardefinition
+unter Windows 2000</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+spezielle Formulare, hier sind benutzerspezifische Papierformate gemeint, müssen
+ab Windows2000 und höher spezielle Formulare im Druckserver eingerichtet
+werden.<br>
+Dies ist insbesondere bei nicht ausdrücklichen Etikettendruckern der Fall. </p>
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Melden
+    Sie sich als Administrator auf dem jeweiligen Client PC an. Es gibt leider
+    einen Unterschied zwischen einem Benutzer mit Administrator Rechten und dem
+    Administrator, weshalb Sie sich unbedingt als Administrator anmelden müssen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie die gewünschte Etikettengröße im Druckserver. Bei der Angabe der
+    Formularabmessungen für W2k müssen diese in cm angegeben werden. Klicken
+    Sie nach der Definition bitte unbedingt auf Formular speichern. <br>
+    <b>WICHTIG:</b> Die Formulareigenschaften müssen zum Drucker passen. D.h.
+    Formulare die laut Windows nicht in den Drucker passen, können zwar
+    definiert werden, können aber nie dem Drucker zugeordnet werden.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ordnen
+    Sie dieses Formular dem Drucker zu.<br>
+    Eigenschaften / bzw. Druckeinstellungen, Erweitert und dann die Papiergröße
+    (ist je nach Druckertreiber unterschiedlich bezeichnet) entsprechend dem
+    oben definierten Formular einstellen.<br>
+    <b>WICHTIG:</b> Damit der Druck(server) das neue Formular anzeigen kann, müssen
+    Sie nach der Formulardefinition den Druckerordner schließen und danach neu
+    öffnen. Erst danach funktioniert die Zuordnung der Formulare.</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Formulare sind eine Benutzereigenschaft. D.h. unter Umständen müssen diese pro
+Benutzer dem jeweiligen Drucker des Benutzers ebenfalls zugeordnet werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Den
+Druckserver erreichen Sie unter Start, Einstellungen, Drucker und nun Datei,
+Servereigenschaften. Üblicherweise ist der Karteireiter Formulare vorbesetzt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

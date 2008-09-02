@@ -1,0 +1,196 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Update_Einspielen</title>
+</head>
+
+<body>
+
+<h1>Einspielen Helium V Update</h1>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Üblicherweise
+werden Updates Ihrer Helium V Installation von unseren Support-Team per
+Fernwartung eingespielt. Sollte es z.B. aus Gründen einer fehlenden Fernwartung
+nicht möglich sein, können Sie von uns eine kostenpflichtige Update-CD
+anfordern.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Als
+aller ersten Schritt lesen Sie bitte diese Beschreibung vollständig durch und
+stellen Sie sicher, dass alle Voraussetzungen erfüllt sind und Sie auch in der
+Lage sind die notwendigen Schritte durchzuführen. Wir gehen hier davon aus,
+dass Sie mit der Administration derartiger System vertraut sind.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Zum
+Einspielen des Updates wird grundsätzlich wie folgt vorgegangen:</p>
+<ol>
+  <li>Prüfen der Verwendbarkeit der übermittelten CD</li>
+  <li>Beenden der Verwendung von Helium V</li>
+  <li>Stoppen des Helium V Dienstes</li>
+  <li>Sichern der Datenbank und der Installation</li>
+  <li>Update der Datenbank</li>
+  <li>Update des Applikation Servers</li>
+  <li>Zur Verfügung-Stellung des Client-Updates für die User</li>
+  <li>Start des Applikation Servers (Log prüfen)</li>
+  <li>Update des Clients am Server</li>
+  <li>Start des Clients und Durchführung einfacher Tests</li>
+</ol>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Vorgehensweise
+bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
+2003).</b></p>
+<ul>
+  <li>
+    <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Voraussetzung
+    für die Installation.
+    <ul>
+      <li>
+        <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Administratorrechte auf dem Server</li>
+      <li>
+        <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Liste
+    der Pfade zu Helium V.<br>
+    Helium V wird üblicherweise auf einem Datenvolume (z.B. D:\) installiert.
+    Hier finden Sie ein Unterverzeichnis Helium_V. In einigen älteren
+    Installationen sind Daten und Verzeichnis des Applikationservers getrennt.
+    D.h. hier finden Sie zusätzlich, meistens auf C:\ ein Verzeichnis jboss-4.0.4.GA.</li>
+      <li>
+        <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Backup
+    der bestehenden Installation.<br>
+    Dies wird von uns üblicherweise im Helium_V Pfad unter Backup abgelegt. Es
+    wird hier für jedes Backup ein entsprechendes Datum erstellt und dorthin
+    die Dateien kopiert.</li>
+      <li>
+        <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Führen
+        Sie ein Update nur dann durch, wenn Sie, für den Fall des Falles, auch
+        das Backup wieder einspielen können.</li>
+    </ul>
+  </li>
+</ul>
+<ol>
+  <li>Prüfen der Verwendbarkeit der übermittelten CD<br>
+    Stellen Sie sicher, dass Sie alle Daten der CD lesen können. Sie finden die
+    Daten auf der CD auf einem Unterverzeichnis in welchem das Deploy-Datum und
+    die Versionsnummer ersichtlich ist. Z.B. deploy08_06_18_3918. D.h. die
+    Version ist vom 18.Juni 2008 und hat die Build Nummer 3918.<br>
+    Kopieren Sie am Besten dieses Verzeichnis in das HeliumV Verzeichnis unter
+    Update.<br>
+  </li>
+  <li>Beenden der Verwendung von Helium V<br>
+    Sorgen Sie dafür, dass alle Helium V Benutzer die Arbeit mit Helium V
+    beendet haben und sich auch von Helium V abgemeldet haben. Sie können unter
+    System, unterer Modulreiter gesperrt, oberer Modulreiter Logged In
+    nachsehen, wer noch angemeldet ist. Hinweis: Der Benutzer lpwebappzemecs
+    meldet sich nie ab und braucht daher auch nicht berücksichtigt werden.<br>
+  </li>
+  <li>Stoppen des Helium V Dienstes<br>
+    Stoppen Sie nun den Helium V Dienst, in der Diensteverwaltung (Start,
+    Einstellungen, Systemsteuerung, Verwaltung, Dienste). Wählen Sie <img border="0" src="Update_HV_Stopp.gif" width="156" height="19">&nbsp;
+    und stoppen Sie den Dienst <img border="0" src="Update_HV_Stopp_Knopf.gif" width="19" height="15">.<br>
+  </li>
+  <li>Sichern der Datenbank und der Installation<br>
+    Starten Sie nun den mitgelieferten DdbaMgr2k&nbsp;<img border="0" src="Update_DbaMgr2k.gif" width="41" height="40">,
+    Doppelklick auf SQL-Server und Klick auf Connect.<br>
+    Nun erweitern Sie den Baum Databases und klicken auf die Datenbank LP. Nun
+    klicken Sie mit der rechten Maus erneut auf die Datenbank LP und wählen
+    Backup Database.<br>
+    Unter BackUp stellen Sie auf Database - complete. Ist bei Destination
+    bereits ein entsprechender Pfad angegeben so notieren Sie diesen bitte,
+    anderenfalls wählen Sie Add und geben Sie Sicherungspfad und Filename an.<br>
+    <img border="0" src="Update_Sichern_Fileauswahl.jpg" width="390" height="166"><br>
+    <br>
+    Mit OK starten Sie die Sicherung. Nach beendeter Datensicherung erscheint<br>
+    <img border="0" src="Update_Sichern_Erfolgreich.jpg" width="795" height="119"><br>
+    <br>
+    Bitte achten Sie auf ERFOLGREICH verarbeitet. Bestätigen Sie die Meldung
+    mit OK.<br>
+    Schließen Sie den Sicherungsdialog mit Close und beenden Sie den DbaMgr2k.<br>
+    Kopieren / Zippen Sie die Sicherungsdatei und legen Sie sie im Helium_V
+    Backupverzeichnis ab.<br>
+    <br>
+    Kopieren Sie nun das Verzeichnis \Helium_V\jboss-4.0.4.GA\server\helium in
+    das Helium V Backupverzeichnis.<br>
+  </li>
+  <li>Update der Datenbank<br>
+    Starten Sie nun aus dem Deploy-Verzeichnis aus dem Unterverzeichnis full\lpdbupd
+    (d:\HeliumV\Update\deploy08_06_18_3918\full\lpdbupd) das lpdbupd.jar und
+    damit den Helium V Datenbank Updatemanager.<br>
+    Unter DB wählen Sie <img border="0" src="Update_DB_Einstellen.gif" width="431" height="37">.&nbsp;<br>
+    Nun klicken Sie auf <img border="0" src="Update_DB_Version_Lesen.gif" width="117" height="33">. Es
+    muss nun die aktuelle Datenbank Version im rechten Fenster angezeigt werden.
+    Z.B. <img border="0" src="Update_DB_Versionsanzeige.gif" width="243" height="279"> bedeutet, dass zur
+    angegebenen Datenbank eine Verbindung aufgebaut werden konnte.<br>
+    <br>
+    Erscheint hier<br>
+    <img border="0" src="Update_DB_failed.gif" width="204" height="37"> so konnte keine Verbindung zur
+    Datenbank hergestellt werden. Bitte wenden Sie sich an Ihren Helium V
+    Betreuer.<br>
+    <br>
+    Konnte die Verbindung zur Datenbank aufgebaut werden, so klicken Sie bitte
+    auf <img border="0" src="Update_DB_Update_Start.gif" width="195" height="34"><br>
+    Es werden nun die erforderlichen Datenbank Updates der Reihe nach
+    ausgeführt. Dies wird im Ausgabefenster wie folgt angezeigt. <img border="0" src="Update_DB_Update_erfolgreich.gif" width="193" height="138"><br>
+    Damit ist das Datenbankupdate erfolgreich durchgeführt.<br>
+  </li>
+  <li>Update des Applikation Servers<br>
+    <b>Hinweis: </b>Bei größeren Umstellungen muss die Änderung des
+    Applikationsservers von einer entsprechend geschulten Person durchgeführt
+    werden. Diese Beschreibung ist nur für einfache Updates gedacht.<br>
+    Kopieren Sie die Dateien aus ....deploy...\full\server\deploy\ nach
+    ...\jboss-4.0.4.GA\server\helium\deploy\.<br>
+    Kopieren Sie die Datei aus ....deploy...\full\server\deploy\mssql\fastlanereader.sar
+    nach ...\jboss-4.0.4.GA\server\helium\deploy\.<br>
+    Entzippen Sie die Datei ...deploy...\full\report\report.zip und kopieren Sie
+    die unter ALL angeführten Unterverzeichnisse nach ...\jboss-4.0.4.GA\server\helium\report\<br>
+    Löschen Sie die Unerverzeichnisse ...\jboss-4.0.4.GA\server\helium\log,
+    sowie ..\tmp und ..\work<br>
+  </li>
+  <li>Zur Verfügung-Stellung des Client-Updates für die User<br>
+    Kopieren Sie die Datei ...deploy...\full\client\installer\lpclientpc-installer.jar
+    in das allgemeine Helium V Client Install-Verzeichnis.<br>
+  </li>
+  <li>Start des Applikation Servers (Log prüfen)<br>
+    Starten Sie nun den Helium V Applikationserver durch Klick auf Start <img border="0" src="Update_Start.gif" width="17" height="16">
+    in den Diensten.<br>
+    Beobachten Sie bitte das Server.log. Sie finden diese unter
+    ...\jboss-4.0.4.GA\server\helium\log. Nach ca. 1-2 Minuten sollte diese
+    Datei, wenn nicht in der Zwischenzeit schon Zugriffe von
+    Zeiterfassungsstationen erfolgt sind, eine Größe zwischen 400 und 500 Byte
+    haben. Wird diese Datei sehr schnell sehr viel größer, so konnte der
+    Applikationserver nicht ordnungsgemäß gestartet werden. Versuchen Sie
+    bitte den gesamten Server neu zu starten. Bringt auch dies keine besseren
+    Ergebnisse, so wenden Sie sich bitte an Ihren Helium V Betreuer.<br>
+  </li>
+  <li>Update des Clients am Server<br>
+    Führen Sie nun die Aktualisierung des am Server befindlichen Clients mit
+    der unter 7.) beschriebenen Datei durch.<br>
+  </li>
+  <li>Start des Clients und Durchführung einfacher Tests<br>
+    Starten Sie den aktualisierten Client, rufen Sie jedes Modul einmal auf und
+    führen Sie einen Ausdruck aus einigen der Module durch.<br>
+    <br>
+    Damit ist das Update abgeschlossen. Bitte informieren Sie uns unbedingt
+    über das durchgeführte Update, damit unser Hotline Service die richtigen
+    Informationen für die Betreuung zur Verfügung hat.</li>
+</ol>
+<p>Hinweis: Beim Update werden keine anwenderspezifischen Formular geändert,
+wenn diese wie vereinbart in den anwender Unterverzeichnissen sind. Sollte es
+beim Ausdruck von speziell für Sie angepassten Formularen zu Problemen kommen,
+so stellen Sie bitte zuerst fest, ob die Ursache in Ihren Formularen zu finden
+ist. Benennen Sie dazu bitte das jeweilige anwender Verzeichnis um. Damit wird
+erreicht, dass die Standard Formulare verwendet werden. Funktioniert nun der
+Ausdruck, so wurden größere Änderungen in der Report-Schnittstelle
+durchgeführt. Bitte wenden Sie sich unter Angabe des Namens der Reportvorlage
+an Ihren Helium V Betreuer.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Vorgehensweise
+bei Verwendung von Linux/Mac Betriebssystemen</b></p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Diese
+ist der oben beschriebenen Vorgehensweise sehr ähnlich. Da hier zusätzlich
+entsprechende Linux/Mac-Kenntnisse vorausgesetzt werden, muss diese derzeit von
+Ihrem Helium V Betreuer durchgeführt werden.
+<p>&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Export der AR/ER in Fremd Fibus</title>
+</head>
+
+<body>
+
+<h1>Export der AR/ER/GS Daten in eine fremde Finanzbuchhaltung</h1>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Welche
+Export Formate werden unterstützt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+dazu bitte <a href="ExportFormate.htm">Exportformate</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Wenn Sie das Modul Finanzbuchhaltung der Helium V nicht besitzen, so besteht die
+Möglichkeit Exportdaten für verschiedene Fremdbuchhaltungen zu exportieren.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln
+Sie dazu in das Modul Finanzbuchhaltung, wählen Sie im unteren Modulreiter
+Export.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+sehen Sie eine Übersicht über die bisherigen Exportläufe.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+Neu, oder Finanzbuchhaltung, Export starten Sie einen neuen Exportlauf.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fehlermeldung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Finanzamt_Nicht_definiert.jpg" width="275" height="115"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+beim Start des Exportlaufes diese Fehlermeldung angezeigt wird, so wurde für
+den verwendeten Mandanten das Finanzamt nicht vollständig definiert. Wenden Sie
+sich in diesem Falle bitte an Ihren Helium V <a href="http://xenon/wiki/index.php/Finanzbuchhaltung#Fehlermeldung_Finanzamt_nicht_definiert">Betreuer</a>
+damit er die Definition richtig stellt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Es werden derzeit nur 2. Finanzämter im EU-Raum akzeptiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fehlermeldung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fehler1.gif" width="306" height="115"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedeutet:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Sachkonten ist das Konto auf das die Ust/Vst gebucht werden soll, nicht definiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+Fibu, Sachkonten, Kopfdaten. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Kostenstellen-Definitionen nur Erlöskonten hinterlegen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Konto_Laenderart_uebersetzung.gif" width="317" height="115"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedeutet,
+dass für ein Erlöskonto keine Länderartübersetzung definiert ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hintergrund:
+Die Erlöse werden nach Kostenstellen auf die Konten gebucht.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Pro
+Kostenstelle kann ein Erlöskonto angegeben werden. Für die zusätzlichen
+Länderarten müssen daher Übersetzungen für z.B. Drittland, IG-Erlös usw.
+angegeben werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Modul Finanzbuchhaltung finden Sie die Sachkonten. Wählen Sie das entsprechende
+Konto aus (in unserem Fall 4020) und wählen Sie <img border="0" src="Kont_Laenderart.gif" width="92" height="21">.
+Nun definieren Sie mit Neu die jeweiligen Kontoübersetzungen für die
+unterschiedlichen Länder.&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sachkontenübersetzung:
+Aus Kontoauswahlliste Konto auswählen und dazu die zu übersetzenden Länderarten angeben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gilt
+nur für die Erlöskonten, d.h. die Konten der AR/GS</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+während des Exports immer wieder Warnungen und Hinweise auftreten, empfiehlt es
+sich, für den Exportlauf parallel einen zweiten Helium V Client zu starten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+können Sie den Hinweis im einen Clientfenster stehen lassen und im zweiten
+Client die Ursache korrigieren.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Export2.gif" width="298" height="115"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedeutet,
+dass die Erlöskontierung nicht durchgeführt werden konnte, da der Kostenstelle
+kein Erlöskonto zugeordnet ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zur
+Definition des Erlöskontos wechseln Sie bitte in die Systemparameter, Mandant,
+Kostenstelle und definieren Sie das Erlöskonto für diese Kostenstelle.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+dazu auch Arten der Erlöskontofindung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Beleg_nicht_aktiviert.gif" width="268" height="115"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+aktivieren / drucken Sie die Rechnung bitte aus, oder stornieren Sie diese.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Export
+der Debitoren- bzw. Kreditorenkonten über Journal</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Pfade der Exportdateien können in den Mandantenparametern definiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Empfehlung:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+Festzustellen, für welche Debitoren oder Kreditoren deren Kontonummern noch
+definiert werden müssen, empfiehlt es sich, vor dem Exportlauf ein Journal der
+Ausgangs- bzw. Eingangsrechnungen nach Kunden / Lieferanten sortiert
+auszudrucken. Darauf werden auch die Debitoren / Kreditorennummern angeführt.
+Bitte tragen Sie bei den Kunden / Lieferanten mit fehlenden Nummern diese im
+Kunden bzw. Lieferantenstamm nach.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Q:
+Wo
+werden die Daten abgelegt?</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Pfad und der Dateiname der exportierten Daten kann in System, Parameter,
+Parameter Mandant eingestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+können alle fünf Exportdateien getrennt eingestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">FINANZ_EXPORTZIEL_EINGANGSRECHNUNG</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">FINANZ_EXPORTZIEL_GUTSCHRIFT</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">FINANZ_EXPORTZIEL_RECHNUNG</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass die Exportpfad für den exportierenden Client gelten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Fall, dass die Exportdatei nicht geschrieben werden kann erscheint eine
+entsprechende Fehlermeldung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Export1.gif" width="268" height="143"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+Sie gegebenenfalls mit Betriebssystemmitteln die Verbindung zu diesem Laufwerk
+her, oder brechen Sie den Exportlauf ab. Korrigieren Sie den Pfad und starten
+Sie danach den Lauf erneut.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo kann ich die Personenkonten exportieren</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Personenkonten, also Debitoren und Kreditoren können im Modul FiBu unter
+Journal exportiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
+für diesen Export können die Exportpfade in System, Parameter, Parameter
+Mandant eingestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+können die Pfade für beiden Personenkonten und die Sachkonten getrennt
+eingestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">FINANZ_EXPORTZIEL_DEBITORENKONTEN</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">FINANZ_EXPORTZIEL_KREDITORENKONTEN</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">FINANZ_EXPORTZIEL_SACHKONTEN</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass die Exportpfad für den exportierenden Client gelten.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann
+eine exportierte Rechnung trotzdem geändert werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nein:
+Eine als exportiert gekennzeichnet Rechnung kann nicht geändert werden. Sie
+können jedoch den letzten Exportlauf oder eine enzelne Rechnung aus einem
+Exportlauf zurücknehmen. Dadurch ist die Rechnung
+nicht mehr als in die FiBu übernommen gekennzeichnet und kann daher geändert
+werden. Hinweis: Es ist dafür das Chef Buchhalter Recht (FB_CHEFBUCHHALTER)
+erforderlich.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+denken Sie daran, danach den Export wieder zu starten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+durch die Änderungen eventuell auch in Ihrer FiBu erforderlichen Umbuchungen
+müssen von Ihnen manuell nachvollzogen werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Die Sachkonten sind in meinem Finanzbuchhaltungsprogramm zwar grundsätzlich
+vierstellig, aber die Nuller-Klasse ist kürzer. Wie
+kann ich dies in Helium V definieren?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bitte definieren Sie in Helium V die Sachkonten ebenfalls vierstellig. Für die
+Konten der Nuller-Klasse müssen bei der Definition der Sachkonto-Nummern
+führende Nullen angegeben werden. Diese werden auch in die Exportdateien
+übergeben. Laut Auskunft von RZL werden diese beim Import unterdrückt, sodass
+dies wiederum auf die richtigen Konten gebucht wird.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie wird beim Erzeugen der Exportdatei vorgegangen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Beim Export der FiBu Daten kann es vorkommen, dass die Exportdatei bereits
+existiert. Sie erhalten in diesem Falle eine entsprechende Warnung. Mit dieser
+Warnung können Sie auswählen, ob die bestehende Exportdatei überschrieben
+werden soll, oder ob Sie den Fibu-Export abbrechen. Wird der Export abgebrochen,
+so wird der Exportlauf wieder rückgängig gemacht, als wie wenn die z.B.
+Rechnungen nicht exportiert worden wären.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bevor
+Sie überschreiben wählen, müssen Sie sicherstellen, dass die Daten bereits in
+Ihre Finanzbuchhaltung importiert sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollte
+die Datei versehentlich gelöscht / überschrieben werden, so können die Daten
+nur in der Form wieder hergestellt werden, dass Sie alle FiBu-Export-Läufe bis
+inklusive diesem Lauf aus Helium V löschen und danach, für das jeweilige
+Monat, neu erzeugen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Welcher_Zeitraum_wird_Exportiert"></a>Q:
+Welcher Zeitraum wird exportiert?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Beim Export der FiBu-Daten erscheint die Frage nach dem (Export-) Stichtag.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Export.gif" width="374" height="154"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Weiters
+haben Sie zwei Optionen, mit denen die Behandlung der außerhalb des
+Exportzeitraumes liegenden Belege definiert werden kann.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Grundsätzlich
+werden die Bewegungsdaten (RE, GS, RE) nur für das Monat bis zum eingestellten
+Stichtag exportiert. In unserem Beispiel also die Daten vom 1.5.2006 bis zum
+31.5.2006.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+nun <img border="0" src="FibuExport_Opt1.gif" width="313" height="20"> angehackt, so werden alle noch
+nicht exportierten Belege ebenfalls mitexportiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+zusätzlich <img border="0" src="FibuExportOpt2.gif" width="362" height="18"> angehackt, so werden diese
+Belege in Helium V als Exportiert, also in FiBu befindlich, gekennzeichnet, aber
+<b><u>NICHT</u></b> in die Exportdatei mit aufgenommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+ist manchmal erforderlich, wenn Rechnungen auch in alten Buchungszeiträumen
+nachgetragen werden mussten und diese nicht mehr in die FiBu übernommen werden
+sollten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>HINWEIS:</b>
+Beachten Sie bitte, dass ein Großteil der Fremdbuchhaltungen Periodenreinheit
+bei der Datenübergabe verlangen. D.h. es dürfen jeweils nur die Daten eines
+Buchungsmonates exportiert werden. Das bedeutet für Sie, dass keine Daten aus
+alten Buchungszeiträumen mit übergeben werden sollen. D.h. es muss der Haken bei <img border="0" src="FibuExport_Opt1.gif" width="313" height="20">  entfernt
+werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie sollte beim ersten Export vorgegangen werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bei der ersten Datenübernahme ist es meistens so, dass bereits Daten aus der
+Rechnungsverwaltung manuell in die Finanzbuchhaltung eingetragen wurden. Damit
+diese Daten nicht doppelt übernommen werden, sollte der erste Exportlauf so
+eingestellt werden, dass die Rechnungen (für Gutschriften und
+Eingangsrechnungen bitte analog vorgehen) bis vor dem gewünschten
+Exportzeitraum im Helium V aus exportiert gekennzeichnet werden. Hier sollte
+&quot;Auch Belege außerhalb des Gültigkeitszeitraumes exportieren&quot;
+angehackt sein. Danach starten Sie einen zweiten Exportlauf, der dann das
+Enddatum in der gewünschten Monats-Periode hat. Üblicherweise muss der Haken bei &quot;Auch Belege außerhalb des Gültigkeitszeitraumes exportieren&quot;
+entfernt werden. Beim Erzeugen der Datei muss die Warnung, dass die Exportdatei
+bereits existiert so beantworten, dass die Datei überschrieben wird.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Abweichendes Umsatzsteuerland?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bei manchen Lieferanten / Kunden ist es so, dass diese eine zusätzliche
+Umsatzsteuernummer in anderen Ländern haben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel von Österreich aus gesehen: Wir bestellen Bücher bei Amazon.de.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Lieferant Amazon hat eine deutsche Adresse, aber eine österreichische
+Umsatzsteuernummer. D.h. die deutsche Eingangsrechnung ist mit der
+österreichischen Steuernummer versehen. D.h. laut Umsatzsteuerrecht ist diese
+Lieferung wie eine Inlandslieferung zu behandeln.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+dies abzubilden, kann im Kunden und im Lieferanten unter Konditionen, neben der
+Debitoren-/ Kreditorennummer ein abweichendes Umsatzsteuerland angegeben werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wieso werden EU Länder als Drittland exportiert?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Definition ob ein Land als EU-Mitglied zu bewerten ist muss im System, Land
+definiert werden, seit wann dieses Land EU-Mitglied ist. Ist das Land kein
+EU-Mitglied, oder wurde die Rechnung <b>vor</b> der EU-Mitgliedschaft
+ausgestellt, so wird der Export als Drittland durchgeführt. Erst ab dem
+Zeitpunkt der (eingetragenen) EU-Mitgliedschaft wird das als
+Innergemeinschaftliche Lieferung behandelt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eigenheiten
+der unterschiedlichen Finanzbuchhaltungsprogramme beim Importieren der Daten</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">RZL:</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie sind die von Helium V erzeugten Fibu-Daten in meine RZL Buchhaltung zu
+importieren?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wählen Sie beim Import das Format mit Trennzeichen. Als Trennzeichen wird
+von Helium V das Semikolon (;) verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+Zeichensatz wählen Sie Windowsformat.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Importpfad muss passend zu den oben definierten Helium V Exportpfaden in Ihrer RZL Installation eingestellt
+werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den ersten Import wählen Sie die Funktion Probelauf. Erst wenn dieser
+fehlerfrei durchgelaufen ist, wählen Sie bitte den eigentlichen Import.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedenken
+Sie bitte, dass bei jedem Import Fehler, Abbrüche passieren können. Aus diesem
+Grund empfiehlt sich, einen Import in Ihre Buchhaltung nur mit einer
+entsprechenden Datensicherung vorzunehmen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Beim Import der Personenkonten erfolgt eine Fehlermeldung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es erfolgt die Fehlermeldung: Ungültiges Zeichen in Zessionsnummer.<br>
+Die Ursache ist hier, dass in Ihrem RZL Programm nur die alte 12-Spaltige
+Importroutine zur Verfügung steht. Hier steht eine geänderte XSL Definition
+zur Verfügung um die Daten auch in die älteren RZL Programme importieren zu
+können. Wenden Sie sich bitte an Ihren Helium V Händler.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfung
+der CSV Dateien</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+Fehler im Helium V Export / Import in RZL zu finden, kann die erzeugte CSV Datei
+sehr einfach in eine Tabellenkalkulation importiert werden. Bei der
+Überprüfung der Saldengleichheit ist zu beachten, dass die Ausgangsrechnungen
+und die Ausgangsgutschriften für Soll - Haben - Ust einen Saldo von 0 über
+alle Buchungen haben müssen, hingegen wird bei den Eingangsrechnungen Soll -
+Haben + Ust gerechnet. Dies wird dem RZL Importprogramm durch unterschiedliche
+Ust-Codes (1 = Vorsteuer, 2 = Umsatzsteuer) mitgeteilt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dateninhalt
+des RZL Exportes</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den beiden Buchungszeilen sind bei RE und GS die Firmennamen der Kunden
+enthalten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+ER Export ist in der OP_Numer die Lieferantenrechnungsnummer eingetragen und
+unter Belegnummer die ER-Nummer aus Ihrer Helium V Datenbank. Unter
+Buchungstext1 wird die unter Text eingegebene Beschreibung übergeben und unter
+Buchungstext2 wiederum der Lieferantenname der Eingangsrechnung.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anmerkung
+zu IG-Lieferung und IG-Leistung:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Export der Rechnungen, Gutschriften&nbsp; und der Eingangsrechnungen wird nicht
+zwischen IG-Lieferung und IG-Leistung unterschieden. Es wird immer IG-Lieferung
+übergeben.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Löschen
+einzelner Rechnungen aus dem Export.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Manchmal
+ergibt sich die Notwendigkeit, dass einzelne Belege verändert werden müssen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daher
+können einzelne Belege auch aus älteren Exportläufen herausgelöscht werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">WICHTIG:
+Da Sie hier Änderungen an bereits in die Finanzbuchhaltung übernommenen Daten
+vornehmen, liegt es in Ihrer Verantwortung die Daten konsistent zu halten.
+Zusätzlich ist für den Benutzer das Chefbuchhalterrecht erforderlich.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+das Herauslöschen bestätigen Sie bitte folgende Meldung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Export_Loeschen.gif" width="468" height="115"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+danach</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Export_Loeschen_Kein_Recht.gif" width="349" height="115"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">angezeigt,
+so bitten Sie Ihren Helium V Administrator Ihnen das <img border="0" src="Fibu_Export_Chefbuchhalterrecht.gif" width="228" height="19">
+Recht zu erteilen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Beachten Sie, dass Ihre Rechnung / Ihr Beleg je nach Einstellung des <a href="#Welcher_Zeitraum_wird_Exportiert">Exportzeitraumes</a>
+beim nächsten Export wieder mitexportiert werden kann.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kostenstellen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Kostenstellen auch in die verschiedenen Finanzbuchhaltungsprogramme
+exportieren zu können, ist es erforderlich, dass die Kennung der Kostenstellen
+numerisch sind. (Gilt zumindest für RZL und BMD).</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Automatische
+Findung der Erlöskonten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die automatische Findung der Erlöskonten werden derzeit zwei verschiedene Arten
+unterstützt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Erlöskonten anhand der Kostenstelle.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden für jede Kostenstelle die zugehörigen Erlöskonten definiert. Alle
+Rechnungen die auf die entsprechende Kostenstelle lauten erhalten diese
+Kontierung. Zusätzlich kann hier mittels der Kontierung im Rechnungsmodul die
+Kontierung dieser Rechnung übersteuert werden, was auch für Splittbuchungen
+unterstützt wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Erlöskonten anhand der Artikelgruppe.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden jeder Artikelgruppe das gewünschte Erlöskonto hinterlegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie bei beiden Definitionen, dass für die Definition jeweils nur die
+Inlandskonten hinterlegt werden. Die Übersetzung der Konten auf die
+verschiedenen Länderarten erfolgt aufgrund der Lieferadresse und die in der
+Länderart Übersetzung definierten Konten.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Übersetzung
+der Erlöskonten nach Länderart</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+jedes Konto, das in der automatischen Erlöskonto Findung verwendet wird, muss
+für die benötigten Lieferländer eine entsprechende Übersetzung, passend zu
+Ihrem Kontenplan hinterlegt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gehen
+Sie dazu auf das Sachkonto und geben Sie je nach Länderart (EU-Ausland mit
+Uid-Nummer, EU-Ausland ohne Uid-Nummer, Drittland) das entsprechend richtige
+Konto an. Das Übersetzungskonto muss vorher bereits unter Sachkonten definiert
+worden sein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

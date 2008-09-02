@@ -1,0 +1,194 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Hilfe bei Startproblemen</title>
+</head>
+
+<body>
+
+<h1>Hilfe bei Startproblemen</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn keine Verbindung
+zum Helium V Server hergestellt werden kann, so prüfen Sie bitte ob der Helium
+V Server läuft.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Start, Einstellungen,
+Systemsteuerung, Verwaltung, Dienste.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier suchen Sie den
+Helium V Application Server. Dieser muss im Status auf gestartet stehen. </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Dienste.gif" width="625" height="226"> </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Läuft der Server, so
+prüfen Sie bitte das LogFile (c:\jboss-4.0.4.GA\server\helium\log\server.log). Sie
+können uns diese Logdatei&nbsp; auch gerne zusenden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Enthält die Logdatei
+einen Eintrag mit</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;
+&quot;Driver for JDBC][SQLServer]Speicherplatz für das LP_THECLIENT-Objekt in der LP-Datenbank konnte nicht reserviert werden,
+<b> da die PRIMARY-Dateigruppe voll ist</b>.&quot;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">so ist die Datenbank
+zu klein eingestellt. Gehen Sie dazu wie unter Fehlerbehebung Datenbankgröße
+beschrieben vor.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Fehlerbehebung
+Datenbankgröße.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Direkt auf dem Server
+(PC) auf dem die Helium V Datenbank läuft.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Starten Sie bitte den
+DbaMGR2k (entweder am Desktop oder unter Start, Programme, DbaMGR2k, DbaMGR2k)</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Tipp: Das Fenster des
+DbaMGR2k sollte maximiert sein.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Doppelklicken Sie nun
+links auf SQL Server.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Anmeldedialog
+erscheint.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="DbaMGR2k_Logon.jpg" width="455" height="343"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wählen Sie im oberen
+Fenster Local. Im unteren Fenster blättern Sie etwas nach unten und suchen
+Trusted NT Connection.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier muss ein Haken gesetzt sein. Ist der
+Haken nicht gesetzt, so bitte mittels eines Doppelklick
+setzen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun rechts oben auf
+Connect klicken.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Damit sind Sie an der
+Datenbank als SA angemeldet!</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun öffnen Sie den
+Datenbankbaum bis die Struktur auch die LP Datenbank anzeigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Db_Baum.jpg" width="543" height="413"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun klicken Sie mit
+der rechten Maustaste auf die LP Datenbank und wählen Properties.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="DB_Properties1.gif" width="264" height="463"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In den Eigenschaften
+(Properties) prüfen Sie bitte die File properties. Diese müssen wie unten
+dargestellt auf </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Automatic growth</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">File growth = Percent</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Max file growth =
+Unlimited stehen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="DB_Properties.jpg" width="471" height="375"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+dies nicht der Fall, so bitte entsprechend umstellen, nur auf Prozent und
+Unlimited, und mit Save <img border="0" src="DbaMGR2k_sav.gif" width="23" height="23">abspeichern.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Danach
+kann der DbaMGR2k wieder geschlossen werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daran
+anschließend ist es am Einfachsten, wenn der Server-PC neu gestartet wird.
+Sollte dies nicht möglich sein, so genügt auch, wenn der Helium V Server neu
+gestartet wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+bitten Sie bei diesen Einstellung sehr sorgfältig vorzugehen. Sie haben hier
+alle Rechte auf der Datenbank und können damit einen entsprechenden Schaden
+anrichten, wofür wir die Verantwortung ablehnen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anmerkung:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+MS Enterprise Manager finden Sie dies mit Rechts-Klick auf die Datenbank LP,
+dann Eigenschaften und dann Datendateien.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+Zurückstellen von Beschränkt auf Unbeschränkt ist im DbaMGR2 nicht möglich.
+Im Falle dass es auf limitiert steht, und Sie keinen Enterprise Manager zur
+Verfügung haben, fordern Sie bitte ein entsprechendes Script bei uns an.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Läuft der DB-Server?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bei Startproblemen des JBoss prüfen Sie ob alle Ports auf Listening stehen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Windows Systemen können Sie dies mit dem Befehl netstat -an prüfen. Hier
+müssen alle vier Ports als Listening aufscheinen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Von
+Helium V verwendete Ports: JNDI 1099, RMI, 1098, Web-Schnittstelle 8080</p>
+<div align="left">
+  <table border="1" width="531" height="23">
+    <tr>
+      <td width="531" height="23">Dienst</td>
+      <td width="531" height="23">Port</td>
+    </tr>
+    <tr>
+      <td width="531" height="23">JNDI</td>
+      <td width="531" height="23">1099 (2099)</td>
+    </tr>
+    <tr>
+      <td width="531" height="23">RMI</td>
+      <td width="531" height="23">1098 (2098)</td>
+    </tr>
+    <tr>
+      <td width="531" height="23">Web-Schnittstelle</td>
+      <td width="531" height="23">8080 (8090)</td>
+    </tr>
+    <tr>
+      <td width="531" height="23">Datenbank</td>
+      <td width="531" height="23">1433 für MS-SQL (MSDE)<br>
+        5432 für PostgresQL</td>
+    </tr>
+  </table>
+</div>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ich kann nicht auf 5 10 002 3407 aktualisieren?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ab dieser Version wird die JRE 1.5.0_08 verwendet. Es muss daher die
+JavaRuntimeEdition (JRE) aktualisiert werden. Dies kann von <a href="http://java.sun.com/javase/downloads/index.jsp">http://java.sun.com/javase/downloads/index.jsp</a>
+heruntergeladen werden. Wählen Sie hier <u><b>Java Runtime Environment (JRE)
+5.0 Update 8</b></u> und klicken Sie auf Download. Nun akzeptieren Sie bitte die
+Lizenzbedingungen und wählen Ihr gewünschtes Betriebssystem.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+JRE muss für Client und Server installiert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+wird dringend empfohlen, alte Java Versionen vorher zu deinstallieren und
+dazwischen die PCs neu zu starten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+Ihren Helium V Server müssen unbedingt auch die Java Settings angepasst werden.</p>
+<ul>
+  <li>CLASSPATH=C:\Programme\Java\jre1.5.0_08\lib;C:\jboss-4.0.4.GA\server\helium\ehcache;...
+  <li>JAVA_HOME=C:\Programme\Java\jre1.5.0_08
+  <li>JBOSS_CLASSPATH=C:\jboss-4.0.4.GA\server\helium\ehcache
+  <li>JBOSS_HOME=C:\jboss-4.0.4.GA</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+setzen Sie den richtigen Laufwerksbuchstaben für Ihre Installation anstelle von
+C: ein. Achten Sie darauf, dass keine Leerstellen in den Angaben sind, sondern
+nur die oben angegebenen Zeichen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+dazu <a href="http://xenon/wiki/index.php/FAQ_SPU#JBuilder2005_auf_Java_1.5_heben">auch</a>.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+JBoss startet nicht?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Versuchen Sie den JBoss per Hand zu starten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Starten
+Sie mit Start ausführen ds CMD Fenster.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln
+Sie nach <a href="file:///c:/jboss-4.0.4.GA/bin/">c:\jboss-4.0.4.GA\bin\</a></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Führen
+Sie nun run -c helium aus und beobachten Sie die Ausgabe. Im Gegensatz zum Start
+als Dienst werden in der Console wesentlich mehr Meldungen ausgegeben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>HINWEIS:</b>
+In Englischen Betriebssystemen liegt das Java-Verzeichnis unter umständen nicht
+auf Programme sondern unter &quot;<a href="file:///c:/Program%20Files">c:\Program
+Files</a>&quot; </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+diesem Falle muss die Enviromentvariable für das Java_Home neu gesetzt werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedenken
+Sie bitte, dass der Start des JBoss in der Regel zwischen 1-2 Minuten dauern
+kann.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

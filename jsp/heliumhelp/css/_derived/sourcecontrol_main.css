@@ -1,0 +1,43 @@
+body { background-color: #C9ECF5;
+    font-size: 11pt;
+    font-family: verdana;
+    }
+
+.abb {
+	font-weight: bolder;
+	padding-right: 10%;
+}
+
+td { font-size: 11pt;
+    font-family: Verdana;
+    }
+
+
+a:link {
+		   color:#a35242;
+		   text-decoration:none;
+		   }
+		   
+a:visited {
+		   color:#a35242;
+       	  text-decoration:none;
+		  }
+a:hover {
+		color:#7D4033;
+   		text-decoration:none;
+		}
+a:active {
+		 color:#000080;
+      	 text-decoration:none;
+		 }
+
+.question {
+	font-variant: normal;
+	font-weight: bold;
+	text-indent: 0px;
+	padding-top: 20px;
+}
+
+.answer {
+	text-indent: 0px;
+}

@@ -1,0 +1,266 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Fibu Export</title>
+</head>
+
+<body>
+
+<h1>Fibu Export</h1>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Helium V steht Ihnen auch eine entsprechende Exportschnittstelle für Ihre
+Finanzbuchhaltungsdaten zur Verfügung, damit diese möglichst komfortabel in
+Ihre gewünschte Ziel-Fibu übernommen werden können. Diese Exportfunktion ist
+jedoch nur dann verfügbar, wenn Sie nicht die noch wesentlich komfortablere
+Funktion der integrierten Finanzbuchhaltung verwenden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+stehen verschiedene Exportformate, welche nachfolgend beschrieben sind zur
+Verfügung.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+CSV Format</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieses
+Format ist wie folgt aufgebaut:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Trennung
+der Felder: ; (Semikolon).&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dezimaltrenner:
+,</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach-
+und Vorkommastellen durch Dezimaltrenner getrennt</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Datumsformat:
+JJJJMMTT (Jahr im Jahrtausendformat, Monate, Tage)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Splittbuchungen
+werden NICHT abgebildet</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Felder:</p>
+<div align="left">
+  <table border="1" width="662" height="15">
+    <tr>
+      <td width="86" height="15">Überschrift</td>
+      <td width="622" height="15">Beschreibung / Inhalt</td>
+      <td width="530" height="15">Bemerkung</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">Satzart</td>
+      <td width="622" height="15"> Satzart zwingend 0</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">konto</td>
+      <td width="622" height="15"> Debitorenkonto</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">buchdat</td>
+      <td width="622" height="15"> Buchungsdatum jjjjmmtt</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">gkto</td>
+      <td width="622" height="15"> Gegenkonto, = Erlöskonto oder Aufwandskonto</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">belegnr</td>
+      <td width="622" height="15"> Belegnummer</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">belegdat</td>
+      <td width="622" height="15"> Belegdatum</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">kost</td>
+      <td width="622" height="15">Kostenstelle</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">mwst</td>
+      <td width="622" height="15"> Steuerprozentsatz</td>
+      <td width="530" height="15">Prozentsatz der Steuer</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">steucod</td>
+      <td width="622" height="15">USt-Steuercode</td>
+      <td width="530" height="15">(1)</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">bucod</td>
+      <td width="622" height="15"> Sollbuchung</td>
+      <td width="530" height="15">1 ... Sollbuchung (RE),<br>
+        2 ... Habenbuchung (ER)</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">betrag</td>
+      <td width="622" height="15"> Bruttobetrag</td>
+      <td width="530" height="15">Sollbuchungen (RE) positiv,<br>
+        Habenbuchungen (ER) negativ</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">steuer</td>
+      <td width="622" height="15"> Steuerbetrag</td>
+      <td width="530" height="15">bei Kunden negativ, bei Lieferanten positiv</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">periode</td>
+      <td width="622" height="15"> Buchungsperiode, das
+        &quot;Geschäftsjahr&quot;</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">kurs</td>
+      <td width="622" height="15">Der Name des Rechnungskurses in ISO Code (EUR,
+        USD)</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">fwbetrag</td>
+      <td width="622" height="15"> Fremdwährungsbetrag</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">fwSteuer</td>
+      <td width="622" height="15"> Fremdwährungssteuerbetrag</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">text</td>
+      <td width="622" height="15"> Buchungstext</td>
+      <td width="530" height="15">Bei RE eine Bemerkung (z.B. die Bestellnummer)
+        dazu, bei ER die interne ER-Nummer</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">symbol</td>
+      <td width="622" height="15"> Buchungssymbol</td>
+      <td width="530" height="15">RE, ER, GS</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">zziel</td>
+      <td width="622" height="15"> Zahlungsziel</td>
+      <td width="530" height="15">netto Zahltage</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">Skontopz</td>
+      <td width="622" height="15"> Skonto %</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">skontotage</td>
+      <td width="622" height="15"> Skonto Tage</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">Skontopz2</td>
+      <td width="622" height="15">Skonto % 2</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">skontotage2</td>
+      <td width="622" height="15">Skonto Tage 2</td>
+      <td width="530" height="15"></td>
+    </tr>
+    <tr>
+      <td width="86" height="15">vertnr</td>
+      <td width="622" height="15"> Vertreter Nummer</td>
+      <td width="530" height="15">Personalnummer der dem Kunden zugeordneten
+        Provisionsempfängers</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">auftkz</td>
+      <td width="622" height="15"> Anzahlungsrechnung</td>
+      <td width="530" height="15">(2)</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">auftnr</td>
+      <td width="622" height="15"> Projektnummer = Auftragsnummer</td>
+      <td width="530" height="15">wenn Anzahlungsrechnung, sonst leer</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">zmart</td>
+      <td width="622" height="15"> ZM Art IG Lieferung</td>
+      <td width="530" height="15">(3)</td>
+    </tr>
+    <tr>
+      <td width="86" height="15">verbuchkz</td>
+      <td width="622" height="15"> Verbuchungskennzeichen</td>
+      <td width="530" height="15">Fix auf A</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anmerkungen:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(1)
+Der USt-Steuercode dient zur Kennzeichnung der UST-Steuerart:<span style="mso-tab-count:
+1 dotted"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00<span style="mso-tab-count:1 dotted">
+</span>Vorsteuer oder keine Steuer<span style="mso-tab-count:
+1 dotted"><br>
+&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01<span style="mso-tab-count:1 dotted">
+</span>Ist-Umsatzsteuer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03<span style="mso-tab-count:1 dotted">
+</span>Soll-Umsatzsteuer<br>
+&nbsp;&nbsp;&nbsp;<span style="mso-tab-count: 1 dotted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>08<span style="mso-tab-count:1 dotted"> </span>Einkaufskonten für
+innergem. Erwerb, wenn kein VSt.-Abzug besteht.<span style="mso-tab-count:
+1 dotted"><br>
+&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 09<span style="mso-tab-count:1 dotted">
+</span>Einkaufskonten für innergem. Erwerb, wenn VSt.-Abzug besteht.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(2)
+Anzahlungsrechnungskennzeichen:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+leer&nbsp;&nbsp; keine Anzahlungsrechnung<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01<span style="mso-tab-count:1 dotted">&nbsp;&nbsp;&nbsp;</span>
+Teilrechnung<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+02&nbsp;&nbsp;&nbsp;<span style="mso-tab-count: 1 dotted"> </span>Storno der
+Teilrechnung<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03<span style="mso-tab-count:1 dotted">&nbsp;&nbsp;&nbsp;</span>
+Anzahlungsrechnung<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04&nbsp;&nbsp;&nbsp;
+Storno der Anzahlungsrechnung (wird derzeit nicht unterstützt)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 05<span style="font-size:10.0pt;font-family:Arial;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:DE;mso-fareast-language:
+DE;mso-bidi-language:AR-SA"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Schlussrechnung</span></p>
+<p class="MsoNormal">(3) Durch dieses Kennzeichen wird die Art des IG-Geschäfts
+näher bestimmt:<span style="mso-tab-count:
+1 dotted"><br>
+&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<span style="mso-tab-count:1 dotted">
+</span>ig. Lieferung oder Verbringung<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<span style="mso-tab-count:1 dotted">
+</span>Werkleistung<br>
+&nbsp;&nbsp;&nbsp;<span style="mso-tab-count: 1 dotted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>2<span style="mso-tab-count:1 dotted"> </span>Warenbewegung<span style="mso-tab-count:
+1 dotted"><br>
+&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3<span style="mso-tab-count:1 dotted">
+</span>Dreiecksgeschäfte<br>
+&nbsp;&nbsp;&nbsp;<span style="mso-tab-count: 1 dotted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>9<span style="mso-tab-count:1 dotted"> </span>Sperre für ZM</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Ausgangsgutschriften werden mit negativen (invertierten) Beträgen, aber wie
+eine RE gebucht.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.
+Lexware</p>
+    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.
+    Datev
+    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">4.
+    BMD
+    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">5.
+    RZL
+    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">6.
+    Schleupen
+    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">7.
+    Orlando<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

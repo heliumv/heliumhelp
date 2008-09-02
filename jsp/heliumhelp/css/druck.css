@@ -1,0 +1,94 @@
+body {
+	background-color: White;
+	font-size: 10pt;
+	font-family: verdana, arial, "lucida console", sans-serif;
+}
+
+table {
+	background-color: transparent;
+	font-family: verdana, arial, "lucida console", sans-serif;
+}
+
+td, tr { 
+  font-size: 10pt;
+}
+
+h1 {
+	text-align : center;
+	color : Black;
+}
+
+h2 {
+	color : Black;
+}
+
+h3 {
+	color : Black;
+}
+
+.liAbstand { 
+  line-height: 130%;
+  padding-bottom: 2%;
+}
+
+.abb {
+	font-weight: bolder;
+	padding-right: 10%;
+}
+
+.abstand {
+	height : 10pt;
+}
+
+
+a:link {
+	color: Gray;
+	text-decoration:none;
+}
+		   
+a:visited {
+	color: Gray;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #6688BB;
+	text-decoration:none;
+}
+
+a:active {
+	color:#4466DD;
+    text-decoration:none;
+}
+
+.question {
+	font-variant: normal;
+	font-weight: bold;
+	text-indent: 0px;
+	padding-top: 20px;
+}
+
+.answer {
+	text-indent: 20px;
+}
+
+.code {
+ font-family:Courier,monospace;
+ font-size: bigger;
+}
+
+.entwickler {
+	font-size: inherit;
+	font-weight : bold;
+	color: #000055;
+}
+
+.modul {
+	font-style : italic;
+	font-variant : small-caps;
+}
+
+.reiter {
+		font-style : italic;
+}
+

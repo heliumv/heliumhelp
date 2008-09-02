@@ -1,0 +1,155 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>HV_Links</title>
+</head>
+
+<body>
+
+<h1>Web-Schnittstellen</h1>
+<p>Folgende Web-Links werden von Helium V derzeit unterstützt.<br>
+Wir unterscheiden dabei drei verschiedene Kommunikations/Darstellungsformen.</p>
+<p>a.) Im normalen HTML Browser darstellbar:</p>
+<div align="left">
+  <table border="1" width="757" height="25">
+    <tr>
+      <td width="245" height="25">Funktion</td>
+      <td width="1269" height="25">Aufruf</td>
+    </tr>
+    <tr>
+      <td width="245" height="25">Online Datenerfassung</td>
+      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http://HELIUMV_SERVER:8080/ze/ze?cmd=bdestation</a></td>
+    </tr>
+    <tr>
+      <td width="245" height="25">Anwesenheitsliste</td>
+      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste</a></td>
+    </tr>
+    <tr>
+      <td width="245" height="25"><a name="QuickZE Start"></a>Quick-Auftrags-<br>
+        zeiterfassung</td>
+      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER:</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">8080/ze/ze?cmd=quickze<br>
+        </a>Zur erstmaligen Erfassung der Login Informationen.&nbsp;<br>
+        Die Logindaten werden in einem Cookie abgespeichert.</td>
+    </tr>
+    <tr>
+      <td width="245" height="25">Quick-ZE<br>
+        Direkt Start</td>
+      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER:</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">8080/ze/ze?cmd=quickzeiterfassung<br>
+        </a>Nach Erfassung der Logindaten kann auch direkt mit diesem Link
+        gestartet werden.</td>
+    </tr>
+    <tr>
+      <td width="245" height="25"><a name="QuickZE neue Login Daten"></a>Quick-ZE<br>
+        neue Login Daten</td>
+      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER:</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">8080/ze/ze?</a>cmd=quickze&amp;reenter=true<br>
+        Um die Logindaten dieses Users neu zu erfassen</td>
+    </tr>
+  </table>
+</div>
+<p>b.) im WAP-Browser (Mobile) darstellbar:</p>
+<table border="1" width="757" height="25">
+  <tr>
+    <td width="291" height="25">Funktion</td>
+    <td width="1223" height="25">Aufruf</td>
+  </tr>
+  <tr>
+    <td width="291" height="25">Zeitbuchung</td>
+    <td width="1223" height="25"><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">http://HELIUMV_SERVER:8080/heliumv/heliumv
+        </a></td>
+  </tr>
+</table>
+<p>c.) vom Zeiterfassungsterminal der Firma MECS aufrufbar:</p>
+<table border="1" width="791" height="25">
+  <tr>
+    <td width="698" height="25">Funktion</td>
+    <td width="850" height="25">Aufruf</td>
+  </tr>
+  <tr>
+    <td width="698" height="25">Zeitbuchung vom Terminal an Helium V senden</td>
+    <td width="850" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=MECS_ZEITBUCHEN&amp;record=STRING_VON_MECSTERMINAL</td>
+  </tr>
+  <tr>
+    <td width="698" height="25">Personalstamm holen:</td>
+    <td width="850" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=MECS_PERSSTAMM</td>
+  </tr>
+  <tr>
+    <td width="698" height="25">Saldenabfrage</td>
+    <td width="850" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=MECS_SALDO&amp;ausweis=STRING_VON_MECSTERMINAL</td>
+  </tr>
+  <tr>
+    <td width="698" height="25">Ausweise holen:</td>
+    <td width="850" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=MECS_AUSWEISE</td>
+  </tr>
+</table>
+<p>Hinweis: Je nach Konfiguration Ihrer Installation kann die Portadresse
+abweichen.<br>
+Den HELIUMV_SERVER bitte durch den Namen / die IP Adresse Ihres Servers
+ersetzen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei mehreren
+<b> Mandanten</b> wird der Zugriff auf den Mandanten
+grundsätzlich über den im Benutzermodul eingestellten Default Mandanten des Benutzers
+lpwebappzemecs gesteuert. Sollte ein davon abweichender Zugriff gewünscht
+werden, so ergänzen Sie die Aufrufe für HTML Browser bzw.
+Zeiterfassungsterminal um den Parameter &amp;mandant=MMM. MMM ersetzen Sie bitte
+durch die Mandantennummer.<br>
+WICHTIG: Denken Sie bitte daran, dass dieser Benutzer auch eine
+Zugriffsberechtigung für den Defaultmandanten benötigt. D.h. unter Umständen
+muss der Mandant unter Benutzer und unter Benutzermandant umgestellt werden.<br>
+Wenn Fehlermeldungen wie: Fataler Fehler auftreten und diese auch nach
+mehrmaligem Senden bestehen bleiben, so prüfen Sie bitte diese Einstellungen.<br>
+WICHTIG: Beachten Sie bitte auch, dass die angegebenen Ausweisnummern im
+richtigen/zugeordneten Mandanten sein müssen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Bei
+mehreren Sprachen</b> bzw. bei abweichenden Mandanten-Sprachdefinitionen muss
+unter Umständen die Sprachdefinition mit übergeben werden. Für die
+Sprachdefinition ergänzen Sie den Link bitte um &amp;locale=SPKK&nbsp;<br>
+SPKK steht für <a href="../Allgemein/Mehrsprachigkeit.htm">Sprachkurzkennung</a>
+z.B: deAT.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p><b>Managementconsole </b> für die Betrachtung der Auslastung Ihres Helium V Servers:<br>
+Diese steht unter <a href="http://HELIUMV_SERVER:8080/web-console/">http://HELIUMV_SERVER:8080/web-console/</a>
+zur Verfügung.</p>
+
+<p>Webservices:<br>
+Unter <a href="http://HELIUMV_SERVER:8080/jbossws/services">http://HELIUMV_SERVER:8080/jbossws/services</a>
+erhalten Sie eine Liste der aktuell verfügbaren und freigeschalteten
+Web-Services, welche von Helium V angeboten werden.</p>
+
+<p>Link zum Helium V Bildschirmschoner, immer mit den aktuellsten Neuigkeiten
+von Helium&nbsp;V. <a href="http://www.heliumv.com/support/download.html">http://www.heliumv.com/support/download.html</a></p>
+
+<p>Link zur derzeit verwendeten Java-Runtime <a href="http://java.sun.com/products/archive/j2se/5.0_08/index.html">http://java.sun.com/products/archive/j2se/5.0_08/index.html</a></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Getestete
+Browser:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">IE
+    5.0 unter Windows 98SE</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">IE
+    6.0 unter Windows XP, W2k</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Firefox</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Saphari</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Opera</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

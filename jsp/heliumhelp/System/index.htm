@@ -1,0 +1,523 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>System</title>
+</head>
+
+<body>
+
+<h1>System</h1>
+<p>Hier finden Sie allgemeine System Informationen zu Helium V</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Verbindungsmöglichkeiten"></a>Verbindungsmöglichkeiten
+zu Helium V</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Verbindung zum Helium V Server erfolgt grundsätzlich über RMI. Dies bedeutet
+für den Anwender, dass vom Client zum Server eine TCP/IP Verbindung bestehen
+muss. Im Intranet ist dies in den heute üblichen Netzwerken in der Regel
+bereits installiert. Von außen empfehlen wir zur Anbindung eines Clients an das interne
+Netzwerk die Verbindung über VPN (virtual private network). VPN Verbindungen werden
+als Hardware und / oder Software-Lösung angeboten und werden gerne auch von
+unseren Spezialisten realisiert.<br>
+Verbindungen wie z.B. Terminalclients sind bei der Verwendung von Helium V nicht
+erforderlich. Der Vorteil daraus:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+kein Terminalserver erforderlich</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+geringerer Netzwerkverkehr</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Von
+Helium V verwendete Ports: JNDI 2099, RMI, 2098, Web-Schnittstelle 8080.
+Einstellung der Ports <a href="../../html/installationen/Konfigurations_Dokumentation.xls">siehe</a>.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+Ports können an die Erfordernisse Ihrer Installation angepasst werden. Bei
+Fragen wenden Sie sich bitte an Ihren Systemadministrator.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Bei Verwendung einer MS-SQL Datenbank wird für die Kommunikation der Port 1433
+verwendet. Bei Verwendung einer PostgresQL Datenbank wird der Port 5432
+verwendet. Beide Ports sind ebenfalls konfigurierbar.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+externe Zugänge werden auch noch die Ports 4444 und 4445 benötigt. Diese
+können nicht konfiguriert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u><b>ACHTUNG:</b></u>
+Wenn auf dem Helium V Server die IP Adresse verändert wurde, so muss danach
+unbedingt der Helium V Server neu gestartet werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u><b>Hinweis:</b></u>
+ Für Verbindungen von extern raten wir dringend gesicherte Verbindungen (VPN =
+Virtual Private Network) zu verwenden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Grundaufbau</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Helium
+V ist in der sogenannten Dreischicht-Architektur realisiert. Besteht also aus
+Datenbank-Server, Applikations-Server und dem eigentlichen Client.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kann
+man Helium V mehrfach starten?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+ist oft sehr praktisch den Helium V Client mehrfach zu öffnen. Starten Sie dazu
+einfach den Client durch erneuten Doppelklick auf das Helium V Icon ein zweites
+und ein drittes Mal. Die interne Verwaltung der Rechte und Zugriff ist so
+gestaltet, dass die Sperren auf den jeweiligen Client wirken.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel:
+Wenn Sie im ersten Client den Kunden Müller gerade ändern, so kann der exakt
+gleiche Kunde Müller im zweiten Client zwar angesehen, aber nicht verändert
+werden, solange bis sie im ersten Client den Kunden wieder freigegeben
+(speichern oder verwerfen) haben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Die in Helium V realisierte Zwischenablage legt die Daten am Client PC ab. Damit
+haben Sie die Möglichkeit Daten sehr komfortabel zwischen, auch verschiedenen
+Clients, auf einem PC zu transferieren.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mehrfaches
+Starten am MAC OS X</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
+am MAC ist ein mehrfaches starten des Helium V Clients möglich. Für den Start
+eines zweiten Clients öffnen Sie diesen Über Harddisk-&gt;Programme-&gt;HeliumV_Client.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kann
+Helium V auch im WLan betrieben werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ja
+dank der Dreischichttechnik ist dies problemlos möglich. Achten Sie jedoch
+darauf, dass eine gute Funkverbindung besteht. Für MAC Anwender, es sollten
+mindestens drei Striche in der Signalstärke angezeigt werden. Wenn die
+Funkverbindung dauernd abbricht ist die Qualität der Datenübertragung nicht
+gegeben und Sie werden auch mit Helium V nicht zufriedenstellend arbeiten
+können.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Druckformulare.htm">Druckformulare</a></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bearbeiten
+der Systemeinstellungen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Modul Systemeinstellungen <img border="0" src="System_Modul.gif" width="32" height="37"> finden Sie
+alle Parameter um Helium V an Ihre Bedürfnisse anzupassen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den unteren Modulreitern finden Sie folgende Basis-Funktionalitäten: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="System_Reiter.gif" width="58" height="23">
+mit Ort, Land, Land-Plz-Ort und Einheit. Diese Daten sind Mandanten unabhängig.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Gesperrt_Reiter.gif" width="65" height="24">
+ mit den aktuell gesperrten Datensätzen aller Mandanten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Mandant_Reiter.gif" width="63" height="22">
+ mit der Definition der Mandanten abhängigen Daten wie Mandantenauswahl,
+Kopfdaten, Konditionen, Spediteure, Zahlungsziele, Mehrwertsteuer, Kostenstelle
+und Lieferart.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Sprache_Reiter.gif" width="60" height="21">
+ mit Belegart, Status, Sachbearbeiterfunktion, Positionsart. Dies sind die
+Basisdaten und deren Übersetzungen. Die Verwendung der Positionsarten ist dann
+weitergehend in den einzelnen Modulen definiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Medien_Reiter.gif" width="54" height="21">
+ mit allgemeinen Medienmodulen, wie Texten oder Bildern und Mediaart&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Parameter_Reiter.gif" width="74" height="24">
+mit Mandanten und Anwenderparametern. Mit den Einstellparametern für den durch Ihre Anmeldung bzw.
+Mandantenauswahl gewählten Mandanten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Versandauftrag_Reiter.gif" width="98" height="20">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+Versandauftrag sehe Sie alle Versandaufträge die über Helium V abgewickelt
+wurden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Postausgang finden Sie die noch offenen Versandaufträge</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Gesendet finden Sie die bereits versandten Belege</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Papierkorb werden die gelöschten Versandaufträge, egal diese aus dem
+Postausgang gelöscht wurden oder aus dem Gesendet. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+Fehlgeschlagen finden Sie Versandaufträge die nicht zugestellt werden konnten. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anlegen
+eines Spediteurs</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Spediteure werden im Mandanten angelegt und sind daher auch Mandantenabhängig. Diese
+Bezeichnung der Spediteure ist nicht sprachabhängig, da hier eindeutige
+Firmennamen hinterlegt werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bearbeiten
+eines Mandanten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+in Ihrer Installation mehrere Mandanten freigeschaltet sind, so ist zu beachten,
+dass immer nur derjenige Mandant bearbeitet / verändert werden kann, bei dem
+Sie aktuell angemeldet (eingeloggt) sind. Die Parameter eines anderen Mandanten
+können zwar betrachtet aber nicht verändert werden (nur Leserecht).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Sie die Daten des Mandanten bei dem Sie gerade angemeldet sind bearbeiten, so
+ist für die Änderung des Kennzeichens Hauptmandant ein besonderes
+Benutzerrecht erforderlich, welches üblicherweise nur von Ihrem Helium V
+Lieferanten eingestellt werden kann.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Neuer Mandant"></a>Anlegen
+eines neuen Mandanten / Freischalten von zusätzlichen Modulen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Installation von Helium V werden alle Mandanten und deren Module anhand der erworbenen
+Mandantenlizenzen eingerichtet. Sollten Sie nachträglich einen Mandaten
+hinzufügen wollen, so kann dies <a href="http://xenon/wiki/index.php/Anwendermoduleinstellung#Wie_kann_ich_einen_neuen_Mandanten_anlegen_bzw._weitere_.2F_neue_Module_bzw._Zusatzfunktionen_freischalten.3F">von uns gerne parametriert
+werden</a>. Bitte setzen Sie
+sich mit Ihrem Helium V Händler in Verbindung, damit er die
+entsprechenden Modullizenzen für Sie frei schaltet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Mandantenparameter eines bestehenden Mandanten, wie Anschrift usw. können jederzeit im System unter <img border="0" src="Mandant_Reiter.gif" width="63" height="22">
+geändert werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beim Anlegen weiterer
+Mandanten werden automatisch werden alle
+Pflichtfelder vom Mandanten 001 kopiert. Stellen Sie nach der Freischaltung des
+neuen Mandanten sicher, dass alle
+Einstellungen für diesen neuen Mandanten richtig sind.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Hinweis:</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Können nach dem
+Freischalten eines neuen Mandanten keine neuen Kunden oder keine neuen
+Lieferanten angelegt werden, so liegt das meist daran, dass bei der dem
+Mandanten zugeordneten Person eine Kostenstelle des Urmandanten hinterlegt ist.
+D.h. bitte prüfen / korrigieren Sie die Kostenstelle des am neuen Mandanten
+angemeldeten Mitarbeiters, in dem Sie im Personal auf die Person gehen, Detail,
+ändern. Nun Klicken Sie auf den Knopf Heimat KST. Werden hier die gewünschten
+Kostenstellen angezeigt, so ordnen Sie die richtige Kostenstelle dem Mitarbeiter
+zu. Werden keine Kostenstellen angezeigt, so gehen Sie bitte auf System,
+Mandant, Kostenstelle und legen Sie hier die gewünschten Kostenstellen an. Nun
+wechseln Sie wieder in das Personal des Mandanten und definieren Sie die
+Heimatkostenstelle des Mitarbeiters. Nun kann in der Regel auch ein neuer Kunde
+/ Partner angelegt werden.<br>
+Hinweis2:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ein ähnliches
+Verhalten tritt auch auf, wenn bei einem neu freigeschalteten Mandanten die
+Mehrwertsteuersätze nicht definiert sein. Prüfen Sie bitte gegebenenfalls auch
+diese Einstellungen unter System, Mandant, MWST.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Freischalten
+oder sperren eines Mandanten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+können Sie jederzeit über den Benutzermandanten unter Benutzer vornehmen. D.h.
+Sie entfernen die Benutzermandanten Zuordnung für diejenigen Benutzer, welche
+auf den Mandanten keinen Zugriff haben sollten. Achten Sie jedoch darauf, dass immer ein Benutzer, z.B. LPAdmin bleibt, der
+über Administratorrechte auf allen Mandanten verfügt.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Löschen
+eines Mandaten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+oben bereits ausgeführt ist das neu Anlegen eines Mandanten für den Anwender
+nicht vorgesehen. Aus genau dem gleichen Grunde ist auch das Löschen eines
+Mandanten nicht möglich. Anstelle des Löschen entfernen Sie bitte einfach die
+Mandantenberechtigung des Benutzers für den gewünschten Mandanten.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+der Standard Bankverbindung dieses Mandanten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dazu
+muss zuerst die eigene Bankverbindung definiert sein. Siehe dazu bitte <a href="../Finanzbuchhaltung/index.htm#Eigene Bankverbindungen">Finanzbuchhaltung</a>.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erst
+nachdem die eigenen Bankverbindungen definiert sind, kann diese Zuordnung als
+Vorschlagswert für die Zahlungsbuchungen vorgenommen werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+kann ich einen Datensatz, der von einem anderen Benutzer gesperrt wurde wieder
+entsperren.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Systemeinstellungen finden Sie den unteren Modulreiter <img border="0" src="Gesperrt_Reiter.gif" width="65" height="24">.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+sind alle aktuellen Sperren aufgelistet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Sperren.gif" width="491" height="81">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zum
+Sperren und Entsperren ist folgendes zu beachten:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+jeder Anmeldung erhält ein Benutzer eine neue UserId. Diese ist Helium V weit
+einmalig. Meldet sich ein Benutzer erneut an, so erhält er eine neue UserId. Er
+kann also seine alten Sperren trotzdem nicht mehr verändern. Dies hat den
+Zweck, um sich vom gleichen PC mit dem gleichen Client und dem gleichen Benutzer
+mehrfach anmelden zu können.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Sie Datensätze entsperren, so beachten Sie bitte, dies nur wirklich aufgrund
+eines dringenden Bedarfes durchzuführen, wenn Sie also nicht mehr
+weiterarbeiten können. Anderenfalls könnte es sein, dass Sie einem anderen
+Benutzer, während des Arbeitens die notwendige Sperre wegnehmen und dadurch
+seine Eingabe vernichten, wodurch unter Umständen eine stundenlange Arbeit
+vernichtet werden könnte.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+dazu bitte auch &quot;<a href="../Allgemein/index.htm#Ändern eines Datensatzes">Ändern eines
+Datensatzes</a>&quot;.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie dazu auch folgendes:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Sie Helium V beenden möchten, sich aber noch im Ändern von Daten befinden,
+diese also noch nicht abgespeichert sind, so sind die Daten gesperrt. Durch das
+direkte Beenden von Helium V werden diese Daten nicht freigegeben. Bei einer
+Neuanmeldung erhalten Sie eine neue UserID, eine neue Sitzungsnummer und können
+somit diesen Datensatz nicht mehr bearbeiten, außer sie gehen wie oben
+beschrieben vor. Aus diesem Grunde sollten Sie immer alle Helium V Module
+beenden, bevor Sie den gesamten Helium V Client schließen. Sie können dieses
+Verhalten aber auch dazu verwenden, einen Datensatz, z.B. den Datensatz eines
+Kunden, gezielt zu sperren, zu blockieren, damit keine unbeabsichtigte Änderung
+vorgenommen wird, z.B. um die Veränderung der Kundendaten während Ihres
+Urlaubs zu verhindern.</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Anlegen
+von Orten:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass je Ortsnamen nur ein Ort angelegt werden kann. Eine
+Besonderheit ist das Verhalten von &quot;ss&quot; und &quot;ß&quot;. Dies wird
+von den üblicherweise verwendeten Datenbanken als gleichwertige Zeichen
+interpretiert. Deshalb kann ein Ort nur in einer der beiden Schreibweisen
+angelegt werden. Beispiel: Straßwalchen. Ist dieser Ort bereits angelegt, so
+erhalten Sie beim Abspeichern von Strasswalchen den Hinweis:<br>
+<img border="0" src="FDU.gif" width="407" height="121"> &nbsp;<br>
+Was soviel bedeutet,
+wie dass dieser Ortsnamen bereits angelegt wurde, aber eventuell eben in der
+anderen Schreibweise.</p>
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Anlegen
+von Ländern:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+Land können die Länder mit Länderkennzeichen, Ländernamen, Internationaler
+Vorwahl, Standardwährung und dem Zeitpunkt des EU-Beitrittes angelegt werden.
+Bitte beachten Sie, dass das Länderkennzeichen nur maximal dreistellig
+eingegeben werden kann. Für das Länderkennzeichen gibt es derzeit drei
+verschiedene Definitionen:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Internationale Unterscheidungskennzeichen für Kraftfahrzeuge. Diese
+Länderkennzeichen sollten laut Empfehlung der Deutschen Post AG wegen der
+unterschiedlichen Längen NICHT verwendet werden.&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Zwei Buchstaben Code laut DIN EN ISO 3166-1</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">c.)
+Drei Buchstaben Code laut&nbsp; DIN EN ISO 3166-1</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> EU-Mitglied seit.
+Dieses Datum dient der Steuerung der steuerlichen Behandlung der Eingangs /
+Ausgangsrechnungen bzw. der Gutschriften. Ist hier ein Datum angegeben, so
+werden Belege mit Belegdatum ab diesem Datum und deren Partneradressen
+(Kunden/Lieferanten) in diesem Land sind, ab diesem Datum als EU-Mitglied
+behandelt (IG-Erwerb, IG-Erlös). Bitte beachten Sie hier, dass dieses Datum
+bilaterale Wirkung hat. D.h. selbstverständlich muss auch das Land Ihres
+Mandanten Mitglied der EU sein.<br>
+So ist. z.B. Österreich seit 1.1.1995 Mitglied der Europäischen Union.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Estland,
+Lettland, Litauen, Malta, Polen, Slowakei, Slowenien, Tschechien, Ungarn, Zypern
+sind mit 1. Mai 2004 hinzugekommen.</p>
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Anlegen
+der Zuordnung Land - Postleitzahl - Ort:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+Land-Plz-Ort kann diese Zuordnung erfasst werden. Als Besonderheit kann hier
+durch die Eingabe des Ortsnamen die Zuordnung zu den Ortsnamen geschaffen
+werden. D.h. wird ein Ortsname eingegeben und ist dieser noch nicht erfasst, so
+wird er angelegt, ansonsten wird der Ortsname entsprechend zugeordnet.</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Ändern
+der Kopf- und Fußtexte:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Helium V gibt es mehrere Möglichkeiten der Gestaltung der sogenannten Kopf- und
+Fußtexte.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+hinterlegte Logik ist grundsätzlich folgendermaßen:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+jedes Bewegungsmodul wird ein vordefinierter Text verwendet, außer er wurde
+für einen bestimmten Beleg übersteuert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+es gibt je Bewegungsmodul ein allgemeine Definition und eine individuelle
+Definition, welche die allgemeine Definition für diesen einen Beleg
+übersteuert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zur
+Definition der Texte je Bewegungsmodul gehen Sie bitte wie folgt vor:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+jedes Bewegungsmodul (Angebot - Bestellung) gibt es einen unteren Modulreiter
+Grunddaten. Hier gibt es wiederum einen Reiter ... Text (z.B. Angebotstext,
+Rechnungstext). Sie finden hier zumindest die Typen Fusstext und Kopftext. Der
+Inhalt dieser Text-Typen wird als default / Vorschlagswert in das jeweilige
+Bewegungsmodul übernommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Übersteuerung der allgemeinen Kopf- und Fußtexte wird in den jeweiligen
+Konditionen des Moduls vorgenommen.</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Festlegen
+des Geschäftsjahreswechsels:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+Parameter kann der Beginn eines Geschäftsjahres definiert werden. Dies wirkt im
+wesentlichen für die Generierung der Belegnummern. Zusätzlich wird in den
+Tabellen das ermittelte Geschäftsjahr gespeichert um dies für die jeweiligen
+Auswertungen zur Verfügung zu haben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Definition teilt sich in zwei Parameter:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="GF_Wechsel.gif" width="431" height="35"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geschäftsjahrbeginnmonat:
+Tragen Sie hier ein, ab welchem Kalendermonat Ihr Geschäftsjahr beginnt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geschäftsjahrpluseins:
+Wenn die Jahreskennzahlen der Belegnummern mit der Jahreszahl des
+Geschäftsjahresbeginns korrespondieren sollen, so tragen Sie hier Null ein.
+Sollte die Jahreskennzahl der Belegnummern z.B. mit dem Ende des
+Geschäftsjahres korrespondieren, so tragen Sie hier Eins ein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+z.B. für Geschäftsjahresbeginnmonat 7 eingetragen und das
+Geschäftsjahrpluseins auf Null belassen so bewirkt dies, dass die Belegnummern bis zum 30.6.2006 mit 05/... beginnen (da das Beginnende Kalenderjahr des GF Jahres in 05 liegt) und mit 1.7.2006 mit 06/00000001 begonnen wird.</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Durchlaufende
+Belegnummern</b></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Haben
+Sie einen unterjährigen Geschäftsjahreswechsel, so sollten die Belegnummern
+auch nach einem Wechsel des Kalenderjahres weiterzählen. Für diese Einstellung
+siehe bitte oben: Festlegen des Geschäftsjahreswechsels.</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Definition
+des Formates der Belegnummern</b></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">In
+den Mandantenparametern kann auch das Belegnummernformat definiert werden. Wir
+haben vorgesehen, dass Sie die Anzahl der Jahresstellen und die Länge der
+unterjährigen laufenden Nummer definieren können. Weiters kann das
+Trennzeichen definiert werden.</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><img border="0" src="Format_Belegnummern.gif" width="475" height="17"></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Bitte
+beachten Sie, dass eine Änderung dieser Parameter sofort wirksam ist. Eventuell
+bisher erzeugte Belegnummern werden dadurch jedoch <b>NICHT</b> verändert.
+Sollten auch bereits bestehende Belegnummern verändert werden müssen, so
+wenden Sie sich bitte direkt an uns.</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Bei
+einer Umstellung bedenken Sie bitte, dass die Sortierung der Auswahllisten nach
+dieser Belegnummer erfolgt. So ist insbesondere bei der Übernahmen von Daten
+vor 2000 zu empfehlen die Sortierung auf vier Jahresstellen zu definieren.</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b><a name="Versionen/Voraussetzungen"></a>Versionen
+/ Voraussetzungen</b></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Helium
+V ist vollständig in der Programmiersprache Java geschrieben. Voraussetzung
+für den Einsatz ist die Verfügbarkeit der richtigen Java Runtime. Wir setzen
+zur Zeit folgende Versionen voraus:</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Gerade
+im Clientbereich kann es vorkommen, dass andere Versionen eingesetzt werden.
+Bitte beachten Sie, dass wir für das richtige Verhalten der Software
+ausschließlich die unten angeführten Versionen benötigen.</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;&nbsp;&nbsp;
+java version "1.5.0_08"<br>
+&nbsp;&nbsp;&nbsp; Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_08-b03)<br>
+&nbsp;&nbsp;&nbsp; Java HotSpot(TM) Client VM (build 1.5.0_08-b03, mixed mode,
+sharing)</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Die
+jeweils gültige Java Runtime erhalten Sie direkt von uns, bzw. wird diese auf
+der Installations-CD mitgeliefert.</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Siehe
+dazu <a href="../Client/Client_Install.htm">auch</a>. Zu getesteten Versionen
+siehe bitte hier.</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Bedeutung
+der Parameter Datentypen</b></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Für
+die Parametrierung Ihres Helium V Mandanten kann im System unter Parameter das
+Verhalten von Helium V entsprechend angepasst werden. Die Parameter selbst sind
+beschrieben und sind somit selbsterklärend. Die Parameter haben
+unterschiedliche Datentypen. Die Eingabe dafür ist wie folgt definiert:</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<div align="left">
+  <table border="1" width="476" height="21">
+    <tr>
+      <td width="378" height="21">Datentyp</td>
+      <td width="574" height="21">Bedeutung / mögliche Eingabe</td>
+    </tr>
+    <tr>
+      <td width="378" height="21">java.lang.String</td>
+      <td width="574" height="21">Eingabe einer Zeichenkette</td>
+    </tr>
+    <tr>
+      <td width="378" height="21">java.lang.Integer</td>
+      <td width="574" height="21">Eingabe einer ganzen Zahl</td>
+    </tr>
+    <tr>
+      <td width="378" height="21">java.lang.Boolean</td>
+      <td width="574" height="21">Eingabe eines logischen Wertes<br>
+        0 ... falsch<br>
+        1 ... wahr</td>
+    </tr>
+  </table>
+</div>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Direkter
+Zugriff auf die Helium V Datenbank</b></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Es
+kann für Sie von Vorteil / praktisch sein, direkt auf die Helium V Datenbank
+zuzugreifen. Gerne stellen wir Ihnen das Passwort für den Zugang zur
+Verfügung. Bitte füllen Sie beiliegendes <a href="SA_Passwort.htm">Formular</a>
+aus und senden Sie uns dieses von Ihrer Geschäftsleitung unterschrieben zu.</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Erstellung
+eigener Auswertungen</b></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">In
+Helium V können unter System, Extralisten eigene Auswertungen erstellt werden.</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Aufgrund
+des Drei-Schichten-Modells und der Datenbank-Unabhängigkeit müssen diese im
+sogenannten HQL Syntax erstellt werden. Diese Schreibweise ist ähnlich dem SQL
+Syntax.</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Diese
+Extralisten können den Modulen zugewiesen werden und können, nach dem Neustart
+des Moduls in der Menüleiste über Extras, NameDerExtraliste aufgerufen werden.
+Kommt es nun bei der Ausführung einer dieser Extralisten zu eine Fehlermeldung
+ähnlich der nachfolgenden,<br>
+&nbsp;<img border="0" src="HQL-Error.jpg" width="539" height="196"><br>
+so bedeutet dies, dass die Extraliste durch den Hibernate nicht interpretiert
+werden konnte. In vielen Fällen, so auch in dem hier dargestellten, wurde ein
+SQL Syntax eingegeben. Korrigieren Sie den Syntax auf HQL. Bei Fragen
+kontaktieren Sie bitte Ihren Helium V Händler oder wenden Sie sich direkt an
+uns <a href="mailto:(support@HeliumV.com">(support@HeliumV.com</a>) . Wir
+unterstützen Sie gerne.</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Das
+Ergebnis einer Extraliste(n-Auswertung) wird am Schirm dargestellt und kann
+zusätzlich als CSV-Datei exportiert werden.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+</body>
+
+</html>
