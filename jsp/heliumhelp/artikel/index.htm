@@ -513,12 +513,36 @@ dazu auch</a>.</p>
 Artikelhinweise hinterlegen?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Im Artikelkommentar kann <img border="0" src="Hinweis_Artikelauswahl.gif" width="148" height="18">
-angehackt werden. Damit wird gekennzeichnet, dass dieser Text nicht angedruckt
+Im Artikelkommentar kann zwischen <img border="0" src="Hinweis_Artikelauswahl.gif" width="154" height="46">
+Mitzudrucken bei und Hinweis bei Artikelauswahl gewählt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+Hinweis bei Artikelauswahl gewählt, so wird damit gekennzeichnet, dass dieser Text nicht angedruckt
 werden soll, sondern, dass bei Verwendung des Artikels im angegebenen Modul der
 eingegebene Text in einer Hinweismeldung erscheinen soll. Damit können Sie
 spezifische Nachrichten an den Benutzer bei der Auswahl exakt dieses Artikels,
 z.B. bei der Auswahl in einer Bestellung senden.&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wozu unterschiedliche Artikelkommentararten?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Mit den unterschiedlichen Kommentararten, diese können im Artikel unter
+Grunddaten, Kommentarart definiert werden, haben Sie die Möglichkeit
+spezifische Kommentare für den Artikel zu hinterlegen. Denken Sie hier z.B. an
+einen Handelsartikel. Hier muss einmal eine schöne Beschreibung für den
+Verkauf gemacht werden, welche den Kundennutzen in den schönsten Farben
+schildert. Dann muss eine Beschreibung für den Lieferanten erstellt werden.
+Diese muss den Artikel exakt spezifizieren, sollte aber z.B. dem Lieferanten
+nicht unbedingt den Kundennutzen transparent darlegen. Dann ist noch eine
+Beschreibung für die Wareneingangsprüfung zu erstellen. Dies hat bestimmte
+Messverfahren durchzuführen, Messwerte zu überprüfen usw.. D.h. wenn Sie
+entsprechende Artikelkommentararten definiert haben, können Sie diese Daten
+komfortabel in den Artikelstamm einpflegen und von Helium V werden diese Daten
+entsprechen bei den definierten Papieren automatisch mitgedruckt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+selbe Vorgehensweise ist bei den Hinweisen gegeben.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Warenverkehrsnummern?</p>
@@ -730,6 +754,52 @@ Gestehungspreis für allgemeine Betrachtungen immer aus dem Durchschnittspreis
 aller Läger berechnet. Ist hier der Artikel nicht Lagerbewirtschaftet, so
 ergibt sich aufgrund dieser Durchschnittsberechnung immer ein Gestehungspreis
 von 0 (Null).</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anzeige
+der Artikelauswahlliste</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Darstellung der Artikelauswahlliste kann über die beiden folgenden Parameter
+definiert werden.</p>
+<div align="left">
+  <table border="1" width="640" height="21">
+    <tr>
+      <td width="541" height="21">VKPREIS_STATT_GESTPREIS_IN_AUSWAHLLISTE</td>
+      <td width="739" height="21">Bewirkt, dass anstelle des Gestehungspreises
+        die Verkaufspreisbasis angezeigt wird.<br>
+        Zusätzlich ist für die Anzeige des jeweiligen Preises auch das
+        entsprechende Recht erforderlich, also LP_DARF_PREISE_SEHEN_EINKAUF bzw.
+        LP_DARF_PREISE_SEHEN_VERKAUF</td>
+    </tr>
+    <tr>
+      <td width="541" height="21">ABMESSUNGEN_STATT_ZUSATZBEZ_IN_AUSWAHLLISTE</td>
+      <td width="739" height="21">Wenn dieser Parameter aktiviert ist, so
+        bedeutet dies, dass anstelle der Zusatzbezeichnungen die Abmessungen,
+        siehe Reiter Technik, angezeigt werden.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+Änderungen dieser Parameter ist ein Neustart des Clients erforderlich.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ladenhüter</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der Auswertung der Ladenhüter werden jene Artikel gelistet, die im angegebenen
+Zeitraum keine Lagerbewegung hatten, bzw. die nicht länger als im angegebenen
+Zeitraum auf Lager liegen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der Liste der Ladenhüter erhalten Sie den Lagerstand zum Ende-Zeitpunkt der
+Betrachtung und zum aktuellen Gestehungspreis. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Warum
+aktueller Gestehungspreis und nicht abgewerteter Preis ?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+es um die Lagerbewertung geht muss ich die tatsächlichen Kosten des Artikels
+kennen, sonst würden, bei entsprechender Abwertung, die teuren Artikel, wenn
+sie z.B. länger als ein Jahr liegen, Wertmäßig nicht mehr aufscheinen. Nur
+mit dem tatsächlichen Gestehungspreis kann ich entscheiden was ich mit einem
+Ladenhüter machen will. Z.B. an den Lieferanten zurückgeben, weiterverkaufen,
+oder an den auslösenden Kunden weiterverrechnen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
