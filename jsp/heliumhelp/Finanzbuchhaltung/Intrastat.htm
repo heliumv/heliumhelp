@@ -16,8 +16,8 @@
 Intrastatmeldung finden Sie in der Finanzbuchhaltung <img border="0" src="Fibu_Intrastat.jpg" width="39" height="40">.
 Wählen Sie den unteren Modulreiter Intrastat <img border="0" src="Intrastat.gif" width="59" height="24">.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
-der nun erscheinenden Liste sehe Sie die bereits importierten
-Warenverkehrsnummern.</p>
+der nun erscheinenden Liste sehe Sie die bereits importierten und derzeit
+gültigen Warenverkehrsnummern.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Erstellen einer Intrastatmeldung</p>
@@ -89,9 +89,130 @@ hier Kapitelüberschriften ohne Nummer, so wurden die falschen Daten importiert.<
 Wie werden die Daten nach IDEP übernommen, wie wird der Import in IDEP
 definiert?</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Hier nun eine Anleitung wie man das von der ÖStat zur Verfügung gestellte
+Programm IDEP verwendet um Daten aus Helium V zu importieren und diese dann an
+die ÖStat zu senden. Wir gehen auch hier davon aus, dass Ihnen EDV-Begriffe wie
+Ordner / Verzeichnisse EMail-Versand usw. geläufig sind. D.h. das Einrichten
+der Übernahme von Helium V nach IDEP sollte von einem / Ihrem Administrator mit
+entsprechenden Kenntnissen durchgeführt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Diese Beschreibung ist für das IDEP 2008 erstellt. Eventuelle zukünftige
+Versionen können davon abweichen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+Staren</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Starten
+Sie IDEP, gegebenenfalls muss ein Auskunftspflichtiger definiert werden. Dies
+wird von IDEP erzwungen. <span lang="DE" style="font-size:10.0pt;mso-ansi-language:
+DE">ACHTUNG:Ö UID Nur mit ATU und hinten -001</span></p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.
+<span style="font-size: 10.0pt; mso-ansi-language: DE" lang="DE">Anlegen der
+Importformate</span></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><span style="font-size: 10.0pt; mso-ansi-language: DE" lang="DE">Gehen
+Sie auf Import, Importformate</span></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><span style="font-size: 10.0pt; mso-ansi-language: DE" lang="DE">Wählen
+Sie Aktionen, Hinzufügen (+).</span></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Intrastat2.jpg" width="628" height="221"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+Sie für den Import der Versanddaten das IDEP wie folgt ein. Als Trennzeichen
+wählen Sie ; (Semikolon)</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+unteren Teil definieren Sie nun die Reihenfolge der Daten wie folgt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Intastat3.gif" width="624" height="250"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie die Reihenfolge und vor allem die Lücken bei 6 und 9.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+dieser Definition klicken Sie bitte auf Hinzufügen. Damit ist Ihr Importformat
+für den Versand fertiggestellt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Eingang gehen Sie in gleicher Weise vor, verwenden Sie jedoch bitte als
+Datei ...\intrastat_eingang.csv.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+exakte Pfad der Importdateien kann in Helium V unter System, Parameter,
+INTRASTAT_EXPORTZIEL_EINGANG und INTRASTAT_EXPORTZIEL_VERSAND definiert werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><span style="font-size: 10.0pt; mso-ansi-language: DE" lang="DE">3.
+Importieren der Daten</span></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+Daten importieren zu können muss ein sogenannter Meldungskopf erstellt werden.
+Gehen Sie dazu in der IDEP Menüleiste auf Meldung, Bearbeiten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+legen Sie mit Aktionen hinzufügen (+) einen neuen Meldungskopf an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Intrastat4.jpg" width="370" height="295"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie Meldefunktion (wird immer Normale INTRASTAT Meldung sein), Warenfluss
+(Versand oder Eingang) und den Berichtsmonat und klicken Sie auf Hinzufügen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+können nun diese neu angelegte Intrastatmeldung, den Meldungskopf bearbeiten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importieren
+der Daten in den Meldungskopf:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+Sie im Menü Aktionen, Import (F9) und wählen Sie das oben beschriebene
+Importformat aus</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Intrastat5.jpg" width="427" height="200"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">und
+bestätigen Sie mit OK.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+wird der Import durchgeführt. Daran anschließend wird das Import-Log
+angezeigt. Achten Sie darauf, dass hier KEINE Fehler angezeigt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Für Testzwecke kann auch eine fehlerhafte Datei importiert werden, sie muss
+aber auf alle Fälle vor dem Versand richtiggestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fehlerhaft
+übernommene Datensätze können im IDEP durch Doppelklick bearbeitet und
+richtiggestellt werden. Bitte beachten Sie, dass Korrekturen auf alle Fälle
+auch in den Stammdaten von Helium V vorgenommen werden müssen, da sonst beim
+nächsten Import wiederum entsprechende Fehler auftreten.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><span style="font-size: 10.0pt; mso-ansi-language: DE" lang="DE">4.
+EMailversand mit IDEP:</span></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Auskunftspflichtige muss gültig angelegt sein. Nun unter System Ausgabe-Einstellungen
+den EMail-Versand definieren. Wenn ein Mapi Client installiert ist (siehe
+Anzeige), braucht ansonsten nichts mehr installiert werden. Weitere
+Einstellungen und Versandmöglichkeiten siehe Hilfe zu IDEP.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zum
+tatsächlichen Versand muss die Meldung vorher noch genehmigt werden. Wählen
+Sie dazu Aktionen, Genehmigung. Nun kann die genehmigte Meldung versandt werden.
+Gehen Sie dazu auf Meldung, Intrastatausgabe und wählen EMail. Stellen Sie in
+Ihrem EMail-Programm sicher, dass diese Meldung auch tatsächlich an die ÖStat
+versendet wurde.</p>
 
 </body>
 
