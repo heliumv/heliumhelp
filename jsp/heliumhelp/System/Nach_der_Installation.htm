@@ -67,6 +67,12 @@ sollte der Helium V Administrator regelmäßig prüfen?</p>
     Hier muss zusätzlich auf die Unterschiede zwischen MS-SQL, PostgresQL
     geachtet werden.</li>
   <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
+    des freien Platzes sowohl auf dem Laufwerk/Volume der Datenbank, also auch
+    auf der Datenbanksicherung und dem JBoss Laufwerk. Hier muss ausreichend
+    Platz für den Betrieb sein. Also jeweils mindestens 10GB freier
+    Plattenplatz.</li>
+  <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Admin
     muss die DBs einspielen / zurücksichern können</li>
   <li>
@@ -74,14 +80,18 @@ sollte der Helium V Administrator regelmäßig prüfen?</p>
     V Dienste müssen gestoppt und gestartet werden können, welche Dienste sind
     das?<br>
     <img border="0" src="HV_Dienste.gif" width="638" height="172"></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Starten
+    des JBoss, vor allem in Mehr-Rechner-Systemen und vor allem auch wenn die
+    Datenbank deutlich länger zum Starten braucht als der JBoss.<br>
+    Sowohl unter Linux, MAC als auch unter Windows.</li>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Was
 sollte der HV-Admin können?</p>
 <ul>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Selbständig
-    Patches einspielen können, DB Updates einspielen ist für die Zukunft
-    geplant</li>
+    Patches einspielen können, DB Updates einspielen.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Client
     Installieren</li>
@@ -102,7 +112,16 @@ sollte der HV-Admin können?</p>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucker
     installieren und einrichten, Druckformulare definieren<br>
-    Insbesondere das Thema Etikettendrucken.</li>
+    Insbesondere das Thema Etiketten drucken.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfung
+    der USV für jeden Server</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Server
+    starten und vor allem kontrolliert herunterfahren</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">JBoss
+    und Datenbankserver stoppen und starten</li>
 </ul>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Backup"></a>Einrichten
@@ -155,6 +174,68 @@ Job-History.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
 Backup sollte als SA durchgeführt werden. Es ist der in diesem Job eingetragene
 User aber von der Anmeldung abhängig.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Herunterfahren
+des Linuxservers, bzw. Durchstarten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+einen Linuxserver herunter zu fahren verbinden Sie sich bitte mit Putty auf den
+Server. Melden Sie sich mit root und dem bekannt gegebenen Passwort am Linux
+Server an. Nun geben Sie:<br>
+&nbsp;&nbsp;&nbsp; shutdown -h now</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">zum
+Herunterfahren und ausschalten ein und</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+shutdown -r now</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">zum
+Reboot.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Startet
+nach dem Start des Linuxservers der JBoss nicht, z.B. da die Datenbank erst
+reorganisiert werden musste und dadurch deutlich länger als vorgesehen dauerte,
+so muss der JBoss per Hand gestartet werden. Bitte wiederum mit Putty verbinden
+und</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+service jboss start</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">eingeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Warten
+Sie nun einige Minuten und verbinden Sie sich dann mit dem Helium V Client auf
+den JBoss. Können Sie trotzdem keine Verbindung aufbauen, so wenden Sie sich
+bitte an Ihren Betreuer.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erstellen
+eines Datenbankbackups unter Linux</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Verbinden
+Sie sich bitte mit Putty auf den Server. Geben Sie nun </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+pg_backupdb</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ein.
+Damit wird ein aktuelles Backup der Datenbank erzeugt und üblicherweise auf /home/postgres
+geschrieben. Stellen Sie sicher, dass dieses Backup regelmäßig / täglich
+automatisch erzeugt wird und dass diese Dateien gesichert werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sicherung
+der Anwenderreports</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+Sie sicher, dass auch Ihre Anwenderreports im täglichen Sicherungsjob
+mitgesichert werden. In den Reports steckt oft sehr viel Detailarbeit an der
+optimalen Umsetzung Ihrer Unternehmensprozesse. D.h. wenn diese verloren gingen,
+z.B. durch versehentliches Überschreiben, würde ein entsprechender Mehraufwand
+entstehen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 

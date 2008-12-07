@@ -20,7 +20,7 @@ werden.</p>
 <ol>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
-    Sie die Mitarbeiter (ev. auch externe Personen) unter Personal <img border="0" src="Benutzer_Personal.jpg" width="36" height="40">
+    Sie die Mitarbeiter (ev. auch externe Personen) unter Personal <img border="0" src="Pesonalmodul.gif" width="36" height="39">
     an. Hier müssen zumindest Personalnummer, Name, Kurzbezeichnung und
     Kurzzeichen definiert sein. Personalart und Heimatkostenstelle werden
     automatisch vorbesetzt und müssen auch definiert sein.</li>
@@ -53,7 +53,7 @@ Benutzer zur Rolle, zur Person und zum Mandanten</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wichtig: Bevor ein
 Benutzer definiert werden kann, muss diese Person / dieser Mitarbeiter im
-Personalmodul <img border="0" src="Pesonalmodul.gif" width="36" height="39"> für den default Mandanten
+Personalmodul <img border="0" src="Pesonalmodul.gif" width="36" height="39"> für den jeweiligen Mandanten
 angelegt werden.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wählen Sie zuerst
@@ -63,7 +63,7 @@ mindestens vierstellig sein. Denken Sie bei der Vergabe der Kennwörter an die
 bekannten Forderungen nach einem sicheren Kennwort.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun definieren Sie
-den Default Mandanten für diesen Benutzer. Dies ist der Mandant, bei dem sich
+den default Mandanten für diesen Benutzer. Dies ist der Mandant, bei dem sich
 der Benutzer üblicherweise anmeldet. D.h. beim ersten Login in Helium V erfolgt
 die Anmeldung automatisch an diesen Mandanten.</p>
 
@@ -93,13 +93,13 @@ der Person zum jeweiligen Benutzermandanten wird auch das Kurzzeichen usw.
 definiert. Sollte bei der gewählten
 Person kein Kurzzeichen zugeordnet sein, so erscheint eine entsprechende
 Fehlermeldung. Tragen Sie in diesem Falle bitte unbedingt ein Kurzzeichen für
-den Mitarbeiter ein. Siehe dazu auch <a href="#Benutzeranmeldung">oben</a>.</p>
+den Mitarbeiter ein. <a href="#Kurzzeichen"> Siehe dazu auch</a>.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sie definieren hier
 als welcher Benutzer (Loginname und Passwort) bei welchem Mandanten, welche
-Person(alnummer) ist und welche Systemrolle er dort hat.</p>
+Person(alnummer) ist und welche Systemrolle sie dort hat.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
@@ -112,13 +112,17 @@ Rechte</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach einem Update von
 Helium V sollte es angeblich neue Rechte geben. Wo kann man diese hinzufügen?</p>
 
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei einem Helium V
+Update werden die Rechte für den Administrator automatisch erweitert. Alle
+anderen Rollen müssen von Ihnen nachgepflegt werden.</p>
+
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wechseln Sie in das
 Modul Benutzer und wählen Sie den unteren Modulreiter Systemrolle <img border="0" src="Systemrolle.gif" width="67" height="19">.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun wählen Sie die
 gewünschte Systemrolle aus und wechseln im oberen Modulreiter auf Rechte. Nun
 drücken Sie neu. Sie sehen hier die Liste der für diese Systemrolle noch nicht
-vergebenen Rechte. Für den Administrator fügen Sie bitte alle Rechte hinzu.</p>
+vergebenen Rechte.&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
@@ -171,16 +175,6 @@ Benutzer welche Berechtigungen hat.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein neuer Benutzer kann
 im Modul Benutzer angelegt werden<span lang="DE" style="font-family:Arial">.</span></p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q: Wo
-werden die Benutzerkurzzeichen definiert?<br>
-Q: wieso wird bei meinen Kurzzeichen??? angezeigt?</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Das Benutzerkurzzeichen muss direkt in der Personalverwaltung definiert werden. </p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Kurzzeichen.gif" width="419" height="122"> </p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
-
 <p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Kurzzeichen"></a>Q: Wieso wird beim
 Ausdruck???/??? angezeigt?</p>
 
@@ -210,7 +204,15 @@ Einem Benutzer ist nur eine Person eines Mandanten zugeordnet. Diese dient dazu,
 dass für diese eine Person immer die gleiche Zuordnung, das gleiche
 Kurzzeichen, gegeben ist.</p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q: Wo
+werden die Benutzerkurzzeichen definiert?<br>
+Q: wieso wird bei meinen Kurzzeichen??? angezeigt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Das Benutzerkurzzeichen muss direkt in der Personalverwaltung definiert werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Kurzzeichen.gif" width="419" height="122"> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 </body>
 
