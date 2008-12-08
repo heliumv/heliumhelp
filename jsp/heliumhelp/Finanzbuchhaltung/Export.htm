@@ -554,8 +554,45 @@ Inlandskontos auf das jeweilige Land des Rechnungsempfängers zur Verfügung.
 Bitte beachten Sie, dass Sie die Übersetzung nach den steuerlichen
 Gesichtspunkten durchführen. Von Helium V wird keine Überprüfung vorgenommen.</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Übersetzung
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ad
+Abacus:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Identifikationsnummer bitte in System, Parameter unter
+FINANZ_EXPORT_BMD_BENUTZERNUMMER eintragen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Die Teilnehmernummer wird derzeit nicht gesetzt und wird leer belassen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Sprachcode wird derzeit immer fix auf Deutsch gesetzt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Einzelne Positionen oder ganze Rechnungen die einen Wert von Null haben werden
+nicht übergeben aber als exportiert gekennzeichnet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Reihenfolge der Kundendefinitionen im Abacus-Exportfile. Hier werden immer wenn
+ein Kunde zum ersten Mal bei diesem Export vorkommt, die Kundenkopfdaten
+exportiert. Kommt eine weitere Rechnung eines in diesem Lauf bereits
+exportierten Kunden, so werden nur mehr die Rechnungsdaten übergeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Leitwährung. Dies ist die Währung, in der der Helium V Mandant definiert ist.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Export
+nach Kostenstellen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+wird die automatische Findung der Erlöskonten anhand der der Rechnung
+zugeordneten Kostenstellen und den bei der jeweiligen Kostenstelle definiertem
+Erlöskonto vorgenommen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Export
 nach Artikelgruppen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden die Erlöskonten anhand der Artikelgruppen der Rechungen inkl.
+Lieferscheine ermittelt.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 definieren Sie das Artikelgruppen Defaultkonto (FINANZ_EXPORT_ARTIKELGRUPPEN_DEFAULT_KONTO_AR)
@@ -588,33 +625,11 @@ Definition des Sachkontos nach.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ad
-Abacus:</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Identifikationsnummer bitte in System, Parameter unter
-FINANZ_EXPORT_BMD_BENUTZERNUMMER eintragen.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Die Teilnehmernummer wird derzeit nicht gesetzt und wird leer belassen.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Sprachcode wird derzeit immer fix auf Deutsch gesetzt.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Einzelne Positionen oder ganze Rechnungen die einen Wert von Null haben werden
-nicht übergeben aber als exportiert gekennzeichnet.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Reihenfolge der Kundendefinitionen im Abacus-Exportfile. Hier werden immer wenn
-ein Kunde zum ersten Mal bei diesem Export vorkommt, die Kundenkopfdaten
-exportiert. Kommt eine weitere Rechnung eines in diesem Lauf bereits
-exportierten Kunden, so werden nur mehr die Rechnungsdaten übergeben.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Leitwährung. Dies ist die Währung, in der der Helium V Mandant definiert ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
+Sie darauf, dass in einer Artikelgruppe nur Artikel der gleichen MwSt Gruppe
+(genauer der Umsatzsteuer) sind. Werden beim Export Einträge vorgefunden,
+welche für ein Erlöskonto mehrere MwSt-Steuersätze definiert haben, so wird
+der Export abgebrochen.</p>
 
 </body>
 
