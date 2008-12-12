@@ -216,6 +216,48 @@ Sie gegebenenfalls mit Betriebssystemmitteln die Verbindung zu diesem Laufwerk
 her, oder brechen Sie den Exportlauf ab. Korrigieren Sie den Pfad und starten
 Sie danach den Lauf erneut.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Jedes
+Finanzbuchhaltungsprogramm verlangt seine eigenen Dateierweiterungen. Siehe
+bitte die Beschreibungen dort.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Einstellung
+der Exportpfade für MAC Benutzer</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+MAC Benutzer müssen die Exportpfad gemäß Linux Konventionen eingestellt
+werden. Um diese z.B. am Schreibtisch des Benutzers abzulegen, stellen Sie den
+Pfad wie folgt ein:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="ExportPfad_MAC1.gif" width="384" height="24"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Aufbau dieses Pfades besteht aus vier Teilen:<br>
+1.) Users ... es sollten die Daten Benutzerspezifisch abgelegt werden</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.)
+Benutzername ... Der Name des Benutzers. Diesen finden Sie am einfachsten über
+das Festplattensymbol, <img border="0" src="ExportPfad_MAC2.jpg" width="69" height="49">
+und dann <img border="0" src="ExportPfad_MAC3.jpg" width="150" height="205"> finden Sie den Benutzernamen
+unter dem Schreibtisch.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.)
+Damit die Datei auf Ihrem Schreibtisch abgelegt wird, geben Sie Desktop an,
+gefolgt vom eigentlichen Exportnamen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Achten Sie bitte auf die Vorwärts-Schrägstriche und achten Sie unbedingt auf
+die Groß-Kleinschreibung.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Mit welchem Zeichensatz wird exportiert?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Üblicherweise
+werden die Dateien im Zeichensatz Windows-ANSI exportiert. Manchen Programme
+verlangen noch den ASCII Zeichensatz. Dafür stellen Sie bitten in den
+Parametern den Parameter FIBU_EXPORT_ASCII auf 1.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wo kann ich die Personenkonten exportieren</p>
 
@@ -240,7 +282,7 @@ eingestellt werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
-beachten Sie, dass die Exportpfad für den exportierenden Client gelten.</p>
+beachten Sie, dass die Exportpfade für den exportierenden Client gelten.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann
@@ -553,34 +595,6 @@ wird, steht zusätzlich zur Länderartübersetzung auch eine Übersetzung des
 Inlandskontos auf das jeweilige Land des Rechnungsempfängers zur Verfügung.
 Bitte beachten Sie, dass Sie die Übersetzung nach den steuerlichen
 Gesichtspunkten durchführen. Von Helium V wird keine Überprüfung vorgenommen.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ad
-Abacus:</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Identifikationsnummer bitte in System, Parameter unter
-FINANZ_EXPORT_BMD_BENUTZERNUMMER eintragen.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Die Teilnehmernummer wird derzeit nicht gesetzt und wird leer belassen.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Sprachcode wird derzeit immer fix auf Deutsch gesetzt.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Einzelne Positionen oder ganze Rechnungen die einen Wert von Null haben werden
-nicht übergeben aber als exportiert gekennzeichnet.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Reihenfolge der Kundendefinitionen im Abacus-Exportfile. Hier werden immer wenn
-ein Kunde zum ersten Mal bei diesem Export vorkommt, die Kundenkopfdaten
-exportiert. Kommt eine weitere Rechnung eines in diesem Lauf bereits
-exportierten Kunden, so werden nur mehr die Rechnungsdaten übergeben.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-Leitwährung. Dies ist die Währung, in der der Helium V Mandant definiert ist.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Export
 nach Kostenstellen</p>

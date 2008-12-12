@@ -29,8 +29,21 @@ solange durch iteriert / die Stücklisten-Hierarchien aufgelöst, bis alle
 erforderlichen Unterstücklisten angelegt sind. Da dieser Lauf auch während des
 Fertigungsprozesses durchgeführt werden muss, werden die offenen Lose ebenfalls
 berücksichtigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie
+hier auch die Wirkung der Fertigungs-Satzgröße, welche nur in der internen
+Bestellung berücksichtigt wird. Ist bei dem (Stücklisten-) Artikel eine
+Fertigungssatzgröße eingestellt, so bewirkt dies, dass immer ganzzahlige
+Vielfache der Fertigungssatzgröße angelegt werden. Die Vorgehensweise ist, so,
+dass bei Unterschreitung des Lager-Mindeststandes auf den Lagersollbestand
+aufgefüllt wird und dieser errechnete Wert passend zur Fertigungssatzgröße
+aufgerundet wird. Sollte immer nur wenn unbedingt erforderlich eine bestimmte
+Menge produziert werden, so belassen Sie das Lagersoll auf 0 und definieren
+lediglich die Fertigungssatzgröße.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Dazu ein Beispiel:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ein Beispiel zur
+Berechnungslogik, ohne Lager-Mindeststand, Lagersollstand bzw.
+Fertigungssatzgröße:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>1. Stücklisten</b></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">1.1 Stückliste

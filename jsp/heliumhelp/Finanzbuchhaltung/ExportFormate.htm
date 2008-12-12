@@ -23,7 +23,110 @@ Funktion der integrierten Finanzbuchhaltung verwenden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
 stehen verschiedene Exportformate, welche nachfolgend beschrieben sind, zur
 Verfügung.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+    RZL Format<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.
+Abacus<p class="answer" style="word-spacing: 0; line-height: 100%; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Folgende
+Voraussetzungen müssen für den Export der Ausgangsrechnungen mit / für Abacus
+gegeben sein:</p>
+
+<ul>
+  <li>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Identifikationsnummer bitte in System, Parameter unter
+FINANZ_EXPORT_BMD_BENUTZERNUMMER eintragen.</p>
+
+  </li>
+  <li>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Erforderliche
+Dateierweiterung: .asc</p>
+
+  </li>
+  <li>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Die Teilnehmernummer wird derzeit nicht gesetzt und wird leer belassen.</p>
+
+  </li>
+  <li>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Einzelne Positionen oder ganze Rechnungen die einen Wert von Null haben werden
+nicht übergeben aber als exportiert gekennzeichnet.</p>
+
+  </li>
+  <li>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Reihenfolge der Kundendefinitionen im
+Abacus-Exportfile. Hier werden immer wenn
+ein Kunde zum ersten Mal bei diesem Export vorkommt, die Kundenkopfdaten
+exportiert. Kommt eine weitere Rechnung eines in diesem Lauf bereits
+exportierten Kunden, so werden nur mehr die Rechnungsdaten übergeben.</p>
+
+  </li>
+  <li>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Leitwährung. Dies ist die Währung, in der der Helium V Mandant definiert ist.</p>
+
+  </li>
+  <li>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">FibuMwSt
+Code muss in den MwSt Sätzen definiert sein. Stimmen Sie diese unbedingt mit
+Ihrem Abacus Systembetreuer ab.</p>
+
+  </li>
+  <li>
+    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Sämtliche
+    Konten, Debitoren und Sachkonten müssen übereinstimmend definiert sein.
+    Verwenden Sie dazu gegebenenfalls aus dem Modul Finanzbuchhaltung Journal,
+    Konten. Denken Sie auch bei der Anlage neuer Konten daran, diese mit Ihrem
+    Steuerberater abzustimmen.</li>
+  <li>
+    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Das
+    sogenannte Debitoren Sammelkonto muss für jede Debitor (Kunden) in den
+    Abacus Stammdaten definiert werden. Genaueres zur Definition dieses Kontos
+    stimmen Sie bitte mit Ihrem Steuerberater ab.</li>
+  <li>
+    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Die
+    in Helium V für die Ausgangsrechnungen verwendeten Währungen müssen auch
+    in Ihrer Abacus-Buchhaltung definiert sein.</li>
+  <li>
+    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Kursumrechnung
+    für Leitwährung:<br>
+    Da manche Anwender in der Abacus-Buchhaltung eine andere Leitwährung
+    verwenden als in Helium V wurde dies folgendermaßen implementiert:<br>
+    Stellen Sie den Mandantenparameter
+    FINANZ_EXPORT_UEBERSTEUERTE_MANDANTENWAEHRUNG auf die gewünschte
+    Leitwährung.<br>
+    Die wird so interpretiert, dass bei jeder Rechnung der Kurs zum jeweiligen
+    Monatsbeginn des Rechnungsdatums verwendet wird. Sind z.B. Drittlandkurse
+    nicht definiert, so erscheint eine entsprechende Fehlermeldung und der
+    Export wird abgebrochen. Definieren Sie dann den Kurs z.B. für USD
+    entsprechend.</li>
+  <li>
+    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Beachten
+    Sie, dass Abacus ASCII Daten benötigt. Dafür muss der Parameter
+    FIBU_EXPORT_ASCII auf 1 gestellt werden.</li>
+  <li>
+    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Sprachcode:
+    Hier wird immer D ... für Deutsch übergeben, unabhängig von der in Helium
+    V definierten Kommunikationssprache.</li>
+  <li>
+    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Ländertabellen
+    bzw. Landeskennzeichen. Hier wird die in Helium V definierte Länderkennung,
+    siehe System, System, Land übergeben. Stimmen Sie dies bitte mit Ihrer
+    Buchhaltung ab.</li>
+  <li>
+    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Zahlungskonditionen:<br>
+    a.) es wird zwischen Netto-Zahlung und Zahlung mit Skonto unterschieden<br>
+    b.) bei Zahlungen mit Skonto werden die in der Rechnung definierten
+    Zahlungsbedingungen mit den beiden Skonto-Stufen übergeben. Eine Liste der
+    möglichen Zahlungsbedingungen finden Sie im System, Mandant, Zahlungsziel.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">In
+    der Positionsbezeichnung wird der Name der Artikelgruppe als zusätzliche
+    Information übergeben.</li>
+</ul>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.
 BMD Format</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
 BMD Export kann auch für den CSV Export verwendet werden.</p>
@@ -250,116 +353,8 @@ näher bestimmt:<span style="mso-tab-count:
 Ausgangsgutschriften werden mit negativen (invertierten) Beträgen, aber wie
 eine RE gebucht.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.
-Lexware</p>
-    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.
-    Datev
     <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">4.
-    BMD
-    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">5.
-    RZL
-    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">6.
-    Schleupen
-    <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">7.
-    Orlando<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">8.
-Abacus<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Folgende
-Voraussetzungen müssen für den Export der Ausgangsrechnungen mit / für Abacus
-gegeben sein:</p>
-
-<ul>
-  <li>
-
-<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Identifikationsnummer bitte in System, Parameter unter
-FINANZ_EXPORT_BMD_BENUTZERNUMMER eintragen.</p>
-
-  </li>
-  <li>
-
-<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Die Teilnehmernummer wird derzeit nicht gesetzt und wird leer belassen.</p>
-
-  </li>
-  <li>
-
-<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Einzelne Positionen oder ganze Rechnungen die einen Wert von Null haben werden
-nicht übergeben aber als exportiert gekennzeichnet.</p>
-
-  </li>
-  <li>
-
-<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Reihenfolge der Kundendefinitionen im
-Abacus-Exportfile. Hier werden immer wenn
-ein Kunde zum ersten Mal bei diesem Export vorkommt, die Kundenkopfdaten
-exportiert. Kommt eine weitere Rechnung eines in diesem Lauf bereits
-exportierten Kunden, so werden nur mehr die Rechnungsdaten übergeben.</p>
-
-  </li>
-  <li>
-
-<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Leitwährung. Dies ist die Währung, in der der Helium V Mandant definiert ist.</p>
-
-  </li>
-  <li>
-
-<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">FibuMwSt
-Code muss in den MwSt Sätzen definiert sein. Stimmen Sie diese unbedingt mit
-Ihrem Abacus Systembetreuer ab.</p>
-
-  </li>
-  <li>
-    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Sämtliche
-    Konten, Debitoren und Sachkonten müssen übereinstimmend definiert sein.
-    Verwenden Sie dazu gegebenenfalls aus dem Modul Finanzbuchhaltung Journal,
-    Konten. Denken Sie auch bei der Anlage neuer Konten daran, diese mit Ihrem
-    Steuerberater abzustimmen.</li>
-  <li>
-    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Das
-    sogenannte Debitoren Sammelkonto muss für jede Debitor (Kunden) in den
-    Abacus Stammdaten definiert werden. Genaueres zur Definition dieses Kontos
-    stimmen Sie bitte mit Ihrem Steuerberater ab.</li>
-  <li>
-    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Die
-    in Helium V für die Ausgangsrechnungen verwendeten Währungen müssen auch
-    in Ihrer Abacus-Buchhaltung definiert sein.</li>
-  <li>
-    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Kursumrechnung
-    für Leitwährung:<br>
-    Da manche Anwender in der Abacus-Buchhaltung eine andere Leitwährung
-    verwenden als in Helium V wurde dies folgendermaßen implementiert:<br>
-    Stellen Sie den Mandantenparameter
-    FINANZ_EXPORT_UEBERSTEUERTE_MANDANTENWAEHRUNG auf die gewünschte
-    Leitwährung.<br>
-    Die wird so interpretiert, dass bei jeder Rechnung der Kurs zum jeweiligen
-    Monatsbeginn des Rechnungsdatums verwendet wird. Sind z.B. Drittlandkurse
-    nicht definiert, so erscheint eine entsprechende Fehlermeldung und der
-    Export wird abgebrochen. Definieren Sie dann den Kurs z.B. für USD
-    entsprechend.</li>
-  <li>
-    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Beachten
-    Sie, dass Abacus ASCII Daten benötigt. Dafür muss der Parameter
-    FIBU_EXPORT_ASCII auf 1 gestellt werden.</li>
-  <li>
-    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Sprachcode:
-    Hier wird immer D ... für Deutsch übergeben, unabhängig von der in Helium
-    V definierten Kommunikationssprache.</li>
-  <li>
-    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Ländertabellen
-    bzw. Landeskennzeichen. Hier wird die in Helium V definierte Länderkennung,
-    siehe System, System, Land übergeben. Stimmen Sie dies bitte mit Ihrer
-    Buchhaltung ab.</li>
-  <li>
-    <p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Zahlungskonditionen:<br>
-    a.) es wird zwischen Netto-Zahlung und Zahlung mit Skonto unterschieden<br>
-    b.) bei Zahlungen mit Skonto werden die in der Rechnung definierten
-    Zahlungsbedingungen mit den beiden Skonto-Stufen übergeben. Eine Liste der
-    möglichen Zahlungsbedingungen finden Sie im System, Mandant, Zahlungsziel.</li>
-  <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
-    der Positionsbezeichnung wird der Name der Artikelgruppe als zusätzliche
-    Information übergeben.</li>
-</ul>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+    Datev
 
 </body>
 
