@@ -785,6 +785,14 @@ Berücksichtigung des Erledigungsdatums.</p>
 Los: Liefert die Auswertung dieses einen Loses, <b>ohne</b> Berücksichtigung
 des Erledigungsdatums.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+In der Losstatistik steht auch der Verkaufspreis des Artikels (der Stückliste
+des Loses, wenn es keine freie Materialliste ist) zur Verfügung. Dieser
+Verkaufspreis wird, wenn ein direkter Bezug zur Auftragsposition gegeben ist,
+aus dem Auftrag genommen, ansonsten wird die Verkaufspreisbasis des Artikels
+verwendet. Für den direkte Bezug zur Auftragsposition ist neben dem Bezug zur
+Auftragsnummer auch die Angabe der Auftragsposition erforderlich.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kopplung Losnummer an die Auftragsnummer</p>
 
@@ -1044,6 +1052,112 @@ Prüfung bereits 5Tage vorher erfolgt und somit zum 26.7. bereits das Los für
 den August angelegt wird.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Halbfertigfabrikatsinventur"></a>Q:
+Halbfertigfabrikatsinventur</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Mit der Halbfertigfabrikatsinventur wird das noch in der Fertigung befindliche
+Restmaterial inkl. Arbeitszeiten ermittelt. Damit haben Sie einen Wert der
+angearbeiteten Waren. Bei der Bestimmung der noch in der Fertigung befindlichen
+Mengen werden die (teil-)abgelieferten Mengen berücksichtigt. Für die
+Bestimmung der Arbeitszeitanteile bei teilabgelieferten Losen ist die
+Richtigkeit der Sollstunden der Arbeitszeit wichtig.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Welche
+Materialmengen werden in die Halbfertigfabrikatsinventur aufgenommen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden die noch nicht rückgemeldeten anhand der Sollsatzgrößen verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Losgröße:
+100 Stk</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollsatzgröße:
+3 Stk</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ausgegebene
+Menge: 100 Stk</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Abgelieferte
+Losmenge: 30 Stk</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anhand
+der abgelieferten Losmenge ergibt sich über die Sollsatzgröße eine Menge von
+90 Stk (3 x 30). Diese Menge wurde bereits in der Rückmeldung / Ablieferung vom
+Los ans Lager berücksichtigt. Die Differenz 100 - 3 x 30 = 10 ist noch frei im
+Lager verfügbar und geht daher in die Halbfertigfabrikatsinventur ein. Für den
+Materialwert wird der Gestehungspreis zum Zeitpunkt der Entnahme aus dem Lager
+herangezogen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Welche
+Stunden werden berücksichtigt?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
+hier wird in gleicher Weise wie beim Material vorgegangen. Es wird jedoch
+zusätzlich der Buchungszeitpunkt zum Zeitpunkt der Ablieferung berücksichtigt.
+D.h. es werden nur jene Stunden als bereits in den abgelieferten Losmengen
+enthalten berücksichtigt, welche für diesen Zeitpunkt am Los gebucht sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+in aller Regel die Lose weiter bearbeitet sind, als dies die Ablieferung
+erfordert, muss auch hier die Sollsatzgröße berücksichtigt werden. So sind in
+einem Elektronikbetrieb z.B. alle SMD Bauteile bereits bestückt, aber die THT
+Artikel werden nur nach Bedarf per Hand nachgelötet. D.h. die Bestückungszeit
+für die SMD ist bereits voll am Los gebucht, die Handarbeitszeiten nur soweit
+wie für die Ablieferung erforderlich.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daraus
+ergibt sich, dass die Richtigkeit der Sollzeiten einen wesentlichen Einfluss auf
+die Zwischen-Kalkulation für die Halbfertigfabrikatsinventur hat. Dies gilt
+auch für die Berechnung der Gestehungswerte für die Teilablieferungen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie dazu auch die <a href="Lagerabstimmung.htm">Lagerabstimmung</a>.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ändern der Losgröße</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Unter dem Menüpunkt Bearbeiten, Losgröße ändern, steht Ihnen bei
+Ausgegebenen, In Produktion befindlichen oder teilerledigten Losen die
+Möglichkeit der Änderung der Losgröße zur Verfügung. Die Losgröße kann
+sowohl erhöht als auch reduziert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Änderung der Losgröße werden die Sollmengen anhand der Sollsatzgrößen
+neu berechnet. Danach wird geprüft ob Material zurückgegeben werden sollte und
+danach werden die Fehlmengen aktualisiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Losgroesse_aendern.jpg" width="300" height="200"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+das Material reduziert, so muss entschieden werden, was mit dem überzähligen
+Material geschehen sollte. Wird hier Ja gewählt, so wird die überzählige
+Menge ans Lager zurückgegeben, wird Nein gewählt, so bleibt das Material am
+Los und der Mehrverbrauch geht in entsprechend in die Nachkalkulation ein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Los kann nur auf die bereits abgelieferte Menge reduziert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+die Losgröße erhöht, so wird das zusätzlich erforderliche Material als
+Fehlmenge eingetragen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
