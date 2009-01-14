@@ -121,6 +121,140 @@ Rahmenmenge) und die Summe der in den Abrufen noch nicht ausgelieferten Menge,
 damit Sie rasch einen Überblick über die Verfügbarkeiten des Gesamtauftrages
 bekommen.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Rahmendetailbedarf"></a>Q:
+Rahmendetailbedarf
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Rahmendetailbedarf dient der Darstellung der für die Erfüllung der offenen
+Rahmenaufträge noch benötigten Materialien / Einkaufsartikel. Er ist daher
+für den Einkauf eine enorm wichtige Information, insbesondere um festzustellen
+ob für einen Artikel Rahmenbestellungen getätigt werden sollen bzw. ob die
+offene Rahmenbestellungsmenge mit den für Kundenaufträge benötigten
+Materialien übereinstimmt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+wesentlichste Punkt ist, dass für jede noch nicht eingeplante Baugruppe die
+Stückliste über die Hierarchie vollständig aufgelöst wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wie
+wird der Rahmendetailbedarf errechnet?</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Ziel
+ist, die zusätzlich zu den normalen Reservierungen noch erforderlichen Bedarfe 
+der Baugruppen (Stücklisten) zu erkennen, um dem Einkauf die Verwaltung der Rahmenbestellungen zu erleichtern.
+Aus dem bisherigen Einsatz der Rahmendetails musste erkannt werden, dass nur das gesamte Unternehmen als ein
+Lager betrachtet werden darf. Die Verknüpfung über Aufträge usw. ist nicht zielführend.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Voraussetzung: Während der Berechnung dürfen keine Losausgaben, Lieferscheine usw. durchgeführt / erstellt 
+werden. Die Berechnung wirkt nur für Artikel. Sonst darf es keine weiteren Voraussetzungen geben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Logik dahinter ist nun wie folgt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Bedarfsauslöser
+.... Was ist noch zu liefern</u></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Rahmenauftrag ..... offene Rahmenmenge</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Abruf
+.................. offene Auftragsmenge</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Freier Auftrag
+....... offene Auftragsmenge</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Was kann geliefert werden?</u></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Lagerstand ............ Des Hauptlagers</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Fertigung .............. Was wird geliefert werden ... Als zu beschaffen bereits mitgeteilt und&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+daraus im Lager bereits berücksichtigt</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Angelegtes Los
+...... die Losgröße ..................... die Reservierungen&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Ausgegebenes Los .. die Losgröße ..................... die Fehlmengen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Teilerledigtes
+Los .... die offene Losgröße ........... die Fehlmengen&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Erledigtes Los ........ nichts (es wurde schon&nbsp;&nbsp;&nbsp;&nbsp; ... nichts mehr</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+alles auf das Lager gebucht)&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Anmerkung:</b> Die Ware welche bereits für die Fertigung eingeplant ist, ist wie Lager zu betrachten, 
+also gehören Reservierungen und Fehlmengen direkt zum Lagerstand.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Berechnung wird nun zweigeteilt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">I.)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.) ... Feststellung der noch zu liefernden Baugruppen&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+offene Rahmenmengen + offene Auftragsmengen ergibt&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+noch aus den Aufträgen zu liefernde Mengen
+        (je Baugruppe)&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+b.) ... Abzüglich Lagerstand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(dies ist die Menge die sofort geliefert werden könnte)&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+c.) ... Abzüglich offene Losmengen (Losgröße - bereits rückgemeldet,&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+da die rückgemeldeten ja schon wieder auf 
+        Lager liegen)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">d.) ... Ergibt noch nicht eingeplante Baugruppen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">II.)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.) ... Ermittlung der Einzelbedarfe anhand der Stücklistenauflösung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Zusätzlich:</b> Die noch zu liefernden Baugruppen werden nach Termin gereiht, damit die Erfüllung ebenfalls nach
+            Terminen gereiht erfolgen kann, um so auch eine Näherung der Terminsituation zu erreichen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b> Die Verknüpfung bei Rahmen als auch bei offenen Lieferungen erfolgt rein über die Artikelnummer</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wieso
+ist dafür ein Nachtjob erforderlich?</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+einer entsprechenden Menge von Rahmenaufträgen und Positionen in den
+Rahmenaufträgen dauert die Berechnung deutlich länger als 1-2Sekunden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+sich die Lagerstände, aber auch Stücklistendefinitionen ständig verändern
+können, ist es dem Anwender nicht zumutbar, bei jeder Änderung entsprechend
+lange (in der Praxis einige Minuten) auf die Verbuchung der sofortigen
+Aufrollung der Rahmendetailbedarfe zu warten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+der übliche Kreislauf in Unternehmen ist, dass während des (Arbeits-) Tages
+die Aufträge erfasst und gebucht werden und am nächsten Tag der Einkauf für
+die Bestellungen die entsprechenden Informationen benötigt, reicht es, wenn
+täglich in der Nacht die Rahmendetailbedarfe für das gesamte Unternehmen
+aufgerollt werden. Der Zeitpunkt dieser Aufrollung kann in den Nachjobs (System,
+Automatik) frei eingestellt werden.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q: Wie kann die Tabelle &quot;Auftragszeiten, Auswertung nach
 Personal&quot; ausgedruckt werden?</p>
 
