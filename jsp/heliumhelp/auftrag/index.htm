@@ -323,8 +323,18 @@ Liefertermin, Positionstermin, Finaltermin. Was ist was?
     Anlage, diese muss nach der Lieferung noch in Betrieb genommen werden. D.h.
     die Komponenten müssen für die Montage auf der Baustelle sein. Erst nach
     erfolgter Inbetriebnahme kann das Projekt abgerechnet werden. Dieser
-    geplante Abschlusstermin ist der Finaltermin.</li>
+    geplante Abschlusstermin ist der Finaltermin.<br>
+    <b>Hinweis:<br>
+    </b>Wird Ware im Auftrag zurückgenommen, also mit negativer Menge
+    eingetragen, so ist der Termin der Rücknahme automatisch der Finaltermin.
+    Diese Rücknahme wird als negative Reservierung mit dem Finaltermin in die
+    Reservierungsliste übernommen und bewirkt somit eine Lagerstandserhöhung.
+    Siehe dazu auch unten, Retourenabwicklung.</li>
 </ul>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Termin nur in Tagen oder genauer mit Stunden und Minuten ?<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+dazu <a href="Termin_in_Stunden_Minuten.htm">Auftragstermin mit Uhrzeit</a>.
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Retourenabwicklung</p>
@@ -337,6 +347,29 @@ dass die von ihnen zu liefernden Positionen zum Liefertermin in die Reservierung
 übernommen werden und die Retouren zum Finaltermin in der Reservierung gelistet
 werden. Damit ist diese Warenbewegung auch in der Bewegungsvorschau enthalten
 und wird bei den Bestellvorschlägen entsprechend berücksichtigt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wiederbeschaffung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Mit dieser Auswertung wird die Wiederbeschaffung der Auftragspositionen über
+die Stücklistenauflösung ermittelt. Hier werden vor allem die Durchlaufzeiten
+der Stücklisten und die Wiederbeschaffungszeiten der Einzelnen
+Zukaufkomponenten herangezogen und aufgelistet. Damit können Sie abschätzen,
+in welchem Zeithorizont Sie bei Neubeschaffung aller Komponenten rechnen
+müssen. Nicht berücksichtigt wird die Komponente der Fertigungszeit, der
+Arbeitszeit in den Stücklisten. Verwenden Sie dafür die Kapazitätsvorschau im
+Modul Fertigung.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Verfügbarkeit</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade bei vielen Leihstellungen ist es oft nicht einfach die Verfügbarkeit
+eines Artikels zum Zeitpunkt zu ermitteln. In dieser Auswertung sehen Sie die
+benötigte Menge und den fiktiven (theoretischen) Lagerstand zum Zeitpunkt der
+geplanten Lieferung. Damit können Sie erkennen welche Positionen kritisch in
+Ihrer Verfügbarkeit sind und entsprechende Maßnahmen einleiten.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Rahmenaufträge, Abrufaufträge, freie Aufträge mit unterschiedlichen

@@ -452,18 +452,23 @@ Urlaubsanspruch entsteht immer zum 1.1. des Kalenderjahres.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 <b>Hinweis:</b></p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
-ab 2009 wird der Urlaubsanspruch bei Eintritten während des Kalenderjahres
-aliquotiert, um auch für diese Mitarbeiter während des ersten Jahres eine
-richtige Anzeige des aliquoten Anspruches zu erreichen.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
-ab 2009 erfolgt die Berechnung der Urlaubsanspruchsstunden automatisch anhand
-der hinterlegten Zeitmodelle und der Urlaubstage. D.h. es wird nur mehr der
-Urlaubsanspruch in Tagen für das gesamte Kalenderjahr eingegeben. Von Helium V
-wird bei jeder Urlaubsberechnung der Anspruch von Tagen auf Stunden anhand der
-hinterlegten Zeitmodelle für das Berechungsjahr umgerechnet. Um die vor
-Einführung dieser Rechenmethode manuell eingegebenen Stunden nicht zu
-verändern, wird diese Berechnung erst am dem Jahr 2009 durchgeführt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Softwareversionen ab 2009 wird der Urlaubsanspruch bei Eintritten während
+des Kalenderjahres aliquotiert, um auch für diese Mitarbeiter während des
+ersten Jahres eine richtige Anzeige des aliquoten Anspruches zu erreichen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<b>Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Softwareversionen ab 2009 erfolgt für die Ansprüche ab 2009 die Berechnung
+der Urlaubsanspruchsstunden automatisch anhand der hinterlegten Zeitmodelle und
+der Urlaubstage. D.h. es wird nur mehr der Urlaubsanspruch in Tagen für das
+gesamte Kalenderjahr eingegeben. Von Helium V wird bei jeder Urlaubsberechnung
+der Anspruch von Tagen auf Stunden anhand der hinterlegten Zeitmodelle für das
+Berechungsjahr umgerechnet. Um die vor Einführung dieser Rechenmethode manuell
+eingegebenen Stunden nicht zu verändern, wird diese Berechnung erst am dem Jahr
+2009 durchgeführt.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
 Sie bitte den Mandantenparameter URLAUBSTAGE_PRO_WOCHE. Mit diesem wird
 definiert, wieviele Urlaubstage eine Urlaubswoche hat. Per default steht dieser
@@ -472,6 +477,41 @@ Wert auf 5 Tage.</p>
 Sie bitte auch, dass für Mitarbeiter die z.B. nur drei Arbeitstage in der Woche
 arbeiten, trotzdem 25Tage (wenn der URLAUBSTAGE_PRO_WOCHE auf 5 Tage steht) für
 fünf Wochen Urlaub definiert werden müssen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>WICHTIG:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
+gleichzeitige Betrachtung von Urlaubstagen und Urlaubsstunden ist nur für
+Zeitmodelle gültig, welche die gleiche Anzahl an Arbeitstagen haben, wie im
+Mandantenparameter URLAUBSTAGE_PRO_WOCHE definiert. Bei allen anderen
+Zeitmodellen müssen Sie festlegen, für Sie die Auswertung nach Urlaubsstunden
+oder nach Urlaubstagen relevant ist. Anhand dieser Festlegung sind dann entweder
+die Urlaubsanspruchstage anhand der Wochen (25Tage) oder anhand der Arbeitstage
+je Zeitmodell einzugeben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mandantenparameter
+URLAUBSTAGE_PRO_WOCHE steht auf 5 Tage / Woche.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+ist ein Urlaubsanspruch von 25Tagen eingetragen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter hat ein Zeitmodell mit 25Std pro Woche, verteilt auf 3 Arbeitstage.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Stundenweise Urlaubsabrechnung ergibt die richtige Stundenzahl, anhand des
+Jahresanspruches von 125Std.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Tageweise Urlaubsabrechnung ergibt eine falsche Anzahl, da ja ein Anspruch von
+25Tagen / Kalenderjahr definiert wurde. Wenn Tageweise abgerechnet werden
+sollte, so müssen 15 Urlaubstage als Anspruch definiert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter hat ein Zeitmodell mit 25Std pro Woche, jedoch verteilt auf 5
+Arbeitstage.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Stundenweise Urlaubsabrechnung ergibt die richtige Stundenzahl, anhand des
+Jahresanspruches von 125Std.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Tageweise Urlaubsabrechnung ergibt die richte Tagesanzahl, da auch der Anspruch
+von 25Tagen / Kalenderjahr richtig definiert ist.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie soll ich bei der Einführung der Zeiterfassung vorgehen, die alten Daten ins
 Helium V bringen?</p>
