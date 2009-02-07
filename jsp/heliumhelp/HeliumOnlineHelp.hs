@@ -26,9 +26,9 @@
   </view>
   <presentation default="true" displayviewimages="true">
     <name>Helium Hilfe Hauptfenster</name>
-    <size height="600" width="800"/>
-    <location x="200" y="200"/>
-    <title>HELIUM V 5.10. Online Help.</title>
+    <size height="600" width="900"/>
+    <location x="100" y="100"/>
+    <title>HELIUM V 5.11. Online Help</title>
     <image>toplevelfolder</image>
     <toolbar>
       <helpaction image="HeliumV_Logo_jpg">

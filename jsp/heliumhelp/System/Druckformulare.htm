@@ -422,6 +422,60 @@ Schriftvorlagen. Gerade bei Linux und MAC-Servern müssen diese aus
 Lizenzgründen extra installiert werden. Siehe dazu bitte auch auf Ihrer
 Installations-CD unter Tools/Linux/Fonts.</p>
 
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
+Bei den Adressetiketten werden nur leere Etiketten gedruckt.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Wie bereits an anderer Stelle angeführt, ist das Ausdrucken von Etiketten eine
+eigene Wissenschaft, die manchmal unterschätzt wird. Die Thematik ist hier vor
+allem, dass Druckertreiber nicht immer 100%ig richtig implementiert sind und
+auch Aufgrund der vielen zu treffenden Einstellungen manchmal etwas vergessen
+wird.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Hier
+nun eine lose ergänzte Sammlung von Punkten / Empfehlungen, die für das
+Etikettendrucken erforderlich sind, die getestet werden sollten, wenn der
+Etikettendruck nicht wie gewünscht funktioniert:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Stellen
+    Sie sicher, dass Sie auf das Etikett / den Etikettendrucker eine Testseite
+    ausdrucken können.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Versuchen
+    Sie das Etikett aus einem Textverarbeitungsprogramm zu drucken.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Spannen
+    Sie ein großes Blatt Papier ein, wenn möglich und drucken Sie auf dieses.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Etiketten
+    Orientierung: Etiketten werden in aller Regel im iReport so definiert, dass
+    sie für den Designer lesbar sind. Oft ist hier die Etikettenbreite größer
+    als die Etikettenhöhe. Dadurch wird im iReport bei Änderungen der
+    Abmessungen die Orientierung automatisch auf Querformat umgeschaltet, was
+    von der Druckrichtung her falsch ist. Um dies zu korrigieren muss in das
+    jrxml File des Reports eingegriffen werden. Ändern Sie hier bei Orientation
+    den Wert von Landscape auf Portrait ab. Speicher Sie die Datei, gehen Sie
+    wieder in den iReport und kompilieren sie die Datei erneut. Nun kann geduckt
+    werden.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Ein
+    weißes Blatt, eine leere Etikette wird gedruckt. Um festzustellen woran das
+    Problem liegen könnte, vergrößern Sie das Etikettenformular entsprechend
+    und stellen Sie die Nutzdaten einfach in die Mitte. In aller Regel erhält
+    man nun Informationen wo den eigentlich hingedruckt wird.<br>
+    Oft ist es auch so, dass die Orientation (siehe oben), der Auslöser für
+    dieses Verhalten ist.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bei
+    Verwendung von dedizierten Etikettendruckern, stellen Sie unbedingt in den
+    Druckereigenschaften des Etikettendruckers das eingelegte Etikett ein.</li>
+</ul>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+
 </body>
 
 </html>
