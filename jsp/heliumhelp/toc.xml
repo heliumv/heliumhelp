@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE toc PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN" "http://java.sun.com/products/javahelp/toc_2_0.dtd">
 <toc version="2.0">
+  <tocitem target="roadmap_htm" text="Helium V"/>
   <tocitem target="index_htm" text="Allgemein">
     <tocitem target="Shortcuts_htm" text="Tastaturbedienung"/>
     <tocitem target="freieTexte_htm" text="Freie Texte"/>
@@ -8,7 +9,6 @@
     <tocitem target="Erste_Schritte_index_htm" text="Erste Schritte"/>
     <tocitem target="Infos+Tipps_fuer_Umsteiger_htm" text="Tipps für Umsteiger"/>
   </tocitem>
-  <tocitem target="roadmap_htm" text="Roadmap"/>
   <tocitem text="Einkauf">
     <tocitem target="Anfrage_index_htm" text="Anfrage"/>
     <tocitem target="Bestellung_index_htm" text="Bestellung">
@@ -26,27 +26,6 @@
       <tocitem target="Mahnen_htm" text="Mahnen"/>
       <tocitem target="Zahlung_htm" text="Zahlung"/>
       <tocitem target="Anzahlung_und_Schlussrechnung_htm" text="Anzahlung und Schlussrechnung"/>
-    </tocitem>
-    <tocitem target="index_htm" text="Stammdaten">
-      <tocitem target="artikel_index_htm" text="Artikel">
-        <tocitem target="Verkaufspreis_htm" text="Verkaufspreis"/>
-        <tocitem target="SerienChargennummern_htm" text="SerienChargennummern"/>
-        <tocitem target="Mengeneinheit_htm" text="Mengeneinheit"/>
-        <tocitem target="inventur_htm" text="Inventur"/>
-      </tocitem>
-      <tocitem target="Partner_index_htm" text="Partner">
-        <tocitem target="anreden_htm" text="Anreden"/>
-        <tocitem target="import_htm" text="Importieren"/>
-      </tocitem>
-      <tocitem target="Kunde_index_htm" text="Kunde"/>
-      <tocitem target="Lieferant_index_htm" text="Lieferant">
-        <tocitem target="Lieferantenbeurteilung_htm" text="Lieferantenbeurteilung"/>
-      </tocitem>
-      <tocitem target="personal_index_htm" text="Personal">
-        <tocitem target="Zeitmodell_Definition_htm" text="Zeitmodell_Definition"/>
-      </tocitem>
-      <tocitem target="benutzer_index_htm" text="Benutzer"/>
-      <tocitem target="Allgemeine_Stammdaten_index_htm" text="Allgemeine Stammdaten"/>
     </tocitem>
     <tocitem target="Gutschrift_htm" text="Gutschrift"/>
     <tocitem target="Projekte_index_htm" text="Projekte"/>
@@ -72,6 +51,27 @@
     <tocitem target="Zutritt_index_htm" text="Zutrittskontrollsystem"/>
     <tocitem target="Intrastat_htm" text="Intrastat"/>
     <tocitem target="Reklamation_index_htm" text="Reklamation"/>
+  </tocitem>
+  <tocitem target="index_htm" text="Stammdaten">
+    <tocitem target="artikel_index_htm" text="Artikel">
+      <tocitem target="Verkaufspreis_htm" text="Verkaufspreis"/>
+      <tocitem target="SerienChargennummern_htm" text="SerienChargennummern"/>
+      <tocitem target="Mengeneinheit_htm" text="Mengeneinheit"/>
+      <tocitem target="inventur_htm" text="Inventur"/>
+    </tocitem>
+    <tocitem target="Partner_index_htm" text="Partner">
+      <tocitem target="anreden_htm" text="Anreden"/>
+      <tocitem target="import_htm" text="Importieren"/>
+    </tocitem>
+    <tocitem target="Kunde_index_htm" text="Kunde"/>
+    <tocitem target="Lieferant_index_htm" text="Lieferant">
+      <tocitem target="Lieferantenbeurteilung_htm" text="Lieferantenbeurteilung"/>
+    </tocitem>
+    <tocitem target="personal_index_htm" text="Personal">
+      <tocitem target="Zeitmodell_Definition_htm" text="Zeitmodell_Definition"/>
+    </tocitem>
+    <tocitem target="benutzer_index_htm" text="Benutzer"/>
+    <tocitem target="Allgemeine_Stammdaten_index_htm" text="Allgemeine Stammdaten"/>
   </tocitem>
   <tocitem target="System_index_htm" text="System">
     <tocitem target="Drucken_htm" text="Drucken">
