@@ -249,7 +249,29 @@ Basis für die Inventurabwertung dient der unter Inventurstand eingegebene
 Preis. Dieser wird anhand der Abwertungsformel abgewertet.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Abwertungsformel:
 GESTEHUNGSPREISABWERTEN_AB_MONATE<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">GESTEHUNGSPREISABWERTEN_PROZENT_PRO_MONAT<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Zur
 Durchführung der Abwertung klicken Sie im oberen Modulreiter Inventurstand auf <img border="0" src="Inventur_Abwertung.gif" width="34" height="27">,
-Inventur-Preise abwerten.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;
+Inventur-Preise abwerten.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Neuberechnung
+der Inventurpreise<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Bei
+der Durchführung der Inventur wird der aktuelle Gestehungspreis als
+Inventurpreis in den Inventurstand übernommen. Liegt nun z.B. zwischen dem
+Stichtag der Inventur und der tatsächlichen Durchführung ein zu langer
+Zeitraum, oder wurde die Abwertung mit falschen Parametern durchgeführt, so
+kann es vorkommen, dass der Wunsch nach neuerlicher Ermittlung der
+Inventurpreise besteht.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Unter
+Inventurstand wird durch Klick auf <img border="0" src="inventurpreis_neu_berechnen1.gif" width="34" height="27">
+Inventurpreise neu errechnen, die Neuberechnung der Inventurpreise nach
+Beantwortung von&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="inventurpreise_neu_berechnen2.jpg" width="425" height="115"><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">gestartet.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Hier
+wird nach folgender Regel vorgegangen:<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">a.)
+es wird der im Moment der Berechnung aktuelle Gestehungspreis übernommen.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">b.)
+ist dieser Preis kleiner als der Nettopreis des bevorzugten Lieferanten (und ist
+ein Lieferant definiert), so wird der Nettopreis des Lieferanten übernommen<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">c.)
+ist kein Lieferantenpreis definiert so wird der Gestehungspreis der jüngsten
+Ablieferung vor dem Inventurstichtag gesucht und wenn dieser größer als der
+Gestehungspreis ist wird dieser Ablieferungs = Fertigungspreis als Inventurpreis
+übernommen.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Zum
+Schluss wird die Sperre der Inventurabwertung wieder entfernt, damit der neue
+Abwertungslauf gestartet werden kann.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Bitte
+beachten Sie, dass mit dieser Funktion alle bisherigen Inventurpreise der
+gewählten Inventur überschrieben werden.
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">FAQ
 zur Inventur:<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Bei
