@@ -208,6 +208,16 @@ betreut und zum Kauf veranlasst werden.</p>
 eine detailliertere Anzeige dieser Zahlen steht in der Rechnungsverwaltung die
 Filter nach Rechungs- bzw. Statistikadresse zur Verfügung.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Zahlungsmoral des Kunden</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Neben
+der Umsatzanzeige wird in den Kunden-Kopfdaten auch die Zahlungsmoral des Kunden
+angezeigt. Für die Berechnung der Zahlungsmoral werden nur Rechnungen im Status bezahlt, also keine offenen und keine teilbezahlten, berücksichtigt.<br>
+Zahltage sind Zahlungsdatum abzüglich Rechnungsdatum. In der
+Standardeinstellung werden die letzten drei Rechnungen der letzten zwölf Monate.
+Siehe dazu auch System, Parameter, ZAHLUNGSMORAL_ANZAHL_RECHNUNGEN und
+ZAHLUNGSMORAL_MONATE. Die Umschaltung von Rechnungs- auf Statistikadresse wirkt
+auch für die Information zur Zahlungsmoral.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Monatsrechnung</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
 dieses Feld angehackt, so wird bei der Erstellung einer Ausgangsrechnung der
@@ -794,24 +804,20 @@ haben, so empfiehlt es sich, zuerst für alle bestehenden Kunden die
 Kundennummer nachzutragen, damit die Vergabe neuer Kundennummern entsprechend
 automatisch erfolgen kann.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Kunden_zusammenführen">Kunden
-zusammenführen</a> </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kunden
+zusammenführen</p>
 
 
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Beim
-Kunden im Menü gibt es die Möglichkeit zwei Kunden zusammenzuführen.&nbsp; </p>
+Kunden im Menü gibt es die Möglichkeit zwei Kunden zusammenzuführen. </p>
 
 
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&quot;Kunden zusammenführen"
 bedeutet, dass zwei Kunden zu einem Kunden verschmolzen werden. Dies kann z.B. dann
 vorteilhaft sein, wenn ein Kunde mehrfach angelegt und bereits verwendet wurde, sodass Abhängigkeiten
-zu anderen Daten wie z.B. Aufträgen, Bestellungen, etc... entstanden sind, und der
+zu anderen Daten wie z.B. Aufträgen, Rechnungen, usw. entstanden sind, und der
 Kunde nicht mehr ohne Weiteres
 gelöscht werden kann. Kunden kann man nur dann zusammenführen, wenn man das
 dafür nötige Rollenrecht besitzt (<a href="PART_KUNDE_ZUSAMMENFUEHREN_ERLAUBT"><font color="#000000">PART_KUNDE_ZUSAMMENFUEHREN_ERLAUBT</font></a>).</p>
@@ -819,8 +825,8 @@ dafür nötige Rollenrecht besitzt (<a href="PART_KUNDE_ZUSAMMENFUEHREN_ERLAUBT"><
 
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> &nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><font color="#FF0000">Wichtig</font><font color="#FF0000">:
-Das Zusammenführen zweier Kunden kann nicht rückgängig gemacht werden!</font><br>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
+Das Zusammenführen zweier Kunden kann nicht rückgängig gemacht werden!<br>
 <br>
 Vorgehen:</p>
 <ol>
@@ -868,6 +874,14 @@ Kundesoko</p>
 steht die Anzahl der Einträge, die bei dem Kunden als Sonderkonditionen
 eingetragen sind. Es bleiben im System nur die gewählten Sokoeinträge
 erhalten. Die Sokoeinträge des zweiten Kunden werden gelöscht.</p>
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Es werden immer die blau hinterlegten Felder in den verbleibenden Kunden
+übernommen.</p>
 
 
 </body>
