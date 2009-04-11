@@ -105,7 +105,7 @@ Lieferant</a></p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Vergabe der Debitorennummer"></a>Q: Vergabe der
 Debitorennummer?</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><br>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 Wenn einem Kunden eine Debitorennummer zugewiesen wird, wird automatisch im Finanzbuchhaltungsmodul das Debitorenkonto mit derselben Nummer und dem entsprechenden Kunden erstellt.<br>
 Falls die Debitorennummer schon existiert, erscheint ein Hinweis und man kann entweder eine neue Nummer vergeben oder die selbe Nummer auch diesem Kunden zuweisen.&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>ACHTUNG:</b>
@@ -247,7 +247,8 @@ um immer auf den gleichen Kunden zu zeigen.</p>
 Welche Mehrwertssteuer sollten EU-inländische Kunden hinterlegt haben?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Kunden im EU-Inland sollten mit 0% MwSt definiert werden, wenn sie eine
+Kunden im EU-Inland (also Kunden die zwar im Ausland sind, dieses Land aber ein
+EU-Mitglied ist) sollten mit 0% MwSt definiert werden, wenn sie eine
 UID-Nummer haben.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
@@ -268,7 +269,7 @@ der installierte EMail-Client geöffnet und an diesen die Adresse und die Anrede
 übergeben.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
-Bei der Verwendung von Tobit als EMail Client muss in den Internetoptionen unter
+Bei der Verwendung von Tobit als EMail Client muss unter Umständen in den Internetoptionen unter
 Programme als EMail Outlook Express angegeben werden. Nur damit startet der
 Tobit EMail Client.</p>
 
@@ -281,6 +282,19 @@ Durch Klick auf diesen Knopf wird der installierte Browser mit diesem Link
 gestartet. Dieser ist so aufgebaut, dass wenn am Anfang des Links kein http://
 angegeben ist, dieses zusätzlich eingefügt wird. Ansonsten wird die Adresse so
 wie eingegeben an den Browser übergeben.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Die Kundenadresse hat sich geändert, ich muss noch eine alte Rechnung
+ausdrucken.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wurde bei einem Kunden die Adresse, eventuell der gesamte Firmenwortlaut
+geändert so werden über die Datenbank-Relationen und aus Gründen der
+Konsistenz sofort alle an diesem Kunden hängenden Belege (Angebot bis Rechnung
+usw.) mitgeändert. D.h. ab sofort finden Sie den Kunden unter sein nun
+vergebenen Namen. Sollte es erforderlich sein, dass trotzdem Belege mit alten
+Daten ausgedruckt werden müssen, so steht dafür die <a href="../System/Dokumentenablage.htm">Dokumentenablage</a>
+zur Verfügung. Hier sind alle Versionen der ausgedruckten Belege abgespeichert.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Der Druck des Kundenjournals sieht furchtbar aus</p>

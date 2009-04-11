@@ -959,31 +959,39 @@ bedeuten die einzelnen Spalten in der Ladenhüterliste:</p>
     </tr>
     <tr>
       <td width="209" height="25">Fehlmenge</td>
-      <td width="1293" height="25"></td>
+      <td width="1293" height="25">aktuelle Fehlmenge für die Fertigung zum
+        Zeitpunkt des Ausdruckes</td>
     </tr>
     <tr>
       <td width="209" height="25">Reserviert</td>
-      <td width="1293" height="25"></td>
+      <td width="1293" height="25">aktuelle Reservierungen zum Zeitpunkt des
+        Ausdruckes</td>
     </tr>
     <tr>
       <td width="209" height="25">RahmenRes</td>
-      <td width="1293" height="25"></td>
+      <td width="1293" height="25">aktuelle Rahmenreservierungen zum Zeitpunkt
+        des Ausdruckes</td>
     </tr>
     <tr>
       <td width="209" height="25">RahmenDet.</td>
-      <td width="1293" height="25"></td>
+      <td width="1293" height="25">aktuelle Rahmendetailbedarfe zum Zeitpunkt
+        des Ausdruckes</td>
     </tr>
     <tr>
       <td width="209" height="25">freie Menge</td>
-      <td width="1293" height="25"></td>
+      <td width="1293" height="25">aus dem Lagerstand abzgl. Fehlmenge,
+        Reserviert, Rahmenreserviert resultierende Menge<br>
+        Diese verbleibt nach Abarbeitung obiger (Fertigungs-) Aufträge noch auf
+        Lager</td>
     </tr>
     <tr>
       <td width="209" height="25">Einstandspreis</td>
-      <td width="1293" height="25"></td>
+      <td width="1293" height="25">Preis aus der Warenzubuchung, meistens
+        Wareneinstandspreis zzgl. ev. Transportkosten</td>
     </tr>
     <tr>
       <td width="209" height="25">freier Lagerwert</td>
-      <td width="1293" height="25"></td>
+      <td width="1293" height="25">freie Menge * Gestehungspreis</td>
     </tr>
     <tr>
       <td width="209" height="25">Art</td>
@@ -995,10 +1003,20 @@ bedeuten die einzelnen Spalten in der Ladenhüterliste:</p>
       <td width="1293" height="25">Wird angedruckt, wenn dies ein versteckter
         Artikel ist</td>
     </tr>
+    <tr>
+      <td width="209" height="25">Lagerwert ohne<br>
+        Stücklisten</td>
+      <td width="1293" height="25">Sehr oft wird eine Trennung in reines
+        Material und bereits (eigen-)gefertigte Ware benötigt. Im Lagerwert
+        ohne Stücklisten sind nur die Artikel enthalten, welche nicht als
+        Stückliste definiert sind.</td>
+    </tr>
   </table>
   </center>
 </div>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+In der Ladenhüterliste sind Artikel die nicht als Lagerbewirtschaftet
+gekennzeichnet sind, nicht enthalten.&nbsp;&nbsp;</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zentraler
 Artikelstamm</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
@@ -1142,6 +1160,8 @@ und Sie erhalten automatisch die nächst höhere Nummer mit K10-0002. </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 beachten Sie dazu auch die definierten Längen der Artikelnummern. Diese werden
 im System, Parameter eingestellt. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Mengeneinheit.htm">Mengeneinheiten</a></p>
 
 </body>
 

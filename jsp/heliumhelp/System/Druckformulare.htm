@@ -474,9 +474,296 @@ Etikettendruck nicht wie gewünscht funktioniert:</p>
     Verwendung von dedizierten Etikettendruckern, stellen Sie unbedingt in den
     Druckereigenschaften des Etikettendruckers das eingelegte Etikett ein.</li>
 </ul>
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
+Ausdrucken aller Bearbeiter Daten</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Gerade in Angeboten, aber auch für eine gute Kommunikation mit Ihren Partnern
+(Kunden und Lieferanten) ist es erwünscht, nicht nur den Namen des
+Ansprechpartners sondern auch seine ausführlichen Kontaktdaten mit anzudrucken.
+Dafür steht in den öffentlichen Reportvorlagen eine sogenannte Objectvariable
+zur Verfügung.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Diese
+lautet in allen Reports: <a href="P_BEARBEITER">P_BEARBEITER</a></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Um
+nun z.B. die EMai-Adresses des Bearbeiters anzudrucken muss folgendes Konstrukt
+unter Textfeld eingegeben werden: <a href="$P{P_BEARBEITER}.getSEmail()">$P{P_BEARBEITER}.getSEmail()</a></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Wichtig:</b>
+Damit diese Erweiterungen im iReport kompiliert werden können, muss der
+Klassenpfad auf das lpclientpc.jar gesetzt werden, welches Sie üblicherweise
+unter c:\Programme\helium_v\lpclientpc.jar finden.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Es
+stehen folgende Werte zur Verfügung:</p>
+
+<table width="286">
+  <tr class="TableRowColor" bgcolor="white">
+    <td valign="top" width="119" align="right" class="answer"><font size="-1"><code>java.lang.String</code></font></td>
+    <td width="197" class="answer"><code><b><a href="file:///D:/com/lp/util/report/PersonRpt.html#getSEmail%28%29">getSEmail</a></b>()</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr class="TableRowColor" bgcolor="white">
+    <td valign="top" width="119" align="right" class="answer"><font size="-1"><code>&nbsp;java.lang.String</code></font></td>
+    <td width="197" class="answer"><code><b><a href="file:///D:/com/lp/util/report/PersonRpt.html#getSMobil%28%29">getSMobil</a></b>()</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr class="TableRowColor" bgcolor="white">
+    <td valign="top" width="119" align="right" class="answer"><font size="-1"><code>&nbsp;java.lang.String</code></font></td>
+    <td width="197" class="answer"><code><b><a href="file:///D:/com/lp/util/report/PersonRpt.html#getSNachname%28%29">getSNachname</a></b>()</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr class="TableRowColor" bgcolor="white">
+    <td valign="top" width="119" align="right" class="answer"><font size="-1"><code>&nbsp;java.lang.String</code></font></td>
+    <td width="197" class="answer"><code><b><a href="file:///D:/com/lp/util/report/PersonRpt.html#getSTelefonDWFirma%28%29">getSTelefonDWFirma</a></b>()</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr class="TableRowColor" bgcolor="white">
+    <td valign="top" width="119" align="right" class="answer"><font size="-1"><code>&nbsp;java.lang.String</code></font></td>
+    <td width="197" class="answer"><code><b><a href="file:///D:/com/lp/util/report/PersonRpt.html#getSTelefonFirma%28%29">getSTelefonFirma</a></b>()</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr class="TableRowColor" bgcolor="white">
+    <td valign="top" width="119" align="right" class="answer"><font size="-1"><code>&nbsp;java.lang.String</code></font></td>
+    <td width="197" class="answer"><code><b><a href="file:///D:/com/lp/util/report/PersonRpt.html#getSTitel%28%29">getSTitel</a></b>()</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr class="TableRowColor" bgcolor="white">
+    <td valign="top" width="119" align="right" class="answer"><font size="-1"><code>&nbsp;java.lang.String</code></font></td>
+    <td width="197" class="answer"><code><b><a href="file:///D:/com/lp/util/report/PersonRpt.html#getSVorname%28%29">getSVorname</a></b>()</code></td>
+  </tr>
+</table>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
+Ausdrucken aller Positionsinhalte als einzelne Felder</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Für manche offizielle Formularvorlagen ist es erwünscht, dass, insbesondere zu
+Positionierungszwecken die Felder z.B. der Artikelbezeichnungen als jeweils
+einzelnes Datenfeld zur Verfügung stehen. Um diese Forderung zu erfüllen wird
+an einige offizielle Reportvorlagen die Objectvariable <a href="F_POSITIONSOBJEKT">F_POSITIONSOBJEKT</a>
+übergeben. Um nun z.B. nur die Artikelnummer mithilfe dieser Objectvariabeln zu
+drucken muss folgendes Konstrukt unter Textfeld eingegeben werden: <a href="$F{F_POSITIONSOBJEKT}.getBdPreis()">$F{F_POSITIONSOBJEKT}.getSIdent()</a></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Es
+stehen in den unten angeführten Vorlagen folgende Variablen zur Verfügung. </p>
+
+<div align="center">
+  <center>
+  <table border="1" width="743" height="19">
+    <tr>
+      <td width="743" height="19">Typ</td>
+      <td width="743" height="19">Aufruf</td>
+      <td width="591" height="19">AF</td>
+      <td width="895" height="19">BS</td>
+      <td width="895" height="19">AG</td>
+      <td width="895" height="19">AB</td>
+      <td width="895" height="19">LS</td>
+      <td width="895" height="19">RE</td>
+      <td width="895" height="19">GS</td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSIdent()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSBezeichnung()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSZusatzbezeichnung()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSZusatzbezeichnung2()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSKurzbezeichnung()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSPositionsartCNr()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSText()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">BigDecimal</td>
+      <td width="743" height="19">getBdUmrechnungsfaktor()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSEinheitBestellung()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSArtikelgruppe()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSArtikelklasse()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSArtikelreferenznr()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSArtikelmaterial()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">Float</td>
+      <td width="743" height="19">getFArtikelmaterialgewicht()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSVerkaufsEANNr()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSWarenverkehrsnr()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">String</td>
+      <td width="743" height="19">getSUrsprungsland()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+    <tr>
+      <td width="743" height="19">Float</td>
+      <td width="743" height="19">getFArtikelgewicht()</td>
+      <td width="591" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+      <td width="895" height="19"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bitte
+beachten Sie auch die unter Ergebnisklasse Textfeld erforderliche
+Typ-Definition.</p>
 
 </body>
 

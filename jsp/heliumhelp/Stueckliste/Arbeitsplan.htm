@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Arbeitsplan</title>
+</head>
+
+<body>
+
+<h1>Arbeitsplan</h1>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Neben
+dem Materialbedarf steht Ihnen in Helium V auch die Definition des Arbeitsplans <img border="0" src="Arbeitsplan1.gif" width="71" height="22">
+für jede Stückliste zur Verfügung. Im Arbeitsplan werden die Arbeitsgänge
+definiert, in deren Reihenfolge die einzelnen Fertigungsschritte abgearbeitet
+werden sollten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+können folgende Definitionen vorgenommen werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Arbeitsplan2.gif" width="649" height="272"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<div align="left">
+  <table border="1" width="653" height="17">
+    <tr>
+      <td width="86" height="17">Artikel</td>
+      <td width="1220" height="17"><p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+        Sie die auszuführende Tätigkeit. In der Auswahlliste werden nur
+        diejenigen Artikel angezeigt, die als Artikelart Arbeitszeit definiert
+        sind. Beachten Sie bitte, dass für die Kalkulationen, insbesondere
+        Vorkalkulationen die Kosten des Arbeitsganges nicht Personenbezogen sind
+        sondern aus der Tätigkeit kommen und hier wiederum aus dem Nettopreis
+        des ersten Lieferanten dieses Artikels.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td width="86" height="17">Arbeitsgang</td>
+      <td width="1220" height="17">Diese laufende Nummer wird pro Arbeitsgang
+        vergeben. Die automatische Erhöhung der Arbeitsgangnummer kann im
+        System unter Parameter eingestellt werden. Bitte beachten Sie, dass in
+        Helium V die Zeiterfassung auf die Tätigkeiten erfolgt. Sollten gleiche
+        Tätigkeiten (z.B. Drehen) für verschiedene Arbeitsgänge erforderlich
+        sein und in der Nachkalkulation sollte der Zeitaufwand zwischen den
+        Arbeitsgängen unterschieden werden, so müssen unterschiedlichen
+        Artikel (Tätigkeiten) dafür angelegt werden.</td>
+    </tr>
+    <tr>
+      <td width="86" height="17">Rüstzeit</td>
+      <td width="1220" height="17">Angabe des Stückzahl unabhängigen
+        Zeitaufwandes z.B. für Fertigungsinitialisierungen (Erstellung der
+        Papiere, Anfertigung von Zeichnungen oder Vorrichtungen,
+        Materialvorbereitung usw.)</td>
+    </tr>
+    <tr>
+      <td width="86" height="17">Stückzeit</td>
+      <td width="1220" height="17">Angabe des Zeitaufwandes zur Erstellung von
+        1Stück Produkt. Die Angabe erfolgt in der Form von Stunden, Minuten,
+        Sekunden und gegebenenfalls tausendstel Sekunden (Millisekunden). Neben
+        den Zeiten wird die auf die Losgröße umgerechnete Dauer dargestellt.
+        Diese Losgröße wird durch den Druck der Gesamtkalkulation festgelegt
+        und von dort übernommen.</td>
+    </tr>
+    <tr>
+      <td width="86" height="17">Maschine</td>
+      <td width="1220" height="17">Definieren Sie gegebenenfalls zusätzlich die
+        Maschine, welche benötigt wird um den Arbeitsgang durchzuführen.</td>
+    </tr>
+    <tr>
+      <td width="86" height="17">Kommentar</td>
+      <td width="1220" height="17">Eine kurze Beschreibung des Arbeitsganges</td>
+    </tr>
+    <tr>
+      <td width="86" height="17">Kommentar</td>
+      <td width="1220" height="17">Eine lange Beschreibung des Arbeitsganges.</td>
+    </tr>
+  </table>
+</div>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann ein Arbeitsplan von einer anderen Stückliste kopiert werden ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja, verwenden Sie dazu im zu ergänzenden Arbeitsplan das Icon <img border="0" src="Arbeitsplan_einlesen.gif" width="31" height="25">,
+Arbeitsplan von anderer Stückliste übernehmen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Kann der Arbeitsplan auch importiert werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Ja. Mit dem Klick auf <img border="0" src="ArbeitsplanImport.gif" width="30" height="25"> wird der
+Import der CSV Datei gestartet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Datenaufbau dafür ist folgender:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ident;Stückzeit;Rüstzeit</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ident
+... Artikelnummer der Arbeitszeit</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stückzeit
+... Stückzeit dieses Arbeitsganges in ms (Millisekunden)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Rüstzeit
+... Rüstzeit dieses Arbeitsganges in ms</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">AZ-001;10000;20000<br>
+</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Die Arbeitsgangnummer wird automatisch vergeben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

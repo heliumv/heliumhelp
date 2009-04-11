@@ -119,8 +119,37 @@ Suche in der Elektronikbranche.</p>
 
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">In
 der Elektronikbranche werden bei vielen Artikeln die Genauigkeiten in %
-angegeben. Um exakt z.B. nach 1% suchen zu können geben Sie bitte ***???***
-ein.</p>
+angegeben. Um exakt z.B. nach 1% suchen zu können muss derzeit leider die
+Datenbankversion Ihres Helium V berücksichtigt werden.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0"><b>Beispiel:</b>
+Wir suchen nach einem Widerstand mit 120R und 1%.</p>
+
+<ul>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Für
+    MS-SQL geben Sie bitte <a href="120%251[%25]">120%1[%]</a> ein. Dies bringt
+    alle Artikel, die von links nach rechts in der Bezeichnung 120 und dann 1%
+    stehen haben. Hier wird nach den Zeichen von - bis gesucht, welche untern
+    den Eckigen Klammern angegeben wurden.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Für
+    Postgres geben Sie für das gleiche Ergebnis bitte 120%1\% ein. Hier ist das
+    Backslash-Zeichen die Kennung um nach einem Steuerzeichen zu suchen.</li>
+</ul>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Manchmal
+kommt es vor, dass Sie z.B. eine Telefonnummer suchen, aber die Schreibweise
+nicht genau kennen.&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+in Helium V eingegebene Telefonnummer lautet z.B. +43-6221-82 25-0. Auf dem
+Display Ihres Telefons sehen Sie 82250. Geben Sie in der Erweiterten Suche nun
+die angezeigte Nummer ein, so erhalten Sie keine Treffer, da ja 82250 nirgends
+vorhanden ist. Um nun trotzdem Ergebnisse zu erhalten empfiehlt sich zwischen
+den einzelnen Zeichen einfach ein % einzugeben, also 8%2%2%5 damit ist nur mehr
+die Reihenfolge von Links nach Rechts definiert und Sie finden den
+entsprechenden Partner.</p>
 
   <p class="question" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Q: Wie kann die Auswahlliste
   weiter eingeschränkt werden?</p>
