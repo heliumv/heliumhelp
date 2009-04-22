@@ -110,9 +110,6 @@ Daten erfasst werden:</p>
     z.B. Bilder des defekten Artikels usw.</li>
 </ul>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Reklamationen
 gliedern sich in drei Bereiche:</p>
 <ol>
@@ -152,31 +149,82 @@ vielen Tagen Verspätung geliefert wurden. Bei den Verspätungstagen werden nur
 Arbeitstage, also keine Sams-, Sonn- und Feiertag, berücksichtigt.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">=== erforderliche Auswertungen ===<br>
-* Übersicht über die Reklamationskosten des Jahres, wie Rechnungsumsatzübersicht. Zusätzlich getrennt nach offene, erledigte und Gesamt<br>
-* Reklamationen von bis<br>
-* Alle / Eine Kostenstelle<br>
-* Sortiert nach&nbsp;<br>
-** Reklamationsnummer<br>
-** Kunde, Lieferant, Fertigung<br>
-** Fehler<br>
-* Filter nur für einen Partner<br>
-* Reklamationsart (Kunde, Lieferant, Fertigung)<br>
-* Produkt-Art Eigen Fremd, default Beide (Eigen + Fremd)<br>
-ev. nur offene Reklamationen aus obigem Zeitraum<br>
-<br>
-Zusätzlich:<br>
-* Reklamationsbehandlung durch den Lieferanten<br>
-<br>
-=== Drucken ===<br>
-Die Reklamation wird ev. als offizielles an den Lieferanten oder auch an den Kunden gesandt. D.h. Druck, wie z.B. eine Rechnung, aber unterschiedliche Formulare je nach Reklamationsart (KD, LF, LO)&lt;br/><br>
-Zusätzlich muss auch ein 8D Reportblatt ausgedruckt werden können in dem alle Daten inkl. aller Korrekturmaßnahmen und deren Erfüllung angedruckt werden, ausgedruckt werden können. Darin müssen die '''acht Schritte''' erkannt werden, welche für die langfristige Qualitätsverbesserung unternommen wurden.<br>
-</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Lieferbeurteilung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Erweiterung der Reklamationsverwaltung kann auch eine annähernd automatische
+Beurteilung der Lieferanten gemacht werden. Es müssen dazu die Punkteschemen
+für Liefertermintreue, Schwere der Reklamation und Art der
+Reklamationsbehandlung hinterlegt werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Definition der Schwere wurde für die standard Reklamation bereits beschrieben
+hier sind nun zusätzlich noch Reklamationsbehandlung und Termintreue zu
+definieren. </p>
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Definieren Sie in
+    den Grunddaten, unter Behandlung, wieviele Punkte Ihr Lieferant je Lieferung
+    für die Art und Weise seiner Reklamationsbehandlung erhält.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Definieren Sie in
+    den Grunddaten, unter Termintreue, welche Punkteanzahl der Lieferant für
+    die Terminerfüllung bzw. Über/Unterschreitung bekommt.<br>
+    <img border="0" src="Termintreue.gif" width="312" height="150"><br>
+    Obige Tabelle bedeutet, dass bei einer zu frühen Lieferung ab dem 15.Tag
+    der Lieferant für die Termintreue keine Punkte mehr bekommt. Aufgrund der
+    Formel ergibt dies keine Punkte für diesen Wareneingang.</li>
+</ul>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Formel:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Formel ist
+derzeit fest programmiert und lautet:<br>
+Termintreue x (Schwere der Reklamation + Reklamationsbehandlung)</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ist für einen
+Wareneingang keine Reklamation angegeben, so wird für Schwere und Behandlung
+die jeweils höchste definierte Punkteanzahl verwendet.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Klassen:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Aus der Formel
+ergeben sich nun auch die maximal erzielbaren 1.800 Punkte.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Diese können in
+System, Parameter unter LIEFERANTENBEURTEILUNG_PUNKTE_KLASSE_A, B, C definiert
+werden. Sie sind üblicherweise auf A ... 1600, B ... 1200, C ... 800
+eingestellt.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Durchführen der
+Lieferantenbeurteilung:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im Journal finden Sie
+den zusätzlichen Punkt <img border="0" src="Lieferantenbeurteilung.gif" width="162" height="25">
+Lieferantenbeurteilung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wählen Sie hier den
+Betrachtungszeitraum, üblicherweise ein Quartal.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das Ergebnis dieser
+Beurteilung wird zum Ende-Zeitpunkt in die Klassifizierung des jeweiligen
+Lieferanten eingetragen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Änderung der
+Lieferantenklassifizierungen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Es ergibt sich unter
+Umständen, dass Klassifizierungen von Lieferanten abgeändert werden müssen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Dies kann in den
+Beurteilungen des einzelnen Lieferanten durchgeführt werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Beurteilungen
+eines Lieferanten finden Sie im Modul Lieferanten im oberen Modulreiter
+Beurteilung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Lieferantenklassifizierung.gif" width="767" height="327"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit ändern können
+die Punkte einer vorhandene Klassifizierungen abgeändert werden, wodurch sich
+auch eine andere Klasse ergibt. Damit bei einer eventuellen Neuberechnung die
+von Ihnen eingetragene Beurteilung nicht überschrieben wird, muss diese auf
+Gesperrt (Eingefroren) gesetzt werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn Sie die
+Klassifizierung abändern, sollte auch die Begründung dafür im Feld Kommentar
+angegeben werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Ausgewählte
+Lieferanten nicht beurteilen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Manche Lieferanten
+sollten / brauchen nicht beurteilt werden, da sie z.B. keine
+qualitätsrelevanten Artikel liefern. Diese Lieferanten werden bei der
+Durchführung der Lieferantenbeurteilung übersprungen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Einstellung
+dafür finden Sie in den Konditionen des jeweiligen Lieferanten. Hier wird auch
+die aktuelle Beurteilung angezeigt und die daraus resultierende Klasse.</p>
 
 </body>
 
