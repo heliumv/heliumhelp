@@ -148,8 +148,7 @@ Lizenzbedingungen und wählen Ihr gewünschtes Betriebssystem.</p>
 JRE muss für Client und Server installiert werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
 wird dringend empfohlen, alte Java Versionen vorher zu deinstallieren und
-dazwischen die PCs neu zu starten.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+dazwischen die Rechner neu zu starten. Für
 Ihren Helium V Server müssen unbedingt auch die Java Settings angepasst werden.</p>
 <ul>
   <li>CLASSPATH=C:\Programme\Java\jre1.5.0_08\lib;C:\jboss-4.0.4.GA\server\helium\ehcache;...
@@ -164,7 +163,7 @@ nur die oben angegebenen Zeichen.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Ich kann nicht auf 5 11 001 4160 aktualisieren?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Ab dieser Version wird die JRE 1.6.0_06 verwendet. Es muss daher die
+Ab dieser Version wird die JRE 1.6.0_05 verwendet. Es muss daher die
 JavaRuntimeEdition (JRE) aktualisiert werden. Dies kann von <a href="http://java.sun.com/javase/downloads/index.jsp">http://demo.heliumv.at/public/HeliumV/Windows/jre-6u5-windows-i586-p.exe</a>
  heruntergeladen werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
@@ -183,13 +182,15 @@ Versuchen Sie den JBoss per Hand zu starten.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Starten
 Sie mit Start ausführen ds CMD Fenster.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln
-Sie nach <a href="file:///c:/jboss-4.0.4.GA/bin/">c:\jboss-4.0.4.GA\bin\</a></p>
+Sie nach <a href="file:///c:/jboss-4.0.4.GA/bin/">c:\jboss-4.2.2.GA\bin\</a></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Führen
-Sie nun run -c helium aus und beobachten Sie die Ausgabe. Im Gegensatz zum Start
-als Dienst werden in der Console wesentlich mehr Meldungen ausgegeben.</p>
+Sie nun run -c helium -b Servername aus und beobachten Sie die Ausgabe. Im Gegensatz zum Start
+als Dienst werden in der Console wesentlich mehr Meldungen ausgegeben. Um den
+Servernamen zu ermitteln gehen Sie bitte in die Eingabeaufforderung und geben
+hostname ein. Der nun angezeigt Name ist der Servername.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>HINWEIS:</b>
-In Englischen Betriebssystemen liegt das Java-Verzeichnis unter umständen nicht
+In Englischen Betriebssystemen liegt das Java-Verzeichnis unter Umständen nicht
 auf Programme sondern unter &quot;<a href="file:///c:/Program%20Files">c:\Program
 Files</a>&quot; </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
@@ -198,8 +199,6 @@ diesem Falle muss die Enviromentvariable für das Java_Home neu gesetzt werden.</
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedenken
 Sie bitte, dass der Start des JBoss in der Regel zwischen 1-2 Minuten dauern
 kann.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
