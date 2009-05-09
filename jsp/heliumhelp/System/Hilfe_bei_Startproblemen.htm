@@ -21,9 +21,9 @@ Systemsteuerung, Verwaltung, Dienste.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier suchen Sie den
 Helium V Application Server. Dieser muss im Status auf gestartet stehen. </p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Dienste.gif" width="625" height="226"> </p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Läuft der Server, so
-prüfen Sie bitte das LogFile (c:\jboss-4.0.4.GA\server\helium\log\server.log). Sie
-können uns diese Logdatei&nbsp; auch gerne zusenden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><a name="Logfile"></a>Läuft der Server, so
+prüfen Sie bitte das LogFile (c:\jboss-4.2.2.GA\server\helium\log\server.log). Sie
+können uns diese Logdatei&nbsp; auch gerne zusenden. </p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Enthält die Logdatei
 einen Eintrag mit</p>
@@ -98,14 +98,13 @@ dann Eigenschaften und dann Datendateien.</p>
 Zurückstellen von Beschränkt auf Unbeschränkt ist im DbaMGR2 nicht möglich.
 Im Falle dass es auf limitiert steht, und Sie keinen Enterprise Manager zur
 Verfügung haben, fordern Sie bitte ein entsprechendes Script bei uns an.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Läuft die Datenbank ?"></a>Q:
 Läuft der DB-Server?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Bei Startproblemen des JBoss prüfen Sie ob alle Ports auf Listening stehen.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
-Windows Systemen können Sie dies mit dem Befehl netstat -an prüfen. Hier
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Sie können dies mit dem Befehl netstat -an prüfen. Hier
 müssen alle vier Ports als Listening aufscheinen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Von
@@ -118,11 +117,11 @@ Helium V verwendete Ports: JNDI 1099, RMI, 1098, Web-Schnittstelle 8080</p>
     </tr>
     <tr>
       <td width="531" height="23">JNDI</td>
-      <td width="531" height="23">1099 (2099)</td>
+      <td width="531" height="23">2099</td>
     </tr>
     <tr>
       <td width="531" height="23">RMI</td>
-      <td width="531" height="23">1098 (2098)</td>
+      <td width="531" height="23">2098</td>
     </tr>
     <tr>
       <td width="531" height="23">Web-Schnittstelle</td>
@@ -199,6 +198,56 @@ diesem Falle muss die Enviromentvariable für das Java_Home neu gesetzt werden.</
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedenken
 Sie bitte, dass der Start des JBoss in der Regel zwischen 1-2 Minuten dauern
 kann.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+In welcher Reihenfolge müssen die für Helium V relevanten Dienste / Services
+gestartet werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bevor der Helium V Applikation Server (JBoss) gestartet werden kann, muss der
+Datenbankserver laufen und es muss ein ordnungsgemäßer Zugriff auf die
+Datenbank, auch mit der Server-IP Adresse möglich sein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Gerade nach groben Serverabstürzen, z.B. Strom Ausfall ohne USV, Blue Screen,
+Kernel Panik und ähnlichem, kann die Datenbank defekt sein. Die von uns
+eingesetzten Datenbanken versuchen sich selbst zu reparieren, soweit dies
+automatisch möglich ist. Dies bedingt jedoch, dass der Start der Datenbank
+deutlich länger dauert als bei einer ordnungsgemäß beendeten Datenbank.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+wiederum bewirkt, dass der Applikation Server versucht auf die noch nicht
+laufende Datenbank zuzugreifen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Warten
+Sie in solchen Fällen bis die <a href="#Läuft die Datenbank ?">Datenbank
+läuft</a>, starten Sie danach den JBoss und beobachten Sie die Ausgaben in der <a href="#Logfile">Log-Datei</a>.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kann
+auch nach einiger Wartezeit nicht auf den Datenbankserver zugegriffen werden, so
+setzen Sie sich bitte mit uns in Verbindung. Nehmen Sie auf keinen Fall
+irgendwelche Reparaturarbeiten vor.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+übliche Reihenfolge für den Start der Dienste in Windows-Systemen ist:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+Start des MS-SQL Servers</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.
+Start des JBoss Applikation Servers</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+Linux werden die Services</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+Postgresql </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.
+jboss</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">in
+dieser Reihenfolge gestartet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+MAC OS X wird</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+Postgresql als Service automatisch gestartet</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.
+HeliumV_Server.app als Benutzerprogramm automatische gestartet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
