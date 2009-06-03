@@ -448,16 +448,35 @@ bedeutet, Sie sollten diese Funktion immer Zeitnah zu den
 Wiederholungsintervallen aufrufen um eine entsprechende Durchgängigkeit der
 Rechnungsnummern und der dazugehörigen Belegdatum zu erreichen.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Dies kann durch die Verwendung des Neu-Datums der Rechnung übersteuert werden.
+D.h. sollten die automatisch angelegten wiederholenden Rechnungen auf ein
+bestimmtes Datum hin angelegt werden, so setzen Sie bitte vor Aufruf der
+Funktion in der Rechnungsverwaltung das Neu-Datum auf den entsprechenden Wert.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>ACHTUNG:</b>
 Wird das Wiederholungsintervall geändert und sind bereits Rechnungen auf diesen
 Auftrag gebucht, so muss auch der Termin ab dem das (neue)
 Wiederholungsintervall gilt in die Zukunft gesetzt werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
-Änderung des Wiederholungintervalles von z.B. jährlich auf halbjährlich ohne
-Änderung des Wiederholungstermines würde bewirken, dass alle fehlenden
-Rechnungen des neuen Intervalles nachgetragen werden. Sind diese in anderen
+Änderung des Wiederholungsintervalls von z.B. jährlich auf halbjährlich ohne
+Änderung des Wiederholungstermins würde bewirken, dass alle fehlenden
+Rechnungen des neuen Intervalls nachgetragen werden. Sind diese in anderen
 Geschäftsjahren, so kommt es zu entsprechenden Programmabbrüchen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>ACHTUNG:</b>
+ Ist eine Rechnung eines Wiederholungsauftrags ungerechtfertigt erstellt worden,
+so muss diese durch eine Gutschrift ausgeglichen werden. Bei der Berechnung ob
+eine Rechnung aufgrund eines wiederholenden Auftrags neu anzulegen ist, werden
+stornierte Rechnungen nicht berücksichtigt. D.h. wird eine Rechnung, welche mit
+einem weiderholenden Auftrag verknüpft ist, storniert, so wird, wenn für
+diesen Termin eine wiederholende Rechnung auszustellen ist, wird diese Rechnung
+automatisch wieder angelegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>WICHTIG:</b>
+Für den wiederholenden Auftrag muss der wiederholende Termin gesetzt werden.
+Ein wiederholender Auftrag ohne Termin ist nicht zulässig.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Nachkalkulation"></a>Q:
 Nachkalkulation</p>
