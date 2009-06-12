@@ -48,7 +48,11 @@ bzw. bestehende Daten, z.B. Telefonnummern überschrieben.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
 Datenaufbau ist so, dass in der ersten Zeile die Spaltenüberschriften anzugeben
 sind. Die Spalten sind in folgender Reihenfolge anzuordnen:</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anrede;Titel;Name1;Name2;Name3;Straße;Land;Postleitzahl;Ort;Telefon;Fax;EMail;Homepage;Bemerkung;Selektion;Ansp-Funktion;Ansp-Anrede;Ansp-Titel;Ansp-Vorname;Ansp-Nachname;Ansp-TelefonDw;Ansp-FaxDw;Ansp-EMail;Ansp-Mobil;Ansp-Gültigab;Ansp-Bemerkung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anrede;
+Titel; Name1; Name2; Name3; Straße; Land; Postleitzahl; Ort; Telefon; Fax;
+EMail; Homepage; Bemerkung; Selektion; Ansp-Funktion; Ansp-Anrede; Ansp-Titel;
+Ansp-Vorname; Ansp-Nachname; Ansp-TelefonDw; Ansp-FaxDw; Ansp-EMail; Ansp-Mobil;
+Ansp-Gültigab; Ansp-Bemerkung</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ansp-
 ... steht für Ansprechpartner</p>
@@ -59,6 +63,91 @@ im Format JJJJMMTT (Jahr, Monat, Tag)</p>
 CSV Format ist so definiert, dass als Trennzeichen zwischen den Feldern ein ;
 (Strichpunkt oder auch Semikolon) und eventuell ein &quot; (Doppeltes Hochkomma)
 zur Texterkennung übergeben wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Import des Partners wird in zwei Schritten durchgeführt:</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
+Prüfung der Daten: Hier wird überprüft, ob alle erforderlichen Daten
+(Pflichtfelder) in der übergebenen CSV Datei enthalten sind. Nach der
+Überprüfung erhalten Sie eine Liste der fehlenden Daten.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Partner_Import.gif" width="500" height="164"></p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+die Liste mit Fehlern behaftet, so müssen diese zuerst korrigiert und die Daten
+dann neu eingelesen werden.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Partner_Import2.gif" width="500" height="113"></p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+die Liste Fehlerfrei, so kann auch auf importieren geklickt werden. </p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollten
+beim Import der Daten auch Kunden erzeugt werden, so haken Sie bitte erzeuge
+Kunde an. Dadurch werden neben den Partnerdaten die Daten auch in den Kunden
+übernommen. Die für den Kunden erforderlichen Pflichtfelder werden, wie bei
+der manuellen Anlage von Kunden, die Einstellungen aus System, Mandant,
+Vorbelegungen übernommen.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Ansprechpartner Funktion muss so wie die Kennung unter Partner, Grunddaten,
+Ansprechpartnerfunktion definiert sein.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Haben
+Sie viele Fehlerhafte Einträge die überarbeitet werden sollten, so können Sie
+den Inhalt des Fehlerfensters mit Strg+A komplett markieren und mit Strg+C in
+die Zwischenablage übernehmen.</p>
+
+
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 
