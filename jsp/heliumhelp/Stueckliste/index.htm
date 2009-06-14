@@ -327,7 +327,7 @@ Berücksichtigung der Verschnittbasismenge (siehe oben)</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 sich daraus ergebende Menge wird in die Los(Fertigungs)verwaltung übernommen.</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Welche
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Zielmengeneinheit"></a>Welche
 Mengen werden bei den verschiedenen Stücklistendrucken angedruckt?</p>
 
 <ul>
@@ -428,7 +428,49 @@ Verfügung. Bei dieser Berechnung werden alle enthaltenen Unterstücklisten in
 Strukturform dargestellt, sodass eine klare Übersicht der eingesetzten
 Materialien und Kosten gegeben ist. Zusätzlich werden am Ende verschiedene
 Gemeinkostenfaktoren mit angeführt. Die verschiedenen Gemeinkostenfaktoren
-können im System, unterer Modulreiter Parameter definiert werden.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+können im System, unterer Modulreiter Parameter definiert werden.&nbsp;<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Gesamtkalkulation werden vier Preisgruppen angedruckt.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+<div align="left">
+  <table border="1" width="593" height="16">
+    <tr>
+      <td width="63" height="16">a.)</td>
+      <td width="268" height="16">Gestehungspreis /&nbsp; Gestehungswert</td>
+      <td width="1448" height="16">Dies zeigt diejenigen Kosten auf, die
+        entstehen würden, wenn die Stückliste direkt vom Lager produziert
+        würde.</td>
+    </tr>
+    <tr>
+      <td width="63" height="16">b.)</td>
+      <td width="268" height="16">Lief1preis /<br>
+        Lief1wert</td>
+      <td width="1448" height="16">Diese Kosten entstehen, wenn die gesamte Ware
+        neu vom bevorzugten Lieferanten beschafft wird.<br>
+        In dieser Betrachtung werden auch die Mengenstaffeln des Lieferanten
+        berücksichtigt.</td>
+    </tr>
+    <tr>
+      <td width="63" height="16">c.)</td>
+      <td width="268" height="16">KalkPreis /&nbsp;<br>
+        KalkWert</td>
+      <td width="1448" height="16">Der kalkulatorische Wert ist der in der
+        einzelnen Stücklisten Position eingegebene Kalk.Preis multipliziert mit
+        der Zielmenge.</td>
+    </tr>
+    <tr>
+      <td width="63" height="16">d.)</td>
+      <td width="268" height="16">Verkaufspreis /&nbsp;<br>
+        Verkaufswert</td>
+      <td width="1448" height="16">Ist bei der Ausgangs / Kopf-Stückliste ein
+        Kunde hinterlegt, so wird für die Ermittlung der Verkaufspreise der
+        sich über die Verkaufspreisfindung ergebende Verkaufspreis verwendet.
+        Darin werden auch die Kunden-Sonderkonditionen und die
+        Verkaufsmengenstaffeln berücksichtigt.</td>
+    </tr>
+  </table>
+</div>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+wird die benötigte Menge für die Gesamtkalkulation errechnet?<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="#Zielmengeneinheit">Siehe
+oben</a>.<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 meine angeführten Stücklisten werden nicht in Details aufgelöst?<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Wenn Stücklisten als Fremdfertigung gekennzeichnet sind, so werden diese wie
 &quot;Einkaufs-&quot;Material behandelt. D.h. diese Stückliste und alle
@@ -443,6 +485,11 @@ eine Unterstückliste enthalten ist, dann wird der Gestehungspreis der
 Unterstückliste in eckigen Klammern angedruckt. Dieser Gestehungspreis wird
 nicht zur Berechnung der Stückliste verwendet und dient daher nur zur
 Information.
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Es werden falsche Preise in der Gesamtkalkulation verwendet<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bei der Stücklisten-Gesamtkalkulation werden bei Liefer- und Verkaufspreisen
+jeweils die Mengenstaffeln berücksichtigt. Dies kann unter Umständen andere
+Preis ergeben als ursprünglich angenommen.
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 Es wurde versehentlich ein Artikel zur Stückliste gemacht. Kann ich dies wieder
 löschen?<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
