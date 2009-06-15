@@ -1190,6 +1190,81 @@ im System, Parameter eingestellt. </p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Mengeneinheit.htm">Mengeneinheiten</a></p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Import
+von Artikeldaten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Modul Artikel finden Sie unter Artikel, CSV-Import die Möglichkeit neue Artikel
+in den Artikelstamm zu importieren. Derzeit steht für den Import von Artikeln
+folgende Felder im CSV-Format zur Verfügung. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Artikelnummer;
+Bezeichnung; Kurzbezeichnung; Zusatzbezeichnung; Zusatzbezeichnung2; Artikelart;
+Mengeneinheit; Artikelgruppe; Artikelklasse; Referenznummer; MwSt-Satz. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+wichtigste Element ist die Artikelnummer. Ist ein Artikel dieser Nummer noch
+nicht vorhanden, so wird er angelegt. Ist er bereits vorhanden, so wird der
+Artikel derzeit nicht importiert. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
+Sie bei der Erstellung der Daten für den Import auf folgendes: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<div align="left">
+  <table border="1" width="687" height="18">
+    <tr>
+      <td width="210" height="18">Artikelnummer</td>
+      <td width="1164" height="18">Nur gültige Zeichen laut Parameter
+        ARTIKELNUMMER_ZEICHENSATZ verwenden</td>
+    </tr>
+    <tr>
+      <td width="210" height="18">Mengeneinheit</td>
+      <td width="1164" height="18">Muss vorhanden sein (z.B. Stk). Am
+        Einfachsten ermitteln Sie diese in dem Sie im Detail eines Artikels im
+        Ändern die Mengeneinheiten aufklappen und den entsprechenden
+        &quot;Text&quot; für die Bezeichnung der Mengeneinheit auswählen.</td>
+    </tr>
+    <tr>
+      <td width="210" height="18">Artikelgruppe</td>
+      <td width="1164" height="18">Muss angelegt sein, siehe Artikel,
+        Grunddaten, Artikelgruppen, Kennung</td>
+    </tr>
+    <tr>
+      <td width="210" height="18">Artikelklasse</td>
+      <td width="1164" height="18">Muss angelegt sein, siehe Artikel,
+        Grunddaten, Artikelklassen, Kennung</td>
+    </tr>
+    <tr>
+      <td width="210" height="18">Artikelart</td>
+      <td width="1164" height="18">Hier stehen Artikel oder Arbeitszeit zur
+        Verfügung</td>
+    </tr>
+    <tr>
+      <td width="210" height="18">MwSt-Satz</td>
+      <td width="1164" height="18">Hier muss die Bezeichnung des
+        Mehrwertsteuersatzes angegeben werden. Am Einfachsten ermitteln Sie
+        diesen in dem Sie im Detail eines Artikels im Ändern die
+        Mehrwertsteuersätze aufklappen und den entsprechenden &quot;Text&quot;
+        für die Bezeichnung des Satzes auswählen.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+Fehler im Import vorhanden, so werden entsprechende Meldungen ausgegeben.
+Beheben Sie diese. Erst wenn keine Fehler mehr eingetragen sind, wird der Knopf
+für das Importieren freigeschaltet.&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Artikelimport_Fehlermeldung.jpg" width="500" height="83"> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Können
+die Artikel importiert werden, so wird Keine Fehler gefunden angezeigt und durch
+Klick auf den Importknopf wird der Import gestartet. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
 </body>
 
 </html>
