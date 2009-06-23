@@ -1044,6 +1044,33 @@ Dies kann soweit gehen, dass ein Ausdruck zu einem früheren Zeitpunkt, an dem
 die Korrektur des Wareneinstandspreises noch nicht durchgeführt worden war und
 der Ausdruck zum gleichen Stichtag, wo aber die Korrektur bereits eingebucht
 ist, unterschiedliche Lagerwerte ergeben.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Gestehungspreisberechnung zum Stichtag"></a>Q:
+Wie wird der Gestehungspreis für die Lagerstandsliste zum Stichtag errechnet?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für die Ermittlung des Gestehungspreises zu einem bestimmten Stichtag wird der
+Gestehungspreis der dem Stichtag (24:00) nachfolgenden Abbuchung verwendet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hat
+nun ein Artikel vom letzten Abgang bis zum Zeitpunkt der Betrachtung zwar
+Warenzugänge, aber keine Abgänge, so können sich durch die verschiedenen
+Einstandspreise Änderungen am Gestehungspreis ergeben, welche sich im
+nachträglichen Ausdruck eines Lagerwertes zum Stichtag auswirken. Dies basiert
+auf der Logik, dass bei jedem Warenzugang der aktuelle Gestehungspreis neu
+berechnet wird. Das hat zur Folge, dass der Lagerwert, gerechnet über den
+aktuellen Gestehungspreis immer stimmt. Da der Gestehungspreis jedoch nur für
+die Warenentnahmebuchungen protokolliert wird, steht, unter obiger Situation,
+nur der aktuelle Gestehungspreis mit all seinen Änderungen für die Ermittlung
+zur Verfügung. Sind jetzt gravierende Änderungen durch Neueinkäufe im
+Gestehungspreis gegeben, wird sich dies auch auf die nachträglichen
+Betrachtungen auswirken.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+raten daher, Lagerstandslisten immer möglichst zeitnahe für den entsprechenden
+Stichtag auszudrucken und entsprechend aufzubewahren. Werden diese Listen
+später ausgedruckt, so kann es, wegen des oben beschriebenen Mechanismus zu
+Abweichungen kommen. Um die Aufbewahrung der Lagerstandslisten etwas zu
+erleichtern nehmen wir diese nun in die automatische Dokumentenablage mit auf.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Diese Gestehungspreis Thematik wirkt sich auch für die
+Halbfertigfabrikatsinventur der Lose aus.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zentraler
 Artikelstamm</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
