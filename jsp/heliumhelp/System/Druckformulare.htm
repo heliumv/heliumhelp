@@ -259,10 +259,10 @@ kopiert, so gilt sie nur für den jeweiligen Mandanten.</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wird
 die Datei mail.xls hingegen in das anwender Verzeichnis eines Moduls kopiert, so
-muss sie auf den Reportnamen mit der Erweiterung xls umbenannt werden. In
+muss sie auf den Reportnamen mit der Erweiterung xsl umbenannt werden. In
 anderen Worten, es kann für jede Reportvorlage eine eigene EMail-Vorlage
 erstellt werden. Diese Datei hat den gleichen Namen wie die Reportvorlage,
-jedoch die Erweiterung .xls</p>
+jedoch die Erweiterung .xsl</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Zusätzlich gelten die weiter oben beschriebenen Regeln für Mandanten
 und Sprachen.</p>
@@ -284,13 +284,13 @@ Parameter können in dieser Datei verwendet werden:</p>
         Beleges. Z.B. sehr geehrter Herr xy</td>
     </tr>
     <tr>
+      <td width="199" height="21">belegnummer</td>
+      <td width="1027" height="21">Z.B. die Angebotsnummer</td>
+    </tr>
+    <tr>
       <td width="199" height="21">bezeichnung</td>
       <td width="1027" height="21">Bezeichnung des Beleges z.B. Angebot, oder
         Auftrag usw.</td>
-    </tr>
-    <tr>
-      <td width="199" height="21">belegnummer</td>
-      <td width="1027" height="21">Z.B. die Angebotsnummer</td>
     </tr>
     <tr>
       <td width="199" height="21">belegdatum</td>
@@ -312,10 +312,44 @@ Parameter können in dieser Datei verwendet werden:</p>
       <td width="199" height="21">text</td>
       <td width="1027" height="21"></td>
     </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_vorname</td>
+      <td width="1027" height="21">Vorname des angemeldeten Benutzers</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_nachname</td>
+      <td width="1027" height="21">Nachname</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_titel</td>
+      <td width="1027" height="21">Titel</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_telefonfirma</td>
+      <td width="1027" height="21">Mandanten-Telefonnummer</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_telefondwfirma</td>
+      <td width="1027" height="21">Durchwahl (Personal, Daten, Absenderdaten,
+        Durchwahl)</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_email</td>
+      <td width="1027" height="21">Firmen-EMail (Personal, Daten, Absenderdaten,
+        E-Mail)</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_mobil</td>
+      <td width="1027" height="21">Firmen Mobiltelefonnummer</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_telefonfirmamitdw</td>
+      <td width="1027" height="21">Kombinierte Telefonnummer ev. mit Durchwahl</td>
+    </tr>
   </table>
 </div>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
-Bearbeitung des Style-Sheets setzt Kenntnisse in der XML / XSL Programmierung
+Bearbeitung des Style-Sheets setzt Kenntnisse in der XSLT Programmierung
 voraus.</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Für
