@@ -234,7 +234,7 @@ grundsätzlich der Web-Link, die HTML Anzeigeform verwendet.</p>
 Helium V Server, die Aktualisierungsrate und die Größe des Fensters können in
 den Eigenschaften des Bildschirmschoners eingerichtet werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
-stellen Sie die Periodische Aktualisierungsrate möglichst niedrig ein. Je
+stellen Sie die periodische Aktualisierungsrate möglichst niedrig ein. Je
 höher die Aktualisierungsrate, desto stärker werden Netzwerk und Server
 belastet.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
@@ -257,8 +257,82 @@ HVscreensaver.scr nach ?:\windows\System32</p>
 den Bildschirmeigenschaften nun den Bildschirmschoner einstellen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
-Für Barcodescanner Benutzer eine Eingabetaste wird vom Screensaver
-unterdrückt. Daher müssen die Scanner mit einem Pre-Key ausgerüstet werden.</p>
+Für Barcodescanner Benutzer: Eine Eingabetaste wird vom Screensaver
+unterdrückt. Daher müssen die Scanner mit einem Pre-Key ausgerüstet werden.
+Bitte prüfen Sie dieses Verhalten bei Einsatz des
+Anwesenheitsbildschirmschoners.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Update Client Zeiterfassungsstifte"></a>Update
+des Clients für die Zeiterfassungsstifte:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Zeiterfassungsstifte auslesen zu können wird</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+der normale Helium V Client in einer besonderen Parametrierung benötigt</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+muss auf dem Rechner bereits einmal der Client für die Zeiterfassung
+eingerichtet worden sein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Gehen
+Sie für das Update wie folgt vor:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.)
+Installieren / aktualisieren Sie Ihren &quot;normalen&quot; Helium V Client auf
+diesem Rechner wie üblich / oben beschrieben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.)
+Starten Sie ein Programm mit dem auch jar Dateien geöffnet werden können, z.B.
+die auf Ihrer Helium V CD unter Tools mitgelieferte Sharewareversion von
+TotalCommander.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.)
+wechseln Sie in das Verzeichnis des bestehenden Helium V Stift-Clients,
+üblicherweise <a href="file:///c:/Programme/Helium_V">c:\Programme\</a>helium_v.ze_stifte</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">4.)
+Öffnen Sie nun die Datei lpclientpc.jar (im TotalCommander auf die Datei
+stellen und Strg+Bild nach unten)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">5.)
+wechseln Sie nun in der Datei in das Verzeichnis com\lp\client\zeiterfassung\f630</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">6.)
+Hier finden Sie die Datei zestifte.properties. Kopieren Sie diese an einen
+sicheren Ort.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">7.)
+Löschen Sie den Inhalt und die Unterordner des Ordners des bestehenden Helium V
+Stift-Clients (<a href="file:///c:/Programme/Helium_V">c:\Programme\</a>helium_v.ze_stifte)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">8.)
+Kopieren Sie den Inhalt des Ordners des aktualisierten &quot;normalen&quot;
+Helium V Clients in den Ordner des Stift Clients.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">9.)
+Öffnen Sie die neue Datei lpclientpc.jar und gehen Sie erneut in das
+Verzeichnis com\lp\client\zeiterfassung\f630</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">10.)
+Löschen Sie die Datei _zestifte.properties</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">11.)
+Kopieren Sie die unter 6.) gesicherte Datei in diesen Ordner und verlassen Sie
+diesen Ordner schrittweise. Bei Verwendung von TotalCommanders, jeweils durch
+Klick auf <img border="0" src="ZE-Stift_Update1.gif" width="27" height="20"> bzw. <img border="0" src="ZE_Stift_Update2.gif" width="49" height="17">.
+Die Frage nach dem Zurücksichern beantworten Sie bitte mit Ja.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+sind die bestehenden Einstellungen in den neuen Client übertragen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollten
+Sie mehrere Rechner besitzen, an denen Zeiterfassungsstifte angeschlossen sind,
+so gehen Sie bitte für jeden Rechner analog vor.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
