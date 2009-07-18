@@ -551,18 +551,52 @@ Kann eine Stückliste importiert werden?</p>
 Ja.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
 Datenaufbau dafür ist folgender:</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ident;Menge</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ident
-... Artikelnummer der Arbeitszeit</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Menge
-... dieser Position in Mengeneinheit des Artikels</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
-Die zu übernehmenden Artikel müssen im Artikelstamm angelegt sein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ident;Menge;Bezeichnung;Mengeneinheit;Position;Kommentar</p>
+<div align="left">
+  <table border="1" width="646" height="19">
+    <tr>
+      <td width="172" height="19">Ident</td>
+      <td width="1120" height="19"> Artikelnummer des Artikels</td>
+    </tr>
+    <tr>
+      <td width="172" height="19">Menge</td>
+      <td width="1120" height="19">Menge dieser Position</td>
+    </tr>
+    <tr>
+      <td width="172" height="19">Bezeichnung</td>
+      <td width="1120" height="19">Bezeichnung des Artikels, wirkt nur, wenn die
+        Artikelnummer im Artikelstamm nicht gefunden wurde. Z.B. für
+        Handeingaben&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="172" height="19">Mengeneinheit</td>
+      <td width="1120" height="19">Mengeneinheit der Stücklistenposition.<br>
+        Dies muss eine gültige und passende Mengeneinheit sein.</td>
+    </tr>
+    <tr>
+      <td width="172" height="19">Position</td>
+      <td width="1120" height="19">Text für das Feld Position</td>
+    </tr>
+    <tr>
+      <td width="172" height="19">Kommentar</td>
+      <td width="1120" height="19">Text für das Feld Kommentar</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Die zu übernehmenden Artikel müssen im Artikelstamm angelegt sein. Ist dem
+nicht so, so wird die Position trotzdem übernommen, jedoch ohne Artikelnummer
+und als Handeingabe.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
 der Menge ist der Dezimaltrenner der Punkt (.).</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
-Die Datei darf keine Leerzeilen enthalten. Die letzte Zeile darf keinen
-Zeilenumbruch (CR/LF) mehr haben.</p>
+Die Datei darf keine reinen Leerzeilen enthalten. Leerzeilen die alle sechs
+Felder, jedoch leer beinhalten sind zulässig, werden jedoch beim Import
+übersprungen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Um z.B. in Open Office leere Datenfelder zu definieren, geben Sie bei den
+jeweiligen Feldern einfach ein Leerzeichen ein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Materialbuchung bei Ablieferung</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bewirkt, dass das Material bei Losausgabe im Lager bleibt (es werden Fehlmengen erzeugt, damit die<br>
