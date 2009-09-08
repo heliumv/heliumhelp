@@ -41,13 +41,18 @@ Erstellung einer Bestellung auf Termin</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="WebCli5.gif" width="141" height="32">
-Wareneingang&nbsp; Buchung des Wareneingangs einer Terminbestellung</p>
+ Wareneingang&nbsp; Buchung des Wareneingangs einer Terminbestellung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="WebCli6.gif" width="104" height="32">&nbsp;&nbsp;&nbsp;
+Abmeldung&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
-den Aufruf dieses Moduls muss in Ihrem Browser Flash 10 installiert sein. Eine
-lauffähige Version finden Sie auf Ihrer Helium V Installations-CD oder <a href="http://www.adobe.com/de/products/flashplayer/">hier</a>.</p>
+den Aufruf dieses Moduls muss in Ihrem Browser Flash 10 installiert sein. <a href="#Flashplayer">Siehe
+dazu</a>:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -301,6 +306,72 @@ Fehlermeldungen und deren Bedeutung:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="WebCK_3.jpg" width="640" height="138"></p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Flashplayer"></a>Q:
+Es wird beim Aufruf des WebClients eine Fehlermeldung angezeigt</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wird die nachstehende Fehlermeldung angezeigt, so muss der Flashplayer
+nachinstalliert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Alternate
+HTML content should be placed here. This content requires the Adobe Flash Player.
+<a href="http://www.adobe.com/go/getflash/">Get Flash</a></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Eine
+lauffähige Version finden Sie auf Ihrer Helium V Installations-CD oder <a href="http://www.adobe.com/de/products/flashplayer/">hier</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Erforderliche Parameter für den WebClient</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die gewünschten Stationen freizuschalten müssen diese unter System,
+Arbeitsplatzparameter definiert werden. Gehen Sie dazu wie folgt vor:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.)
+Definition der erlaubten IP-Adressen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie mit neu einen neuen Eintrag an und geben Sie bitte bei PC-Name die fixe
+IP-Adresse des Rechners an, der als WebClient arbeiten darf. Unter Standort bzw.
+Bemerkung geben Sie die für Sie sprechende Bezeichnung für diesen Client an. <br>
+Wichtig: Wenn für Testzwecke der Browser am Helium V Server installiert wird,
+so beachten Sie bitte, dass localhost eine andere IP-Adresse liefert als der
+Servername. Im Zweifelsfalle, also wenn keine Menüknöpfe freigeschaltet sind,
+so geben Sie bitte im Browser die exakte IP-Adresse an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.)
+Legen Sie mit folgenden Parametern nun fest, welche Menüpunkte / Arbeiten von
+dieser Station durchgeführt werden dürfen.</p>
+
+<div align="left">
+  <table border="1" width="802" height="17">
+    <tr>
+      <td width="333" height="17">KUE_ESSENSAUSGABE_KUNDEID</td>
+      <td width="1271" height="17">Dies ist die Datenbank ID des für die
+        Lieferscheinerstellung für die Essensausgabe verwendeten Kunden. Dieser
+        Kunde wird auch für die Lieferadresse der Bestellungen verwendet. Es
+        ist dies die Kunden_ID aus der Kundentabelle.</td>
+    </tr>
+    <tr>
+      <td width="333" height="17">KUE_WEB_MENURECHTE</td>
+      <td width="1271" height="17">Dieser binäre Wert definiert, welche
+        Menüpunkte für diese Station freigeschaltet sind. Die Definition wird
+        von links nach rechts aufsteigend verwendet.<br>
+        1 ... Lieferschein<br>
+        2 ... Rücklieferung<br>
+        4 ... Direktbestellung<br>
+        8 ... Terminbestellung<br>
+        <br>
+        Darf ein Webclient z.B. Lieferschein und Rücklieferung verwenden, so
+        ist hier 3 (1+2) einzugeben.
+        <p>Die nicht freigeschalteten Menüpunkte werden deaktiviert.</td>
+    </tr>
+  </table>
+</div>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
