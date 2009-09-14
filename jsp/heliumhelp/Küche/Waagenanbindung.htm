@@ -63,7 +63,11 @@ Terminal sollte aus Wartungsgründen eine fixe IP-Adresse zugeteilt werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
 Sie bei der Montage des Terminals darauf, dass eine möglichst normale,
-senkrechte Sicht auf den Bildschirm des Terminals gegeben ist.&nbsp;</p>
+senkrechte Sicht auf den Bildschirm des Terminals gegeben ist.&nbsp;Zur
+Befestigung an der Wand werden vier Montagelaschen mitgeliefert. Mit diesen
+Laschen muss auch die Erdung des Terminals durchgeführt werden. Wir empfehlen
+diese gemeinsam mit Ihrer Waage zu erden. Waagenterminal, Wiegeelektronik und
+Waage sollten ein gemeinsames Chassis Potiential haben.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -135,9 +139,9 @@ in der Form, dass eine Haupt/Vaterartikelklasse z.B. Fleischerei definiert wird.
 Waagenterminal werden alle Artikelgruppe deren Vaterklasse der Definition des
 Waagenterminals entspricht (z.B. Fleischerei) angezeigt. Diese Anzeige ist auf
 maximal 20 Artikelgruppen begrenzt. Bitte bedenken Sie, dass die Buttons maximal
-xx Zeichen in zwei Zeilen darstellen können. D.h. sowohl die Benennung der
+10 Zeichen in zwei Zeilen darstellen können. D.h. sowohl die Benennung der
 Artikelgruppen als auch der einzelnen Artikel sollte in zwei Wörtern die obige
-Kriterien erfüllen erfolgen / das Auslangen finden.</p>
+Kriterien erfüllen erfolgen, damit das Auslangen finden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -172,6 +176,32 @@ select I_ID from PART_PARTNER where C_NAME1NACHNAMEFIRMAZEILE1 like('%Anlief%')<
 );</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Lagerbuchung auf die die Zubuchung des Wareneingangs erfolgt kommt aus dem
+Kunden</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+ID der übergeordneten Vatergruppe muss je Terminal in den
+Arbeitsplatzparametern durch den Parameter KUE_VATERARTIKELGRUPPEID definiert
+werden.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
+Am Tagesende sollte die Erfassung bis zur Lieferantenauswahl verlassen werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Besser
+noch, das Terminal täglich abschalten oder zumindest abmelden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Waagenuser sind keine Rechte, aber eine Rolle erforderlich.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedienungsablauf</p>
@@ -201,7 +231,7 @@ Sie nun den gewünschten Lieferanten aus</b></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Liste der Lieferanten wird durch die Partnerklasse bestimmt. Die ID der
 Partnerklasse muss in den Arbeitsplatzparametern für das jeweilige Terminal
-unter KUE_WAAGENTERMINAL_??? definiert werden.</p>
+unter KUE_PARTNERKLASSEID definiert werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
 Sie den Lieferanten durch antippen und durch nachfolgenden Fingertipp auf den
@@ -216,6 +246,16 @@ wählen Sie aus den angezeigten Artikelgruppen die passende Artikelgruppe aus.</p
 gewählte Lieferant wird in der Titelzeile angezeigt. Stellen Sie nun fest dass
 ein anderer Lieferant gewählt werden sollte, so tippen Sie auf den blauen Pfeil
 nach links.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Lieferanten müssen auch Artikel haben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Artikelgruppen
+und Partnerklassen werden nur aktualisiert beim Login in das Terminalprogramms</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -247,6 +287,15 @@ Rückwärtspfeil.</p>
 einen EAN Code einzulesen, tippen Sie bitte auf den Knopf EAN (wenn
 freigeschaltet) und Scannen Sie nun den EAN Code des jeweiligen Artikels ein.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollte
+anstelle des Gewichtes eine Menge manuell erfasst werden, so wählen Sie unten
+Menge, tippen die gewünschte Menge ein und schließen das numerische Feld mit
+dem Haken. Nun wählen Sie noch den Artikel aus, der zugebucht werden sollte.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anbindung
 der Waage:</p>
 
@@ -267,7 +316,18 @@ Daten der Waage werden vom Waagenterminal in der Anzeige der Artikelauswahl im
 der Waagen-Terminalsoftware</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Per
-FTP Verbindung auf die IP-Adresse des Terminals, User: PW: heliumv</p>
+FTP Verbindung auf die IP-Adresse des Terminals, User: heliumv: heliumv</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+das Programm aktualisieren zu können, muss das Waagenprogramm beendet werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+erfolgter Aktualisierung muss das Programm wieder neu gestartet werden. Am
+einfachsten durch aus und einschalten des Terminals (Netzstecker)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 
