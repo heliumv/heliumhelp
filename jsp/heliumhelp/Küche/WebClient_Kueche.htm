@@ -85,6 +85,10 @@ seinem Passwort numerisch angelegt werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
 erfolgter Anmeldung erscheinen die freigeschalteten Funktionen.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
+keine Funktionen angezeigt, so wurde vermutlich der entsprechende Rechner, die
+IP-Adresse noch nicht freigeschaltet.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Lieferschein:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
@@ -272,6 +276,14 @@ Sie dazu Parameter, Neu, KUE_ESSENSAUSGABE_KUNDENID. Unter Wert geben Sie bitte
 die I_ID des Kunden aus der Datenbank an. Siehe dazu auch Küchenmodul,
 Grunddaten, Parameter.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+beim Kunden hinterlegte Lager wird als Abbuchungslager für den Lieferschein
+verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Die eigentlichen Menüs sind laut derzeitiger Definition nicht
+lagerbewirtschaftet.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Was
@@ -291,6 +303,21 @@ Fehlermeldungen und deren Bedeutung:</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="WebCK_1.jpg" width="368" height="120"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Tragen
+Sie die Kundenzuordnung wie oben beschrieben nach.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="WebCli3.jpg" width="376" height="176"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedeutet
+in aller Regel, dass der Artikel nicht vom Lager in den Lieferschein gebucht
+werden konnte. Da im derzeitigen Konzept die Speisen der Essensausgabestellen
+nicht lagerbewirtschaftet werden, muss in diesem Fall der Artikel des Tages auf
+nichtlagerbewirtschaftet gestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -317,9 +344,9 @@ Es wird beim Aufruf des WebClients eine Fehlermeldung angezeigt</p>
 Wird die nachstehende Fehlermeldung angezeigt, so muss der Flashplayer
 nachinstalliert werden.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Alternate
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><i>Alternate
 HTML content should be placed here. This content requires the Adobe Flash Player.
-<a href="http://www.adobe.com/go/getflash/">Get Flash</a></p>
+<a href="http://www.adobe.com/go/getflash/">Get Flash</a></i></p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Eine
 lauffähige Version finden Sie auf Ihrer Helium V Installations-CD oder <a href="http://www.adobe.com/de/products/flashplayer/">hier</a>.</p>
@@ -338,7 +365,8 @@ Definition der erlaubten IP-Adressen</p>
 Sie mit neu einen neuen Eintrag an und geben Sie bitte bei PC-Name die fixe
 IP-Adresse des Rechners an, der als WebClient arbeiten darf. Unter Standort bzw.
 Bemerkung geben Sie die für Sie sprechende Bezeichnung für diesen Client an. <br>
-Wichtig: Wenn für Testzwecke der Browser am Helium V Server installiert wird,
+<b>
+Wichtig:</b> Wenn für Testzwecke der Browser am Helium V Server installiert wird,
 so beachten Sie bitte, dass localhost eine andere IP-Adresse liefert als der
 Servername. Im Zweifelsfalle, also wenn keine Menüknöpfe freigeschaltet sind,
 so geben Sie bitte im Browser die exakte IP-Adresse an.</p>
