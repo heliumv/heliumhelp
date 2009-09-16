@@ -20,31 +20,325 @@ wird Oscar oder ADS 3000 importiert</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">OSCAR</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>OSCAR</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Da alle Dateien in einem Verzeichnis erwartet werden, wird anhand der
+Dateinamenserweiterungen (Extensions) die Unterscheidung welche Filetype dies
+ist vorgenommen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
-Betriebsstellen Nummer wird in der Filialnummer abgebildet</p>
+Dateien im Format OSCAR <b>müssen</b> die Erweiterung .LIM haben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>
+ADS 3000</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden alle Dateinamenserweiterungen als ADS 3000 Datei angenommen, mit Ausnahme
+.LIM</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importarten:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
-der Partnerklasse wird dann die Art des Imports definiert, siehe Grunddaten</p>
+der Partnerklasse wird die Art des Imports definiert, siehe Grunddaten</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importart
-Shop ... erzeugt Lieferschein</p>
+Shop ... erzeugt pro Tag und Kunde einen Lieferschein</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importart
-Essensausgabe ... legt nur Importdaten für Vergleich ab.</p>
+Essensausgabe ... legt nur Importdaten für Vergleich ab. Hier werden jeder
+Speiseplanartikel mit seinen Unterpositionen in
+die internen Importdatei abgelegt und steht somit für weitere Auswertungen zur
+Verfügung.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
 bedeutet beim Kunden muss auch die richtige Partnerklasse z.B. Shop hinterlegt
 werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+keine Importart, keine Partnerklasse definiert, so wird ein entsprechender
+Fehlereintrag angelegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Es muss für jeden Kunden die Partnerklasse mit der entsprechenden Importart definiert sein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Shops
+und Essensausgaben sind in einer Datei und für das Format der Oscarkasse
+erstellt. Die Extension muss LIM sein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gästehaus
+= ADS3000 sind alle anderen Dateien.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Dateien sind in einem Verzeichnis, dessen Pfad über System, Parameter,
+PFAD_KASSENIMPORTDATEN definiert wird. Bei der Eingabe darauf achten, dass nur
+Forward-Slash verwendet werden. Derzeit ist dieser Pfad noch auf C: und nicht
+alle Sonderzeichen beschränkt (8.3).</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
-Importart Shop wird ein LS pro Tag und Kunde angelegt.</p>
+allen Feldern werden vor dem Import die führenden Nullen entfernt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Übersetzung der in den Importdateien erhaltenen Artikelnummern wird in
+folgender Reihenfolge abgearbeitet:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.) wird die Artikelnummer als Kassenartikel im Speiseplan gefunden,
+so wird dies als Rezept des Speiseplans interpretiert</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Nun wird auf die Umrechnung geprüft (Küche, Grunddaten, Umrechnung) und wenn
+gefunden der Übersetzte Artikel mit dem Umrechnungsfaktor verwendet. Wurde auch
+kein Umrechnungsartikel gefunden, so wird angenommen, dass dies ein Artikel ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">c.) Artikelnummer.
+Hier wird automatisch erkannt ob dies ein einfacher Artikel oder ein Setartikel
+ist. Setartikel werden als Set in die Dateien eingetragen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Import der beiden Dateien wird von der Artikelseite her völlig identisch
+durchgeführt.<br>
+</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Durchführung des Imports stehen zwei unterschiedliche Funktionen zur
+Verfügung:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Einzelimport</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+kann, je nach Importtyp eine einzelne Datei für den Import ausgewählt werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Alle Daten einlesen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden alle Daten die sich im Importpfad (PFAD_KASSENIMPORTDATEN) befinden
+eingelesen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importformat
+OSCAR</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+wird für den Import die Tagesabschlussdatei verwendet. Diese ist wie folgt
+definiert:</p>
+
+<div align="left">
+  <table border="1" width="640" height="13">
+    <tr>
+      <td width="580" height="13"><b>Feld</b></td>
+      <td width="137" height="13"><b>Länge</b></td>
+      <td width="1083" height="13"><b>Bemerkung</b></td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Zeitintervall</td>
+      <td width="137" height="13">1</td>
+      <td width="1083" height="13">Wird nicht verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Datum</td>
+      <td width="137" height="13">8</td>
+      <td width="1083" height="13">JJJJMMTT</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Mandant</td>
+      <td width="137" height="13">4</td>
+      <td width="1083" height="13">Wird nicht verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Haus</td>
+      <td width="137" height="13">5</td>
+      <td width="1083" height="13">Wird nicht verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Betriebsstelle </td>
+      <td width="137" height="13">4</td>
+      <td width="1083" height="13">Anhand der Betriebsstelle wird über die
+        Filialnummer der Kunde ermittelt</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Artikel </td>
+      <td width="137" height="13">14</td>
+      <td width="1083" height="13">Artikelnummer der Kasse -&gt; Übersetzung
+        siehe</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Gesamtumsatz </td>
+      <td width="137" height="13">13</td>
+      <td width="1083" height="13">inkl. 2 Nachkommastellen</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Gesamtmenge </td>
+      <td width="137" height="13">12</td>
+      <td width="1083" height="13">inkl. 3 Nachkommastellen</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Umsatz Sonderpreis1</td>
+      <td width="137" height="13">13</td>
+      <td width="1083" height="13">inkl. 2 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Umsatz Sonderpreis2</td>
+      <td width="137" height="13">13</td>
+      <td width="1083" height="13">inkl. 2 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Umsatz Sonderpreis3</td>
+      <td width="137" height="13">13</td>
+      <td width="1083" height="13">inkl. 2 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Umsatz Sonderpreis4</td>
+      <td width="137" height="13">13</td>
+      <td width="1083" height="13">inkl. 2 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Umsatz Sonderpreis5</td>
+      <td width="137" height="13">13</td>
+      <td width="1083" height="13">inkl. 2 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Menge zu Sonderpr.1</td>
+      <td width="137" height="13">12</td>
+      <td width="1083" height="13">inkl. 3 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Menge zu Sonderpr.2</td>
+      <td width="137" height="13">12</td>
+      <td width="1083" height="13">inkl. 3 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Menge zu Sonderpr.3</td>
+      <td width="137" height="13">12</td>
+      <td width="1083" height="13">inkl. 3 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Menge zu Sonderpr.4</td>
+      <td width="137" height="13">12</td>
+      <td width="1083" height="13">inkl. 3 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="580" height="13">Menge zu Sonderpr.5</td>
+      <td width="137" height="13">12</td>
+      <td width="1083" height="13">inkl. 3 Nachkommastellen, wird nicht
+        verwendet</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importformat
+ADS 3000</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
+hier wird für den Import die Tagesabschlussdatei verwendet. Diese ist wie folgt
+definiert:</p>
+
+<div align="left">
+  <table border="1" width="637" height="22">
+    <tr>
+      <td width="601" height="22">Feld</td>
+      <td width="196" height="22">Länge</td>
+      <td width="1114" height="22">Bemerkung</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Kundennummer </td>
+      <td width="196" height="22">8</td>
+      <td width="1114" height="22">Anhand der Kundennummer wird über die
+        Filialnummer der Kunde ermittelt</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Rechnungsnummer </td>
+      <td width="196" height="22">12</td>
+      <td width="1114" height="22">Wird im Lieferschein unter Kommission
+        eingetragen</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Artikelnummer </td>
+      <td width="196" height="22">5</td>
+      <td width="1114" height="22">Artikelnummer der Kasse -&gt; Übersetzung
+        siehe</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Platzhalter </td>
+      <td width="196" height="22">3</td>
+      <td width="1114" height="22">wird nicht verwendet</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Artikelbezeichnung </td>
+      <td width="196" height="22">20</td>
+      <td width="1114" height="22">wird nicht verwendet</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Datum </td>
+      <td width="196" height="22">6</td>
+      <td width="1114" height="22">JJMMTT</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Vorzeichen </td>
+      <td width="196" height="22">1</td>
+      <td width="1114" height="22">+ / -</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Menge </td>
+      <td width="196" height="22">7</td>
+      <td width="1114" height="22">inkl. 2 Nachkommastellen</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Preis </td>
+      <td width="196" height="22">7</td>
+      <td width="1114" height="22">inkl. 2 Nachkommastellen</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">MwSt-Kennzeichen </td>
+      <td width="196" height="22">1</td>
+      <td width="1114" height="22">wird nicht verwendet</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Nummer</td>
+      <td width="196" height="22">5</td>
+      <td width="1114" height="22">wird nicht verwendet</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Bedienernummer </td>
+      <td width="196" height="22">2</td>
+      <td width="1114" height="22">wird auf die zu verwendende Preislistennummer
+        übersetzt. Dazu muss im Artikel, Grunddaten, Preislisten, je Preisliste
+        die entsprechende Fremdsystemnummer definiert sein.</td>
+    </tr>
+    <tr>
+      <td width="601" height="22">Platzhalter </td>
+      <td width="196" height="22">4</td>
+      <td width="1114" height="22">wird nicht verwendet</td>
+    </tr>
+  </table>
+</div>
+<u></u>
 
 </body>
 
