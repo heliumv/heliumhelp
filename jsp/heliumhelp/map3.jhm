@@ -38,33 +38,33 @@
   <mapID target="Kurze_Lange_Sollstunden_gif" url="Zeiterfassung/Kurze_Lange_Sollstunden.gif"/>
   <mapID target="Loszeiterfassung_gif" url="Zeiterfassung/Loszeiterfassung.gif"/>
   <mapID target="USB_Fingerprint_ComPort_gif" url="Zeiterfassung/USB_Fingerprint_ComPort.gif"/>
-  <mapID target="Zahlungsvorschlag_Elba_Import_Feldzuordnungsuebersicht_gif" url="Finanzbuchhaltung/Zahlungsvorschlag_Elba_Import_Feldzuordnungsuebersicht.gif"/>
   <mapID target="Proxy_umgehen_gif" url="Client/Proxy_umgehen.gif"/>
+  <mapID target="Zahlungsvorschlag_Elba_Import_Feldzuordnungsuebersicht_gif" url="Finanzbuchhaltung/Zahlungsvorschlag_Elba_Import_Feldzuordnungsuebersicht.gif"/>
   <mapID target="Finger_falsch2_gif" url="Zeiterfassung/Finger_falsch2.gif"/>
   <mapID target="Hompage_Knopf_gif" url="Kunde/Hompage_Knopf.gif"/>
   <mapID target="Warenverkehrsnummer_gif" url="artikel/Warenverkehrsnummer.gif"/>
-  <mapID target="Finger_template erzeugt_jpg" url="Zeiterfassung/Finger_template erzeugt.jpg"/>
   <mapID target="Maschinendefinition_gif" url="Zeiterfassung/Maschinendefinition.gif"/>
+  <mapID target="Finger_template erzeugt_jpg" url="Zeiterfassung/Finger_template erzeugt.jpg"/>
   <mapID target="Wiederholungsintervall_gif" url="auftrag/Wiederholungsintervall.gif"/>
   <mapID target="Fingerprint_htm" url="Zeiterfassung/Fingerprint.htm"/>
   <mapID target="putty_gif" url="Client/putty.gif"/>
-  <mapID target="Rahmenabrufmenge_gif" url="Bestellung/Rahmenabrufmenge.gif"/>
   <mapID target="Diva_Capi_gif" url="Installation/Diva_Capi.gif"/>
-  <mapID target="Proxyserver_Fehler_gif" url="Client/Proxyserver_Fehler.gif"/>
+  <mapID target="Rahmenabrufmenge_gif" url="Bestellung/Rahmenabrufmenge.gif"/>
   <mapID target="Schichtzeit_gif" url="Zeiterfassung/Schichtzeit.gif"/>
+  <mapID target="Proxyserver_Fehler_gif" url="Client/Proxyserver_Fehler.gif"/>
   <mapID target="Ungueltige-Barcodes_gif" url="System/Ungueltige-Barcodes.gif"/>
-  <mapID target="Rechnungsdruck_mit_Rabatt_gif" url="Kunde/Rechnungsdruck_mit_Rabatt.gif"/>
   <mapID target="Rechnung_aus_Auftrag_gif" url="Rechnung/Rechnung_aus_Auftrag.gif"/>
-  <mapID target="Rahmen_Abrufe_gif" url="Bestellung/Rahmen_Abrufe.gif"/>
+  <mapID target="Rechnungsdruck_mit_Rabatt_gif" url="Kunde/Rechnungsdruck_mit_Rabatt.gif"/>
   <mapID target="Deutsche_Mehrwertsteuersaetze_gif" url="Client/Deutsche_Mehrwertsteuersaetze.gif"/>
+  <mapID target="Rahmen_Abrufe_gif" url="Bestellung/Rahmen_Abrufe.gif"/>
   <mapID target="Zeitnodell1_gif" url="personal/Zeitnodell1.gif"/>
   <mapID target="Fingerprint_png" url="Bilder/Fingerprint.png"/>
   <mapID target="Mehrsprachigkeit_htm" url="Allgemein/Mehrsprachigkeit.htm"/>
   <mapID target="UI_enUS_gif" url="Allgemein/UI_enUS.gif"/>
   <mapID target="Fehlermeldung_Stift_gif" url="Zeiterfassung/Fehlermeldung_Stift.gif"/>
   <mapID target="Finger_falsch1_gif" url="Zeiterfassung/Finger_falsch1.gif"/>
-  <mapID target="Finger_einlesen_Dialog_jpg" url="Zeiterfassung/Finger_einlesen_Dialog.jpg"/>
   <mapID target="Maschinenzeiterfassung_manuell_gif" url="Zeiterfassung/Maschinenzeiterfassung_manuell.gif"/>
+  <mapID target="Finger_einlesen_Dialog_jpg" url="Zeiterfassung/Finger_einlesen_Dialog.jpg"/>
   <mapID target="LesserGNULicense_htm" url="System/LesserGNULicense.htm"/>
   <mapID target="Zeitmodell_Kopf_Definition_gif" url="personal/Zeitmodell_Kopf_Definition.gif"/>
   <mapID target="Kundenjournal_speichern_gif" url="Kunde/Kundenjournal_speichern.gif"/>
