@@ -721,7 +721,7 @@
   <mapID target="Kueche2_gif" url="Kueche/Kueche2.gif"/>
   <mapID target="preise_gif" url="Bilder/preise.gif"/>
   <mapID target="Zahlung_htm" url="Rechnung/Zahlung.htm"/>
-  <mapID target="LieferscheinUmsatzÜbersicht2_gif" url="Lieferschein/LieferscheinUmsatzÜebersicht2.gif"/>
+  <mapID target="LieferscheinUmsatzÜbersicht2_gif" url="Lieferschein/LieferscheinUmsatzUebersicht2.gif"/>
   <mapID target="Kontierung_gif" url="Eingangsrechnung/Kontierung.gif"/>
   <mapID target="Zeiterfassungsstifte_htm" url="Zeiterfassung/Zeiterfassungsstifte.htm"/>
   <mapID target="zulage3_jpg" url="Zeiterfassung/zulage3.jpg"/>
@@ -864,7 +864,7 @@
   <mapID target="Zutrittsobjekt_jpg" url="Zutritt/Zutrittsobjekt.jpg"/>
   <mapID target="TrumpfTops_htm" url="Fertigung/TrumpfTops.htm"/>
   <mapID target="fertigung_jpg" url="Statusdiagramme/fertigung.jpg"/>
-  <mapID target="HP_Großformat_Drucker_Plotter_bmp" url="Bilder/Fremde_Bilder/HP_Großformat_Drucker_Plotter.bmp"/>
+  <mapID target="HP_Großformat_Drucker_Plotter_bmp" url="Bilder/Fremde_Bilder/HP_Grossformat_Drucker_Plotter.bmp"/>
   <mapID target="Ueberstundendruck_cdr" url="Bilder/Ueberstundendruck.cdr"/>
   <mapID target="Taskplaner_Erweiterte_Optionen_gif" url="Client/Taskplaner_Erweiterte_Optionen.gif"/>
   <mapID target="anrede_ansp_a_gif" url="Partner/anrede_ansp_a.gif"/>
