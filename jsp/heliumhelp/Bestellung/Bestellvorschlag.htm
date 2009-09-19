@@ -319,9 +319,67 @@ Bestellvorschlages ermittelt werden, ob die im derzeitigen Bestellvorschlag
 befindlichen Artikel auch beim nächsten Lauf des Bestellvorschlages noch
 rechtzeitig bestellt würden.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie werden aus dem Bestellvorschlag einzelne Bestellungen erzeugt ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Durch Klick auf den Button <img border="0" src="Bestellungen_aus_Bestellvorschlag_erzeugen.gif" width="30" height="26">
+wird die Überleitung des Bestellvorschlages in Einzelbestellungen gestartet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+stehen hier folgende Möglichkeiten zur Verfügung:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<div align="left">
+  <table border="1" width="578" height="18">
+    <tr>
+      <td width="173" height="18">für jeden Lieferanten und gleichen Termin
+        eine Bestellung anlegen</td>
+      <td width="983" height="18">Es werden alle Positionen des
+        Bestellvorschlags in Bestellungen umgewandelt.<br>
+        Je Lieferant und nur Positionen mit gleichen Terminen werden in die
+        jeweils eine Bestellung übernommen. D.h. für jeden unterschiedlichen
+        Bestelltermin wird eine eigene Bestellung angelegt.</td>
+    </tr>
+    <tr>
+      <td width="173" height="18">je Lieferant eine Bestellung anlegen</td>
+      <td width="983" height="18">Wie oben, jedoch werden die Positionen mit den
+        unterschiedlichsten Terminen alle in eine Bestellung je Lieferant
+        übernommen. In den Positionsterminen werden die Wunschtermine
+        hinterlegt.</td>
+    </tr>
+    <tr>
+      <td width="173" height="18">ein Lieferant und ein Termin</td>
+      <td width="983" height="18">Hier muss der Lieferant und der gewünschte
+        Termin ausgewählt werden. Es werden nur die zutreffenden Positionen aus
+        dem Bestellvorschlag in eine Bestellung übertragen.</td>
+    </tr>
+    <tr>
+      <td width="173" height="18">ein Lieferant und alle Positionen des
+        Lieferanten</td>
+      <td width="983" height="18">Nach Auswahl des Lieferanten werden alle
+        Positionen mit unterschiedlichsten Terminen in eine Bestellung
+        übertragen. Die Wunschtermine aus dem Bestellvorschlag werden in den
+        Positionsterminen hinterlegt.</td>
+    </tr>
+    <tr>
+      <td width="173" height="18">Abrufbestellungen zu vorhandenen
+        Rahmenbestellungen erzeugen.</td>
+      <td width="983" height="18">Bei dieser Überleitung wird versucht eine
+        Zuordnung der Bestellvorschlagspositionen zu den offenen
+        Rahmenbestellungen herzustellen. Also die Bestellvorschlagspositionen
+        als Abrufe anzulegen.<br>
+        Wird der selbe Artikel zum selben Termin mehrfach benötigt, so werden
+        diese Positionen zusammengezogen.<br>
+        Von der Reihenfolge her, werden immer die ältesten offenen
+        Rahmenpositionen zuerst erfüllt. Gegebenenfalls wird, bei Bedarf, der
+        letzte Rahmen überbestellt. Also mehr bestellt als eigentlich laut
+        Rahmen noch abzurufen wäre. Diese Überbestellungen werden am Ende der
+        Überleitung angezeigt.</td>
+    </tr>
+  </table>
+</div>
 
 </body>
 
