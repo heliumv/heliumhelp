@@ -16,37 +16,14 @@
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
-wird Oscar oder ADS 3000 importiert</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>OSCAR</b></p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
-Da alle Dateien in einem Verzeichnis erwartet werden, wird anhand der
-Dateinamenserweiterungen (Extensions) die Unterscheidung welche Filetype dies
-ist vorgenommen.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
-Dateien im Format OSCAR <b>müssen</b> die Erweiterung .LIM haben.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>
-ADS 3000</b></p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
-werden alle Dateinamenserweiterungen als ADS 3000 Datei angenommen, mit Ausnahme
-.LIM</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+werden Daten der Kassentypen Oscar und ADS 3000 importiert</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importarten:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
-der Partnerklasse wird die Art des Imports definiert, siehe Grunddaten</p>
+der Partnerklasse wird die Art des Imports definiert, siehe Grunddaten.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importart
 Shop ... erzeugt pro Tag und Kunde einen Lieferschein</p>
@@ -65,7 +42,7 @@ werden.</p>
 keine Importart, keine Partnerklasse definiert, so wird ein entsprechender
 Fehlereintrag angelegt.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
 Es muss für jeden Kunden die Partnerklasse mit der entsprechenden Importart definiert sein.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
@@ -74,14 +51,14 @@ Es muss für jeden Kunden die Partnerklasse mit der entsprechenden Importart defi
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Shops
 und Essensausgaben sind in einer Datei und für das Format der Oscarkasse
-erstellt. Die Extension muss LIM sein.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gästehaus
-= ADS3000 sind alle anderen Dateien.</p>
+erstellt.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
-Dateien sind in einem Verzeichnis, dessen Pfad über System, Parameter,
-PFAD_KASSENIMPORTDATEN definiert wird. Bei der Eingabe darauf achten, dass nur
+Daten des Gästehauses sind im Format ADS3000 erstellt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Dateien werden je nach Kassentyp in den entsprechenden Pfaden (System, Parameter,
+PFAD_KASSENIMPORTDATEN_%) erwartet. Bei der Eingabe darauf achten, dass nur
 Forward-Slash verwendet werden. Derzeit ist dieser Pfad noch auf C: und nicht
 alle Sonderzeichen beschränkt (8.3).</p>
 
@@ -121,15 +98,22 @@ Verfügung:</p>
 Einzelimport</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
 kann, je nach Importtyp eine einzelne Datei für den Import ausgewählt werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+Sie sicher dass der entsprechende Importpfad unter System, Parameter definiert
+ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">OSCAR
+... PFAD_KASSENIMPORTDATEN_OSCAR</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ADS
+3000 ... PFAD_KASSENIMPORTDATEN_ADS</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Es werden alle Dateien im jeweiligen Verzeichnis eingelesen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
 Alle Daten einlesen</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
-werden alle Daten die sich im Importpfad (PFAD_KASSENIMPORTDATEN) befinden
+werden alle Daten beider Importpfade
 eingelesen.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -251,8 +235,9 @@ definiert:</p>
     </tr>
   </table>
 </div>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importformat
 ADS 3000</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
@@ -339,6 +324,12 @@ definiert:</p>
   </table>
 </div>
 <u></u>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 
