@@ -137,7 +137,7 @@ Datei ist wie folgt:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ident; Artikelnummer-Lieferant;
 Bezeichnung-Lieferantenartikel; Einzelpreis; Rabatt; Nettopreis; Preis-ist-gültig-ab;
 Menge; Mindestbestellmenge; Verpackungseinheit; Rabattgruppe; Herstellerbezeichnung-verwenden;
-Webshop<br>
+Webshop [; Staffelmenge; Staffelrabatt; Staffelpreis; Staffel-gültigab]<br>
 </p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sind für diesen
@@ -147,10 +147,33 @@ werden sie neu angelegt.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wichtig: Die beiden
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Wichtig:</b> Die beiden
 boolschen Werte Herstellerbezeichnung-verwenden;
-Webshop müssen mit 0 für flasch und 1 für wahr übergeben werden. Wichtig
+Webshop müssen mit 0 für Falsch und 1 für Wahr übergeben werden. Wichtig
 auch dass das Datum in TT.MM.JJJJ übergeben wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Einträge ab Staffelmenge sind optional, es müssen aber, wenn verwendet, alle
+vier Werte übergeben werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte dass für jede Staffelmenge auch die Werte des Artikellieferanten
+angegeben werden müssen. Aufgrund dessen, dass immer der bestehende Datensatz
+überschrieben wird, ist es erforderlich, dass in allen Datensätzen des
+Artikellieferanten richtige Daten enthalten sind.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Folgende
+Felder müssen immer einen Inhalt haben: Ident, Einzelpreis, Rabatt, Nettopreis,
+Preis-ist-gültig-ab, Menge, Herstellerbezeichnung-verwenden,
+Webshop und wenn die Staffeldefinitionen verwendet werden, so müssen alle vier
+Staffelwerte befüllt sein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
+beim Import Fehler festgestellt, so werden nur die ersten dreißig Fehlerhaften
+Daten mit den jeweiligen Zeilennummern angezeigt. Bitte beachten Sie, dass die
+erste Zeile als Titelzeile interpretiert wird und daher ausgelassen wird. Die
+angegebenen Zeilennummern beziehen sich auf die echten Datenzeilen. Haben Sie
+nun die Ursprungsdaten in einer Tabellenkalkulation geöffnet, so ist zu den
+angegeben Zeilennummern +1 hinzuzuzählen.</p>
 
 </body>
 

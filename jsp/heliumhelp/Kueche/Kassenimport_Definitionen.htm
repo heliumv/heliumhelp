@@ -105,8 +105,10 @@ ist.</p>
 ... PFAD_KASSENIMPORTDATEN_OSCAR</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ADS
 3000 ... PFAD_KASSENIMPORTDATEN_ADS</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
 Es werden alle Dateien im jeweiligen Verzeichnis eingelesen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Die Pfadangaben sind aus Sicht des Helium V Servers zu erstellen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
@@ -161,7 +163,7 @@ definiert:</p>
       <td width="580" height="13">Artikel </td>
       <td width="137" height="13">14</td>
       <td width="1083" height="13">Artikelnummer der Kasse -&gt; Übersetzung
-        siehe</td>
+        siehe unten</td>
     </tr>
     <tr>
       <td width="580" height="13">Gesamtumsatz </td>
@@ -267,7 +269,7 @@ definiert:</p>
       <td width="601" height="22">Artikelnummer </td>
       <td width="196" height="22">5</td>
       <td width="1114" height="22">Artikelnummer der Kasse -&gt; Übersetzung
-        siehe</td>
+        siehe unten</td>
     </tr>
     <tr>
       <td width="601" height="22">Platzhalter </td>
@@ -327,8 +329,40 @@ definiert:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Auflösung der aus den Kassendateien erhaltenen Artikelnummern</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die in den Kassendateien enthaltenen Artikelnummern werden in folgender
+Reihenfolge aufgelöst. Bitte beachten Sie, dass bei bei allen numerischen
+Feldern die führenden Nullen entfernt werden.</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Suche
+    Artikelnummer im Speiseplan,</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Suche
+    Artikelnummer in der Umrechnung (Küche, Grunddaten, Umrechnung</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Suche
+    Artikelnummer in Artikel<br>
+    hier wird ein eventuell definierter Setartikel automatisch erkannt und
+    entsprechend behandlet.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+    die Artikelnummer nicht gefunden, so wird ein Fehlereintrag erstellt.</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+die Artikelnummer gefunden, so wird versucht diese vom entsprechenden Lager
+abzubuchen. Konnte die Buchung durchgeführt werden, so wird dies ebenfalls
+protokolliert ansonsten wird ebenfalls ein Fehlereintrag erstellt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+beim Import in beiden Arten (Shop und Essensausgabe) Datum der jeweiligen
+Buchung übergeben werden, werden diese als Datum für das jeweilige Tageslos
+bzw. den Lieferschein verwendet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>

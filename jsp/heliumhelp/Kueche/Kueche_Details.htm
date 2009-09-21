@@ -97,7 +97,8 @@ für die Belegart Kueche.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dialogbreite
 z.B. 1000 Pixel, unter Query kopieren Sie bitte folgenden String ein.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="-%3e%20Extraliste%20für%20Kassenimport:SELECT%20p.c_text%20AS%20Meldung%20%20,%20p.t_quelle%20AS%20Buchungsdatum%20,%20p.t_anlegen%20AS%20Anlagedatum%20FROM%20FLRProtokoll%20p%20WHERE%20%20p.c_typ='KASSA_OSCAR'%20ORDER%20BY%20p.t_anlegen%20DESC">SELECT p.c_text AS Meldung  , p.t_quelle AS Buchungsdatum , p.t_anlegen AS Anlagedatum FROM FLRProtokoll p WHERE  p.c_typ='KASSA_OSCAR' ORDER BY p.t_anlegen DESC</a></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="SELECT%20p.c_typ%20as%20TYP,%20p.c_text%20AS%20Meldung%20,%20p.t_quelle%20AS%20Buchungsdatum%20,%20p.t_anlegen%20AS%20Anlagedatum%20FROM%20FLRProtokoll%20p%20WHERE%20p.c_typ='KASSA_OSCAR'%20or%20p.c_typ='KASSA_ASD3000'%20ORDER%20BY%20p.t_anlegen%20DESC">SELECT p.c_typ as TYP, p.c_text AS Meldung , p.t_quelle AS Buchungsdatum , p.t_anlegen AS Anlagedatum FROM FLRProtokoll p WHERE p.c_typ='KASSA_OSCAR' or
+p.c_typ='KASSA_ADS3000' ORDER BY p.t_anlegen DESC</a></p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
