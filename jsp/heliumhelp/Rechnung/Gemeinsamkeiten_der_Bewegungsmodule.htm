@@ -402,6 +402,81 @@ ist die Sortierung nach Kunde bzw. Lieferant abgeschaltet. Dies ist anhand des <
 weißen Punktes vor dem Namen ersichtlich. Um diese Sortierung nun einzuschalten
 muss der Parameter (im Modul System) BEWEGUNGSMODULE_SORTIERUNG_PARTNER_ORT auf
 1 gestellt werden. Nach dieser Umstellung starten Sie bitte Ihren Client neu.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wenn ich einen Sonderrabatt geben muss, wie mache ich das richtig ?</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
+Werden z.B. in Angeboten Rabatte gegeben, so empfiehlt sich, von Anfang an diese
+Daten richtig in Helium V einzupflegen. In diesem Zusammenhang sind zwei Punkte
+zu beachten.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">a.)
+wie ist der Warenfluss ?</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">b.)
+soll, am Ende in der Rechnung bzw. in den Umsatzstatistiken dieser negative
+Umsatz in der jeweiligen Artikelgruppe/klasse aufscheinen oder unter unbekannt.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">a.)
+Warenfluss:</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">In
+aller Regel gewähren Sie dem Kunden den Rabatt, also findet ein Warenfluss von
+Ihnen zum Kunden statt. Das bedeutet bei der Menge ist eine positive Zahl
+einzugeben und der Preis ist mit Minus einzugeben.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Würde
+bei der Menge eine negative Zahl eingegeben, so bedeutet dies, dass Sie die Ware
+vom Kunden zurückerwarten, z.B. weil er Ihnen im Tausch ein altes Gerät
+zurückgibt. Bedenken Sie bitte, dass diese Buchungen von Helium V ab der
+Auftragsverwaltung berücksichtigt / unterstützt werden. D.h. wenn Sie bei
+einem Auftrag einen Artikel mit negativer Menge eingeben, so wir davon
+ausgegangen, dass dieser Artikel zum Finaltermin des Auftrages wieder dem Lager
+zugebucht wird. Dies wird vor allem in der Bewegungsvorschau und damit in den
+Bestellvorschlägen entsprechend berücksichtigt.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">b.)
+Artikel oder Handeingabe</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Handeingabe
+ist hier sicherlich das Einfachste. Diese Buchung hat jedoch den deutlichen
+Nachteil, dass in den Umsatzstatistiken diese Buchung als unbekannte
+Artikelgruppe/klasse angezeigt wird. In den Artikelstatistiken kann die
+Handbuchung nicht angeführt werden. Es empfiehlt sich daher hier z.B. je
+Artikelgruppe einen nicht Lagerbewirtschafteten Artikel einzurichten und diesen
+im jeweiligen Beleg zu verwenden und die Artikeltexte entsprechend zu
+übersteuern.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt"><b>Hinweis:</b></p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Es
+ist auch oft die Forderung gegeben für eine Gruppe von Artikeln einen
+bestimmten Pauschalpreis zu geben. Verwenden Sie dazu bitte die Gruppierung
+mittels der Positionsart Position mit der Einstellung Positionspreis
+unterdrücken, bzw. Positionspreis andrucken.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt"><img border="0" src="Gemein_Positon.gif" width="382" height="102">
+</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Hier
+haben Sie die Möglichkeit einen Pauschalpreis zu vergeben. Dies bewirkt, dass
+die Statistikpreise der Artikel entsprechend anteilig nach Positionswert
+umgerechnet werden und so richtig in den Statistiken dargestellt werden.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt"><b>Hinweis
+2:</b></p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Alternativ
+können auch die Zusatzrabatte in den Positionen (Ident, Handeingabe) verwendet
+werden.</p>
+<p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Q:
+Wie werden Mengen richtig eingeben?</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
+Bei den Ausgangsmodulen, also Angebot, Auftrag, Lieferschein, Rechnung, Fertig
+(Los) bedeutet eine positive Menge, dass diese Ware vom Lager abgebucht wird und
+an den Kunden, in die Fertigung gebucht wird. Im Lieferschein haben Sie die
+Möglichkeit negative Mengen einzugeben. Dies bedeutet, dass die Menge zurück
+in das in den Kopfdaten angegebene Lager gebucht wird.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Im
+Modul Gutschrift, wird ebenfalls Ware zurückgenommen, wenn es sich um eine
+Mengengutschrift handelt. D.h. hier werden positive Mengen auf das angegebene
+Lager zugebucht.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Im
+Modul Bestellung werden im Wareneingang positive Mengen an das definierte Lager
+zugebucht.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Bei
+der Losablieferung werden Mengen von der Produktion in das in den Kopfdaten
+angegebene Ziellager zugebucht.</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
 
 </body>
