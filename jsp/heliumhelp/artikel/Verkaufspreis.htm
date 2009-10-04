@@ -173,7 +173,7 @@ Artikel Preisvereinbarungen / Sonderpreisvereinbarung</p>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
 Sie hier die mit Ihrem Kunden vereinbarten Sonderkonditionen (SOKO), ab einer
-bestimmten Menge, für einen bestimmten Zeitraum.&nbsp;</p>
+bestimmten Menge, für einen bestimmten Zeitraum.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 SOKOs können für einen einzelnen Kunden oder eine Kundegruppe definiert werden. Der Begriff der Kundengruppe ist dabei gleichzusetzen mit der Rechnungsadresse des Kunden. Das bedeutet:<br>
 <br>
@@ -184,10 +184,12 @@ SOKOs werden für Kunden + Artikelgruppen oder einzelne Artikel erfasst.</p>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein Kunde kann auch ein Konzern sein.</li>
   <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bezugsgröße für den Standardrabattsatz ist die VK-Preisbasis des Artikels. Wenn keine VK-Basis erfaßt wurde, gilt der
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bezugsgröße für den Standardrabattsatz ist die VK-Preisbasis des Artikels. Wenn keine VK-Basis
+    erfasst wurde, gilt der
     Gestehungspreis des Artikels (siehe VK-Mengenstaffeln).</li>
   <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn sich die VK-Basis ändert, ändern sich entsprechende die erafssten SOKOs, der Preis wird zur Laufzeit berechnet und ist nicht in der DB abgespeichert.</li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn sich die VK-Basis ändert, ändern sich entsprechende die
+    erfassten SOKOs, der Preis wird zur Laufzeit berechnet und ist nicht in der DB abgespeichert.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In der Liste der KundenSOKOs gibt es eine Spalte für Artikel/Artikelgruppe. Eine Artikelgruppe wird zusätzlich durch ein vorangestelltes "G" gekennzeichnet, beim Artikel bleibt das Zeichen leer (nach dieser Spalte kann nicht sortiert werden).</li>
   <li>
@@ -206,7 +208,6 @@ SOKO greift nur dann, wenn ein Artikel als rabattierbar gekennzeichnet ist (Arti
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hat der Kunde eine SOKO für den Artikel für seine Rechnungsadresse hinterlegt?</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hat der Kunde eine SOKO für die Artikelgruppe des Artikel für seine Rechnungsadresse hinterlegt?
-<br>
   </li>
 </ol>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
@@ -249,11 +250,19 @@ Der durchschnittliche Preis der lagernden Waren</p>
 Mit diesem Preis verrechnen Sie Positionen an Ihre Kunden</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Vom
-Einkaufspreis zzgl. Transportkosten wird der Einstandspreis ermittelt. Mit
+Einkaufspreis zzgl. Transportkosten (und eventueller Fixkosten abzüglich
+allgemeinem Rabatt einer Bestellung) wird der Einstandspreis ermittelt. Mit
 Einstandswert (Einstandpreis * Menge) + altem Lagerwert wird der aktuelle
 Gestehungspreis ermittelt. Der Gestehungspreis + dem Mindestdeckungsbeitrag
 ergibt den Mindest-Verkaufspreis. Wird im Verkauf dieser Preis unterschritten so
 wird eine entsprechende Fehlermeldung ausgegeben.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Aufgrund welcher Adresse wird der zu verwendende Verkaufspreis bestimmt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Dies ist in aller Regel die erste Adresse des Verkaufsbeleges.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Lieferschein werden die Konditionen jedoch aufgrund der Rechnungsadresse
+bestimmt, also auch die Regel für die Verkaufspreisfindung.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann der Gestehungspreis verändert werden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
