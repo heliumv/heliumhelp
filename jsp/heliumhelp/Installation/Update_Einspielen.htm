@@ -54,7 +54,7 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     Helium V wird üblicherweise auf einem Datenvolume (z.B. D:\) installiert.
     Hier finden Sie ein Unterverzeichnis Helium_V. In einigen älteren
     Installationen sind Daten und Verzeichnis des Applikationservers getrennt.
-    D.h. hier finden Sie zusätzlich, meistens auf C:\ ein Verzeichnis jboss-4.0.4.GA.</li>
+    D.h. hier finden Sie zusätzlich, meistens auf C:\ ein Verzeichnis jboss-4.2.2.GA.</li>
       <li>
         <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Backup
     der bestehenden Installation.<br>
@@ -109,7 +109,7 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     Kopieren / Zippen Sie die Sicherungsdatei und legen Sie sie im Helium_V
     Backupverzeichnis ab.<br>
     <br>
-    Kopieren Sie nun das Verzeichnis \Helium_V\jboss-4.0.4.GA\server\helium in
+    Kopieren Sie nun das Verzeichnis \Helium_V\jboss-4.2.2.GA\server\helium in
     das Helium V Backupverzeichnis.<br>
   </li>
   <li>Update der Datenbank<br>
@@ -133,18 +133,33 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     ausgeführt. Dies wird im Ausgabefenster wie folgt angezeigt. <img border="0" src="Update_DB_Update_erfolgreich.gif" width="193" height="138"><br>
     Damit ist das Datenbankupdate erfolgreich durchgeführt.<br>
   </li>
+  <li>Zur Verfügung-Stellung des Clients für das automatische Clientupdate.<br>
+    Um das Client-Installationsprogramm für das halbautomatische Clientupdate
+    zur Verfügung zu stellen muss dieses in die Datenbank übertragen werden.
+    Klicken Sie daher auf <img border="0" src="Update_Client1.gif" width="73" height="33"> und geben
+    Sie das lpclientpc-installer.jar aus dem Verzeichnis ...deploy...\full\client\installer
+    an. Tragen Sie nun die Build Nummer, diese finden Sie in der Titelleiste des
+    Updatemanagers rechts <img border="0" src="Update_Client2.gif" width="67" height="20">, in die
+    Zeile BuildNr <img border="0" src="Update_Client3.gif" width="80" height="26"> ein und klicken Sie
+    nun auf <img border="0" src="Update_Client4.gif" width="49" height="31">. Damit wird das aktuelle
+    Client-Installationsprogramm in die Datenbank übernommen.<br>
+    Beachten Sie bitte dass dieses Verfahren nur für Windows-PCs zur Verfügung
+    steht. Für MAC und Linux Rechner wird bei einem entsprechenden
+    Build-Eintrag in der Datenbank ein passender Hinweis zur Aktualisierung des
+    Clients angezeigt.<br>
+  </li>
   <li>Update des Applikation Servers<br>
     <b>Hinweis: </b>Bei größeren Umstellungen muss die Änderung des
     Applikationsservers von einer entsprechend geschulten Person durchgeführt
     werden. Diese Beschreibung ist nur für einfache Updates gedacht.<br>
     Kopieren Sie die Dateien aus ....deploy...\full\server\deploy\ nach
-    ...\jboss-4.0.4.GA\server\helium\deploy\.<br>
+    ...\jboss-4.2.2.GA\server\helium\deploy\.<br>
     Kopieren Sie die Datei aus ....deploy...\full\server\deploy\mssql\fastlanereader.sar
-    nach ...\jboss-4.0.4.GA\server\helium\deploy\.<br>
+    nach ...\jboss-4.2.2.GA\server\helium\deploy\.<br>
     Entzippen Sie die Datei ...deploy...\full\report\report.zip und kopieren Sie
-    die unter ALL angeführten Unterverzeichnisse nach ...\jboss-4.0.4.GA\server\helium\report\<br>
-    Löschen Sie die Unerverzeichnisse ...\jboss-4.0.4.GA\server\helium\log,
-    sowie ..\tmp und ..\work<br>
+    die unter ALL angeführten Unterverzeichnisse nach ...\jboss-4.2.2.GA\server\helium\report\<br>
+    Löschen Sie die Unterverzeichnisse ...\jboss-4.2.2.GA\server\helium\log,
+    sowie ..\data, ..\jackrabitt, ..\tmp und ..\work<br>
   </li>
   <li>Zur Verfügung-Stellung des Client-Updates für die User<br>
     Kopieren Sie die Datei ...deploy...\full\client\installer\lpclientpc-installer.jar
@@ -153,8 +168,7 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
   <li>Start des Applikation Servers (Log prüfen)<br>
     Starten Sie nun den Helium V Applikationserver durch Klick auf Start <img border="0" src="Update_Start.gif" width="17" height="16">
     in den Diensten.<br>
-    Beobachten Sie bitte das Server.log. Sie finden diese unter
-    ...\jboss-4.0.4.GA\server\helium\log. Nach ca. 1-2 Minuten sollte diese
+    Beobachten Sie bitte das Server.log. Sie finden diese unter ...\jboss-4.2.2.GA\server\helium\log. Nach ca. 1-2 Minuten sollte diese
     Datei, wenn nicht in der Zwischenzeit schon Zugriffe von
     Zeiterfassungsstationen erfolgt sind, eine Größe zwischen 400 und 500 Byte
     haben. Wird diese Datei sehr schnell sehr viel größer, so konnte der
