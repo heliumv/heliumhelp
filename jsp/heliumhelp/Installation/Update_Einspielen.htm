@@ -16,22 +16,31 @@
 werden Updates Ihrer Helium V Installation von unseren Support-Team per
 Fernwartung eingespielt. Sollte es z.B. aus Gründen einer fehlenden Fernwartung
 nicht möglich sein, können Sie von uns eine kostenpflichtige Update-CD
-anfordern.</p>
+anfordern oder alternativ die aktuelle Version von unserem öffentlichen FTP
+Server herunter laden.<br>
+Bitte beachten Sie, dass das Herunterladen nur für Anwender mit gültigem
+Wartungsvertrag zur Verfügung steht. Es werden alle Zugriffe auf diesen FTP
+Server protokolliert. Sollte Sie Updates ohne Wartungsvertrag herunterladen,
+gehen wir davon aus, dass Sie Ihren Wartungsvertrag verlängern wollen. Der sich
+seit dem letzten Wartungszeitraum ergebende Nachzahlungsbetrag wird
+nachverrechnet.</p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Als
 aller ersten Schritt lesen Sie bitte diese Beschreibung vollständig durch und
 stellen Sie sicher, dass alle Voraussetzungen erfüllt sind und Sie auch in der
-Lage sind die notwendigen Schritte durchzuführen. Wir gehen hier davon aus,
+Lage sind die notwendigen Schritte durchzuführen.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Wir gehen hier davon aus,
 dass Sie mit der Administration derartiger System vertraut sind.</p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Zum
 Einspielen des Updates wird grundsätzlich wie folgt vorgegangen:</p>
 <ol>
-  <li>Prüfen der Verwendbarkeit der übermittelten CD</li>
+  <li>Prüfen der Verwendbarkeit der übermittelten CD / Daten</li>
   <li>Beenden der Verwendung von Helium V</li>
   <li>Stoppen des Helium V Dienstes</li>
   <li>Sichern der Datenbank und der Installation</li>
   <li>Update der Datenbank</li>
+  <li>Zur Verfügung-Stellung des Clients für das automatische Clientupd</li>
   <li>Update des Applikation Servers</li>
   <li>Zur Verfügung-Stellung des Client-Updates für die User</li>
   <li>Start des Applikation Servers (Log prüfen)</li>
@@ -132,6 +141,10 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     Es werden nun die erforderlichen Datenbank Updates der Reihe nach
     ausgeführt. Dies wird im Ausgabefenster wie folgt angezeigt. <img border="0" src="Update_DB_Update_erfolgreich.gif" width="193" height="138"><br>
     Damit ist das Datenbankupdate erfolgreich durchgeführt.<br>
+    <br>
+    <b>WICHTIG WICHTIG WICHTIG<br>
+    </b>Werden hier Hinweise angezeigt, so müssen diese in jedem Fall beachtet
+    werden.<br>
   </li>
   <li>Zur Verfügung-Stellung des Clients für das automatische Clientupdate.<br>
     Um das Client-Installationsprogramm für das halbautomatische Clientupdate
@@ -152,17 +165,30 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     <b>Hinweis: </b>Bei größeren Umstellungen muss die Änderung des
     Applikationsservers von einer entsprechend geschulten Person durchgeführt
     werden. Diese Beschreibung ist nur für einfache Updates gedacht.<br>
-    Kopieren Sie die Dateien aus ....deploy...\full\server\deploy\ nach
-    ...\jboss-4.2.2.GA\server\helium\deploy\.<br>
-    Kopieren Sie die Datei aus ....deploy...\full\server\deploy\mssql\fastlanereader.sar
-    nach ...\jboss-4.2.2.GA\server\helium\deploy\.<br>
+    Öffnen Sie die Datei&nbsp; ...\jboss-4.2.2.GA\server\helium\deploy\lpserver.ear&nbsp;
+    .z.B. mittels Totalcommander und Drücken von Strg+Bild_ab. Nun sehen Sie
+    die Dateien in dieser Datei. Gehen Sie auf ejb.jar und öffnen Sie diese
+    durch erneutes Drücken von Strg+Bild_ab. Nun wurde die Jar-Datei entzippt.&nbsp;<br>
+    Sie finden nun die Datei fastlanereader-service.xml.<br>
+    <img border="0" src="Update1.gif" width="398" height="102"><br>
+    Sichern Sie diese Datei.<br>
+    Verlassen Sie die entzippte Datei durch zweimal Doppelklick auf den
+    Verzeichniswechsel (..).<br>
+    <br>
+    Öffnen Sie nun die neue Server-Datei aus ....deploy...\full\server\deploy\lpserver.ear.
+    Gehen Sie wiederum in ejb.jar und kopieren Sie die oben gesicherte Datei
+    fastlanereader-service.xml über die bestehende. Es wird dadurch der
+    Serverzugriff auf MSSQL Datenbank umgestellt. Verlassen Sie die entzippte
+    Datei, bestätigen Sie dass die Änderungen zurückgeschrieben werden. Nun
+    kann die angepasste Server-Datei in das eigentliche Verzeichnis nach ...\jboss-4.2.2.GA\server\helium\deploy\
+    kopiert werden.<br>
     Entzippen Sie die Datei ...deploy...\full\report\report.zip und kopieren Sie
     die unter ALL angeführten Unterverzeichnisse nach ...\jboss-4.2.2.GA\server\helium\report\<br>
     Löschen Sie die Unterverzeichnisse ...\jboss-4.2.2.GA\server\helium\log,
     sowie ..\data, ..\jackrabitt, ..\tmp und ..\work<br>
   </li>
   <li>Zur Verfügung-Stellung des Client-Updates für die User<br>
-    Kopieren Sie die Datei ...deploy...\full\client\installer\lpclientpc-installer.jar
+    Für die Installation eventueller neuer Rechner kopieren Sie die Datei ...deploy...\full\client\installer\lpclientpc-installer.jar
     in das allgemeine Helium V Client Install-Verzeichnis.<br>
   </li>
   <li>Start des Applikation Servers (Log prüfen)<br>
@@ -170,15 +196,17 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     in den Diensten.<br>
     Beobachten Sie bitte das Server.log. Sie finden diese unter ...\jboss-4.2.2.GA\server\helium\log. Nach ca. 1-2 Minuten sollte diese
     Datei, wenn nicht in der Zwischenzeit schon Zugriffe von
-    Zeiterfassungsstationen erfolgt sind, eine Größe zwischen 400 und 500 Byte
+    Zeiterfassungsstationen erfolgt sind, eine Größe von ca. 2000 Byte
     haben. Wird diese Datei sehr schnell sehr viel größer, so konnte der
     Applikationserver nicht ordnungsgemäß gestartet werden. Versuchen Sie
     bitte den gesamten Server neu zu starten. Bringt auch dies keine besseren
     Ergebnisse, so wenden Sie sich bitte an Ihren Helium V Betreuer.<br>
   </li>
   <li>Update des Clients am Server<br>
-    Führen Sie nun die Aktualisierung des am Server befindlichen Clients mit
-    der unter 7.) beschriebenen Datei durch.<br>
+    Starten sie den bestehenden alten Client am Server. Es muss der automatische
+    Clientupdate Dialog kommen. Falls dies nicht möglich ist und Sie sicher
+    sind, dass unter 6. alles richtig gemacht wurde, so führen Sie bitte die Aktualisierung des am Server befindlichen Clients mit
+    der unter 8.) beschriebenen Datei durch.<br>
   </li>
   <li>Start des Clients und Durchführung einfacher Tests<br>
     Starten Sie den aktualisierten Client, rufen Sie jedes Modul einmal auf und
@@ -188,7 +216,8 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     über das durchgeführte Update, damit unser Hotline Service die richtigen
     Informationen für die Betreuung zur Verfügung hat.</li>
 </ol>
-<p>Hinweis: Beim Update werden keine anwenderspezifischen Formular geändert,
+<p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Hinweis:<br>
+</b>Beim Update werden keine anwenderspezifischen Formular geändert,
 wenn diese wie vereinbart in den anwender Unterverzeichnissen sind. Sollte es
 beim Ausdruck von speziell für Sie angepassten Formularen zu Problemen kommen,
 so stellen Sie bitte zuerst fest, ob die Ursache in Ihren Formularen zu finden
@@ -197,7 +226,17 @@ erreicht, dass die Standard Formulare verwendet werden. Funktioniert nun der
 Ausdruck, so wurden größere Änderungen in der Report-Schnittstelle
 durchgeführt. Bitte wenden Sie sich unter Angabe des Namens der Reportvorlage
 an Ihren Helium V Betreuer.</p>
-<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Vorgehensweise
+<p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Hinweis
+zum FTP Download</b></p>
+<p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Verwenden
+Sie für den FTP Download am Besten den Totalcommander (zu finden auf der
+Original Helium V CD unter Tools Totalcmd). Stellen Sie hier unter Netz, Neue
+Verbindung die entsprechenden Zugangsdaten ein.</p>
+<p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Sollte
+der Totalcommander nicht zur Verfügung stehen, so achten Sie bitte auf passiven
+Transfermodus Ihres FTP Browsers.</p>
+<p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="question"><b>Vorgehensweise
 bei Verwendung von Linux/Mac Betriebssystemen</b></p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Diese
 ist der oben beschriebenen Vorgehensweise sehr ähnlich. Da hier zusätzlich
