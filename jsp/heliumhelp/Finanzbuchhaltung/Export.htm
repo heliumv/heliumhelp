@@ -12,12 +12,8 @@
 <body>
 
 <h1>Export der AR/ER/GS Daten in eine fremde Finanzbuchhaltung</h1>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Welche
-Export Formate werden unterstützt?</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
-dazu bitte <a href="ExportFormate.htm">Exportformate</a>.</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Wenn Sie das Modul Finanzbuchhaltung der Helium V nicht besitzen, so besteht die
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn Sie das Modul Finanzbuchhaltung der Helium V nicht besitzen, so besteht die
 Möglichkeit Exportdaten für verschiedene Fremdbuchhaltungen zu exportieren.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln
 Sie dazu in das Modul Finanzbuchhaltung, wählen Sie im unteren Modulreiter
@@ -25,6 +21,167 @@ Export.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
 sehen Sie eine Übersicht über die bisherigen Exportläufe.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Vorbereitende
+Überlegungen für den automatischen Export der Rechnungen / Gutschriften von
+Helium V in Ihre Finanzbuchhaltung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+grundlegende Thema ist hier immer wieder die automatische Erlöskontenfindung
+für die Ausgangsrechnungen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+kennen zwei Arten wie die Erlöskontenfindung erfolgt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Kostenstellen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+definieren die Kostenstelle der jeweiligen Rechnung auf welches Erlöskonto
+gebucht wird. Zusätzlich kann für Sonderfälle die Kontierung der einzelnen
+Rechnung mit dem oberen Modulreiter Kontierung übersteuert werden und so eine
+manuelle Aufteilung der Erlöse vorgenommen werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Artikelgruppen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Export nach Artikelgruppen kann für jeder Artikelgruppe ein Erlöskonto
+zugeordnet werden. Damit wird erreicht, dass in Ihrer Finanzbuchhaltung eine
+ähnliche Struktur in den Erlöskonten vorliegt, wie bei den Artikelgruppen.
+Damit werden die Erlöse je Artikelgruppe auf die unterschiedlichen Länder
+verteilt gebucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+aller Regel wird die Aufteilung der Erlöse nach den Artikelgruppen verwendet.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+werden Erlöse in EU-Länder, Drittland etc. behandelt?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die richtige Zuordnung auf unterschiedliche Länderkonten zu erreichen steht die
+Übersetzung der Erlöskonten nach Länderarten zur Verfügung. D.h. in Ihrer
+Definition z.B. Artikelgruppen hinterlegen Sie immer das Inlandskonto für dies
+Artikelgruppe.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Konto selbst hinterlegen Sie welches Konto für eine andere Länderart bzw. für
+ein bestimmtes Land verwendet werden soll.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<div align="left">
+  <table border="1" width="432" height="15">
+    <tr>
+      <td width="432" height="15">Artikelgruppe</td>
+      <td width="432" height="15">Drehteile</td>
+    </tr>
+    <tr>
+      <td width="432" height="15">Erlöskonto Inland für Drehteile</td>
+      <td width="432" height="15">4020</td>
+    </tr>
+    <tr>
+      <td width="432" height="15">Erlöskonto EU mit UID-Nr für Drehteile</td>
+      <td width="432" height="15">4120</td>
+    </tr>
+    <tr>
+      <td width="432" height="15">Erlöskonto Drittland für Drehteile</td>
+      <td width="432" height="15">4220</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie zuerst alle Erlöskonten unter Sachkonto an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Artikelgruppe hinterlegen Sie unter Konto <img border="0" src="Fibu_Export_Artikelgruppen_Definition.gif" width="112" height="24">
+das Inalndskonto.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+definieren Sie noch die Übersetzungen für die Auslandskonten / Länderarten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+wählen das entsprechende Konto, wechseln auf Konto-Länderart&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Export_Laenderart_Uebersetzung.gif" width="354" height="49"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">und
+definieren, welches Konto anstelle des Inlandskontos für dieses Konto bei einer
+entsprechenden Art des Landes verwendet werden sollte.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollte
+für ein bestimmtes Exportland zusätzlich noch ein anderes Konto verwendet
+werden, so definieren Sie dies in gleicher Form unter Konto-Landzuweisung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Überleitung der Daten wird so vorgegangen, dass zuerst eine Übersetzung
+für das Land gesucht wird. Ist dafür keine Übersetzung vorhanden, so wird
+anhand der Länderart eine Übersetzung gesucht. Ist auch diese nicht vorhanden,
+so erscheint eine entsprechende Fehlermeldung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Anmerkung:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Eingangsrechnungen ist die Frage welches Aufwandskonto verwendet werden
+sollte relativ leicht beantwortet, da die Kontierung direkt in den Kopfdaten der
+Eingangsrechnung vorgenommen wird. Beim Export der Daten wird genau dieses Konto
+angegeben.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Wie
+wird die Länderart bestimmt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Bestimmung der Länderart richtet sich im wesentlichen nach der Definition des
+Landes unter System, System, Land.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Export_Laenderdefinition.gif" width="384" height="173"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<div align="left">
+  <table border="1" width="541" height="18">
+    <tr>
+      <td width="309" height="18">Inland</td>
+      <td width="773" height="18">Das Länderkennzeichen (LKZ) entspricht dem
+        eigenen Länderkennzeichen</td>
+    </tr>
+    <tr>
+      <td width="309" height="18">EU-Mitglied</td>
+      <td width="773" height="18">
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+unter EU-Mitglied seit ein Datum eingetragen, so wird ab diesem Zeitpunkt dieses
+Land als EU-Land angenommen.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <td width="309" height="18">Drittland</td>
+      <td width="773" height="18">treffen obige Definitionen nicht zu so wird
+        Drittland angenommen</td>
+    </tr>
+    <tr>
+      <td width="309" height="18">EU-Mitglied ohne&nbsp;<br>
+        UID Nummer</td>
+      <td width="773" height="18">Ist das Land des Kunden zwar ein EU-Land, ist
+        aber beim Kunden keine UID Nummer hinterlegt, z.B. für Privatkunden, so
+        wird diese Länderart angenommen.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Welche
 vorbereitenden Arbeiten sind für den Rechnungsexport erforderlich?</p>
@@ -39,10 +196,10 @@ Definieren Sie die Art des Exportes unter System, Parameter,
 FINANZ_EXPORT_VARIANTE entweder</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;
-- <a href="Kostenstellen">Kostenstellen</a></p>
+- Kostenstellen</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Kostenstellen">&nbsp;&nbsp;&nbsp;&nbsp;
-- Artikelgruppen</a></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;
+- Artikelgruppen</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">c.)
 Definieren Sie das Exportformat unter System, Parameter,
@@ -63,6 +220,11 @@ FINANZ_EXPORT_ZIELPROGRAMM</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">d.)
 Stellen Sie sicher, dass alle Artikelgruppen ein Erlöskonto zugeordnet haben
 bzw. dass alle Kostenstellen ein Sachkonto zugeordnet haben.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Welche
+Export Formate werden unterstützt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+dazu bitte <a href="ExportFormate.htm">Exportformate</a>.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -261,7 +423,7 @@ alternative Möglichkeit ist folgende Vorgehensweise:</p>
 geben Sie nun bitte: cd Desktop<br>
 ein. Bitte auf die Groß-Klein-Schreibung achten<br>
 Geben Sie nun bitte: pwd<br>
-ein (PWD = Print Working Direktory)<br>
+ein (PWD = Print Working Directory)<br>
 Nun sehen Sie genau den Pfad zum Desktop.<br>
 Z.B: /Users/wernerhehenwarter/Desktop</p>
 
@@ -308,10 +470,12 @@ eine exportierte Rechnung trotzdem geändert werden?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nein:
 Eine als exportiert gekennzeichnet Rechnung kann nicht geändert werden. Sie
-können jedoch den letzten Exportlauf oder eine enzelne Rechnung aus einem
+können jedoch den letzten Exportlauf oder eine einzelne Rechnung aus einem
 Exportlauf zurücknehmen. Dadurch ist die Rechnung
 nicht mehr als in die FiBu übernommen gekennzeichnet und kann daher geändert
-werden. Hinweis: Es ist dafür das Chef Buchhalter Recht (FB_CHEFBUCHHALTER)
+werden.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b> Hinweis:</b> Es ist dafür das Chef Buchhalter Recht (FB_CHEFBUCHHALTER)
 erforderlich.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
