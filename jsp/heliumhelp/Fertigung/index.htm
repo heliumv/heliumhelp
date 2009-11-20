@@ -269,10 +269,10 @@ Ware zugebucht, so erhalten Sie eine entsprechenden Hinweis, dass diese Ware in
 der Fertigung benötigt wird und Sie können diese wiederum sofort auf den
 Fertigungsauftrag ausbuchen.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
 Der Termin der Fehlmenge entspricht immer dem Produktionsstart des Loses.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
 Wurde beim Warenzugang die Fehlmenge auf Lager belassen, so muss dies durch die <a href="#Nachträgliche Materialentnahme">nachträgliche
 Materialbuchung</a> dem Los zugeordnet werden.<br>
 Bitte beachten Sie, dass bei der Auflösungsbuchung der Fehlmenge immer nur die
@@ -303,9 +303,8 @@ gesamten Bereich möglich. Die Fehlmenge wird entsprechend mitgezogen. Beachten
 Sie bitte, dass die angezeigte Sollsatzgröße / Sollsatzmenge aus der Sollmenge
 über die Losgröße errechnet wird.</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
-Nachträgliches
-ändern bereits ausgegebener Mengen</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Nachträgliches Ändern bereits ausgegebener Mengen"></a>
+Nachträgliches Ändern bereits ausgegebener Mengen</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
 kommt manchmal vor, dass bereits in ein Los ausgegeben Artikel wieder
@@ -388,6 +387,38 @@ Sie bitte den Unterschied zur oben beschriebenen Funktion <a href="#Nachträglich
 ändern der ausgegebenen Mengen</a>. Bei Rückgabe des Materials über die
 nachträgliche Materialentnahme werden die Fehlmengen <b>NICHT</b> erneut in das
 Los eingetragen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtiger
+Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+großer Unterschied zwischen den beiden Rückgaben ist auch in Bezug auf die
+Pflege der Gestehungspreise gegeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+zuviel Material in ein Los entnommen, so wird dieses mit aktuellem
+Gestehungspreis vom Lager ins Los gebucht. Wird diese Menge über die <a href="#Nachträgliche Materialentnahme">nachträgliche
+Materialentnahme</a> zurückgegeben, so wird eine Lagerzubuchung durchgeführt
+und dafür der zum Zeitpunkt der Zubuchung gültige Gestehungspreis verwendet.
+Es wird also eine weitere Zubuchung generiert. Wird nun die ursprüngliche
+Zubuchung, z.B. der Wareneingang verändert, so wirkt diese Veränderung bis ins
+Los, aber nicht mehr bei der Lagerrückgabe von Los ans Lager. Hier bleibt der
+alte Gestehungspreis erhalten. Dies kann soweit gehen, dass damit negative
+Gestehungspreise auf einem Los verursacht werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet: Müssen Mengen ans Lager zurückgegeben werden, so sollte dies in
+aller Regel über die <a href="#Nachträgliches Ändern bereits ausgegebener Mengen">Korrektur
+der bereits ausgegebenen</a> Mengen durchgeführt werden. Dies hat die
+Eigenschaft, dass dadurch die Entnahmebuchung rückgängig gemacht wird (so als
+wenn es sie nie gegeben hätte) und auf Grund dessen, wirken Änderungen der
+ursprünglichen Zubuchung wieder wie gedacht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Nachteil:</u>
+Werden Lagerbestände/-bewegungen zum Stichtag betrachtet und gehen diese
+Entnahmen / Rückgaben über diese Stichtagsbetrachtung, so ändert sich dadurch
+der Lagerstand / die Warenbewegung vor/zum Stichtag, wodurch die Betrachtung des
+Lagerstandes / der Warenbewegung zum nachfolgenden Stichtag verfälscht wird.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fehlmengen
 auflösen</p>

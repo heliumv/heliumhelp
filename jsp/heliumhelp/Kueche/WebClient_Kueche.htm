@@ -56,6 +56,13 @@ Erstellung einer Bestellung auf Termin</td>
         Terminbestellung</td>
     </tr>
     <tr>
+      <td width="232" height="16"><img border="0" src="WebCli1.gif" width="121" height="33">
+      </td>
+      <td width="1030" height="16">
+Erstellung eines Lieferantenlieferscheines zur Rückgabe von Waren an den
+Lieferanten z.B. Gebinde</td>
+    </tr>
+    <tr>
       <td width="232" height="16"><img border="0" src="WebCli6.gif" width="104" height="32"></td>
       <td width="1030" height="16">
 Abmeldung&nbsp;</td>
@@ -397,6 +404,17 @@ für Trennung unterschiedlicher Essensausgabestellen (Fertigungsort)</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Arbeitsplatzparameter
 von welchem Lager der LS abbucht und der RS zubucht.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Im Shop gibt es nun auch einen Lieferschein, dafür muss der Arbeitsplatzparameter KUE_WEB_MENURECHTE mit 32 zu ergänzen = Lieferanten Lieferschein. Beim Lieferanten-Lieferschein kann aus den selben Lieferanten wie für die Bestellung ausgewählt werden und auch die gleichen Artikel bebucht werden. Für Ware (Gebinde) an Lieferant ist eine positive Menge (also ohne Vorzeichen) einzugeben, für Ware von Lieferant an Shop ist der Lieferschein mit einer negativen Menge zu erfassen.<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mögliche
 Fehlermeldungen und deren Bedeutung:</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
@@ -494,6 +512,7 @@ dieser Station durchgeführt werden dürfen.</p>
         4 ... Direktbestellung<br>
         8 ... Terminbestellung<br>
         16 ... Wareneingang<br>
+        32 ... Lieferanten Lieferschein
         <br>
         Darf ein Webclient z.B. Lieferschein und Rücklieferung verwenden, so
         ist hier 3 (1+2) einzugeben.

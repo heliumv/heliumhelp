@@ -54,7 +54,7 @@ der Bereich 2000-2999 und für die Kreditoren der Bereich 3000-3999 reserviert.
 In Deutschland ist üblicherweise für die Debitoren der Bereich 10000-19999 und
 die Kreditoren der Bereich 70000-79999 eingestellt.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
 Die Stellenanzahl der Sach- und Personenkonten können in den
 Systemeinstellungen unter Parameter definiert werden.</p>
 
@@ -411,7 +411,121 @@ Abteilung gibt, ist ist auch für die Anlagenkonten eine Kostenstelle zu
 definieren. Verwenden Sie am Besten die Kostenstelle der Person die die Verantwortung dafür übernimmt.
 In einigen Fällen wird das auch die Geschäftsleitung sein.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"></p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Welche Daten müssen für die Sachkonten definiert werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn die Sachkonten nur für die Überleitung der Konten an eine Fremde
+Buchhaltung definiert werden müssen, so sollten folgende Felder definiert
+werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Kontoerfassung.gif" width="306" height="128"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kontonummer
+... Nummer des Sachkontos. Dies muss mit Ihrer Buchhaltung übereinstimmen</p>
+
+<div align="left">
+  <table border="1" width="559" height="15">
+    <tr>
+      <td width="228" height="15">Bezeichnung&nbsp;</td>
+      <td width="890" height="15">Die Kontobezeichnung. Diese sollte mit der
+        Kontobezeichnung Ihrer Buchhaltung übereinstimmen und eindeutig sein.</td>
+    </tr>
+    <tr>
+      <td width="228" height="15">Finanzamt&nbsp;</td>
+      <td width="890" height="15">Das Finanzamt, für das dieses Konto
+        herangezogen wird.</td>
+    </tr>
+    <tr>
+      <td width="228" height="15">Kontoart&nbsp;</td>
+      <td width="890" height="15">Muss für die Überleitung in eine fremde
+        Buchhaltung nicht definiert werden. Dies wird üblicherweise in den
+        Konten der Buchhaltung definiert.</td>
+    </tr>
+    <tr>
+      <td width="228" height="15">USt Konto</td>
+      <td width="890" height="15">Diese Definition ist nur für die
+        Schleupen-Schnittstelle erforderlich.<br>
+        Geben Sie hier das Konto an, auf das der Umsatzsteueranteil der
+        Ausgangsrechnung / Gutschrift gebucht werden soll.</td>
+    </tr>
+  </table>
+</div>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Bedeutung der Kontoarten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Kontoarten haben folgende Bedeutung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<div align="left">
+  <table border="1" width="555" height="16">
+    <tr>
+      <td width="488" height="16">Aufwandskonto steuerbar mit fremder Ust</td>
+      <td width="622" height="16">10</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Drittland Erlös</td>
+      <td width="622" height="16">7</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Drittland Erwerb</td>
+      <td width="622" height="16">6</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Erlöskonto steuerbar mit fremder Ust</td>
+      <td width="622" height="16">9</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Innergemeinschaftlicher Erlös</td>
+      <td width="622" height="16">5</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Innergemeinschaftlicher Erwerb</td>
+      <td width="622" height="16">4</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Nicht steuerbar</td>
+      <td width="622" height="16">1</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Reverse Charge</td>
+      <td width="622" height="16">8</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Steuerbares Erlöskonto</td>
+      <td width="622" height="16">2</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Steuerkonto aus IG Erwerb</td>
+      <td width="622" height="16">13</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">UST- oder Erwerbssteuerkonto</td>
+      <td width="622" height="16">12</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Vorsteuerabzug erlaubt</td>
+      <td width="622" height="16">3</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Vorsteuerkonto</td>
+      <td width="622" height="16">11</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Sonderland Erwerb</td>
+      <td width="622" height="16">14</td>
+    </tr>
+    <tr>
+      <td width="488" height="16">Sonderland Erlös</td>
+      <td width="622" height="16">15</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 
