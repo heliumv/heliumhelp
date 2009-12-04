@@ -19,7 +19,7 @@ Möglichkeit Exportdaten für verschiedene Fremdbuchhaltungen zu exportieren.</p>
 Sie dazu in das Modul Finanzbuchhaltung, wählen Sie im unteren Modulreiter
 Export.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
 sehen Sie eine Übersicht über die bisherigen Exportläufe.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
@@ -622,75 +622,14 @@ ausgestellt, so wird der Export als Drittland durchgeführt. Erst ab dem
 Zeitpunkt der (eingetragenen) EU-Mitgliedschaft wird das als
 Innergemeinschaftliche Lieferung behandelt.</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eigenheiten
-der unterschiedlichen Finanzbuchhaltungsprogramme beim Importieren der Daten</p>
-
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">RZL:</p>
-
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Wie sind die von Helium V erzeugten Fibu-Daten in meine RZL Buchhaltung zu
-importieren?</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Wählen Sie beim Import das Format mit Trennzeichen. Als Trennzeichen wird
-von Helium V das Semikolon (;) verwendet.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
-Zeichensatz wählen Sie Windowsformat.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
-Importpfad muss passend zu den oben definierten Helium V Exportpfaden in Ihrer RZL Installation eingestellt
-werden.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
-den ersten Import wählen Sie die Funktion Probelauf. Erst wenn dieser
-fehlerfrei durchgelaufen ist, wählen Sie bitte den eigentlichen Import.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedenken
-Sie bitte, dass bei jedem Import Fehler, Abbrüche passieren können. Aus diesem
-Grund empfiehlt sich, einen Import in Ihre Buchhaltung nur mit einer
-entsprechenden Datensicherung vorzunehmen.</p>
-
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Beim Import der Personenkonten erfolgt eine Fehlermeldung.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Es erfolgt die Fehlermeldung: Ungültiges Zeichen in Zessionsnummer.<br>
-Die Ursache ist hier, dass in Ihrem RZL Programm nur die alte 12-Spaltige
-Importroutine zur Verfügung steht. Hier steht eine geänderte XSL Definition
-zur Verfügung um die Daten auch in die älteren RZL Programme importieren zu
-können. Wenden Sie sich bitte an Ihren Helium V Händler.</p>
-
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfung
-der CSV Dateien</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
-Fehler im Helium V Export / Import in RZL zu finden, kann die erzeugte CSV Datei
-sehr einfach in eine Tabellenkalkulation importiert werden. Bei der
-Überprüfung der Saldengleichheit ist zu beachten, dass die Ausgangsrechnungen
-und die Ausgangsgutschriften für Soll - Haben - Ust einen Saldo von 0 über
-alle Buchungen haben müssen, hingegen wird bei den Eingangsrechnungen Soll -
-Haben + Ust gerechnet. Dies wird dem RZL Importprogramm durch unterschiedliche
-Ust-Codes (1 = Vorsteuer, 2 = Umsatzsteuer) mitgeteilt.</p>
-
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dateninhalt
-des RZL Exportes</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
-den beiden Buchungszeilen sind bei RE und GS die Firmennamen der Kunden
-enthalten.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
-ER Export ist in der OP_Numer die Lieferantenrechnungsnummer eingetragen und
-unter Belegnummer die ER-Nummer aus Ihrer Helium V Datenbank. Unter
-Buchungstext1 wird die unter Text eingegebene Beschreibung übergeben und unter
-Buchungstext2 wiederum der Lieferantenname der Eingangsrechnung.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Export_Bedienung_Programme.htm">Bedienung
+/ Eigenheiten der unterschiedlichen Finanzbuchhaltungsprogramme beim Importieren der Daten</a></p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anmerkung
 zu IG-Lieferung und IG-Leistung:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
-Export der Rechnungen, Gutschriften&nbsp; und der Eingangsrechnungen wird nicht
+Export der Rechnungen, Gutschriften&nbsp; und Eingangsrechnungen wird nicht
 zwischen IG-Lieferung und IG-Leistung unterschieden. Es wird immer IG-Lieferung
 übergeben.</p>
 
@@ -840,6 +779,74 @@ Sie darauf, dass in einer Artikelgruppe nur Artikel der gleichen MwSt Gruppe
 (genauer der Umsatzsteuer) sind. Werden beim Export Einträge vorgefunden,
 welche für ein Erlöskonto mehrere MwSt-Steuersätze definiert haben, so wird
 der Export abgebrochen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Import
+der offenen Postenliste</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+einen runden Ablauf zu ermöglichen steht neben der Übergabe der Daten an die
+fremde Finanzbuchhaltung auch die Möglichkeit des Imports der offenen
+Postenliste aus der jeweiligen Finanzbuchhaltung zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Grundsätzlich
+finden Sie den Import im Modul Finanzbuchhaltung, unterer Modulreiter Export,
+nun Menüpunkt Export, Import Offene Posten <img border="0" src="Fibu_OP_Import1.jpg" width="148" height="85">
+zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch
+Klick auf Import Offene Posten erscheint der Dateiauswahldialog. Wählen Sie nun
+die von Ihrer Finanzbuchhaltung exportierte Datei aus.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Import der offenen Postenliste werden die bereits exportierten (Ausgangs-)
+Rechnungen, welche nicht mehr in der offenen Postenliste enthalten sind, als
+vollständig bezahlt gebucht. Werden Rechnungen in der offenen Postenliste
+aufgeführt, so wird der Differenzbetrag zwischen Rechnungs-Brutto-Wert und dem
+erhaltenen Saldo-Betrag als bezahlt gebucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Es werden nur die &quot;Rechnungen&quot; als noch offen übernommen, welche
+durch den Import auch erkannt werden. Fehlerhafte Datensätze werden beim Import
+übersprungen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Am
+Ende des Imports erhalten Sie eine Liste der Datensätze, welche ignoriert
+wurden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_OP_Import2.jpg" width="398" height="256"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieses
+Fenster signalisiert dass:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+ein offener Betrag auf der Rechnung 08/0000146 in der OP-Liste enthalten ist,
+die Rechnung aber storniert ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Die Rechnung 09/0000132 hat in der OP-Liste einen Wert ist aber mit Null-Werten
+in Helium V eingetragen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+korrigieren Sie unbedingt Ihre Daten, entweder in der Buchhaltung oder im Helium
+V.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+in den offenen Postenlisten immer weitere Buchungen enthalten sein können,
+wurde die Schnittstelle so aufgebaut, dass jede für Helium V bestimmte Rechnung
+(ein) führende(s) Zeichen enthalten muss. Dieses muss im System unter Parameter
+definiert werden. Alle Buchungen die diese Zeichen nicht enthalten, werden
+ignoriert und in dem Fenster als Warnung ausgegeben. Hier bedeutet z.B.
+951048(1), dass die Belegnummer 951048, welche aus der Zeile Nr. 1 der
+Importdatei stammt nicht den Regeln entspricht und daher übersprungen wurde.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zurzeit
+steht der offene Posten-Import für folgende Programme zur Verfügung:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+<a href="Export_Bedienung_Programme.htm#OP-Liste_Datev">Datev</a></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 

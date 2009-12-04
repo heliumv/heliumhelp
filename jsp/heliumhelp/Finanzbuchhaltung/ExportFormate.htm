@@ -137,6 +137,10 @@ Ihrem Abacus Systembetreuer ab.</p>
     <p class="answer" style="word-spacing: 0; line-height: 100%; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">In
     der Positionsbezeichnung wird der Name der Artikelgruppe als zusätzliche
     Information übergeben.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0">Gegebenenfalls
+    ist eine Trennung zwischen IG-Steuerfrei und Drittland-Steuerfrei
+    erforderlich. Definieren Sie hier die Kunden bzw. MwSt-Sätze entsprechend.</li>
 </ul>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.Schleupen-CSV
 Format</p>
@@ -158,136 +162,136 @@ Konto muss definiert sein -&gt; sonst Fehlermeldung</p>
     <tr>
       <td width="1222" height="17">Feldbezeichnung&nbsp;</td>
       <td width="237" height="17">Typ</td>
-      <td width="424" height="17">Max-Länge</td>
-      <td width="674" height="17">Mussfeld</td>
-      <td width="691" height="17">Befüllt mit</td>
+      <td width="410" height="17">Max-Länge</td>
+      <td width="662" height="17">Mussfeld</td>
+      <td width="717" height="17">Befüllt mit</td>
     </tr>
     <tr>
       <td width="1222" height="17">Umsatz (mit Soll/Haben-Kz)</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">14</td>
-      <td width="674" height="17">**</td>
-      <td width="691" height="17">x</td>
+      <td width="410" height="17">14</td>
+      <td width="662" height="17">**</td>
+      <td width="717" height="17">Rechnungsbetrag Brutto<br>
+        Soll=-, Haben=+ (dahinter)</td>
     </tr>
     <tr>
       <td width="1222" height="17">BU-Schlüssel</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">2</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17">AR, GS, ER</td>
+      <td width="410" height="17">2</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">Gegenkonto (ohne BU-Schlüssel)</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">9</td>
-      <td width="674" height="17">**</td>
-      <td width="691" height="17">x</td>
+      <td width="410" height="17">9</td>
+      <td width="662" height="17">**</td>
+      <td width="717" height="17">Debitoren/Kreditorenkonto</td>
     </tr>
     <tr>
       <td width="1222" height="17">Belegfeld1</td>
       <td width="237" height="17">A</td>
-      <td width="424" height="17">12</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17">RE/GS Nr</td>
+      <td width="410" height="17">12</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17">RE/GS Nr.</td>
     </tr>
     <tr>
       <td width="1222" height="17">Belegfeld2</td>
       <td width="237" height="17">A</td>
-      <td width="424" height="17">12</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">12</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17">AR, GS, ER</td>
     </tr>
     <tr>
       <td width="1222" height="17">Datum</td>
       <td width="237" height="17">D</td>
-      <td width="424" height="17">8</td>
-      <td width="674" height="17">*</td>
-      <td width="691" height="17">TTMMJJJJ</td>
+      <td width="410" height="17">8</td>
+      <td width="662" height="17">*</td>
+      <td width="717" height="17">TTMM</td>
     </tr>
     <tr>
       <td width="1222" height="17">Konto</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">9</td>
-      <td width="674" height="17">*</td>
-      <td width="691" height="17">x</td>
+      <td width="410" height="17">9</td>
+      <td width="662" height="17">*</td>
+      <td width="717" height="17">Erlös-/Aufwandskonto</td>
     </tr>
     <tr>
       <td width="1222" height="17">Kostfeld1</td>
       <td width="237" height="17">A</td>
-      <td width="424" height="17">8</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">8</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">Kostfeld2</td>
       <td width="237" height="17">A</td>
-      <td width="424" height="17">8</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">8</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">Kostmenge&nbsp;</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">11</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">11</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">Skonto&nbsp;</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">12</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">12</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">Buchungstext</td>
       <td width="237" height="17">A</td>
-      <td width="424" height="17">30</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17">x</td>
+      <td width="410" height="17">30</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">EU-Land und UStID&nbsp;</td>
       <td width="237" height="17">A</td>
-      <td width="424" height="17">15</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17">Kunden/Lieferanten&nbsp;<br>
-        UID Nr</td>
+      <td width="410" height="17">15</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17">Kunden/Lieferanten&nbsp;UID-Nr.</td>
     </tr>
     <tr>
       <td width="1222" height="17">EU-Steuersatz</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">4</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">4</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">Währungskennung</td>
       <td width="237" height="17">A</td>
-      <td width="424" height="17">3</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17">Mandantenwährung</td>
+      <td width="410" height="17">3</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17">Mandantenwährung</td>
     </tr>
     <tr>
       <td width="1222" height="17">Basiswährungsbetrag&nbsp;</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">14</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">14</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">Basiswährungskennung&nbsp;</td>
       <td width="237" height="17">A</td>
-      <td width="424" height="17">3</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">3</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
     <tr>
       <td width="1222" height="17">Kurs</td>
       <td width="237" height="17">N</td>
-      <td width="424" height="17">11</td>
-      <td width="674" height="17"></td>
-      <td width="691" height="17"></td>
+      <td width="410" height="17">11</td>
+      <td width="662" height="17"></td>
+      <td width="717" height="17"></td>
     </tr>
   </table>
 </div>

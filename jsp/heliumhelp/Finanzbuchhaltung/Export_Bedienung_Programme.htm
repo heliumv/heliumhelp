@@ -1,0 +1,191 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Export der Fremd Fibu-Programme</title>
+</head>
+
+<body>
+
+<h1>Bedienung der fremden Finanzbuchhaltungsprogramme</h1>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+haben wir die Eigenheiten und die Bedienung der unterschiedlichen Finanzbuchhaltungsprogramme
+für den Import / Export der Helium V Daten beschrieben.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.)
+RZL</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie sind die von Helium V erzeugten Fibu-Daten in meine RZL Buchhaltung zu
+importieren?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wählen Sie beim Import das Format mit Trennzeichen. Als Trennzeichen wird
+von Helium V das Semikolon (;) verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+Zeichensatz wählen Sie Windowsformat.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Importpfad muss passend zu den oben definierten Helium V Exportpfaden in Ihrer RZL Installation eingestellt
+werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den ersten Import wählen Sie die Funktion Probelauf. Erst wenn dieser
+fehlerfrei durchgelaufen ist, wählen Sie bitte den eigentlichen Import.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedenken
+Sie bitte, dass bei jedem Import Fehler, Abbrüche passieren können. Aus diesem
+Grund empfiehlt sich, einen Import in Ihre Buchhaltung nur mit einer
+entsprechenden Datensicherung vorzunehmen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Beim Import der Personenkonten erfolgt eine Fehlermeldung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es erfolgt die Fehlermeldung: Ungültiges Zeichen in Zessionsnummer.<br>
+Die Ursache ist hier, dass in Ihrem RZL Programm nur die alte 12-Spaltige
+Importroutine zur Verfügung steht. Hier steht eine geänderte XSL Definition
+zur Verfügung um die Daten auch in die älteren RZL Programme importieren zu
+können. Wenden Sie sich bitte an Ihren Helium V Händler.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfung
+der CSV Dateien</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+Fehler im Helium V Export / Import in RZL zu finden, kann die erzeugte CSV Datei
+sehr einfach in eine Tabellenkalkulation importiert werden. Bei der
+Überprüfung der Saldengleichheit ist zu beachten, dass die Ausgangsrechnungen
+und die Ausgangsgutschriften für Soll - Haben - Ust einen Saldo von 0 über
+alle Buchungen haben müssen, hingegen wird bei den Eingangsrechnungen Soll -
+Haben + Ust gerechnet. Dies wird dem RZL Importprogramm durch unterschiedliche
+Ust-Codes (1 = Vorsteuer, 2 = Umsatzsteuer) mitgeteilt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dateninhalt
+des RZL Exportes</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den beiden Buchungszeilen sind bei RE und GS die Firmennamen der Kunden
+enthalten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+ER Export ist in der OP_Numer die Lieferantenrechnungsnummer eingetragen und
+unter Belegnummer die ER-Nummer aus Ihrer Helium V Datenbank. Unter
+Buchungstext1 wird die unter Text eingegebene Beschreibung übergeben und unter
+Buchungstext2 wiederum der Lieferantenname der Eingangsrechnung.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kostenstellen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Kostenstellen auch in die verschiedenen Finanzbuchhaltungsprogramme
+exportieren zu können, ist es erforderlich, dass die Kennung der Kostenstellen
+numerisch sind. (Gilt zumindest für RZL und BMD).</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.)
+Datev</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie sind die von Helium V erzeugten Fibu-Daten in meine Datev Buchhaltung zu
+importieren?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Importformate definieren<br>
+Unter Extras Ascii Formate können unter dem Reiter Importformate die Importformate definiert werden.
+Es wird das Datenformat Buchungssätze, Formatname Buchungssätze verwendet.<br>
+<img border="0" src="datev3.gif" width="640" height="414"><br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Nach der einmaligen Definition gehen Sie für den eigentlichen Import auf<br>
+Buchen, Stapelverarbeitung<br>
+Rechts den Knopf ASCII-Import wählen.<br>
+<b>ACHTUNG:</b> Wählen Sie unter Datenformat Buchungssätze und unter Formatbezeichnung den oben definierten Formatnamen Buchungssätze.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
+Abhängig davon ob Ihre Helium V Dateien mit oder ohne Kopfzeilen exportiert
+werden (siehe System, Parameter, FINANZ_EXPORT_UEBERSCHRIFT), muss der</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&quot;Import
+ab Zeile&quot; auf 1 ... wenn ohne Kopfzeilen oder 2 ... wenn mit Kopfzeilen
+gestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Zeichensatz muss auf ANSI gestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="datev4.gif" width="455" height="485"><br>
+Überprüfen Sie nun die Einstellungen durch Klick auf Ergebnisvorschau.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+sollten wie folgt aussehen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="datev5.gif" width="632" height="404"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen Sie nun die richtige Buchungsperiode für den Import ein,&nbsp;<br>
+in dem unter "Vorlaufdaten für Buchungssätze" der zum Export passende Zeitraum eingegeben wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="datev6.gif" width="455" height="57"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich sollte noch, Originalbestand nach Import löschen angehakt
+sein.<br>
+<br>
+Klicken Sie nun auf ok um den Import durchzuführen und das Import-Definitionsfenster zu schließen<br>
+Sie erhalten die Meldung "Der Vorlauf wurde erfolgreich importiert".</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="datev8.gif" width="260" height="125"><br>
+Erhalten Sie Fehlermeldungen, so stimmen die Formate nicht überein. Überprüfen Sie die Importformate.<br>
+<br>
+<br>
+Sie finden nun einen neuen Stapelverarbeitungsdatensatz in der Liste der Stapelverarbeitungen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="datev9.gif" width="626" height="317"><br>
+Verarbeiten Sie nun den Stapel wie üblich durch Klick auf Verarbeiten.<br>
+<br>
+<br>
+Getestet auf Version Datev V.5.61 (2009)<br>
+<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><font size="4">Bedienung
+der fremden Buchhaltungsprogramme zum&nbsp;<br>
+Erzeugen der offenen Postenliste für den Import.</font></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="OP-Liste_Datev"></a>a.)
+Datev</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Direkt in den Export mit
+(Menüpunkt) Bestand, Export, ASCII<br>
+Nun einstellen auf:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Datenformat Geschäftspartner (Offene Posten)<br>
+Formatname Geschäftspartner (Offene Posten)<br>
+Exportdatei auswählen. Hier am Besten den Pfad auf eigene Dateien<br>
+Dateiname z.B. op.csv<br>
+Wichtig: Zeichensatz auf ANSI<br>
+Konto von bis .... nur Debitoren anhaken<br>
+Postenumfang nur Offene Posten<br>
+Raffung gerafft. (Das bedeutet, pro Rechnung nur eine Zeile)<br>
+<img border="0" src="Fibu_Datev_OP_Export.gif" width="740" height="288"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>
