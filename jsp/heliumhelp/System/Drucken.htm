@@ -755,6 +755,93 @@ verschärft diese Konstellation die Situation zusätzlich. </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann ein Serien-HTML-EMail aus Helium V erzeugt werden ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Aus Helium V kann ein Serienemail erzeugt werden, welches jedoch immer ein
+einfaches Anschreiben (Plain-Text) und den eigentliche Inhalt als PDF Anhang
+hat. Sollte, z.B. wegen einer Übersiedelung ein reines HTML Email versandt
+werden, so steht derzeit nur für Tobit User der Umweg über die Tobit
+Rundsendung zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gehen
+Sie dazu wie folgt vor:</p>
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erstellen
+    Sie den <a href="../Partner/index.htm#Serienbrief">Serienbrief</a> und gehen
+    Sie dann auf Info, Empfängerliste und wählen Sie speichern als CSV Datei.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Speichern
+    Sie die Daten z.B. unter eigene Dateien, Serienbrief.txt ab.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Starten
+    Sie nun eine Tabellenkalkulation und öffnen Sie die Datei.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Entfernen
+    Sie alle Zeilen, bei denen F_BEKOMMTEMAIL = false steht. Sie können dafür
+    die Autofilter Funktion verwenden.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Entfernen
+    Sie alle Spalten, mit Ausnahme der Spalte F_PARTNER_EMAIL. Eventuell wollen
+    Sie in einem zweiten Lauf nur die Ansprechpartner anschreiben. Dann lassen
+    Sie nur die Spalte F_ANSPRECHPARTNER_EMAIL bestehen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Löschen
+    Sie nun auch die erste Zeile, mit der Spaltenüberschrift.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+    Sie nun speichern unter, Dateityp Text Tabs getrennt und speichern Sie die
+    Datei direkt in Ihr David-Verzeichnis unter <br>
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; \\Servername\DAVID\APPS\FAXWARE\RESOURCE\DATA\Brief1.txt
+    ab.<br>
+    Beachten Sie dass Tobit nur schwer mit langen Datenamen umgehen kann. Daher
+    sollte der Dateiname maximal 8Buchstaben haben. Üblicherweise ist für Ihr
+    David auch ein Netzlaufwerk freigegeben / eingerichtet. Dort finden Sie die
+    oben angegebene Struktur.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erstellen
+    Sie nun das gewünschte HTML EMail, so wie in Tobit üblich und schreiben
+    Sie an erster Stelle<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @@EMAIL@@ @@RUNDSENDUNG
+    Brief1.txt@@<br>
+    Damit weisen Sie Tobit an, dass<br>
+    a.) dies ein EMail (und kein Fax) sein sollte,<br>
+    b.) dass dieses EMail an alle unter Brief1.txt angegebenen EMail-Adressen zu
+    senden ist.<br>
+    Den Empfänger der EMail (an) lassen Sie leer.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Klicken
+    Sie nun auf Senden, so wird Ihr EMail an alle in der Rundsendung angegebenen
+    EMail-Adressen versandt.<br>
+    <b>Info:</b> Empfänger sehen jeweils alle anderen Adressaten. Daher ist es
+    auch aus Sicht des Telekom Gesetzes ein Massen-EMail mit den entsprechenden
+    Auflagen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
+    Sicht des Telekom Gesetzes ist dies ein Massen-EMail, da Tobit dies als ein
+    EMail mit vielen Empfängern versendet.<br>
+    Dieses Verhalten ist von der Konfiguration Ihres Tobit abhängig. Beachten
+    Sie dazu auch noch den Tipp Q-101.536 aus der Tobit KnowledgeBase.<br>
+    Um dieses Verhalten Abzuschalten, entfernen Sie in Ihremim DvISE
+    Administrator unterhalb &quot;Konfiguration -&gt; Ports -&gt; DvISE PostMan
+    -&gt; Dienste&quot; den Haken bei eMail-Rundsendung. Dies bewirkt, dass
+    Tobit nun jeweils ein eigenes EMail versendet.<br>
+    <img border="0" src="Tobit_Rundsendung.gif" width="411" height="481"><br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+    Sie dazu auch die in der Tobit Hilfe unter @@RUNDSENDUNG angegebenen
+    Erläuterungen.</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
 </body>
 
 </html>
