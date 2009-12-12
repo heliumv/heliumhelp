@@ -159,7 +159,7 @@ Modul können die automatisch durch das drucken abgelegten Dokumente nur über
 die Auswahlliste einzeln dargestellt werden.</p>
 
 <p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Q:
-Kann ein beliebiges Dokument automatisch archiviert werden?</p>
+Kann ein beliebiges internes Dokument automatisch archiviert werden?</p>
 
 <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">A:
 Ja. Es sind alle nicht zu archivierenden Dokumente in der Tabelle LP_DOKUMENTNICHTARCHIVIERT
@@ -171,6 +171,100 @@ umgekehrt, sollte ein Dokument nicht mehr archiviert werden, so fügen Sie bitte
 einfach den vollständigen Namen des Reports (inkl. .jasper) in der richtigen
 Groß-/Kleinschreibung in die Tabelle ein.</p>
 
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<h1><a name="Dokumentenpflicht"></a>Dokumentenpflicht</h1>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">In
+Helium V steht Ihnen mit der Artikeleigenschaft Dokumentenpflicht, siehe
+Artikel, Sonstiges <img border="0" src="Dokumentenpflicht1.gif" width="111" height="19">, eine sehr
+praktische Funktion zur sicheren Erfassung Ihrer Dokumentenpflichtigen Artikel
+zur Verfügung.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Der
+grundsätzliche Gedankengang ist der, dass Sie für Ware welche z.B. mit einem
+Werksprüfzeugnis, einem Herstellungszertifikat oder ähnlichem versehen werden
+muss, möglichst automatisch die Dokumente von Ihrem Lieferanten zu Ihrem Kunden
+wandern.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Für
+diese Funktion ist die Dokumentenablage Voraussetzung.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Wird
+ein Artikel als Dokumentenpflichtig gekennzeichnet, so bewirkt dies, dass bevor
+eine Wareneingangsposition vollständig erledigt werden kann, auf jeder
+Wareneingangsposition eines Dokumentenpflichtigen Artikels zumindest ein
+Dokument hinterlegt sein muss. Wurde kein Dokument hinterlegt, so kann die
+Wareneingangsposition nicht erledigt werden und somit auch die Bestellung nicht
+erledigt werden.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Mit
+der Dokumentenpflicht gekoppelt ist der Versand der Dokumente an die Kunden.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">D.h.
+wird ein Lieferschein mit Dokumentenpflichtigen Artikeln erstellt, so kann beim
+EMail-Versand des Lieferscheines angegeben werden, ob <img border="0" src="Dokumentenpflicht2.gif" width="128" height="20">
+die Dokumente der Dokumentenpflichtigen Artikel mit an das EMail (an Ihren
+Kunden) als Anhang mitgesandt werden sollen.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Es
+werden für jeden Wareneingang immer alle Dokumente, von jedem Dokument jedoch
+nur die jüngste Version als Anhang dazugefügt. Besteht eine Position aus
+mehreren Wareneingängen, so gilt dies für jeden Wareneingang.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Die
+Verkettung zwischen Lieferscheinposition und Wareneingang ist im
+Warenbewegungsjournal des jeweiligen Artikels ersichtlich. Sollte diese auch auf
+den Lieferscheinen mit angedruckt werden, so kann diese Information auch im
+Klartext im Lieferschein angedruckt werden.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Ob
+Dokumente anhängen per default aktiviert oder deaktiviert ist, kann unter
+System, Parameter, DEFAULT_DOKUMENTE_ANHAENGEN eingestellt werden.</p>
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Q:
+Wie werden die Dokumente bei den Wareneingangspositionen hinterlegt?</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">A:
+Wählen Sie die entsprechenden Wareneingangsposition und klicken Sie auf die
+Dokumentenablage <img border="0" src="Dokumentenpflicht3.gif" width="31" height="25">. </p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><img border="0" src="Dokumentenpflicht4.gif" width="317" height="133">
+In der Dokumentenablage stehen Sie nun auf der entsprechenden
+Wareneingangsposition. Fügen Sie nun mit Neu <img border="0" src="Dokumentenpflicht5.gif" width="31" height="27">
+oder Scannen <img border="0" src="Dokumentenpflicht6.gif" width="31" height="25"> ein neues Dokument
+hinzu.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Geben
+Sie dem Dokument einen für Sie sprechenden Namen und fügen Sie ein oder
+mehrere Schlagworte (Stichworte) hinzu.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Speichern
+Sie nun das Dokument ab.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Sollten
+Sie eine korrigierte Version für diese Wareneingangsposition von Ihrem
+Lieferanten erhalten, so wählen Sie das oben beschriebene Dokument und klicken
+auf ändern <img border="0" src="Dokumentenpflicht7.gif" width="30" height="25"> um eine neue Version
+des gleichen Dokumentes zu erzeugen.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Wichtig:
+Erhalten Sie ein zusätzliches Dokument, z.B. neben der Chargeninfo noch ein
+Prüfzeugnis, so speichern Sie dies bitte als neues Dokument ab.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Sind
+bei einer Wareneingangsposition zwei oder mehrere Dokumente hinterlegt, so
+werden bei einem Dokumentenpflichtigen Artikel alle Dokumente als Anhang im
+EMail-Versand des Lieferscheines übergeben.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Q:
+Welche Dokumente werden bei der Dokumentenpflicht angedruckt?</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">A:
+Es werden immer alle Dokumente eines Wareneingangs gedruckt. Von jedem Dokument
+jedoch die jüngste / neueste Version.</p>
+<div align="left">
+  <table border="1" width="618" height="16">
+    <tr>
+      <td width="1063" height="16">Wareneingangsposition mit einem Dokument</td>
+      <td width="281" height="16"><img border="0" src="Dokumentenpflicht8.gif" width="179" height="38"></td>
+    </tr>
+    <tr>
+      <td width="1063" height="16">Wareneingangsposition mit zwei Dokumenten</td>
+      <td width="281" height="16"><img border="0" src="Dokumentenpflicht9.gif" width="176" height="47"></td>
+    </tr>
+    <tr>
+      <td width="1063" height="16">Wareneingangsposition mit zwei Dokumenten.
+        Vom zweiten Dokument wird nur die jüngere Version (Nr. 1) am
+        Lieferschein mitgedruckt. </td>
+      <td width="281" height="16"><img border="0" src="Dokumentenpflicht10.gif" width="169" height="78"></td>
+    </tr>
+  </table>
+</div>
 <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
 
 </body>
