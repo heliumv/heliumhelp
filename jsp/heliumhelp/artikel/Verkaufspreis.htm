@@ -47,6 +47,9 @@ werden. Üblicherweise wird hier der teuerste Preis eingetragen. Dies ist
 zwar einen gültigen Preis definiert, es ist dies aber von der Logik der
 Verkaufspreisfindung unbedingt zu vermeiden.</b></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Alternativ steht die
+automatische Preisfindung auf Basis des Lieferantenpreises zur Verfügung. Siehe
+dazu:</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">1.
 Verkaufspreisdefinition anhand von Preislisten</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Definieren Sie dazu
@@ -278,10 +281,16 @@ eingetragen, so wird dieser normalerweise in der Liste der Lagerstände des
 Artikels im Reiter Lager nicht angezeigt. Fügen Sie mit Neu und durch Auswahl
 des gewünschten Lagers den Lagereintrag hinzu. Nun kann der Gestehungspreis
 für diesen Artikel für dieses Lager für zukünftige Lagerbetrachtungen /
-Lagerabbuchungen verändert werden. Bitte beachten Sie dass der Gestehungspreis
+Lagerabbuchungen verändert werden. Bitte beachten Sie, dass der Gestehungspreis
 bei jeder Lagerzubuchung aktualisiert wird. Ist für einen Artikel noch kein
 Lagerstand gegeben, so bedeutet dies, dass der Gestehungspreis direkt auf den
 neuen Einstandspreis gesetzt wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Bei
+lagernden Artikeln wird bei der Änderung des Gestehungspreises aus Gründen der
+Aufrollung dieser speziellen Durchschnittspreisberechnung, automatisch der
+gesamte Lagerstand vom Lager genommen und danach mit dem neuen Gestehungspreis
+wieder zugebucht. Dadurch geht der Bezug auf den tatsächlichen Wareneingang
+verloren. Verwenden Sie daher diese Funktion daher mit bedacht.</b></p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Mindest-DB"></a>Q:
 Kann ich den Mindestdeckungsbeitrag auch Null setzen?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -330,8 +339,34 @@ bedenken Sie dazu folgendes:</p>
     Deckungsbeitrag für Ihr Unternehmen. Überspitzt formuliert: Es wäre für
     Sie besser und billiger, wenn Sie das Produkt nicht liefern würden.</li>
 </ol>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Verkaufspreisfindung auf Basis Lieferantenpreis</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Mit dem Parameter VK_PREISBASIS_IST_LIEF1PREIS kann eingestellt werden, dass als
+Verkaufspreisbasis anstelle der pro Artikel fest hinterlegen Verkaufspreisbasis
+der Nettopreis des ersten Lieferanten verwendet wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+erreichen Sie, dass sich die vorgeschlagenen Verkaufspreise immer am Nettopreis
+Ihres Haupt-Lieferanten orientieren.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass hier auch eventuelle Wechselkurs Umrechnungen enthalten sind.
+D.h. wenn ein Lieferant z.B. in USD hinterlegt ist, so wird für die Berechnung
+Ihrer Verkaufspreise dieser USD Betrag auf den Betrag Ihrer Mandantenwährung
+umgerechnet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Wenn diese Funktion verwendet wird, werden die Rabatte in aller Regel als
+Aufschläge definiert werden müssen, um einen entsprechenden Deckungsbeitrag zu
+erzielen. Aufschläge können bei den Rabatten durch Angabe negativer Rabatte
+eingegeben werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Standard Rabatte bei neuen Artikel</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In der Definition der Preislisten kann auch ein Standard-Rabatt hinterlegt
+werden. Dies bewirkt, dass beim Anlegen eines neuen Artikels automatisch diese
+Rabatte mit Preisgültigkeit ab heute (= Anlagedatum) eingetragen werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+Rabatte sind nur Vorschlagswerte und können im oberen Modulreiter VK-Preise
+geändert werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>

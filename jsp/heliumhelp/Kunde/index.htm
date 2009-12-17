@@ -119,7 +119,9 @@ Es kann jederzeit eine neue Debitorennummer zugewiesen werden. Das Debitorenkont
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Hinweis:</b> Der Bereich
 der Debitorennummern kann im Modul System, Parameter, Debitorennummern von und
 bis eingestellt werden und die Länge der Nummer (maximal 6stellig) wird über
-den Parameter KONTONUMMER_STELLENZAHL_DEBITORENKONTEN eingestellt.&nbsp;</p>
+den Parameter KONTONUMMER_STELLENZAHL_DEBITORENKONTEN eingestellt.&nbsp;Achten
+Sie darauf, dass die Definition des Debitorennummernbereiches und die
+Stellenanzahlen übereinstimmen.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
@@ -128,10 +130,25 @@ kann auch mehreren Kunden zugewiesen werden.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Button
-Debitorenkonto anlegen vergibt eine noch unbesetzte Kontonummer nach folgendem
-Muster: Klasse 3 für Debitorenkonten, die nächsten zwei Stellen betreffen den
-Anfangsbuchstaben des Kunden A = 01 ... Z = 26 und eine laufende Nummer.&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Knopf Debitorenkonto anlegen vergibt eine noch unbesetzte Kontonummer nach folgendem
+Muster: Klasse 3 (abgeleitet aus DEBITORENNUMMER_VON) für Debitorenkonten, die nächsten zwei Stellen betreffen den
+Anfangsbuchstaben des Kunden A = 01 ... Z = 26 und eine laufende Nummer. Da in
+manchen Unternehmen der Beginn des Nummernkreises keine glatte Zahl ist, wurde
+dies so realisiert, dass die ersten drei Stellen des Parameters
+DEBITORENNUMMER_VON verwendet werden und dazu die oben angeführten Werte
+dazugezählt werden. Führende Leerstellen werden bei der Erkennung entfernt.
+Ziffern werden auf den deutschsprachigen Anfangsbuchstaben ersetzt. Alle
+sonstigen Zeichen werden auf 27 zusammengefasst.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Automatische
+Debitorennummern Vergabe</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit dem Parameter
+AUTOMATISCHE_DEBITORENNUMMER=1 kann eingestellt werden, dass ab dem Zeitpunkt ab
+dem die Rechnungsadresse benötigt wird, für diesen Kunden eine Debitorennummer
+automatisch erzeugt wird. D.h. Wird ein Kunde als Rechnungsadresse im Auftrag
+oder im Lieferschein oder als Rechnungsempfänger verwendet, so wird
+gegebenenfalls eine neue Debitorennummer nach obiger Regel erzeugt.</p>
 
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Lieferstatistik</p>
 
