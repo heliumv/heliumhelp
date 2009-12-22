@@ -325,6 +325,53 @@ Dieser muss sauber sein.</p>
 Das Druckbild ist sehr schlecht</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Führen Sie bitte die Kalibrierung durch.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Weitere
+allgemein Tipps zur Verwendung von Helium V</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Nach einem Stromausfall startet der Helium V Server nicht mehr, es gibt
+unkontrollierte Fehler</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+unkontrolliertem Abschalten des Helium V Servers kann es vorkommen, dass
+unkontrolliert temporäre Dateien, welche eventuell auch teilweise zerstört
+sein können, stehen bleiben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+wirkt sich dann so aus, dass z.B. der Helium V Server nicht mehr startet, bei
+manchen Auswertungen Class not found Exceptions bringt usw..</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+dies der Fall ist, so stoppen Sie den Helium V Server (am &quot;Linux mit
+service jboss stop&quot;, am Windows &quot;Dienst stoppen&quot;)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+löschen Sie aus dem Verzeichnis des Helium V Servers die Unterverzeichnisse tmp
+und work.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+starten Sie den Helium V Server wieder (am &quot;Linux mit service jboss
+start&quot;, am Windows &quot;Dienst starten&quot;)</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Benötige ich für den Helium V Server eine unterbrechungsfreie Stromversorgung?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Selbstverständlich.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Manche
+Anwender sind zwar der Meinung dass gespiegelte Platten, eine Datensicherung
+oder ähnliches ausreichen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+weisen hier ausdrücklich darauf hin, dass jeder Helium V Server und natürlich
+auch eventuell eigenständige Datenbankserver mit einer USV (unterbrechungsfreie
+Stromversorgung) ausgestattet sein müssen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+können dazu von einem Anwender berichten, der ebenfalls der Meinung war, dass
+eine richtig installierte USV Luxus sei und bei dem ein Ausfall des Servers die
+Datenbank zerstört hat. Da dies am Abend eines intensiven Tages war, war es
+enorm wichtig, dass die Daten inkl. des Tages restauriert werden. Wir konnten
+die Daten mit einem Aufwand von ca. 3x24 Stunden zum Großteil retten. Wir waren
+jedoch ganz knapp daran&nbsp;aufzugeben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedenken
+Sie die Kosten für einen derartigen Reparaturversuch und diese Kosten inkl. dem
+Datenverlust sind nicht versicherbar. Alleine um die Kosten für den
+Reparaturversuch bekommen Sie drei sehr gute unterbrechungsfreie
+Stromversorgungen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
