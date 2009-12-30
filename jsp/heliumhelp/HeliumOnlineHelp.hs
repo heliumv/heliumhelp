@@ -4,7 +4,6 @@
   <maps>
     <homeID>roadmap_htm</homeID>
     <mapref location="map.jhm"/>
-    <mapref location="map3.jhm"/>
   </maps>
   <view>
     <name>Inhaltsverzeichnis</name>

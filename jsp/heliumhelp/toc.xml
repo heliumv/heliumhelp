@@ -28,6 +28,7 @@
       <tocitem target="Export_htm" text="Export"/>
     </tocitem>
     <tocitem target="Gutschrift_htm" text="Gutschrift"/>
+    <tocitem target="Proformarechnung_htm" text="Proformarechnung"/>
     <tocitem target="Projekte_index_htm" text="Projekte"/>
     <tocitem target="Gemeinsamkeiten_der_Bewegungsmodule_htm" text="Gemeinsamkeiten der Bewegungsmodule"/>
   </tocitem>
@@ -76,6 +77,7 @@
     <tocitem target="Finanzbuchhaltung_index_htm" text="Finanzbuchhaltung">
       <tocitem target="Export_htm" text="FiBu Export"/>
       <tocitem target="ExportFormate_htm" text="ExportFormate"/>
+      <tocitem target="Export_Bedienung_Programme_htm" text="Bedienung der Fremd-Programme"/>
       <tocitem target="Zahlungsvorschlag_htm" text="Zahlungsvorschlag"/>
       <tocitem target="Intrastat_htm" text="Intrastat"/>
       <tocitem target="Einnahmen-Ausgaben_rechner_htm" text="Einnahmen-Ausgaben Rechner"/>
@@ -112,12 +114,16 @@
       <tocitem target="Etikettendruck_htm" text="Etikettendruck"/>
       <tocitem target="barcodes_htm" text="Barcodes"/>
       <tocitem target="Installation_Tiff_Drucker_htm" text="Inst. Tiff-Drucker"/>
+      <tocitem target="Export_MAC_htm" text="Export für MAC-Benutzer"/>
     </tocitem>
+    <tocitem target="Pflegefunktionen_htm" text="Pflegefunktionen"/>
     <tocitem target="Automatik_htm" text="Automatik"/>
     <tocitem target="Web_Links_htm" text="Web_Links"/>
     <tocitem target="Fernwartung_htm" text="Fernwartung"/>
     <tocitem target="Dokumentenablage_htm" text="Dokumentenablage"/>
-    <tocitem target="Installation_Win_Fax_Email_Dienst_htm" text="Inst Versanddienst"/>
+    <tocitem target="Installation_Win_Fax_Email_Dienst_htm" text="Inst Versanddienst">
+      <tocitem target="Installation_Fax_Dienst_w2k_htm" text="Installation Fax-Dienst Windows2000"/>
+    </tocitem>
     <tocitem target="tipps_und_tricks_htm" text="Tipps und Tricks">
       <tocitem target="Hilfe_bei_Startproblemen_htm" text="Hilfe bei Start Problemen"/>
       <tocitem target="Nach_der_Installation_htm" text="Nach der Installation"/>
