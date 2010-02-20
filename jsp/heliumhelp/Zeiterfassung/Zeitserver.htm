@@ -86,6 +86,26 @@ Server mit den Atomzeitservern</p>
   w32tm /resync</p>
 </blockquote>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Linux</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Eventuell muss der
+NTP Dienst zuerst installiert werden. In unseren Linux-Installationen ist dieser
+bereits eingerichtet.<br>
+Installation mit&nbsp;</p>
+<dl>
+  <dd>yum install ntp</dd>
+  <dd>chkconfig --levels 235 ntpd on</dd>
+</dl>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei bereits laufendem
+ntp Dienst:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+service ntpd stop</p>
+<dl>
+  <dd>ntpdate IP-Adresse ... verwenden Sie hier die Adresse einee erreichbaren
+    NTP Servers</dd>
+  <dd>service ntpd start&nbsp;&nbsp;</dd>
+  <dt>&nbsp;</dt>
+  <dt>Ist der Zeitdienst (ntpd) wirklich synchron ?</dt>
+  <dd>ntpq -p</dd>
+</dl>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>MAC OS X&nbsp;</b></p>
 <blockquote>
