@@ -910,7 +910,63 @@ doppelten. Ganz elegant ist, wenn man in einer zusätzlichen Spalte eine Formel
 einbaut, die dies automatisch prüft =WENN(H1=H2;1;&quot;&quot;) dann erhalten
 Sie die jeweils mehrfache Adresse gekennzeichnet.&nbsp;H ist die Spalte in der
 die EMailadresse steht.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo können die Ansprechpartnerfunktionen definiert werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Diese können im Modul Partner, unterer Modulreiter Grunddaten, oberer
+Modulreiter Ansprechpartnerfunktion eingetragen werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Übersteuerung von EMail-Adressen / Faxnummer</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Manchmal ist es erforderlich, dass für bestimmte Formulare diese für den
+gleichen Partner immer an den gleichen Empfänger gehen, dieser ist jedoch nicht
+der Ansprechpartner an den dieses Papier gerichtet ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel wäre, dass der elektronische Rechnungsversand immer an eine bestimmte
+EMail-Adresse Ihres Kunden zu senden ist, ein anderes, dass Sie die Packliste
+eines Auftrags, abhängig vom Kunden an den jeweils zuständigen Spediteur
+senden wollen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+dies meistens auch noch eine Eigenschaft des Kunden/Lieferanten ist, haben wir
+das so gelöst, dass Sie dafür spezielle Ansprechpartnerfunktionen definieren
+können.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anhand
+der Packliste sein nun die Vorgehensweise erklärt.</p>
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+    Sie den Namen des Reports fest, für den dieses
+    Sonder-Ansprechpartnerfunktion definiert werden soll. Drucken Sie dazu den
+    Report in die Vorschau. Sie erhalten z.B.:<br>
+    <img border="0" src="Ansprechpartner_Sonderfunktion_Titel.gif" width="332" height="24"></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anhand
+    des Fenstertitels entnehmen Sie den Reportnamen. In unserem Fall
+    auft_packliste2.jasper.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln
+    Sie nun in die Definition der Ansprechpartnerfunktionen und geben Sie diesen
+    Reportnamen unter <br>
+    <img border="0" src="Ansprechpartner_Sonderfunktion_definieren.gif" width="343" height="81"><br>
+    Reportname für übersteuerten Empfänger an. Achten Sie auf die exakte
+    Schreibweise unter Berücksichtigung der Kleinschreibung.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln
+    Sie nun in den Kunden, Ansprechpartner und definieren Sie einen
+    Ansprechpartner und geben Sie ihm diese (Sonder-) Funktion und hinterlegen
+    Sie eine entsprechende EMail-Adresse bzw. Faxnummer.<br>
+    <img border="0" src="Ansprechpartner_Sonderfunktion_hinterlegen.jpg" width="775" height="249"><br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+    wechseln Sie wieder in den Auftrag und Drucken die Packliste in die Vorschau
+    und klicken danach auf EMail. <br>
+    <img border="0" src="Ansprechpartner_Sonderfunktion_Ergebnis.jpg" width="783" height="196"><br>
+    <br>
+    Es wird die für diesen Report definierte Sonderfunktion bei diesem Kunden
+    verwendet.</li>
+</ol>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 
