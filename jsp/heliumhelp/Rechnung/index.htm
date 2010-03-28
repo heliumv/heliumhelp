@@ -708,7 +708,82 @@ Sie, dass nur Lieferscheine des gleichen Lieferlandes in eine Rechnung
 übernommen werden können.
 </p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Export einzelner Rechnungen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es steht auch der Export einzelner Rechnungen zur Verfügung. Diesen finden Sie
+unter Rechnung, Export, Einzelrechnung.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieser
+Exportlauf ist für Systeme gedacht, an die praktisch parallel zum Druck auch
+Daten in das Bauchhaltungssystem übergeben werden müssen.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+dieser Menüpunkt sichtbar ist, muss der Parameter EINZELRECHNUNG_EXPORTPFAD
+gesetzt sein. Dieser Pfad definiert, vom Helium V Server aus gesehen, in welchen
+Pfad die Rechnung exportiert werden soll. Der Pfad wird um die Rechnungsnummer
+ergänzt, wobei der Schrägstrich / durch einen Unterstrich _ ersetzt wird.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
+Sie bitte darauf dass:
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+die Pfadangabe inkl. abschließendem Schrägstrich / Backslash ist und
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+dass Ihre Helium V Server auf diesen Pfad schreibende Rechte hat.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+der Exportpfad umgeschaltet, muss der Helium V Client neu gestartet werden.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+diesen CSV Export wird die Reportvorlage rech_rechnung_expo verwendet. D.h. hier
+können die exportierten Daten Ihren Bedürfnissen entsprechend angepasst
+werden.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Neben
+den in der Rechnung üblichen Feldern wird hier zusätzlich der Fibu_MwSt_Code
+übergeben. Dieser Code kann im System, Mandant, MwSt für den jeweiligen
+MwSt-Satz unter FIBU-MWST-Code gesetzt werden.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Export wird zugleich die Rechnung als in die Fibu exportiert gekennzeichnet und
+dieser Export auch in den Fibu-Exportlauf (siehe Fibu, Export) eingetragen. Eine
+als in die Fibu exportiert gekennzeichnete Rechnung kann nicht erneut exportiert
+werden. Sollten Änderungen an einer bereits exportierten Rechnung durchgeführt
+werden müssen, muss diese zuerst aus dem Fibu-Exportlauf herausgelöscht
+werden.
+</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Daten werden im CSV Format im Zeichensatz UTF8 übergeben. D.h. die Felder sind
+mit Komma getrennt. Die genaue Formatierung / Anordnung ist im oben genannten
+Report definiert und kann dort auch abgeändert werden. Achten Sie dabei auf die
+auch hier geltenden Regeln für die Anwender Reportvorlagen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Bearbeitung dieses Formulares achten Sie bitte unbedingt darauf, dass die
+Felder im Report exakt in der zu exportierenden Reihenfolge angegeben sind.</p>
 
 </body>
 
