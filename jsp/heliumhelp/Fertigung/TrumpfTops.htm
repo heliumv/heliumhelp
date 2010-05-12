@@ -74,8 +74,8 @@ werden intern protokolliert und können für Optimierungszwecke o.ä. jederzeit
 ausgewertet werden.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Hinweis:</b></p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Da die
-eigengefertigten TopsTeile keine Stücklisten sind, würden diese im
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Da die eigen
+gefertigten TopsTeile keine Stücklisten sind, würden diese im
 Bestellvorschlag aufscheinen. Wir haben daher den Bestellvorschlag um die
 Funktionalität erweitert, dass Artikel bei deren Artikelklasse TOPS angehackt
 ist, nicht in den Bestellvorschlag mit aufgenommen werden.</p>
@@ -149,6 +149,16 @@ Losablieferungsbuchung werden diese Artikel wieder vom Lager entnommen. Mit
 diesem Ablauf wird erreicht, dass die Gestehungspreise anhand der jeweils
 aktuell hinterlegten Materialkosten eingefroren werden und somit auch bei
 späteren Nachkalkulationen erhalten bleiben.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Berechnung der
+Größe des verbrauchten Materials</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Größe des
+verbrauchten Materials wird aus den TrumpfTops Daten genommen. Dazu wird der
+eingestellte Laser-Rand addiert und die sich ergebende Fläche wird als Fläche
+des hinterlegten Materials für die Gestehungspreisberechnung herangezogen.
+Ergibt sich nun, dass die inkl. Rändern errechnete Fläche kleiner ist als eine
+ganze Tafel, so wird die gesamte Tafel als Verbrauch angenommen.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 

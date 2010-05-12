@@ -74,9 +74,14 @@ werden. Die Installations-/Aktualisierung-Schritte sind damit abgeschlossen.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für die Installation
 ist die entsprechende Berechtigung (Hauptbenutzer/Administrator) auf Ihrem PC
 erforderlich.<br>
-Wird Windows Vista verwendet, so muss die Installation als Administrator
-erfolgen. Die Anmeldung als Benutzer der Mitgliede der Gruppe Administratoren
-ist reicht leider nicht aus.</p>
+Wird Windows Vista oder Windows 7 verwendet, so muss die Installation als Administrator
+erfolgen. Die Anmeldung als ein Benutzer der Mitglied der Gruppe Administratoren
+ist, reicht leider nicht aus.<br>
+Es hat sich in der Praxis bewährt, wenn die Benutzergruppe Jeder (Everyone) auf
+das Helium V Client-Installationsverzeichnis, in der Regel <a href="file:///c:/Programme/helium_v">c:\Programme\helium_v</a>
+Lese- und Schreibrechte hat. Diese Rechte sind auch für die Ablage der Dateien
+aus der Helium V Zwischenablage und für die Protokollierung der Client-Logs
+erforderlich.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für MAC-User werden
 fertig gepackte Clients immer mit der entsprechenden Server Version
@@ -84,7 +89,7 @@ mitgeliefert. Kopieren Sie diese vom zentralen Server auf Ihren Client.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Umstellung auf
 eine neuere Java Runtime.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Ab Client Version
-5.10.052.3818 kann auch die Java Runtime 1.6.0_05 eingesetzt werden.</p>
+5.10.052.3818 kann muss die Java Runtime 1.6.0_05 eingesetzt werden.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Diese können Sie
 unter <a href="http://java.sun.com/products/archive/">http://java.sun.com/products/archive/</a>
@@ -217,6 +222,78 @@ Zugriffsrechte.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hinweis: Dies ist
 auch für die Ablage der Log-Dateien des Clients und für die Zwischenablage
 zwingend erforderlich.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Meine
+Clientinstallation startet immer wieder von vorne?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Wenn der Helium V
+Client gestartet wird, so wird geprüft ob die Client-Version mit der
+Serverversion zusammenstimmt. Ist dies nicht der Fall so kommt die oben
+beschriebene Frage nach der Aktualisierung des Clients.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier ist wichtig,
+dass der Client in das gleiche Verzeichnis installiert / aktualisiert wird, von
+dem aus auch Ihr Helium V Client gestartet wird. Erfolgt die Aktualisierung in
+ein anderes Verzeichnis, so wird auch der von Ihnen gestartete Client nicht
+aktualisiert, und damit erscheint wiederum die Frage.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wir raten daher immer
+den vorgeschlagenen Pfad bei der Installation zu verwenden. Dieser ist für
+die&nbsp; Windowsinstallationen in aller Regel <a href="file:///c:/Programme/helium_v">c:\Programme\helium_v</a></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Prüfen des
+Aufruf-Pfades Ihrer Helium V Installation.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In
+Windowsinstallationen klicken Sie bitte mit der rechten Maustaste auf das Helium
+V Icon und dann auf Eigenschaften (linke Maustaste).</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Client_Speicherort.jpg" width="376" height="520"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier sehen Sie unter
+Ziel den aufrufenden Batch mit dem Ihr Helium V Client gestartet wird.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das bedeutet in
+unserem Beispiel, dass Helium V nach <a href="file:///C:/Programme/helium_v">C:\Programme\helium_v</a>
+installiert werden muss.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sollte es trotzdem
+nicht funktionieren, so wählen Sie bitte bei der Installation explizit das
+Verzeichnis durch Klick aus Auswählen aus.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Client_Install_Pfad.jpg" width="671" height="640"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wichtig: Hier ist der
+Pfad anzugeben.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sollte nach der
+Installation wiederum die Frage nach dem Clientupdate erscheinen, So prüfen Sie
+bitte, ob die angezeigte Build Nummer des gestarteten Clients nach dem Update
+der neuen Build Nummer entspricht. Diese Nummer teilt Ihnen Ihr Helium V
+Betreuer gerne mit. Sie wird für jede generierte Programmversion erhöht und
+hat daher für den Anwender keine nachvollziehbare Logik, mit Ausnahme dass ein
+neuerer Client eine höhere Nummer haben muss. Ändert sich diese Nummer nach
+dem zweiten Update nicht, so wurde beim Eintrag der Clientverteilung eine
+falsche Clientversion eingespielt.&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beispiel:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Titelzeile Ihres
+Helium V Clients vor der Installation (Buildnummer: 5467)</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Client_Update_Davor.jpg" width="177" height="65"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Titelzeile Ihres
+Helium V Clients nach dem gültigen Update (Buildnummer: 5496)</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Client_Update_Danach.jpg" width="168" height="60"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann ich
 Helium V auch unter Windows(R) 98 betreiben?</p>
