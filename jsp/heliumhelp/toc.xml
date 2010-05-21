@@ -12,6 +12,39 @@
     <tocitem target="Infos+Tipps_fuer_Umsteiger_htm" text="Tipps für Umsteiger"/>
     <tocitem target="Argumente_Speed_htm" text="Geschwindigkeit"/>
   </tocitem>
+  <tocitem target="index_htm" text="Stammdaten">
+    <tocitem target="artikel_index_htm" text="Artikel">
+      <tocitem target="Verkaufspreis_htm" text="Verkaufspreis"/>
+      <tocitem target="SerienChargennummern_htm" text="SerienChargennummern"/>
+      <tocitem target="Mengeneinheit_htm" text="Mengeneinheit"/>
+      <tocitem target="inventur_htm" text="Inventur"/>
+    </tocitem>
+    <tocitem target="Partner_index_htm" text="Partner">
+      <tocitem target="anreden_htm" text="Anreden"/>
+      <tocitem target="import_htm" text="Importieren"/>
+      <tocitem target="Kontaktmanagement_htm" text="Kontaktmanagement"/>
+    </tocitem>
+    <tocitem target="Kunde_index_htm" text="Kunde"/>
+    <tocitem target="Lieferant_index_htm" text="Lieferant">
+      <tocitem target="Lieferantenbeurteilung_htm" text="Lieferantenbeurteilung"/>
+    </tocitem>
+    <tocitem target="personal_index_htm" text="Personal">
+      <tocitem target="Zeitmodell_Definition_htm" text="Zeitmodell_Definition"/>
+    </tocitem>
+    <tocitem target="benutzer_index_htm" text="Benutzer"/>
+    <tocitem target="Allgemeine_Stammdaten_index_htm" text="Allgemeine Stammdaten"/>
+  </tocitem>
+  <tocitem text="Einkauf">
+    <tocitem target="Anfrage_index_htm" text="Anfrage"/>
+    <tocitem target="Bestellung_index_htm" text="Bestellung">
+      <tocitem target="Bestellvorschlag_htm" text="Bestellvorschlag"/>
+      <tocitem target="Eingangsrechnungszuordnung_htm" text="Eingangsrechnungszuordnung"/>
+    </tocitem>
+    <tocitem target="Eingangsrechnung_index_htm" text="Eingangsrechnung">
+      <tocitem target="Zahlungsvorschlag_htm" text="Zahlungsvorschlag"/>
+      <tocitem target="Export_htm" text="Export"/>
+    </tocitem>
+  </tocitem>
   <tocitem text="Verkauf">
     <tocitem target="Angebot_index_htm" text="Angebot">
       <tocitem target="Angebotstueckliste_index_htm" text="Angebotsstückliste"/>
@@ -31,17 +64,6 @@
     <tocitem target="Proformarechnung_htm" text="Proformarechnung"/>
     <tocitem target="Projekte_index_htm" text="Projekte"/>
     <tocitem target="Gemeinsamkeiten_der_Bewegungsmodule_htm" text="Gemeinsamkeiten der Bewegungsmodule"/>
-  </tocitem>
-  <tocitem text="Einkauf">
-    <tocitem target="Anfrage_index_htm" text="Anfrage"/>
-    <tocitem target="Bestellung_index_htm" text="Bestellung">
-      <tocitem target="Bestellvorschlag_htm" text="Bestellvorschlag"/>
-      <tocitem target="Eingangsrechnungszuordnung_htm" text="Eingangsrechnungszuordnung"/>
-    </tocitem>
-    <tocitem target="Eingangsrechnung_index_htm" text="Eingangsrechnung">
-      <tocitem target="Zahlungsvorschlag_htm" text="Zahlungsvorschlag"/>
-      <tocitem target="Export_htm" text="Export"/>
-    </tocitem>
   </tocitem>
   <tocitem target="Fertigung_index_htm" text="Fertigung Los">
     <tocitem target="Stueckliste_index_htm" text="Stückliste">
@@ -84,28 +106,6 @@
     </tocitem>
     <tocitem target="Zutritt_index_htm" text="Zutrittskontrollsystem"/>
     <tocitem target="Reklamation_index_htm" text="Reklamation"/>
-  </tocitem>
-  <tocitem target="index_htm" text="Stammdaten">
-    <tocitem target="artikel_index_htm" text="Artikel">
-      <tocitem target="Verkaufspreis_htm" text="Verkaufspreis"/>
-      <tocitem target="SerienChargennummern_htm" text="SerienChargennummern"/>
-      <tocitem target="Mengeneinheit_htm" text="Mengeneinheit"/>
-      <tocitem target="inventur_htm" text="Inventur"/>
-    </tocitem>
-    <tocitem target="Partner_index_htm" text="Partner">
-      <tocitem target="anreden_htm" text="Anreden"/>
-      <tocitem target="import_htm" text="Importieren"/>
-      <tocitem target="Kontaktmanagement_htm" text="Kontaktmanagement"/>
-    </tocitem>
-    <tocitem target="Kunde_index_htm" text="Kunde"/>
-    <tocitem target="Lieferant_index_htm" text="Lieferant">
-      <tocitem target="Lieferantenbeurteilung_htm" text="Lieferantenbeurteilung"/>
-    </tocitem>
-    <tocitem target="personal_index_htm" text="Personal">
-      <tocitem target="Zeitmodell_Definition_htm" text="Zeitmodell_Definition"/>
-    </tocitem>
-    <tocitem target="benutzer_index_htm" text="Benutzer"/>
-    <tocitem target="Allgemeine_Stammdaten_index_htm" text="Allgemeine Stammdaten"/>
   </tocitem>
   <tocitem target="System_index_htm" text="System">
     <tocitem target="Drucken_htm" text="Drucken">
