@@ -299,7 +299,7 @@ Parameter können in dieser Datei verwendet werden:</p>
     <tr>
       <td width="199" height="21">anrede_ansprechpartner</td>
       <td width="1027" height="21">Anredestring für den Ansprechpartner des
-        Beleges. Z.B. sehr geehrter Herr xy</td>
+        Beleges. Z.B. Sehr geehrter Herr xy,</td>
     </tr>
     <tr>
       <td width="199" height="21">belegnummer</td>
@@ -307,8 +307,11 @@ Parameter können in dieser Datei verwendet werden:</p>
     </tr>
     <tr>
       <td width="199" height="21">bezeichnung</td>
-      <td width="1027" height="21">Bezeichnung des Beleges z.B. Angebot, oder
-        Auftrag usw.</td>
+      <td width="1027" height="21">Bezeichnung des Beleges im Klartext. Z.B. das
+        Angebot Nr. 10/0123456, oder
+        Auftrag usw.<br>
+        Für spezifische Übersetzungen usw. verwenden Sie bitte belegnummer und
+        geben die Bezeichnung des Beleges direkt im XSL an.</td>
     </tr>
     <tr>
       <td width="199" height="21">belegdatum</td>
@@ -320,7 +323,7 @@ Parameter können in dieser Datei verwendet werden:</p>
     </tr>
     <tr>
       <td width="199" height="21">bearbeiter</td>
-      <td width="1027" height="21">Der Bearbeiter des Moduls, z.B. Angebotes</td>
+      <td width="1027" height="21">Der beim Modul z.B. Angebot, eingetragene Vertreter ev. mit Unterschrifts- Funktion</td>
     </tr>
     <tr>
       <td width="199" height="21">fusstext</td>
@@ -364,6 +367,65 @@ Parameter können in dieser Datei verwendet werden:</p>
       <td width="199" height="21">bearbeiter_telefonfirmamitdw</td>
       <td width="1027" height="21">Kombinierte Telefonnummer ev. mit Durchwahl</td>
     </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_direktfax</td>
+      <td width="1027" height="21">Direkt Fax aus Personal, Daten, Absenderdaten</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_faxdwfirma</td>
+      <td width="1027" height="21">Faxdurchwahl (Personal, Daten, Absenderdaten,
+        FaxDW)</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_faxfirmamitdw</td>
+      <td width="1027" height="21">Kombinierte Faxnummer ev. mit Durchwahl</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_unterschriftsfunktion</td>
+      <td width="1027" height="21">Unterschriftsfunktion aus Personal, Daten</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">bearbeiter_unterschriftstext</td>
+      <td width="1027" height="21">Unterschriftstext aus Personal, Daten</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">firma_name1</td>
+      <td width="1027" height="21">Mandantenname1</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">firma_name2</td>
+      <td width="1027" height="21">Mandantenname2</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">firma_name3</td>
+      <td width="1027" height="21">Mandantenname3</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">firma_lkz</td>
+      <td width="1027" height="21">Länderkennzeichen Mandant</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">firma_plz</td>
+      <td width="1027" height="21">Postleitzahl Mandant</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">firma_ort</td>
+      <td width="1027" height="21">Ort Mandant</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">firma_strasse</td>
+      <td width="1027" height="21">Straße Mandant</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">kundenbestellnummer</td>
+      <td width="1027" height="21">Kundenbestellnummer, insbesondere wenn
+        Lieferschein, dann aus Auftrag</td>
+    </tr>
+    <tr>
+      <td width="199" height="21">abnummer</td>
+      <td width="1027" height="21">Auftragsbestätigungsnummer bei Lieferschein,
+        Packliste etc.</td>
+    </tr>
   </table>
 </div>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
@@ -377,6 +439,14 @@ uns.</p>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Verifizierung
 des Style-Sheets mit <a href="msxsl.exe">msxsl.exe</a> <a href="HeliumV_Muster_EMail_Daten.xml">HeliumV_Muster_EMail_Daten.xml</a>
 mail.xsl oder mit Xalan</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Können die Formularvorlagen und die Vorlagen für die EMail Texte auch direkt
+am MAC bearbeitet werden?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Ja. Hier empfiehlt es sich, für die Bearbeitung der Reportvorlagen einen Alias
+einzurichten. <a href="Druckformulare_am_MAC_bearbeiten.htm">Siehe dazu</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Können auch Bilder mitgedruckt werden?</p>
