@@ -328,7 +328,7 @@ Rechnungen noch für das alte Geschäftsjahr ausgestellt werden. Siehe dazu auch
 Mehrwertsteuer der Position kommt vom Kunden oder vom Artikel?</p>
 
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
-Mit dem Parameter KUNDEN_POSITIONS_KONTIERUNG wird definiert, ob die
+Mit dem Parameter KUNDEN_POSITIONSKONTIERUNG wird definiert, ob die
 Mehrwertsteuer je (Rechnungs-) Position aus dem Artikel (=1) kommt oder aus dem
 Kunden (=0). Default Einstellung ist, dass die Definition des für die Position
 verwendeten Mehrwertsteuersatzes vom Kunden kommt.</p>
@@ -337,7 +337,14 @@ der Mehrwertsteuersatz vom Artikel, so ist unbedingt erforderlich, dass bei
 jedem Artikel ein Mehrwertsteuersatz definiert ist. Um auch hier bei der Anlage
 neuer Artikel einen standard Mehrwersteuersatz definieren zu können, verwenden
 Sie den Parameter DEFAULT_ARTIKEL_MWSTSATZ. Die hier erforderliche ID des
-Parameters teilt Ihnen Ihr Helium V Betreuer gerne mit.</p>
+Parameters teilt Ihnen Ihr Helium V Betreuer gerne mit.<br>
+<b>Hinweis:</b> Kommt der MwSt-Satz vom Artikel, so wird, wenn der MwSt-Satz des
+Kunden 0 also steuerfrei ist, der MwSt-Satz der Position trotzdem auf steuerfrei
+gesetzt.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Beachten
+Sie dazu auch die Einstellungen unter System, Mandant, Vorbelegungen. Die
+unterschiedlichen MwSt Sätze.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Sortierung der Auswahllisten nach Kunde/Lieferant</p>
@@ -361,7 +368,7 @@ Positionsarten sollten nicht verwendet werden</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Für
 einige Anwender ist es sinnvoll, praktisch, wenn bestimmte Positionsarten in
 bestimmten Modulen nicht zur Verfügung stehen. So könnte es z.B. die Regel
-geben, dass Ware die ausgeliefert immer mit einem Lieferschein ausgeliefert
+geben, dass Ware die ausgeliefert wird, immer mit einem Lieferschein ausgeliefert
 werden muss. Oder es dürfen auf Lieferschein und Rechnung keine Handartikel
 verwendet werden.</p>
 
