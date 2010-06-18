@@ -17,16 +17,18 @@
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Systemvoraussetzungen:</p>
 <UL>
 	<LI><P STYLE="text-decoration: none; text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">Helium V
-	Installation mit MSSQL Server 2000, 2003 oder MSDE 2000 oder<br>
+	Installation mit MSSQL Server 2000, 2005, 2008 oder MSDE 2000 oder<br>
       Helium V Installation mit PostgresQL Server</P>
 </UL>
 <UL>
-	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">Windows XP oder Windows 2003 mit
+	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">Windows XP,
+      Windows 2003 oder Windows 2008mit
 	installierter Faxfunktion<br>
       Mit Einschränkungen auch Windows2000 Server.</P>
 </UL>
 <UL>
-	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">SMTP Mail Provider</P>
+	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">SMTP Mail Provider,
+      dies kann auch ein interner Exchange-Server sein</P>
 	<LI><P STYLE="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="answer">Für
       den Faxversand mit ISDN Karten darf im Versandrechner nur eine ISDN Karte
       eingebaut sein.<br>
@@ -262,8 +264,16 @@ Installation und Konfiguration des Helium V Versanddienstes:</P>
     nicht und können diese daher auch nicht beheben.</span></P>
     <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><span style="text-decoration: none">Alternativ
     können Zugriffe über VNC, PC-anywhere oder ähnlichem verwendet werden,
-    oder am Besten vor Ort.<br>
-    <br>
+    oder am Besten vor Ort.</span></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="question">Verwendung
+    von Exchange als SMTP Server</P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Exchange
+    kann auch als &quot;interner&quot; SMTP Server verwendet werden.</P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">D.h.
+    unter Mail Server geben Sie den internen Namen Ihres Exchangeserver an (z.B.
+    server.ihrunternehmen.local). Als Benutzer geben Sie dann einen Benutzer mit
+    Exchange Postfach an und als Passwort das Domain-Passwort des Benutzers.</P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="question"><span style="text-decoration: none">
     <b>
     Installation für Tobit /David</b></span></P>
     <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Versanddienst_mit_Tobit.gif" width="632" height="173"></P>
@@ -322,6 +332,8 @@ Optionen</P>
 <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">	-u	Dienst deinstallieren</P>
 <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">	-s	Dienst stoppen</P>
 <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">	-v	Versionsinfo anzeigen</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">	-t
+Test der Verbindung zum Datenbankserver</P>
 </blockquote>
 <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><b>Hinweis:</b>
 Nach der Installation empfiehlt es sich, den Faxserver neu zu starten.</P>
@@ -496,6 +508,30 @@ gestartet werden.</p>
     <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Wichtig
     ist, alle Optimierungen und erweiterten Druckfunktionen abzuschalten, da
     diese vom PCL Konverter nicht unterstützt werden.&nbsp;</P>
+
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="question">Zugriff
+von einem zweiten Rechner auf einen SQL2008 Server</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Hier
+stellt sich oft die Frage, welche Ausnahmen bei einer aktivierten Firewall
+eingerichtet werden müssen.</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Der
+Zugriff muss über die sogenannten Namend Pipes erfolgen. Ob dieser Zugriff für
+den angemeldeten ! Benutzer wirklich möglich ist, kann durch einfachen Zugriff
+auf eine Freigabe des Zielservers, auf dem der SQL 2008 Server läuft geprüft
+werden.</P>
+<ul>
+  <li>
+    <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Es
+    müssen keine Ports freigeschaltet werden, es muss jedoch der Zugriff auf
+    die Programme<br>
+    sqlbrowser</li>
+  <li>
+    <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">sqlserver</li>
+</ul>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">freigeschaltet
+werden.</P>
+<P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer"><img border="0" src="Firewall_W2k8_Versanddienst.jpg" width="434" height="339"></P>
+    <P STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</P>
 
 </body>
 

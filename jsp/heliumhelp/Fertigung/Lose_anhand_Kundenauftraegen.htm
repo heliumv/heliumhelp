@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Lose anhand Kundenaufträgen anlegen</title>
+</head>
+
+<body>
+
+<h1>Lose anhand Kundenaufträgen anlegen</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sehr oft sollen
+Fertigungsaufträge nicht in der Gesamtbetrachtung der Internen Bestellung
+sondern anhand von Kundenaufträgen angelegt werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In Helium V stehen
+Ihnen dazu zwei Funktionen zur Verfügung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">a.) aus der
+Auswahlliste der Lose</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">b.) aus dem Anlegen
+neuer Lose</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">a.) in der
+Auswahlliste der Lose finden Sie <img border="0" src="Lose_anhand_Auftrag1.gif" width="32" height="26">
+Neu anhand Auftrag.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wählen Sie hier den
+gewünschten Auftrag aus.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Als nächstes
+erhalten Sie eine Liste der Lose die Aufgrund des Inhaltes des Auftrags angelegt
+werden sollten.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Lose_anhand_Auftrag3.jpg" width="689" height="234"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die angeführten
+Stücklisten ergeben sich aus den im Auftrag enthaltenen Positionen und den
+dazugehörenden Unterstücklisten.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Es werden die
+Positionsnummer des Auftrags (PosNr) die Stücklisten-Ident, die Bezeichnung
+angezeigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ebenso wird der
+aktuelle Lagerstand aller Läger des Artikels die für die interne Bestellung
+reserviert werden sollten, die derzeit reservierten mengen und die Fehlmenge auf
+dem jeweiligen Artikel angezeigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Losgröße der
+Kopf- (= Übergeordneten) Stücklisten entspricht der Auftragsmenge.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Losgröße der
+untergeordneten Stücklisten wird durch Multiplikation aus der Menge der
+Kopfstückliste errechnet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Unterpositionen
+werden in dieser Ansicht mit U in der PosNr gekennzeichnet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Termine (Beginn,
+Ende) werden wie folgt berechnet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Ende Termin des
+Kopfloses ergibt sich aus dem Liefertermin der Auftragsposition abzüglich der
+Kunden-Lieferdauer (Siehe Kunde, Konditionen) Der Beginntermin ergibt sich aus
+Endetermin abzüglich der in der Stückliste hinterlegten Durchlaufzeit.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Endetermin des
+Unterloses ergibt sich aus dem übergeordneten Los abzüglich der
+Fertigungsvorlaufzeit. Und So Weiter.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei der Berechnung
+des Vorschlagswertes Losgröße werden Lagerstände usw. NICHT berücksichtigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ändern Sie die
+Produktionswerte wie gewünscht benötigt ab.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf <img border="0" src="Lose_anhand_Auftrag4.jpg" width="30" height="25">
+speichern werden die Lose entsprechend angelegt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Lose die einen
+direkten Bezug zur Auftragsposition haben, werden mit einem Bezug dazu angelegt.
+Lose die sich Aufgrund der Unterstücklisten ergeben werden von hinten her ohne
+Auftragsbezug angelegt. Bei direkter Verknüpfung zwischen Auftrags- und
+Los-Nummer werden diese Unterlose mit der Nummer 999 beginnend abwärts
+gezählt.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Wie werden
+Handeingaben des Kundenauftrags behandelt?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Handeingaben des
+Kundenauftrags werden als </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">b.) aus dem Anlegen
+neuer Lose.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im Anlegen neuer Lose
+finden Sie neben der Anzeige / Auswahl des Auftrags den Knopf <img border="0" src="Lose_anhand_Auftrag2.gif" width="56" height="27">
+Lose für Auftragspositionen anlegen. Damit werden alle Lose eines Auftrags /
+einer Auftragsposition angelegt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+</body>
+
+</html>
