@@ -128,7 +128,10 @@ Geräte verstehen aber auch die Einzelcodes, also </p>
 ... Losnummer oder $R ... Reparaturnummer oder $A ... Auftragsnummer</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">$M
-... Maschinen ID (kann auch entfallen)</p>
+... Maschinen ID (kann auch entfallen) oder</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">$FERTIG
+... Fertigmeldung der einen Tätigkeit</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">$T
 ... Tätigkeit oder $STOP für die Maschinen Ende Buchung, Ende der
@@ -137,31 +140,11 @@ Maschinenzeit.</p>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">$V
 ... kombinierter Buchungscode</p>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">$Q
-... Menge zu vorigem Scann einer Losnummer mit Maschinen bzw. Tätigkeit&nbsp;</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">$QENDE
-... Mengeneingabe beendet.</p>
-
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Anstelle
 der Losnummer können auch die Sonderformen $KOMMT, $GEHT usw. angeführt
 werden.</p>
-
-<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Stückrückmeldung
-am Stift:</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Um
-die Stückrückmeldung einzelner Arbeitsschritte am Zeiterfassungsstift zu
-ermöglichen, haben wir die Mehrmengen Erfassung eingebaut. Nach dem Erfassen
-einer Tätigkeit scannen Sie danach additiv die am Fertigungsschein angedruckten
-Mengen, solange bis exakt die gewünschte Stückzahl erfasst ist. Danach Scannen
-Sie $QENDE, um die Mengeneingabe gültig abzuschließen. Das Einscannen anderer
-Codes, bricht die Stückrückmeldung ab.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Als
-Mengeneingabe können am Stift nur ganzzahlige Mengenangaben verarbeitet werden.</p>
 
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Tipp:</p>
 
@@ -195,103 +178,95 @@ die Maschinendefinition stehen folgende Felder zur Verfügung:</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Maschinendefinition.gif" width="714" height="168"></p>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Inventarnummer
-... Vergeben Sie eine Inventarnummer für die Maschine</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bezeichnung
-........ Die bei Ihnen gebräuchliche Bezeichnung für die Maschine</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Maschinengruppe
-.. Die Maschinengruppe, der Sie diese Maschine zuordnen. Nach den
-Maschinengruppen wird auch die Kapazitätsvorschau gruppiert.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Identifikationsnummer
-... Ein zweistelliges Kennzeichen um die Maschine eindeutig zu identifizieren,
+<div align="left">
+  <table border="1" width="717" height="16">
+    <tr>
+      <td width="232" height="16">Inventarnummer&nbsp;</td>
+      <td width="1202" height="16"> Vergeben Sie eine Inventarnummer für die Maschine</td>
+    </tr>
+    <tr>
+      <td width="232" height="16">Bezeichnung&nbsp;</td>
+      <td width="1202" height="16"> Die bei Ihnen gebräuchliche Bezeichnung für die Maschine</td>
+    </tr>
+    <tr>
+      <td width="232" height="16">Maschinengruppe&nbsp;</td>
+      <td width="1202" height="16"> Die Maschinengruppe, der Sie diese Maschine zuordnen. Nach den
+Maschinengruppen wird auch die Kapazitätsvorschau gruppiert.</td>
+    </tr>
+    <tr>
+      <td width="232" height="16">Identifikationsnummer&nbsp;</td>
+      <td width="1202" height="16"> Ein zweistelliges Kennzeichen um die Maschine eindeutig zu identifizieren,
 bestehend aus Buchstaben und Ziffern. Diese Nummer wird im Barcode der
 Zeiterfassung hinterlegt. Mit den zwei Zeichen können 1296 Maschinen definiert
-werden.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Verfügbarkeit
-... 100% entsprechen einer Verfügbarkeit von 24Stunden / Tag für 5Tage die
-Woche für diese Maschine</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Kaufdatum
-... Als Erinnerung, wann die Maschine gekauft wurde.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+werden.</td>
+    </tr>
+    <tr>
+      <td width="232" height="16">Verfügbarkeit&nbsp;</td>
+      <td width="1202" height="16"> 100% entsprechen einer Verfügbarkeit von 24Stunden / Tag für
+        7Tage die
+Woche für diese Maschine</td>
+    </tr>
+    <tr>
+      <td width="232" height="16">Kaufdatum&nbsp;</td>
+      <td width="1202" height="16"> Als Erinnerung, wann die Maschine gekauft wurde.</td>
+    </tr>
+  </table>
+</div>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Zusätzlich
 kann der Stundensatz der Maschine im oberen Modulreiter Kosten definiert werden.
 Hinterlegen Sie hier den Stundensatz der Maschine ab einem gewissen Zeitpunkt.</p>
 
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
-Kann die Maschinenzeit auch manuell erfasst werden.</p>
+Kann die Maschinenzeit auch manuell erfasst werden?</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
-Im Zeiterfassungsdialog kann zur Tätigkeit der Person zusätzlich die Maschine
-und damit der Beginn der Maschinenlaufzeit erfasst werden. Auch hier wird
-grundsätzlich solange Beginn gebucht, bis ein Stop für eine Maschine erfasst
-wird.</p>
+Ja selbstverständlich.</p>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Maschinenzeiterfassung_manuell.gif" width="385" height="125"></p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wählen
+Sie den unteren Modulreiter Maschinen, so können hier die Zeitbuchungen der
+Maschinen erfasst und korrigiert werden.</p>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Einzig
-die Stop-Buchung auf eine Maschine ist Mitarbeiter unabhängig, alles andere ist
-immer dem buchenden Mitarbeiter zugeordnet.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Im
+Gegensatz zur Mitarbeiterzeiterfassung wird hier davon ausgegangen, dass
+Maschinen eine gewisse Zeit laufen. D.h. jede Maschine hat eine Von-Bis Zeit
+während dieser sie für ein Fertigungslos für eine bestimmte Tätigkeit
+gebucht ist.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Der
+Start einer Maschine muss immer von einem Mitarbeiter durchgeführt werden,
+daher ist für die Von Buchung auch eine Person anzugeben. Dieser Mitarbeiter
+ist für die Maschine ab diesem Zeitpunkt verantwortlich.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Damit
+Sie einen einfachen Überblick erhalten, welche Maschine gerade welchen Auftrag
+bearbeitet, wird in der Auswahlliste der Maschinen auch die jeweils letzte
+Buchung angezeigt.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Maschinen_Auswahlliste.jpg" width="774" height="48"></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
+Von Bis Zeit Definition bedingt auch, dass immer wenn neue Zeiten dazu kommen,
+automatisch die Bis-Zeit der letzten Buchung eingetragen wird, wenn diese noch
+keine Bis Zeit eingetragen hat.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Maschinenzeiterfassung_manuell.jpg" width="774" height="175"></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Zusätzlich
+kann, z.B. als Erinnerung, warum diese Zeit verändert wurde, eine Bemerkung
+angegeben werden.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
 
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
-Kann Maschinenzeit alleine erfasst werden oder<br>
-Ich habe Maschinenzeiten erfasst, es werden aber keine Zeiten für die
-Mitarbeiter angezeigt / ausgewertet.</p>
+Welche Kosten werden für die Maschinenstunde angesetzt?</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
-In Helium V können die Istzeiten für die Maschinen und die Personen getrennt
-erfasst werden. Dies wird folgendermaßen realisiert:</p>
+Im oberen Modulreiter Kosten, können die Kosten ab einem gewissen Datum pro
+Stunde für diese Maschine definiert werden.</p>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Ist
-eine Zeitbuchung in der manuellen Zeiterfassung einer Maschinen zugeordnet, so
-läuft diese Zeit ausschließlich für die Maschine. Sie wurde zwar vom
-Mitarbeiter XY gebucht, aber die Maschine läuft alleine. Somit kann ich
-Mannlose Zeiten auf Maschinen buchen, obwohl ein Mitarbeiter etwas anderes
-macht.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wurde
-eine Zeitbuchung ohne Maschinenzuordnung gemacht, so läuft die Zeit auf den
-Mitarbeiter.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Dieses
-Verhalten wirkt in allen Auswertungen. D.h. wenn z.B. in der Los-Nachkalkulation
-keine Istzeiten für die Mitarbeiter angezeigt werden, aber es werden
-Maschinenstunden angezeigt, so wurde vermutlich nur Maschinenstunden gebucht und
-keine Personalstunden.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Beispiel
-1: Es werden nur Maschinenzeiten gebucht.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Maschinenzeiterfassung1.gif" width="542" height="89"></p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bei
-diesem Beispiel wurde <b>nur</b> Maschinenzeit gebucht. D.h. auch in der
-Nachkalkulation werden Sie nur Maschinenzeiten finden. Diese könnte wie folgt
-aussehen:</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Maschinenzeiterfassung2.gif" width="727" height="105"></p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Beispiel2:
-Zu den Maschinenzeiten werden nun auch Mannstunden hinzugefügt.</p>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Maschinenzeiterfassung3.gif" width="542" height="106"></p>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">D.h.
-ab 15:43 ist eine Buchung <b>ohne</b> Maschinenzuordnung, was eine direkte
-Buchung für den Mitarbeiter ist. </p>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Maschinenzeiterfassung4.gif" width="730" height="96"></p>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Nun
-sehen Sie auch die Mitarbeiterzeiten auf diesem Los.</p>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Hinweis:</p>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Werden
-die Buchungen von der Stiftzeiterfassung übernommen, so wird bei einer
-Maschinenbuchung immer auch eine Mannbuchung hinzugefügt.</p>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
 
 </body>
