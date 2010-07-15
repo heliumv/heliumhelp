@@ -41,7 +41,7 @@ Positionsnummer des Auftrags (PosNr) die Stücklisten-Ident, die Bezeichnung
 angezeigt.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ebenso wird der
 aktuelle Lagerstand aller Läger des Artikels die für die interne Bestellung
-reserviert werden sollten, die derzeit reservierten mengen und die Fehlmenge auf
+reserviert werden sollten, die derzeit reservierten Mengen und die Fehlmenge auf
 dem jeweiligen Artikel angezeigt.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Losgröße der
 Kopf- (= Übergeordneten) Stücklisten entspricht der Auftragsmenge.</p>
@@ -58,7 +58,14 @@ Kunden-Lieferdauer (Siehe Kunde, Konditionen) Der Beginntermin ergibt sich aus
 Endetermin abzüglich der in der Stückliste hinterlegten Durchlaufzeit.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Endetermin des
 Unterloses ergibt sich aus dem übergeordneten Los abzüglich der
-Fertigungsvorlaufzeit. Und So Weiter.</p>
+Fertigungsvorlaufzeit. Und so Weiter. Wird aufgrund der Rückwärts Terminierung
+ein Beginntermin vor dem heutigen Tage errechnet, so werden alle Termine um die
+höchste Differenz (zu heute) nach hinten verschoben, also auf
+Vorwärtsterminierung umgeschaltet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Wichtig:</b> In
+den reservierten Mengen der Kopfstücklisten werden die Aufgrund des gewählten
+Auftrags reservierten Mengen nicht mitgerechnet, da diese Darstellung sonst ja
+doppelt mitgerechnet werden würde.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei der Berechnung
 des Vorschlagswertes Losgröße werden Lagerstände usw. NICHT berücksichtigt.</p>
