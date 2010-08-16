@@ -1424,6 +1424,84 @@ haben dies in Helium V so implementiert, dass im Fertigungsbegleitschein der
 Parameter ERSTLOS zur Verfügung steht. Erstlos ist ein Los dann, wenn von der
 Chronologie der Losnummern her, dies für diesen Artikel das erste Los ist.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Parameter die die Ansicht der Losauswahlliste steuern</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es stehen folgende Parameter für die Einstellung der Ansicht der
+Losauswahlliste zur Verfügung:</p>
+
+<div align="left">
+  <table border="1" width="663" height="14">
+    <tr>
+      <td width="391" height="14">Parameter</td>
+      <td width="444" height="14">Wert</td>
+      <td width="1174" height="14">Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="391" height="14">AUFTRAG_STATT_ARTIKEL_IN_AUSWAHLLISTE</td>
+      <td width="444" height="14">0 ... aus
+        <p>1 ... ein</td>
+      <td width="1174" height="14">Anstelle der Artikelnummer und der
+        Artikelbezeichnung werden Auftragsnummer und Projekt des Auftrags
+        angezeigt<br>
+        Hinweis: Die Anzeige des Kunden ist in dieser Einstellung nicht möglich</td>
+    </tr>
+    <tr>
+      <td width="391" height="14">KUNDE_STATT_BEZEICHNUNG_IN_AUSWAHLLISTE</td>
+      <td width="444" height="14">0 ... aus<br>
+        1 ... ein</td>
+      <td width="1174" height="14">Anstelle der Artikelbezeichnung wird der
+        Kundenname aufgrund des Auftrags angezeigt. <br>
+        Mit obiger Einstellung nicht kombinierbar.</td>
+    </tr>
+    <tr>
+      <td width="391" height="14">ENDE_TERMIN_STATT_BEGINN_ANZEIGEN</td>
+      <td width="444" height="14">0 ... aus<br>
+        1 ... ein1</td>
+      <td width="1174" height="14">Anstelle des Beginntermines wird der
+        Endetermin angezeigt</td>
+    </tr>
+  </table>
+</div>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Parameter
+für das Verhalten der Termineingabe:</p>
+
+<table border="1" width="663" height="14">
+  <tr>
+    <td width="391" height="14">Parameter</td>
+    <td width="444" height="14">Wert</td>
+    <td width="1174" height="14">Bedeutung</td>
+  </tr>
+  <tr>
+    <td width="391" height="14">NUR_TERMINEINGABE</td>
+    <td width="444" height="14">0</td>
+    <td width="1174" height="14">Eingabe mit Berücksichtigung der Durchlaufzeit
+      und als Vorwärts oder Rückwärtsterminierung</td>
+  </tr>
+  <tr>
+    <td width="391" height="14"></td>
+    <td width="444" height="14">1</td>
+    <td width="1174" height="14">Eingabe von Beginn und Endetermin, daraus wird
+      die Durchlaufzeit ermittelt. Keine Vorwärts bzw. Rückwärtskalkulation.</td>
+  </tr>
+</table>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Zuordnung der verantwortlichen Techniker und weiterer Techniker</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In den Kopfdaten des Loses kann der für das Fertigungslos verantwortliche
+Techniker definiert werden. Gegebenenfalls kann bei der Zeiterfassung die
+Auswahlliste auf die Techniker eingeschränkt werden. <a href="../Zeiterfassung/index.htm#Losauswahlliste_für_Techniker">Siehe
+dazu</a>. Um weitere Techniker zu definieren, welche ebenfalls auf dieses Los
+buchen, wählen Sie den oberen Modulreiter Techniker. Definieren Sie hier die
+weiteren Personen, welche normalerweise ebenfalls auf dieses Los buchen dürfen.</p>
+
 </body>
 
 </html>
