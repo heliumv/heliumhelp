@@ -1452,7 +1452,7 @@ Losauswahlliste zur Verfügung:</p>
       <td width="444" height="14">0 ... aus<br>
         1 ... ein</td>
       <td width="1174" height="14">Anstelle der Artikelbezeichnung wird der
-        Kundenname aufgrund des Auftrags angezeigt. <br>
+        Kundenname aufgrund des Auftrags angezeigt.&nbsp;<br>
         Mit obiger Einstellung nicht kombinierbar.</td>
     </tr>
     <tr>
@@ -1501,6 +1501,127 @@ Auswahlliste auf die Techniker eingeschränkt werden. <a href="../Zeiterfassung/i
 dazu</a>. Um weitere Techniker zu definieren, welche ebenfalls auf dieses Los
 buchen, wählen Sie den oberen Modulreiter Techniker. Definieren Sie hier die
 weiteren Personen, welche normalerweise ebenfalls auf dieses Los buchen dürfen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Steuerung der Fertigung in den Losen / Zeitdaten&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In den Zeitdaten eines Loses kann sehr genau gesteuert werden wie dieses Los in
+den verschiedenen Auslastungs-/Zeitplanungen berücksichtigt werden sollte.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Los_Zeitdaten.gif" width="775" height="283"></p>
+
+<div align="left">
+  <table border="1" width="773" height="12">
+    <tr>
+      <td width="205" height="12">Feld/Label</td>
+      <td width="1341" height="12">Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Tätigkeit</td>
+      <td width="1341" height="12">Tätigkeit die durchgeführt werden sollte<br>
+        Für die Vorkalkulation der Personalzeiten werden die unter
+        Artikellieferant hinterlegten Sätze verwendet. Für die Istkalkulation
+        beachten Sie bitte den Parameter <a href="../personal/index.htm#Personalkosten in den Nachkalkulationen"> PERSONALKOSTEN_QUELLE</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Arbeitsgang</td>
+      <td width="1341" height="12">Die laufende Nummer des Arbeitsgangs als
+        übergeordnete Gruppe der nachfolgenden Unterarbeitsgänge</td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Unterarbeitsgang</td>
+      <td width="1341" height="12">Untergliederung eines einzelnen Arbeitsganges
+        in weitere Schritte.<br>
+        Insbesondere für die Steuerung des Verhaltens der
+        Zeiterfassungsterminals erforderlich.</td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Personalkosten/<br>
+        Maschinenkosten</td>
+      <td width="1341" height="12">Anzeige der Soll-Kosten zu Ihrer Information</td>
+    </tr>
+    <tr>
+      <td width="205" height="12">AG-Art</td>
+      <td width="1341" height="12">Arbeitsgangart, siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Rüstzeit</td>
+      <td width="1341" height="12">siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Stückzeit</td>
+      <td width="1341" height="12">siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Gesamtzeit</td>
+      <td width="1341" height="12">Anzeige der errechneten Gesamtzeit anhand
+        Stück- und Rüstzeit in Stunden</td>
+    </tr>
+    <tr>
+      <td width="205" height="12">AG-Art</td>
+      <td width="1341" height="12">Arbeitsgangart siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">AG-Beginn</td>
+      <td width="1341" height="12">Arbeitsgangbeginn, für die Übernahme der
+        Berechung der Arbeitsgang Beginn Termine siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a>.<br>
+        Im Unterschied zur Stückliste wird hier der Beginntermin des
+        Arbeitsganges für jeden Arbeitsgang angegeben. Wird bei einem
+        Arbeitsgang der Termin geändert, so werden alle nachfolgenden
+        Arbeitsgänge ebenfalls um die Differenztage verschoben. Dies wird in
+        beiden Richtungen durchgeführt.</td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Aufspannung</td>
+      <td width="1341" height="12">siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Maschine</td>
+      <td width="1341" height="12">siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Aut.Stop bei Geht</td>
+      <td width="1341" height="12">Automatisches Stop bei Gehtbuchung des
+        Mitarbeiters.<br>
+        Dieser Wert wird beim Anlegen des Arbeitsganges, des Loses von der
+        Einstellung der Maschine übernommen und kann hier, z.B. für eine
+        Geisterschicht, abgeändert werden.<br>
+        Er wirkt sich nur bei den Stop-Buchungen für die Maschine aus. D.h. ist
+        der Haken gesetzt, so wird bei der Gehtbuchung des Mitarbeiters auch
+        eine Stop-Buchung für die Maschine eingetragen. ist der Haken nicht
+        gesetzt, so läuft die Maschine weiter und es muss die Stop-Buchung
+        manuell eingetragen werden. Siehe dazu auch <a href="../Zeiterfassung/Maschinenzeiterfassung.htm">Maschinenzeiterfassung</a>.</td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Nur Maschinenzeit</td>
+      <td width="1341" height="12">siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Material</td>
+      <td width="1341" height="12">siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Kommentar</td>
+      <td width="1341" height="12">siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+    <tr>
+      <td width="205" height="12">Text</td>
+      <td width="1341" height="12">siehe <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsplan
+        der Stückliste</a></td>
+    </tr>
+  </table>
+</div>
 
 </body>
 
