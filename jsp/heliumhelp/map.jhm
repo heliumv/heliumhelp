@@ -1151,10 +1151,10 @@
   <mapID target="Rechnung_Umsatzuebersicht_gif" url="Rechnung/Rechnung_Umsatzuebersicht.gif"/>
   <mapID target="SpaeterPositionen_Loeschen_gif" url="Bestellung/SpaeterPositionen_Loeschen.gif"/>
   <mapID target="Bestellvorschlag_Neu_gif" url="Bestellung/Bestellvorschlag_Neu.gif"/>
-  <mapID target="Intrastat_Menue_gif" url="Finanzbuchhaltung/Intrastat_Menue.gif"/>
   <mapID target="Warnung_Dokumentenpflichtig_jpg" url="Bestellung/Warnung_Dokumentenpflichtig.jpg"/>
+  <mapID target="Intrastat_Menue_gif" url="Finanzbuchhaltung/Intrastat_Menue.gif"/>
   <mapID target="Bilder_Modulaktivierung_gif" url="Bilder/Modulaktivierung.gif"/>
   <mapID target="Reklamation_jpg" url="Reklamation/Reklamation.jpg"/>
-  <mapID target="Nach_der_Installation_htm" url="System/Nach_der_Installation.htm"/>
   <mapID target="Materialzuschlag_Definition_gif" url="artikel/Materialzuschlag_Definition.gif"/>
+  <mapID target="Nach_der_Installation_htm" url="System/Nach_der_Installation.htm"/>
 </map>
