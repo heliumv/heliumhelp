@@ -92,6 +92,16 @@ können Sie auch während des Tages die Stückrückmeldung für Ihre offenen
 Transportbehälter voll ist, diese Stückzahl bereits an das System melden.
 Damit müssen Sie bei Schichtwechsel nur mehr die abschließende Teil-Menge des
 zuletzt begonnenen Transportbehälters angeben.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie,
+dass es, um die Stückrückmeldungen zum Zeitpunkt zu erfassen, erforderlich
+ist, dass wir dafür eine sehr kurze Unterbrechungsbuchung bei diesem
+Mitarbeiter einfügen müssen. D.h. Sie werden bei diesen Buchungen zwei
+Unterbrechungs-/Pausenbuchungen mit einem Zeitversatz von einer Sekunde in den
+Zeitbewegungen der Mitarbeiter vorfinden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hinweis: Werden alle
+drei Stückzahlen mit 0 (Null) befüllt, so wird keine Stückbuchung gemacht, da
+ja keine brauchbare Information eingegeben wurde.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Erfassung der
 Arbeitsgänge</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die wesentlichste
@@ -245,6 +255,12 @@ Optionen zur Verfügung.</p>
         der Gut/Schlecht Meldung. 0 ... auch kein Komma möglich</td>
     </tr>
     <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Default Tätigkeit</td>
+      <td width="1928" height="9">Diese Tätigkeit wird sofort nach der
+        Losnummer als Tätigkeit auf diesem Arbeitsplatz gebucht.</td>
+    </tr>
+    <tr>
       <td width="160" height="9">Allgemein</td>
       <td width="144" height="9">Sound</td>
       <td width="1928" height="9">sollte eine akustische Rückmeldung der
@@ -288,6 +304,32 @@ Optionen zur Verfügung.</p>
       <td width="1928" height="9">Ist dies angehakt, so werden in einem
         zusätzlichen unteren Dialog Feld die vom seriellen CCD Scanner
         erfassten Codes angezeigt.</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Expertenmodus</td>
+      <td width="1928" height="9">In diesem Mode wird für jede Buchung die
+        Buchungszeit abgefragt. Damit können Sie komfortabel Zeiten Ihrer
+        Mitarbeiter auch in der komplexen Form der Zeitbuchungen nachbuchen</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Mehrfachbuchung</td>
+      <td width="1928" height="9">Wenn die Personalnummer gescannt wurde, wird
+        diese mehrfach bis zum Timeout verwendet</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Timeout zu Mehrfachbuchung</td>
+      <td width="1928" height="9">Wurde 5 Sekunden lang nichts gebucht, muss die
+        Personalnummer neu gescannt werden</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Fertig buchen</td>
+      <td width="1928" height="9">Wird die Personalnummer eingescannt, so werden
+        die offenen Tätigkeiten dieser Person angezeigt und können auf Fertig
+        gesetzt werden.</td>
     </tr>
   </table>
 </div>
@@ -359,18 +401,31 @@ des Terminals vorgenommen werden.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für die Einstellung
 des Bildschirmschoners haben sich folgende Werte bewährt:</p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Refreshrate 30
-Sekunden</p>
-
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Moving Rate 10
-Sekunden</p>
-
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Breite 860</p>
-
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Höhe 768</p>
+<div align="left">
+  <table border="1" width="314" height="11">
+    <tr>
+      <td width="314" height="11">Updateintervall&nbsp;</td>
+      <td width="314" height="11"> 30
+Sekunden</td>
+    </tr>
+    <tr>
+      <td width="314" height="11">Bewegungsintervall&nbsp;</td>
+      <td width="314" height="11"> 10
+Sekunden</td>
+    </tr>
+    <tr>
+      <td width="314" height="11">Fensterbreite&nbsp;</td>
+      <td width="314" height="11">860</td>
+    </tr>
+    <tr>
+      <td width="314" height="11">Fensterhöhe</td>
+      <td width="314" height="11">768</td>
+    </tr>
+  </table>
+</div>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Üblicherweise wird
-dafür ein speziell angepasster Report verwendet, der auf diese Höhe ausgelegt
+dafür ein speziell angepasster Report der Anwesenheitsliste verwendet, der auf diese Höhe ausgelegt
 ist. Wenden Sie sich dafür an Ihren Helium V Betreuer.</p>
 
 <p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Offlinemodus"></a>Offline
@@ -414,6 +469,21 @@ Terminals</p>
 Terminalprogramms starten sie dieses durch einen Doppeltipp auf das <img border="0" src="ZET_HV1.jpg" width="70" height="54">TimeTerminal Icon.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Geht das Terminal
+nach dem Starten sofort wieder in den Offline Modus, so stellen Sie bitte
+sicher, dass mit allen Ports richtig auf den Helium V Server zugegriffen werden
+kann. Sollten Sie einen Proxyserver verwenden, so stellen Sie diesen so ein,
+dass lokale Adressen nicht über den Proxyserver laufen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Erscheint hier die
+Meldung</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="ZET_HV2.jpg" width="286" height="145"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">so ist das
+Terminal(Programm) nicht <a href="http://xenon/wiki/index.php/Asus_EeeTop_Installation#Besonderheiten_der_Bedienung_des_Time-Terminals">freigeschaltet</a>.
+Wenden Sie sich bitte vertrauensvoll an Ihren Helium V Betreuer.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
@@ -534,6 +604,13 @@ den untenstehenden Code.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie,
 dass für die Verwendung auch entsprechende USB-Treiber installiert sein
 müssen. Diese finden Sie auf Ihrer Helium V Installation's CD.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Installation des
+TimeTerminal Programms</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achten Sie darauf,
+dass für die Installation das mitgelieferte Setup.exe ausgeführt wird. Nur die
+Installation der MSI-Datei (WinTimeTermSetup.msi) ist nicht ausreichend.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
