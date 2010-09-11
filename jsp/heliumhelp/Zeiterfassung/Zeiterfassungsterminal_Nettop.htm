@@ -164,6 +164,15 @@ dies bestätigt werden.</p>
 dass Ihre tatsächliche Buchung erst nach der Erfassung gebucht wird, also zu
 dem Zeitpunkt wenn Sie auf den grünen Haken tippen.</p>
 
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Können auch
+Barcodes für Kommt und Geht verwendet werden?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Ja, es werden die
+Barcodes der Sondertätigkeiten
+    wie Kommt, Geht usw. unterstützt. Voraussetzung ist, das die jeweilige Sondertätigkeit auch für die
+    BDE-Station freigegeben ist. (Siehe Zeiterfassung, Sondertätigkeiten, Auf
+    BDE Station buchbar)</p>
+
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie wird die
 Uhrzeit des Terminals eingestellt?</p>
 
@@ -261,10 +270,21 @@ Optionen zur Verfügung.</p>
         Losnummer als Tätigkeit auf diesem Arbeitsplatz gebucht.</td>
     </tr>
     <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Lose mit Auftragsbezug</td>
+      <td width="1928" height="9">Ist dies angehakt, so wird bei der Erfassung
+        von 12stelligen Losnummern ausgegangen. Weiters wird der kombinierte
+        Barcode ($V) mit Arbeitsgangnummern erwartet.<br>
+        Ist dies nicht angehakt, so wird von 10Stelligen Losnummern ausgegangen.
+        Es werden einzelne Buchungen von Losnummer und Tätigkeit erwartet. Die
+        Tätigkeit wird nur erwartet, wenn keine default Tätigkeit definiert
+        ist.</td>
+    </tr>
+    <tr>
       <td width="160" height="9">Allgemein</td>
       <td width="144" height="9">Sound</td>
-      <td width="1928" height="9">sollte eine akustische Rückmeldung der
-        Buchung erfolgen</td>
+      <td width="1928" height="9">Wenn angehakt erfolgt eine akustische Rückmeldung der
+        Buchung.</td>
     </tr>
     <tr>
       <td width="160" height="9"></td>
@@ -462,6 +482,25 @@ entsprechenden Kommentar hinterlegt.</p>
 nicht zuordenbar, so werden die Buchungen mit Kommentar beim LPAdmin
 eingetragen.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Geht das Terminal
+beim Starten sofort in den Offline-Modus oder wechselt es während des Betriebes
+in den Offline-Modus, so werden alle Personalbuchungen und auch alle
+Losbuchungen akzeptiert. Wurde bereits einmal eine Online Verbindung zum Helium
+V Server hergestellt, so wurden die Personendaten (Ausweisnummer, Name) bereits
+Terminal abgelegt. Somit kann für die zuletzt bekannten Personen auch deren
+Name angezeigt werden. Wird eine vom Aufbau her gültige Ausweisnummer
+eingegeben, ist die Person aber nicht bekannt, so wird im Offline Modus dieser
+Ausweis trotzdem akzeptiert, es wird jedoch nur die Ausweisnummer angezeigt. Im
+Online Modus wird ein ungültiger Ausweis nicht akzeptiert.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wieviele Daten
+können im Offline Modus gespeichert werden ?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Die lokale
+Datenbank des Terminals kann bis zu 4GB an Daten aufnehmen, unter der
+Voraussetzung, dass noch ausreichend Speicherplatz zur Verfügung steht.&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Aenderung_der_Ausweisnummer"></a>Änderungen
+der Ausweisnummer einer Person</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achten Sie bitte
+unbedingt darauf, dass alle Terminals im Online Modus sind.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Starten des
 Terminals</p>
 
