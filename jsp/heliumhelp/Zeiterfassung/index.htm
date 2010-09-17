@@ -1120,7 +1120,30 @@ gemacht:</p>
 kann natürlich auch der Mitternachtssprung per Hand gebucht werden. Das
 bedeutet, Sie buchen ein Geht um 23:59 und ein Kommt um 00:00 für den folgenden
 Tag. Denken Sie daran, dass mit Geht die Aufträge beendet werden. D.h. es muss
-am nächsten Tag der Auftrag wieder neu gestartet werden.</p>
+am nächsten Tag der Auftrag wieder neu gestartet werden. Zusätzlich greift bei
+der manuellen Buchung die Rundung zu Gunsten des Unternehmens, bei den
+Automatikbuchungen aber nicht.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann das Kommt auch automatisch gebucht werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja: Mit dem Parameter AUTOMATISCHES_KOMMT kann eingestellt werden, dass bei z.B.
+einer Beginnbuchung auf einen Auftrag automatisch ein Kommt nachgebucht wird,
+wenn für diesen Tag noch kein Kommt gebucht wird. Dies wird in
+Fertigungsbetrieben angewendet, wenn sichergestellt werden soll, dass die
+Mitarbeiter nur Zeiten auf den Fertigungsaufträgen buchen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis</b>
+zum Mitternachtssprung:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+die automatische Kommt-Buchung eingestellt, so wird bei der ersten Buchung des
+Tages geprüft, ob ein Mitternachtssprung vorliegt. Ist dies der Fall, so wird
+der Mitternachtssprung eingetragen, anderenfalls wird die automatische
+Kommt-Buchung unmittelbar vor dem Beginn der Tätigkeit gebucht.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Korrektur der automatischen Buchungen"></a>Q:
 Korrektur der automatischen Buchungen, Nachtragen von Automatik-Buchungen</p>
