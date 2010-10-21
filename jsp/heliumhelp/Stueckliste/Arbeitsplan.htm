@@ -80,7 +80,7 @@ können folgende Definitionen vorgenommen werden.</p>
         (Maschinen-)Laufzeit und (Mitarbeiter-)Umspannzeit erforderlich.<br>
         In Kombination mit der Losnachkalkulation nach Soll-Umspannzeit ist
         diese Einstellung für die richtige Berechnung der anerkannten Zeiten
-        wichtig.</td>
+        wichtig. Siehe.</td>
     </tr>
     <tr>
       <td width="86" height="17">AG-Beginn</td>
@@ -155,6 +155,41 @@ Datenaufbau dafür ist folgender:</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
 Die Arbeitsgangnummer wird automatisch vergeben.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Arbeitsgangarten"></a>Arbeitsgang
+Arten (AG-Art)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Arbeitsgang Art liefert eine wesentliche Unterscheidung des Verhaltens der
+Ist-Zeit Berechnung für den jeweiligen Arbeitsgang.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+die Arbeitsgangart nicht definiert, so wird die gebuchte Istzeit (Beginn bis
+Ende) verwendet.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+die Arbeitsgangart definiert, mit Laufzeit oder Umspannzeit, so greift
+zusätzlich der Parameter THEORETISCHE_IST_ZEIT_RECHNUNG.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+dieser nicht definiert, so wird auch bei diesen Arbeitsgangarten die gebuchte
+Istzeit verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+dieser definiert (= 1), so wird anstelle der Istzeit die theoretische Istzeit
+verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+es wird angenommen, dass die Solldaten des Arbeitsgangs stimmen und daher werden
+diese Zeiten mit der Summe der Gut- und Schlechtstück multipliziert und als
+theoretische Istzeit verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig,
+bei definierter THEORETISCHE_IST_ZEIT_RECHNUNG: Wird ein Arbeitsgang ohne
+Arbeitsgangart gestartet, wir sprechen hier auch von Rüstzeit und wird in
+diesem Zeitraum zugleich die Arbeitsgangarten Umspannzeit oder Laufzeit gebucht,
+so wird die tatsächliche Dauer der Rüstzeit um die theoretische Istzeit
+reduziert um so die echte Nettozeit des Rüstens bestmöglich zu ermitteln.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
