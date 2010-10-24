@@ -143,7 +143,25 @@ dies nun erneut zu triggern, gehen Sie in System, Automatik. Klicken Sie in der
 gestartet. Bitte beachten Sie auch obige Beschreibung, des möglicherweise nicht
 Durchführens von automatischen Läufen. </p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Die Automatik bringt keine Daten </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+die Mahnautomatik der Bestellungen keine Mahnungen erzeugte, wurde der Mahnlauf
+per Hand gestartet und die Mahnungen verschickt. Nun wurde am nächsten Tag
+geprüft ob Mahnungen erzeugt wurden. Es wurde zwar der Mahnlauf durchgeführt,
+aber keine Daten erzeugt. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ursache: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Start der Automatik stand auf 21:00. Das bedeutet, dass durch den manuellen
+Mahnlauf alle Bestellungen für heute bereits gemahnt wurden und daher im
+nächtlichen Automatiklauf keine Positionen mehr zu mahnen sind. Stellen Sie
+daher sicher, dass die Zeitliche- und die Tages-Komponente übereinstimmen. In
+diesem Beispiel muss der Start des Automatiklaufes auf 01:00 verlegt werden.
+Damit erhalten Sie für den Mahnlauf ein anderes Datum und damit können die
+für den &quot;heutigen&quot; Tag fälligen Mahnungen ausgedruckt werden. </p>
 
 </body>
 
