@@ -474,7 +474,8 @@ Urlaubsanspruch entsteht immer zum 1.1. des Kalenderjahres.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
 den Softwareversionen ab 2009 wird der Urlaubsanspruch bei Eintritten während
 des Kalenderjahres aliquotiert, um auch für diese Mitarbeiter während des
-ersten Jahres eine richtige Anzeige des aliquoten Anspruches zu erreichen.</p>
+ersten Jahres eine richtige Anzeige des aliquoten Anspruches zu erreichen. Siehe
+dazu unten Berechnungsbeispiel.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 <b>Hinweis:</b></p>
@@ -531,6 +532,117 @@ Jahresanspruches von 125Std.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Tageweise Urlaubsabrechnung ergibt die richte Tagesanzahl, da auch der Anspruch
 von 25Tagen / Kalenderjahr richtig definiert ist.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Urlaubsanspruch"></a>Urlaubsanspruch
+Stundenweise, Tageweise oder Wochenweise?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+bereits oben ausgeführt ist der Urlaub um den bezweckten Wert der Erholung zu
+haben laut Gesetzgeber Tagesweise zu geben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Urlaubsanspruch wird jedoch in unterschiedlichen Ländern unterschiedlich
+gehandhabt. Das bedeutet:</p>
+<div align="left">
+  <table border="1" width="700" height="17">
+    <tr>
+      <td width="700" height="17">Land</td>
+      <td width="700" height="17">Berechnungsart</td>
+      <td width="700" height="17">Anspruch / Kalenderjahr</td>
+    </tr>
+    <tr>
+      <td width="700" height="17">Österreich</td>
+      <td width="700" height="17">Wochenweiser Urlaubsanspruch</td>
+      <td width="700" height="17">5 Wochen</td>
+    </tr>
+    <tr>
+      <td width="700" height="17">Deutschland, Schweiz</td>
+      <td width="700" height="17">Tageweiser Urlaubsanspruch</td>
+      <td width="700" height="17">24 Tage</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+grundsätzliche Aufgabenstellung für alle Beteiligten Personen ist, wie wird
+mit wechselnden Zeitmodellen umgegangen, also wieviele Tage Urlaubsanspruch hat
+ein Mitarbeiter im gesamten Kalenderjahr, wenn er einige Zeit ein Zeitmodell mit
+drei Arbeitstagen hat und dann z.B. eines mit fünf Arbeitstagen. Hier hilft die
+wöchentliche Betrachtung.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daher
+wird in Helium V nur mehr der Jahresurlaubsanspruch auf Wochenbasis
+abgespeichert. Die angezeigten und eingebbaren Urlaubstage sind eine reine
+Rechenhilfe, welche auf einer fünf Tage Woche beruhen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daraus
+ergibt sich, dass z.B. für 24 Urlaubstage pro Jahr eine Wochenbasis von 4,8
+Wochen angezeigt und auch als Grundlage verwendet wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab
+dem Urlaubsanspruch für 2009 wird dieser, aber der Build-Version 5763 wie folgt
+berechnet:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>a.)
+Stundenweise-Betrachtung:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Relevante
+Datenfelder:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a1.)
+Anzahl der Urlaubsanspruchs-Wochen des zu berechnenden Jahres (Kommt aus
+Personal/Urlaubsanspruch des zu berechnenden Jahres) (im Normalfall 5 Wochen)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a2.)
+Die Sollstunden der jeweiligen Zeitmodelle (von Montag bis Sonntag ohne
+Feiertage)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+einfachste Fall ist hiermit folgender: Wenn jemand das ganze Jahr keinen
+Eintritt/Austritt hat und immer das gleiche Zeitmodell hat, dann ist der
+Jahresurlaubsanspruch wie folgt:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Jahresurlaub in Wochen (a1.) * Sollstunden des Zeitmodells (a2.) = z.B.
+5*38,5=192,5</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+der Eintritt nun nach dem 1. Jänner erfolgt, bzw. mehrere Zeitmodelle während
+eines Jahres verwendet werden, dann werden die Urlaubsansprüche anteilsmäßig
+addiert:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Beispiel:</u></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eintritt
+am 1.Mai mit Zeitmodell 38,5 Stunden, Zeitmodellwechsel am 8. August mit 30
+Stunden:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(Jahresurlaub
+in Wochen (a1.) * Anzahl der Tage des Zeitmodells / Anzahl der Tage im Jahr) *
+Sollstunden des Zeitmodells (a2.)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ergibt:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zeitraum
+1: 1.Mai&nbsp; bis 7.Aug.&nbsp; (5*&nbsp; 69/365)*38,5 = 36,39<br>
+Zeitraum 2: 8.Aug. bis 31.Dez.(5*145/365)*30&nbsp;&nbsp;&nbsp; = 59,58<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 97,97 Stunden Urlaubsanspruch für dieses Kalenderjahr</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>b.)&nbsp;
+Tagesweise-Betrachtung:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+wird analog zur Stundenweisen Betrachtung berechnet. Es wird jedoch ein weitere
+Datenfelder aus der Definition des Zeitmodels herangezogen:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Relevante
+Datenfelder:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b1.)
+Urlaubstage pro Woche</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Formel lautet nun:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(Jahresurlaub
+in Wochen (a1.) * Anzahl der Tage des Zeitmodells / Anzahl der Tage im Jahr) *
+Urlaubstage pro Woche (b1.)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Beispiel:</u></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eintritt
+am 1.Mai mit 5 Tagen Urlaub pro Woche, Zeitmodellwechsel am 8. August mit 4
+Tagen Urlaub pro Woche</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zeitraum
+1: 1.Mai&nbsp; bis 7.Aug.&nbsp;&nbsp; (5*&nbsp; 69/365)*5 = 4,72<br>
+Zeitraum 2: 8.Aug. bis 31.Dez. (5*145/365)*4 = 7,94<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=12,66 Tage Urlaubsanspruch für dieses Kalenderjahr</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anzahl
+der Tage des Zeitmodells zu obigem Beispiel: 1.5. - 7.8. = 31+30+31+7=99</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Urlaubsanspruch
 und vorübergehende Entlassung von Mitarbeitern?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
