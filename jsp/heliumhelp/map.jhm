@@ -12,6 +12,7 @@
   <mapID target="Liefergruppenanfrage1_gif" url="Anfrage/Liefergruppenanfrage1.gif"/>
   <mapID target="Bes_Position_gif" url="Bestellung/Bes_Position.gif"/>
   <mapID target="Rechte_Beschreibung_Muster_gif" url="benutzer/Rechte_Beschreibung_Muster.gif"/>
+  <mapID target="Laender_Waehrungen_Zeitzonen_pdf" url="System/Laender_Waehrungen_Zeitzonen.pdf"/>
   <mapID target="inventur_htm" url="artikel/inventur.htm"/>
   <mapID target="Intrastat_Musterdaten_gif" url="Finanzbuchhaltung/Intrastat_Musterdaten.gif"/>
   <mapID target="Finger_einlesen_Dialog_jpg" url="Zeiterfassung/Finger_einlesen_Dialog.jpg"/>
@@ -57,9 +58,12 @@
   <mapID target="BDE_Wedge_Deutsch_gif" url="Zeiterfassung/BDE_Wedge_Deutsch.gif"/>
   <mapID target="es_gibt_bereits_Mahnungen_jpg" url="Rechnung/es_gibt_bereits_Mahnungen.jpg"/>
   <mapID target="Finger_template_erzeugt_jpg" url="Zeiterfassung/Finger_template_erzeugt.jpg"/>
+  <mapID target="Firefox_Cookie_Loeschen2_jpg" url="System/Firefox_Cookie_Loeschen2.jpg"/>
+  <mapID target="ZET_HV2_jpg" url="Zeiterfassung/ZET_HV2.jpg"/>
   <mapID target="Zutrittmodell1_gif" url="Zutritt/Zutrittmodell1.gif"/>
   <mapID target="Nettop12_jpg" url="Zeiterfassung/Nettop12.jpg"/>
   <mapID target="Lieferantentermine_AB_Termine_trotzdem_aendern_gif" url="Bestellung/Lieferantentermine_AB_Termine_trotzdem_aendern.gif"/>
+  <mapID target="MAC_Cookie_Loeschen1_jpg" url="System/MAC_Cookie_Loeschen1.jpg"/>
   <mapID target="Drucker_Loeschen_gif" url="System/Drucker_Loeschen.gif"/>
   <mapID target="Client_Update_Download_gif" url="Client/Client_Update_Download.gif"/>
   <mapID target="Kassenimport_Definitionen_htm" url="Kueche/Kassenimport_Definitionen.htm"/>
@@ -106,7 +110,7 @@
   <mapID target="Tiffdrucker_SwyxFax_jpg" url="Installation/Tiffdrucker_SwyxFax.jpg"/>
   <mapID target="Dokumentenpflicht2_gif" url="System/Dokumentenpflicht2.gif"/>
   <mapID target="Install_Fax_Faxdrucker_gif" url="Installation/Install_Fax_Faxdrucker.gif"/>
-  <mapID target="aendern_gif" url="Bilder/aendern.gif"/>
+  <mapID target="aendern_gif" url="Bestellung/aendern.gif"/>
   <mapID target="Arbeitsplan_einlesen_gif" url="Stueckliste/Arbeitsplan_einlesen.gif"/>
   <mapID target="Maschinenzeiterfassung_xls" url="Zeiterfassung/Maschinenzeiterfassung.xls"/>
   <mapID target="Export_MAC2_jpg" url="System/Export_MAC2.jpg"/>
@@ -273,7 +277,7 @@
   <mapID target="TFT_Schirm_jpg" url="Bilder/Fremde_Bilder/TFT_Schirm.jpg"/>
   <mapID target="Icon_Leiste_ziehen_gif" url="Allgemein/Icon_Leiste_ziehen.gif"/>
   <mapID target="Urlaub2_gif" url="Zeiterfassung/Urlaub2.gif"/>
-  <mapID target="Zusatzfilter_gif" url="Allgemein/Zusatzfilter.gif"/>
+  <mapID target="Zusatzfilter_gif" url="Bestellung/Zusatzfilter.gif"/>
   <mapID target="Firewall_W2k8_Versanddienst_jpg" url="Installation/Firewall_W2k8_Versanddienst.jpg"/>
   <mapID target="Kurzzeichen_Druck_gif" url="benutzer/Kurzzeichen_Druck.gif"/>
   <mapID target="Tiffdrucker2_jpg" url="Installation/Tiffdrucker2.jpg"/>
@@ -397,10 +401,12 @@
   <mapID target="Zutrittsmodellobjekt1_gif" url="Zutritt/Zutrittsmodellobjekt1.gif"/>
   <mapID target="Unterschrift_gif" url="personal/Unterschrift.gif"/>
   <mapID target="LS_Storno_davor_jpg" url="Rechnung/LS_Storno_davor.jpg"/>
+  <mapID target="ZET_HV3_jpg" url="Zeiterfassung/ZET_HV3.jpg"/>
   <mapID target="Preiseingabe_Preisbasis_Rabatt_gif" url="Rechnung/Preiseingabe_Preisbasis_Rabatt.gif"/>
   <mapID target="ZET_Kunde_jpg" url="Zeiterfassung/ZET_Kunde.jpg"/>
   <mapID target="Zutrittmodell2_gif" url="Zutritt/Zutrittmodell2.gif"/>
   <mapID target="TAPI_Knopf_gif" url="Kunde/TAPI_Knopf.gif"/>
+  <mapID target="MAC_Cookie_Loeschen2_jpg" url="System/MAC_Cookie_Loeschen2.jpg"/>
   <mapID target="Sonderzeit_Fehlermeldung_gif" url="Zeiterfassung/Sonderzeit_Fehlermeldung.gif"/>
   <mapID target="Ueberstundendruck_png" url="Zeiterfassung/Ueberstundendruck.png"/>
   <mapID target="Ueberstundenabrechnung_htm" url="Zeiterfassung/Ueberstundenabrechnung.htm"/>
@@ -429,6 +435,7 @@
   <mapID target="TMAP" url="searchDB/TMAP"/>
   <mapID target="Partner_AnspFunktion_Eingabe_gif" url="Partner/Partner_AnspFunktion_Eingabe.gif"/>
   <mapID target="Kunde_offene_Rechnungen_gif" url="Kunde/Kunde_offene_Rechnungen.gif"/>
+  <mapID target="Ersatztypen_htm" url="Stueckliste/Ersatztypen.htm"/>
   <mapID target="index_1_jpg" url="Zeiterfassung/index.1.jpg"/>
   <mapID target="anrede_Endkunde_gif" url="Partner/anrede_Endkunde.gif"/>
   <mapID target="Zahlungsvorschlag_Bankverbindung_fehlt_gif" url="Finanzbuchhaltung/Zahlungsvorschlag_Bankverbindung_fehlt.gif"/>
@@ -459,6 +466,7 @@
   <mapID target="Shortc2_gif" url="Allgemein/Shortc2.gif"/>
   <mapID target="Ladenheuter_gif" url="artikel/Ladenheuter.gif"/>
   <mapID target="Zahlungsvorschlag_Exportziel_gif" url="Finanzbuchhaltung/Zahlungsvorschlag_Exportziel.gif"/>
+  <mapID target="Nachtraegliche_Mat_Entnahme2_gif" url="Fertigung/Nachtraegliche_Mat_Entnahme2.gif"/>
   <mapID target="Neuer_Mahnlauf_gif" url="Rechnung/Neuer_Mahnlauf.gif"/>
   <mapID target="warning_png" url="artikel/warning.png"/>
   <mapID target="Gemeinsame_Kopfdaten_ändern_gif" url="Rechnung/Gemeinsame_Kopfdaten_aendern.gif"/>
@@ -494,7 +502,7 @@
   <mapID target="ReineDruckvorschau_gif" url="Allgemein/ReineDruckvorschau.gif"/>
   <mapID target="Bestellvorschlag_ueberleiten_gif" url="Bestellung/Bestellvorschlag_ueberleiten.gif"/>
   <mapID target="Waagenterminal_png" url="Kueche/Waagenterminal.png"/>
-  <mapID target="Verdichten_gif" url="Fertigung/Verdichten.gif"/>
+  <mapID target="Verdichten_gif" url="Bestellung/Verdichten.gif"/>
   <mapID target="Artikelnummer_Auswahl_gif" url="artikel/Artikelnummer_Auswahl.gif"/>
   <mapID target="Sofortverbrauch_Tageslos_definieren_jpg" url="Kueche/Sofortverbrauch_Tageslos_definieren.jpg"/>
   <mapID target="Telefon_Faxnummer_gif" url="Partner/Telefon_Faxnummer.gif"/>
@@ -537,6 +545,7 @@
   <mapID target="Auslieferliste_gif" url="Fertigung/Auslieferliste.gif"/>
   <mapID target="Verwendungsbeschraenkung_jpg" url="Zutritt/Verwendungsbeschraenkung.jpg"/>
   <mapID target="Partner_Import_gif" url="Partner/Partner_Import.gif"/>
+  <mapID target="Ersatztypen1_gif" url="Stueckliste/Ersatztypen1.gif"/>
   <mapID target="Nettop5_gif" url="Zeiterfassung/Nettop5.gif"/>
   <mapID target="Zeiterfassung_index_htm" url="Zeiterfassung/index.htm"/>
   <mapID target="Partner_System_gif" url="Partner/Partner_System.gif"/>
@@ -549,6 +558,7 @@
   <mapID target="Schichtzeit_Speichern_gif" url="Zeiterfassung/Schichtzeit_Speichern.gif"/>
   <mapID target="ER_Uebersicht_jpg" url="Bilder/ER_Uebersicht.jpg"/>
   <mapID target="Materailzuschlag_Bestellung_gif" url="artikel/Materailzuschlag_Bestellung.gif"/>
+  <mapID target="ZET_HV_USB_COM_gif" url="Zeiterfassung/ZET_HV_USB_COM.gif"/>
   <mapID target="Modulmenueleiste_gif" url="Allgemein/Modulmenueleiste.gif"/>
   <mapID target="Mehrere_Lose_markieren_jpg" url="Fertigung/Mehrere_Lose_markieren.jpg"/>
   <mapID target="Anwenderhilfe3_jpg" url="Allgemein/Anwenderhilfe3.jpg "/>
@@ -607,6 +617,7 @@
   <mapID target="Benutzermandante_Definition_gif" url="benutzer/Benutzermandante_Definition.gif"/>
   <mapID target="Hompage_Knopf_gif" url="Kunde/Hompage_Knopf.gif"/>
   <mapID target="Partner_gif" url="Kunde/Partner.gif"/>
+  <mapID target="Kostenstellen_htm" url="Rechnung/Kostenstellen.htm"/>
   <mapID target="Mahnungen_gif" url="Rechnung/Mahnungen.gif"/>
   <mapID target="Termine_und_Zusammenhaenge_jpg" url="Bilder/Termine_und_Zusammenhaenge.jpg"/>
   <mapID target="Loszeiterfassung_gif" url="Zeiterfassung/Loszeiterfassung.gif"/>
@@ -696,7 +707,7 @@
   <mapID target="Rahmenabrufmenge_gif" url="Bestellung/Rahmenabrufmenge.gif"/>
   <mapID target="Konto_Laenderart_uebersetzung_gif" url="Finanzbuchhaltung/Konto_Laenderart_uebersetzung.gif"/>
   <mapID target="Artikel_kopieren_gif" url="artikel/Artikel_kopieren.gif"/>
-  <mapID target="F630_DISPLAY2_png" url="Bilder/F630_DISPLAY2.png"/>
+  <mapID target="F630_DISPLAY2_png" url="Zeiterfassung/F630_DISPLAY2.png"/>
   <mapID target="HP_Großformat_Drucker_Plotter_bmp" url="Bilder/Fremde_Bilder/HP_Großformat_Drucker_Plotter.bmp"/>
   <mapID target="Mahnung_Einzeln_aendern_gif" url="Rechnung/Mahnung_Einzeln_aendern.gif"/>
   <mapID target="Dokumentenlink_2_gif" url="System/Dokumentenlink_2.gif"/>
@@ -732,6 +743,8 @@
   <mapID target="Nettop14_jpg" url="Zeiterfassung/Nettop14.jpg"/>
   <mapID target="ER_Uebersicht_png" url="Bilder/ER_Uebersicht.png"/>
   <mapID target="Rechnung_gif" url="Rechnung/Rechnung.gif"/>
+  <mapID target="Los_Erledigen_jpg" url="Fertigung/Los_Erledigen.jpg"/>
+  <mapID target="MAC_Cookie_Loeschen3_jpg" url="System/MAC_Cookie_Loeschen3.jpg"/>
   <mapID target="barcodes_htm" url="System/barcodes.htm"/>
   <mapID target="BDE_St2_gif" url="Zeiterfassung/BDE_St2.gif"/>
   <mapID target="Neu_aus_Auswahl_gif" url="Allgemein/Neu_aus_Auswahl.gif"/>
@@ -798,6 +811,7 @@
   <mapID target="Preise_am_Ausdruck_cdr" url="Bilder/Preise_am_Ausdruck.cdr"/>
   <mapID target="index_xml" url="index.xml"/>
   <mapID target="LieferscheinUmsatzübersicht1_gif" url="Lieferschein/LieferscheinUmsatzuebersicht1.gif"/>
+  <mapID target="Zahlung_Gegenverrechnung_gif" url="Rechnung/Zahlung_Gegenverrechnung.gif"/>
   <mapID target="Client_Installation_Sprachauswahl_gif" url="Client/Client_Installation_Sprachauswahl.gif"/>
   <mapID target="ZET_Button_Beenden_gif" url="Zeiterfassung/ZET_Button_Beenden.gif"/>
   <mapID target="ZET_down_jpg" url="Zeiterfassung/ZET_down.jpg"/>
@@ -828,6 +842,7 @@
   <mapID target="Gemeinsamkeiten_Stornieren_gif" url="Rechnung/Gemeinsamkeiten_Stornieren.gif"/>
   <mapID target="Kontaktmanagement_htm" url="Partner/Kontaktmanagement.htm"/>
   <mapID target="Anfragejournal2_gif" url="Anfrage/Anfragejournal2.gif"/>
+  <mapID target="Gestern_gif" url="Zeiterfassung/Gestern.gif"/>
   <mapID target="Reisezeiten1_jpg" url="Zeiterfassung/Reisezeiten1.jpg"/>
   <mapID target="Fibu_Export_Artikelgruppen_Definition_gif" url="Finanzbuchhaltung/Fibu_Export_Artikelgruppen_Definition.gif"/>
   <mapID target="Doku_Ablage7_gif" url="System/Doku_Ablage7.gif"/>
@@ -905,6 +920,8 @@
   <mapID target="Drucken_gif" url="Bilder/Drucken.gif"/>
   <mapID target="Mengeneinheiten_Umrechnungsfaktoren_cdr" url="Bilder/Mengeneinheiten_Umrechnungsfaktoren.cdr"/>
   <mapID target="KDC100_png" url="Bilder/KDC100.png"/>
+  <mapID target="Firefox_Cookie_Loeschen1_jpg" url="System/Firefox_Cookie_Loeschen1.jpg"/>
+  <mapID target="ZET_HV1_jpg" url="Zeiterfassung/ZET_HV1.jpg"/>
   <mapID target="Zebra_lp_2844_gif" url="Bilder/Fremde_Bilder/Zebra_lp_2844.gif"/>
   <mapID target="Drucken_Umfeld_jpg" url="Bilder/Drucken_Umfeld.jpg"/>
   <mapID target="roadmap_htm" url="roadmap.htm"/>
@@ -948,11 +965,12 @@
   <mapID target="F630_DISPLAY_cdr" url="Zeiterfassung/F630_DISPLAY.cdr"/>
   <mapID target="Rund_Automatik_Buchung3_jpg" url="personal/Rund_Automatik_Buchung3.jpg"/>
   <mapID target="Reisezeiten_htm" url="Zeiterfassung/Reisezeiten.htm"/>
+  <mapID target="Zusatzfilter_Auftrag_gif" url="Bestellung/Zusatzfilter_Auftrag.gif"/>
   <mapID target="Positionen_verschieben_jpg" url="Rechnung/Positionen_verschieben.jpg"/>
   <mapID target="Einzelpreise_fehlen2_gif" url="Angebot/Einzelpreise_fehlen2.gif"/>
   <mapID target="ZET_ok2_jpg" url="Zeiterfassung/ZET_ok2.jpg"/>
   <mapID target="Anfragejournal_gif" url="Anfrage/Anfragejournal.gif"/>
-  <mapID target="Dokumentenpflicht1_gif" url="artikel/Dokumentenpflicht1.gif"/>
+  <mapID target="Dokumentenpflicht1_gif" url="System/Dokumentenpflicht1.gif"/>
   <mapID target="Angebot_index_htm" url="Angebot/index.htm"/>
   <mapID target="Kommunikations_Mandant_gif" url="Partner/Kommunikations_Mandant.gif"/>
   <mapID target="Maschinendefinition_gif" url="Zeiterfassung/Maschinendefinition.gif"/>
@@ -1042,6 +1060,7 @@
   <mapID target="Rechnungsart_gif" url="Rechnung/Rechnungsart.gif"/>
   <mapID target="Zusammenfuehren1_gif" url="Partner/Zusammenfuehren1.gif"/>
   <mapID target="Zeitserver_htm" url="Zeiterfassung/Zeitserver.htm"/>
+  <mapID target="Aktualisieren_gif" url="Bestellung/Aktualisieren.gif"/>
   <mapID target="Intrastat2_jpg" url="Finanzbuchhaltung/Intrastat2.jpg"/>
   <mapID target="Automatikbuchungen_gif" url="Zeiterfassung/Automatikbuchungen.gif"/>
   <mapID target="Dokumentenablage_gif" url="System/Dokumentenablage.gif"/>
@@ -1089,7 +1108,7 @@
   <mapID target="Partner_Kommunikationsart_gif" url="Partner/Partner_Kommunikationsart.gif"/>
   <mapID target="LieferscheinUmsatzübersicht2_gif" url="Lieferschein/LieferscheinUmsatzuebersicht2.gif"/>
   <mapID target="Fibu_OP_Import1_jpg" url="Finanzbuchhaltung/Fibu_OP_Import1.jpg"/>
-  <mapID target="Kurzzeichen_gif" url="personal/Kurzzeichen.gif"/>
+  <mapID target="Kurzzeichen_gif" url="benutzer/Kurzzeichen.gif"/>
   <mapID target="Inventur_durchführen_gif" url="artikel/Inventur_durchfuehren.gif"/>
   <mapID target="Begriffe_index_htm" url="Begriffe/index.htm"/>
   <mapID target="Modulverlassen_gif" url="Allgemein/Modulverlassen.gif"/>
@@ -1133,24 +1152,24 @@
   <mapID target="Intastat3_gif" url="Finanzbuchhaltung/Intastat3.gif"/>
   <mapID target="Lager_Definieren_gif" url="artikel/Lager_Definieren.gif"/>
   <mapID target="Reisezeiten2_gif" url="Zeiterfassung/Reisezeiten2.gif"/>
-  <mapID target="Benutzer_gif" url="benutzer/Benutzer.gif"/>
   <mapID target="Bestellung_loeschen_gif" url="Bestellung/loeschen.gif"/>
+  <mapID target="Benutzer_gif" url="benutzer/Benutzer.gif"/>
   <mapID target="Partner_index_htm" url="Partner/index.htm"/>
   <mapID target="Update_Client2_gif" url="Installation/Update_Client2.gif"/>
   <mapID target="ExportFormate_htm" url="Finanzbuchhaltung/ExportFormate.htm"/>
-  <mapID target="Zahlungs_Neu_gif" url="Finanzbuchhaltung/Zahlungs_Neu.gif"/>
   <mapID target="Zahlungsvorschlag_Elba_Import_Feldzuordnungsübersicht_gif" url="Finanzbuchhaltung/Zahlungsvorschlag_Elba_Import_Feldzuordnungsuebersicht.gif"/>
+  <mapID target="Zahlungs_Neu_gif" url="Finanzbuchhaltung/Zahlungs_Neu.gif"/>
   <mapID target="SollPositionLoeschen_gif" url="Fertigung/SollPositionLoeschen.gif"/>
   <mapID target="Speiseplan_gif" url="Kueche/Speiseplan.gif"/>
   <mapID target="Materialzuschlag_Kupferzahl_gif" url="artikel/Materialzuschlag_Kupferzahl.gif"/>
   <mapID target="Diva_Anruftyp_gif" url="Installation/Diva_Anruftyp.gif"/>
-  <mapID target="Sendezeitpunkt_gif" url="System/Sendezeitpunkt.gif"/>
   <mapID target="Druckformulare_am_MAC_bearbeiten_htm" url="System/Druckformulare_am_MAC_bearbeiten.htm"/>
+  <mapID target="Sendezeitpunkt_gif" url="System/Sendezeitpunkt.gif"/>
   <mapID target="Fingerprint_htm" url="Zeiterfassung/Fingerprint.htm"/>
   <mapID target="Nachrichten1_gif" url="System/Nachrichten1.gif"/>
   <mapID target="Rechnung_Umsatzuebersicht_gif" url="Rechnung/Rechnung_Umsatzuebersicht.gif"/>
-  <mapID target="SpaeterPositionen_Loeschen_gif" url="Bestellung/SpaeterPositionen_Loeschen.gif"/>
   <mapID target="Bestellvorschlag_Neu_gif" url="Bestellung/Bestellvorschlag_Neu.gif"/>
+  <mapID target="SpaeterPositionen_Loeschen_gif" url="Bestellung/SpaeterPositionen_Loeschen.gif"/>
   <mapID target="Warnung_Dokumentenpflichtig_jpg" url="Bestellung/Warnung_Dokumentenpflichtig.jpg"/>
   <mapID target="Intrastat_Menue_gif" url="Finanzbuchhaltung/Intrastat_Menue.gif"/>
   <mapID target="Bilder_Modulaktivierung_gif" url="Bilder/Modulaktivierung.gif"/>

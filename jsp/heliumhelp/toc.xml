@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE toc PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN" "http://java.sun.com/products/javahelp/toc_2_0.dtd">
 <toc version="2.0">
-  <tocitem target="roadmap_htm" text="Helium V"/>
   <tocitem target="index_htm" text="Allgemein">
     <tocitem target="Erste_Schritte_index_htm" text="Erste Schritte"/>
     <tocitem target="Bedienung_der_Hilfe_htm" text="Bedienung der Hilfe"/>
@@ -70,6 +69,7 @@
     <tocitem target="Stueckliste_index_htm" text="Stückliste">
       <tocitem target="Arbeitsplan_htm" text="Arbeitsplan"/>
       <tocitem target="Setartikel_htm" text="Setartikel"/>
+      <tocitem target="Ersatztypen_htm" text="Ersatztypen"/>
     </tocitem>
     <tocitem target="Interne_Bestellung_htm" text="Interne Bestellung"/>
     <tocitem target="Lose_anhand_Kundenauftraegen_htm" text="Lose anhand Kundenauftrag anlegen"/>
@@ -109,7 +109,9 @@
     </tocitem>
     <tocitem target="Zutritt_index_htm" text="Zutrittskontrollsystem"/>
     <tocitem target="Reklamation_index_htm" text="Reklamation"/>
+    <tocitem target="Kostenstellen_htm" text="Kostenstellen"/>
   </tocitem>
+  <tocitem target="roadmap_htm" text="Helium V"/>
   <tocitem target="System_index_htm" text="System">
     <tocitem target="Drucken_htm" text="Drucken">
       <tocitem target="Druckformulare_htm" text="Druckformulare"/>
