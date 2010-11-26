@@ -15,10 +15,12 @@ pause
 
 echo "Entfernen aller nicht benötigten Dateien und Ordner"
 c:
-cd \jbproject\heliumhelp\jsp\
-del _vti_cnf\ /s
-del _vti_pvt\ /s
-del CVS\ /s
+cd \jbproject\heliumhelp\jsp\heliumhelp\
+call d:\CVS_HV\heliumhelp\DelDir.bat _vti_cnf\
+call d:\CVS_HV\heliumhelp\DelDir.bat _vti_pvt\
+call d:\CVS_HV\heliumhelp\DelDir.bat CVS\
+call d:\CVS_HV\heliumhelp\DelDir.bat _derived\
+call d:\CVS_HV\heliumhelp\DelDir.bat backup\
 del .cvsignore /s
 del Thumbs.db /s
 del *.bak /s

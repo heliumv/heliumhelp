@@ -30,8 +30,14 @@ RMDIR %1 /S /Q
 cd ..
 cd Bilder
 RMDIR %1 /S /Q
+cd Fremde_Bilder
+RMDIR %1 /S /Q
+cd ..
 cd ..
 cd Client
+RMDIR %1 /S /Q
+cd ..
+cd css
 RMDIR %1 /S /Q
 cd ..
 cd Eingangsrechnung
