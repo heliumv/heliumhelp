@@ -67,6 +67,8 @@ können alle Mandantenabhängigen allgemeinen Stammdaten</span> definiert
 werden.</span></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><span style="font-family: Arial" lang="DE">Zu
 den <a href="#Incoterms">Incoterms siehe</a></span></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><span style="font-family: Arial" lang="DE">Zu
+den <a href="#Definition neuer Mehrwertsteuersätze">Mehrwertsteuersätzen siehe</a>.</span></p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wo kann ich die default Einstellungen für neue Kunden, Lieferanten usw.
 definieren</p>
@@ -231,11 +233,82 @@ werden in allen Preiseingabe Felder keine Einkaufspreise und keine
 Gestehungspreise angezeigt. Dieses Recht wirkt in:</p>
 <ul>
   <li>Bestellung: Wareneingang, Wareneingangspositionen, Bestellposition
-  <li>Artikel, Reiter EK-Staffelpreise wirden nicht angezeigt. Zusätzlich wird
+  <li>Artikel, Reiter EK-Staffelpreise werden nicht angezeigt. Zusätzlich wird
     im Reiter Artikellieferant kein Preis und keine Rabattgruppe angezeigt und
     in der Auswahlliste und im Reiter Lager wird der Gestehungspreis
     unterdrückt.</li>
 </ul>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Definition neuer Mehrwertsteuersätze"></a>Definition
+neuer Mehrwertsteuersätze</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zur
+Definition von Mehrwertsteuersätzen und Mehrwertsteuerarten wechseln Sie in das
+Modul System, unterer Modulreiter Mandant und nun für die Definition der
+Mehrwertsteuerarten auf den Reiter Mehrwertsteuerbezeichnung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden die grundsätzlich verschiedenen Mehrwertsteuerarten definiert. Diese
+sind teilweise Länderabhängig.</p>
+
+<div align="left">
+  <table border="1" width="601" height="17">
+    <tr>
+      <td width="649" height="17">Mehrwertsteuerart</td>
+      <td width="311" height="17">Österreich</td>
+      <td width="419" height="17">Deutschland</td>
+      <td width="481" height="17">Schweiz</td>
+    </tr>
+    <tr>
+      <td width="649" height="17">steuerfrei</td>
+      <td width="311" height="17">ja</td>
+      <td width="419" height="17">ja</td>
+      <td width="481" height="17">ja</td>
+    </tr>
+    <tr>
+      <td width="649" height="17">reduzierter Steuersatz</td>
+      <td width="311" height="17">10%</td>
+      <td width="419" height="17">7%</td>
+      <td width="481" height="17">2,4%<br>
+        ab 1.1.2011 2,5%</td>
+    </tr>
+    <tr>
+      <td width="649" height="17">normal Steuersatz</td>
+      <td width="311" height="17">20%</td>
+      <td width="419" height="17">19%</td>
+      <td width="481" height="17">7,6%,&nbsp;<br>
+        ab 1.1.2011 8%</td>
+    </tr>
+    <tr>
+      <td width="649" height="17">Luxussteuersatz</td>
+      <td width="311" height="17">32%</td>
+      <td width="419" height="17">--</td>
+      <td width="481" height="17">--</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Reiter MWST definieren Sie, welche Steuersätze ab welchem Zeitraumgültig sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
+Sie bitte unbedingt darauf, bereits verwendete Steuersätze nicht zu ändern,
+sondern bei neuen Steuersätzen diese tatsächlich als neu ab dem
+Gültigkeitszeitpunkt zu definieren.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Es werden in den Positionen immer nur die zum Belegdatum passenden
+Mehrwertsteuersätze angezeigt. Wenn also der Mehrwertsteuersatz bisher 7,6% war
+(Schweiz bis Ende 2010) und ab 1.1.2011 auf 8% erhöht wird, so wird für alle
+Belege bis inkl. 31.12.2010 der Mehrwertsteuersatz von 7,6% verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch
+die Organisation, dass im Kunden/Lieferanten nur die Mehrwertsteuerart definiert
+wird, sind im Kunden/Lieferanten keine Umstellungen vorzunehmen, es genügt die
+Angabe des entsprechenden Belegdatums.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Incoterms"></a>Incoterms</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Entnommen
