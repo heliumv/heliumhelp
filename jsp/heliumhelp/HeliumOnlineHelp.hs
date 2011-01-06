@@ -24,8 +24,8 @@
     <data>index.xml</data>
   </view>
   <presentation default="true" displayviewimages="true">
-    <name>Helium Hilfe Hauptfenster</name>
-    <size height="768" width="1024"/>
+    <name>Helium V Hilfe Hauptfenster</name>
+    <size height="740" width="1024"/>
     <location x="0" y="0"/>
     <title>HELIUM V 5.11. Online Help</title>
     <image>toplevelfolder</image>
