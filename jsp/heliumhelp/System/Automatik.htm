@@ -50,8 +50,7 @@ in Tagen&quot; durchgeführt.</td>
   <tr>
     <td width="21%">Vor
 Feiertagen ausführen</td>
-    <td width="79%">Ist so gedacht, wenn der Folgetag Samstag oder Sonntag ist,
-      oder ein Feiertag, so wird, wenn nicht angehakt der Lauf nicht
+    <td width="79%">Ist so gedacht, wenn der Folgetag ein Feiertag ist, so wird, wenn nicht angehakt der Lauf nicht
       ausgeführt. Sonst schon. Damit Läufe auch für z.B. den Freitag
       ausgeführt werden, stellen Sie bitte den Startzeitpunkt auf kurz vor
       Mitternacht.</td>
@@ -72,6 +71,21 @@ Monatsende ausführen</td>
       Zur Installation der Server-Drucker unter Linux Systemen <a href="http://neon/wiki/index.php/Drucker_einrichten">siehe</a>.</td>
   </tr>
 </table>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+werden Automatikjobs vor dem Wochenende ausgeführt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+hängt vom Startzeitpunkt des Automatiklaufes ab.&nbsp; </p>
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+    der Startzeitpunkt vor 12:00 (Mittag), so wird der Automatiklauf auch am
+    Freitag durchgeführt. Am Sonntag erfolgt kein Lauf des Automatikjobs.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+    der Startzeitpunkt nach 12:00 (Mittag), so wird der Automatiklauf am Freitag
+    nicht durchgeführt. Dafür wird der Automatiklauf am Sonntag durchgeführt,
+    damit am Montag Morgen die Bestellmahnungen bei ihren Lieferanten sind.</li>
+</ul>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Testlauf
 der Automatikjobs</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
