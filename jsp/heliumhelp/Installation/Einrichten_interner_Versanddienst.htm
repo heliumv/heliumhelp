@@ -1,0 +1,168 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Einrichten interner Versanddienst</title>
+</head>
+
+<body>
+
+<h1>Einrichten interner Versanddienst</h1>
+<p class="answer">Mit dem internen Versanddienst steht Ihnen aber Version 5956
+eine direkte SMTP und IMAP Anbindung für den Versand Ihrer EMails und
+gegebenfalls auch Faxe direkt integriert im Helium V Applikation Server zur
+Verfügung. D.h. der Umweg über Windows wird hiermit nicht mehr benötigt.</p>
+<p><img border="0" src="../Bilder/Parameter_interner_Versanddienst.gif" width="563" height="166"></p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
+Parametrierung des internen Versanddienstes erfolgt im Modul System. Geben Sie
+hier unter Kategorie Versand ein, so werden die erforderlichen Parameter für
+den internen Versanddienst gelistet.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Sollten Sie
+in Ihrer Installation diese Parameter nicht vorfinden, so ist in Ihrer Helium V
+Installation dieses Modul nicht freigeschaltet. Bitte wenden Sie sich an Ihren
+Helium V Betreuer.</p>
+<p class="question" style="word-spacing: 0; text-indent: 0; margin: 0">Einrichten
+des SMTP Servers:</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Durch die
+Parametrierung des SMTP Servers, wird der interne Versanddienst aktiviert.</p>
+<div align="left">
+  <table border="1" width="588" height="21">
+    <tr>
+      <td width="428" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Parameter</td>
+      <td width="551" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Beispiel</td>
+      <td width="785" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Beschreibung</td>
+    </tr>
+    <tr>
+      <td width="428" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMPTSERVER</td>
+      <td width="551" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">mail.logistikpur.local</td>
+      <td width="785" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Servername
+        des SMPT Server</td>
+    </tr>
+    <tr>
+      <td width="428" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMTPSERVER_BENUTZER</td>
+      <td width="551" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+      <td width="785" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+    </tr>
+    <tr>
+      <td width="428" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMTPSERVER_FAXDOMAIN</td>
+      <td width="551" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">fax.local</td>
+      <td width="785" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+    </tr>
+    <tr>
+      <td width="428" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMTPSERVER_KENNWORT</td>
+      <td width="551" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+      <td width="785" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+    </tr>
+    <tr>
+      <td width="428" height="21">MAILADRESSE_ADMIN</td>
+      <td width="551" height="21"></td>
+      <td width="785" height="21"></td>
+    </tr>
+  </table>
+</div>
+<p class="question" style="word-spacing: 0; text-indent: 0; margin: 0">Einrichten
+der IMAP Anbindung:</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Durch die
+IMAP Anbindung, wird nach erfolgtem SMTP Versand eine Kopie des EMails im IMAP
+Postfach des Benutzers abgelegt. Die Parametrierung ist zweigeteilt:</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">a.) die
+generelle Einbindung, diese finden Sie ebenfalls unter System, Parameter,
+Kategorie Versand</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">b.) die
+Definition der Postfächer für jeden Benutzer, diese finden Sie im Modul
+Personal, im oberen Modulreiter Daten.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"><b>Parametrierung
+IMAP Anbindung</b></p>
+<table border="1" width="588" height="21">
+  <tr>
+    <td width="428" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Parameter</td>
+    <td width="551" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Beispiel</td>
+    <td width="785" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Beschreibung</td>
+  </tr>
+  <tr>
+    <td width="428" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">IMAPSERVER</td>
+    <td width="551" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">mail.logistikpur.local</td>
+    <td width="785" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Servername
+      des IMAP Server</td>
+  </tr>
+  <tr>
+    <td width="428" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">IMAPSERVER_ADMIN</td>
+    <td width="551" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+    <td width="785" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+  </tr>
+  <tr>
+    <td width="428" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">IMAPSERVER_ADMIN_KENNWORT</td>
+    <td width="551" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+    <td width="785" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+  </tr>
+  <tr>
+    <td width="428" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">IMAPSERVER_SENTFOLDER</td>
+    <td width="551" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+    <td width="785" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Ausgangspostfach-Name
+      für jeden Benutzer</td>
+  </tr>
+</table>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Definition der Personal /
+Benutzerdaten</p>
+<table border="1" width="588" height="21">
+  <tr>
+    <td width="428" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Parameter</td>
+    <td width="551" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Beispiel</td>
+    <td width="785" height="21">
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Beschreibung</td>
+  </tr>
+  <tr>
+    <td width="428" height="21">IMAP-Benutzer</td>
+    <td width="551" height="21">werner</td>
+    <td width="785" height="21">Benutzerkonto am IMAP Server</td>
+  </tr>
+  <tr>
+    <td width="428" height="21">IMAP-Kennwort</td>
+    <td width="551" height="21">Kennwort</td>
+    <td width="785" height="21">Kennwort für den Benutzer am IMAP Server.<br>
+      Hinweis: Das Kennwort wird nur mit ** angezeigt.</td>
+  </tr>
+</table>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+
+</body>
+
+</html>
