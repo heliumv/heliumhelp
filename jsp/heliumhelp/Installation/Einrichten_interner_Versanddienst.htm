@@ -15,7 +15,9 @@
 <p class="answer">Mit dem internen Versanddienst steht Ihnen aber Version 5956
 eine direkte SMTP und IMAP Anbindung für den Versand Ihrer EMails und
 gegebenfalls auch Faxe direkt integriert im Helium V Applikation Server zur
-Verfügung. D.h. der Umweg über Windows wird hiermit nicht mehr benötigt.</p>
+Verfügung. D.h. der Umweg über Windows wird hiermit nicht benötigt. Für eine
+schematische Darstellung des Versanddienstes <a href="Einbindung_EMail_Fax_IMap.htm">siehe
+bitte</a>.</p>
 <p><img border="0" src="../Bilder/Parameter_interner_Versanddienst.gif" width="563" height="166"></p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
 Parametrierung des internen Versanddienstes erfolgt im Modul System. Geben Sie
@@ -34,56 +36,67 @@ Parametrierung des SMTP Servers, wird der interne Versanddienst aktiviert.</p>
     <tr>
       <td width="428" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Parameter</td>
-      <td width="551" height="21">
+      <td width="516" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Beispiel</td>
-      <td width="785" height="21">
+      <td width="820" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Beschreibung</td>
     </tr>
     <tr>
       <td width="428" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMPTSERVER</td>
-      <td width="551" height="21">
-        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">mail.logistikpur.local</td>
-      <td width="785" height="21">
+      <td width="516" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">smtp.meinefirma.local</p>
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">oder</p>
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">mail.firma.local</td>
+      <td width="820" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Servername
-        des SMPT Server</td>
+        des Postausgangs Servers (SMTP)&nbsp;(oder IP-Adresse) </td>
     </tr>
     <tr>
       <td width="428" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMTPSERVER_BENUTZER</td>
-      <td width="551" height="21">
+      <td width="516" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
-      <td width="785" height="21">
-        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
-    </tr>
-    <tr>
-      <td width="428" height="21">
-        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMTPSERVER_FAXDOMAIN</td>
-      <td width="551" height="21">
-        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">fax.local</td>
-      <td width="785" height="21">
-        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+      <td width="820" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Falls
+        der Postausgangsserver eine Authentifizierung erfordert ist diese hier
+        einzutragen.<br>
+        Benutzername</td>
     </tr>
     <tr>
       <td width="428" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMTPSERVER_KENNWORT</td>
-      <td width="551" height="21">
+      <td width="516" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
-      <td width="785" height="21">
-        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+      <td width="820" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Kennwort</td>
     </tr>
     <tr>
-      <td width="428" height="21">MAILADRESSE_ADMIN</td>
-      <td width="551" height="21"></td>
-      <td width="785" height="21"></td>
+      <td width="428" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">SMTPSERVER_FAXDOMAIN</td>
+      <td width="516" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">fax.local</td>
+      <td width="820" height="21">
+        <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Unterstützt
+        der Smtpserver eine Faxweiterleiung / Faxgateway so wird diese Funktion
+        durch einen Eintrag der entsprechenden Domain aktiviert.</td>
     </tr>
   </table>
 </div>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Anmerkung
+zum Faxgateway:</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
+Faxnummern werden beim Versand eines Faxes automatisch um diese Domain ergänzt
+und das Fax wird als Email an den SMTP Postausgangsserver versandt. Der
+eigentliche Versand des Faxes muss durch den Faxgateway erfolgen.</p>
 <p class="question" style="word-spacing: 0; text-indent: 0; margin: 0">Einrichten
 der IMAP Anbindung:</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Durch die
 IMAP Anbindung, wird nach erfolgtem SMTP Versand eine Kopie des EMails im IMAP
-Postfach des Benutzers abgelegt. Die Parametrierung ist zweigeteilt:</p>
+Postfach des Benutzers abgelegt. Wenn diese Funktion nicht benötigt wird, sind
+die Parameter leer zu lassen.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
+Parametrierung ist zweigeteilt:</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">a.) die
 generelle Einbindung, diese finden Sie ebenfalls unter System, Parameter,
 Kategorie Versand</p>
@@ -106,10 +119,10 @@ IMAP Anbindung</b></p>
     <td width="428" height="21">
       <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">IMAPSERVER</td>
     <td width="551" height="21">
-      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">mail.logistikpur.local</td>
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">mail.firma.local</td>
     <td width="785" height="21">
-      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Servername
-      des IMAP Server</td>
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Name
+      des Imapservers (oder IP-Adresse)</td>
   </tr>
   <tr>
     <td width="428" height="21">
@@ -117,7 +130,9 @@ IMAP Anbindung</b></p>
     <td width="551" height="21">
       <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
     <td width="785" height="21">
-      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Name
+      des Users bei dem Mails und Faxe ohne Angabe eines Absenders abgelegt
+      werden</td>
   </tr>
   <tr>
     <td width="428" height="21">
@@ -131,10 +146,17 @@ IMAP Anbindung</b></p>
     <td width="428" height="21">
       <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">IMAPSERVER_SENTFOLDER</td>
     <td width="551" height="21">
-      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0"></td>
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Gesendete
+      Objekte</td>
     <td width="785" height="21">
-      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Ausgangspostfach-Name
-      für jeden Benutzer</td>
+      <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Name
+      des Ordners für die versandten Mails in der IMAP Struktur</td>
+  </tr>
+  <tr>
+    <td width="428" height="21">MAILADRESSE_ADMIN</td>
+    <td width="516" height="21"></td>
+    <td width="820" height="21">Diese Adresse wird beim Faxversand verwendet
+      falls kein Benutzer angegeben ist</td>
   </tr>
 </table>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
@@ -161,6 +183,7 @@ Benutzerdaten</p>
       Hinweis: Das Kennwort wird nur mit ** angezeigt.</td>
   </tr>
 </table>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 
 </body>
