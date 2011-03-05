@@ -776,12 +776,21 @@ Mahnung der Lieferungen</p>
 werden jene Bestellpositionen angemahnt, bei denen bereits der Liefertermin
 überschritten ist.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">c.)
+Mahnen als Liefererinnerung, wenige Tage vor der eigentlichen Lieferung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden der Lieferant daran erinnert, die Bestellpositionen rechtzeitig zu
+liefern, die in den nächsten Tagen von ihm an Sie angeliefert werden sollte.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
 wird pro Bestellung nur eine Mahnstufe verwaltet.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
 Liefertermin wird der eingepflegte bestätigte Liefertermin herangezogen. Ist
 kein bestätigter Liefertermin eingetragen, so wird der ursprüngliche (Wunsch-)Liefertermin verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u><b>Hinweis:</b></u></p>
 
@@ -1098,8 +1107,33 @@ leere Positionen setzen&quot;. D.h. es werden die Daten nur für diejenigen
 Bestellpositionen eingetragen, bei denen noch keine AB-Termine eingetragen sind.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
 Setzen Sie zuerst die AB-Termine und Nummern für alle Positionen und ändern
-Sie dann die anderslautenden Positionen ab. Achten Sie bitte auf Ursprungstermin
+Sie dann die anders lautenden Positionen ab. Achten Sie bitte auf Ursprungstermin
 an AB-Termin anpassen.</p>
+<p style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="question">Q:
+Kann ich auch die vom Lieferanten erneut bestätigten Liefertermine eintragen ?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Wir auch die Liefererinnerung aus dem Mahnwesen verwendet, so muss
+selbstverständlich sehr zeitnah auch die erneute Bestätigung der zeitgerechten
+Lieferung Ihres Lieferanten eingetragen werden.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Bei
+dieser Mahnung (Mahnstufe -1) wird der Lieferant wenige Tage vor der
+eigentlichen Lieferung daran erinnert, die Bestellpositionen rechtzeitig zu
+liefern. Er sollte darauf hin umgehend eine erneute Lieferbestätigung an Sie
+senden.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Diese
+Bestätigung tragen Sie bitte unter Lieferantentermine ein, in dem Sie für die
+bestätigten Positionen durch Klick auf <img border="0" src="rechtzeitige_Lieferung_bestaetigen.gif" width="32" height="26">
+den Liefertermin als bestätigt kennzeichnen. Hinweis: Ein erneuter Klick auf
+den Button Liefertermin bestätigt entfernt die Bestätigung wieder.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Liefererinnerung zu definieren, definieren Sie in den Grunddaten die
+Mahnstufe -1. Hier hinterlegen Sie z.B. -3Tage, was bedeutet, dass drei Tage vor
+dem Liefertermin die Liefererinnerung ausgedruckt werden sollte.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann nachträglich der Ursprungstermin verändert werden?</p>
 
@@ -1218,6 +1252,54 @@ Einkaufspreise ansehen zu können Voraussetzung ist. D.h. ein Benutzer der nur
 die Preise einsehen, aber nicht ändern darf muss LP_DARF_PREISE_SEHEN_EINKAUF
 besitzen. Sollte er auch die Einkaufspreise ändern können, muss er zusätzlich
 das Recht LP_DARF_PREISE_AENDERN_EINKAUF besitzen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Verknüpfen einer Bestellposition mit einer Los-Materialposition</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade in der Metallverarbeitung ist es sehr oft erforderlich, Bestellpositionen
+direkt mit Positionen des Loses (Fertigungsauftrags) zu verbinden. Dies kann mit
+dem Knopf Los <img border="0" src="Loszuordnung.gif" width="104" height="24"> in der Bestellposition
+erreicht werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+dieser Auswahl geben Sie zuerst das Los an und danach die Materialposition auf
+die sich diese Bestellposition bezieht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dadurch
+wird erreicht, dass Informationen der Losposition direkt auf der Bestellung mit
+angedruckt werden. Z.B. Längen von bestimmten Materialien.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Erzeugung des Bestellvorschlages wird diese Zuordnung ebenfalls unterstützt
+und somit werden die Daten automatisch vom Los an die Bestellung und damit zu
+Ihrem Lieferanten durchgereicht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Druck mit der Bestellung stehen folgende Felder zur Verfügung:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Losnummer</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Stücklistennummer</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Stücklistenbezeichnung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Stücklistenkurzbezeichnung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Los-Kommentar</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Los-Projekt</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Kommentarzeile des Losmaterials</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
