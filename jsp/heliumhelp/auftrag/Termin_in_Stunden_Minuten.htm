@@ -11,11 +11,11 @@
 
 <body>
 
-<h1>Auftragstermin mit Uhrzeit</h1>
+<h1>Verleih / Auftragstermin mit Uhrzeit</h1>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
 dieser Zusatzfunktion können die Auftragstermine mit Uhrzeit angegeben werden.
-Dies wird z.B. für Catering benötigt, da hier die (Leih-)Ware exakt zum Termin
+Dies wird z.B. für das Verleihgeschäft / Catering benötigt, da hier die (Leih-)Ware exakt zum Termin
 bei der Veranstaltung sein muss.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daraus
 ergibt sich, dass der Liefertermin und der Finaltermin in den Auftragskopfdaten
@@ -26,7 +26,7 @@ bewirkt, dass in alle darauf aufbauenden Sichten wie Reservierungslisten,
 Bewegungsvorschau die Termine ebenfalls mit Uhrzeit angeführt werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
-im Catering Geschäft fast immer der Fall gegeben ist, dass Ware geliefert /
+im Verleih / Catering Geschäft fast immer der Fall gegeben ist, dass Ware geliefert /
 verliehen wird und dann die gleiche Ware zum Finaltermin wieder zurückgenommen
 werden soll, steht Ihnen in Helium V ein entsprechender Automatismus für den
 automatischen Eintrag, die automatische Aktualisierung der Auftragspositionen
@@ -35,13 +35,55 @@ einfach auf den Knopf Rücknahmepositionen eintragen<img border="0" src="Ruecknah
 Dadurch werden alle eventuell bereits mit negativen Mengen eingetragenen
 Positionen aus dem Auftrag gelöscht und alle jene mengenbehafteten Positionen zum
 Finaltermin mit negativer Menge in den Auftrag am Ende dazugefügt, bei deren
-Artikelgruppe das Feld Rückgabe angehakt ist.</p>
+Artikelgruppe das Feld Rückgabe <img border="0" src="Auftrag_Rueckgabe.gif" width="204" height="25"> angehakt ist.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zugleich
-wurde die Packliste so gestaltet, dass zuerst die positiven Mengen und dann die
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Packliste
+wurde so gestaltet, dass zuerst die positiven Mengen und dann die
 negativen Mengen aufgeführt werden. Dadurch kann die Packliste in zwei Blätter
 getrennt werden. Eines für die Lieferung und eines für die Rücknahme.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Lieferung der Positionen / Leihware an den Kunden erfolgt wie üblich mit einem
+auftragsbezogenen Lieferschein, in dem Sie die tatsächlich an den Kunden
+gelieferte Ware anklicken und die gelieferte Menge eintragen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Rücknahme der Positionen erfolgt durch einen weiteren (Rücknahme-)
+Lieferschein, welchen Sie ebenfalls dem Auftrag zuordnen. Auch hier geben Sie
+die tatsächlich vom Kunden zurückerhaltene Ware durch Eingabe mit negativer
+Menge an. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Verrechnung gehen Sie nun abhängig von Ihrer Gestaltung der Preislisten wie
+folgt vor: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Im Verleih- / Ausleih- Lieferschein ist (nur) der Verleihpreis enthalten. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Übernehmen
+Sie den Verleihlieferschein in die Rechnung und setzen Sie den
+Rücknahme-Lieferschein auf erledigt. Eventuell vom Kunden nicht zurückgegebene
+Ware wird per Handeingabe verrechnet. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Im Verleih- / Auslieh- Lieferschein ist der Verkaufspreis enthalten. Im
+Rücknahme-Lieferschein ist der Differenzpreis zum Mietpreis enthalten.
+Übernehmen Sie beide Lieferscheine in die Rechnung. Eventuell vom Kunden nicht
+zurückgegebene Ware wird durch die Differenz der Mengen automatisch zum
+Verkaufspreis verrechnet. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum so eine komplizierte Buchung ? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es ist aus unserer Sicht zwingend erforderlich, dass der Lagerstand zu jedem
+Zeitpunkt richtig ist. Daher muss die Ware für den Verleih vom Lager gebucht
+werden und bei Rückgabe eben wieder eingelagert werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 </body>
 
