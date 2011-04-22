@@ -73,6 +73,47 @@ haben, so erhält die Meldungen nur einer.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erhalten
 Sie keine Meldungen, so empfiehlt sich Ihren Rechner neu zu starten, damit
 eventuell hängen gebliebene Helium V Sitzungen vollständig geschlossen werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann ich die noch anstehenden Meldungen löschen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Es gibt über die JMX Console die Möglichkeit alle Meldungen auf einen
+Schlag zu löschen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+löschen ausgewählter Nachrichten ist nicht vorgesehen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Da die Nachrichten parallel in der Helium V Datenbank abgelegt werden, bleiben
+die alten Nachrichten erhalten. Durch obigen Vorgang wird nur das
+&quot;aufpoppen&quot; der alten Nachrichten unterbunden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+kommen Sie zur JMX Console?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Starten
+Sie einen Browser und gehen Sie auf <a href="http://HELIUMV_SERVER:8080/jmx-console/">http://HELIUMV_SERVER:8080/jmx-console/</a></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Rollen
+Sie nun einige Seiten nach unten bis zur Überschrift jboss.mq.destination.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+Sie hier nun das entsprechende Topic (Thema), z.B. <a href="http://192.168.0.5:8080/jmx-console/HtmlAdaptor?action=inspectMBean&name=jboss.mq.destination%3Aservice%3DTopic%2Cname%3DFertTopic">name=FertTopic,service=Topic</a></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der nun erscheinenden Darstellung wählen Sie:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Nachrichten_loeschen.gif" width="216" height="131"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">removeAllMessages()
+durch klick auf Invoke.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Damit werden die alten noch nicht angenommenen Meldungen insoweit gelöscht,
+dass Sie dazu nicht mehr aufgefordert werden, also die Meldungen aus dem
+Nachrichtensystem gelöscht. Die, bereits erfolgte Protokollierung der
+Nachrichten ist davon nicht betroffen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
+Sollte die JMX Console nicht gestartet werden können, so ist davon auszugehen,
+dass diese von Ihrem Helium V Betreuer abgeschaltet wurde, was insbesondere bei
+Zugriffen von Extern dringend angeraten wird.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
