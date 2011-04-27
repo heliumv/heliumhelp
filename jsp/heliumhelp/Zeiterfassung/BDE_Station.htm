@@ -156,7 +156,7 @@ eingescannten Code wird die nachfolgende Abfrage gesteuert.</p>
     <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auftragsnummer<br>
     Es wird die Standard Arbeitszeit (Parameter DEFAULT_ARBEITSZEIT) für die
     Tätigkeitsbeginnbuchung verwendet. Damit ist die Zeitbuchung beendet und es
-    wird wierder mit der Frage nach der Ausweisnummer fortgesetzt.</li>
+    wird wieder mit der Frage nach der Ausweisnummer fortgesetzt.</li>
   <li>
     <p class="answer" style="margin:0cm;margin-bottom:.0001pt">kombinierter Code<br>
     Fortsetzung wieder mit der Ausweisnummer</li>
@@ -166,8 +166,8 @@ eingescannten Code wird die nachfolgende Abfrage gesteuert.</p>
     Erfassung der Tätigkeit</li>
   <li>
     <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Los Kombinations
-    Code<br>
-    Erfassung der nächsten Losnummer</li>
+    Code $PLUS<br>
+    Erfassung der nächsten Losnummer <a href="#Kombinationscode">siehe</a></li>
 </ul>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="BDE_Station4.gif" width="417" height="89"></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
@@ -190,6 +190,46 @@ wird Los nicht gefunden angezeigt</p>
 Station diese Meldung angezeigt, so muss der Barcodescanner entsprechend Ihrem
 Tastaturlayout <a href="#Programmierung der Barcodescanner">programmiert</a>
 werden.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Kombinationscode"></a>Verwendung
+des Los Kombinationscodes $PLUS</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Manchmal werden
+mehrere Lose parallel / zugleich bearbeitet. Z.B. werden gleichzeitig mehrere
+verschiedene Gehäuse gebogen oder unterschiedliche Nutzen trotzdem gleichzeitig
+gefertigt. Dafür ist dieser Code gedacht.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ein Beispeil:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Es sollten vier
+unterschiedliche Baugruppen auf einem Bestückungsautomaten in einem Zug quasi
+gemeinsam bestückt werden. Diese Baugruppen haben eine gesamte Bestückungszeit
+von einer Minute. D.h. diese eine Minute fällt ja gemeinsam für alle vier Lose an, also auf das 1.Los PLUS dem 2.Los PLUS dem 3.Los PLUS dem 4.Los.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um nun die gemeinsame
+Dauer für die Bestückung zu erfassen gehen Sie wei folgt vor:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Scannen Sie die 1.
+Losnummer (nach der Ausweisnummer).</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun scannen Sie
+$PLUS. Damit weis Helium V, dass ein weiteres Los gemeinsam erfasst werden soll.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun scannen Sie die
+nächste Losnummer und so weiter bis zur letzten Losnummer. Also LosNr $PLUS
+LosNr $PLUS LosNr</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach der letzten
+Losnummer scannen Sie die Tätigkeit. Damit sind die gemeinsam zu erfassenden
+Lose definiert.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beim Ende dieser
+gemeinsamen Tätigkeit, z.B. durch Beginn einer neuen Tätigkeit oder durch
+Geht, wird die angefallene Gesamt-Ist-Zeit auf die Lose anteilsmäßig
+aufgeteilt. Dabei erhält jedes Los den gleichen Teil. In unserem obigen
+Beispiel mit einer Minute auf vier Lose erhält jedes Los 15Sekunden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
