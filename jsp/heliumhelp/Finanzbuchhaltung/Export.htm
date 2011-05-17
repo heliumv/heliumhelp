@@ -298,6 +298,34 @@ Aus Kontoauswahlliste Konto auswählen und dazu die zu übersetzenden Länderarten 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gilt
 nur für die Erlöskonten, d.h. die Konten der AR/GS</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Länderartübersetzung
+nicht / falsch definiert</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Konto-Länderart-Übersetzung
+nicht definiert. Leider ein sehr häufiger Fehler.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Export_Artikelgruppenzuordnung_falsch_definiert.jpg" width="317" height="127"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hintergrund:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch
+den üblicherweise verwendeten Export der Ausgangsrechnungen anhand der
+Erlöskonten der Artikelgruppen, kommt es leider immer wieder zu
+Fehlbedienungen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
+Wenn Artikel definiert werden, so kann aufgrund des Artikels nicht definiert
+werden, in welches Land der Artikel verkauft wird. Erst wenn der Artikel mit
+einer Rechnung verbunden ist, wurde damit das Zielland festgelegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet, es muss für die Erlöskonten der Artikelgruppen <b><u>immer</u></b>
+das Inlandskonto angegeben werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auf
+dem Inlandskonto ist dann die <a href="#Übersetzung_Erlöskonten">Länderartübersetzung</a>
+entsprechend zu hinterlegen.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
@@ -339,8 +367,21 @@ aktivieren / drucken Sie die Rechnung bitte aus, oder stornieren Sie diese.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Export3.jpg" width="286" height="143"></p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dem
-Kunden der Rechnung ist keine Postleitzahl zugeordnet. Bitte korrigieren Sie die
+Kunden der Rechnung ist keine Postleitzahl für den Ort zugeordnet. Bitte korrigieren Sie die
 Anschrift der Rechnung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie dabei, dass nur die Definition der Postleitzahl unter Postfach
+nicht ausreichend ist. Für den Export muss unbedingt auch der Ort mit
+Länderkennzahl angegeben werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="LKZ_Postfach_ist_zuwenig.gif" width="266" height="63"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gegebenenfalls
+verwenden Sie die gleiche Postleitzahl für den Ort wie für die Postleitzahl
+des Postfaches.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Export
 der Debitoren- bzw. Kreditorenkonten über Journal</p>
@@ -721,7 +762,7 @@ beim nächsten Export wieder mitexportiert werden kann.</p>
 die Kostenstellen auch in die verschiedenen Finanzbuchhaltungsprogramme
 exportieren zu können, ist es erforderlich, dass die Kennung der Kostenstellen
 numerisch sind. (Gilt zumindest für RZL und BMD).</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Automatische
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Übersetzung_Erlöskonten"></a>Automatische
 Findung der Erlöskonten</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
