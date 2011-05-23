@@ -62,7 +62,11 @@ wesentlichsten Felder für die Positionierung sind:</p>
     <tr>
       <td width="414" height="21">horizontale Gewichtung</td>
       <td width="682" height="21">die Breite mit einem Vielfachen der Breite
-        eines Gitterelementes</td>
+        eines Gitterelementes<br>
+        Es zählt der jeweils höchste Wert in den Definitionen. Hier hat sich
+        bewährt, in nur einer Zeile, z.B. in der Ersten, die Verteilung zu
+        definieren. Bei allen nachfolgenden Zeilen wird dann die horizontale
+        Gewichtung auf 0 belassen</td>
     </tr>
     <tr>
       <td width="414" height="21">vertikale Gewichtung</td>
@@ -76,12 +80,29 @@ wesentlichsten Felder für die Positionierung sind:</p>
     </tr>
     <tr>
       <td width="414" height="21">Feldtext</td>
-      <td width="682" height="21">Text der angezeigt wird, z.B. bei Lable oder
-        Checkbox</td>
+      <td width="682" height="21">Text der angezeigt wird, z.B. bei Lable, Checkbox
+        oder Combobox</td>
     </tr>
     <tr>
       <td width="414" height="21">Feldtyp</td>
       <td width="682" height="21">Typ des Feldes siehe unten.</td>
+    </tr>
+    <tr>
+      <td width="414" height="21">Feldbreite</td>
+      <td width="682" height="21">Dies ist die Breite eines Feldes in Zellen.<br>
+        D.h. wird hier zwei eingegeben, so bedeutet dies, dass sich das Feld
+        über zwei Spalten erstreckt.</td>
+    </tr>
+    <tr>
+      <td width="414" height="21">Feldhöhe</td>
+      <td width="682" height="21">Wie Feldbreite, aber für die Zeilen Höhe.</td>
+    </tr>
+    <tr>
+      <td width="414" height="21">Mindestbreite</td>
+      <td width="682" height="21">Diese definiert die Breite des Feldes in
+        Pixel.<br>
+        Hierdurch kann eventuell die sich durch die Gewichtung ergebende Breite
+        übersteuert werden.</td>
     </tr>
   </table>
 </div>
@@ -111,12 +132,20 @@ Möglichkeiten zur Verfügung:</p>
     </tr>
     <tr>
       <td width="360" height="19">WrapperExecButton</td>
-      <td width="742" height="19">Start des definierten Programmes, bei dem der
+      <td width="742" height="19">Start des definierten Programms, bei dem der
         eingegebene Wert als Parameter übergeben wird.</td>
     </tr>
     <tr>
       <td width="360" height="19">WrapperPrintButton</td>
       <td width="742" height="19">Start des definierten Reports</td>
+    </tr>
+    <tr>
+      <td width="360" height="19">WrapperCombobox</td>
+      <td width="742" height="19">Definieren Sie im Feldtext die in der Combobox
+        zur Auswahl stehenden Werte. Die einzelnen Werte sind durch | getrennt.
+        Eine automatische Berücksichtigung von Leerzeichen ist nicht
+        vorgesehen.<br>
+        Die Combobox kann eventuell als Pflichtfeld ausgeführt werden.</td>
     </tr>
   </table>
 </div>
