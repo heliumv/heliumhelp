@@ -51,7 +51,7 @@ Einlösen des Wechsels praktisch mithaften.</li>
 Zahlungsbuchungen der verschiedenen Zahlungsarten durchführen zu können,
 müssen zuerst die Verbindungen der Zahlungsarten Bank und Bar definiert werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Zahlungsart:
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><a name="Bankverbindung"></a>Zahlungsart:
 Bank</b></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Grundsätzlich
 muss im Modul Partner, unterer Modulreiter Bank die gewünschte Bank definiert
@@ -145,6 +145,65 @@ haben Sie die Rechnung als erledigt akzepiert.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
 Vorteil ist, dass Sie immer sehen um wieviel weniger der Kunde tatsächlich bei
 dieser Rechnung bezahlt hat.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie können nicht bezahlte Rechnungen gebucht werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es kommt leider immer wieder vor, dass Rechnungen teilweise oder vollständig
+nicht bezahlt werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+gibt nun zwei Vorgehensweisen wie diese Rechnungen erledigt werden können.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Die Einfache, welche den Minderbetrag als Skontoaufwand/-erlös bucht</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+die aus Buchhaltungssicht bessere, welche dies auf Forderungsausfall bucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Ausbuchen als Skontoaufwand / -erlös</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+Sie bei der Rechnung den oberen Modulreiter Zahlungen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie eine neue Zahlung an, wählen Sie die Zahlungsart Bank, wählen Sie Ihre
+übliche Bank aus, geben Sie als Auszugsnummer entweder die aktuelle
+Auszugsnummer oder Auszugsnummer 0 an. Geben Sie nun den (Zahl-)Betrag mit 0 ein
+und haken Sie das Erledigt an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+klicken Sie auf speichern und bestätigen die Meldung, &quot;Der eingegebene
+Betrag ist kleiner als der offene. Wirklich speichern&quot; mit Ja. Damit ist
+die Rechnung, ohne Zahlung als Erledigt verbucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+einer Anbindung der Helium V Buchhaltung wird der Differenzbetrag als
+Skontoaufwand/-erlös verbucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Verbuchen als Forderungsausfall</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie eine <a href="#Bankverbindung">Bankverbindung</a> an, mit dem Kontonamen
+Forderungsausfall. Die Bankverbindung zeigt auf das Sachkonto Forderungsausfall.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+buchen Sie auf die Bank Forderungsausfall die &quot;Zahlung&quot;, also den
+offenen betrag, der nicht bezahlt wurde.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Somit
+ist die Rechnung ebenfalls als vollständig bezahlt eingetragen und damit
+erledigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Forderungsausfall wurde auf das entsprechende Konto verbucht.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
