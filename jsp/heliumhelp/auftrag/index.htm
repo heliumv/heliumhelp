@@ -833,6 +833,57 @@ verbrauchten Zeiten beinhalten können, müssen die Zeiten der Mitarbeiter und
 der Maschinen vollständig verbucht werden. Siehe dazu <a href="../Zeiterfassung/index.htm#Produktivitätsstatistik">Produktivitätsstatistik
 der Mitarbeiter</a>.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Welche Lose werden in der Nachkalkulation berücksichtigt"></a>Q:
+Welche Lose werden in der Auftragsnachkalkulation berücksichtigt?</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
+In der Auftragsnachkalkulation werden diejenige Bewegungsdaten berücksichtigt,
+die einen direkten Zusammenhang mit dem Auftrag haben. Das sind also z.B. die
+Lieferscheine, die mit Bezug auf den Auftrag erstellt wurden. </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Bei
+den Losablieferungen ist der Zusammenhang oft nur indirekt gegeben. D.h.: es
+wird anhand der Warenbewegungen entschieden, welches Los einen tatsächlichen
+Bezug zum Auftrag hat. Das bedeutet also, dass Artikel die über die
+Auslieferung mittels Lieferschein einen Bezug (durch den Lieferschein) zum
+Auftrag haben, in die Nachkalkulation mit aufgenommen werden. Kommt die
+Warenzubuchung (der Auslieferung mittels Lieferschein) aus einem
+Fertigungsauftrag (also Losablieferung) so wird die zur Warenausgangsbuchung
+korrespondierende Warenzugangsbuchung verwendet. Daraus ergibt sich
+normalerweise, dass die Artikel die aufgrund der Auftragsspezifischen
+Fertigungsaufträge produziert wurden ausgeliefert werden. Aufgrund des FiFo
+kann sich aber auch ergeben, dass andere (ältere) Artikelbewegungen verwendet
+werden. </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Diese
+Logik setzt die Lagerbewirtschaftung voraus. Da diese nur für Artikel gegeben
+ist, werden die freien Materiallisten der Losverwaltung eigenständig behandelt.
+D.h. da diese je keine Lagerzubuchung bewirken, werden diese anhand der
+Auftragszuordnung des Loses zu den jeweiligen Aufträgen hinzugerechnet. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Es sind nicht alle Lose in der Auftragsnachkalkulation enthalten?</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
+Wenn die Auftragsnachkalkulation ausgedruckt wird, so sind nur die Lose 972-001
+bis 972-014 enthalten. Die (Unter-)Lose 972-999 und 972-998 sind in der
+Auftragsnachkalkulation nicht angeführt.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Wir
+hingegen die Losstatistik für den Auftrag 972 ausgedruckt, so werden diese auch
+angeführt. Was ist die Ursache dafür?</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Siehe
+dazu bitte obige <a href="#Welche Lose werden in der Nachkalkulation berücksichtigt">Beschreibung</a>.
+Prüfen Sie gegebenenfalls die Warenbewegungen der Ablieferungen der Unterlose
+(972-999, 972-998). In der Regel werden diese Losnummer, bei Losnummern mit
+Auftragsbezug, nur dann erzeugt, wenn diese sich aufgrund von Unterstücklisten
+ergeben. Sie werden daher in der Auftragsnachkalkulation nicht angeführt.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Ein
+Sonderfall sind zusätzlich manuell angelegte Lose, welche z.B. für eine
+Nacharbeit verwendet werden. Sind diese Lose freie Materiallisten, dann werden
+diese bei der Auftragsnachkalkulation berücksichtigt, da es hier keine
+Wertmässige Lagerzubuchung durch die Losablieferung gibt.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Was bedeuten die einzelnen Spalten der Umsatzübersicht?</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Sie
