@@ -465,6 +465,28 @@ bei jedem Update des Clients, alle Dateien aus dem Helium V Programmverzeichnis
 gelöscht werden. D.h. legen Sie diesen geänderten Batch bitte an einer anderen
 Stelle ab, als im Helium V programmverzeichnis.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Beim Start
+meines Helium V Clients kommt eine Fehlermeldung</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Nachfolgende
+Fehlermeldung kann bei Verwendung von Helium V unter Linux Systemen auftreten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">com.lp.editor.LpEditor.setJasperReport(LpEditor.java:1770)] - FontName "Arial"&nbsp;<br>
+in default-font-element in JasperReport "dreispalter" not found</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+bedeutet, dass der von Helium V in allen Formularen verwendete Font, Arial auf
+dem Clientsystem nicht installiert ist. Bitte installieren Sie diesen nach.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Fonts können am Ubuntu wie folgt nachinstalliert werden:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+sudo apt-get install msttcorefonts</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; danach den Cache leeren mit</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;
+sudo fc-cache -fv
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
 </body>
 
 </html>

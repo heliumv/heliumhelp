@@ -74,8 +74,14 @@ eintragen</p>
 korrigieren / aktualisieren</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Basiseinstellung
 ob die Preise zurückgepflegt werden oder nicht sind von der Einstellung des
-Parameters DEFAULT_EINKAUFSPREIS_ZURUECKPFLEGEN abhängig. 0 ... nicht
-zurückpflegen.</p>
+Parameters DEFAULT_EINKAUFSPREIS_ZURUECKPFLEGEN abhängig.&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; 0 ... nicht
+zurückpflegen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; 1
+... immer zurückpflegen mit automatischer Erkennung ob Staffelpreise
+rückpflegen oder nicht</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; 2
+... immer nur als Einzelpreis zurückpflegen</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Was bedeuten die
 Felder im unteren Bereich der Bestellpositionen?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Mit diesen Feldern
@@ -134,19 +140,45 @@ dieses Wareneingangs angezeigt.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die
 Spaltenüberschriften der Wareneingangsposition bedeuten:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="WE_Position2.gif" width="767" height="41"></p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Offene Menge ...
-Gesamt offene Menge dieses Wareneingangs</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Gel. WE-Menge ... Mit
-diesem Wareneingang gelieferte Menge</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bisherige
-WEPOS-Liefermenge ... Insgesamt bis zu diesem Wareneingang inklusive gelieferte
-Menge der Position</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">BSPOS-Menge ...
-Gesamt Bestellte Menge der Bestellposition</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bezeichnung ...
-Bezeichnung des Artikel, der Handeingabe</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Gel.WE-Preis ...
-Geliefert-Preis der WE-Position</p>
+<div align="left">
+  <table border="1" width="595" height="14">
+    <tr>
+      <td width="333" height="14">Spaltenüberschrift</td>
+      <td width="857" height="14">Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="333" height="14">Offene Menge</td>
+      <td width="857" height="14">
+Gesamt offene Menge dieser Wareneingangsposition</td>
+    </tr>
+    <tr>
+      <td width="333" height="14">Gel. WE-Menge</td>
+      <td width="857" height="14"> Mit
+diesem Wareneingang gelieferte Menge</td>
+    </tr>
+    <tr>
+      <td width="333" height="14">Bisherige
+WEPOS-Liefermenge</td>
+      <td width="857" height="14"> Insgesamt bis zu diesem Wareneingang inklusive gelieferte
+Menge der Bestellposition</td>
+    </tr>
+    <tr>
+      <td width="333" height="14">BSPOS-Menge</td>
+      <td width="857" height="14">
+Gesamt Bestellte Menge der Bestellposition</td>
+    </tr>
+    <tr>
+      <td width="333" height="14">Bezeichnung</td>
+      <td width="857" height="14">
+Bezeichnung des Artikel, der Handeingabe</td>
+    </tr>
+    <tr>
+      <td width="333" height="14">Gel.WE-Preis</td>
+      <td width="857" height="14">
+Geliefert-Preis der WE-Position</td>
+    </tr>
+  </table>
+</div>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bedeutung der
 Preis-Bezeichnungen im Wareneingang:</p>
@@ -164,6 +196,21 @@ gelieferte Menge</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bestellnettopreis ...
 Zu diesem Preis wurde die Bestellposition, dieser Wareneingangsposition
 bestellt.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie hängen
+Wareneingang, Wareneingangsposition und Bestellposition zusammen?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Beim Wareneingang
+geht es grundsätzlich darum, dass es immer wieder zu Teillieferungen auf einige
+/ alle Bestellpositionen kommt. Daher ist es erforderlich, dass jeder
+Wareneingang auf jede Bestellposition buchen kann.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wir haben dies daher
+so gelöst, dass in den Wareneingangspositionen (WEPOS) immer alle
+Mengenbehafteten Bestellpositionen (siehe dazu auch den Parameter
+IN_WEP_TEXTEINGABEN_ANZEIGEN) angezeigt werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das bedeutet, wenn
+Sie z.B. wissen möchten mit welchem Wareneingang eine Bestellposition
+angeliefert wurde, so wählen Sie einen Wareneingang aus und wechseln dann auf
+Wareneingangsposition. Alle Zeilen, bei denen bei Gel. WE-Menge Einträge sind,
+wurden mit diesem Wareneingang geliefert.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ich
 einer Bestellung eine Eingangsrechnung zuordnen?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Siehe bitte <a href="#Eingangsrechnungszuordnung">Eingangsrechnungszuordnung</a>.</p>
@@ -317,7 +364,8 @@ nun eine offene Bestellung zu stornieren, gehen Sie bitte in die Kopfdaten der
 Bestellung, klicken auf ändern und speichern und danach auf stornieren <img border="0" src="Bestellung_stornieren.gif" width="32" height="26">.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine bereits teilgelieferte Bestellung kann nicht mehr storniert werden.
-Siehe:</p>
+Verwenden Sie gegebenenfalls das manuelle Erledigen der gesamten Bestellung bzw.
+einzelner Bestellpositionen im Wareneingang.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
   Wenn eine stornierte Bestellung wieder aktiviert werden soll, kann durch
@@ -379,8 +427,20 @@ der Status der Bestellung auf erledigt gesetzt. Daher ist es erforderlich, dass 
 eventuelle Transportkosten eingetragen werden.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie werden mehrere Chargen auf einen Wareneingang zugebucht?</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:&nbsp;Derzeit
+kann pro Wareneingang nur eine Charge zugebucht werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollten
+Sie mit einer Lieferung mehrere unterschiedliche Chargen der selben
+Bestellpositionen erhalten, so ist es erforderlich, trotzdem mehrere
+Wareneingänge (der gleichen Lieferung) anzulegen und so die unterschiedlichen
+Chargen zuzubuchen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann ein Wareneingang auf unterschiedliche Läger gebucht werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:&nbsp;Nein.
+Es kann je Wareneingang das Zubuchungslager definiert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden damit alle Wareneingangspositionen dieses Wareneingangs auf das
+angegebene Lager gebucht.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie kann eine erledigte Bestellung wieder ent-erledigt werden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -414,11 +474,24 @@ Rabattes errechnet. Aufgrund des beim Lieferanten hinterlegten
 Mehrwertsteuersatzes wird der Bruttopreis errechnet. Wurde im Lieferanten unter
 Konditionen, das Warenkonto hinterlegt, so kann, mit Ausnahme der
 Lieferantenrechnungsnummer und dem Eingangsrechnungsdatum die Eingangsrechnung
-aus der Bestellung, genauer dem Wareneingang ermittelt werden.</p>
+aus der Bestellung, genauer dem Wareneingang, ermittelt werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch
 den Klick auf Neu werden alle Daten der Eingangsrechnung wie oben beschrieben
-vorbesetzt, tragen Sie die noch fehlenden Daten ein, überprüfen Sie den
+vorbesetzt. Tragen Sie die noch fehlenden Daten ein, überprüfen Sie den
 Rechnungswert und die Kontierung und speichern Sie die Eingangsrechnung ab.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
+Differiert der vorgeschlagene Eingangsrechnungswert zum tatsächlichen Betrag
+der Eingangsrechnung, so prüfen Sie bitte unbedingt Ihre Eingaben in den
+Wareneingangspositionen. Wenn alles richtig verbucht wurde, darf es zu keinen
+Differenzen kommen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+hatten wir in der Praxis schon den Fall, dass in den Wareneingangspositionen
+immer 1000er Preise erfasst wurden und dann immer der Betrag der
+Eingangsrechnung korrigiert wurde. Im Endeffekt hat dies eine Differenz von
+300.000,- € zwischen Warenzugangswert und Veränderung im Lager bewirkt, was
+wiederum bedeutete, dass die betroffenen Artikel in den betroffenen Losen
+deutlich zu hoch bewertet waren und damit Ihre Deckungsbeiträge viel zu nieder,
+oder die Verkaufspreise viel zu hoch waren. Mit allen möglichen Folgen daraus.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
 In der aufgeführten Liste der Eingangsrechnungen sehen Sie alle angelegten
