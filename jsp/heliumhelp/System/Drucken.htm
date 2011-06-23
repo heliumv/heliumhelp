@@ -80,7 +80,7 @@ Drucker aus der Sicht des Anwenders:</p>
     </tr>
     <tr>
       <td width="425" height="25">Briefpapierdrucker</td>
-      <td width="738" height="25">Erste Seiten, folge Seiten</td>
+      <td width="738" height="25">Erste Seiten, Folgeseiten</td>
       <td width="772" height="25">Schnell erreichbar, an Zentraler Stelle</td>
     </tr>
     <tr>
@@ -197,8 +197,6 @@ Mit dieser Lupe kann die aktuell angezeigt Liste ausgedruckt werden. Bitte
 beachten Sie, dass dies nur die Daten der aktuellen Liste sind und nichts mit
 der Druckfunktion des z.B. Angebotes gemein haben.</p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Bedeutung der Druck
 / Kommunikationsknöpfe</p>
 
@@ -225,9 +223,11 @@ einstellen</p>
 Vorschaufenster</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Refresh.gif" width="32" height="27">
-Aktualisieren. Mit diesem Knopf werden die im Druckdialog angezeigten Daten aktualisiert.
+ Aktualisieren. Mit diesem Knopf werden die im Druckdialog angezeigten Daten aktualisiert.
 Bitte beachten Sie, dass der Refresh Knopf nur für den Inhalt des Reports, aber
 nicht für die den Report umgebenden Daten gilt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Vorschau.gif" width="33" height="26">
  Vorschau. Damit werden die Daten im Druckdialog in einem eigenen
@@ -236,21 +236,120 @@ Daten angezeigt, so werden diese vorher ermittelt. Wurden bereits Daten
 ermittelt, so werden diese <u><b>NICHT neu errechnet</b></u> um entsprechende
 Rechenzeit usw. zu sparen.</p>
 
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Direkt.gif" width="29" height="26">
-Drucken. Wie Vorschau, jedoch werden die Daten an den Drucker gesandt, der
+ Drucken. Wie Vorschau, jedoch werden die Daten an den Drucker gesandt, der
 diesem Report hinterlegt ist.</p>
 
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Email.gif" width="33" height="26">
-EMail. Wie Vorschau, jedoch werden Sie zur Eingabe eines EMail Empfängers
+ EMail. Wie Vorschau, jedoch werden Sie zur Eingabe eines EMail Empfängers
 aufgefordert. Der Report wird als EMail mit PDF-Anhang versendet. Konnte
 Aufgrund der Daten des Drucks ein EMail Empfänger ermittelt werden, so wird
 dieser vorgeschlagen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="EMail_Versenden.jpg" width="702" height="177"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für den
+EMail-Versand stehen zusätzliche Funktionen zur Verfügung.</p>
+
+<div align="left">
+  <table border="1" width="701" height="15">
+    <tr>
+      <td width="324" height="15">Sendezeitpunkt</td>
+      <td width="1078" height="15">Vorgabe eines Sendezeitpunktes.<br>
+        Bleibt dieser leer so wird der Zeitpunkt des Klicks auf Senden zzgl.
+        fünf Minuten (siehe Parameter DELAY_EMAIL_VERSAND) als Sendezeitpunkt
+        verwendet</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Senden</td>
+      <td width="1078" height="15">Erzeugt den Versandauftrag mit den
+        angegebenen Parametern.</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Part (links oben neben An:)</td>
+      <td width="1078" height="15">Auswahl der EMailadresse für An: eines ev.
+        anderen Partners.<br>
+        Wenn der Versand an Unternehmen erfolgen sollte und dann einem
+        entsprechenden Ansprechpartner, so achten Sie darauf, dass das
+        Unternehmen ausgewählt wird.<br>
+        Bei der Auswahl eines Unternehmens werden Sie automatisch nach dem
+        Ansprechpartner, wenn vorhanden gefragt.<br>
+        Wird nur ein Partner ausgewählt, so wird dessen EMail-Adresse
+        verwendet. Dies bedeutet auch, wenn Sie unter Partner direkt die
+        Ansprechperson eines Unternehmens verwenden würden, so würden Sie das
+        EMail an die private EMail-Adresse des Ansprechpartners senden.</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Ansp (zwischen Part und An:)</td>
+      <td width="1078" height="15">Auswahl eines anderen Ansprechpartners für
+        An:, basierend auf dem Partner an den das EMail geht, z.B. das Angebot<br>
+        Hier wird in der Auswahlliste durch das EMail Symbol <img border="0" src="Senden_EMail_Ansp_hat_Email.gif" width="35" height="16">
+        angezeigt, ob bei dem Ansprechpartner auch eine EMail-Adresse hinterlegt
+        ist.&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Part (links neben CC)</td>
+      <td width="1078" height="15">Analog wie Part für An:, jedoch für CC</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Ansp (zwischen Part und CC)</td>
+      <td width="1078" height="15">Analog wie Ansp für An:, jedoch für CC</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">An:</td>
+      <td width="1078" height="15">EMail-Adresse des Empfängers</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">CC</td>
+      <td width="1078" height="15">EMail-Adresse des Empfängers der
+        Kopie/Durchschlag</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Empfangsbestätigung</td>
+      <td width="1078" height="15">Wenn angehakt, wird vom Empfänger ein
+        Bestätigungsemail angefprdert</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Absender</td>
+      <td width="1078" height="15">Die Absender-EMail-Adresse. Definition siehe <a href="../personal/index.htm#Absenderdaten">Personal,
+        Daten</a></td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Betreff</td>
+      <td width="1078" height="15"></td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Anfügen / Anhang</td>
+      <td width="1078" height="15">Mit Klick auf Anfügen wird die ausgewählte
+        Datei der Liste der Anhänge hinzugefügt.</td>
+    </tr>
+    <tr>
+      <td width="324" height="15">Text</td>
+      <td width="1078" height="15">Text der im eigentlichen EMail angegeben
+        wird.<br>
+        Dieser kann durch Klick auf <img border="0" src="EMail_Text_bearbeiten.gif" width="24" height="21">
+        (Strg+T) bearbeitet werden.<br>
+        Er kann auch für jedes Formular spezifisch an Ihre Vorgaben angepasst
+        werden. Wenden Sie sich dazu an Ihren Helium V Betreuer.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Fax.gif" width="31" height="27">
  Fax. Wie Vorschau, jedoch werden Sie zur Eingabe eines Fax Empfängers
 aufgefordert. Konnte Aufgrund der Daten des Drucks ein Fax Empfänger ermittelt
 werden, so wird dessen Faxnummer vorgeschlagen. <a href="../Client/tipps_und_tricks.htm#Faxversand"> Siehe
 auch</a>.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Bedienung ist
+analog dem EMail, jedoch auf die Möglichkeiten eines Faxes reduziert.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Drucken_Speichern.gif" width="32" height="25">
  Speichern. Speichert den angezeigten Report inkl. Inhalt in verschiedenen
@@ -281,7 +380,7 @@ erfolgen.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sollte Ihre
 Tabellenkalkulation diese Konvertierung nicht zur Verfügung stellen, so
-verwenden Sie entweder OpenOffice in der aktuellen Version und konvertieren
+verwenden Sie bitte OpenOffice in der aktuellen Version und konvertieren
 damit die Datei für Ihre bevorzugte Tabellkalkulation.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>

@@ -1006,7 +1006,6 @@ der Artikelauswahlliste</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Darstellung der Artikelauswahlliste kann über die beiden folgenden Parameter
 definiert werden.</p>
-<div align="left">
   <table border="1" width="640" height="21">
     <tr>
       <td width="541" height="21">VKPREIS_STATT_GESTPREIS_IN_AUSWAHLLISTE</td>
@@ -1023,7 +1022,6 @@ definiert werden.</p>
         siehe Reiter Technik, angezeigt werden.</td>
     </tr>
   </table>
-</div>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
 Änderungen dieser Parameter ist ein Neustart des Clients erforderlich.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ladenhüter</p>
@@ -1049,9 +1047,7 @@ oder an den auslösenden Kunden weiterverrechnen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Ladenheuter.gif" width="1159" height="243"></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Was
 bedeuten die einzelnen Spalten in der Ladenhüterliste:</p>
-<div align="center">
-  <center>
-  <table border="1" width="751" height="25">
+  <table border="1" width="750" height="25">
     <tr>
       <td width="209" height="25">AG</td>
       <td width="1293" height="25">Artikelgruppe</td>
@@ -1145,47 +1141,58 @@ bedeuten die einzelnen Spalten in der Ladenhüterliste:</p>
         Stückliste definiert sind.</td>
     </tr>
   </table>
-  </center>
-</div>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
 In der Ladenhüterliste sind Artikel die nicht als Lagerbewirtschaftet
 gekennzeichnet sind, nicht enthalten.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 festzulegen welche Lagerbewegungen für die Betrachtung als Ladenhüter von
-Bedeutung sind, stehen folgende Auswahlmöglichkeiten zur Verfügung.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Ladenhueter_Auswahl.gif" width="217" height="68"></p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<div align="center">
-  <center>
+Bedeutung sind, stehen folgende Auswahlmöglichkeiten zur Verfügung, wobei von
+der Grundidee her nur Lagerentnahmen berücksichtigt werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Ladenhueter_Auswahl.gif" width="212" height="91"></p>
   <table border="1" width="754" height="13">
     <tr>
       <td width="430" height="13">Fertigung berücksichtigen</td>
-      <td width="1832" height="13">Buchungen die auf Lose gingen werden für die
-        Betrachtung berücksichtigt.</td>
+      <td width="1832" height="13">Buchungen die von Lager auf Lose gingen werden für die
+        Betrachtung ebenfalls berücksichtigt.</td>
+    </tr>
+    <tr>
+      <td width="430" height="13">Zugänge aus Fertigung berücksichtigen</td>
+      <td width="1832" height="13">Losablieferungsbuchungen werden, da die
+        Produktion der Baugruppen bewusst veranlasst wurden, ebenfalls in der
+        Form berücksichtigt, dass eine derartige Buchung keine Betrachtung als
+        Ladenhüter veranlasst. Beachten Sie bitte, dass negative Lagerentnahmen
+        z.B. aufgrund von negativen Sollmengen im Los hier nicht betrachtet
+        werden, davon nicht betroffen sind.&nbsp;</td>
     </tr>
     <tr>
       <td width="430" height="13">Handlagerbewegungen berücksichtigen</td>
-      <td width="1832" height="13">Buchungen die Handbuchungen waren werden
+      <td width="1832" height="13">Die Verbrauchsbuchungen der Handbuchungen werden
         berücksichtigt.</td>
     </tr>
     <tr>
       <td width="430" height="13">plus Versteckte</td>
-      <td width="1832" height="13">Artikel die als Versteckt gekennzeichnet sind
+      <td width="1832" height="13">Artikel die als Versteckt gekennzeichnet sind,
         werden ebenfalls mit ausgewertet.</td>
     </tr>
   </table>
-  </center>
-</div>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
 Wenn Sie z.B. ein Fertigungsbetrieb sind, so ist die Betrachtung inkl. Fertigung
 berücksichtigen für Sie die richtige Einstellung. Das bedeutet, dass
-Lagerbewegungen von Lager an Fertigung (und zurück) als gültige
+Lagerbewegungen von Lager an Fertigung als gültige
 Lagerbewegungen betrachtet werden. Somit werden, wenn Buchungen von Lager an Los
-im Betrachtungszeitraum waren, so werden diese NICHT als Ladenhüter betrachtet.</p>
+im Betrachtungszeitraum waren, diese NICHT als Ladenhüter betrachtet.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
 analoger Weise wird bei Handlagerbewegungen berücksichtigen vorgegangen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Was
+bedeutet der angegebene Zeitraum ?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dem Zeitraum wird definiert für welchen Buchungszeitraum Sie die
+Ladenhüterbetrachtung durchführen. Also alle Artikel, nach den obigen
+Bedingungen, werden dann als Ladenhüter betrachtet, wenn es im Zeitraum KEINE
+Bewegung von Lager an Verkauf gegeben hat (nach den oben beschriebenen
+Festlegungen)</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Lagerwert zum Stichtag und offene Lieferscheine"></a>Q:
 Lagerwert zum Stichtag und offene Lieferscheine</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1297,8 +1304,7 @@ Informationsfelder. Diese Felder sind Verdichtungen von Daten und dienen dem
 schnellen Überblick, der Beschaffungssituation dieses einen Artikels.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Bedeutung der Felder im einzelnen ist:</p>
-<div align="center">
-  <center>
+<div align="left">
   <table border="1" width="748" height="13">
     <tr>
       <td width="132" height="13">Feld</td>
@@ -1355,7 +1361,6 @@ Bedeutung der Felder im einzelnen ist:</p>
       <td width="1364" height="13">Info, Rahmenbestellt-Liste</td>
     </tr>
   </table>
-  </center>
 </div>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unterschied:
 Rahmendetailbedarf und Rahmenreservierung.</p>
