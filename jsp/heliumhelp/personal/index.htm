@@ -931,13 +931,45 @@ in Wochen (a1.) * Anzahl der Tage des Zeitmodells / Anzahl der Tage im Jahr) *
 Urlaubstage pro Woche (b1.)</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Erweiterter Urlaubsanspruch</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-In manchen Unternehmen ist es noch immer üblich, dass Mitarbeiter bei einem
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Parameter ERWEITERTER_URLAUBSANSPRUCH wird die Art der Berechnung des Urlaubes
+definiert:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>0
+... Standard</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Steht
+dieser Parameter auf 0, was der Standard Wert ist, so gilt die oben beschriebene
+Berechnung des Urlaubsanspruches, welche mit dem Kalenderjahr harmoniert</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>1
+... Erweiterter Urlaubsanspruch</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In manchen Unternehmen ist es noch immer üblich, dass Mitarbeiter bei einem
 Eintritt während der ersten Jahreshälfte für dieses Jahr den vollen
-Urlaubsanspruch erhalten. Das bedeutet, wenn der Parameter: ERWEITERTER_URLAUBSANSPRUCH
-auf 1 gestellt ist, so wird im Eintrittsjahr bei einem EIntritt bis inkl. 30.6.
+Urlaubsanspruch erhalten. Das bedeutet es wird im Eintrittsjahr bei einem Eintritt bis inkl. 30.6.
 des Eintrittsjahres der volle Anspruch gerechnet. Bei einem Eintritt ab dem 1.7.
 wird der Urlaub wie üblich aliquotiert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>2
+... Urlaubsanspruch nach TVÖD</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Berechnung
+des Urlaubsanspruches nach dem Tarifvertrag des öffentlichen Dienstes in
+Deutschland.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieser
+besagte, dass ein Mitarbeiter xx Tage Urlaubsanspruch für ein ganzes Jahr hat.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Tritt
+der Mitarbeiter während des Jahres ein, so erhält er 1/12tel des
+Jahresurlaubsanspruches für jedes volle(!!) Monat, welches er im Unternehmen
+ist. Der errechnete Anspruch wird kaufmännisch auf eine ganze Zahl gerundet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter hat 29Tage Jahresurlaub</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Er
+tritt am 1.5. ein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+gebühren ihm 29/12*8 Urlaubstage = 19,33 Tage. Ergibt gerundet 19Tage</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter tritt erst am 2.5. ein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+gebühren ihm 19/12*7 Urlaubstage = 19,91 Tage. Ergibt gerundet 17Tage</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann ich Bemerkungen zu Personen ablegen?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
