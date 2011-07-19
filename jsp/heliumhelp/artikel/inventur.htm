@@ -179,8 +179,8 @@ die Inventur wählen Sie im Artikel den unteren Modulreiter Inventur.</p>
   <li>
     <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Legen
     Sie eine neue Inventur an und definieren Sie den Stichtag der Inventur.<br>
-    Der Inventurstichtag ist das Bezugsdatum auf den die Lagerbewegungen
-    rückgerechnet werden.<br>
+    Der Inventurstichtag ist das Bezugsdatum auf den die Lagerbewegungen rück-
+    bzw. vor-gerechnet werden.<br>
     Eine Inventur kann nicht vor dem Inventurstichtag abgeschlossen werden.</li>
   <li>
     <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Drucken
@@ -210,9 +210,10 @@ die Inventur wählen Sie im Artikel den unteren Modulreiter Inventur.</p>
   <li>
     <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Sind
     Ihrer Meinung nach alle Artikel erfasst, so prüfen Sie dies durch den Druck
-    der Deltaliste (Info, Deltaliste)<br>
-    Hier sehen Sie alle unterschiedlichen Artikel. Gegebenenfalls hacken Sie
-    &quot;nur nicht erfasste Artikel&quot; an um eine Liste der noch nicht
+    der Liste der nicht erfassten Artikel (Info, nicht erfasste Artikel)<br>
+    Hier sehen Sie alle Artikel die noch nicht in der Inventurliste erfasst
+    wurden. Gegebenenfalls hacken Sie
+    &quot;nur Artikel mit Lagerstand &gt; 0 (größer 0)&quot; an um eine Liste der noch nicht
     gezählten Artikel, welche aber derzeit noch einen Lagerstand haben zu
     erhalten.</li>
   <li>
@@ -248,7 +249,11 @@ Abwertung der Inventur<p style="margin-left: 0cm; margin-right: 0cm; margin-top:
 Ein Inventurstand kann nur einmal abgewertet werden.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Als
 Basis für die Inventurabwertung dient der unter Inventurstand eingegebene
 Preis. Dieser wird anhand der Abwertungsformel abgewertet.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Abwertungsformel:
-GESTEHUNGSPREISABWERTEN_AB_MONATE<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">GESTEHUNGSPREISABWERTEN_PROZENT_PRO_MONAT<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Zur
+GESTEHUNGSPREISABWERTEN_AB_MONATE<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">GESTEHUNGSPREISABWERTEN_PROZENT_PRO_MONAT<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Das
+bedeutet: Ein Artikel der
+GESTEHUNGSPREISABWERTEN_AB_MONATE Monate keine Bewegung hatte wird für jedes
+weitere Monat um GESTEHUNGSPREISABWERTEN_PROZENT_PRO_MONAT %te abgewertet,
+solange bis er einen Preis von 0 hat.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Zur
 Durchführung der Abwertung klicken Sie im oberen Modulreiter Inventurstand auf <img border="0" src="Inventur_Abwertung.gif" width="34" height="27">,
 Inventur-Preise abwerten.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Für
 die Betrachtung der Abwertungen werden alle Lagerbewegungen mit Ausnahme der
@@ -311,8 +316,7 @@ eine Reduktion der Menge nicht mehr möglich, so wurde in der Zwischenzeit der
 Artikel bereits wieder verbraucht.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><b>Hinweis:</b><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Wird
 der Fehler erst nach der Durchführung der Inventur festgestellt, so muss der
 Lagerstand per Hand (Handlagerbewegung) korrigiert werden und der Inventurstand
-gleichlautend angepasst werden.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Danach
-erscheint die Frage<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;
+gleichlautend angepasst werden.
 
 </body>
 

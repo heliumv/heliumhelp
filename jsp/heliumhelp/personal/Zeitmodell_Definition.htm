@@ -122,17 +122,12 @@ jeden Tag können folgende Werte definiert werden.</p>
     </tr>
     <tr>
       <td width="346" height="19">max. Erlaubte Anwesenheitszeit</td>
-      <td width="1070" height="19">Dient für die Erkennung für die
-        Mitternachtsautomatik<br>
-        Mit dieser Dauer kann festgelegt werden, bis zu wieviele Stunden ein
-        Mitarbeiter anwesend sein darf. Ist er um Mitternacht bereits mehr als
-        diese Dauer anwesend wird kein Mitternachtssprung gebucht. Ist seine
-        Anwesenheitszeit darunter, so wir automatisch um 23:59:59 ein Geht und
-        am nächsten Tag mit 00:00 ein Kommt gebucht. War der Mitarbeiter auf
-        einem Auftrag angemeldet, so wird mit 00:00:01 die Fortsetzung der
-        Tätigkeit gebucht.<br>
-        Die Anwesenheitsdauer wird immer ausgehend vom spätesten Kommt
-        gerechnet. Pausen werden bei dieser Betrachtung nicht berücksichtigt.</td>
+      <td width="1070" height="19">Dient vor der Build Version 6144 für die Erkennung für die
+        Mitternachtsautomatik.<br>
+        Wird nun als Begrenzung der echten Anwesenheitszeit verwendet.<br>
+        D.h. hat hier ein Mitarbeiter z.B. 10Std eingetragen, so wird die
+        maximale Istzeit des Tages auf diesen Wert begrenzt, wenn ein anderer
+        Wert als 00:00 eingegeben wurde.</td>
     </tr>
     <tr>
       <td width="346" height="19">Automatische Pause ab</td>
@@ -149,7 +144,7 @@ jeden Tag können folgende Werte definiert werden.</p>
         siehe oben.</td>
     </tr>
     <tr>
-      <td width="346" height="19">Automatische Pause ab 2</td>
+      <td width="346" height="19">Automatische Pause 2 ab</td>
       <td width="1070" height="19">Ist hier ein Wert &gt; 00:00 eingetragen, so
         wird ab dieser Gesamtanwesenheitszeit die Mindestpausendauer 2 als
         Mindestpause erzwungen.<br>
@@ -161,7 +156,7 @@ jeden Tag können folgende Werte definiert werden.</p>
     <tr>
       <td width="346" height="19">Mindestpausendauer 2</td>
       <td width="1070" height="19">Die Mindestpause ab einer Anwesenheit von
-        Automatische Pause ab 2</td>
+        Automatische Pause 2 ab.</td>
     </tr>
   </table>
 </div>
