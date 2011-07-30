@@ -380,6 +380,107 @@ Arbeitszeit in den Stücklisten. Verwenden Sie dafür die Kapazitätsvorschau im
 Modul Fertigung.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Rollierende Planung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die rollierende Planung dient der Weitergabe des teilweise verbindlichen
+Forecasts Ihres Kunden an Ihre Lieferanten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+finden diese Auswertung unter Info, rollierende Planung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Idee hinter der Rollierenden Planung ist folgende:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+erhalten von Ihrem Kunden Forecast-Planungen für die nächsten 3-12 Monate.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+legen pro Monat einen Rahmenauftrag an und schreiben in die Projektbezeichnung
+das Monat. Zugleich setzen Sie den Rahmentermin auf das Ende des Monates. Achten
+Sei darauf, dass die Auftragsnummern und die Monate chronologisch
+zusammenpassen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+tragen Sie in den Monats-Rahmenauftrag die Forecastzahlen Ihres Kunden ein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Haben
+Sie nun die Daten für die nächsten 12 Monate erfasst, so sehen Sie in der
+Auswertung der Rollierenden Planung welche Einzelkomponenten Sie in den
+nächsten Monaten für die aufgrund der enthaltenen Stücklisten errechneten
+Materialien benötigen. Drucken Sie diese gruppiert nach Lieferanten aus, so
+können Sie diese direkt an Ihre Lieferanten weiterleiten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ausgangsbasis
+sind die offenen Rahmenaufträge des ausgewählten Kunden, also des Kunden des
+Auftrags auf dem der Cursor bei Aufruf der Funktion steht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden damit vor allem die Mengen für die nächsten 12 Monate errechnet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden dazu alle offenen Rahmenaufträge des Kunden herangezogen und die
+ältesten 12 offenen dieses einen Kunden berücksichtigt. Sind weniger
+Rahmenaufträge offen, so werden keine Werte errechnet, sind mehr offen, werden
+nur die ältesten 12 berücksichtigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Begriff Monat, dient hier nur der üblichen Verwendungsweise für die
+rollierende Planung. Die tatsächlichen Zeiträume sind außerhalb von Helium V
+zu definieren. Daher wird auch die Projektbezeichnung aus den jeweiligen
+Auftragskopfdaten als Spaltenüberschrift bei den mengen mit angedruckt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+wird für jede Auftragsposition die komplette Stückliste Stücklistenauflösung
+durchgeführt und zum Schluss alle Positionen nach Artikel verdichtet. Zu Ihrer
+Übersicht werden Lagerstand und Wiederbeschaffungszeiten der Lieferanten mit
+angedruckt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>Tipp:</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+es sich anscheinend eingebürgert hat, dass die verbindlich zugesagten
+Drei-Monats Forecasts, dann doch nicht so genau gehalten werden, empfiehlt es
+sich, die &quot;alten&quot; Planungen aufzubewahren, also im System stehen zu
+lassen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">am
+30.7. erhalten Sie die Planung für August, September, Oktober</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">am
+30.8. erhalten Sie die Planung für September, Oktober, November</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">am
+30.9. erhalten Sie die Planung für Oktober, November, Dezember.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+haben aber am 31.7. die Planung für Oktober verbindlich weitergegeben, Material
+Ihrer Unterstücklisten usw. eingekauft.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Weicht
+nun die am 30.9. erhaltene Planung deutlich von der am 30.7. erhaltenen Planung
+ab, so haben Sie normalerweise das Recht, den Mehraufwand Ihrem Kunden in
+Rechnung zu stellen. Ob Sie dies durchsetzen können steht auf einem anderen
+Blatt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+können die tatsächlichen Lieferungen, den tatsächlichen Wareneinsatz für
+einen Zeitraum mit dem Journal <a href="#Rahmenerfüllung">Rahmenerfüllung</a>
+auswerten. Und erhalten damit eine Vorstellung davon, wie exakt Ihr Kunde
+seinen, oft verbindlich zugesagten, Forecast erfüllt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Verfügbarkeit</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1312,7 +1413,7 @@ Rahmenauftrag zu ändern gibt es zwei mögliche Vorgehensweisen:</p>
     Erledigen und geben den Rahmenauftrag an.</li>
 </ol>
 
-<p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Q:
+<p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt"><a name="Rahmenerfüllung"></a>Q:
 Rahmenerfüllung</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
 Unter Info, Rahmenerfüllung finden Sie eine Auswertung, welche die oft für
@@ -1328,7 +1429,8 @@ werden hier alle Unterstücklisten bis hin zum Einzelteil aufgelöst und nach
 Artikelnummern verdichtet.</p>
 
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Sodann
-werden die Lieferungen im Zeitraum den Mengen im Rahmenauftrag und den
+werden die Warenverbrauchen (mit Ausnahme der manuellen Lagerkorrekturen
+(Handbuchungen)) im Zeitraum den Mengen im Rahmenauftrag und den
 Einkäufen gegenübergestellt.</p>
 
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Zusätzlich
@@ -1341,7 +1443,7 @@ Kunden darstellen können.</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Diese
 Auswertung ist eine allgemeine Sicht auf die Lieferungen der im Rahmenauftrag
 enthaltenen Artikel im Zeitraum. Es ist auf keinen Fall eine Sicht für die
-tatsächliche Erfüllung des einzelnen Rahmenauftrags.</p>
+tatsächliche Erfüllung eines einzelnen Rahmenauftrags.</p>
 
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Allerdings
 wird die Rahmenerfüllung gerne für allgemeine Betrachtungen für die

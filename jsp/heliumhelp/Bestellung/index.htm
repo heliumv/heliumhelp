@@ -1054,6 +1054,40 @@ für Rahmenbestellungen keine Liefermahnung erzeugt.</p>
 Da auf Rahmenbestellungen ja keine Lieferungen erfolgen, wird für
 Rahmenbestellungen keine Liefermahnung erzeugt.</p>
 
+<p style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="question">Q:
+Können Bestellmahnungen nur für bestimmte Artikelgruppen gemacht werden ?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Ja. Definieren Sie in den Grunddaten der Bestellung die zu mahnenden
+Artikelgruppen. Wir haben dies so gesteuert, dass wenn hier Artikelgruppen
+eingetragen sind, so werden nur diese Artikelgruppen gemahnt. Ist hier keine
+einzige Artikelgruppe definiert, so werden alle Mengenbehafteten Positionen
+angemahnt.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Dies
+bedeutet auch, dass bei einer Definition von zu mahnenden Artikelgruppen,
+Handeingaben nicht gemahnt werden.</p>
+
+<p style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="question">Q:
+An welchen Empfänger werden die durch den Nachtjob erzeugten Bestellmahnungen
+gesandt ?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Je nach Organisation Ihrer Unternehmens Email Kommunikation kann es praktisch
+sein wenn:</p>
+
+<ul>
+  <li>
+    <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Die
+    Bestellmahnung automatisch in CC an den Versender gesandt wird -&gt; siehe
+    Parameter MAHNUNG_AUTO_CC</li>
+  <li>
+    <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Der
+    Absender der Bestellmahnung nicht der Auslösende ist, was beim Nachtjob
+    immer der Helium V Administrator wäre, sondern, wenn dies der Anforderer
+    der Bestellung ist.</li>
+</ul>
+
 <p style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0" class="question">Eine
 Rahmenbestellung ist im Status abgerufen. Warum kann ich das nicht erledigen?</p>
 
