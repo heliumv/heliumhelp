@@ -380,7 +380,7 @@ müssen. Nicht berücksichtigt wird die Komponente der Fertigungszeit, der
 Arbeitszeit in den Stücklisten. Verwenden Sie dafür die Kapazitätsvorschau im
 Modul Fertigung.</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Rollierende Planung"></a>Q:
 Rollierende Planung</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -487,6 +487,33 @@ System stehen lassen, bedeutet: Sie erledigen den am 30.7. für Oktober
 angelegten Rahmenauftrag, damit er in den Berechnungen usw. nicht mehr wirkt,
 aber in Ihrer Auslieferungsbetrachtung für den Oktober wird der am 30.7.
 angelegte Rahmenauftrag für die Rahmenerfüllungsstatistik als Vergleichswert herangezogen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wieso stimmen Rollierende Planung und Rahmendetailbedarf nicht zusammen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Auf den ersten Blick ist man der Meinung, dass die Detailmengen der <a href="#Rollierende Planung">Rollierenden
+Planung</a> und die Detailmengen des <a href="#Rahmendetailbedarf">Rahmendetailbedarfs</a>
+zusammenstimmen müssten. Dies ist ausschließlich bei gänzlich neuen Produkten
+= Stücklisten und bei aktualisiertem Rahmendetailbedarf der Fall.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+berücksichtigen Sie, dass im Rahmendetailbedarf der Lagerstand aller Läger und
+die Mengen in Fertigung berücksichtigt werden (abgezogen). Dies wird bei der
+Rollierenden Planung, welche dafür gedacht ist, dass Sie den Bedarf an Ihren
+Lieferanten weitergeben, nicht berücksichtigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Rahmendetailbedarf wird zusätzlich der Bedarf nach Terminen sortiert durch
+Lagerstand und den Mengen in Produktion erfüllt. So kann es durchaus den
+Anschein erwecken, dass nur ein Teil der Rahmenaufträge im Rahmendetailbedarf
+enthalten ist. Bei genauerer Betrachtung stellt sich heraus, dass diese
+Situation sich jedoch durch die Terminliche Steuerung ergibt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Übersicht etwas zu erleichtern, haben wir in der Stücklistenverwendung
+auch die Reservierungen, Rahmenreservierungen, Fehlmengen, Lagerstände mit
+angedruckt.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Verfügbarkeit</p>
