@@ -1,9 +1,10 @@
-rem dieser Batch kopier die Daten von d: auf c: und richtet sie so her, dass anschließend
+rem dieser Batch kopiert die Daten von d: auf c: und richtet sie so her, dass anschließend
 rem das hv_help.prg gestartet werden kann und daran anschließend das jHelpBuilder
+rem Daran denken, dass der hv_help nur hinzufügt, das bedeutet, dass wenn Dateien entfernt werden, diese im map.jhm per Hand entfernt werden müssen.
 
 rem die .# Dateien sollten vorher aus dem Source entfernt werden
 
-rem die Pfad sind fix festgelegt
+rem die Pfade sind fix festgelegt
 
 echo "kopieren des Source"
 d:
@@ -29,6 +30,9 @@ del *.cdr /s
 del backup_of*.cdr /s
 del Sicherungskopie_von_*.cdr /s
 del *.dia /s
+del *.java /s
+del _achtung.txt /s
+del javamenu.htm /s
 
 pause
 
@@ -38,5 +42,6 @@ cd \jbproject\heliumhelp\jsp\heliumhelp\
 del map.bak
 hv_help map.jhm
 
+echo "JHelpbuilder starten und auch die SearchDB erzeugen und mit der Vorschau testen inkl. Suche nach Zeiterfassung, Fertigung"
 pause
 

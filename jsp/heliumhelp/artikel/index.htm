@@ -497,6 +497,30 @@ unterschritten wird, so wird in aller Regel auf den Lagersollbestand
 aufgefüllt. Ist eine Fertigungssatzgröße definiert, so wird ein ganzzahliges
 Vielfaches dieses Wertes in der Internen Bestellung der Losverwaltung
 vorgeschlagen.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q:
+Detailprozentmindeststand</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Ist in Ihrer
+Installation auch die Berechnung des Rahmendetailbedarfes freigeschaltet, so
+finden Sie im Reiter Bestelldaten neben dem Lagermindeststand auch den
+Detailprozentmindeststand.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wird hier ein
+Prozentfaktor eingegeben, der auch größer 100% sein kann, so wird
+anschließend an die Berechnung des Rahmendetailbedarfes der Lagermindeststand
+auf den ganzzahligen Wert der sich aus dem Rahmendetailbedarf gerundet auf eine
+ganze Zahl ergibt gesetzt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="DetailProzentMindeststande.gif" width="260" height="32"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wird anschließend
+der Bestellvorschlag erzeugt, so wird der sich aus dem Rahmendetailbedarf
+ergebende Lagermindeststand für die Berechnung herangezogen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achten Sie bei der
+Verwendung der Automatikjobs darauf, dass der Rahmendetailbedarf vor der
+Errechnung des Bestellvorschlages durchgeführt wird.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">D.h. hier wird der
+Lagermindeststand bei jedem Lauf der Berechnung des Rahmendetailbedarfes, z.B.
+täglich, automatisch überschrieben.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um diese Funktion
+für den einzelnen Artikel abzuschalten, entfernen Sie bitte den Eintrag unter
+Detailprozentmindestsatz.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Materialzuschlag"></a>Q: Wozu dient die
 Materialangabe unter Technik?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Verschiedene
