@@ -2,7 +2,7 @@
 <table border="1" width="100%" bordercolor="#FF9900">
   <tr>
     <td width="13%" align="left">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/at">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/at/">
     <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" />
     </a>
     </td>
@@ -11,6 +11,7 @@
       <a href="http://www.heliumv.com"><br>
       HELIUM V das ERP System für den erfolgreichen KMU</a></b></td>
     <td width="61%" align="left">
-      <p align="center">&nbsp;</td>
+      <p align="center">Autor:<br>
+      Ing. Werner Hehenwarter</td>
   </tr>
 </table>
