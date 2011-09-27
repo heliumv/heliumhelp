@@ -161,6 +161,19 @@ Mitarbeiterart.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Denken
 Sie dabei auch an Ihre Lehrlinge / Azubis, für die eventuell eine eigene
 Personalart verwendet / definiert wurde.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sonntagsdefinition
+/ Nachtzuschläge</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+reine Zuschlagsdaten exportiert werden sollten, so achten Sie bitte darauf, dass
+z.B. die Sonntagsdefinition üblicherweise auf den 100%igen Überstunden
+aufbaut. Nachzuschläge bauen üblicherweise ebenfalls auf den 100%igen
+Zuschlägen auf.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+eine saubere Trennung herbeizuführen, müssen daher die Nachzuschläge für
+jeden einzelnen Wochentag mit Ausnahme des Sonntags definiert werden.&nbsp;</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Derzeit
 werden folgende Exportformate unterstützt:</p>
 <ul>
@@ -197,6 +210,15 @@ die entsprechend eingestellt werden müssen:</p>
     <td width="174" height="17">PERSONALZEITDATENEXPORT_ZIEL</td>
     <td width="1110" height="17">In welche Datei sollten die exportierten Daten
       geschrieben werden.</td>
+  </tr>
+  <tr>
+    <td width="174" height="17">PERSONALZEITDATENEXPORT_PERIODENVERSATZ</td>
+    <td width="1110" height="17">Da oft&nbsp; die Überstunden-Zuschläge um ein
+      Monat versetzt abgerechnet werden, müssen die (Überstunden-) Zuschläge
+      in die darauffolgenden Periode eingelesen werden. So werden z.B. die
+      Überstunden des August in den September eingelesen. Mit diesem Parameter,
+      der sich immer auf das Übertragungsmonat bezieht, wird der Versatz in
+      Monaten definiert.</td>
   </tr>
 </table>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durchführung
@@ -252,6 +274,42 @@ verweigert. D.h. die Exportdatei konnte / durfte an der gewünschten Stelle
 nicht erzeugt werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln
+Sie nun in Ihre Varial Importprogramm und starten Sie den ersten Teil des
+Imports.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
+dem Varial wird ein Importprotokoll erstellt, dieses sollte ähnlich dem unten
+abgebildeten aussehen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../Bilder/Varial_Lohnexport_Uebertragungsprotokoll.png" width="1010" height="330"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+tatsächliche Import ins Varial geht über einen weiteren Zwischenschritt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieser
+ist nur möglich, wenn das Abrechnungsmonat noch nicht abgeschlossen ist. Führt
+man trotzdem einen Import durch, so ist Aufgrund des Imports nicht ersichtlich,
+dass dieser vom Varial NICHT durchgeführt wurde.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
+Sie daher nach dem Import immer, ob die importierten Daten tatsächlich
+übernommen wurden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Aktualisiert der Lohndatenexport die Gleitzeitsaldi?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Nein, auch wenn die grundsätzliche Berechnung über die Funktion der
+Monatsabrechnung läuft, wird der Gleitzeitsaldo der jeweiligen Person bewusst
+nicht aktualisiert.</p>
 
 </body>
 

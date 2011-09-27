@@ -1,0 +1,198 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Integrierte Finanzbuchhaltung</title>
+</head>
+
+<body>
+
+<h1>Integrierte Finanzbuchhaltung</h1>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Neben
+der Möglichkeit des Exportes der Rechnungsdaten steht auch die integrierte
+Finanzbuchhaltung in Helium V zur Verfügung.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie vorgehen bei der Übernahme bestehender Helium V Daten in die
+Finanzbuchhaltung?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Dafür sind mehrere Schritte notwendig um eine entsprechende richtige
+Einstellung der Daten zu erhalten.</p>
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
+    Sie die Steuerkategorie auf vollständige Definition.<br>
+    Hier insbesondere auf die Abstimmkonten der Forderungen und
+    Verbindlichkeiten.<br>
+    <img border="0" src="Fibu_Steuerkategorie.gif" width="380" height="124"><br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie die benötigten Steuerkategoriekonten für jeden verwendeten /
+    vorkommenden MwSt-Steuerkategorie.<br>
+    D.h. es sind für jeden Mehrwertsteuersatz die zugehörigen Umsatzsteuer-
+    und Vorsteuerkonten und die Skontoaufwand bzw. Skontoerlöskonten zu
+    definieren.<br>
+    <br>
+    <img border="0" src="Fibu_Steuerkategorie_Definition.jpg" width="783" height="250"><br>
+    <br>
+    Diese Zuordnung bewirkt, dass die Steuern entsprechend der hier definierten
+    Zuordnung verbucht werden.<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie nun die Steuerkategorien aller Debitoren und Kreditoren.<br>
+    Dazu werden in den Kopfdaten jedes Personenkontos Land, Postleitzahl, Ort,
+    UID Nr und ev. Reverse Charge angezeigt.<br>
+    Achten Sie dabei auf die richtige Zuordnung der Steuerkategorie.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie nun Ihre Sachkonten.<br>
+    Achten Sie hier insbesondere auf eine für Sie und Ihren Buchhalter
+    eindeutige Bezeichnung des Kontos und definieren Sie die UVA Art. Sollten
+    die Beschreibenden Texte der auszuwählenden UVA Art für Sie nicht
+    sprechend sein oder diese unvollständig sein, so wenden Sie sich bitte an
+    Ihren Helium V Betreuer. Er kann diese laut Ihren Angaben, den Angaben Ihres
+    Steuerberaters entsprechend einstellen.<br>
+    <b>Hinweis:<br>
+    </b>Es können auch weitere UVA Arten für Sie konfiguriert werden. Es
+    müssen dazu auch die Formularvorlagen entsprechend ergänzt werden.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
+    Sie nun, dass die Regel der Erlöskontenfindung auf Artikelgruppe steht.
+    D.h. der Parameter FINANZ_EXPORT_VARIANTE muss auf Artikelgruppen stehen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+    raten den Parameter ARTIKELGRUPPE_IST_PFLICHTFELD auf 1 zu stellen, damit
+    für jeden Artikel auch eine entsprechende Artikelgruppe ausgewählt werden
+    muss.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
+    Sie nun in den Grunddaten des Artikels, dass für alle Artikelgruppen auch
+    entsprechende Inlandskontierungen angegeben sind.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
+    Sie für die Konten der Artikelgruppen die Länderartübersetzungen /
+    Steuerkategoriezuweisungen.<br>
+    Damit wird ganz wesentlich die Buchung auf das richtige Erlöskonto
+    gesteuert in Abhängigkeit des Landes/Steuerkategorie des Kunden.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erfassen
+    Sie nun eine Ausgangsrechnung und drucken Sie diese aus.<br>
+    Wechseln Sie in das zugehörige Warenerlöskonto und prüfen Sie ob die
+    Buchung dort mit allen Steuersätzen angekommen ist.<br>
+    Ist diese Buchung aus Sicht der Finanzbuchhaltung richtig, auf den richtigen
+    Konten.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Buchen
+    Sie nun eine Zahlung mit Skontoaufwand.<br>
+    Wird die Zahlung entsprechend auf der Bank eingetragen und der Skontoaufwand
+    verbucht.<br>
+    Gegebenenfalls löschen Sie die Bankbuchung wieder.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erfassen
+    Sie nun eine Eingangsrechnung,<br>
+    prüfen Sie ob auch hier die Buchungen inkl. den Steuerbeträgen
+    entsprechend richtig verbucht werden und&nbsp;<br>
+    Buchen Sie eine Zahlung der Eingangsrechnung mit Skonto.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Konten
+    alle obige Punkte erfolgreich durchgeführt werden, so kann als nächstes
+    die Periodenweise Übernahme der bestehenden Daten direkt in die Fibu
+    durchgeführt werden.<br>
+    Wählen Sie dazu zuerst die Periode, das Buchungsmonat aus und wählen
+    danach ....</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucken
+    Sie nun eine Saldenliste aus. Stimmt diese mit den Ausdrucken Ihres
+    Steuerberaters überein.<br>
+    Gegebenenfalls müssen noch Eröffnungsbuchungen durchgeführt werden.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucken
+    Sie eine UVA für die oben übernommenen Daten aus.<br>
+    Stimmt diese mit den Daten Ihres Steuerberaters überein?</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ich erhalten die Fehlermeldung Sachkonto für Kostenstelle .... nicht definiert?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Erhalten Sie bei Druck einer Rechnung nachfolgende Meldung,</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+java.lang.Exception: Sachkonto fuer Kostenstelle i_id11,10 Kostenstelle 10 ist nicht definiert<br>
+so ist für den jeweiligen Artikel kein Erlöskonto hinterlegt. Bitte definieren Sie
+den Artikel vollständig und drucken Sie dann die&nbsp; Rechnung erneut. Beachten Sie dazu auch den Parameter FIBU_EXPORT_VARIANTE</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Die Fibu bucht ausschließlich in Mandantenwährung.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eventuelle Fremdwährungen werden vor der Übergabe an die Fibu entsprechend den Kursen umgerechnet.
+Das hat natürlich den Vorteil, dass Kurs-Fehler sofort auffallen. Auch die Bank wird nur in Mandantenwährung gebucht, auch wenn Sie eventuell ein Fremdwährungs Konto haben.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie wird eine falsch gebuchte Ausgangsrechnung, weil Konten/Artikelgruppen falsch
+eingestellt waren wieder korrigiert.?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.) Die Kontenzuordnung richtig stellen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.) die RE in den Status angelegt bringen, durch ändern und dann erneut drucken.
+Über die interne Verknüpfung wird sichergestellt, dass alle alten Buchungen auf die
+Rechnung zurückgenommen werden und dann beim Drucken entsprechend den neuen Definitionen
+wieder in die Buchhaltung übernommen werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wann erfolgt die Verbuchung?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Beim Aktivieren der Rechnung, also beim ersten Druck.<br>
+Wird die Rechnung geändert, werden die Buchungen wieder zurückgenommen (storniert) und beim
+erneuten Druck wieder in die Fibu gestellt.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Mitlaufende Buchungen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die offenen Forderungen und Verbindlichkeiten werden durch sogenannte Mitlaufende
+Buchungen realisiert. Damit finden sind in den Forderungen und Verbindlichkeiten Konten
+immer den aktuellen Stand, wodurch Ihre Saldenliste aus dieser Sicht immer aktuell ist.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum gibt es im Reiter Buchungen keinen Neu-Knopf?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da hinter der Buchung viel mehr steckt und sehr oft auch verschiedene
+Buchungsschablonen verwendet werden, verwenden Sie bitte den Menüpunkt Bearbeiten, Umbuchen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Fehlermeldung: id to load is required for loading</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Tritt diese Meldung auf, so ist die Steuerkategorie beim Kunden/Lieferanten im Debitorenkonto DEBITORENKONTO !!!! respektive Kreditorenkonto (noch) nicht gesetzt.
+Dieses bitte im entsprechenden Personenkonto setzen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Verhalten der Fibu:</p>
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim Anlegen der Sachkonten bleibt immer das zuletzt gewählte Finanzamt vorbesetzt.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gültig ab des Kontos wird mit dem Startdatum des Geschäftsjahres vorbesetzt.
+    Z.B. ab 1.1.2011</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim Anlegen der Kunden / Lieferanten wird das Standard Finanzamt eingetragen.  Dies kann im System, Mandant, Vorbelegungen2 definiert werden.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Vorschlagswert der Steuerkategorie des Debitors/Kreditors:  Dieses wird anhand des Landes (Länderart) vorbesetzt.</li>
+</ul>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was ist zu tun, wenn der Saldo der Saldenliste nicht 0,00 wird?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn der Saldo der Saldenliste nicht 0,00 ist, so bitte als erstes die Forderungen
+/ Verbindlichkeiten Sammelkonten Zuordnung der Steuerkategorie prüfen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum wird der Skontoaufwand negativ im Haben verbucht und nicht positiv im
+Soll?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Da es für den ermittelten Umsatz wesentlich ist, dass der tatsächlich erzielte
+Betrag richtig dargestellt wird, haben wir uns dazu entschlossen, den
+Skontoaufwand mit negativem Vorzeichen ins Haben zu buchen. Wir sind der festen
+Überzeugung, dass die betriebswirtschaftliche Betrachtung hier Vorrang vor
+eventuellen Buchhaltungs-Allgemein-Regeln hat.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>
