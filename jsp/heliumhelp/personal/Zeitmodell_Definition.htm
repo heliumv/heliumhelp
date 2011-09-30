@@ -144,7 +144,8 @@ jeden Tag können folgende Werte definiert werden.</p>
         (=Pause) gebucht haben. Ist dies nicht der Fall, so wird automatisch die
         fehlende Pausenzeit nachgebucht. Die Nachbuchung erfolgt in der Form,
         dass ab dem errechneten Maximalen Anwesenheitszeitpunkt die
-        Mindestpausendauer bereits erreicht ist.</td>
+        Mindestpausendauer bereits erreicht ist.<br>
+        Beachten Sie den Unterschied bei dynamischer Pause, siehe unten.</td>
     </tr>
     <tr>
       <td width="346" height="19">Mindestpausendauer</td>
@@ -212,7 +213,66 @@ Monatsabrechnungen Ungenauigkeiten geben. </p>
 automatischer Pausen</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Neben
 der automatischen Mindestpause können mit dem Reiter Pausen für jeden
-Zeitmodelltag automatischen Pausen zu festgelegten Zeiten definiert werden. </p>
+Zeitmodelltag automatischen Pausen zu festgelegten Zeiten definiert werden.&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Hinweis:</u></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Gegensatz zu den festen Pausen (= dynamische Pause nicht angehakt), wird bei der
+dynamischen Pause die Automatische Pause ab in die Zukunft gerechnet. Das
+bedeutet dass die Mitarbeiter bei einem Zeitmodell mit dynamischer Pause die
+Pause immer in die Zukunft gerechnet wird, also ab dem Zeitpunkt automatische
+Pause ab, wird eine Pause gebucht bis maximal Mindestpausendauer. Zusätzlich
+wird sichergestellt, dass bei überschreiten der Automatischen Pause ab bis zum
+erreichen der Automatischen Pause 2 zumindest die Mindestpausendauer (1)
+abgezogen wird. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dazu
+zwei Beispiele: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Automatische Pause ab 6,5 Std. und 9,5 Std. mit Pausen von 0,5 bzw. 0,75 Std. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Einstellung
+des Zeitmodelltages </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="dynamische_Pause1.gif" width="220" height="108"> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Worten ausgedrückt, nach 6 Std. muss der Mitarbeiter mit der Pause von maximal
+1/2 Std. beginnen. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+9 Std. muss er mindestens 0,5 Std. und maximal 0,75 Std. als Pause haben. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+sehen dann z.B. die Pausenbuchungen aus. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="dynamische_Pause2.gif" width="345" height="87"> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+es wird die gesamte Pause auf einmal reingebucht. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+gleiche Zeitdaten aber der Beginn der Pausen wird um 30 Minuten nach hinten
+verschoben. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="dynamische_Pause3.gif" width="221" height="109"> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="dynamische_Pause4.gif" width="346" height="89"> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aufgrund
+der ersten Pause ergibt sich, dass die Automatische Pause 2 nicht erreicht wird
+und es wird nur 1/2 Std. abgezogen. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Welche Tage / Tagesarten müssen definiert werden"></a>Welche
 Tage / Tagesarten müssen definiert werden? </p>
