@@ -55,8 +55,11 @@ angegebene Wunschliefertermin.&nbsp;</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie wird der
 Vorschlagswert für den Liefertermin errechnet?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Dieser ist das
-aktuelle Datum plus der im Parameter ARTIKELWIEDERBESCHAFFUNGSZEIT angegebenen
-Anzahl von Tagen.</p>
+aktuelle Datum plus der im Parameter DEFAULT_LIEFERZEITVERSATZ angegebenen
+Anzahl von Tagen. Wird dieser Parameter auf -1 gesetzt, so wird der Liefertermin
+in den Kopfdaten nicht vorbesetzt. D.h. es muss der gewünschte Liefertermin
+jedes Mal manuell eingegeben werden. Gerade bei ständig wechselnden Terminen
+ist dies unter Umständen ein Vorteil.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann ich auch in
 anderen Mengeneinheiten bestellen?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Ja, wenn im
