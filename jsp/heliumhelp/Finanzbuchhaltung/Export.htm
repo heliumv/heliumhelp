@@ -234,6 +234,41 @@ FINANZ_EXPORT_ZIELPROGRAMM</p>
 Stellen Sie sicher, dass alle Artikelgruppen ein Erlöskonto zugeordnet haben
 bzw. dass alle Kostenstellen ein Sachkonto zugeordnet haben.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Können
+auch die Belege mit exportiert werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Stellen Sie dazu den Parameter FINANZ_EXPORT_MIT_BELEGEN auf 1. Es werden
+damit alle Dokumente die an einem Beleg hängen mit exportiert. Gibt es von
+einem Dokumente mehrere Versionen, so wird immer nur die letzte Version
+exportiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Dokumente werden in den Pfad der Exportdatei kopiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+dort bereits Dokumente mit dem gleichen Namen vorhanden, so werden diese ohne
+Rückfrage überschrieben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+in der Dokumentenablage mehrere gleichlautende Dokumente eingetragen, so bleibt
+im Endeffekt immer nur das letzte Dokument bestehen, da die Vorgänger
+automatisch überschrieben werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Belege werden erst nach der Erzeugung der Exportdatei aus der Dokumentenablage
+in das Filesystem übertragen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dokumente
+die im Jasper Format vorliegen, z.B. Ausgangsrechnungen, werden in PDF Dokumente
+konvertiert. Es werden diese Dokumente 1:1 exportiert. D.h. sind bei Ihren
+Drucken keine Logo-Informationen mit angegeben, so sind auch in den PDF Dateien
+keine Logos enthalten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
+Sie bitte bei der Übertragung der Daten darauf, dass danach der Inhalt des
+Ordners gelöscht wird.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:&nbsp;Welche
 Export Formate werden unterstützt?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
