@@ -477,9 +477,24 @@ Mandanten starten möchte. Dies kann mit dem zusätzlichen Parameter <a href="--ma
 im Startbatch des Helium V Clients eingerichtet werden. Bitte beachten Sie, dass
 bei jedem Update des Clients, alle Dateien aus dem Helium V Programmverzeichnis
 gelöscht werden. D.h. legen Sie diesen geänderten Batch bitte an einer anderen
-Stelle ab, als im Helium V programmverzeichnis.</p>
+Stelle ab, als im Helium V Programmverzeichnis.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Fügen Sie den
+zusätzlichen Parameter einfach am Ende des bestehenden Aufrufes getrennt mit
+einer Leerzeichen an.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Automatische Client-Anmeldung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In vielen Installationen kann davon ausgegangen werden, dass ein Benutzer der
+sich auf seinem Rechner angemeldet hat, sich mit dieser Legitimation auch in
+Ihrer Helium V Installation anmelden darf. Ergänzen Sie dazu ebenfalls den
+Startbatch des Helium V Clients um die Parameter --hv_user=benutzername
+--hv_kennwort=benutzerkennwort.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte, dass die beiden Parameter im Klartext lesbar sind. Dies ist eine
+deutliche Sicherheitslücke. Verwenden Sie auf keinen Fall entsprechend wichtige
+Passwörter mit denen Sie in anderen Systemen einen geschützten Zugriff haben.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Beim Start
 meines Helium V Clients kommt eine Fehlermeldung</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Nachfolgende
