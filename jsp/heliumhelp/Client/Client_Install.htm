@@ -488,13 +488,25 @@ Automatische Client-Anmeldung</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 In vielen Installationen kann davon ausgegangen werden, dass ein Benutzer der
 sich auf seinem Rechner angemeldet hat, sich mit dieser Legitimation auch in
-Ihrer Helium V Installation anmelden darf. Ergänzen Sie dazu ebenfalls den
-Startbatch des Helium V Clients um die Parameter --hv_user=benutzername
---hv_kennwort=benutzerkennwort.</p>
+Ihrer Helium V Installation anmelden darf. Tragen Sie dazu in den
+Benutzerspezifischen Umgebungsvariablen Ihres Betriebssystems folgende Werte
+ein. Achten Sie bitte auf die Groß-Klein-Schreibung.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">HV_USER
+... tragen Sie hier den Helium V Benutzernamen ein</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">HV_KENNWORT
+... Tragen Sie hier das Helium V Kennwort des Benutzers ein.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
-Sie bitte, dass die beiden Parameter im Klartext lesbar sind. Dies ist eine
-deutliche Sicherheitslücke. Verwenden Sie auf keinen Fall entsprechend wichtige
-Passwörter mit denen Sie in anderen Systemen einen geschützten Zugriff haben.</p>
+Sie bitte, dass die beiden Parameter im Klartext lesbar sind. Achten Sie daher
+darauf, dass diese nur für den jeweiligen Benutzer hinterlegt werden. Dies ist
+eine deutliche Sicherheitslücke. Verwenden Sie auf keinen Fall entsprechend
+wichtige Passwörter mit denen Sie in anderen Systemen einen geschützten
+Zugriff haben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Damit dies funktioniert muss die gesamte JVM neu gestartet werden. D.h. am
+einfachsten ist es, wenn Sie sich neu am System anmelden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+steht dies nur zur Verfügung, wenn Sie sich am default Client anmelden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Beim Start
 meines Helium V Clients kommt eine Fehlermeldung</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Nachfolgende
