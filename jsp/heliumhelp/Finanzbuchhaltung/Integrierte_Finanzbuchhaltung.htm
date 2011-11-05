@@ -49,7 +49,7 @@ Einstellung der Daten zu erhalten.</p>
     und Vorsteuerkonten und die Skontoaufwand bzw. Skontoerlöskonten zu
     definieren.<br>
     <br>
-    <img border="0" src="Fibu_Steuerkategorie_Definition.jpg" width="783" height="250"><br>
+    <img border="0" src="Fibu_Steuerkategorie_Definition.jpg" width="782" height="242"><br>
     <br>
     Diese Zuordnung bewirkt, dass die Steuern entsprechend der hier definierten
     Zuordnung verbucht werden.<br>
@@ -109,7 +109,10 @@ Einstellung der Daten zu erhalten.</p>
     Sie nun eine Eingangsrechnung,<br>
     prüfen Sie ob auch hier die Buchungen inkl. den Steuerbeträgen
     entsprechend richtig verbucht werden und&nbsp;<br>
-    Buchen Sie eine Zahlung der Eingangsrechnung mit Skonto.</li>
+    Buchen Sie eine Zahlung der Eingangsrechnung mit Skonto.<br>
+    <br>
+    Hinweis: Alternativ zu den Punkten 9 bis 11 können Sie auch die <a href="#Einzelbelegübernahme">Einzelbelegübernahme</a>
+    werden.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Konten
     alle obige Punkte erfolgreich durchgeführt werden, so kann als nächstes
@@ -127,7 +130,60 @@ Einstellung der Daten zu erhalten.</p>
     Sie eine UVA für die oben übernommenen Daten aus.<br>
     Stimmt diese mit den Daten Ihres Steuerberaters überein?</li>
 </ol>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Steuerkategorien und mehrere Finanzämter auf einem Mandanten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In dieser Konstellation sind einige Dinge zu beachten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ziel
+der Verwendung von mehreren Finanzämtern ist, dass die Mehrwertsteuerthematik,
+vor allem die einfache Verrechnung der Vorsteuer mit der Umsatzsteuer bei einem
+ausländischen Finanzamt erfolgen kann.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dafür
+benötigen Sie eine Steuernummer beim ausländischen Finanzamt und ein weiteres
+freigeschaltetes Finanzamt in Ihrer Helium V Installation.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Derzeit
+ist es in Europa noch üblich, dass jedes Land seinen eigenen Mehrwertsteuersatz
+hat.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Sie nun Lieferungen und Leistungen Umsatzsteuerlich gesehen in einem anderen
+Land abwickeln, bedeutet dies, dass Sie dafür im jeweiligen Mandanten die
+Mehrwertsteuersätze nicht nur Ihres Inlandes / Ihres Firmensitzes, sondern eben
+auch jenes Landes mit abbilden müssen für das Sie eine Umsatzsteuernummer
+haben.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Firmensitz
+Österreich, Umsatzsteuernummer in Deutschland (Finanzamt Bonn)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Sie nur Waren des Normalsteuersatzes in Deutschland verkaufen, so muss auch der
+deutsche Mehrwertsteuersatz von 19% definiert werden. Dafür definieren Sie
+unter System, Mandant, Mwst Bezeichnung eine zusätzliche Mehrwertsteuer z.B.
+mit der Bezeichnung dt. MwSt 19%. Zusätzlich definieren Sie unter MwSt den
+Steuersatz für diese Bezeichnung mit 19% und gültig ab 1.1.2007.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+definieren Sie unter Finanzamt die jeweils gültigen Konten für die jeweilige
+Steuerkategorie.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+ist wichtig nur für diejenigen Steuerkategorien Umsatzsteuerkonten zu
+hinterlegen, bei denen Sie auch tatsächlich Umsätze erwarten. So würde in
+unserem Beispiel nur die Steuerkategorie Inland und unter Steuerkategoriekonto
+nur die Mehrwertsteuerkategorie dt. MwSt 19% definiert werden. Das bringt für
+Sie die Sicherheit, dass bei falschen Definitionen der Steuerkategorie -
+Finanzamts Kombination in Kreditoren- bzw. Debitorenkonten von Helium V erkannt
+wird, dass diese Buchung nicht definiert ist und daher die Buchung mit einer
+entsprechenden abgebrochen wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte insbesondere bei der Definition von ausländischen / zusätzlichen
+Finanzämtern, dass die Steuerkategorien sich immer auf das Land des gewählten
+Finanzamtes beziehen. So ist zu obigem Beispiel die Steuerkategorie Inland für
+das Finanzamt Bonn für innerdeutsche Lieferungen zu definieren.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Denken
+Sie daran, die Abstimmkonten, auch Mitlaufende Konten genannt, für jede
+benötigte Steuerkategorie zu definieren.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Ich erhalten die Fehlermeldung Sachkonto für Kostenstelle .... nicht definiert?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -144,22 +200,33 @@ Das hat natürlich den Vorteil, dass Kurs-Fehler sofort auffallen. Auch die Bank 
 Wie wird eine falsch gebuchte Ausgangsrechnung, weil Konten/Artikelgruppen falsch
 eingestellt waren wieder korrigiert.?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.) Die Kontenzuordnung richtig stellen</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.) die RE in den Status angelegt bringen, durch ändern und dann erneut drucken.
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2a.) die RE in den Status angelegt bringen, durch ändern und dann erneut drucken.
 Über die interne Verknüpfung wird sichergestellt, dass alle alten Buchungen auf die
 Rechnung zurückgenommen werden und dann beim Drucken entsprechend den neuen Definitionen
 wieder in die Buchhaltung übernommen werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2b.)
+Alternativ und gerade bei bereits bezahlten Rechnungen verwenden Sie bitte <a href="#Einzelbelegübernahme">Einzelbelegübernahme</a>.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wann erfolgt die Verbuchung?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Beim Aktivieren der Rechnung, also beim ersten Druck.<br>
 Wird die Rechnung geändert, werden die Buchungen wieder zurückgenommen (storniert) und beim
 erneuten Druck wieder in die Fibu gestellt.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Einzelbelegübernahme"></a>Q:
+Kann eine einzelne Rechnung nachträglich in die Fibu übernommen werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Sie haben in allen Belegmodulen (RE, GS, ER, ZK) auch den Menüpunkt
+Bearbeiten, Belegübernahme. Durch Klick darauf wird der ausgewählte Beleg aus
+der Buchhaltung storniert und neu übernommen. Die Stornobuchungen werden
+normalerweise nicht angezeigt, aber auf jeden Falle protokolliert.<br>
+Auch bei der Einzelbelegübernahme werden etwaige Zahlungsbuchungen in die Fibu
+mit übernommen.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Mitlaufende Buchungen</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Die offenen Forderungen und Verbindlichkeiten werden durch sogenannte Mitlaufende
-Buchungen realisiert. Damit finden sind in den Forderungen und Verbindlichkeiten Konten
-immer den aktuellen Stand, wodurch Ihre Saldenliste aus dieser Sicht immer aktuell ist.</p>
+Die offenen Forderungen und Verbindlichkeiten werden durch so genannte mitlaufende
+Buchungen realisiert. Damit finden sind in den Forderungen- und Verbindlichkeiten-Konten,
+auch Abstimmkonten genannt, immer den aktuellen Stand, wodurch Ihre Saldenliste aus dieser Sicht immer aktuell ist.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Warum gibt es im Reiter Buchungen keinen Neu-Knopf?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da hinter der Buchung viel mehr steckt und sehr oft auch verschiedene
@@ -185,7 +252,8 @@ Dieses bitte im entsprechenden Personenkonto setzen.</p>
 Was ist zu tun, wenn der Saldo der Saldenliste nicht 0,00 wird?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Wenn der Saldo der Saldenliste nicht 0,00 ist, so bitte als erstes die Forderungen
-/ Verbindlichkeiten Sammelkonten Zuordnung der Steuerkategorie prüfen.</p>
+/ Verbindlichkeiten Sammelkonten Zuordnung der Steuerkategorie prüfen, also der
+Definition der Abstimmkonten.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Warum wird der Skontoaufwand negativ im Haben verbucht und nicht positiv im
 Soll?</p>
@@ -224,7 +292,6 @@ Da es in der Buchhaltung auch ein abweichendes Geschäftsjahr / Wirtschaftsjahr
 gibt, und somit z.B. beim Geschäftsjahresbeginn von 1.5. das erste
 Geschäftsmonat der Mai ist, also das 5.Monat aber die erste Periode wird hier
 grundsätzlich von Perioden ausgegangen.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Manuelle Buchungen mit Umbuchen</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -253,6 +320,15 @@ Umbuchungen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bankbuchungen
 auf Eingangs- / Ausgangsrechnungen müssen derzeit direkt unter Zahlungen bei
 der jeweiligen Rechnung durchgeführt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Abweichendes
+Umsatzsteuerland</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte beachten Sie auch, dass
+mit der integrierten Finanzbuchhaltung der Begriff abweichendes Umsatzsteuerland in den Kunden/Lieferanten Konditionen durch die Definition des Finanzamtes direkt im Konto ersetzt wird.
+Daher wird in den Konditionen nur mehr das Finanzamt des Kontos angezeigt. Eine Änderung darf nur mehr im
+jeweiligen Personenkonto vorgenommen werden und auch da nur, wenn es noch keine Buchungen auf diesem Konto gibt.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Belegübernahme</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
@@ -283,6 +359,9 @@ finden Sie unter Zusatzinformation: RE 11/0012345, Firma xyz, LKZ-PLZ Ort</p>
 dann weiter unten ..... Debitorenkonto für Kunde xyz ist nicht definiert.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 handeln Sie entsprechend.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
+dazu bitte auch oben, <a href="#Einzelbelegübernahme">Einzelbelegübernahme</a>.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fehlermeldungen
@@ -320,7 +399,51 @@ java.lang.Exception: Keine Artikelgruppe für Artikel definiert:45001</li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
     java.lang.Exception: Beleg: 11/0000005, Art: Rechnung       , kein Konto definiert in Buchungszeile 3 (null, null, null, 393, 524.71, HABEN          , 0.00, null, null, null, null)<br>
     iId, buchungIId, kontoIId, kontoIIdGegenkonto, nBetrag, buchungdetailartCNr, nUst, tAnlegen, personalIIdAnlegen, tAendern;<br>
-    Tritt auf, wenn die Steuerkonten nicht ordentlich definiert sind.</li>
+    Tritt auf, wenn die Steuerkonten nicht ordentlich definiert sind.<br>
+    Prüfen Sie daher folgende Einstellungen:
+    <ul>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Parameter
+        FINANZ_EXPORT_VARIANTE muss auf Artikelgruppen stehen</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Parameter
+        FINANZ_EXPORT_ARTIKELGRUPPEN_DEFAULT_KONTO_AR ist richtig definiert</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Finanzamt,
+        Steuerkategorie die entsprechende z.B. Inland ist definiert</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Debitoren
+        / Kreditoren Konto ist vollständig definiert</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sachkonto
+        ist vollständig definiert</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+        / die beteiligten Ust/Vst Konten, definiert über die Steuerkategorie,
+        sind vollständig definiert</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+        Skontoaufwand / -erlöskonto, definiert über die Steuerkategorien, sind
+        vollständig definiert</li>
+    </ul>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+    Anlegen einer Debitoren-/Kreditorennummer kommt eine Fehlermeldung<br>
+    class com.lp.client.frame.ExceptionLP<br>
+    null<br>
+    com.lp.client.frame.delegate.Delegate.handleThrowable(Delegate.java:181)<br>
+    com.lp.client.frame.delegate.KundeDelegate.createDebitorenkontoNummerZuKundenAutomatisch(KundeDelegate.java:486)<br>
+    <br>
+    Was ist zu tun:<br>
+    Definieren Sie bitte unter System, Mandant, Vorbelegungen2 das Standard
+    Finanzamt für diesen Mandanten. Wenn hier kein Finanzamt zur Auswahl steht,
+    so definieren Sie dieses bitte
+    unter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    <br>
+    Sollten Sie das Modul Finanzbuchhaltung nicht besitzen, so wenden Sie sich
+    bitte an Ihren Helium V Betreuer, damit er für Sie ein Finanzamt
+    einrichtet.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
     Kein Abstimmkonto definiert für Steuerkategorie: Ausland         FinanzamtIId: 15
@@ -356,7 +479,87 @@ werden muss, also zwei Mal angelegt werden muss mit unterschiedlichen
 Kontonummern und unterschiedlichen Steuerkategorien. Bei mehreren Finanzämtern
 kann es vorkommen, dass auch die Finanzämter mit für die Definition der
 richtigen Steuerkategorie berücksichtigt werden müssen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Definition Finanzamt"></a>Definition
+eines Finanzamtes</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der integrierten Finanzbuchhaltung steht Ihnen im Modul Finanzbuchhaltung der
+untere Modulreiter Finanzamt zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie hier die Daten für Ihre Verbindung zum Finanzamt, neben den üblichen
+Adressdaten vor allem Steuernummer, Referatsnummer und gegebenenfalls eine
+abweichende Formularnummer für ein anderes Umsatzsteuerformular.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+der eigentlichen Definition des Finanzamtes sind die Steuerkategorien exakt zu
+definieren.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hauptfinanzamt</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+ist jenes Finanzamt, welches unter System, Mandant, Vorbelegungen2, Finanzamt
+für den jeweiligen Mandanten definiert ist.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eröffnungsbuchungen
+/ Saldenvortrag</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Start der Fibu oder für Jahresübernahmen müssen verschiedene Konten wie
+Banken aber auch Debitoren/Kreditoren usw. eröffnet werden. Im SKR04 wird auch
+vom Saldenvortrag aus den Vorjahren gesprochen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+eine manuelle Eröffnungsbuchung gehen Sie bitte wie folgt vor:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">definieren
+Sie die Eröffnungskonten für Sachkonten, Debitoren und Kreditoren</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie die Kontoart des Sachkonto mit Eröffnungskonto fest.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="EB_Konto_Definition.gif" width="442" height="287"></p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die eigentliche Buchung wählen Sie nun im Menü Bearbeiten, Umbuchen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Umbuchung4.jpg" width="210" height="82"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Umbuchung5.jpg" width="585" height="464"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie das Datum der Eröffnungsbuchung fest. In der Regel ist dies der erste Tag
+Ihres Geschäftsjahres.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+Sie die Buchungsart auf Eröffnung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+Sie das gewünschte Sachkonto und als Gegenkonto das Eröffnungskonto.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+Bank-Eröffnungsbuchungen hat sich bewährt als Auszugsnummer die 0 anzugeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie die Kostenstelle und setzen Sie die Mehrwertsteuerart auf steuerfrei.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fügen
+Sie einen geeigneten Text für die Eröffnungsbuchung an und vergeben Sie durch
+Klick auf Erzeugen eine automatische Belegnummer.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+nun alle Daten richtig, so klicken Sie auf den grünen Haken um die Buchung
+durchzuführen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+nun weitere Buchungen durchzuführen ändern Sie das entsprechende Konto und
+tragen die weiteren Daten ein.</p>
 
 </body>
 
