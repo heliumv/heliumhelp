@@ -473,28 +473,34 @@ mit einem anderen Mandanten als dem default Mandanten starten?</p>
 nach der Anmeldung der im Modul Benutzer, unterer Modulreiter Benutzer, beim
 jeweiligen Benutzer hinterlegte default Mandant verwendet. In Installationen mit
 mehreren Mandanten kommt es immer wieder vor, dass man gezielt mit einem anderen
-Mandanten starten möchte. Dies kann mit dem zusätzlichen Parameter <a href="--mandant=002">--mandant=002</a>
-im Startbatch des Helium V Clients eingerichtet werden. Bitte beachten Sie, dass
-bei jedem Update des Clients, alle Dateien aus dem Helium V Programmverzeichnis
-gelöscht werden. D.h. legen Sie diesen geänderten Batch bitte an einer anderen
-Stelle ab, als im Helium V Programmverzeichnis.</p>
+Mandanten starten möchte. Dies kann mit dem zusätzlichen Parameter</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">--mandant=002</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">im Startbatch des Helium V Clients eingerichtet werden.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Fügen Sie den
 zusätzlichen Parameter einfach am Ende des bestehenden Aufrufes getrennt mit
 einer Leerzeichen an.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie, dass
+bei jedem Update des Clients, alle Dateien aus dem Helium V Programmverzeichnis
+gelöscht werden. D.h. legen Sie diesen geänderten Batch bitte an einer anderen
+Stelle ab, als im Helium V Programmverzeichnis.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Automatische Client-Anmeldung</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 In vielen Installationen kann davon ausgegangen werden, dass ein Benutzer der
 sich auf seinem Rechner angemeldet hat, sich mit dieser Legitimation auch in
-Ihrer Helium V Installation anmelden darf. Tragen Sie dazu in den
-Benutzerspezifischen Umgebungsvariablen Ihres Betriebssystems folgende Werte
-ein. Achten Sie bitte auf die Groß-Klein-Schreibung.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">HV_USER
-... tragen Sie hier den Helium V Benutzernamen ein</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">HV_KENNWORT
-... Tragen Sie hier das Helium V Kennwort des Benutzers ein.</p>
+Ihrer Helium V Installation anmelden darf. Um sich nun automatisch am Helium V
+Client anzumelden müssen die Parameter</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">--username=Benutzername
+und</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">--password=Helium
+V Passwort des Benutzers</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">im
+Startbatch des Helium V Clients eingetragen werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
 Sie bitte, dass die beiden Parameter im Klartext lesbar sind. Achten Sie daher
 darauf, dass diese nur für den jeweiligen Benutzer hinterlegt werden. Dies ist
@@ -504,9 +510,12 @@ Zugriff haben.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
 Damit dies funktioniert muss die gesamte JVM neu gestartet werden. D.h. am
 einfachsten ist es, wenn Sie sich neu am System anmelden.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
-steht dies nur zur Verfügung, wenn Sie sich am default Client anmelden.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"> Bitte beachten Sie, dass
+bei jedem Update des Clients, alle Dateien aus dem Helium V Programmverzeichnis
+gelöscht werden. D.h. legen Sie diesen geänderten Batch bitte an einer anderen
+Stelle ab, als im Helium V Programmverzeichnis.</p>
+
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Beim Start
 meines Helium V Clients kommt eine Fehlermeldung</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Nachfolgende
