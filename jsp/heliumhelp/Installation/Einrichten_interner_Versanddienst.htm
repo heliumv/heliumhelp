@@ -17,7 +17,8 @@ eine direkte SMTP und IMAP Anbindung für den Versand Ihrer EMails und
 gegebenfalls auch Faxe direkt integriert im Helium V Applikation Server zur
 Verfügung. D.h. der Umweg über Windows wird hiermit nicht benötigt. Für eine
 schematische Darstellung des Versanddienstes <a href="Einbindung_EMail_Fax_IMap.htm">siehe
-bitte</a>.</p>
+bitte</a>.<br>
+Für die Voraussetzungen zur richtigen Übergabe der EMails siehe bitte.</p>
 <p><img border="0" src="../Bilder/Parameter_interner_Versanddienst.gif" width="563" height="166"></p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
 Parametrierung des internen Versanddienstes erfolgt im Modul System. Geben Sie
@@ -184,6 +185,47 @@ Benutzerdaten</p>
   </tr>
 </table>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="question" style="word-spacing: 0; text-indent: 0; margin: 0">Voraussetzungen
+die gegeben sein müssen um EMails richtig weiterreichen zu können</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Gerade im
+deutschsprachigen Raum kommt es immer wieder zur massiven Verwirrung, weil der
+Inhalt von EMails nicht richtig weitergereicht wird. Hier kommt erschwerend
+dazu, dass am EMail-Versand doch einige Systeme beteiligt sind.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- Helium V
+-&gt; übergibt das EMail an den SMTP Server</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- SMTP
+Server reicht das EMail an den Empfänger weiter und bestätigt dass das EMail
+versandt werden konnte</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- Helium V
+legt eine Kopie im IMAP Ordner des Versenders ab</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">-
+Empfänger öffnet das EMail mit seinem Client</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Abhängig
+von dem was gesandt wurde verhalten sich die Systeme zum teil sehr
+unterschiedlich.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Wichtig: </p>
+<ul>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Derzeit
+    wird EMail Text welcher von Helium V generiert wird als reiner ASCII Text
+    übergeben. Dieser Text ist nach UTF-8 codiert.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
+    SMTP Server richten sich normalerweise nach der im Betriebssystem des
+    Servers eingestellten Sprache</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Plain
+    Text EMails, wie sie von Helium V gesendet werden, werden in den Clients oft
+    unterschiedlich interpretiert / dargestellt.</li>
+</ul>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Daher
+müssen folgende Voraussetzungen gegeben / eingestellt sein, damit Ihre EMails
+mit Umlauten auch richtig beim Empfänger ankommen:</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">1.)</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 
 </body>
