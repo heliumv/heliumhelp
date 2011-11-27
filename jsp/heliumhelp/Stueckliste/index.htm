@@ -152,8 +152,11 @@ Artikel auf einen Eintrag mit entsprechender Menge verdichtet.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch
 diese Logik lassen sich alle oben angeführten Sichten auf die Stücklisten
 darstellen.<br>
-Wichtig: Beachten Sie, dass als Fremdfertigung gekennzeichnete Stücklisten
-nicht weiter aufgelöst werden.</p>
+<b>
+Wichtig:</b> Beachten Sie, dass als Fremdfertigung gekennzeichnete Stücklisten
+nicht weiter aufgelöst werden. D.h. ab dieser Ebene wird die Stückliste
+komplett zugekauft. Die darin enthaltenen Teile werden vom Fremdfertiger selbst
+beschafft.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Montageart
 wozu?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gerade
@@ -710,7 +713,7 @@ Vorteile über diese Abbildung:<br>
 - Da man die Rohteile immer auf eigenen Lägern hat, ist der Lagerstand bei den
 Lieferanten aber auch der Halbfertigfabrikate klar definiert.<br>
 - Man sieht die Kosten der Veredelung und den Zusammenhang zwischen den einzelnen Artikeln.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hilfsstückliste</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Hilfsstückliste"></a>Hilfsstückliste</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
 Helium V können auch Hilfsstücklisten definiert werden. </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
@@ -719,7 +722,7 @@ die darin enthaltene Hilfsstückliste mit ihren Einzelteilen und Arbeitsgängen
 in die übergeordnete Stückliste eingefügt wird. Man könnte auch sagen, dass
 der Stücklistenbaum flachgedrückt wird.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
-bedeutet, das diese Stücklisten nur zur einfacheren / strukturierteren
+bedeutet, das diese Stücklisten nur zur einfacheren / strukturierten
 Erstellung der Stücklisten benötigt werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Denken
 Sie dazu z.B. an ein Gehäuse, in welches mehrere Griffe (z.B. 4Stk)
@@ -748,17 +751,17 @@ Reservierungen bzw. Fehlmengen. Hilfsstücklisten
 werden auch nicht beim Lieferanten bestellt, im Gegensatz zu
 Fremdfertigungsstücklisten.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hilfsstücklisten
-haben, da sie nicht lagernd sind auch keine Verkaufspreise</p>
+haben, da sie nicht lagernd sind auch keine Verkaufspreise.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Manche
 unserer Anwender erklären sich für den Beginn die Hilfsstückliste als
-Fertigungsset.</p>
+Fertigungsset bzw. als Phantomstückliste.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
 Stücklisten mit Hilfsstücklisten in die Fertigung(Los) übernommen, so werden
 bis zu 10 Hierarchieebenen der Hilfsstücklisten aufgelöst (flachgedrückt).
 Dies kann z.B. für die Abbildung einfacher Variantenstücklisten verwendet
 werden.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Unterstückliste"></a>Q:
 Hilfsstückliste oder Stückliste und was ist dann eine Unterstückliste.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Der Begriff der Unterstückliste ist ein Hilfs-Vokabel um einen in einer
@@ -919,7 +922,85 @@ Technikerzuordnung ändern verändert werden. </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 die Zuordnung der Techniker ändern zu können, benötigen Sie das Rollenrecht
 FERT_TECHNIKER_BEARBEITEN_ERLAUBT. </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stücklisten
+im Projektumfeld</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Umfeld des Projektfeldes gibt es immer wieder massiven Schulungsbedarf, wie denn
+die Stücklisten in Kombination mit den Hilfsstücklisten verwendet werden
+sollten. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hintergrund
+ist meistens, dass in erster Betrachtung jedes Projekt ein Unikat darstellt.
+Sieht man genauer hin, so gilt das meist nur mehr für das Endprodukt. Die
+verwendeten Komponenten stellen oft bereits in anderen Projekten gefertigte
+Teile dar. </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+machen Sie sich vorneweg mit den Begriffen <a href="#Hilfsstückliste">Hilfsstückliste</a>
+und <a href="#Unterstückliste">Unterstückliste</a> vertraut. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+das Verständnis was denn nun eine Hilfsstückliste sein sollte und was ein
+Stückliste und damit ein herzustellender Artikel sein sollte hilft oft die
+Beantwortung zweier einfacher Fragen: </p>
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">wird
+    dieser Artikel, z.B. als Ersatzteil, verkauft ?</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">hat
+    der Artikel einen Lagerstand bzw. einen Gestehungspreis ?</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+eine der oben angeführten Fragen mit Ja beantwortet, so sollte davon
+ausgegangen werden, dass dieser Artikel als Stückliste zu betrachten ist.
+Insbesondere wenn Sie den Artikel für längere Zeit auf Lager legen oder dieser
+in einer (Zwischen-)Inventur erfasst werden sollte, muss er als
+lagerbewirtschafteter Artikel und damit als Stückliste geführt werden. Für
+die Entscheidung ob Stückliste oder doch nur Hilfsstückliste beachten Sie dazu
+bitte auch die <a href="../Fertigung/index.htm#Halbfertigfabrikatsinventur">Halbfertigfabrikatsinventur
+in der Fertigungsverwaltung</a>. Wobei ganz klar eine Bedingung besteht. Wenn in
+Ihrem Inventurstand xx Stk Produkt yyy stehen muss, muss der Artikel als
+lagerbewirtschaftete Stückliste geführt werden. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b> </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Fertigung einer Stückliste bedingt immer das anlegen eines eigenen Loses um
+dieses Teil zu produzieren. </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wieso
+so kompliziert ? </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ja,
+in erster Betrachtung klingt das kompliziert. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+ein Gerät / Produkt herzustellen sind gewisse Schritte erforderlich. Wenn Sie
+diese nachhaltig, planbar und wiederholbar haben wollen, müssen diese geplant
+werden und gegebenenfalls auch über den Lebenszeitraum des Produktes angepasst
+werden. Genau diese Möglichkeiten haben Sie mit der Stücklistenverwaltung. </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ich
+kriege doch alle Daten aus meiner CAD raus. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+stimmt meistens für die Material-Stücklisten. Im Bereich der Elektronik /
+Elektrotechnik stimmt selbst das nicht exakt, da oft nur Platzhalter für
+Artikel verwendet (Widerstand 1/4W) werden. D.h. um einen Artikel tatsächlich
+herstellen zu können benötigen Sie immer exakte Angaben welcher Artikel das
+ist. Also nicht nur Widerstand 1/4W sondern auch Wert, Toleranz,
+Spannungsfestigkeit usw. oder für die Metallverarbeitung nicht nur Mutter M3,
+sondern Qualität, Material, Toleranz etc.. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den CAD Stücklisten fehlt aber immer der Arbeitsplan, also was ist zu tun um
+aus den Einzelteilen, dem Rohmaterial ein neues Ganzes herzustellen. In der
+Stückliste wird definiert, welche Tätigkeiten durchgeführt werden müssen um
+das Produkt herzustellen. Diese Arbeitsschritte werden im <a href="Arbeitsplan.htm">Arbeitsplan</a>
+durch die Auflistung der Arbeitsgänge definiert. Der Arbeitsplan ist in Helium
+V ein Teil der Stückliste. </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ich
+habe doch meinen Projektplan </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Denke in Projektschritten mit den Forderungen der Fertigung / der
+Produktionsabläufe in Einklang zu bringen, ist sicher eine wesentliche
+Aufgabenstellung an die Projekt- / Fertigungs- / Konstruktionsleitung. Der
+Vorteil daraus ist, dass sehr rasch wiederverwendbare Teile erkannt werden und
+so der oft vorhandene Produktwildwuchs reduziert wird. D.h. dass immer mehr
+standardisierte Artikel eingesetzt werden. Dies wirkt sich auf die
+Verfügbarkeit, die Lagerbevorratung und auch auf die Stückkosten der Teile aus
+und trägt somit zur effizienteren Produktion bei.</p>
 </body>
 
 </html>
