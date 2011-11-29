@@ -18,7 +18,8 @@ Stichtagsinventur dient der Erfassung des aktuellen Lagerstandes zu einem
 bestimmten Stichtag.</p>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Mit
 Helium V ist es uns gelungen die Funktionalität der sogenannten fliegenden
-Zwischeninventur und der Stichtagsinventur zu vereinen.</p>
+Zwischeninventur und der Stichtagsinventur zu vereinen. Zum Thema <a href="#Permanente Inventur">permanente
+Inventur siehe dort</a>.</p>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Grundsätzlich
 gliedert sich die Inventur in folgende Schritte:</p>
 <blockquote>
@@ -169,7 +170,7 @@ den Zählaufwand zu reduzieren:</p>
 werden nur 80% des Warenwertes, was üblicherweise 20% der Lagerpositionen
 entspricht gezählt. Der Rest wird laut EDV in die Inventur übernommen.</p>
 
-<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Die
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question"><a name="Schritte der Inventur"></a>Die
 Schritte einer Inventur in Helium V</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Für
@@ -317,6 +318,56 @@ Artikel bereits wieder verbraucht.<p style="margin-left: 0cm; margin-right: 0cm;
 der Fehler erst nach der Durchführung der Inventur festgestellt, so muss der
 Lagerstand per Hand (Handlagerbewegung) korrigiert werden und der Inventurstand
 gleichlautend angepasst werden.
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question"><a name="Permanente Inventur"></a>Q:
+Kann man mit Helium V auch eine permanente Inventur machen?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Der Sinn einer permanenten Inventur ist, dass einmal während eines
+Geschäftsjahres jeder Artikel einmal gezählt wird. Bei entsprechender Sorgfalt
+kann davon ausgegangen, dass vom Zählzeitpunkt bis zum Inventurstichtag nur
+unwesentliche Lagerabweichungen zum theoretischen Lagerstand auftreten.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Durch
+die Anfangs beschriebene Eigenschaft der Zeitpunkt exakten Inventur und dadurch
+dass die Veränderungslagerbewegung sofort gebucht wird, kann mit Helium V auch
+eine permanente Inventur durchgeführt werden.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Hierbei
+ist lediglich zu beachten, dass ein bereits in der Inventurliste enthaltener
+Artikel in seinem letzten Inventurstand verändert werden muss und nicht ein
+zweites Mal in die Inventurliste eingetragen wird. Bei mehrmaligen Änderungen
+werden die Lagerveränderungen trotzdem in das Inventurprotokoll geschrieben.
+D.h. die Vorgehensweise ist wie folgt:</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">a.)
+Erfassen der Artikel</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">a1.)
+kommt bei der Erfassung der Artikel in der Inventurliste keine Fehlermeldung so
+direkt den gezählten Lagerstand eingeben</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">a2.)
+kommt es beim Abspeichern des (erneut inventierten) Artikels zur Meldung, dass
+der Artikel bereits eingetragen ist</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="Inventur_Doppelter_Artikeleintrag.jpg" width="517" height="105"></p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">so
+wählen Sie, am Besten über den Direktfilter <img border="0" src="Inventur_Artikelnummer_finden.gif" width="309" height="50">
+Artikelnummer den bereits inventierten Artikel aus und ändern die erfasste
+Inventurmenge durch klick auf ändern <img border="0" src="Inventureintrag_aendern.gif" width="30" height="26">
+auf die heutige Erfassungsmenge ab.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Im
+Inventur-Protokoll werden die entsprechenden Änderungsbuchungen protokolliert.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Um
+zum Ende des (Geschäfts-)Jahres sicher zu sein, dass alle Artikel inventiert
+wurden, drucken Sie unter Journal, nichterfasste&nbsp;Artikel eine Liste der
+noch nicht inventierten Artikel mit Lagerstand, oder auch Artikel die keinen
+Lagerstand haben, aus. Siehe dazu auch <a href="#Schritte der Inventur">Schritte
+der Inventur</a> ab Punkt 4.</p>
 
 </body>
 

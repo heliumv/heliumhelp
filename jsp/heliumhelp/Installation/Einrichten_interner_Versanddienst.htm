@@ -185,7 +185,7 @@ Benutzerdaten</p>
   </tr>
 </table>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
-<p class="question" style="word-spacing: 0; text-indent: 0; margin: 0">Voraussetzungen
+<p class="question" style="word-spacing: 0; text-indent: 0; margin: 0"><a name="EMailversenden Voraussetzungen"></a>Voraussetzungen
 die gegeben sein müssen um EMails richtig weiterreichen zu können</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Gerade im
 deutschsprachigen Raum kommt es immer wieder zur massiven Verwirrung, weil der
@@ -201,7 +201,7 @@ legt eine Kopie im IMAP Ordner des Versenders ab</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">-
 Empfänger öffnet das EMail mit seinem Client</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Abhängig
-von dem was gesandt wurde verhalten sich die Systeme zum teil sehr
+von dem was gesandt wurde verhalten sich die Systeme zum Teil sehr
 unterschiedlich.</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Wichtig: </p>
@@ -220,12 +220,17 @@ unterschiedlich.</p>
     unterschiedlich interpretiert / dargestellt.</li>
 </ul>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Daher
-müssen folgende Voraussetzungen gegeben / eingestellt sein, damit Ihre EMails
-mit Umlauten auch richtig beim Empfänger ankommen:</p>
-<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">1.)</p>
-<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
-<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
-<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+müssen, damit Ihre EMails
+mit Umlauten auch richtig beim Empfänger ankommen, alle beteiligten Komponenten
+mit den Vorschriften <a href="http://tools.ietf.org/html/rfc2047">RFC 2047</a>
+und <a href="http://tools.ietf.org/html/rfc6152">RFC 6152</a> richtig umgehen
+können.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Ein
+wichtiger Punkt ist dabei noch die richtige Codierung der mail.xsl Datei. Diese
+muss für Windows und Linux auf UTF8 erfolgen, für MAC auf ISO-8859-1 (Ansi).
+Achten Sie darauf diese XSL Dateien ausschließlich mit geeigneten Editoren zu
+bearbeiten, wie z.B. Notepad++. Zum Thema SMTP Versand <a href="http://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">siehe
+auch</a>.</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 
 </body>
