@@ -231,7 +231,22 @@ muss für Windows und Linux auf UTF8 erfolgen, für MAC auf ISO-8859-1 (Ansi).
 Achten Sie darauf diese XSL Dateien ausschließlich mit geeigneten Editoren zu
 bearbeiten, wie z.B. Notepad++. Zum Thema SMTP Versand <a href="http://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">siehe
 auch</a>.</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="question">Fax -
+EMail Gatewa</p>
+
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Alternativ zur oben
+beschriebenen Faxweiterleitung ist auch der Versand eines EMails an einen
+Fax-Mail Gateway möglich. Auch hier wird ein EMail mit PDF Anhang an eine
+bestimmte Adresse versandt, es sind jedoch im Betreff die entsprechenden Daten
+enthalten. Der Aufbau ist wie folgt:</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">EMail Empfängeradresse,
+so wie unter  SMTPSERVER_FAXDOMAIN angegeben.</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Betreffzeile: Passwort
+internationaleNummer; Rückmeldungstext für Bestätigung</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Für die Aktivierung
+dieser Funktion müssen die folgenden Parameter (Kategorie Versanddienst)
+entsprechend eingestellt sein:</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">  SMTPSERVER_FAXANBINDUNG:	Wert=1<br>  SMTPSERVER_FAXDOMAIN:	fax.xpirio.com<br>  XPIRIO_KENNWORT:		Kennwort für das Gateway</p>
 
 </body>
 
