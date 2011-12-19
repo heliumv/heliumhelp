@@ -776,8 +776,20 @@ werden alle an den Auftrag gebundenen Belege angeführt. Diese sind:</p>
       <td width="248" height="22">Auftragsbestätigung</td>
       <td width="1522" height="22">Die Auftragsbestätigung mit den
         Verkaufssollwerten (Arbeit und Material), den geplanten Aufwänden nach
-        Gestehungspreisbetrachtung und den direkt diesem Auftrag zuordnenbaren
-        Zeiten geteilt in Arbeits- und Maschinenstunden.</td>
+        Gestehungspreisbetrachtung und den direkt diesem Auftrag zuordenbaren
+        Zeiten geteilt in Arbeits- und Maschinenstunden.<br>
+        Unter Material Soll werden nur die Gestehungspreise(werte) jener
+        Positionen summiert, die nicht selbst gefertigt werden. Also die Summe
+        der Gestehungspreise alle Positionen mit Ausnahme der Stücklisten, bei
+        denen Fremdfertigung nicht angehakt ist. Die Gestehungswerte dieser
+        Positionen sind ja in den direkten oder indirekten Losen enthalten.</td>
+    </tr>
+    <tr>
+      <td width="65" height="22">ZZ</td>
+      <td width="248" height="22">Fertigungswerte</td>
+      <td width="1522" height="22">In dieser Zeile sind jene Gestehungspreise
+        als Material Ist summiert, welche auch in Lieferscheinen enthalten sind,
+        um die doppelte Betrachtung wieder herauszurechnen.</td>
     </tr>
   </table>
 </div>
