@@ -185,6 +185,30 @@ Benutzerdaten</p>
   </tr>
 </table>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Q: Der IMAP Server ist
+definiert, es werden aber keine EMails versandt?</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">A: Der interne Versanddienst
+von Helium V funktioniert so, dass zuerst das EMail per SMTP Server versandt
+wird. Hat dies funktioniert, so wird, wenn der IMAP Server definiert ist, eine
+Kopie davon in das IMAP Konto des Benutzers abgelegt.</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Das bedeutet: Bitte
+prüfen Sie ob der Zugriff auf den SMTP Server mit den Parametern SMPTSERVER, SMTPSERVER_BENUTZER,
+SMTPSERVER_KENNWORT richtig konfiguriert ist.</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Sie sehen im System,
+unterer Modulreiter Versandauftrag, beim jeweiligen Versandauftrag unten den
+Status. Interpretieren Sie diesen entsprechend.</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Werden Parameter am
+Versandauftrag verstellt / neu gesetzt, so sollte ein im Postausgang wartender
+Auftrag mit dem grünen Haken <img border="0" src="../Bilder/Versanddienst_triggern.gif" width="30" height="25">
+neu getriggert werden. Es wird dadurch auch die interne Zeitsteuerung neu
+angestoßen.</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Bei mehreren Mandanten
+achten Sie bitte darauf, dass sowohl alle erforderlichen Parameter sowohl unter
+System, als auch im Personal je Mandant und Mitarbeiter der Versenden darf dies
+definiert werden muss.</p>
 <p class="question" style="word-spacing: 0; text-indent: 0; margin: 0"><a name="EMailversenden Voraussetzungen"></a>Voraussetzungen
 die gegeben sein müssen um EMails richtig weiterreichen zu können</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Gerade im
