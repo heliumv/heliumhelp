@@ -77,7 +77,8 @@ klassische Produktionsprozess: anlegen, ausgeben, rückmelden zum Einsatz kommt,
 ist der optische (offensichtliche) Lagerstand falsch, da ja keine Trennung
 zwischen Material in Fertigung und Material im Lager möglich ist.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
-gibt es nun ein über einen Mandantenparameter gesteuertes anderes Verhalten, in
+gibt es nun ein anhand der Stückliste definiertes anderes Verhalten (<a href="../Stueckliste/index.htm#Materialbuchung bei Ablieferung">Materialbuchung
+bei Ablieferung</a>), in
 dem von Helium V das Material erst bei der Erledigungsmeldung vom Lager in das
 Los abgebucht wird.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
@@ -212,6 +213,27 @@ werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 beachten Sie, dass dabei derzeit keine Fertigungspapiere ausgedruckt werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucken
+eine weiteren Ausgabeliste</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+verschiedenen Unternehmen ist es praktisch, wenn zwei unterschiedliche
+Losausgabelisten automatisch ausgedruckt werden. Um dies zu erreichen gehen Sie
+bitte wie folgt vor:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.)
+Definieren Sie einen weiteren Report für die Losausgabeliste. Das Formular muss
+den Namen fert_ausgabeliste2.* haben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.)
+Richten Sie die Möglichkeit des manuellen Druckes über Reportvarianten
+(Mutation) ein und definieren Sie das Formular wie gewünscht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.)
+Stellen Sie den Parameter LOSAUSGABELISTE2_AUTOMATISCH_DRUCKEN&nbsp;auf 1. Nun
+wird automatisch bei der Losausgabe eine weitere Materialentnahmeliste mit den
+in dem Formular definierten Daten gedruckt.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Druck mehrerer Losausgaben in einer Liste"></a>Druck
 mehrerer Losausgaben in einer Liste</p>

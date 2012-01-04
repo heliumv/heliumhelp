@@ -631,6 +631,35 @@ das eigentliche Debitorenkonto gelöscht werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Vorgehensweise für Kreditorenkonten ist analog dazu.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Können
+Buchungen gelöscht / storniert werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+kommt immer wieder vor, wir sind alle nur Menschen, dass falsche Buchungen
+gemacht werden. Wir haben daher die Möglichkeit geschaffen, einzelne Buchungen
+zu stornieren. Um eine Buchung zu stornieren, gehen Sie auf die jeweilige
+Buchung und wählen Sie im Menü, Bearbeiten, Buchung stornieren.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>Wichtig:</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+wird die Buchung nur als storniert gekennzeichnet und in der normalen
+Darstellung nicht mehr angezeigt, bzw. bei den Saldenlisten, Berechnungen usw.
+nicht berücksichtigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+haben in jedem Konto die Möglichkeit das <img border="0" src="Buchung_plus_stornierte.gif" width="94" height="19">
+plus Stornierte anzuhaken. Damit werden auch die stornierten Buchungen
+angezeigt. Genauso können im Buchungsjournal die stornierten Buchungen mit
+Datum, Uhrzeit und Person die diese Buchung storniert hat angezeigt
+werden.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Export der Buchungsjournale für die Finanz werden immer die stornierten
+Buchungen mit exportiert. Dies in der Form, dass der original Buchungssatz und
+der stornierte Buchungssatz zum Stornozeitpunkt und mit negativem Vorzeichen in
+das Protokollfile eingetragen wird.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wo
 können die UVA Arten definiert werden?</p>
 
@@ -649,6 +678,17 @@ wird ein neues Geschäftsjahr angelegt?</p>
 die erste Rechnung, der erste Bewegungsbeleg eines Jahres erstellt wird, wird
 das Geschäftsjahr entsprechend initialisiert. Wenn Sie danach das Modul
 Finanzbuchhaltung öffnen, steht auch das neue Geschäftsjahr zur Verfügung.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+kann ich in einem anderen Geschäftsjahr buchen / nachsehen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+den Untermodulen Sachkonten, Debitoren- und Kreditorenkonten sowie im Kassenbuch
+gibt es im jeweiligen Menü immer den Menüpunkt Bearbeiten, Geschäftsjahr.
+Hier können alle derzeit in Ihrer Helium V Installation (automatisch)
+definierten Geschäftsjahre ausgewählt werden. Ob Buchungen im ausgewählten
+Geschäftsjahr durchgeführt werden dürfen hängt von Ihrer Berechtigung
+(Chefbuchhalter) und von den durchgeführten UVA-Verprobungen ab.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie wirkt die Trennung nach Kostenstellen in der integrierten Finanzbuchhaltung?</p>
@@ -734,12 +774,40 @@ um die richtige Übersetzung der Erlöskonten durchführen zu können.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
 gibt zu diesem Thema noch einen sehr gebräuchlichen Sonderfall, dass zwar
-Rechnungs- und Lieferadresse unterschiedlich, aber im selben Land sind. In
-diesem Falle wird die Definition vom Debitorenkonto der Rechnungsadresse
+Rechnungs- und Lieferadresse unterschiedlich, aber im selben Land sind. Derzeit
+ist auch hier die Vergabe eines eigenen Debitorenkontos erforderlich.<br>
+In diesem Falle wird die Definition vom Debitorenkonto der Rechnungsadresse
 verwendet.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kassenbuch</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+dem Reiter Kassenbuch (Für uns und unsere österreichischen Anwender das
+Kassabuch) können Kassenbücher definiert werden. Jedes Kassenbuch ist (nur)
+eine andere Sicht auf das jeweilige Kassenkonto. Das bedeutet, dass im
+Kassenbuch alle Buchungen des jeweiligen Kassenkontos angezeigt werden. Ob die
+Buchungen nun über das jeweilige Konto durchgeführt werden oder komfortable
+direkt im Kassenbuch ist für die eigentliche Buchhaltung ohne Bedeutung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daraus
+ergibt sich die Voraussetzung, dass vor dem Anlegen eines neuen Kassenbuches das
+darunter liegende Kassenkonto definiert sein muss.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Funktionen
+die im Kassenbuch nicht zur Verfügung stehen, aber manchmal notwendig sind:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Löschen
+    einer Buchung:<br>
+    Um eine Buchung aus dem Kassenbuch zu löschen, gehen Sie bitte direkt ins
+    Kassenkonto. Wählen Sie die gewünschte Buchung aus und wählen Sie im
+    Menü, Bearbeiten, Buchung stornieren.</li>
+</ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
