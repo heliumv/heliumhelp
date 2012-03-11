@@ -1,0 +1,151 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Stücklisten-Import Typ2</title>
+</head>
+
+<body>
+
+<h1>Stücklistenimport Typ2&nbsp;<br>
+Siemens NX CSV</h1>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+diesem&nbsp; Import steht ein Strukturierter Import anhand der von Siemens NX
+erzeugten Stücklistenstruktur, welche normalerweise im CSV Format ausgegeben
+wird, zur Verfügung. Sie können damit komplette Maschinen in einem Zug nach
+Helium V übernehmen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Von
+der Art des Imports her, wird hier Vorausgesetzt, dass alle Artikel und alle
+Stücklisten bereits vollständig in Helium V angelegt sind. Es werden lediglich
+Identnummern und Mengen übernommen, bzw. bei mehrdimensionalen Artikeln auch
+die Länge und Breite.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Import nach Typ2 <b>Siemens NX </b>muss der Mandantenparameter
+STRUKTURIERTER_STKLIMPORT auf 2 gestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+dem Neustart des Moduls Stückliste finden Sie unter&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Stkl_Import.gif" width="98" height="103">
+den Punkt Import.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Aufbau der Datei ist wie folgt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+  Aufbau ist fix. Ebenen = eingerückte Space.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+  Es werden KEINE Artikel angelegt, es müssen alla Artikel auch Stücklisten,
+Unterstücklisten bzw. Hilfsstücklisten bereits definiert sein</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+  Es werden nur Position übernommen die auch einen gültigen Artikel haben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+wird eine Liste mit den Positionen die nicht importiert werden konnten nach dem
+Import ausgegeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Stücklistenimport Typ2 kann in den Kopfdaten einer Stückliste eine sogenannte
+Einkaufsstückliste angegeben werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Idee dahinter ist, dass am Anfang eines Projektes die wichtigen Teile in der
+Einkaufsstückliste angelegt werden.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+wird erreicht, dass über die Los und den Bestellvorschlag diese
+Bedarfsinformation an den Einkauf gelangt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurden
+nun die Teile in der Konstruktion tatsächlich eingeplant, so sind sie in den
+NX-Stücklisten enthalten. Daher wird beim Import ein Artikel der in der
+Importliste als auch in der Einkaufsstückliste definiert ist in der
+Einkaufsstückliste um die übergebene Menge reduziert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Die Mengenreduktion erfolgt bei jedem Import, auch wenn Sie dieser mehrfach
+durchgeführt wird, wird bei jedem Importlauf die Menge reduziert. Wurde die in
+der Einkaufsstückliste eingetragene Menge einer Position verbraucht, wird diese
+gelöscht.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nutzen
+Sie mit dieser Funktion auch die Aktualisierung aller Lose, über den Menüpunkt
+Bearbeiten Lose aktualisieren aus dem Modul Stücklisten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+werden Abmessungen übernommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
+der mechanischen Konstruktion kommen immer auch Abmessungen für z.B.
+Blechteile. Um diese übernehmen zu können wurden folgende Definitionen
+getroffen:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+    definiert die Mengeneinheit des Artikels ob Abmessungen importiert werden
+    sollen.
+    <ul>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+        ist der Artikel in m² definiert, so wird die Länge und Breite
+        übernommen und die Stücklisten-Positions-Mengeneinheit auf mm²
+        gesetzt. Zusätzlich wird die Menge dieser Stücklisten Position
+        übernommen.</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+        der Artikel in m definiert, so wird die Länge übernommen und die
+        Stücklisten-Positions-Mengeneinheit auf mm gesetzt. Zusätzlich wird
+        die Menge dieser Stücklisten Position übernommen.</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+        der Artikel in Stk. definiert so wird die Menge übernommen.</li>
+      <li>
+        <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Alle
+        anderen Mengeneinheiten werden nicht unterstützt und der Import
+        abgebrochen.</li>
+    </ul>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Artikel
+    mit der Bezeichnung .... werden als Rohmaterial übernommen</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden nur diejenigen Positionen importiert, die in der Spalte xxx ein M
+eingetragen haben.<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
+Sie darauf, dass bei den Mengeneinheiten auch die Dimensionen richtig definiert
+sind. D.h. für Meter und Millimeter Dimension 1 = Eindimensional und für m²
+und mm² Zweidimensional, also die Dimension 2.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

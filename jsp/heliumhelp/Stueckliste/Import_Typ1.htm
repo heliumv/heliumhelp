@@ -29,12 +29,34 @@ Zugleich werden gegebenenfalls dafür vorhandene Zeichnungen (PDF-Dateien)
 automatisch dem Artikel zugeordnet.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ebenso
-wird ei komplette Stücklistenstruktur entsprechend aufgebaut.</p>
+wird die komplette Stücklistenstruktur entsprechend aufgebaut.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich
+steht hier auch noch der Import in den Anfragevorschlag zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+Sie können, neben der Fertigungssteuerung für den tatsächlichen bedarf auch
+sehr komfortabel die anzufragenden Daten in den Anfrage Vorschlag übernehmen.
+Da in der Importdatei auch die Liefergruppe jedes Artikels mit übergeben wird,
+kann so auf einfache Weise eine komplette Liefergruppenanfrage an Ihre
+Lieferanten mit entsprechenden Zusatzinformatinoen der Zeichnungen gestellt
+werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Aus den Stücklisten wird der übliche Helium V Weg beschritten. D.h. es werden
+aufgrund der . Der Trick liegt dann darin, dass aus den Anfragen die tatsächlichen Lieferanten in den Artikelstamm eingepflegt werden und somit dann die Bestellungen automatisch gemacht werden können.<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
-den Import nach Typ1 Solid Works muss der Mandantenparameter
+den Import nach Typ1 <b>Solid Works</b> muss der Mandantenparameter
 STRUKTURIERTER_STKLIMPORT auf 1 gestellt werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
@@ -45,59 +67,36 @@ den Punkt Import.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="-%20Intelligenter%20Stkl%20IMport%20%20Aufbau%20ist%20fix.%20Ebenen%20=%20eingerückte%20Space%20%20Es%20werden%20KEINE%20Artikel%20angelegt,%20es%20muss%20alles%20da%20sein%20%20Es%20werden%20nur%20Position%20übernommen%20die%20auch%20einen%20gültigen%20Artikel%20haben%20%20Eine%20Liste%20mit%20den%20Positionen%20die%20nicht%20importiert%20werden%20konnten.%20%20Zugleich%20wird%20die%20verbleibende%20EK-Stkl%20aktualisiert.%20Es%20ist%20dies%20(mit%20der%20EK-Stkl)%20ein%20%20%20einmaliger%20Vorgang.-%20Lose%20sind%20bereits%20vollständig%20produziert,%20aber%20noch%20nicht%20erledigt%20/%20teilabgeliefert%20%20D.h.%20wir%20brauchen%20hier%20einen%20Status,%20dass%20die%20Aktualisierung%20aus%20den%20Stkls%20%20nicht%20durchgeführt%20werden%20darf.%20%20Das%20Los%20ist%20schon%20ausgegeben.%20%20Ist%20gefertigt.%20Daher%20darf%20die%20Stücklistenaktualisierung%20nicht%20mehr%20greifen.%20%20Der%20Status%20muss%20in%20der%20Auswahlliste%20sichtbar%20sein%20und%20%20in%20der%20Auftrags%20Nachkalkulation.-%20Einkaufsstückliste%20und%20Stücklistenimport%20%20Wenn%20Konstruktions-Struktur%20Import%20dann%20sollte%20in%20der%20EK%20Stückliste%20die%20%20noch%20offenen%20/%20vorreservierten%20Mengen%20reduziert%20verwaltet%20werden.%20%20Gilt%20nur%20für%20die%20Position%20die%20in%20der%20EK-Stücklsite%20sind%20%20Struktur%20im%20AP%20=%20Los%20%20Stücklisten%20kopf%20%20EK-Stkl%20%20%20%20%20Konst.%20StklAd%20Strukturierter%20StücklistenimportDa%20gibt%20es%20einen%20Parameter%20mit%20dem%20man%20das%20Verhalten%20parametrieren%20kann:0%20...%20Abgeschaltet%20=%20default1%20...%20WWS%20...%20Solid%20Works%20XLS,%20wobei%20sich%20WWS%20auch%20den%20CSV%20Import%20wünscht2%20...%20Axis%20Version%20...%20Siemens%20NX%20...%20Das%20muss%20ein%20echter%20CSV%20Import%20seinDie%20Versionen%20sind%20nach%20dem%20CAD%20Programm%20zu%20benennenDatenstruktur%20siehe%20/koppl/data/kunden/Axis/Tabelle%20von%20Baugruppen-Navigator%20zasm_w05983_hydraulic_pwr_panel.xlsxWir%20sind%20uns%20einig%20dass%20nur:-%20Positionen%20übernommen%20werden%20die%20eine%20Ident%20eingetragen%20haben.%20Bei%20diesen%20werden%20die%20Mengen%20übernommen.-%20Der%20Import%20erfolgt%20immer%20so,%20dass%20praktisch%20der%20Inhalt%20einer%20eventuell%20bestehenden%20Stückliste%20wegeworfen%20wird%20und%20die%20Daten%20neu%20laut%20der%20Datei%20übernommen%20werden.wegen%20der%20Abmessungen:D.h.%20diese%20sind%20ebenfalls%20in%20Helium%20V%20zu%20übernehmen.Sind%20hier%20die%20Artikel%20mit%20den%20richtigen%20Mengeneinheiten%20definiert%20?Wir würden dies so importieren, die Positionsmengeneinheit wenn Länge und Breite gegeben sind immer Zwangsweise auf mm² gesetzt werden. Was bedeutet, dass der Artikel selbst in m² oder mm² definiert sein muss.Die Position von Länge und Breite muss im CSV immer gleich sein.Gibt es auch Positionen mit nur Länge z.B. für eine Stange ? wenn ja, bitte ein Beispiel.Wir sollten beim CSV bleiben, da hier die Strukturierung der Ebenen deutlich transparenter ist als wie im XLSMusterdatei siehe //koppl/data/kunden/Axis/zasm_w05983_hydraulic_pwr_panel-1.csvDie Abmessungen wären ebenso zu übernehmen, das ist richtig. Die Artikel sollten alle richtig angelegt sein . Eine Fehlermeldung an den Konstrukteur ist wichtig.Ein Formrohr ist mit der Abmessung im Feld Länge hinterlegt. Generell werden die Konstrukteure im NX mit mm arbeiten.09.02.2012 13:26 WHEs dürfen nur Positionen importiert werden, die in der Spalte xxx einM haben.ACHTUNG: FORTSETZUNG Detail.">- Intelligenter Stkl IMport<br>
-  Aufbau ist fix. Ebenen = eingerückte Space<br>
-  Es werden KEINE Artikel angelegt, es muss alles da sein<br>
-  Es werden nur Position übernommen die auch einen gültigen Artikel haben<br>
-  Eine Liste mit den Positionen die nicht importiert werden konnten.<br>
-  Zugleich wird die verbleibende EK-Stkl aktualisiert. Es ist dies (mit der EK-Stkl) ein&nbsp;<br>
-  einmaliger Vorgang.<br>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+
+Die Stücklisten werden strukturiert importiert.<br>
+Abhängig von der Pos.Nr werden die jeweiligen Positionen in eine Stückliste übernommen.<br>
+Alle Artikel werden angelegt bzw. geprüft ob die Bezeichnungen mit dieser Identnummer exakt übereinstimmen.<br>
+Ist die Übereinstimmung nicht exakt gegeben, so wird der alte Artikel auf _001 umbenannt und versteckt und der Artikel neu angelegt, mit den Daten aus dem
+Import File.<br>
+Zugleich werden die Zeichnungen aus der Filestruktur importiert. D.h. gibt es im
+Pfad der Importdatei eine Datei die den gleichen Filenamen wie die Artikelnummer
+hat, mit beliebiger Endung, so wird die erste gefundene Datei als Kommentar für
+diesen Artikel übernommen. Wo genau dieser Artikel ausgedruckt werden sollte
+kann unter ... definiert werden.
 <br>
-- Lose sind bereits vollständig produziert, aber noch nicht erledigt / teilabgeliefert<br>
-  D.h. wir brauchen hier einen Status, dass die Aktualisierung aus den Stkls<br>
-  nicht durchgeführt werden darf.<br>
-  Das Los ist schon ausgegeben.<br>
-  Ist gefertigt. Daher darf die Stücklistenaktualisierung nicht mehr greifen.<br>
-  Der Status muss in der Auswahlliste sichtbar sein und<br>
-  in der Auftrags Nachkalkulation.<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+für die Stücklisten auch entsprechende Arbeitspläne effizient erzeugen zu
+können, sollten Sie in den mandantenparametern auch den Default Arbeitsplan
+definiert haben.<br>
 <br>
-- Einkaufsstückliste und Stücklistenimport<br>
-  Wenn Konstruktions-Struktur Import dann sollte in der EK Stückliste die<br>
-  noch offenen / vorreservierten Mengen reduziert verwaltet werden.<br>
-  Gilt nur für die Position die in der EK-Stücklsite sind<br>
-  Struktur im AP = Los<br>
-  Stücklisten kopf<br>
-  EK-Stkl     Konst. Stkl<br>
+Die Abmessungen werden in der Zusatzbezeichnung2 des Artikels hinterlegt<br>
+Das Material in der Bauform, der Typ in der Liefergruppe<br>
+Ein Artikel gilt dann als derselbe Artikel, wenn Ident/Bezeichnung/Abmessungen und Material gleich sind.<br>
 <br>
-Ad Strukturierter Stücklistenimport<br>
-Da gibt es einen Parameter mit dem man das Verhalten parametrieren kann:<br>
-0 ... Abgeschaltet = default<br>
-1 ... WWS ... Solid Works XLS, wobei sich WWS auch den CSV Import wünscht<br>
-2 ... Axis Version ... Siemens NX ... Das muss ein echter CSV Import sein<br>
-Die Versionen sind nach dem CAD Programm zu benennen<br>
+Wenn im Importverzeichnis mehrere Dateien vorhanden sind, die wie die Artikelnummer lauten, dann wird immer die erste Datei als Anhang hinterlegt.<br>
 <br>
-Datenstruktur siehe \\koppl\data\kunden\Axis\Tabelle von Baugruppen-Navigator zasm_w05983_hydraulic_pwr_panel.xlsx<br>
-<br>
-Wir sind uns einig dass nur:<br>
-- Positionen übernommen werden die eine Ident eingetragen haben. Bei diesen werden die Mengen übernommen.<br>
-- Der Import erfolgt immer so, dass praktisch der Inhalt einer eventuell bestehenden Stückliste wegeworfen wird und die Daten neu laut der Datei übernommen werden.<br>
-<br>
-wegen der Abmessungen:<br>
-D.h. diese sind ebenfalls in Helium V zu übernehmen.<br>
-Sind hier die Artikel mit den richtigen Mengeneinheiten definiert ?<br>
-Wir würden dies so importieren, die Positionsmengeneinheit wenn Länge und Breite gegeben sind immer Zwangsweise auf mm² gesetzt werden. Was bedeutet, dass der Artikel selbst in m² oder mm² definiert sein muss.<br>
-Die Position von Länge und Breite muss im CSV immer gleich sein.<br>
-Gibt es auch Positionen mit nur Länge z.B. für eine Stange ? wenn ja, bitte ein Beispiel.<br>
-Wir sollten beim CSV bleiben, da hier die Strukturierung der Ebenen deutlich transparenter ist als wie im XLS<br>
-Musterdatei siehe \\koppl\data\kunden\Axis\zasm_w05983_hydraulic_pwr_panel-1.csv<br>
-<br>
-Die Abmessungen wären ebenso zu übernehmen, das ist richtig. Die Artikel sollten alle richtig angelegt sein . Eine Fehlermeldung an den Konstrukteur ist wichtig.<br>
-Ein Formrohr ist mit der Abmessung im Feld Länge hinterlegt.&nbsp;<br>
-Generell werden die Konstrukteure im NX mit mm arbeiten.<br>
-<br>
-09.02.2012 13:26 WH<br>
-Es dürfen nur Positionen importiert werden, die in der Spalte xxx einM haben.<br>
-ACHTUNG: FORTSETZUNG Detail.</a></p>
+Der Trenner für die Ebenendefinition ist der Punkt "."<br>
+</p>
 
 </body>
 
