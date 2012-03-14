@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Integrierte Finanzbuchhaltung starten</title>
+</head>
+
+<body>
+
+<h1>Int. FiBu starten</h1>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+wird am Besten beim Start der integrierten Finanzbuchhaltung vorgegangen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+ist eine Stichwortsammlung der durchzuführenden Schritte. Für die
+Durchführung / Aktivierung sieh bitte bei den jeweils einzelnen Punkten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+wichtiger Hinweis:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+gehen davon aus, dass sie mit den Grundzügen einer Buchhaltung und der
+Tätigkeit / Wirkung in der Finanzbuchhaltung vertrat sind. Dies ist kein Kurs
+über Finanzbuchhaltung. Auch sind wir keine Steuerberater oder ähnliches.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gerade
+wenn unterschiedliche Finanzämter zum Einsatz kommen, achten Sie auf die
+steuerlichen Unterschiede in den Ländern.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+wesentlich erscheint uns, in Deutschland wird die Umsatzsteuer immer im
+Kalenderjahr abgerechnet, auch bei abweichendem Geschäfts/Wirtschaftsjahr, in
+Österreich ist das gleichlautend mit dem Geschäftsjahr, wie das in der Schweiz
+ist, ist uns derzeit nicht bekannt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Helium V Finanzbuchhaltung beinhaltet Warenbewegungsbewirtschaftung, wie sie
+manchmal insbesondere für Abgrenzungen angewendet werden. Die Bewegungen des
+Lagers, finden Sie im Modul Artikel, mit den entsprechenden Lagerauswertungen
+zum Stichtag bzw. im Modul Fertigung mit der Halbfertigfabrikatsinventur.</p>
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie Ihr standard Finanzamt.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie den Kontenrahmen in Abstimmung mit Ihrem Steuerberater.<br>
+    Es ist essentiell wichtig, dass Sie die gleichen Sachkonten verwenden wir
+    Ihr Steuerberater.<br>
+    Bestehen Sie darauf. Nur damit ist gewährleistet, dass Sie und Ihr Berater
+    vom gleichen sprechen.<br>
+    Definieren Sie gegebenenfalls den Zahlenraum der Sachkonten.<br>
+    Siehe dazu Import der Sachkonten</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie die Steuerkategorien und die Steuerkategoriekonten<br>
+    Definieren Sie hier nur die Zuordnungen die Sie erwarten, das bringt
+    deutlich Sicherheit.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie in den Steuerkategorien die jeweils mitlaufenden Konten für Forderungen
+    und Verbindlichkeiten<br>
+    Hier raten wir je Länderart ein eigenes mitlaufendes Konto zu definieren,
+    Sie gewinnen mehr übersicht.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+    Sie den Buchhaltungsexport auf Artikelgruppen<br>
+    Parameter: FINANZ_EXPORT_VARIANTE: Artikelgruppen</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie das Default Sachkonto insbesondere für die Handeingaben<br>
+    Parameter: FINANZ_EXPORT_DEFAULT_ARTIKELGRUPPEN_AR</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Schalten
+    Sie folgende Parameter ein:<br>
+    - ARTIKELGRUPPE_IST_PFLICHTFELD<br>
+    - AUTOMATISCHE_DEBITORENNUMMER<br>
+    - AUTOMATISCHE_KREDITORENNUMMER</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie den Zeitraum der UVA ob monatlich (default) oder quartalsweise.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie den Zahlenraum und die Stellenanzahl der Debitoren- und
+    Kreditorennummern</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie gegebenenfalls ob es fortlaufende oder strukturier nummerierte
+    Debitoren- Kreditorennummern gibt.<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+    bereits Buchungsdaten von früheren / Alt-Systemen vorhanden, so definieren
+    Sie Debitoren-. und Kreditoren- Nummern gleichlautend mit dem Altsystem /
+    System des Steuerberaters oder ähnlichem.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie bei allen Debitoren / Kreditorenkonten die richtige Steuerkategorie.<br>
+    Bei mehreren Finanzämtern ist auch das Finanzamt zu prüfen und
+    gegebenenfalls richtig zustellen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie für alle Artikelgruppen die Erlöskonten</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+    Sie die entsprechenden Länderartübersetzungen der Erlöskonten</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>
