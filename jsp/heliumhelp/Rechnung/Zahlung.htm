@@ -30,22 +30,12 @@ Es wird hier die im Mandanten hinterlegte Bankverbindung vorgeschlagen</li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bar<br>
 Also Zahlung auf eines der Kassenbücher</li>
   <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gegenverrechnung
+    mit einer Eingangsrechnung</li>
+  <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Rechnungsausgleich durch eine Gutschrift<br>
     Geben
 Sie hier die entsprechende Gutschrift an.</li>
-  <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zahlung mit Wechsel<br>
-    Geben
-Sie hier das Fälligkeitsdatum des Wechsels an.<br>
-    Hier
-ergibt sich praktisch noch ein zusätzlicher Status und zwar dadurch, ob der
-Wechsel tatsächlich eingelöst werden konnte. Oder hat Ihr Kunde den Wechsel platzen lassen.<br>
-    Hier
-ist folgende Sicht realisiert:<br>
-    Eine mit Wechsel bezahlte Rechnung
-gilt grundsätzlich als bezahlt, aber es muss klar sein, was an noch nicht fälligen / noch nicht eingelösten Wechseln
-    ausständig ist. Das geht grundsätzlich auch in die eigene Liquidität ein, da Sie ja für das
-Einlösen des Wechsels praktisch mithaften.</li>
 </ol>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 Zahlungsbuchungen der verschiedenen Zahlungsarten durchführen zu können,
@@ -75,6 +65,20 @@ wird im Modul Finanzbuchhaltung, unterer Modulreiter Kassenbuch definiert. Bitte
 beachten Sie auch hier, dass Sie für jedes Kassenbuch ein korrespondierendes
 Sachkonto benötigen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Zahlungsart:
+Gegenverrechnung</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+es auch Gegenverrechnungen zwischen Kunden und Lieferanten gibt, also Partnern
+mit denen Sie sowohl in einer Kunden als auch einer Lieferanten Beziehung
+stehen, haben wir auch die Möglichkeit geschaffen, dass (Ausgangs-)Rechnungen
+mit Eingangsrechnungen ausgeglichen werden. Verwenden Sie dazu die Zahlungsart
+Gegenverrechnung und wählen Sie dann die Eingangsrechnung <img border="0" src="Zahlung_Gegenverrechnung.gif" width="130" height="24">
+aus, mit der Sie Rechnung ausgleichen wollen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Speichern wird automatisch eine gegengleiche Buchung in den Zahlungen der
+entsprechenden Eingangsrechnung gemacht. Daher ist die Buchung der
+Gegenverrechnung aus Sicht der Eingangsrechnung derzeit nicht möglich.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><a name="Gutschriftszahlung"></a>Zahlungsart:
 Gutschrift</b></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
@@ -98,27 +102,13 @@ So sehen Sie sofort, ob der Kunde tatsächlich den vereinbarten Betrag bezahlt
 hat.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Zahlungsart:
-Gegenverrechnung</b></p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
-es auch Gegenverrechnungen zwischen Kunden und Lieferanten gibt, also Partnern
-mit denen Sie sowohl in einer Kunden als auch einer Lieferanten Beziehung
-stehen, haben wir auch die Möglichkeit geschaffen, dass (Ausgangs-)Rechnungen
-mit Eingangsrechnungen ausgeglichen werden. Verwenden Sie dazu die Zahlungsart
-Gegenverrechnung und wählen Sie dann die Eingangsrechnung <img border="0" src="Zahlung_Gegenverrechnung.gif" width="130" height="24">
-aus, mit der Sie Rechnung ausgleichen wollen.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
-Speichern wird automatisch eine gegengleiche Buchung in den Zahlungen der
-entsprechenden Eingangsrechnung gemacht. Daher ist die Buchung der
-Gegenverrechnung aus Sicht der Eingangsrechnung derzeit nicht möglich.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Zahlungsart:
 Wechsel</b></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
 diese Zahlungsart derzeit sehr ungewöhnlich ist und auch die richtige
-Verbuchung der verschiedenen Stati der verschiedenen Wechselart doch komplex
+Verbuchung der verschiedenen Stati der verschiedenen Wechselarten doch komplex
 wird, haben wir auf die Umsetzung bis auf weiteres verzichtet.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollten
-Sie wirklich Wechsel akzeptieren / ausstellen, so legen Sie bitte ein passende
+Sie wirklich Wechsel akzeptieren / ausstellen, so legen Sie bitte ein passendes
 Bankkonto an und verbuchen Sie die Zahlung der Rechnung auf dieses Konto. Die
 tatsächlich offenen Wechsel sehen Sie dann im entsprechenden Konto.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Vorgeschlagene Bank definieren"></a>Q:
@@ -141,6 +131,36 @@ Bei einer Zahlung über die Bank, werden in aller Regel diese Zahlungen in den
 Kontoauszügen der Bank dokumentiert. Damit Sie eine eindeutige Zuordnung der
 Zahlung zur Buchung auf Ihrem Bankkonto haben, geben Sie hier die
 Kontoauszugsnummer mit dem die Zahlung durchgeführt wurde an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gerade
+wenn auch das Modul integrierte Finanzbuchhaltung verwendet wird, so achten Sie
+darauf, dass die Kontoauszugsnummern chronologisch fortschreitend sind und exakt
+die Kontoauszugsnummern Ihrer Bank-Kontoauszüge widerspiegeln. Eine Vergabe von
+Kontoauszugsnummern z.B. in Form eines Datums, noch dazu in deutscher
+Schreibweise ist dafür völlig ungeeignet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollten
+Sie Kontoauszüge ohne laufenden Kontoauszugsnummern erhalten, z.B. bei
+Internetbanking, so drucken Sie z.B. die jeweils verbuchten Bankbelege aus und
+vergeben diesen manuell eine aufsteigende Auszugsnummer.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nur
+damit erhalten Sie eine entsprechende Übersicht über das jeweilige Bankkonto.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie werden Kreditkartenabrechnungen erfasst?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Genau betrachtet ist eine Kreditkarten Zahlung nichts anderes als ein Bankkonto
+bei einem weiteren Bankinstitut. D.h. legen Sie in den Bankverbindungen (Modul
+Finanzbuchhaltung) eine weitere Bank an und buchen Sie die Zahlungen auf diese
+Bank. Als Kontoauszugsnummer geben Sie die laufende und aufsteigende
+Abrechnungsnummer des Kreditkarteninstitutes an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Haben
+Sie auch das Modul integrierte Finanzbuchhaltung, so wird der Kontoausgleich
+Kreditkartenkonto gegen Bank mit der Abbuchung von Ihrem Bankkonto gebucht. Hier
+sind entsprechend zwei Kontoauszugsnummern anzugeben.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Der Skontobetrag bleibt immer offen?</p>
