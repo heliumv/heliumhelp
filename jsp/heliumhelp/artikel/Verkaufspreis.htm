@@ -48,8 +48,13 @@ zwar einen gültigen Preis definiert, es ist dies aber von der Logik der
 Verkaufspreisfindung unbedingt zu vermeiden.</b></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Alternativ steht die
-automatische Preisfindung auf Basis des Lieferantenpreises zur Verfügung. Siehe
-dazu:</p>
+automatische Preisfindung auf Basis des Lieferantenpreises zur Verfügung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">D.h. wenn der
+Parameter VERKAUFSPREISBASIS_IST_LIEF1PREIS auf 1 gesetzt ist, so wird anstelle
+der Verkaufspreisbasis der Einzelpreis des bevorzugten (= 1.) Artikellieferanten
+verwendet.<br>
+Dies kommt vor allem dann zum Einsatz, wenn die Verkaufspreise von den
+Lieferanten getrieben werden und Sie immer mit Aufschlagskalkulationen arbeiten.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">1.
 Verkaufspreisdefinition anhand von Preislisten</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Definieren Sie dazu
@@ -162,6 +167,12 @@ muss der Beginn nach dem letzten Ende liegen. Wenn das letzte Ende null war, dan
 sodass eine fortlaufende Folge von Mengenstaffeln entsteht.<br>
 <br>
 Preisauswahl in den Belegen: Wenn die VK-Preisfindung ermittelt, daß die VK-Mengenstaffeln greifen, dann erhält der Benutzer einen entsprechenden Dialog, in dem er ALLE Mengenstaffeln zu diesem Artikel sieht und wählen kann. Außerdem hat er die Optionen Handeingabe Fixpreis und Rabattsatz. Vorauswahl ist die zutreffende Mengenstaffel.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ab der Build-Version
+6608 können Mengenstaffeln auch mit einem Preislistenbezug angegeben werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wird hier der
+Preislistenbezug alle Preislisten ausgewählt, so bedeutet dies, dass die in den
+Mengenstaffeln angegebenen Rabatte jeweils für die Kundenpreisliste gilt.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">3.
 Verkaufspreisdefinition anhand von Kunden Sonderkonditionen / Kunden &lt;-&gt;
 Artikel Preisvereinbarungen / Sonderpreisvereinbarung</p>
