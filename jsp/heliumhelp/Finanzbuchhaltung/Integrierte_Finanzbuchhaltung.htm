@@ -24,7 +24,24 @@ Sie dazu auch die Beschreibung <a href="Einnahmen-Ausgaben_rechner.htm">Einnahme
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
-die Vorgehensweise bei der Aktivierung der integrierten Finanzbuchhaltung <a href="Integrierte_Finanzbuchhaltung_starten.htm">siehe</a>.&nbsp;</p>
+die Vorgehensweise bei der Aktivierung der integrierten Finanzbuchhaltung <a href="Integrierte_Finanzbuchhaltung_starten.htm">siehe</a>.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was ist die Helium V Finanzbuchhaltung und was ist sie nicht?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Das in Helium V integrierte Finanzbuchhaltungsmodul ist für die Erledigung der
+Arbeiten der Finanzbuchhaltung während des laufenden Jahres gedacht. Dies geht
+von der monatlichen UVA bis hin zur Erfolgsrechnung / BWA / Ergebnisübersicht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+für die Erstellung einer Bilanz immer ein geprüfter Bilanzbuchhalter
+verantwortlich ist, sind zwar die Daten aus Helium V die Basis für die Bilanz.
+Die eigentliche Bilanz muss jedoch von Ihrem Steuerberater / Treuhänder /
+Bilanzbuchhalter Ihres Vertrauens erstellt werden. <a href="Integrierte_Finanzbuchhaltung_starten.htm#Unterlagen für den Steuerberater">Siehe
+dazu auch</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 richtige Kontendefinition oder auch Konten Hinterlegung</p>
@@ -179,7 +196,15 @@ Einstellung der Daten zu erhalten.</p>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucken
     Sie eine UVA für die oben übernommenen Daten aus.<br>
-    Stimmt diese mit den Daten Ihres Steuerberaters überein?</li>
+    Stimmt diese mit den Daten Ihres Steuerberaters überein?<br>
+    Werden bei den Steuersätzen falsche Sätze<br>
+    <img border="0" src="UstSatz_UVA_0.gif" width="537" height="44"><br>
+    oder Null<br>
+    <img border="0" src="UstSatz_UVA_null.gif" width="537" height="29"><br>
+    angedruckt, so ist die Zuordnung des zusätzlichen Mandanten in der
+    MwStSatzBezeichnung (C_DRUCKNAME) falsch definiert. Bitten Sie Ihren Helium
+    V Betreuer diese zur ergänzen / richtigzustellen.<br>
+    <img border="0" src="Ust_Satz_definieren.gif" width="514" height="26"></li>
 </ol>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Steuerkategorien und mehrere Finanzämter auf einem Mandanten</p>
@@ -1231,6 +1256,28 @@ Rechnung (ER bzw. RE) neu errechnet. D.h. es werden anhand der Konten und
 Mehrwertsteuerverteilungen der Originalrechnungen die Ust-Werte des Skontos
 errechnet und so in die Ust-Konten eingebucht. Bei eventuell auftretenden
 Rundungsdifferenzen wird der größte Betrag korrigiert.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Definition der Kontenzuordnungen für die UVA / Umsatzsteuervoranmeldung?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Helium V ist so programmiert, dass die Ergebnisse der Umsatzsteuervoranmeldung
+parametriert werden können. Dies geht soweit, dass auch derzeit nicht bekannte
+Umsatzsteuerarten durch Ihren Helium V Betreuer zusätzlich parametriert werden
+können.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+allen Umsatzsteuerangaben in DACH innewohnt, dass die Vorsteuerangaben nur als
+Steuerbetrag anzugeben sind, die Umsatzerlöse aber auch der Höhe nach gemacht
+werden müssen, ist dies bei der Zuordnung der UVA Arten entsprechend zu
+berücksichtigen. Das bedeutet, dass für Erlöse die Umsätze, die Konten der
+Erlöse, zuzuordnen sind, für die Vorsteuer aber nur die Vorsteuerkonten. Ein
+Sonderfall stellt der Innergemeinschaftliche Erwerb dar, bei dem neben dem
+Umsatz auch beide Steuern (Einfuhrumsatzsteuer und Vorsteuer aus IG-Erwerb)
+anzugeben sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie dies bei der Definition Ihrer Konten und der Zuordnung der
+UVA-Arten.</p>
 
 </body>
 
