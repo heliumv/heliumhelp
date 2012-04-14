@@ -178,16 +178,14 @@ Einstellung der Daten zu erhalten.</p>
     prüfen Sie ob auch hier die Buchungen inkl. den Steuerbeträgen
     entsprechend richtig verbucht werden und&nbsp;<br>
     Buchen Sie eine Zahlung der Eingangsrechnung mit Skonto.<br>
-    <br>
-    Hinweis: Alternativ zu den Punkten 9 bis 11 können Sie auch die <a href="#Einzelbelegübernahme">Einzelbelegübernahme</a>
-    werden.</li>
+    <b>
+    Hinweis:</b> Alternativ zu den Punkten 9 bis 11 können Sie auch die <a href="#Einzelbelegübernahme">Einzelbelegübernahme</a>
+    verwenden.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Konten
     alle obige Punkte erfolgreich durchgeführt werden, so kann als nächstes
     die Periodenweise Übernahme der bestehenden Daten direkt in die Fibu
-    durchgeführt werden.<br>
-    Wählen Sie dazu zuerst die Periode, das Buchungsmonat aus und wählen
-    danach ....</li>
+    durchgeführt werden. <a href="#Periodenweise Belegübernahme">Siehe dazu.</a></li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucken
     Sie nun eine Saldenliste aus. Stimmt diese mit den Ausdrucken Ihres
@@ -196,15 +194,9 @@ Einstellung der Daten zu erhalten.</p>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucken
     Sie eine UVA für die oben übernommenen Daten aus.<br>
-    Stimmt diese mit den Daten Ihres Steuerberaters überein?<br>
-    Werden bei den Steuersätzen falsche Sätze<br>
-    <img border="0" src="UstSatz_UVA_0.gif" width="537" height="44"><br>
-    oder Null<br>
-    <img border="0" src="UstSatz_UVA_null.gif" width="537" height="29"><br>
-    angedruckt, so ist die Zuordnung des zusätzlichen Mandanten in der
-    MwStSatzBezeichnung (C_DRUCKNAME) falsch definiert. Bitten Sie Ihren Helium
-    V Betreuer diese zur ergänzen / richtigzustellen.<br>
-    <img border="0" src="Ust_Satz_definieren.gif" width="514" height="26"></li>
+    Stimmen die angegebenen Steuerbeträge, <a href="#Falsche Steuersätze in der UVA">wenn
+    nicht siehe</a>.<br>
+    Stimmt diese mit den Daten Ihres Steuerberaters überein?</li>
 </ol>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Steuerkategorien und mehrere Finanzämter auf einem Mandanten</p>
@@ -249,7 +241,7 @@ nur die Mehrwertsteuerkategorie dt. MwSt 19% definiert werden. Das bringt für
 Sie die Sicherheit, dass bei falschen Definitionen der Steuerkategorie -
 Finanzamts Kombination in Kreditoren- bzw. Debitorenkonten von Helium V erkannt
 wird, dass diese Buchung nicht definiert ist und daher die Buchung mit einer
-entsprechenden abgebrochen wird.</p>
+entsprechenden Fehlermeldung abgebrochen wird.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
 Sie bitte insbesondere bei der Definition von ausländischen / zusätzlichen
@@ -344,8 +336,10 @@ Betrag richtig dargestellt wird, haben wir uns dazu entschlossen, den
 Skontoaufwand mit negativem Vorzeichen ins Haben zu buchen. Wir sind der festen
 Überzeugung, dass die betriebswirtschaftliche Betrachtung hier Vorrang vor
 eventuellen Buchhaltungs-Allgemein-Regeln hat.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Wie mit bereits vorhandenen Belegen starten?</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Mit Belegen neu starten"></a>Q:
+Wie mit bereits vorhandenen Belegen starten?<br>
+<a name="Periodenweise Belegübernahme"></a>Q: Belegübernahme einer ganzen
+Periode?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Gerade für die Phase der Einführung der in Helium V integrierten
 Finanzbuchhaltung kommt es immer zu der Forderung, dass alle Belege, die noch
@@ -360,6 +354,11 @@ Periode übernommen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 beachten Sie, dass nur Belege übernommen werden, die weder im Status storniert
 noch im Status angelegt sind.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+dieser Übernahme werden nur die Buchungen übernommen, die noch nicht in der
+Fibu enthalten sind. Sollten, z.B. wegen massiven Kurskorrekturen alle Belege
+der Periode noch einmal neu übernommen werden müssen, so haken Sie bitte
+&quot;Alle neu übernehmen&quot; an.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
 gerade beim Start einer neuen Buchhaltung doch einiges an Definitionsfehleren
@@ -367,7 +366,7 @@ enthalten sein können, werden diese detailliert aufgeführt. Bitte beseitigen
 Sie diese Fehler und gehen Sie die Daten konsequent von Monat zu Monat, von
 Periode zu Periode durch.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Fibu_Periodenuebernahme_Fehlermeldung.jpg" width="408" height="80"></p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
 können vom Fehlerfenster mit dem GoTo Button direkt auf den jeweiligen Beleg
 springen. In obigem Fall auf die Eingangsrechnung.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beseitigen
@@ -954,42 +953,45 @@ Musterdatei für den österreichischen Sachkontenrahmen finden Sie auch auf
 Ihrer Installations CD bzw. können wir Ihnen diesen gerne zur Verfügung
 stellen.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">UVA
 / Umsatzsteuervoranmeldung</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
 Sammlung von Fragen und Antworten, Hinweisen zur Umsatzsteuervoranmeldung.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Für welche Zeiträume kann die UVA ausgedruckt werden ?</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die
 UVA kann monatlich, quartalsweise oder jährlich gedruckt werden. Siehe dazu
 bitte auch den Parameter FINANZ_UVA_ABRECHNUNGSZEITRAUM.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Bei Steuer wird null angedruckt und man sieht keine Steuersummen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Falsche Steuersätze in der UVA"></a>Q:
+In der UVA wird bei Steuer wird null angedruckt und man sieht keine Steuersummen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Es ist in der Mehrwersteuerbezeichnungstabelle der Druckname nicht definiert.
 Bitten Sie Ihren Helium V Betreuer diese entsprechend zu ergänzen.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
+bei den Steuersätzen falsche Sätze<br>
+<img border="0" src="UstSatz_UVA_0.gif" width="537" height="44"><br>
+oder Null<br>
+<img border="0" src="UstSatz_UVA_null.gif" width="537" height="29"><br>
+angedruckt, so ist die Zuordnung des zusätzlichen Mandanten in der
+MwStSatzBezeichnung (C_DRUCKNAME) falsch definiert. Bitten Sie Ihren Helium V
+Betreuer diese zur ergänzen / richtigzustellen.<br>
+<img border="0" src="Ust_Satz_definieren.gif" width="514" height="26"></p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Die (Anzahlungs-) Erlöse werden mit falschem Vorzeichen gedruckt.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+In der UVA werden die (Anzahlungs-) Erlöse mit falschem Vorzeichen gedruckt.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Bitten Sie Ihren Helium V Betreuer dies in der UVA Definitionstabelle richtig zu
 stellen.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wird die letzte UVA Verprobung angezeigt?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1003,9 +1005,7 @@ Zeitraum und Zeitpunkt der letzten UVA Verprobung angezeigt.</p>
 Anzeige bedeutet: 2012/1 es wurde die Verprobung für den Januar 2012 am
 15.3.2012 um 9:08 durchgeführt.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann eine UVA Verprobung zurückgenommen werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1013,9 +1013,25 @@ Ja, wählen Sie in den Sachkonten, bearbeiten, UVA Verprobung zurücknehmen,
 wählen Sie das gewünschte Finanzamt und bestätigen Sie die Meldung mit ja.
 Für diese Rücknahme ist das Fhefbuchhalterrecht erforderlich.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+In welcher Währung wird die UVA angedruckt?</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für den Druck der Beträge in der UVA wird die Währung verwendet, welche beim
+Land des jeweiligen Finanzamtes hinterlegt ist. Ist beim Land keine Währung
+hinterlegt so wird die sogenannte Mandantenwährung verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+eine eventuelle Umrechnung erforderlich, so wird immer der zum Monatsletzten
+gültige Kurs für die Umrechnung verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Quartals-
+und Jahres-UVA werden als eine Summe der monatlichen UVA errechnet, daher greift
+auch hier der jeweils zum Monatlstzten gültige Kurs.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie erreiche ich Sicherheit, dass alle Beleg tatsächlich in der Fibu sind?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1278,6 +1294,23 @@ anzugeben sind.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 beachten Sie dies bei der Definition Ihrer Konten und der Zuordnung der
 UVA-Arten.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Übernahme Eröffnungsbuchungen"></a>Q:
+Wir die Eröffnungsbuchungen bei bestehender Finanzbuchhaltung übernehmen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Umsteiger von der Logistik Pur Finanzbuchhaltung, aber auch von anderen
+Buchhaltungssystemen haben die Aufgabenstellung, dass vor allem für die
+Debitoren und Kreditoren die Eröffnungsbuchungen manuell zu übernehmen sind.<br>
+Es erscheint uns die einfachste Vorgehensweise, wenn Sie im alten
+Buchhaltungssystem noch die (hoffentlich) automatische Periodenübernahme vom
+alten auf das nun in Helium V zu buchende Geschäftsjahr machen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Drucken
+Sie nun die Kontoblätter aller übernommenen Konten aus. So haben Sie eine
+klare Vorlage, welche Eröffnungsbuchungen für den Start von Helium V
+einzubuchen sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 
