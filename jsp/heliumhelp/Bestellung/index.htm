@@ -1544,6 +1544,118 @@ zertifizierungspflichtig ist, zugebucht werden sollte und wenn beim Lieferanten
 keine Freigabe (Konditionen) hinterlegt ist. Siehe dazu <a href="../artikel/index.htm#Zertifizierungspflichtige Artikel">Zertifizierungspflichtige
 Artikel</a>. </p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Monatsbestellung, C-Teile Bewirtschaftung </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+der Monatsbestellung haben wir eine komfortable Möglichkeit geschaffen, die
+sogenannten C-Teile zu bewirtschaften. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+finden diesen Import im Modul Bestellung unter Bestellung, Monatsbestellung. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Aufgabenstellung bei den C-Teilen ist ja, dass sie eigentlich vom Wert her zu
+vernachlässigen sind, aber wenn z.B. eine Beilagescheibe im Wert von 0,01 €
+fehlt, kann ein komplettes Produkt im Wert von 10.000,- € nicht ausgeliefert
+werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+gehen Anwender dazu über die Versorgung dieser Artikel an Sublieferanten
+auszulagern. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+ist es üblich, dass regelmäßig, z.B. einmal die Woche, der Lieferant die
+Lagerstände aller vereinbarten Artikel prüft und wenn der Vorrat halbleer ist,
+wird wieder nachgefüllt. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Selbstverständlich
+erhalten Sie dafür eine Eingangsrechnung. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+nun: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+die Eingangsrechnung zu überprüfen </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+den theoretischen Verbrauch (was machen Sie, wenn der Mitarbeiter des
+Lieferanten immer viel zu viel nachfüllt, weil ...) zu überprüfen. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+vom Lieferanten pro Besuch eine Nachfüll-Datei geliefert. Diese ist im CSV
+Format und hat folgenden Aufbau: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">KUNDENNR;KUNDENNAME;BEST.NR.;LIEFERSCHEIN;ARTIKELNR;ARTIKELNR_KUNDE;TEXT;GEL.MENGE;OFF.MENGE;VERLADEDATUM </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dabei
+haben die Felder folgende Bedeutung: </p>
+
+<div align="left">
+  <table border="1" width="663" height="6">
+    <tr>
+      <td width="409" height="6">KUNDENNR</td>
+      <td width="917" height="6">Ihre Kundennummer bei Ihrem Lieferanten.<br>
+        Damit wird der Lieferant für die Monatsbestellung bestimmt.<br>
+        Tragen Sie bitte die Ihre Lieferantenkundennummer im Lieferantenstamm
+        unter Kopfdaten, Kundennummer ein.</td>
+    </tr>
+    <tr>
+      <td width="409" height="6">KUNDENNAME</td>
+      <td width="917" height="6">Ihr Firmenname, hat für den Import keine
+        Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="409" height="6">BEST.NR.</td>
+      <td width="917" height="6">keine Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="409" height="6">LIEFERSCHEIN</td>
+      <td width="917" height="6">Lieferscheinnummer des Lieferanten.<br>
+        Es wird dies im Wareneingang unter Lieferschein protokolliert</td>
+    </tr>
+    <tr>
+      <td width="409" height="6">ARTIKELNR</td>
+      <td width="917" height="6">Artikelnummer des Lieferanten.<br>
+        Hat für den Import keine Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="409" height="6">ARTIKELNR_KUNDE</td>
+      <td width="917" height="6">Ihre Artikelnummer. Auf diesen Artikel wird die
+        Bestellung ergänzt und der Wareneingang zugebucht</td>
+    </tr>
+    <tr>
+      <td width="409" height="6">GEL.MENGE</td>
+      <td width="917" height="6">Gelieferte Menge.<br>
+        Diese Menge haben Sie mit der (Wochen-)Lieferung erhalten</td>
+    </tr>
+    <tr>
+      <td width="409" height="6">VERLADEDATUM</td>
+      <td width="917" height="6">Datum des Wareneingangs und des
+        Lieferanten-Lieferscheines</td>
+    </tr>
+  </table>
+</div>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+Einkaufspreis wird der Preis des jeweiligen Artikellieferanten verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+sorgen Sie dafür, dass der Einkaufspreis bei jedem Artikel des Lieferanten der
+C-Teile entsprechend Ihren Vereinbarungen ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+diesem Import haben Sie komfortabel die Wochenlieferung Ihres C-Teile
+Lieferanten importiert und können die monatliche Sammelrechnung direkt auf
+diese eine Bestellung zuordnen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Entscheidung ob eine neue Monatsbestellung angelegt werden soll, wird anhand des
+Wareneingangsdatums (Verladedatum) getroffen. Gibt es eine offene Bestellung des
+Lieferanten im Monat des Verladedatum = Wareneingangsdatums, so wird diese
+Bestellung ergänzt. Wenn nicht wird eine neue Bestellung für dieses Monat
+angelegt.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
