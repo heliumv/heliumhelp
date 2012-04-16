@@ -546,7 +546,16 @@ java.lang.Exception: Keine Artikelgruppe für Artikel definiert:45001</li>
     angegeben ist. Tragen Sie dies für die <a href="#Abstimmkonto"> Steuerkategorie</a> des Finanzamtes
     nach.</li>
   <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2012-04-16 10:41:43:050 [       0] ERROR error(LpLogger:73) - Code=-1 javax.ejb.EJBTransactionRolledbackException: id to load is required for loading<br>
+    com.lp.util.EJBExceptionLP: javax.ejb.EJBTransactionRolledbackException: id to load is required for loading<br>
+	at com.lp.server.rechnung.ejbfac.RechnungFacBean.createZahlung(RechnungFacBean.java:2064)<br>
+    Diese Meldung tritt auf, wenn versucht wird eine Zahlungsbuchung zu machen
+    und die zugrunde liegende Rechnung ist noch nicht in der Fibu verbucht und
+    kann auch, aus verschiedenen Gründen, nicht in die Fibu übernommen werden.<br>
+    Bestätigen Sie die Meldung und versuchen Sie die Rechnung mit Bearbeiten,
+    Belegübernahme zu übernehmen. Es wird ein Fehler auftreten. Beseitigen Sie
+    diesen und setzen Sie dann mit der Belegübernahme und der nachfolgenden
+    Zahlung fort.</li>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>Hinweis:</u></b></p>
 
@@ -1348,37 +1357,57 @@ die Definition einer Ergebnisgruppe stehen folgende Felder zur Verfügung:</p>
 <div align="left">
   <table border="1" width="648" height="18">
     <tr>
-      <td width="223" height="18">Typ </td>
-      <td width="1073" height="18">in aller Regel Ergebnisgruppe und für die
+      <td width="195" height="18">Typ </td>
+      <td width="1101" height="18">in aller Regel Ergebnisgruppe und für die
         Gestaltung Linie und Leerzeile</td>
     </tr>
     <tr>
-      <td width="223" height="18">Bezeichnung </td>
-      <td width="1073" height="18">Bezeichnung der Ergebnisgruppe</td>
+      <td width="195" height="18">Bezeichnung </td>
+      <td width="1101" height="18">Bezeichnung der Ergebnisgruppe</td>
     </tr>
     <tr>
-      <td width="223" height="18">Summengruppe </td>
-      <td width="1073" height="18">in welche übergeordnete Ergebnisgruppe
+      <td width="195" height="18">Summengruppe </td>
+      <td width="1101" height="18">in welche übergeordnete Ergebnisgruppe
         summiert diese Ergebnisgruppe</td>
     </tr>
     <tr>
-      <td width="223" height="18">Invertiert </td>
-      <td width="1073" height="18">sollte der aus den Konten ermittelte Saldo
-        invertiert angezeigt werden</td>
+      <td width="195" height="18">Invertiert </td>
+      <td width="1101" height="18">Der aus den Konten ermittelte Saldo wird
+        invertiert und danach angezeigt.</td>
     </tr>
     <tr>
-      <td width="223" height="18">Summe negativ</td>
-      <td width="1073" height="18">sollte der aus den Konten ermittelte Saldo in
-        die weitere Berechnung mit negativem Vorzeichen eingerechnet werden</td>
+      <td width="195" height="18">Summe negativ</td>
+      <td width="1101" height="18">sollte der aus den Konten ermittelte Saldo in
+        die weitere Berechnung mit negativem Vorzeichen eingerechnet werden.<br>
+        Wichtig: Die Summe negativ definiert wie der angezeigte Wert in der
+        übergeordneten Gruppe behandelt wird.</td>
     </tr>
     <tr>
-      <td width="223" height="18">Basis für 100%</td>
-      <td width="1073" height="18">Definieren Sie die Ergebnisgruppe, welche
+      <td width="195" height="18">Basis für 100%</td>
+      <td width="1101" height="18">Definieren Sie die Ergebnisgruppe, welche
         für die Anteilsberechnungen die 100% Basis darstellt.</td>
     </tr>
   </table>
 </div>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Rechnung ist wie folgt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Salden
+-&gt; invertiert -&gt; Gruppenanzeige -&gt; Summe invertiert -&gt; (und wieder
+von vorne)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Saldensumme
+aller Konten der Ergebnisgruppe ergibt einen Wert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+invertiert wird der Wert bevor er weiterbehandelt wird invertiert. Dies gelangt
+in die Anzeige (Report).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieser
+Wert wird wenn Summe negativ erneut invertiert und gelangt so in die
+Summengruppe.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
