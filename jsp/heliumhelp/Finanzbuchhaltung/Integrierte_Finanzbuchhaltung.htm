@@ -532,8 +532,8 @@ java.lang.Exception: Keine Artikelgruppe für Artikel definiert:45001</li>
     Was ist zu tun:<br>
     Definieren Sie bitte unter System, Mandant, Vorbelegungen2 das Standard
     Finanzamt für diesen Mandanten. Wenn hier kein Finanzamt zur Auswahl steht,
-    so definieren Sie dieses bitte
-    unter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    so definieren Sie dieses bitte im Modul Finanzbuchhaltung, unterer
+    Modulreiter Finanzamt.<br>
     <br>
     Sollten Sie das Modul Finanzbuchhaltung nicht besitzen, so wenden Sie sich
     bitte an Ihren Helium V Betreuer, damit er für Sie ein Finanzamt
@@ -556,6 +556,15 @@ java.lang.Exception: Keine Artikelgruppe für Artikel definiert:45001</li>
     Belegübernahme zu übernehmen. Es wird ein Fehler auftreten. Beseitigen Sie
     diesen und setzen Sie dann mit der Belegübernahme und der nachfolgenden
     Zahlung fort.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">class com.lp.client.frame.ExceptionLP<br>
+    id to load is required for loading<br>
+    com.lp.client.frame.delegate.Delegate.handleThrowable(Delegate.java:181)<br>
+    com.lp.client.frame.delegate.RechnungDelegate.verbucheRechnungNeu(RechnungDelegate.java:1288)<br>
+    <br>
+    Bedeutet, es ist vermutlich keine Artikelgruppe definiert. Definieren Sie die Artikelgruppe als Pflichtfeld.<br>
+    Prüfen Sie zusätzlich den Parameter FINANZ_EXPORT_ARTIKELGRUPPE_DEFAULT_KONTO_AR.
+    Dieser muss auf ein gültiges Erlöskonto zeigen.</li>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>Hinweis:</u></b></p>
 
