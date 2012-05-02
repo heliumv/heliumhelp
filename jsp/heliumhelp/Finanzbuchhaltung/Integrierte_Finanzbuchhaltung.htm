@@ -89,7 +89,8 @@ Konten-Zuordnungen gliedern sich in vier Ebenen:</p>
     Definieren Sie im Finanzamt, Kopfdaten auch das zu verwendende Formular
     (Formularnummer) für die Umsatzsteuervoranmeldung.<br>
     Leer = Standardformular = Österreich<br>
-    1&nbsp;&nbsp;&nbsp;&nbsp; = Formular für die Elstermeldung = Deutschland<br>
+    1&nbsp;&nbsp;&nbsp;&nbsp; = Formular für die Elstermeldung = Deutschland
+    (definieren Sie hier auch &quot;Umsatz runden&quot;)<br>
     2&nbsp;&nbsp;&nbsp;&nbsp; = Formular für die Meldung in der Schweiz</li>
 </ol>
 
@@ -740,11 +741,15 @@ angezeigt. Genauso können im Buchungsjournal die stornierten Buchungen mit
 Datum, Uhrzeit und Person die diese Buchung storniert hat angezeigt
 werden.&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
-den Export der Buchungsjournale für die Finanz werden immer die stornierten
-Buchungen mit exportiert. Dies in der Form, dass der original Buchungssatz und
-der stornierte Buchungssatz zum Stornozeitpunkt und mit negativem Vorzeichen in
-das Protokollfile eingetragen wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Storno einer Buchung wird die eigentliche Buchung als storniert markiert und
+eine Gegenbuchung mit invertierten Beträgen angelegt. Diese wird ebenfalls als
+storniert markiert. Das Buchungsdatum der Stornobuchung ist gleich dem
+Buchungsdatum der stornierten Buchung. Das Anlagedatum der Buchungen entspricht
+dem jeweiligen Zeitpunkt der Durchführung der Buchung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim Export der Buchungsjournale für die Finanz werden die stornierten
+Buchungen immer mit exportiert.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wo
 können die UVA Arten definiert werden?</p>
@@ -1047,7 +1052,15 @@ gültige Kurs für die Umrechnung verwendet.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Quartals-
 und Jahres-UVA werden als eine Summe der monatlichen UVA errechnet, daher greift
-auch hier der jeweils zum Monatlstzten gültige Kurs.</p>
+auch hier der jeweils zum Monatletzten gültige Kurs.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Können die Umsätze der UVA gerundet werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Definieren Sie dazu in den Kopfdaten des entsprechenden Finanzamtes <img border="0" src="UVA_Umsatz_runden.gif" width="98" height="19">
+Umsatz runden. Es werden dadurch die an das UVA Formular übergebenen Umsätze
+auf ganze Beträge gerundet.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie erreiche ich Sicherheit, dass alle Beleg tatsächlich in der Fibu sind?</p>
