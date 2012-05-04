@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Client Installation unter Linux</title>
+</head>
+
+<body>
+
+<h1> Helium V Client Installation unter Linux</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Unter dem Oberbegriff
+Linux stehen verschiedene Distributionen zur Verfügung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Je nach der
+Distribution sind unter Umständen leicht abgewandelte Vorgehensweisen bei der
+Installation zu beachten.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Grundsätzlich ist
+für die Verwendung des Helium V Clients ein grafischer Desktop
+Grundvoraussetzung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Ubunutu</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Verwenden Sie hier
+die Version 10.10</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Aufruf der
+Startdatei lpclientpc.sh muss um den Verzeichniswechsel ergänzt werden.&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zusätzlich sollte
+der Helium V Client nur im sogenannten Kunststoff Look betrieben werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Siehe Beispiel unten.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">#\!/bin/sh<br>
+<b>cd /home/ubuntu/helium_v<br>
+</b><br>
+java -Xms128m -Xmx256m -XX:PermSize=64m -XX:MaxPermSize=256m -Djava.naming.factory.initial=org.jnp.interfaces.NamingContextFactory -Djava.naming.provider.url=jnp://localhost:2099  -Dloc=de_AT -jar lpclientpc.jar<b> --laf-Kunststoff</b> $*<br>
+<br>
+Stellen Sie zugleich sicher, dass Sie ausreichend Rechte haben um die
+Installation des Helium V Clients überhaupt durchführen zu dürfen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Anpassen des
+Erscheinungsbildes des Helium V Start Scripts</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Klicken Sie auf das
+Symbol des Helium V Startscripts, rechte Maustaste, Eigenschaften.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun sehen Sie</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Ubuntu_Eigenschaften_HV_Client.jpg" width="576" height="327"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um das
+Erscheinungsbild auf das Helium V Symbol zu ändern klicken Sie direkt das
+Symbol an und wählen nun aus dem Helium V Ordner, der üblicherweise unter home/benutzername/helium_v
+zu finden ist das</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Ubuntu_HV_Client_Symbol_auswaehlen.jpg" width="788" height="315"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Symbol lpclientpc.png,
+welches das Helium V Icon beinhaltet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+</body>
+
+</html>
