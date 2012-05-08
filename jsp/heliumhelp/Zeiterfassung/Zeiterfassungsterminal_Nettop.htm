@@ -11,8 +11,7 @@
 
 <body>
 
-<h1>&nbsp;
-Zeiterfassungsterminal Nettop<img border="0" src="Nettop1.jpg" width="136" height="109"></h1>
+<h1>Zeiterfassungsterminal Nettop<img border="0" src="Nettop1.jpg" width="136" height="109"></h1>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit den
 Zeiterfassungsterminal Nettop steht Ihnen eine Weiterentwicklung der komfortablen
 Helium V Zeiterfassungsgeräte zur Verfügung. Sie wurden vor allem für die
@@ -572,7 +571,16 @@ Voraussetzung, dass noch ausreichend Festplatten-Speicherplatz zur Verfügung ste
 <p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Aenderung_der_Ausweisnummer"></a>Änderungen
 der Ausweisnummer einer Person</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achten Sie bitte
-unbedingt darauf, dass alle Terminals im Online Modus sind.</p>
+unbedingt darauf, dass alle Terminals im Online Modus sind. Dadurch sind alle
+Buchungen in der Helium V Datenbank enthalten. Falls Sie nicht sicher sind,
+buchen Sie mit dem alten Ausweis / Schlüssel und prüfen Sie an einem Helium V
+Client, dass diese Buchung im System ist.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun ändern Sie die
+Ausweisnummer der Person, geben ihr den neuen Schlüssel.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Das war die
+Änderung. Zur Sicherheit können Sie gerne den Mitarbeiter mit dem Neuen
+Schlüssel zur Buchung schicken. Wenn das Terminal Online ist, wird ab sofort
+mit der neuen Ausweisnummer, mit dem neuen RFID Schlüssel gebucht.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Starten des
 Terminals</p>
 
@@ -734,6 +742,111 @@ TimeTerminal Programms</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achten Sie darauf,
 dass für die Installation das mitgelieferte Setup.exe ausgeführt wird. Nur die
 Installation der MSI-Datei (WinTimeTermSetup.msi) ist nicht ausreichend.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei Windows7
+Umgebungen muss für die 64Bit Version noch der 64Bit Datenbanktreiber (SSCERuntime-DEU-x64.msi)
+installiert werden.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Was ist zu tun,
+wenn der Barcodescanner zwar piebst aber nichts passiert, keine Buchung erfolgt?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Stellen Sie
+sicher, dass das Terminalprogramm Fehlerfrei startet. Es passiert immer wieder,
+dass bei Übersiedelung des Terminals an einen anderen Standort der
+Barcodescanner an einen anderen, besser passenden USB Port angeschlossen wird
+und dadurch die Kommunikation zwischen Terminal und Barcodescanner nicht mehr
+funktioniert. Dies wird am Terminal durch </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="ZET_COM_X_nicht_vorhanden.jpg" width="295" height="150"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Anschluss Com ??
+ist nicht vorhanden angezeigt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In diesem Falle gehen
+Sie in die Konfiguration des Terminals und stellen Sie bitte den Com-Port für
+den Seriellen USB-Barcodescanner richtig ein. Üblicherweise ist an den
+Terminals nur ein Com-Port verwendet, daher wird auch vom Terminal dann nur
+dieser eine Port vorgeschlagen.
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sollte es trotzdem
+nicht funktionieren, sollte mit folgenden Schritten die Ursache herausgefunden
+werden können:
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Kann der Barcode
+    überhaupt gelesen werden?
+    <ul>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Prüfen Sie
+        dies bitte mit einem anderen Barcodescanner oder</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">parametrieren
+        Sie den Scanner um, sodass er im Wedge Modus läuft damit kann auf einem
+        Rechner über die Kommandozeile geprüft werden ob der Scanner den
+        Barcode überhaupt liest oder</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">schalten Sie
+        das Terminal in den Debugmodus, somit sehen Sie ebenfalls ob der Scanner
+        Daten an das Terminal liefert.</li>
+    </ul>
+  </li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ist der Barcode
+    nur bei einem Ausdruck nicht lesbar oder ist dies bei allen
+    <ul>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Fertigungsbegleitscheinen</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auftrags-Packlisten</li>
+    </ul>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">so.<br>
+        Ist es bei allen Papieren so, dann ist vermutlich die Konfiguration des
+        Terminals oder des Scanners falsch.<br>
+        Stellen Sie dies über den Terminal Debumodus fest.
+  </li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um das Terminal
+    in den Debugmodus zu bringen gehen Sie bitte wie folgt vor:
+    <ul>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Am Terminal links oben auf das Helium V Icon Klicken.</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte geben Sie das eingestellte Passwort ein (wir gehen davon aus dass eines hinterlegt ist)</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun wählen
+        Sie den oberen Reiter allgemein und haken rechts unten Debug an.</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit ok
+        verlassen Sie die Konfiguration und gehen wieder zurück in den Terminalmodus</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Scannen Sie nun den Barcode
+        einer Person scannen. Es muss im 
+Debugfenster unten $Pxxx (die Ausweisnummer der Person) angezeigt werden. 
+Unmittelbar danach wird der Name der Person angezeigt, wenn die Person erkannt
+        wurde.</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Scannen Sie
+        nun die Auftrags- oder Losnummer.<br>
+        Wichtig: Wird die Auftrags / Losnummer richtig angezeigt.<br>
+        Ein Auftrag hat das LeadIn $A und danach kommt im Klartext die
+        Auftragsnummer.<br>
+        Ein Los hat das leadIn $L und danach kommt im Klartext die Losnummer.<br>
+        Gerade bei Wedge Scannern kann es vorkommen dass diese auf ein falsches
+        Tastaturlayout eingestellt sind. Siehe dazu bitte auch <a href="BDE_Station.htm#Programmierung der Barcodescanner">Barcodescanner
+        umstellen</a>.</li>
+    </ul>
+    </li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn bis hierher
+    alles wie gewünscht funktioniert, so ist eventuell die Ursache, dass keine
+    default Tätigkeit im Terminal hinterlegt ist. Prüfen Sie auch dies.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sollte trotzdem
+    keine Funktion des Scanners in Verbindung mit dem Terminal erkennbar sein,
+    stehen wir Ihnen gerne mit weiterem Rat und Tat zur Seite.</li>
+</ul>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
