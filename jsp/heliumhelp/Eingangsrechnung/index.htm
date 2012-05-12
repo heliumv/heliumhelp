@@ -204,6 +204,41 @@ Für die Verbuchung von Eingangsrechnungsgutschriften <a href="../Rechnung/Zahlun
 bitte</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wechselnde Kurseingabe bei den Zahlungen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In manchen Ländern ist es üblich, dass von den Zollbehörden Wechselkurs
+vorgeschrieben werden, zu denen insbesondere offene Eingangsrechnungen zu
+betrachten sind, andererseits buchen natürlich die Banken zum
+Börse-Wechselkurs und nicht zu dem von den Behörden gewünschten Kurs. Daher
+ist es manchmal erforderlich, dass je Zahlungsbuchung in der Eingangsrechnung
+der tatsächlich von der Bank verbuchte Wechselkurs je Zahlung erfasst und
+verbucht wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+diese Funktionalität zu erreichen stellen Sie im System den Parameter
+PARAMETER_EINGANGSRECHNUNG_ZAHLUNG_MIT_KURSEINGABE auf 1.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+dem Neustart des Eingangsrechnungsmodules erscheint bei der Zahlung neben dem
+Kurs die Checkbox Übersteuert. Wird diese angehakt, so kann der gewünschte
+Umrechnungskurs eingegeben werden, wobei der zum Zeitpunkt gültige Wechselkurs
+vorgeschlagen wird.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Werden die Umrechnungskurs angezeigt ?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Umrechnungskurse werden einerseits in den Kopfdaten der Eingangsrechnung
+angezeigt und andererseits bei jeder Zahlung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich
+werden im Journal der offenen Eingangsrechnungen die original Beträge in
+Fremdwährung zusätzlich zu den Beträgen in Mandantenwährung angezeigt, damit
+z.B. bei Teilzahlungen offensichtlicher ist, welche Fremdwährungsbeträge
+tatsächlich offen sind. Zusätzlich werden die Umrechnungskurse angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="ER_offene_in_Fremdwaehrung.gif" width="354" height="28"></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kundendaten für E-Banking?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Wenn Sie den Zahlungsvorschlag aus Helium V nutzen, so sollten / können für
