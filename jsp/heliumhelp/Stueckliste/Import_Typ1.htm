@@ -37,21 +37,25 @@ wird die komplette Stücklistenstruktur entsprechend aufgebaut.</p>
 steht hier auch noch der Import in den Anfragevorschlag zur Verfügung.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
-Sie können, neben der Fertigungssteuerung für den tatsächlichen bedarf auch
+Sie können, neben der Fertigungssteuerung für den tatsächlichen Bedarf auch
 sehr komfortabel die anzufragenden Daten in den Anfrage Vorschlag übernehmen.
 Da in der Importdatei auch die Liefergruppe jedes Artikels mit übergeben wird,
 kann so auf einfache Weise eine komplette Liefergruppenanfrage an Ihre
-Lieferanten mit entsprechenden Zusatzinformatinoen der Zeichnungen gestellt
+Lieferanten mit entsprechenden Zusatzinformationen der Zeichnungen gestellt
 werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 Aus den Stücklisten wird der übliche Helium V Weg beschritten. D.h. es werden
-aufgrund der . Der Trick liegt dann darin, dass aus den Anfragen die tatsächlichen Lieferanten in den Artikelstamm eingepflegt werden und somit dann die Bestellungen automatisch gemacht werden können.<br>
+aufgrund der angelegten Kundenaufträge entsprechende Fertigungsaufträge über
+die importierten Stücklisten erzeugt. Auf Basis der Fertigungsaufträge wird
+nun mit dem Bestellvorschlag das tatsächlich benötigte Material errechnet.
 </p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der Trick liegt dann darin, dass aus den Anfragen die tatsächlichen Lieferanten in den Artikelstamm eingepflegt werden und somit dann die Bestellungen automatisch
+an die richtigen Lieferanten gemacht werden können.
+</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -73,29 +77,105 @@ den Punkt Import.</p>
 
 Die Stücklisten werden strukturiert importiert.<br>
 Abhängig von der Pos.Nr werden die jeweiligen Positionen in eine Stückliste übernommen.<br>
-Alle Artikel werden angelegt bzw. geprüft ob die Bezeichnungen mit dieser Identnummer exakt übereinstimmen.<br>
-Ist die Übereinstimmung nicht exakt gegeben, so wird der alte Artikel auf _001 umbenannt und versteckt und der Artikel neu angelegt, mit den Daten aus dem
-Import File.<br>
-Zugleich werden die Zeichnungen aus der Filestruktur importiert. D.h. gibt es im
-Pfad der Importdatei eine Datei die den gleichen Filenamen wie die Artikelnummer
-hat, mit beliebiger Endung, so wird die erste gefundene Datei als Kommentar für
-diesen Artikel übernommen. Wo genau dieser Artikel ausgedruckt werden sollte
-kann unter ... definiert werden.
-<br>
+Alle nicht vorhandenen Artikel bzw. Stücklisten werden angelegt.<br>
+Am Ende des Imports erscheint gegebenenfalls ein Fenster, welche Artikel neu
+angelegt wurden.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unterscheidung
+Normteile oder Eigenkonstruktion.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+für einen Artikel eine Zeichnung übergeben, so ist dies grundsätzlich kein
+Normteil, sondern eine Eigenkonstruktion. Anhand des Datums der Zeichnungs-Datei
+wird entschieden ob dies eine neuere Version des Eigenkonstruktionsteiles ist.
+D.h. ist das Datum neuer, so ist dies ein neueres Eigenkonstruktionsteil. Das
+bedeutet, dass ein weiterer Artikel angelegt wird, welcher grundsätzlich die
+gleiche Artikelnummer hat, jedoch am Ende der Artikelnummer wird mit _nnn die
+Version hochgezählt. Die alten Artikel werden auf versteckt gesetzt. Somit ist
+für Sie sofort ersichtlich welche die aktuelle Version eines Artikels ist.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Import der Datei wird der Pfad der Importdatei verwendet. Es wird davon
+ausgegangen, dass die Artikelnummer ohne der Versionserweiterung und der
+Dateiname ohne Extension übereinstimmen. Weiters wird davon ausgegangen, dass
+pro Eigenkonstruktion nur jeweils eine Zeichnungsdatei übergeben wird. Diese
+kann eine beliebige Dateiendung haben. Bei mehreren wird die erste zufällig
+gefundene Datei importiert.<br>
+Die Konstruktionszeichnungen für die Eigenkonstruktion wird im Artikel unter
+Kommentar abgelegt. Welche Kommentarart verwendet wird, muss in den Stücklisten
+Grunddaten unter Kommentarimport definiert werden. Es darf nur eine Kommentart
+für den Import definiert werden.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
 </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 für die Stücklisten auch entsprechende Arbeitspläne effizient erzeugen zu
-können, sollten Sie in den mandantenparametern auch den Default Arbeitsplan
+können, sollten Sie in den Mandantenparametern auch den Parameter
+ARBEITSPLAND_DEFAULT_STUECKLISTE
 definiert haben.<br>
-<br>
-Die Abmessungen werden in der Zusatzbezeichnung2 des Artikels hinterlegt<br>
-Das Material in der Bauform, der Typ in der Liefergruppe<br>
-Ein Artikel gilt dann als derselbe Artikel, wenn Ident/Bezeichnung/Abmessungen und Material gleich sind.<br>
-<br>
-Wenn im Importverzeichnis mehrere Dateien vorhanden sind, die wie die Artikelnummer lauten, dann wird immer die erste Datei als Anhang hinterlegt.<br>
-<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Import werden:
+</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> die Artikelnummern, die groß / klein sind alle auf
+    Großbuchstaben konvertiert</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+    Normteilen werden nur Mengen und Artikelnummern importiert, keine
+    Bezeichnungen usw.<br>
+    Normteile sind die Teile die keine Zeichnungen hinterlegt haben</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+    Spalte Material wird nach der Spalte Material (Artikel, unterer Modulreiter
+    Material) zugeordnet<br>
+    Ist das Material nicht definiert, wird der Import abgebrochen</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+    Bezeichnung wird nur bei Zeichnungsteilen in die ersten beiden Zeilen des
+    Artikels übernommen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+    Typ wird in die Liefergruppe des jeweiligen Artikels übernommen</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+    Abmessungen werden in der Zusatzbezeichnung2 des Artikels hinterlegt</li>
+</ul>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 Der Trenner für die Ebenendefinition ist der Punkt "."<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Neben
+dem Import in die Stückliste gibt es auch den Import in den Anfragevorschlag.
+Dieser funktioniert vollkommen gleich, inkl. der Anlage der Stücklisten usw.,
+es wird jedoch zusätzlich je Artikel ein Eintrag in den Anfragevorschlag
+vorgenommen.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Dateiaufbau ist auf folgendes Format als XLS Datei festgeschrieben.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Solidworks_Import.gif" width="622" height="163">
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Datensätze
+mit einem Typ höher 400 werden immer als Stückliste interpretiert.
 </p>
 
 </body>
