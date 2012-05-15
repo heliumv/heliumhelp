@@ -23,8 +23,16 @@ kommen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.)
-Ablauf ohne Fertigung</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>1.)
+Ablauf ohne Fertigung</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieser
+Ablauf ist oft in Handelsunternehmen anzutreffen, kommt aber auch immer wieder
+in produzierenden Unternehmen zum Einsatz, da auch diese oft reine
+Handelsprozesse abbilden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auftrag
+-&gt; Bestellvorschlag -&gt; Bestellungen -&gt; Wareneingang bucht auf Lager
+-&gt; Lieferschein -&gt; Rechnung -&gt; Zahlung</p>
 <ul>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erfassen
@@ -40,7 +48,8 @@ Ablauf ohne Fertigung</p>
     Lagerstand<br>
     - Reserviert<br>
     - Fehlermenge<br>
-    -------------- ergibt<br>
+    + offene Bestellungen<br>
+    --------------------- ergibt<br>
     verfügbare Menge zum Zeitpunkt (Tag),<br>
     unterschreitet diese den Lagermindestbestand, wird auf den Sollbestand
     aufgefüllt. Diese Menge wird als zu bestellen vorgeschlagen.</li>
@@ -86,6 +95,76 @@ Ablauf ohne Fertigung</p>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
     den Zahlungseingang wählen Sie bei der jeweiligen Rechnung den Reiter
     Zahlungen und buchen so die Zahlungen zu.</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.)
+Ablauf mit Fertigung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ergänzend
+zum obigen Ablauf ist zwischen Auftrag und Bestellvorschlag die Auflösung der
+Auftragspositionen mit Stücklisten eingebunden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auftrag
+-&gt; Bestellvorschlag -&gt; Bestellungen -&gt; Wareneingang bucht auf Lager
+-&gt; Lieferschein -&gt; Rechnung -&gt; Zahlung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;
+!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+^----------------------------------------+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+!&nbsp; ^---------------------------------------+</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;
++ -&gt; Interne Bestellung -&gt; Anlegen der Fertigungsaufträge
++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
++bucht in Los -&gt; Fertigung -&gt; Losablieferung +</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+    beginnen unabhängig ob Handelsware oder eigen gefertigte Produkte mit dem
+    erfassen des Auftrages mit den Positionen. Die Positionen sind Artikel, die
+    Termine sind die Eintrefftermine beim Kunden. Damit werden die Artikel zu
+    den gewünschten Terminen im Artikelstamm reserviert.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+    Modul Fertigungsauftrag, unterer Modulreiter Interne Bestellung<br>
+    Klicken Sie auf interne Bestellung durchführen.<br>
+    Es wird nun ebenfalls der gesamte Artikelstamm durchgearbeitet, mit der
+    Einschränkung, dass nur diejenigen Artikel berücksichtigt werden, die
+    eigen gefertigte Stücklisten sind. Vereinfacht dargestellt:<br>
+    Lagerstand<br>
+    - Reserviert<br>
+    - Fehlermenge<br>
+    + offene Fertigungsaufträge<br>
+    --------------------- ergibt<br>
+    verfügbare Menge zum Zeitpunkt (Tag),<br>
+    unterschreitet diese den Lagermindestbestand, wird auf den Sollbestand
+    aufgefüllt. Diese Menge wird als zu fertigen&nbsp; vorgeschlagen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+    der internen Bestellung sehen Sie die jeweils exakt errechnet Menge.<br>
+    Mit Interne Bestellung verdichten, werden alle innerhalb von z.B. 14Tagen zu
+    produzierenden Mengen auf den frühest erforderlichen Termin
+    zusammengefasst, zugleich werden die Fertigungssatzgrößen berücksichtigt
+    und eine Überprüfung der offenen Rahmenaufträge durchgeführt.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Leiten
+    Sie nun die Positionen der internen Bestellung in einzelne
+    Fertigungsaufträge über und legen so die entsprechenden Lose an.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch
+    die Losanlage wird das benötigte Material reserviert und Sie können für
+    die Beschaffung wie oben beschrieben bei der Erzeugung des
+    Bestellvorschlages fortsetzen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+    dem Wareneingang wird wie oben beschrieben die Ware an Lager gebucht.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+    können die Fertigungsaufträge auf in Produktion gesetzt werden (geht auch
+    früher, dann gibts Fehlmengen)</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+    die Stückliste fertig produziert, so wird mit Ablieferung das fertige
+    Produkt an Lager abgeliefert und Sie können bei den Lieferscheinen
+    fortsetzen.</li>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
