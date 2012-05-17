@@ -1926,6 +1926,45 @@ Wie können die Bestellung eines Loses herausgefunden werden ?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 <a href="../Bestellung/index.htm#Lose einer Bestellung">Siehe dazu.</a></p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Los Stornieren"></a>Q:
+Worauf ist beim Storno eines Loses zu achten?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade bei Anwendern, die eine enge Kopplung der Losnummer mit der
+Auftragsnummer verwenden, taucht immer wieder die Frage auf, wieso kann ich eine
+Auftragsposition nicht stornieren, ich habe doch das Los storniert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aufgrund
+der relationalen Datenbank ist hier zu beachten, dass der direkte Positionsbezug
+im Los vor dem Storno entfernt werden muss. Gehen Sie dazu wie folgt vor:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bevor
+das tatsächliche Storno durch Klick auf <img border="0" src="Los_Storno.gif" width="31" height="25">
+ausgeführt wird entfernen Sie den Positionsbezug.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Klicken
+Sie auf Position <img border="0" src="Los_Positionsauswahl.gif" width="145" height="24">, klicken Sie
+auf Löschen <img border="0" src="Los_Positions_zuordnung_loeschen.gif" width="30" height="24">.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zur
+Bestätigung haken Sie nun noch <img border="0" src="Los_Kein_Auftrags_Positionsbezug.gif" width="117" height="17">
+an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+ist der Positionsbezug dieses (zu stornierenden Loses) zum Auftrag aufgetrennt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Speichern
+Sie die Änderung ab und <img border="0" src="Los_Storno.gif" width="31" height="25"> stornieren
+anschließend das Los.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollten
+Sie bereits ein Los storniert haben, ohne den Auftragsbezug zu löschen, so
+machen Sie zuerst das Losstorno durch klick auf ändern <img border="0" src="Los_Aendern.gif" width="30" height="25">
+rückgängig, entfernen die Auftrags-Positions-Verknüpfung und stornieren dann
+anschließend das Los wieder.</p>
+
 </body>
 
 </html>
