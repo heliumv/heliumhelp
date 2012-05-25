@@ -27,6 +27,12 @@ realisiert.</p>
 
 
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab
+der Version 6750 steht dies auch als sogenannter HTTP Request zur Verfügung.
+Siehe dazu.</p>
+
+
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 
@@ -182,7 +188,92 @@ bei Anruf sollte das Telefon neben ihrem Rechner die Verbindung aufbauen.</p>
 
 
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Http-Request</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dem Http-Request werden die Daten für den Telefonanruf per http-Aufruf direkt
+an Ihr Telefon übergeben. Üblicherweise sind dies VoIP (Voice over IP)
+Telefone, wie z.B. snom.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Aufruf für snom (3er Serie) sieht üblicherweise wie folgt aus.</p>
+
+
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Idee dahinter ist, dass neben jedem Arbeitsplatz auch ein dazugehörendes
+Telefon steht. Das bedeutet, dass dieser Aufruf als Arbeitsplatzparameter, im
+Modul System, für den jeweiligen Rechner definiert werden muss.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:
+Um den Aufruf absetzen zu können, muss in Ihrem Snom Telefon die normalerweise
+per default eingerichtete Benutzerberechtigung entfernt werden. Solange Ihr VoIP
+Telefon in einem gut geschützten internem Netzwerk steht sollte das kein
+Problem darstellen.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+den Benutzer zu entfernen, gehen Sie in die Administrationsoberfläche Ihres
+Snom Telefons, unter Erweitert, QoS / Sicherheit und löschen Sie den unter HTTP
+Server eingetragenen Benutzer und dessen Passwort.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Snom_Benutzer_loeschen.gif" width="482" height="83"></p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Klicken
+Sie anschließend auf speichern.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Aufrufstring für Snom 3er Serie sieht wie folgt aus:</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="http://Snom-IP-Adresse/index.htm?NUMBER=###NUMMER###&amp;DIAL=Wählen">http://Snom-IP-Adresse/index.htm?NUMBER=###NUMMER###&amp;DIAL=Wählen</a></p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Snom-IP-Adresse
+ersetzen Sie bitte durch die IP-Adresse des jeweiligen Telefons,</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">der
+Bereich ###NUMMER### wird von Helium V durch die zu wählende Nummer ersetzt.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+der Aufrufstring frei definiert werden kann, können selbstverständlich alle
+anderen Telefone / Telefonanlagen, welche mit einem derartigen Request gesteuert
+werden können von Helium V angesteuert werden.</p>
 
 
 
