@@ -339,6 +339,16 @@ Kann auch ein Lieferschein an einen Lieferanten gesandt werden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Ja. Wählen Sie einfach bei der Lieferscheinart Lieferant.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann auch Waren mit einem Lieferschein wieder zurückgenommen werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja. Geben Sie dafür einfach bei der Menge ein negatives Vorzeichen an, damit
+wird die Ware wieder auf das Lager zugebucht. Beachten Sie bitte, dass für die
+Gestehungspreis-Berechnung der eingegebene Verkaufspreis verwendet wird. Dies
+kann unter Umständen zu einer entsprechenden Verfälschung des
+Gestehungspreises des Artikels führen. <a href="#Kundenreklamation">Siehe dazu
+auch</a>.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Verrechenbar"></a>Q:
 Verrechenbare / nicht verrechenbare Lieferscheine? Wozu ist das?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -572,7 +582,7 @@ zerstört wird. D.h. hier ist bei den Einstandspreisen manuell einzugreifen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
 ist daher das Gutschriftsverfahren eindeutig vorzuziehen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Kundenreklamation"></a>b.)
 Kundenreklamationen</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
 Kundenreklamationen erhalten Sie Ware vom Kunden zurück. Diese buchen Sie durch
@@ -616,6 +626,14 @@ definiert werden.</p>
 bereits Positionen im Lieferschein eingetragen so kann das Lager nicht mehr
 geändert werden. Gegebenenfalls sind die Positionen aus dem Lieferschein zu
 löschen, vorher in die Zwischenablage kopieren.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Welches Abbuchungs-Lager wird bei einem Lieferanten-Lieferschein vorgeschlagen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn ein Lieferschein an einen Lieferanten gesandt wird, so wird im Hintergrund
+ein verdeckter Kunde angelegt. Für diesen Kunden gilt als Standard Regel, dass
+sein Abbuchungslager das Hauptlager ist. Also wird das Hauptlager als
+Abbuchungslager für einen Lieferantenlieferschein vorgeschlagen.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann ein Lieferschein von verschiedenen Lagern abbuchen?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
