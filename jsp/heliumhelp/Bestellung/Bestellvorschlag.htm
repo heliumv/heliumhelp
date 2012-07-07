@@ -71,32 +71,14 @@ einen Bestellvorschlag?</p>
 kann ein neuer Bestellvorschlag erstellt werden. Bitte beachten Sie, dass dazu
 der bestehende Bestellvorschlag gelöscht wird.</p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Bestellvorschlag_Starten.gif" width="596" height="193"></p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Bestellvorschlag_Starten.gif" width="424" height="124"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Vor dem eigentlichen
 Start des Erzeugens des Bestellvorschlages müssen noch folgende Eingaben für
 die Berechnung des Wunsch-Liefertermines, welcher in den Bestellvorschlag
-übernommen wird gemacht werden.<br>
-</p>
-
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Q: Welche
-Lieferanten werden verwendet?</b></p>
-
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Es wird immer der
-bevorzugte Lieferant des jeweiligen Artikels automatisch in den Bestellvorschlag
-übernommen
-</p>
-
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der bevorzugte
-Lieferant ist jener, der in der Anzeige des Artikellieferanten an oberster
-Stelle gereiht ist.
-</p>
-
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie
-die Besonderheiten des <a href="../artikel/index.htm#Zentraler Artikelstamm">Zentralen
-Artikelstamms</a>.
+übernommen wird, gemacht werden.
 </p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
@@ -113,8 +95,12 @@ internen Organisation erforderlich, dass die benötigten Artikel einige Tage
 vorher bei Ihnen eintreffen. Oft wird auch von den Lieferanten der Liefertermin
 nicht als bei Ihnen eintreffend, sondern beim Ihm abgehend behandelt. Um dies zu
 berücksichtigen, wird bei den Terminen zu denen Sie die Ware tatsächlich
-benötigen noch die oben angeführte Vorlaufzeit abgezogen und dies als
-Liefertermin für die Bestellungen vorgeschlagen.<br>
+benötigen, noch die oben angeführte Vorlaufzeit abgezogen und dies als
+Liefertermin für die Bestellungen vorgeschlagen. Für die Vorbelegung siehe
+bitte Parameter: DEFAULT_VORLAUFZEIT_AUFTRAG
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
 </p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Toleranz</b></p>
@@ -122,7 +108,28 @@ Liefertermin für die Bestellungen vorgeschlagen.<br>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Dies gibt die
 Toleranzfrist für geplante Wareneingänge aus Bestellungen an, welche eventuell
 um die Toleranzfrist zu spät kommen, z.B. aufgrund geänderter Termine aus den
-Auftragsbestätigungen oder Lieferterminverschiebungen.<br>
+Auftragsbestätigungen oder Lieferterminverschiebungen.
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für die Vorbelegung
+siehe bitte Parameter: TOLERANZFRIST_BESTELLVORSCHLAG
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">D.h. Artikel die um
+die angegeben Anzahl an Tagen zu spät bei Ihnen eintreffen, werden trotzdem als
+noch rechtzeitig berücksichtigt.
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Kommt der Artikel
+nicht rechtzeitig, wird er erneut in den Bestellvoschlag mit aufgenommen.
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sollte die
+Terminsteuerung faktisch deaktiviert werden, so hat sich in der Praxis eine
+Eingabe von 999 Tagen bewährt.
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
 </p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Liefertermin für
@@ -177,6 +184,65 @@ zukünftige Lagerstandsentwicklung betrachtet werden.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><a href="../Fertigung/index.htm#Druck mehrerer Losausgaben in einer Liste">Siehe
 dazu auch Druck Losausgabe mehrerer Lose.</a></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Aufträge</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Werden hier Aufträge
+angegeben, so werden der Berechnung alle Lose der angegebenen Aufträge
+berücksichtigt.<br>
+Es gilt das oben für Lose beschriebene.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Nur die
+betroffenen Lospositionen berücksichtigen</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wird diese
+Einstellung angehakt, so werden bei der Berücksichtigung der Lospositionen nur
+diejenigen Lospositionen berücksichtigt, die sich tatsächlich anhand der
+angegebenen Losliste bzw. der Aufträge ergeben. Diese Funktion wird
+üblicherweise nur bei unsauberen Strukturen im Lager benötigt. Wenn Sie Ihr
+Lager und auch Ihre Fertigungsaufträge im Griff haben, so ist diese Funktion
+kontraproduktiv, da es vorkommen kann, dass Ware NICHT bestellt wird, obwohl es
+aus Sicht der Verbrauche notwendig wäre. Es wird damit die oben beschriebene
+Gesamtbetrachtung abgeschaltet.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Mit Nicht Lager
+Bewirtschafteten Artikeln</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ist diese
+Möglichkeit angehakt, so werden bei der Erzeugung des Bestellvorschlages auch
+noch die Nicht Lagerbewirtschafteten Artikel, die sich aufgrund des / der Lose
+ergeben in den Bestellvorschlag mit aufgenommen. Als Menge wird die beim
+Artikellieferanten eingegebene Standardmenge eingetragen, bzw. wenn diese nicht
+definiert ist wird null eingetragen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Als Termin wird der
+oben angeführte Liefertermin für Artikel ohne Reservierungen verwendet.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Q: Welche
+Lieferanten werden verwendet?</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Es wird immer der
+bevorzugte Lieferant des jeweiligen Artikels automatisch in den Bestellvorschlag
+übernommen
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der bevorzugte
+Lieferant ist jener, der in der Anzeige des Artikellieferanten an oberster
+Stelle gereiht ist.
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie
+die Besonderheiten des <a href="../artikel/index.htm#Zentraler Artikelstamm">Zentralen
+Artikelstamms</a>.
+</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wieso gibt es im Bestellvorschlag Positionen ohne Belegnummer</p>
@@ -401,6 +467,22 @@ stehen hier folgende Möglichkeiten zur Verfügung:</p>
     </tr>
   </table>
 </div>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wieso sind manche Zeilen des Bestellvoschlages blau?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Damit wird signalisiert, dass diese Artikel nicht lagerbewirtschaftet sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Ausdruck des Bestellvorschlages werden die Nicht Lagerbewirtschafteten Artikel
+mit NLG angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p>&nbsp;</p>
 
 </body>
 
