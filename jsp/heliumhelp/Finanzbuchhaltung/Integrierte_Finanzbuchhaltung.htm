@@ -694,6 +694,53 @@ nach der Auszugsnummer. Für die Errechnung des Saldos des Auszuges wird, wie
 oben beschreiben, jede Eröffnungsbuchung mitgerechnet um hier auch die
 Möglicghkeit zu schaffen, dass keine Auszugsnummer angegeben werden muss.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie sollten die Auszugsnummern der Bankkonten erfasst werden ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die richtige Eingabe der Auszugsnummern ist ein wesentlicher Beitrag zur
+Erfassungssicherheit. D.h. es <b><u>muss</u></b> gewährleistet sein, dass man
+den Ausdruck des Bankkontos neben die Kontoauszüge der Bank legen kann und die
+Salden auf den beiden Papieren stimmen auf den Cent/Rappen überein. Nur so kann
+sichergestellt werden, dass alles richtig erfasst ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Ein
+zusätzlicher Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+wird in den Konto-Details also den Buchungen im Feld Saldo der aktuelle Saldo
+des Kontos beginnend von der Buchung mit der niedrigsten Auszugsnummer bis hin
+zu der Auszugsnummer auf der der Cursor gerade steht angezeigt. D.h. es kann mit
+einem Blick geprüft werden, ob der Auszug richtig und vollständig erfasst ist.
+Auch das zu Ihrer Erfassungssicherheit.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Info:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stehen
+keine Auszugsnummern in chronologisch fortlaufender Weise zur Verfügung, so
+verwenden Sie bitte:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">entweder
+    eine eigene fortlaufende Auszugsnummer pro Kalenderjahr und schreiben Sie
+    dies auf die Bankbelege</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">verwenden
+    Sie anstatt dessen das Auszugsdatum in der Ansi Schreibweise, also
+    JJJJ-MM-TT (Jahr, Monat, Tag). Wichtig ist, dass die Chronologie erhalten
+    bleibt.</li>
+</ul>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Info:
+Im Gegensatz zu den deutschen und österreichischen Bankbelegen stellen die
+Schweizer Banken keine in sich geschlossenen fortlaufenden Kontoauszugsnummern
+zur Verfügung. Daher bitte&nbsp;</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Können
 Konten gelöscht werden?</p>
 
@@ -1167,6 +1214,40 @@ Es erscheint die Meldung </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
 Beleg ist bereits in der Finanzbuchhaltung verbucht. Im Detail sehen Sie, dass
 die Ursache der Sperre die UVA Verprobung ist.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Welche Sperren gibt es ?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es gibt zwei Arten von Sperren:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Die Geschäftsjahressperre.&nbsp;<br>
+Diese greift sehr tief in der Buchungslogik und dient schon eher der technischen
+Sicherheit. D.h. wenn alle anderen logischerweise erforderlichen Sperren (siehe
+b.) nicht greifen, greift diese Sperre zusätzlich. Diese Sperre sollte in aller
+Regel nach der Einreichung der Bilanz beim Finanzamt eingetragen werden,
+eventuell schon etwas früher.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Die Sperre(n) durch die Umsatzsteuerverprobung.<br>
+Diese automatische Sperre greift IMMER, wenn eine UVA echt ausgedruckt wird.
+Damit sind die Ein- und Ausgangsrechnungen des UVA-Zeitraumes als UVA verprobt
+gekennzeichnet und dürfen daher nicht mehr verändert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+Sperre kann von einem Anwender mit Chefbuchhalterrecht wieder aufgehoben werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gehen
+Sie dazu bitte in die Fibu, Unterer Modulreiter Sachkonten. Im Menü wählen Sie
+nun Bearbeiten, Letzte UVA Verprobung zurücknehmen, wählen das Finanzamt aus
+und bestätigen die Rücknahme.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+gehen hier davon aus, dass der Verantwortliche weiss was er buchhalterisch
+macht.<br>
+Auch diese Funktion ist für Ihre Sicherheit. Wenn die UVA beim Finanzamt
+eingereicht wurde, darf für den Zeitraum nichts mehr verändert werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
