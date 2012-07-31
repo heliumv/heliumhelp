@@ -79,13 +79,13 @@ Parametrierung des SMTP Servers, wird der interne Versanddienst aktiviert.</p>
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">fax.local</td>
       <td width="820" height="21">
         <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Unterstützt
-        der Smtpserver eine Faxweiterleiung / Faxgateway so wird diese Funktion
+        der Smtpserver eine Faxweiterleitung / Faxgateway so wird diese Funktion
         durch einen Eintrag der entsprechenden Domain aktiviert.</td>
     </tr>
   </table>
 </div>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Anmerkung
-zum Faxgateway:</p>
+zum Faxgateway / Faxweiterleitung:</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
 Faxnummern werden beim Versand eines Faxes automatisch um diese Domain ergänzt
 und das Fax wird als Email an den SMTP Postausgangsserver versandt. Der
@@ -256,7 +256,7 @@ Achten Sie darauf diese XSL Dateien ausschließlich mit geeigneten Editoren zu
 bearbeiten, wie z.B. Notepad++. Zum Thema SMTP Versand <a href="http://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">siehe
 auch</a>.</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0" class="question">Fax -
-EMail Gatewa</p>
+EMail Gateway</p>
 
 <p style="word-spacing: 0; text-indent: 0; margin: 0">Alternativ zur oben
 beschriebenen Faxweiterleitung ist auch der Versand eines EMails an einen
@@ -271,6 +271,20 @@ internationaleNummer; Rückmeldungstext für Bestätigung</p>
 dieser Funktion müssen die folgenden Parameter (Kategorie Versanddienst)
 entsprechend eingestellt sein:</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">  SMTPSERVER_FAXANBINDUNG:	Wert=1<br>  SMTPSERVER_FAXDOMAIN:	fax.xpirio.com<br>  XPIRIO_KENNWORT:		Kennwort für das Gateway</p>
+
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="question">Fax - Gateway
+für Faxmaker</p>
+
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Der Faxversand über den
+Faxmaker ist ebenfalls möglich.</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">Angeblich ist die für
+Helium V zu verwendende Option immer verfügbar. D.h. es ist für den Faxversand
+lediglich bei SMTPSERVER_FAXDOMAIN FAXMAKER.COM einzutragen.</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0">In aller Regel mach die
+Telefonanlage / der Faxmaker die Amtsholung selbst, daher muss der Parameter
+AMTSLEITUNGSVORWAHL auf ein Leerzeichen gestellt werden. Die Übergabe der
+Faxnummer mit enthaltenen Leerstellen ist entgegen der Beschreibung von Faxmaker
+bei der von uns getesteten Version möglich.</p>
 
 </body>
 
