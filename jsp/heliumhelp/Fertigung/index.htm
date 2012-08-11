@@ -1123,7 +1123,7 @@ Kopplung Losnummer an die Auftragsnummer</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 In manchen Unternehmen ist es von Vorteil, wenn die Losnummer sehr eng mit der
 Auftragsnummer korreliert. Es kann daher mit dem Parameter
-LOSNUMMER_AUFTRAGSBEZOGEN diese Verbindung hergestellt werden. Dies bewirkt
+LOSNUMMER_AUFTRAGSBEZOGEN = 1 diese Verbindung hergestellt werden. Dies bewirkt
 folgende Losnummern:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">JJ/AAAAA-PPP.</p>
@@ -1175,6 +1175,37 @@ dem Lieferschein</p>
 der Bestellung</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zur
 besseren Unterscheidung wird teilweise ein eigener Nummernkreis verwendet.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kopplung Losnummer an die Auftragsnummer mit Los-Bereichen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Zusätzlich zur oben beschriebenen Kopplung kann auch eine Auftragskopplung nach
+Bereichen realisiert werden. Stellen Sie dazu den Parameter
+LOSNUMMER_AUFTRAGSBEZOGEN auf 2.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Idee dahinter ist, dass die Losnummern einerseits den Auftragsbezug haben und
+andererseits auch einen Bezug zu verschiedenen Bereich liefern. Daher definieren
+Sie bitte in der Losverwaltung unter Grunddaten die Bereiche.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+Bereich geben Sie eine Ziffer zwischen 0-9 ein und unter Bezeichnung die von
+Ihnen gewünschte Bereichsbezeichnung, z.B. Mechanik, Antriebe, Software usw.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Anlage eines neuen Loses muss nun, wenn auch eine Auftragsnummer eingegeben
+ist (dies also kein freies Los ist), auch der Bereich eingegeben werden. Von
+Helium V wird dann für die Losnummer der nächste freie Zahlenbereich für die
+Losnummer gesucht und das Los mit dieser Nummer angelegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+ein Los versehentlich in einem falschen Bereich angelegt, so muss es im
+richtigen Bereich neu angelegt werden und das im flaschen Bereich angelegte Los
+storniert oder anderweitig verwendet werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Bezug zur Auftragsposition ist in dieser Struktur nicht gegeben.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erfassung
 zusätzlicher Fertigungsstati im Los</p>
