@@ -248,10 +248,10 @@ Artikelposition nach der Positionsart Positionsbeginn verwendet.&nbsp;</p>
     <tr>
       <td width="644" height="16">Intelligente<br>
         Zwischensumme</td>
+      <td width="644" height="16" align="center">X</td>
       <td width="644" height="16" align="center"></td>
-      <td width="644" height="16" align="center"></td>
-      <td width="644" height="16" align="center"></td>
-      <td width="644" height="16" align="center"></td>
+      <td width="644" height="16" align="center">X</td>
+      <td width="644" height="16" align="center">X</td>
       <td width="644" height="16" align="center">X</td>
       <td width="644" height="16" align="center"></td>
       <td width="644" height="16" align="center"></td>
@@ -359,6 +359,18 @@ Rechnung, also beim Druck. Werden zwischendurch Werte der Zwischensumme
 geändert, so wird dies durch ein gelb hinterlegtes Feld dargestellt, welches
 den zum letzten Druck beinhalteten Wert anzeigt. Dieser Wert wird erst beim
 nächsten Druck der Rechnung / des Beleges wieder aktualisiert.<img border="0" src="Intelligente_Zwischensumme.jpg" width="435" height="130"> </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp; </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Die
+Formulare sind so gestaltet, dass vor der Von Position die Bezeichnung der
+Zwischensumme als Überschrift gedruckt wird. </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Dort
+wo die Position Intelligente Zwischensumme eingegeben wurde, wird diese
+gegebenenfalls mit den Rabatten in Klammern angedruckt, da ja der Wert der
+Zwischensumme in der Gesamtbetrachtung der Rechnung nicht mitgerechnet werden
+dürfen. </p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stornieren
 von Bewegungsdaten</p>
@@ -501,10 +513,29 @@ Setartikel verwendet, so können die Setartikel-Positionen nur innerhalb des
 Sets verschoben werden.</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Um
 den gesamten Set zu schieben muss der Setartikel-Kopf verschoben werden.</p>
+<p class="question" style="line-height: 100%; text-indent: 0; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Q:
+Einfügen von zusätzlichen Setpositionen in ein bestehendes Set<br>
+Q: Verändern von Artikelsets in den Belegen</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:&nbsp;Es
+ist in der Praxis immer wieder erforderlich, dass angelegte Artikelsets, welche
+oft auch als Verkaufssets bezeichnet und genutzt werden, in einem spezifischen
+Verkaufsvorgang (Von Angebot bis Rechnung) verändert werden müssen.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Die
+in Helium V implementierte Logik von Sets ist, dass das in den Stücklisten
+definierte Set als Vorschlagswert in den Verkaufsbeleg übernommen wird. Wenn
+nun das Verkaufsset verändert werden sollte, so kann durch einfügen und
+löschen das Set angepasst werden. Bei der Überleitung des Sets aus dem Auftrag
+in den Lieferschein bzw. in die Rechnung wird das im Auftrag hinterlegte Set als
+Basis verwendet.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Beim
+Einfügen zusätzlicher Positionen in ein Set und damit auch bei der eventuellen
+Änderung eines Zubehörteiles stellen Sie den Cursor auf die Setposition, vor
+der der neue Artikel, die neue Setposition eingefügt werden sollte und klicken
+Sie auf einfügen <img border="0" src="Einfuegen.gif" width="32" height="26">. Wenn der neue Artikel am
+Ende des Artikelsets sein sollte, so verschieben Sie ihn danach mit den Pfeilen <img border="0" src="Sortierungs_Pfeile.gif" width="66" height="27">
+an die gewünschte Position. Wie bereits oben beschrieben können die Setartikel
+Positionen nur innerhalb des Sets verschoben werden.</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Einfügen von zusätzlichen Setpositionen in ein bestehendes Set</p>
-<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:&nbsp;</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bestimmte
 Positionsarten sollten nicht verwendet werden</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Für
