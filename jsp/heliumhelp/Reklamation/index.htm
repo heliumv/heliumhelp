@@ -227,7 +227,11 @@ wiegt der Fehler.</p>
 verwendet werden oder ist er einfach Schrott</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Rekla_Grunddaten5.jpg" width="300" height="255"></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die angegebenen
-Punkte gehen in die Formel der Lieferantenbeurteilung ein.</p>
+Punkte gehen in die Formel der Lieferantenbeurteilung ein. Wichtig ist:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für die geringste
+Schwere, also die beste Lieferung gibt es die höchsten Punkte.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die höchsten /
+maximalen Punkte sind 30. Siehe dazu auch <a href="#Formel">Formel</a>.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Behandlung</b></p>
@@ -238,13 +242,17 @@ oder ist ihm dies schlichtweg egal.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Rekla_Grunddaten6.jpg" width="297" height="279"></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auch hier gehen die
 vergebenen Punkte in die Lieferantenbeurteilung ein.</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">D.h. für die beste
+Behandlung Ihrer Reklamation, (&quot;Setzt Himmel und Hölle in Bewegung um den
+Fehler, woher er auch immer kommt, auszubessern&quot;), gibt es die höchsten
+Punkte. Siehe auch <a href="#Formel">Formel</a>.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Termintreue</b></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wie wirken sich
 Lieferungen zu falschen Terminen auf die Beurteilung Ihrer Lieferanten aus.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><a href="#Termintreue">Siehe
-unten.</a></p>
+unten</a> und siehe bitte auch <a href="#Formel">Formel</a>. Auch hier: Für die
+beste Termintreue gibt es die höchsten Punkte.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Wirksamkeit</b></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Welche Wirksamkeit
@@ -291,15 +299,33 @@ definieren. </p>
     <img border="0" src="Termintreue.gif" width="312" height="150"><br>
     Obige Tabelle bedeutet, dass bei einer zu frühen Lieferung ab dem 15.Tag
     der Lieferant für die Termintreue keine Punkte mehr bekommt. Aufgrund der
-    Formel ergibt dies keine Punkte für diesen Wareneingang.</li>
+    Formel ergibt dies keine Punkte für diesen Wareneingang.<br>
+    Für eine termingerechte Lieferung erhält der Wareneingang die höchste
+    mögliche Punkteanzahl von 30Punkten, wobei diese für den Zeitraum einer
+    Woche (in Kalendertagen) rund um den gewünschten Liefertermin definiert
+    ist.<br>
+    Die Basis für den Lieferverzug ist der Solltermin. Dieser wird je
+    Wareneingangsposition wie folgt errechnet:<br>
+    - Ist ein Ursprungs-AB-Termin definiert, so wird dieser verwendet,
+    ansonsten:<br>
+    - Ist ein AB-Termin definiert, so wird dieser verwendet, ansonsten:<br>
+    - Ist in der Bestellposition ein Positionstermin definiert, so wird dieser
+    verwendet, ansonsten:<br>
+    - wird der Termin aus den Kopfdaten verwendet<br>
+    und die abweichenden Tage der Lieferung aus dem gefundene Solltermin mit dem
+    Wareneingangsdatum des jeweiligen Wareneingangs errechnet. <a href="../Bestellung/index.htm#bestätigter Liefertermin">Siehe
+    dazu auch</a>.</li>
 </ul>
-<p class="question" style="margin:0cm;margin-bottom:.0001pt">Formel:</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Formel"></a>Formel:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Formel ist
 derzeit fest programmiert und lautet:<br>
 Termintreue x (Schwere der Reklamation + Reklamationsbehandlung)</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ist für einen
 Wareneingang keine Reklamation angegeben, so wird für Schwere und Behandlung
-die jeweils höchste definierte Punkteanzahl verwendet.</p>
+die jeweils höchste definierte Punkteanzahl verwendet.<br>
+Beachten Sie, dass um die unten angeführten Grenzwerte überhaupt erreichen zu
+können, für jeden Wert der Formel der Maximalwert der Punkte von 30 definiert
+werden muss.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Klassen:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Aus der Formel
 ergeben sich nun auch die maximal erzielbaren 1.800 Punkte.</p>
@@ -386,6 +412,59 @@ Auswertungen nach Maschinengruppen bzw. Verursacher bzw. der Kombination daraus:
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Fehlerarten_Maschinen.jpg" width="805" height="719"></p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Der 8D-Report enthält noch das Helium-Logo</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Das Logo für den 8D-Report muss eigens eingesteuert werden. Bitten Sie Ihren
+Helium V Betreuer um die Formularanpassung.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Es lassen sich nur wenige Maßnahme erfassen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es gibt im 8D-Report aus fachlichen Gründen nur drei Maßnahmen.<br>
+Kurz, mittel, langfristig. Also was machen Sie um sofort den Fehler abzustellen,
+und dass das &quot;nie mehr&quot; passiert (langfristig). Dazu gibt es je Maßnahme
+zwei Felder: die datentechnische Maßnahme, welche in den Grunddaten zu
+definieren ist und der Klartext mit dazu.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wieso hat der 8D Report nur drei Maßnahmen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+<b>8D</b> steht für die <b>acht</b> obligatorischen <b>Disziplinen</b>
+(Prozessschritte), die bei der Abarbeitung einer Reklamation erforderlich sind,
+um das zu Grunde liegende Problem zu überwinden. (<a href="http://de.wikipedia.org/wiki/8D-Report">Siehe</a>)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+sind:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D1
+Zusammenstellen eines Teams für die Problemlösung</p>
+D2 Problembeschreibung<br>
+D3 Sofortmaßnahmen festlegen<br>
+D4 Fehlerursache(n) feststellen<br>
+D5 Planen von Abstellmaßnahmen<br>
+D6 Einführen der Abstellmaßnahmen<br>
+D7 Fehlerwiederholung verhindern<br>
+D8 Würdigen der Teamleistung<br>
+Diese acht Punkte finden Sie direkt auf dem Druck der Reklamation. Damit ergibt
+sich zwangsläufig, dass nur drei Maßnahmen für die weitere Fehlervermeidung
+erforderlich sind.
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Ein Lieferant erscheint nicht in der Lieferbeurteilung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Damit ein Lieferant auch tatsächlich beurteilt wird, muss dies bei ihm auch
+aktiviert sein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+prüfen Sie, ob im Lieferanten, Konditionen Beurteilen <img border="0" src="Lieferanten_Beurteilen.gif" width="74" height="22">
+angehakt ist.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Werden von den Punkten aus der Liefergenauigkeit bei Vorliegen von Reklamationen
+diese &quot;Reklamationspunkte&quot; in Abzug gebracht?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bitte beachten Sie die Formel.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig
+ist, dass das beste Produkt die höchste Punktezahl erhalten muss.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzliche
+Info: Damit die Formel funktionieren kann, muss es für Termintreue, Schwere der
+Reklamation und Reklamationsbehandlung immer auch einen Eintrag für maximalen
+Punkte geben.</p>
 </body>
 
 </html>
