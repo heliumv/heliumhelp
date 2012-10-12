@@ -155,27 +155,6 @@ angehackt sein, damit die Formatierungsinformationen aus den Kommentardateien,
 aus den Textdateien usw. mit angedruckt werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="report_Einstallung.gif" width="370" height="380"></p>
 
-<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Praktische
-Kommandos, Bedingungen im iReport</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nachfolgend
-eine lose Sammlung praktischer Kommandos für den iReport.</p>
-
-<ol>
-  <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nur
-    Drucken wenn String Leer ist:<br>
-    <a href="new%20Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()%3e0)">new Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()>0)</a><br>
-    F_POSITION ist hier der String</li>
-  <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="new%20Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()%3e0%20&amp;&amp;%20$F{F_POSITIONSART}.equals(%22Ident%20%20%20%20%20%20%20%20%20%20%22))">new Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()>0 &amp;&amp; $F{F_POSITIONSART}.equals("Ident          "))</a></li>
-  <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</li>
-</ol>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
-Sie bitte, dass auch jeder Abschnitt seine Bedingung hat. So sind die
-Bedingungen für den PageHeader üblicherweise in diesem abgebildet (<a href="$V{IS_CURRENT_PAGE_NOT_ONE}">$V{IS_CURRENT_PAGE_NOT_ONE}</a>)
-und nicht bei jedem einzelnen Feld.
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Datenexport
 aus der Druckvorschau</p>
 
@@ -230,6 +209,147 @@ A4-Etiketten hat schon so manchen Laserdrucker ruiniert. Auch diese Formulare
 sind nur für den einmaligen Durchlauf durch den Laserdrucker gedacht. Wir
 hatten immer wieder Fälle in denen einzelne Etiketten sich vom Trägermaterial
 gelöst haben und auf der Trommel des Druckers geklebt sind.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Praktische
+Kommandos, Bedingungen im iReport</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nachfolgend
+eine lose Sammlung praktischer Kommandos für den iReport.</p>
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nur
+    Drucken wenn String Leer ist:<br>
+    <a href="new%20Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()%3e0)">new Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()>0)</a><br>
+    F_POSITION ist hier der String</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="new%20Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()%3e0%20&amp;&amp;%20$F{F_POSITIONSART}.equals(%22Ident%20%20%20%20%20%20%20%20%20%20%22))">new Boolean($F{F_POSITION}!=null&amp;&amp;$F{F_POSITION}.trim().length()>0 &amp;&amp; $F{F_POSITIONSART}.equals("Ident          "))</a></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte, dass auch jeder Abschnitt seine Bedingung hat. So sind die
+Bedingungen für den PageHeader üblicherweise in diesem abgebildet (<a href="$V{IS_CURRENT_PAGE_NOT_ONE}">$V{IS_CURRENT_PAGE_NOT_ONE}</a>)
+und nicht bei jedem einzelnen Feld.
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0">Funktionen
+die von Helium V zusätzlich für die Reportgestaltung im iReport verwendet
+werden können</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nachfolgend
+eine Sammlung ergänzender Funktionen für die Verwendung im iReport.
+Voraussetzung dafür ist, dass das lpclientpc.jar in den Classpath des iReport
+(siehe Extras, Optionen, Classpath) eingebunden ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Alle
+Funktionen sind in der Klasse com.lp.util.HelperReport gesammelt. Der Aufruf aus
+iReport entspricht immer dem Muster:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">com.lp.util.HelperReport.FUNKTION</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">boolean pruefeObCode39Konform(String
+    sString)<br>
+    Sind in dem String nur Code39 druckbare Zeichen enthalten<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String wandleUmNachCode39(String input)<br>
+    Ersetzt Umlaute mit deren Entsprechung ohne Umlaut<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Double time2Double(java.sql.Time time)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String ersetzeUmlaute(String input)<br>
+    Wandelt Ö auf Oe usw.<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String wandleUmNachCode128(String input)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String ersetzeUmlauteUndSchneideAb(String
+    input,int maxStellen)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String getWochentag(java.util.Locale
+    locale, java.sql.Timestamp tDatum)<br>
+    Liefert den Wochentagsnamen in der jeweiligen Sprache<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String ganzzahligerBetragInWorten(Integer betrag)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Integer
+    getCalendarOfTimestamp(java.sql.Timestamp tTimestamp,			Locale
+    locale)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String
+    getMonatVonJahrUndWoche(Integer iJahr, Integer iWoche,			Locale
+    locale)<br>
+    Liefert den Monatsnamen eines Jahres und einer Kalenderwoche<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Integer
+    getCalendarWeekOfDate(Date date)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Integer getCalendarWeekOfDate(String sDate, Locale
+    locale)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Boolean pruefeEndsumme(BigDecimal bdReportNettoValue,			BigDecimal bdHvValue, Double dAbweichung, String
+    listeMwstsaetze,			Locale reportLocale)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String laenderartZweierLaender(String lkzKunde,			String lkzBasis, String uidNummer, java.sql.Timestamp
+    tsEUMitglied)<br>
+    Ermittelt die Länderart des Kunden in Bezug auf die Basis (= Mandant)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">int berechneModulo10(String
+    nummer)<br>
+    'nummer' darf nur Ziffern zwischen 0 und 9 enthalten!<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">String berechneModulo10Str(String
+    nummer)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Time double2Time(Number zahl)<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Konvertierung
+    eines Strings in einen anderen Datentyp, ohne Fehlermeldung (Exception):<br>
+    BigDecimal toBigDecimal(String bigDecimal) ; // wandelt nach BigDecimal, in
+    Locale &quot;deAT&quot;<br>
+    BigDecimal toBigDecimal(String bigDecimal, Locale locale) ; // wandelt nach
+    BigDecimal in angegebener Locale<br>
+    <br>
+    BigInteger toBigInteger(String bigInteger) ; // wandelt nach BigInteger mit
+    Radix 10 (Dezimalzahlen)<br>
+    BigInteger toBigInteger(String bigInteger, int radix) ; wandelt nach
+    BigInteger mit angegebenen Radix (oktal, hex, ....)<br>
+    <br>
+    Integer toInteger(String integer) ; // wandelt nach Integer<br>
+    <br>
+    All diesen Funktionen gemeinsam: Bei einem fehlerhaften Format, oder auch
+    null als Parameter wird null anstatt einer Exception zurückgeliefert. Dies
+    muss im Report entsprechend ausgewertet werden.<br>
+    Anwendungsbeispiele:<br>
+    HelperReport.toBigDecimal(&quot;25'100,12&quot;, new Locale(&quot;de&quot;,
+    &quot;CH&quot;)) ; // deCH<br>
+    HelperReport.toBigDecimal(&quot;25.100,12&quot;) ; // deAT<br>
+    HelperReport.toBigDecimal(&quot;-25'987.65&quot;) ;<br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</li>
+</ul>
 
 </body>
 
