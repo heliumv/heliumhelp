@@ -36,220 +36,470 @@ welcher die Art des Codes definiert.</p>
 sind folgende LeadIn Zeichen definiert:</p>
 
 <div align="left">
-  <table border="1" width="578" height="19">
+  <table border="1" width="740" height="19">
     <tr>
-      <td width="214" height="19">Lead In</td>
-      <td width="942" height="19">Bedeutung</td>
+      <td width="207" height="19">Lead In</td>
+      <td width="2192" height="19">Bedeutung</td>
+      <td width="20" height="19" align="center">HTML<br>
+        Terminal</td>
+      <td width="20" height="19" align="center">Time-<br>
+        Terminal</td>
+      <td width="20" height="19" align="center">CE-<br>
+        Terminal</td>
+      <td width="20" height="19" align="center">MECS-<br>
+        Terminal</td>
+      <td width="93" height="19" align="center">ZE-<br>
+        Stift</td>
     </tr>
     <tr>
-      <td width="214" height="19">$P</td>
-      <td width="942" height="19"> Ausweisnummer muss exakt dreistellig sein.<br>
+      <td width="207" height="19">$P</td>
+      <td width="2192" height="19"> Ausweisnummer muss exakt dreistellig sein.<br>
         Danach kommt der Name des Mitarbeiters für die Personenumschaltung.
         Alles was darüber hinaus geht wird als Name des Mitarbeiters
         interpretiert.</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $L</td>
-      <td width="942" height="19"> Losnummer</td>
+      <td width="2192" height="19"> Losnummer</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $R</td>
-      <td width="942" height="19"> Reparaturnummer</td>
+      <td width="2192" height="19"> Reparaturnummer</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $T</td>
-      <td width="942" height="19"> Tätigkeit (Arbeitszeitartikel)</td>
+      <td width="2192" height="19"> Tätigkeit (Arbeitszeitartikel)</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $M</td>
-      <td width="942" height="19"> Maschinen ID (einzelne Maschine)</td>
+      <td width="2192" height="19"> Maschinen ID (einzelne Maschine)</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $V</td>
-      <td width="942" height="19"> Vorgang bestehend aus Los, Maschinen ID,
+      <td width="2192" height="19"> Vorgang bestehend aus Los, Maschinen ID,
         Tätigkeit<br>
         oder anstelle der Tätigkeit $STOP für das Ende der Maschinenzeit.</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="93" height="19" align="center"> x</td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $U</td>
-      <td width="942" height="19"> Vorgang bestehend aus Auftrag, Tätigkeit</td>
+      <td width="2192" height="19"> Vorgang bestehend aus Auftrag, Tätigkeit</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> x</td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
+$W</td>
+      <td width="2192" height="19"> Vorgang bestehend aus Los, Tätigkeit</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
+    </tr>
+    <tr>
+      <td width="207" height="19">
+$FERTIG</td>
+      <td width="2192" height="19"> Fertigmeldung des Arbeitsganges</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="93" height="19" align="center"> </td>
+    </tr>
+    <tr>
+      <td width="207" height="19">
+$ABLIEFERN</td>
+      <td width="2192" height="19"> Ablieferungsbuchung</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="93" height="19" align="center"> </td>
+    </tr>
+    <tr>
+      <td width="207" height="19">
 $O</td>
-      <td width="942" height="19"> Lagerort/Lagerplatz</td>
+      <td width="2192" height="19"> Lagerort/Lagerplatz</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $F</td>
-      <td width="942" height="19"> Fehlernummer</td>
+      <td width="2192" height="19"> Fehlernummer</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $A</td>
-      <td width="942" height="19"> Auftragsnummer z.B. auf Packliste</td>
+      <td width="2192" height="19"> Auftragsnummer z.B. auf Packliste</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> x</td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $EA</td>
-      <td width="942" height="19"> Auftragsende mit Abfrage der
+      <td width="2192" height="19"> Auftragsende mit Abfrage der
         Gut/Schlechtstück&nbsp;</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $EL</td>
-      <td width="942" height="19">
+      <td width="2192" height="19">
         Losende mit Abfrage der Gut/Schlechtstück</td>
+      <td width="20" height="19" align="center">
+      </td>
+      <td width="20" height="19" align="center">
+      </td>
+      <td width="20" height="19" align="center">
+      </td>
+      <td width="20" height="19" align="center">
+      </td>
+      <td width="93" height="19" align="center">
+      </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $B</td>
-      <td width="942" height="19"> Bestellung Nummer</td>
+      <td width="2192" height="19"> Bestellung Nummer</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $KS</td>
-      <td width="942" height="19"> Kabelschneider Nummer (= Losnummer in Fertigungsauftrag)</td>
+      <td width="2192" height="19"> Kabelschneider Nummer (= Losnummer in Fertigungsauftrag)</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $KOMMT</td>
-      <td width="942" height="19">Anwesenheitszeit Kommt</td>
+      <td width="2192" height="19">Anwesenheitszeit Kommt</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="93" height="19" align="center">x</td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $GEHT</td>
-      <td width="942" height="19">Anwesenheitszeit Geht</td>
+      <td width="2192" height="19">Anwesenheitszeit Geht</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="93" height="19" align="center">x</td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $UNTER</td>
-      <td width="942" height="19">Unterbrechungsbeginn oder Ende</td>
+      <td width="2192" height="19">Unterbrechungsbeginn oder Ende</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="93" height="19" align="center">x</td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $ENDE</td>
-      <td width="942" height="19">Tätigkeits Ende</td>
+      <td width="2192" height="19">Tätigkeits Ende</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="93" height="19" align="center">x</td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $DOS</td>
-      <td width="942" height="19"> Konfiguration Stift</td>
+      <td width="2192" height="19"> Konfiguration Stift</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> F630</td>
     </tr>
     <tr>
-      <td width="214" height="19">$ARZT</td>
-      <td width="942" height="19">Arzt Beginn oder Ende</td>
+      <td width="207" height="19">$ARZT</td>
+      <td width="2192" height="19">Arzt Beginn oder Ende</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $KRANK</td>
-      <td width="942" height="19">Krank Beginn oder Ende</td>
+      <td width="2192" height="19">Krank Beginn oder Ende</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">$BEHOERDE</td>
-      <td width="942" height="19">Behördengang Beginn oder Ende</td>
+      <td width="207" height="19">$BEHOERDE</td>
+      <td width="2192" height="19">Behördengang Beginn oder Ende</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $ANZEIGE</td>
-      <td width="942" height="19">Anzeige von Zeitsalden des Mitarbeiters</td>
+      <td width="2192" height="19">Anzeige von Zeitsalden des Mitarbeiters</td>
+      <td width="20" height="19" align="center">x</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">$ESC</td>
-      <td width="942" height="19">Abbruch</td>
+      <td width="207" height="19">$ESC</td>
+      <td width="2192" height="19">Abbruch</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $REISE</td>
-      <td width="942" height="19">Dienstreise Beginn oder Ende</td>
+      <td width="2192" height="19">Dienstreise Beginn oder Ende</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">$UEBER</td>
-      <td width="942" height="19">Überstunden Beginn</td>
+      <td width="207" height="19">$UEBER</td>
+      <td width="2192" height="19">Überstunden Beginn</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $URLAUB</td>
-      <td width="942" height="19">Urlaubsbeginn oder Ende</td>
+      <td width="2192" height="19">Urlaubsbeginn oder Ende</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">$STOR</td>
-      <td width="942" height="19"> Stornobuchung mit F630</td>
+      <td width="207" height="19">$STOR</td>
+      <td width="2192" height="19"> Stornobuchung mit F630</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $STORNO</td>
-      <td width="942" height="19"> Stornobuchung definierbar mit F734</td>
+      <td width="2192" height="19"> Stornobuchung definierbar mit F734</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $STOP</td>
-      <td width="942" height="19"> Stop der Maschinentätigkeit</td>
+      <td width="2192" height="19"> Stop der Maschinentätigkeit</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $DIENST</td>
-      <td width="942" height="19"> Dienstgang</td>
+      <td width="2192" height="19"> Dienstgang</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $_????</td>
-      <td width="942" height="19"> Sonderurlaub (frei definierbar, siehe
+      <td width="2192" height="19"> Sonderurlaub (frei definierbar, siehe
         Personal, Sondertätigkeiten)</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">$ZMxx</td>
-      <td width="942" height="19"> Zeitmodell Änderung für einen Tag für den gewählten
+      <td width="207" height="19">$ZMxx</td>
+      <td width="2192" height="19"> Zeitmodell Änderung für einen Tag für den gewählten
         Mitarbeiter. Nur auf der
 BDE Station.</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19"> $ und Kundennummer</td>
-      <td width="942" height="19">Kundennummer auf Kundenkarte</td>
+      <td width="207" height="19"> $ und Kundennummer</td>
+      <td width="2192" height="19">Kundennummer auf Kundenkarte</td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="20" height="19" align="center"></td>
+      <td width="93" height="19" align="center"></td>
     </tr>
     <tr>
-      <td width="214" height="19">$ZHHMMSS&nbsp;</td>
-      <td width="942" height="19"> Absolute Zeiteingabe</td>
+      <td width="207" height="19">$ZHHMMSS&nbsp;</td>
+      <td width="2192" height="19"> Absolute Zeiteingabe</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $I123456789012345</td>
-      <td width="942" height="19"> Material Ident danach muss $Q oder $ESC
+      <td width="2192" height="19"> Material Ident danach muss $Q oder $ESC
         eingegeben werden</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $Q123,4</td>
-      <td width="942" height="19"> Menge</td>
+      <td width="2192" height="19"> Menge</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $QENDE</td>
-      <td width="942" height="19"> Beenden der mehrfachen Mengeneingabe</td>
+      <td width="2192" height="19"> Beenden der mehrfachen Mengeneingabe</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $+</td>
-      <td width="942" height="19"> Letzte Mengeneingabe erhöhen</td>
+      <td width="2192" height="19"> Letzte Mengeneingabe erhöhen</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $-</td>
-      <td width="942" height="19"> Letzte Mengeneingabe reduzieren</td>
+      <td width="2192" height="19"> Letzte Mengeneingabe reduzieren</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
     <tr>
-      <td width="214" height="19">
+      <td width="207" height="19">
 $PLUS</td>
-      <td width="942" height="19"> Dient der Zusammenfassung von Mehreren Losen
+      <td width="2192" height="19"> Dient der Zusammenfassung von Mehreren Losen
         zu einer Zeiterfassung. Bei der Endebuchung dieser Mehrfachen Lose, wird
         die Arbeitszeit zu gleichen Teilen auf die angegebenen Lose gebucht.<br>
         Nur für die Erfassung von Fertigungs-Losen möglich.</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
   </table>
 </div>
