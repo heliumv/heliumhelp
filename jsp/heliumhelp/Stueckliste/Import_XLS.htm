@@ -1,0 +1,206 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Stücklisten-Import aus XLS Datei</title>
+</head>
+
+<body>
+
+<h1>Stücklistenimport<br>
+aus XLS Datei</h1>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+diesem&nbsp; Import steht eine Lösung für z.B. automatisch erzeugte
+Stücklisten zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+generelle Idee dahinter ist: Anhand einer Formelsammlung können mit wenigen
+Parametern sowohl Material als auch Arbeitsgänge errechnet werden. Da dahinter
+immer eine Menge an spezifischem Produktwissen steckt, haben Sie hier die
+Möglichkeit unabhängig von Helium V die ganze Berechnungspower eines externen
+Tools, ob das nun ein Spreadsheet oder ein anderes Tool ist, zu nutzen um die
+für die Materialbewirtschaftung bzw. für die Kapazitätsplanung erforderlichen
+Positionen rasch und einfach zu erzeugen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Import baut auf folgenden Definitionen auf:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Definition der Importdatei:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geben
+Sie unter System, Arbeitsplatzparameter für den Rechner mit den Daten im
+Arbeitsplatzparameter <img border="0" src="Importpfad.gif" width="287" height="49"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">DATEI_AUTOMATISCHE_STUECKLISTENERZEUGUNG
+den vollständigen Dateinamen für die Importdatei an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Sichtbarkeit muss für den verwendeten Client gegeben sein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+In der Datei werden die Blätter</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">HV_Materialpositionen</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">HV_Arbeitsplan</li>
+</ul>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">erwartet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Struktur für HV_Materialpositionen muss wie folgt aussehen:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="XLS_Import_Materialpositionen.gif" width="950" height="36"></p>
+
+<div align="left">
+  <table border="1" width="665" height="7">
+    <tr>
+      <td width="158" height="7">Ident&nbsp;</td>
+      <td width="1172" height="7">die Artikelnummer. Wird die Artikelnummer
+        nicht gefunden und ist eine Menge definiert, so wird die Position als
+        Handeingabe angelegt</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">Menge</td>
+      <td width="1172" height="7">Die Menge, in aller Regel die Stückzahl 1</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">Länge</td>
+      <td width="1172" height="7">wenn eine Mehrdimensionale Mengeneinheit
+        verwendet wird.</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">Breite</td>
+      <td width="1172" height="7">wenn eine Mehrdimensionale Mengeneinheit
+        verwendet wird.</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">Höhe</td>
+      <td width="1172" height="7">wenn eine Mehrdimensionale Mengeneinheit
+        verwendet wird.</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">Bezeichnung</td>
+      <td width="1172" height="7">Die Bezeichnung der Position wenn keine
+        Artikelnummer angegeben wurde.</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">Mengeneinheit</td>
+      <td width="1172" height="7">Die Mengeneinheit der Position.</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">Position</td>
+      <td width="1172" height="7">Der Text für die Position (siehe
+        Stücklisten)</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">Kommentar</td>
+      <td width="1172" height="7">Die Kommentarzeile mit dazu</td>
+    </tr>
+    <tr>
+      <td width="158" height="7">B-Mitdrucken</td>
+      <td width="1172" height="7">1 = angehakt, leer oder 0 = nicht angehakt</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Struktur für HV_Arbeitsplan muss wie folgt aussehen:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="XLS_Import_Arbeitsplanpositionen.gif" width="910" height="35"></p>
+
+<div align="left">
+  <table border="1" width="666" height="20">
+    <tr>
+      <td width="237" height="20">
+        <p class="answer">Ident</td>
+      <td width="1095" height="20">
+        <p class="answer">Die Artikelnummer der Tätigkeit</td>
+    </tr>
+    <tr>
+      <td width="237" height="20">
+        <p class="answer">AG</td>
+      <td width="1095" height="20">
+        <p class="answer">Die Nummer des Arbeitsganges</td>
+    </tr>
+    <tr>
+      <td width="237" height="20">
+        <p class="answer">UAG</td>
+      <td width="1095" height="20">
+        <p class="answer">Die Nummer des Unterarbeitsganges</td>
+    </tr>
+    <tr>
+      <td width="237" height="20">
+        <p class="answer">Stückzeit</td>
+      <td width="1095" height="20">
+        <p class="answer">Die Stückzeit in ms (Millisekunden)</td>
+    </tr>
+    <tr>
+      <td width="237" height="20">
+        <p class="answer">Rüstzeit</td>
+      <td width="1095" height="20">
+        <p class="answer">Die Rüstzeit in ms (Millisekunden)</td>
+    </tr>
+    <tr>
+      <td width="237" height="20">
+        <p class="answer">Maschine</td>
+      <td width="1095" height="20">
+        <p class="answer">Die Identifikationsnummer der Maschine</td>
+    </tr>
+    <tr>
+      <td width="237" height="20">
+        <p class="answer">Kommentar_kurz</td>
+      <td width="1095" height="20">
+        <p class="answer">Der Kurzkommentar des Arbeitsganges</td>
+    </tr>
+    <tr>
+      <td width="237" height="20">
+        <p class="answer">Kommentar_Lang</td>
+      <td width="1095" height="20">
+        <p class="answer">Der Langkommentar des Arbeitsganges</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+obiger Arbeitsplatzparameter definiert, so steht (ev. nach dem Neustart des
+Stücklistenmoduls) im oberen Modulreiter Positionen die Funktion des XLS
+Imports <img border="0" src="XLS_Import.gif" width="32" height="26"> zur Verfügung.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Datei sollte als Excel(R) 97/2000 oder 2003 zur Verfügung stehen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Import ist so gestaltet, dass die Daten immer hinzugefügt werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+können Sie bequem z.B. bestimmte Materialien bereits vor einpflegen und dann
+aus der Kalkulation hinzufügen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Import Funktion ist auch so gestaltet, dass auf die Datei nur lesend zugegriffen
+wird. D.h. Sie können bequem eine Stückliste nach der anderen importieren.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Import erfolgt direkt in die Stückliste. D.h. der Artikel der Stückliste und
+die Stückliste selbst müssen bereits definiert sein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>
