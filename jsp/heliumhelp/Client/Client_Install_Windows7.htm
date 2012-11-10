@@ -76,6 +76,41 @@ allerdings den Eindruck, dass hier ein 64Bit Emulator auf einem 16Bit Rechner
 läuft. Bitte setzen Sie Qualitäts-Hardware ein, die die 64Bit-Architektur echt
 unterstützen.</p>
 
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Der Helium V
+Client startet nicht immer.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Mit den seit
+Mitte/Ende 2012 ausgelieferten Windows 7 Versionen wird IPV6 als bevorzugtes
+IP-Protokoll eingesetzt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ist nun Ihr Helium V
+Server noch auf einen allgemeinen Bind (0.0.0.0) eingestellt, so kann dies, je
+nach Namensauflösung in Ihrem Netzwerk zu Problemen führen. Für eine
+umgehende Abhilfe schalten Sie bitte in den Netzwerkeigenschaften das IPV6
+Protokoll ab. Bitte Sie Ihren Helium V Betreuer den Bind Ihres Helium V Servers
+auf den Hostnamen, der zugleich auch der DNS Name sein muss, umzustellen.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Muss ich bei
+jedem Client den Hosteintrag anpassen?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Wenn in Ihrem
+Netzwerk nur ganz wenige Clients verwendet werden, so ist die Anpassung der
+Hosts-Datei der effizienteste Weg, vor allem da es vermutlich keinen DNS Server
+gibt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn es einen DNS
+Server gibt, sollte die Namensauflösung für Ihren Helium V Server dort
+eingerichtet werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achten Sie bei der
+Netzwerk-Namensvergabe auf eine strikte Trennung zwischen Intern und Extern.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">So wäre ein
+Netzwerkname wie HeliumV.com für ein internes Netzwerk grundfalsch. Er muss
+z.B. HeliumV.local lauten. Sollte Ihr IT-Betreuer dies für ein internes
+Netzwerk behaupten, so suchen Sie sich bitte einen Betreuer der sich auch bei
+Netzwerkkonfigurationen auskennt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
 </body>
 
 </html>
