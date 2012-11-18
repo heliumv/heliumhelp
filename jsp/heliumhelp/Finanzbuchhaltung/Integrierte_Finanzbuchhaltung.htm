@@ -1457,7 +1457,7 @@ für alle Fremdwährungsbuchungen mit angegeben.</p>
 werden Währung, Umrechnungskurs, Soll- / Habenbetrag angegeben.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stimmt
 der Umrechnungskurs nicht mit dem Kurs zum Beleg-/Zahldatum der Währungstabelle
-überein wird dahinter ein rotes Ausrufezeichen angedruckt.</p>
+überein wird der Kurs in Rot angedruckt.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 den Vergleich des Fremdwährungsbankkontos mit dem Kontoauszug leichter
 vergleichen zu können, haben wir die Möglichkeit der Währungsdefinition für
@@ -1492,6 +1492,50 @@ ist ein reines Hilfsmittel um die Währungsthematik etwas zu erleichtern. Die in
 Helium V integrierte Buchhaltung wird <b><u>IMMER</u></b> in Mandantenwährung
 geführt. Daher dürfen nur die Beträge in Ihrer Mandantenwährung für weitere
 Betrachtungen herangezogen werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wann sollten Kursänderungen der Währung gebucht werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Kursänderungen müssen IMMER vor der Buchung gebucht werden. Nur damit ist
+sichergestellt, dass sie auch die richtigen Kurse in Helium V eingetragen haben.
+Beachten Sie bitte, dass nachträgliche Kursänderungen:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+die davon abhängigen Belege NICHT aufgerollt werden, d.h. die bei der Buchung
+hinterlegten Kurs bleiben erhalten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Bei reinen Darstellungen in anderen Währungen, wie z.B. das Bankkonto, die
+Anzeige in der Fremdwährung durch die Kursänderung geändert wird, da ja die
+eigentlichen Buchungen ausschließlich in Mandantenwährung durchgeführt
+werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann ich das Bankkonto in Fremdwährung sehen?<br>
+Q: Wie sollte bei Buchungen auf ein Fremdwährungsbankkonto vorgegangen werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade in Export orientierten Unternehmen kommen immer wieder Konten zum
+Einsatz, die, um das Wechselkursrisiko auszuschalten, in anderen Währungen als
+die Mandantenwährung geführt werden. Hier treffen zwei Forderungen
+aufeinander: Einerseits die Forderung nach der Buchhalterisch richtigen Buchung
+in Mandantenwährung und anderseits die Forderung nach dem Überblick über die
+Salden in Fremdwährung. Dies kann in der Helium V Finanzbuchhaltung dargestellt
+werden, wenn folgende Punkte beachtet werden:</p>
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+    Sie sicher, dass die Kurse zum jeweiligen Buchungsdatum bereits unter
+    Währungen richtig eingetragen sind.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Müssen
+    <b>Wechselkurse geändert</b> werden, so <b>müssen</b> die davon
+    abhängigen Buchungen eventuell <b>neu eingebucht</b> werden. Dies trifft
+    vor allem Buchungen, bei denen kein indirekter Wechselkurs zur Verfügung
+    steht. Dies sind manuelle Umbuchungen zwischen den Konten wie z.B. vom EUR
+    Bankkonto auf das USD Bankkonto oder Eröffnungsbuchungen.</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+Kursdifferenzen eines Kontos darzustellen, wählen Sie den Ausdruck (des
+Fremdwährungskontos) in Mandantenwährung. Hier sehen Sie zum Schluss sowohl
+den Fremdwährungssaldo als auch den Fremdwährungssaldo umgerechnet in Ihre
+Mandantenwährung und damit die Kursdifferenz. Diese ist gegebenenfalls
+entsprechend manuell zu buchen.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Abgrenzung Wareneinsatz"></a>Q:
 Abgrenzungen</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
