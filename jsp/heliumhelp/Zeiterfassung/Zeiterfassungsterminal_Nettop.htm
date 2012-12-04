@@ -231,11 +231,21 @@ Code </p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wichtig: Bei dieser
 Buchung ist eine Überlieferung der offenen Losmenge möglich. Wird das Los
-überliefert, so werden die Solldaten nachgezogen, siehe dazu auch Losgröße
-ändern. Auch wenn die Losmenge erfüllt bzw. überliefert wird, wird der Status
+überliefert, so werden die Solldaten nachgezogen, siehe dazu auch <a href="../Fertigung/index.htm#Ändern der Losgröße"> Losgröße
+ändern</a>. Auch wenn die Losmenge erfüllt bzw. überliefert wird, wird der Status
 des Loses nie auf (vollständig) erledigt gesetzt. Dies dient dazu, dass die
 Steuerung ob auf ein Los noch gebucht werden kann oder nicht, manuell erfolgen
 muss (zumindest sind unsere Kunden derzeit dieser Meinung). </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann ich am
+Terminal sehen wer anwesend ist?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Ja. Durch Scannen
+/ Lesen Ihres Ausweises und nachfolgendem Tippen auf <img border="0" src="Anwesenheitsliste_anzeigen.jpg" width="39" height="37">
+werden abhängig von Ihren Berechtigungen die Anwesenheitszeiten angezeigt. Für
+die Einstellung was angezeigt werden sollte siehe bitte im Personal, Daten,
+Anwesenheitsliste für Abteilung bzw. Anwesenheitsliste für alle am Terminal
+anzeigen. </p>
 
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie wird die
 Uhrzeit des Terminals eingestellt?</p>
@@ -322,6 +332,12 @@ Optionen zur Verfügung.</p>
     </tr>
     <tr>
       <td width="160" height="9"></td>
+      <td width="144" height="9">Pause buchen</td>
+      <td width="1928" height="9">Pause (Unterbrechung) Buchung am Terminal
+        erlaubt ?</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
       <td width="144" height="9">Nachkomma-<br>
         stellen</td>
       <td width="1928" height="9">Anzahl der eingebbaren Nachkommastellen bei
@@ -343,6 +359,33 @@ Optionen zur Verfügung.</p>
         Es werden einzelne Buchungen von Losnummer und Tätigkeit erwartet. Die
         Tätigkeit wird nur erwartet, wenn keine default Tätigkeit definiert
         ist.</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Stückrückmeldung</td>
+      <td width="1928" height="9">Auf diesem Terminal werden je Arbeitsgang auch
+        die Gut-/Schlechtmengen gebucht</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Überliefern zulassen</td>
+      <td width="1928" height="9">Bei der Ablieferungsbuchung erfolgt nur eine
+        Warnung wenn die offene Menge durch die Rückmeldung überschritten
+        wird, es können jedoch mehr als geplant zurückgemeldet werden. Es wird
+        dadurch die Losgröße und die Sollmengenbuchungen jeder Losposition
+        entsprechend umgerechnet/erhöht.</td>
+    </tr>
+    <tr>
+      <td width="160" height="9">Verbindung</td>
+      <td width="144" height="9">Protokoll</td>
+      <td width="1928" height="9">Wählen Sie hier das für die Verbindung zu
+        Ihrem Helium V Server verwendete Protokoll.<br>
+        In der Regel wird für Inhouse Kommunikation http verwendet.<br>
+        Für Verbindungen in Rechenzentren (Cloud) wird ein https Protokoll mit
+        Zertifikaten verwendet.<br>
+        Da hierfür auch die Zertifikate auf der Serverseite installiert werden
+        müssen, wenden Sie sich bitte vertrauensvoll an Ihren Helium V
+        Betreuer.</td>
     </tr>
     <tr>
       <td width="160" height="9">Allgemein</td>
@@ -425,6 +468,21 @@ Optionen zur Verfügung.</p>
         überschritten, so muss der Personenbarcode erneut gescannt werden.</td>
     </tr>
     <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Sollzeitprüfung</td>
+      <td width="1928" height="9">Nach jeder Buchung erfolgt eine Prüfung ob
+        die Sollzeit bereits durch die Summe der Istzeiten überschritten ist.
+        Gegebenfalls erfolgt eine entsprechende Warnung. Bitte beachten Sie dazu
+        auch den Parameter MAXIMALE_EINTRAEGE_SOLLZEITPRUEFUNG.
+        Es werden hier maximal die angegeben Anzahl Datensätze für die Prüfung herangezogen.</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Logging</td>
+      <td width="1928" height="9">Wenn aktiviert werden alle Scanns in diese
+        Datei protokolliert.</td>
+    </tr>
+    <tr>
       <td width="160" height="9">Anzeige</td>
       <td width="144" height="9">Automatisch</td>
       <td width="1928" height="9">Automatische Anpassung der
@@ -442,6 +500,17 @@ Optionen zur Verfügung.</p>
         Die Verwendung einer festen (kleineren) Angabe empfiehlt sich bei
         parallelem Betrieb der Terminalprogramms gemeinsam mit anderen Programm
         z.B. auf einem Prüf-Rechner.</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">offene Lose</td>
+      <td width="1928" height="9">Es wird der Knopf offene Lose angezeigt.&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="160" height="9"></td>
+      <td width="144" height="9">Stückrückmeldung</td>
+      <td width="1928" height="9">Es wird der Knopf Stückrückmeldung
+        angezeigt. Damit kann ohne Zeitbuchung die Stückrückmeldung erfolgen.</td>
     </tr>
   </table>
 </div>

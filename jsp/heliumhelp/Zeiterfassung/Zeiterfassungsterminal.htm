@@ -27,8 +27,16 @@ eigentliche Stromversorgung kann im Serverschrank untergebracht werden. Damit
 wird auch das Konzept der USV wesentlich vereinfacht.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Info: </b>Die
 Kommunikation wird immer von den Terminals zum Server hin angestoßen.</p>
-<p class="question" style="margin:0cm;margin-bottom:.0001pt">Bedienung der
-Zeiterfassungsterminals (Staffport):</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Diese Terminals gibt
+es in softwaretechnisch zwei unterschiedlichen Ausführungen:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ausführung <a href="#Reine Zeiterfassung">reine
+Zeiterfassung</a> mit RFID Leser.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ausführung mit <a href="#Auftragszeiterfassung">Auftrags-Zeiterfassung</a>
+mit Barcodeleser.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Reine Zeiterfassung"></a>Bedienung der
+Zeiterfassungsterminals (Staffport) als reine Zeiterfassung:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit der Taste <img border="0" src="../Bilder/Kommt.png" width="43" height="47">&nbsp;
 wird die <b> Kommt</b> Buchung gestartet. Diese Buchungsart bleibt so lange aktiv, bis
 eine andere Buchungsart z.B. <img border="0" src="../Bilder/geht.png" width="45" height="48">
@@ -58,8 +66,8 @@ Karte angezeigt. Diese ist wiederum in der Personalverwaltung unter Ausweis
 einzugeben.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch zweimaliges
 Drücken der Taste C können Sie die Funktion wieder verlassen.</p>
-<p class="question" style="margin:0cm;margin-bottom:.0001pt">Bedienung der
-Zeiterfassungsterminals (Jobport):</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Auftragszeiterfassung"></a>Bedienung der
+Zeiterfassungsterminals (Jobport) in der Auftragszeiterfassung:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Bedienung der
 Jobport Terminals ist auf eine Erfassung von Aufträgen (Jobs) ausgelegt. Daher
 werden diese üblicherweise in Verbindung mit Barcodescannern geliefert. Auch
@@ -74,6 +82,185 @@ Code. Denken Sie bitte daran dass die Barcodescanner konfiguriert werden
 müssen. D.h. für die RS232 Kommunikation muss der Barcodescanner mittels
 Konfigurationsbarcode, liegt jedem Scanner bei, auf diese Schnittstelle
 umgeschaltet werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Bedienungsablauf
+wurde passend zu den anderen Terminal-Erfassungsarten von Helium V gestaltet. Er
+ist daher etwas anders als bei den reinen Zeiterfassungsterminals.</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Die
+Terminals sind so konfiguriert, dass sie automatisch auf „Buchung“ stehen
+und die Erfassung der Ausweisnummer anfordern.</span></p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">&nbsp;</span></p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE"><b>Erfassung
+der Anwesenheitszeit</b></span></p>
+<ol>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman" lang="DE">&nbsp;</span><span lang="DE">Lesen
+    der Ausweisnummer<br>
+    entweder über den RFID Leser oder mit dem Barcode Scanner.<br>
+    Daraufhin wird der Name für ca. 1,5 Sekunden angezeigt.</span><span lang="DE" style="font-family:Symbol"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span></span></li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Jetzt
+    wird Auftrag angezeigt.<br>
+    Scannen Sie hier die gewünschte Sondertätigkeit z.B. Kommt, Geht, Pause,
+    Ende.<br>
+    Ist die gewünschte Sondertätigkeit erlaubt, wird eine Buchung erzeugt.<br>
+    Das wir mit &quot;Eingabe akzeptiert&quot; bestätigt.<br>
+    </span><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman" lang="DE"></span><span lang="DE">das
+    Terminal geht wieder in die &quot;Ausgangsposition&quot;, lesen der
+    Ausweisnummer.</span></li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Sonderfall
+    Saldenabfrage, Scann des Codes Saldo im Feld &quot;Auftrag&quot;<br>
+    </span><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman" lang="DE"></span><span lang="DE">Hier
+    wird keine Buchung erzeugt, sondern vom Server ihr aktueller Saldenstand
+    (dieser ist üblicherweise mit Stand zu gestern Abend definiert) angefragt.</span><span lang="DE"><br>
+    Das Terminal zeigt „Daten angefordert“.<br>
+    </span><span lang="DE">Werden vom Server Daten geliefert, so wird die erste
+    Zeile angezeigt.<br>
+    </span>Mit <span lang="DE">der Enter Taste kann geblättert werden.<br>
+    Durch drücken der „A“ Taste wird die Anzeige beendet.<br>
+    Nach ca. 10 Sekunden beendet sich die Anzeige von selbst und das Terminal
+    geht wieder in die &quot;Ausgangsposition&quot;.<br>
+    Werden vom Server innerhalb von ... Sekunden keine Daten angeliefert, wird
+    eine Fehlermeldung angezeigt.</span></li>
+</ol>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Erfassung der Los-
+bzw. Auftragsbuchungen ohne Tätigkeit</b></p>
+<ol>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman" lang="DE">&nbsp;</span><span lang="DE">Lesen
+    der Ausweisnummer<br>
+    entweder über den RFID Leser oder mit dem Barcode Scanner.<br>
+    Daraufhin wird der Name für ca. 1,5 Sekunden angezeigt.</span><span lang="DE" style="font-family:Symbol"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span></span></li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Lesen
+    des Auftrages / der Losnummer im Feld &quot;Auftrag&quot;<br>
+    Hier kann entweder eine Losnummer von den Arbeitspapieren oder eine
+    Kundenauftragsnummer von der Auftrags-Packliste eingelesen werden.</span>
+    <ul>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">M<span lang="DE">it
+        dem Lesen einer Auftrags/Los Nummer wird eine Anfrage zum Server gesandt
+        um den Status des Auftrags zu ermitteln. Das Terminal zeigt &quot;Daten
+        angefordert&quot;.</span></li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Beim
+        Erhalt der Statusdaten wird kurz der Status des Auftrages angezeigt und
+        wenn aufgrund des Status die Buchung erlaubt ist, wird eine
+        entsprechende Zeitbuchung erzeugt. Dies wird mit &quot;Eingabe
+        akzeptiert&quot; bestätigt.</span></li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Bei
+        einem ungültigen Status des Loses / Auftrags bzw. wenn keine Daten
+        kommen, wird eine entsprechende Fehlermeldung angezeigt</span></li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Das
+        Terminal geht wieder in die &quot;Ausgangsposition&quot;</span></li>
+    </ul>
+  </li>
+</ol>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Erfassung der Los-
+bzw. Auftragsbuchungen mit Tätigkeit</b></p>
+<ol>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman" lang="DE">&nbsp;</span><span lang="DE">Lesen
+    der Ausweisnummer<br>
+    entweder über den RFID Leser oder mit dem Barcode Scanner.<br>
+    Daraufhin wird der Name für ca. 1,5 Sekunden angezeigt.</span><span lang="DE" style="font-family:Symbol"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span></span></li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Lesen
+    des Auftrages / der Losnummer im Feld &quot;Auftrag&quot;<br>
+    Hier kann entweder eine Losnummer von den Arbeitspapieren oder eine
+    Kundenauftragsnummer von der Auftrags-Packliste eingelesen werden.</span>
+    <ul>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">M<span lang="DE">it
+        dem Lesen einer Auftrags/Los Nummer wird eine Anfrage zum Server gesandt
+        um den Status des Auftrags zu ermitteln. Das Terminal zeigt &quot;Daten
+        angefordert&quot;.</span></li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Beim
+        Erhalt der Statusdaten wird kurz der Status des Auftrages angezeigt und
+        wenn aufgrund des Status die Buchung erlaubt ist, wird der nächste
+        Schritt, Erfassung der Tätigkeit angezeigt.</span></li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Bei
+        einem ungültigen Status des Loses / Auftrags bzw. wenn keine Daten
+        kommen, wird eine entsprechende Fehlermeldung angezeigt und das Terminal
+        geht wieder in die &quot;Ausgangsposition&quot;</span></li>
+    </ul>
+  </li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Lesen
+    der Tätigkeit im Feld &quot;Tätigkeit&quot;</span>
+    <ul>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Scannen
+        Sie die Tätigkeit vom Fertigungsbegleitschein / von der
+        Auftragspackliste.&nbsp;<br>
+        Nun wird eine entsprechende Zeitbuchung erzeugt. Dies wird mit &quot;Eingabe
+        akzeptiert&quot; bestätigt.</span></li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Das
+        Terminal geht wieder in die &quot;Ausgangsposition&quot;</span></li>
+    </ul>
+  </li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Buchung
+einer Losablieferung d.h. Rückmeldung der für das gesamte Los gefertigten
+Stückzahl:</b></p>
+<ol>
+  <li>
+    <p class="Listenabsatz" style="margin-left:0cm"><span lang="DE">Betätigen
+    der Funktionstaste F2<br>
+    Damit wird zur &quot;Ablieferungsbuchung&quot; gewechselt.</span></li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman" lang="DE">&nbsp;</span><span lang="DE">Lesen
+    Sie nun die Ausweisnummer<br>
+    entweder über den RFID Leser oder mit dem Barcode Scanner.<br>
+    Daraufhin wird der Name für ca. 1,5 Sekunden angezeigt.</span><span lang="DE" style="font-family:Symbol"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span></span></li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Lesen
+    der Losnummer im Feld &quot;Auftrag&quot;<br>
+    Hier muss die&nbsp; Losnummer von den Arbeitspapieren eingelesen werden.</span>
+    <ul>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">M<span lang="DE">it
+        dem Lesen einer Auftrags/Los Nummer wird eine Anfrage zum Server gesandt
+        um den Status des Auftrags zu ermitteln. Das Terminal zeigt &quot;Daten
+        angefordert&quot;.</span></li>
+      <li>
+        <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><span lang="DE">Beim
+        Erhalt der Statusdaten wird kurz der Status des Auftrages angezeigt und
+        wenn aufgrund des Status die Buchung erlaubt ist, wird der nächste
+        Schritt, Erfassung der Ablieferungsmenge angezeigt.</span></li>
+    </ul>
+  </li>
+  <li>
+    <p class="Listenabsatz" style="margin-left:0cm"><span lang="DE">Mit der
+    Eingabe der Ablieferungsmenge wird die entsprechende Ablieferungsbuchung
+    erzeugt. Dies wird mit &quot;Eingabe akzeptiert&quot; bestätigt.<br>
+    Hinweis: Es muss eine Eingabe gemacht werden, es ist jedoch auch 0 erlaubt.</span></li>
+  <li>
+    <p class="Listenabsatz" style="margin-left:0cm"><span lang="DE">Das Terminal
+    geht wieder in die &quot;Ausgangsposition&quot;</span></li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Ablieferungsbuchung, welche ja eine Buchung der (zusätzlich) gefertigten
+Menge ist, kann auch eine Überlieferung gebucht werden. Diese Überlieferung
+bewirkt auch, dass die Sollsatzmengen für das jeweilige Los entsprechend
+korrigiert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Für die Buchungen
+auf Aufträge / Lose sind folgende Los / Auftragsstati Voraussetzung:</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auftrag: Offen,
+Teilerledigt</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Los: Ausgegeben, In
+Produktion, Teilerledigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Für diese
 Terminals stehen auch andere Leseeinheiten zur Verfügung. Es sind dies</p>
 <ul>
