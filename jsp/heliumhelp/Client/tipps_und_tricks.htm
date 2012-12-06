@@ -444,6 +444,179 @@ Möglichkeiten:</b></p>
     Verbindungsabbrüche, Speicherfehler und ähnliches zu finden ist.</li>
 </ul>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie kann die Geschwindigkeit von Helium V bestimmt / gesteigert werden ?</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">A:
+Die Geschwindigkeit von Helium V, aus der Sicht des Anwenders, der vor dem
+Client sitzt, hängt von verschiedenen Faktoren ab.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Wir
+haben versucht hier eine Aufstellung der Punkte zusammenzustellen mit denen eine
+Abschätzung der Geschwindigkeit insbesondere die Abschätzung von
+Geschwindigkeitssteigerungen als ungefährer Richtwert, der bitte völlig
+unverbindlich ist, möglich werden sollte.</p>
+<ol>
+  <li>
+    <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Geschwindigkeit
+    der Datenbank<br>
+    Diese hängt wiederum von:</p>
+    <ul>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Geschwindigkeit der CPU -&gt; steht eine eigene CPU nur für die Datenbank zur
+Verfügung</p>
+      </li>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Wieviel kann im Ram gepuffert werden -&gt; das hängt wiederum vom<br>
+- verfügbaren Ram,<br>
+- der Größe der Transaktionen,<br>
+- der Menge an Schreiboperationen ab</p>
+      </li>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">- Die Geschwindigkeit der Platten.<br>
+        Dies ist laut unserer Erfahrung für die
+Datenbank der kritischste Punkt, Speicher ist meistens ausreichend vorhanden</p>
+      </li>
+    </ul>
+</li>
+  <li>
+    <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Geschwindigkeit des Applications-Servers</p>
+    <ul>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Geschwindigkeit der CPUs -&gt; da der Application Server ein reines Java
+Programm ist, ist hier die Geschwindigkeit der CPUs ein wesentlicher Faktor. Mit
+dazu kommt, dass für die unterschiedlichen Aufgaben, weitere Threads gestartet
+werden. Diese können auf unterschiedlichen CPU-Kernen laufen. Man kann sich das
+so ähnlich vorstellen, dass jeder Client einen eigenen Thread bekommt.<br>
+        Daher ist neben der reinen Taktzeit der CPUs auch die Frage: wieviele CPU Kerne stehen für den Application Server zur Verfügung
+        wichtig.<br>
+        Hier kommt mit dazu, steht die CPU nur für Helium V zur Verfügung oder
+        ist der Server mit anderen Aufgaben belastet. Wenn es um Geschwindigkeit
+        geht, so stellen Sie sicher dass der Rechner ausschließlich für Helium
+        V (und den Datenbankserver) zur Verfügung steht.<br>
+        Hier ist ein weiterer wichtiger Punkt die interne Struktur der Rechner /
+        des Motherboards. Wir haben hier dramatische
+        Geschwindigkeitsunterschiede bei den verschiedensten Herstellern
+        festgestellt.</p>
+      </li>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Größe des für den Applicationserver zur Verfügung stehenden Rams.<br>
+Je mehr Ram genutzt werden kann, desto weniger muss auf die Festplatte
+ausgelagert werden. Zuviel Ram würde jedoch bewirken, dass der Garbage Collector
+(das ist die Funktion die übriggebliebenen Speicher wieder hergibt und zyklisch
+in Java Programmen aufgerufen wird) seltener zusammen räumt, aber dafür zu
+lange dafür braucht. Hier kann durch Parametrierung des verwendeten Speichers
+(der wiederum unterschiedliche Arten hat) eine Optimierung vorgenommen werden.</p>
+      </li>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Geschwindigkeit der Verbindung zwischen
+        Applicationserver und Datenbankserver<br>
+Ist diese intern, also raschest möglich, oder geht sie über eine externe (Netzwerk-)Verbindung</p>
+      </li>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Anzahl
+        und Art und Weise bzw. Größe der laufenden Transaktionen.<br>
+        D.h. einerseits,</p>
+        <ul>
+          <li>
+            <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">wie
+            ist Helium V programmiert<br>
+            Bei der Programmierung sind wir von einer pesimistischen und
+            transaktionsorientierten Betrachtung ausgegangen. Pesimistisch: D.h.
+            wenn Sie einen Kunden ändern, so geht dies nur, wenn Sie den Kunden
+            für sich selbst, für diesen einen Client sperren können.<br>
+            Transaktionsorientiert: D.h. wenn ein Artikel vom Lager in den
+            Lieferschein gebucht wird, so wird dies in einer Transaktion
+            durchgeführt. Sollte es zu Abbrüchen, warum auch immer kommen, so
+            ist dadurch der Zustand vor der Transaktion gegeben. Während der
+            Dauer der Transaktion sind die Daten für die anderen Benutzer
+            gesperrt. D.h. eine angepasste Arbeitsweise trägt zur
+            Geschwindigkeit bei.<br>
+            Im Zweifelsfalle haben wir die Verarbeitung in einer Transaktion
+            gewählt. Unter Umständen kann bei manchen Aktionen dies entfernt
+            werden.<br>
+            Hier sind wir gerne bereit auf Ihre Vorschläge einzugehen und
+            gegebenenfalls die Transaktions-Verarbeitungs-Art insoweit zu
+            ändern, dass bei gleicher Sicherheit eine schnellere Verarbeitung
+            erreicht wird.</p>
+          </li>
+          <li>
+            <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">wie
+            arbeiten Sie mit Helium V<br>
+            Werden z.B. am Morgen alle Auswertungen auf zig parallel laufenden
+            Clients gestartet, oder werden umfangreiche Auswertungen /
+            Berechnungen z.B. Bestellvorschlag, Stichtagsbetragungen des Lagers
+            usw. hintereinander gestartet.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Geschwindigkeit des Clients<br>
+Da auch der Helium V Client ein reines Java Programm ist, gelten auch hier
+grundsätzlich die Forderungen an Java Programme.</p>
+    <ul>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">D.h. je schneller die CPU(s) desto schneller läuft der Client Teil.</p>
+      </li>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Und natürlich:
+        Wieviel Speicher steht für den jeweiligen Helium V Client zur
+Verfügung. Rechnen Sie hier mit einem Speicherbedarf je Helium V Client von
+mindestens 256 MB (im Ram). Hier kommt noch der Bedarf für das Betriebssystem
+hinzu, welches üblicherweise nicht unter 512MB angesetzt werden kann. D.h. wenn
+nur Betriebssystem und ein Helium V Client laufen und sonst nichts (kein Word,
+kein Outlook) empfehlen wir mindestens 1GB Ram im Client Rechner zu haben.</p>
+      </li>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Wichtig
+        ist auch die Größe und die Auflösung des Bildschirms bzw. die
+verwendete Darstellungsgröße Ihres Helium V Clients. Je größer die
+        Bildschirmfläche des genutzten Helium V Clients (Bitte in Pixel), desto
+        mehr muss vom Layoutmanager verwaltet werden (trotz Vektor orientierten
+        Grafikkarten). D.h. wenn rein die Mindestauflösung von 1024x768
+        verwendet wird ist der Client schneller und stabiler, als wenn sie in
+        maximaler Fenstergröße auf einem 1920x1080 arbeiten.</p>
+      </li>
+      <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Entscheidender Faktor ist die
+        Netzwerkanbindung zum Helium V Server.<br>
+        Genauer gesagt die sogenannten
+Latence-Zeiten. Je schneller die einzelne Paketanfrage vom Client zum Server und
+wieder zurück gelangt, desto schneller kann der Client reagieren. Hier ist die
+richtige Netzwerkparametrierung oft der entscheidende Faktor.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Wie
+hängt nun dies alles zusammen?</b></p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Im
+Client werden einerseits Daten des Servers abgefragt und angezeigt. Hier greift
+sowohl die Geschwindigkeit des Datenbankservers, des Applikationsservers, der
+Netzwerkverbindung und auch des Clients. Andererseits werden am Client Daten
+erfasst, von diesem vorverarbeitet und an den Server gesandt.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Ein
+Sonderfall sind Auswertungen wie z.B. der Druck einer Rechnung bzw. eine
+Lagerstandsliste zum Stichtag. Diese Journalauswertung wird komplett am
+Applikationsserver errechnet und grafisch im Speicher aufbereitet und erst
+danach an den Client zur Anzeige und zum Ausdruck gesandt. Daraus sieht man,
+dass auch hier alle drei (mit dem Netzwerk eigentlich vier) Komponenten im Spiel
+sind und zur gegebenen Geschwindigkeit beitragen.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Je
+mehr gleichzeitige Benutzer auf Helium V arbeiten, desto mehr beeinflussen diese
+auch das Geschwindigkeitsverhalten.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Noch
+ein wichtiger Punkt:</b></p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Das
+&quot;Abwürgen&quot; des Clients, z.B. bei einer lange dauernden
+Lagerstandsberechnung, bricht den dadurch gestarteten Serverjob nicht ab. Der
+Server merkt erst am Ende der Berechnung, dass die Daten eigentlich nicht mehr
+benötigt werden. Lassen Sie daher den Client weiter laufen und starten Sie
+gegebenenfalls einen zweiten Client. Dieser wird bei gleichem Rechner und
+gleichem Benutzernamen nicht als zusätzlicher User gewertet.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
 </body>
 
 </html>
