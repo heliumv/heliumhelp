@@ -839,7 +839,7 @@ Modul Finanzbuchhaltung können unter Grunddaten die UVA Arten definiert werden.<
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
 ist vor allem für die Definition der Kennzahlen, passend zu Ihren
 länderspezifischen Kennzahlen und für die länderspezifischen Bezeichnungen
-gedacht.</p>
+gedacht. Stimmen Sie diese bitte mit Ihrem Steuerberater ab.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
 wird ein neues Geschäftsjahr angelegt?</p>
@@ -1118,10 +1118,10 @@ UVA kann monatlich, quartalsweise oder jährlich gedruckt werden. Siehe dazu
 bitte auch den Parameter FINANZ_UVA_ABRECHNUNGSZEITRAUM.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Falsche Steuersätze in der UVA"></a>Q:
-In der UVA wird bei Steuer wird null angedruckt und man sieht keine Steuersummen.</p>
+In der UVA wird bei Steuer null angedruckt und man sieht keine Steuersummen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Es ist in der Mehrwersteuerbezeichnungstabelle der Druckname nicht definiert.
+Es ist in der Mehrwertsteuerbezeichnungstabelle der Druckname nicht definiert.
 Bitten Sie Ihren Helium V Betreuer diese entsprechend zu ergänzen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
@@ -1240,6 +1240,18 @@ in EUR abgegeben. Beachten Sie, gerade bei Quartalsweiser UVA dass trotzdem die
 Umrechnung zwischen CHF und EUR zum jeweils zum Monatsletzten gültigen Kurs
 durchgeführt wird und dass für Deutschland die Umsätze auf ganze Euro
 gerundet abgegeben werden müssen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was ist bei der Definition eines weiteren Finanzamtes noch zu beachten?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In der Regel hat jedes Land auch seine eigenen Mehrwertsteuersätze.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+für die UVA die für dieses Land abweichenden Steuersätze verwenden zu
+können, müssen diese unter System, Mandant, MwSt-Bezeichnung zugeordnet
+werden. Wird keine Zuordnung getroffen, so wird davon ausgegangen, dass diese
+Steuersätze für das Standard Finanzamt verwendet werden.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie erreiche ich Sicherheit, dass alle Beleg tatsächlich in der Fibu sind?</p>
@@ -2225,6 +2237,15 @@ den jeweiligen Beleg bzw. die Zahlung usw. sofort verbuchen. Das bedeutet:</p>
     sofort in der Buchhaltung aufscheint, was auch deutlich zur
     Buchungssicherheit beiträgt.</li>
 </ul>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo wird das Standard Finanzamt definiert?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Dies ist jenes Finanzamt, welches im System unter Mandant, Vorbelegungen 2, als
+Finanzamt eingetragen ist. Es ist dies der Vorschlagswert für die Definition
+neuer Konten. Welches Finanzamt für welches Konto gilt, wird direkt beim
+jeweiligen Konto definiert.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
