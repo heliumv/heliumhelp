@@ -1,0 +1,204 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Intelligenter Stücklisten-Import</title>
+</head>
+
+<body>
+
+<h1>Intelligenter Stücklistenimport</h1>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+diesem&nbsp;zusätzlichen Modul steht ein strukturierter Import anhand
+verschiedenen Textformate in die Stücklisten zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+Funktionalität benötigt <a href="http://neon/wiki/index.php/Intelligenter_StÃ¼cklisten_Import"> erweiterte SQL Funktionen</a> und
+steht derzeit nur unter PostgreSql zur Verfügung.<br> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+dem Anlegen der Stücklisten Kopfdaten wechseln Sie in den oberen Modulreiter
+Positionen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Importfunktion zu starten klicken Sie auf den Knopf <img border="0" src="IntStklImp1.gif" width="30" height="26">
+Import.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+nun erscheinenden Dialog</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">wählen
+Sie eine Textdatei <img border="0" src="IntStklImp2.gif" width="509" height="31"> mit den
+Stücklistendaten durch Klick auf <img border="0" src="IntStklImp3.gif" width="53" height="26"> aus.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+erhalten Sie eine entsprechende Vorschau der Textdaten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie nun anhand der Vorschau die Positionen der Felder</p>
+
+<div align="left">
+  <table border="1" width="583" height="11">
+    <tr>
+      <td width="211" height="11">Bauteil</td>
+      <td width="955" height="11">Die Bezeichnung des Artikels bzw. dessen
+        Artikelnummer in Ihrem Helium V Artikelstamm<br>
+        Die dafür im Artikelstamm durchsuchten / zugeordneten Felder sind: </td>
+    </tr>
+    <tr>
+      <td width="211" height="11">Bauform</td>
+      <td width="955" height="11">Hier wird in Helium V das Feld Bauform (Reiter
+        Technik)&nbsp; durchsucht</td>
+    </tr>
+    <tr>
+      <td width="211" height="11">Menge</td>
+      <td width="955" height="11">Der numerische Wert dieser Spalte wird als
+        Menge übernommen</td>
+    </tr>
+    <tr>
+      <td width="211" height="11">Positionsnummer</td>
+      <td width="955" height="11">Der Inhalt dieser Spalte wird unter
+        Positionsnummer eingetragen.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
+dem Dateiauswahldialog definieren Sie</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="IntStklImp4.gif" width="466" height="25"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<div align="left">
+  <table border="1" width="581" height="15">
+    <tr>
+      <td width="291" height="15">Anzahl der Kopfzeilen</td>
+      <td width="871" height="15">&nbsp;Nach der Anzahl dieser Zeilen beginnen
+        die echten Daten</td>
+    </tr>
+    <tr>
+      <td width="291" height="15">Trennzeichen</td>
+      <td width="871" height="15"></td>
+    </tr>
+    <tr>
+      <td width="291" height="15">Kopfzeile mit Feldnamen</td>
+      <td width="871" height="15">D.h. aus der Kopfzeile können die Feldnamen
+        herausgelesen werden. Die erwarteten Feldnamen sind:<br>
+      </td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie nun die Positionen der Felder im unteren Teil des Dialoges.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+markieren Sie z.B. das Feld Positionsnummer mit der Maus und klicken Sie dann <br>
+<img border="0" src="IntStklImp5.gif" width="335" height="29"> auf die beiden doppelten Pfeile.<br>
+Damit werden Beginn und Ende der Markierung als die Position in der Textdatei
+für das gewählte Feld, in unserem Falle die Positionsnummer, übernommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+klicken Sie auf Vorschau <img border="0" src="IntStklImp6.gif" width="106" height="33"> um im unteren
+Teil die aufgesplitteten Daten zu sehen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+diese so wie von Ihnen gewünscht, so klicken Sie bitte auf Import <img border="0" src="IntStklImp7.gif" width="104" height="26"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+wird versucht anhand der angegebenen Daten aus Bauteil und Bauform den je Zeile
+am besten passenden Artikel in Ihrem Artikelstamm zu finden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+einigen Sekunden, abhängig von der Menge der Daten erhalten Sie die
+Import-Liste in der Sie die Übersetzungen zu Ihren Artikeln sehen. Beachten Sie
+dabei bitte die Spalte <b>gefunden</b>. Hier wird angezeigt wieviele passenden
+Artikel zu diesem Text gefunden wurden. Wurden mehr wie 1 Artikel gefunden, so
+kann durch Klick in das Feld Artikel aus den weiteren gefundenen Artikeln
+ausgewählt werden. <img border="0" src="IntStklImp8.gif" width="123" height="43"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+prüfen Sie die Liste und passen Sie die Ergebnisse so an, dass der richtige
+Artikel (aus Ihrem Artikelstamm) bei der jeweiligen Position eingetragen ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+oft viele gleichlautende Positionen&nbsp; (=Zeilen) gegeben sind, gibt es links
+unten den Knopf Übernehmen. Damit wird die von ihnen getroffene
+Artikeldefinition in die gleichlautenden Positionen übernommen. Gleichlautend
+bedeutet, dass, ausgehend von der selektierten Zeile alle Zeile aktualisiert
+werden, bei denen Bauteil und Bauform den Werten der gewählten Zeile
+entsprechen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+können einfach auch Artikelnummern in der Artikelnummernspalte eingegeben
+werden. Öffnen Sie dazu gegebenenfalls einen zweiten Helium V Client um den
+richtigen Artikel zu finden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+nun alle Zeilen richtig eingestellt, so wird durch Klick auf <img border="0" src="IntStklImp7.gif" width="104" height="26">
+die Übertragung in die Stücklistenpositionen gestartet. Es werden dabei alle
+Positionen für die anhand der Artikelnummer (der Import-Liste) ein Artikel
+gefunden wurde als Ident-Nummern Position übernommen. Alle anderen Positionen
+(bei denen das gefunden auf 0 steht) werden so übernommen, dass wenn unter
+Bezeichnung (rechte Spalte) etwas eingegeben wurde, wird diese Eingabe in die
+Bezeichnung der Handeingabe übernommen. Ansonsten wird der Inhalt von Bauteil
+und Bauform in die Bezeichnung der Handeingabe eingetragen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+wird das Fenster geschlossen und Sie sehen die übernommenen Daten in Ihrer
+Stückliste.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie wird gesucht?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es werden im Artikel die Felder Bezeichnung und Artikelnummer nach den Feldern
+aus Bauteil und Bauform durchsucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Texte in Bezeichnung haben eine höhere Wertigkeit.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+zutreffenden Werte die in der Bezeichnung weiter links stehen haben eine höhere
+Wertigkeit.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet: Damit die Suche gute Daten findet, ist es wichtig dass:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+die Bezeichnungen in Ihrem Artikelstamm immer in der gleichen Art und Weise
+bezeichnet werden</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+dass die wichtigen Daten (z.B. 10nF) weiter links stehen als nicht so wichtige
+Daten (z.B. Toleranz).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+</body>
+
+</html>

@@ -1715,7 +1715,8 @@ folgende Felder im CSV Format zur Verfügung. </p>
 Bezeichnung; Kurzbezeichnung; Zusatzbezeichnung; Zusatzbezeichnung2; Artikelart;
 Mengeneinheit; Artikelgruppe; Artikelklasse; Referenznummer; MwSt-Satz; Verkaufspreisbasis;
 VK-Basis gültig ab; Fixpreis1; Rabattsatz1; Gültig ab1; Fixpreis2; Rabattsatz2;
-Gültig ab2; Fixpreis3; Rabattsatz3; Gültig ab3 </p>
+Gültig ab2; Fixpreis3; Rabattsatz3; Gültig ab3; [Revision; Index; Chargenbehaftet;
+Seriennummernbehaftet] </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
@@ -1812,6 +1813,27 @@ Sie bei der Erstellung der Daten für den Import auf folgendes: </p>
     <tr>
       <td width="210" height="18">Gültig ab3</td>
       <td width="1164" height="18">TT.MM.JJJJ</td>
+    </tr>
+    <tr>
+      <td width="210" height="18"> Revision</td>
+      <td width="1164" height="18">Optional (wenn dann alle vier zusätzlichen
+        Spalten)<br>
+        Revision des Artikels</td>
+    </tr>
+    <tr>
+      <td width="210" height="18">Index</td>
+      <td width="1164" height="18">Index des Artikels</td>
+    </tr>
+    <tr>
+      <td width="210" height="18">Chargenbehaftet</td>
+      <td width="1164" height="18">0 ... nicht Chargen geführt, 1 ... Chargen
+        geführt</td>
+    </tr>
+    <tr>
+      <td width="210" height="18">Seriennummernbehaftet</td>
+      <td width="1164" height="18">0 ... nicht Seriennummern geführt, 1 ...
+        Seriennummern geführt.<br>
+        Wenn Seriennummern geführt, dann kann es nicht Chargen geführt sein.</td>
     </tr>
   </table>
 </div>
