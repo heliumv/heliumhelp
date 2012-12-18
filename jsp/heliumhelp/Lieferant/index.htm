@@ -174,7 +174,8 @@ Datei ist wie folgt:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ident; Artikelnummer-Lieferant;
 Bezeichnung-Lieferantenartikel; Einzelpreis; Rabatt; Nettopreis; Preis-ist-gültig-ab;
 Menge; Mindestbestellmenge; Verpackungseinheit; Rabattgruppe; Herstellerbezeichnung-verwenden;
-Webshop [; Staffelmenge; Staffelrabatt; Staffelpreis; Staffel-gültigab]<br>
+Webshop[; VK_Preisbasis; VK_Preisbasis-gültigab;&nbsp; [; Staffelmenge; Staffelrabatt; Staffelpreis;
+Staffel-gültigab]]<br>
 </p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Sind für diesen
@@ -184,7 +185,7 @@ werden sie neu angelegt.</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hinweis:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Hinweis:</b></p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wird keine Ident
 (Ihre eigene Artikelnummer) übergeben, so wird versucht, anhand der Kombination
@@ -205,6 +206,22 @@ boolschen Werte Herstellerbezeichnung-verwenden;
 Webshop müssen mit 0 für Falsch und 1 für Wahr übergeben werden. Wichtig ist
 auch dass das Datum in TT.MM.JJJJ übergeben wird.</p>
 
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Hinweis:</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Menge wird in das
+Feld Standardmenge importiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+beiden Einträge VK_Preisbasis (Verkaufs-Preisbasis) und VK_Preisbasis-gültigab
+sind optional.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+hier Werte angegeben, so wird beim jeweils gefundenen Artikel die
+Verkaufspreisbas mit dem neuen Gültig Ab Datum eingetragen. Damit haben Sie die
+direkte Möglichkeit, über Änderungen der Lieferanten Preise auch Ihre
+Verkaufspreise der jeweiligen Lieferantenartikel zu pflegen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Einträge ab Staffelmenge sind optional, es müssen aber, wenn verwendet, alle
