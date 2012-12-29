@@ -222,19 +222,6 @@ wurden mit diesem Wareneingang geliefert.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ich
 einer Bestellung eine Eingangsrechnung zuordnen?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Siehe bitte <a href="#Eingangsrechnungszuordnung">Eingangsrechnungszuordnung</a>.</p>
-<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Können die
-Transportkosten in einer anderen Währung als die Bestellung erfasst werden?</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Sie finden rechts
-neben dem Feld TP-Kosten (Transportkosten) einen Knopf, der mit der Währung der
-Bestellung beschriftet ist. <img border="0" src="Transportkosten_Aendern.gif" width="60" height="25">
-Damit gelangen Sie in einen Dialog in dem Sie als Rechenhilfe die
-Transportkosten in einer anderen Währung und zu einem anderen Stichtag für den
-Umrechnungskurs als der Wareneingang erfasst werden können.</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Transportkosten_in_anderer_Waehrung.jpg" width="400" height="274"></p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie,
-dass dies nur eine Rechenhilfe ist. Die Verbuchung der Transportkosten erfolgt
-immer in der Bestellwährung.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie wirkt der allgemeine Rabatt in Bezug auf den zurückgepflegten Lieferantenpreis.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Dieser wird beim
 Rückeintragen nicht berücksichtigt.</p>
@@ -281,6 +268,31 @@ oder eben andere Benutzer festzuhalten. Wenn auf einer Wareneingangsposition ein
 Kommentar hinterlegt ist, wird dies in der linken Spalte gekennzeichnet.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../Bilder/WEP_Kommentar.jpg" width="148" height="167">
 </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie werden Transportkosten richtig erfasst?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Transportkosten zu Wareneingängen sollten, auch wenn sie oft als Position
+mitbestellt werden (müssen), nicht als Handeingabe oder Artikel im Wareneingang
+zugebucht werden, sondern dem Wareneingang als Kostenfaktor zugebucht werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dazu
+gibt es in den Details des jeweiligen Wareneingangs die Felder&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Transportkosten.gif" width="251" height="97"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">TP-Kosten
+= Transportkosten, Zoll-Kosten, Bankspesen und sonstige Spesen. Als Gesamtheit
+Anlieferkosten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Erfassung der Anlieferkosten in diesen Feldern bewirkt, dass diese Kosten
+anteilig auf die Positionen des Wareneingangs aufgeschlagen werden. Die
+Verteilung der gesamten Anlieferkosten erfolgt nach Positionswert. D.h. die
+Position mit dem höchsten Wert hat auch die höchsten Anlieferkosten zu tragen.
+D.h. der Einstandspreis der Positionen erhöht sich um den Faktor der anteiligen
+Transportkosten (genauer der gesamten Anlieferkosten).</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie werden Transportkosten, Anlieferrabatt und Anlieferpreis berücksichtigt?<br>
@@ -341,6 +353,20 @@ darauf gebucht werden. Wir gehen grundsätzlich davon aus, dass der Warenzugang
 einer Bestellung mit Transportkosten auch entsprechende, den tatsächlichen
 Kosten entsprechende Preise und somit Werte hinterlegt hat.
 </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Können die
+Transportkosten in einer anderen Währung als die Bestellung erfasst werden?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Sie finden rechts
+neben dem Feld TP-Kosten (Transportkosten) einen Knopf, der mit der Währung der
+Bestellung beschriftet ist. <img border="0" src="Transportkosten_Aendern.gif" width="60" height="25">
+Damit gelangen Sie in einen Dialog in dem Sie als Rechenhilfe die
+Transportkosten in einer anderen Währung und zu einem anderen Stichtag für den
+Umrechnungskurs als der Wareneingang erfasst werden können.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Transportkosten_in_anderer_Waehrung.jpg" width="400" height="274"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie,
+dass dies nur eine Rechenhilfe ist. Die Verbuchung der Transportkosten erfolgt
+immer in der Bestellwährung.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Transportkosten zuordnen"></a>Q:
 Muss ich die Transportkosten zusätzlich als Aufwand einem Auftrag zuordnen?
