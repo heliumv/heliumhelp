@@ -45,7 +45,7 @@ Seiten Helium v werden für den Zugang zum Server nur zwei Benutzer&nbsp;
 verwendet, egal wieviele gleichzeitige Benutzer in Ihrem Helium V arbeiten. Beim
 Einsatz der Datenbankserver ist die zukünftige Größenentwicklung der
 Datenbank und die eventuellen zusätzlichen auswertenden Zugriffe, welche ev.
-außerhalb von Helium V von Ihren Mitarbeitern bereitgestellt werden zu
+außerhalb von Helium V bzw. in manchen Spezialabfragen aus den Reports von Ihren Mitarbeitern bereitgestellt werden zu
 beachten. Denken Sie bei der Größenentwicklung auch an die Dokumentenablage.
 </P>
 <P STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Diese
@@ -73,6 +73,52 @@ gestützte Unternehmen, mit einem Datenverlust / nicht verfügbaren Daten von
 nur <b>drei Tagen</b> zum Großteil nach einem Jahr in die <b>Insolvenz</b>
 geschlittert sind.
 </P>
+
+<h1>Speichereinstellungen</h1>
+<p STYLE="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Für
+den Helium V Server werden, abhängig vom Betriebssystem und der verwendeten
+Java VM (JDK) folgende Einstellungen verwendet. Bitte beachten Sie, dass für
+die Clients eigene Einstellungen erforderlich sind.</p>
+<div align="left">
+  <table border="1" width="555" height="12">
+    <tr>
+      <td width="1461" height="12">Betriebssystem</td>
+      <td width="255" height="12">Speicher</td>
+      <td width="465" height="12">Xms</td>
+      <td width="483" height="12">Xmx</td>
+    </tr>
+    <tr>
+      <td width="1461" height="12">32Bit, JDK 1.6.0_5 bis 1.6.0_xx</td>
+      <td width="255" height="12">2GB</td>
+      <td width="465" height="12">512m</td>
+      <td width="483" height="12">768m</td>
+    </tr>
+    <tr>
+      <td width="1461" height="12">32Bit, JDK 1.6.0_5 bis 1.6.0_xx</td>
+      <td width="255" height="12">4GB</td>
+      <td width="465" height="12">768m</td>
+      <td width="483" height="12">1280m</td>
+    </tr>
+    <tr>
+      <td width="1461" height="12">64Bit, JDK 1.6.0_5 bis 1.6.0_xx (64Bit)</td>
+      <td width="255" height="12">4GB</td>
+      <td width="465" height="12">768m</td>
+      <td width="483" height="12">1280m</td>
+    </tr>
+    <tr>
+      <td width="1461" height="12">64Bit, JDK 1.6.0_5 bis 1.6.0_xx (64Bit)</td>
+      <td width="255" height="12">16GB</td>
+      <td width="465" height="12">2048m</td>
+      <td width="483" height="12">4096m</td>
+    </tr>
+    <tr>
+      <td width="1461" height="12">64Bit, JDK 1.6.0_5 bis 1.6.0_xx (64Bit)</td>
+      <td width="255" height="12">32GB</td>
+      <td width="465" height="12">4096m</td>
+      <td width="483" height="12">8192m</td>
+    </tr>
+  </table>
+</div>
 
 </body>
 
