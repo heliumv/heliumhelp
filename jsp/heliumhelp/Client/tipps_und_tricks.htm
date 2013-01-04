@@ -6,7 +6,7 @@
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
-<title>Drucken</title>
+<title>Tipps und Tricks</title>
 </head>
 
 <body>
@@ -444,7 +444,7 @@ Möglichkeiten:</b></p>
     Verbindungsabbrüche, Speicherfehler und ähnliches zu finden ist.</li>
 </ul>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Geschwindigkeit"></a>Q:
 Wie kann die Geschwindigkeit von Helium V bestimmt / gesteigert werden ?</p>
 
 <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">A:
@@ -569,6 +569,12 @@ nur Betriebssystem und ein Helium V Client laufen und sonst nichts (kein Word,
 kein Outlook) empfehlen wir mindestens 1GB Ram im Client Rechner zu haben.</p>
       </li>
       <li>
+        <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Werden
+        mehrere Helium V Clients parallel eingesetzt, so gehen Sie davon aus,
+        dass für jeden Helium V Client zusätzlich mindestens 256MB Ram zur
+        Verfügung stehen sollten.</p>
+      </li>
+      <li>
         <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Wichtig
         ist auch die Größe und die Auflösung des Bildschirms bzw. die
 verwendete Darstellungsgröße Ihres Helium V Clients. Je größer die
@@ -584,7 +590,11 @@ verwendete Darstellungsgröße Ihres Helium V Clients. Je größer die
         Genauer gesagt die sogenannten
 Latence-Zeiten. Je schneller die einzelne Paketanfrage vom Client zum Server und
 wieder zurück gelangt, desto schneller kann der Client reagieren. Hier ist die
-richtige Netzwerkparametrierung oft der entscheidende Faktor.</p>
+richtige Netzwerkparametrierung oft der entscheidende Faktor.<br>
+        Zusätzlich kommt hinzu, dass der eingesetzte Netzwerkswitch die
+        geforderte Performance bringen muss. Setzen Sie manageable Switch ein um
+        feststellen zu können, bei welchen Verbindungen Verbesserungsbedarf
+        besteht.</p>
       </li>
     </ul>
   </li>
@@ -616,7 +626,71 @@ Server merkt erst am Ende der Berechnung, dass die Daten eigentlich nicht mehr
 benötigt werden. Lassen Sie daher den Client weiter laufen und starten Sie
 gegebenenfalls einen zweiten Client. Dieser wird bei gleichem Rechner und
 gleichem Benutzernamen nicht als zusätzlicher User gewertet.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was kann eine Aufrüstung des Servers bringen</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">A:
+Die Geschwindigkeit von Helium V, aus der Sicht des Anwenders, der vor dem
+Client sitzt, hängt von verschiedenen Faktoren ab. Als Einleitung siehe bitte
+obige Aufstellung.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Da
+immer wieder gefragt wird, was denn ein neuer Server bringen kann, hier eine
+kurze Zusammenfassung mit unverbindlichen Richtwerten / Faktoren wie sich eine
+Änderung gegenüber dem Verhalten auswirken kann:</p>
+<ul>
+  <li>
+    <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Mehreren
+    CPU Kerne werden sich auswirken, insbesondere wenn gleichzeitig mehrere
+    Benutzer darauf arbeiten.<br>
+    Ich würde (als Gefühl) einen Faktor von 0,5 je CPU Kern rechnen.<br>
+    Beispiel: altes System 2 Kerne, neues System 4Kerne, Steigerung ca. 50%</li>
+  <li>
+    <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Eine
+    schnellere Taktfrequenz der CPU wird sich auswirken, ich würde hier auch
+    von 0,5 ausgehen.<br>
+    CPU Takt alt: 2GHz, CPU Takt neu 3GHz, Steigerung auf ca. 30%</li>
+  <li>
+    <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Was
+    sich deutlich auswirkt ist, wenn der Server NUR für Helium V zur Verfügung
+    steht.</li>
+  <li>
+    <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Schnelleren
+    Platten und bessere Hardwarestruktur (North &amp; South-Bridge, Rambus usw.)
+    tragen ebenfalls dazu bei</li>
+</ul>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Eine
+Bremse für die gefühlte Geschwindigkeit können, besonders für die Anwender,
+&quot;mangelnde&quot; Speicher für die eine Anzahl für gleichzeitige Nutzung
+auf Terminal Servern sein.</p>
 <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b><u>Wichtiger
+Hinweis:</u></b></p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Wir
+gehen hier von idealen Netzwerkbedingungen aus. Leider mussten wir in der Praxis
+immer wieder feststellen, dass viel Zeit und Geld in die Hardware investiert
+wird, aber grundsätzliche Dinge wie interne Domainstrukturen, ordentliche
+Netzwerkinfrastruktur, Netzwerkverkabelungen die tatsächlich vermessen sind,
+der Einsatz von Netzwerkswitch, die auch die geforderte Performance bringen
+hintangestellt wird. Denken Sie hier auch daran, dass manche Rechner ganz
+versteckt verseucht sein können. Dies finden Sie nur durch eine umfassende
+Netzwerkanalyse. Bemerkt wird es oft nur dadurch, dass die Mitarbeiter über ein
+langsames Verhalten klagen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was kann eine Aufrüstung des Clients bringen ?</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">A:
+Für eine Abschätzung gehen Sie einerseits bei der Steigerung der
+Verarbeitungsgeschwindigkeit für CPU und Speicher von den für Server
+angeführten Punkten aus. </p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">GigaBit
+Netzwerke und Performance der Switch wirken sich eklatant in der gefühlten
+Verarbeitungsgeschwindigkeit aus.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zu
+Geschwindigkeitsvergleichen generell.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Gehen
+Sie hier nur von reproduzierbaren Messergebnissen aus.</p>
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Als
+Mensch hat man sich an die bessere Geschwindigkeit sofort gewöhnt und nach dem
+dritten Aufruf z.B. einer Artikelliste ist es schon völlig normal, dass diese
+so schnell ist.</p>
 </body>
 
 </html>
