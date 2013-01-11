@@ -32,7 +32,7 @@ Artikels.</p>
 Da die Stücklisten sich immer auf Artikel beziehen und die Artikel
 Mengeneinheiten haben, können mit der Helium V Stücklistenverwaltung auch
 Rezepturen abgebildet werden. Hier sind dann die gefertigten Produkte ein
-&quot;Mengeneinheit&quot; (z.B. kg, l) des Artikels.</p>
+&quot;Mengeneinheit&quot; (z.B. kg, l) des Artikels. Siehe dazu auch <a href="#Erfassungsfaktor">Erfassungsfaktor</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erklärung
 der <a href="../Fertigung/Stueckliste_Fertigung.htm">Zusammenhänge Stückliste
@@ -221,7 +221,7 @@ Unterstückliste mit einkopiert. Es erfolgt KEINE Kopie der
 Stücklistenstruktur.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mengeneinheiten
-der Stückliste, Dimensionen</p>
+in der Stückliste, Dimensionen, in den Stücklistenpositionen</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
 dazu auch <a href="../artikel/Mengeneinheit.htm">Mengeneinheit</a>.</p>
@@ -249,6 +249,11 @@ ist. Sie kann je Stücklistenposition definiert werden. Voraussetzung: Es gibt
 für die Zielmengeneinheit entsprechende Umrechnungsfaktoren anhand der
 Mengeneinheiten Definition, welche im Modul System unterer Modulreiter System,
 unterer Reiter Sprache und Modulreiter Einheitkonvertierung definiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Stückliste selbst wird immer für ein Mengeneinheit des
+Stücklisten-Kopf-Artikels geschrieben. Eventuell ist dies vom <a href="#Erfassungsfaktor">Erfassungsfaktor</a>
+abhängig.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Verschnittfaktoren</p>
 
@@ -1038,6 +1043,86 @@ so der oft vorhandene Produktwildwuchs reduziert wird. D.h. dass immer mehr
 standardisierte Artikel eingesetzt werden. Dies wirkt sich auf die
 Verfügbarkeit, die Lagerbevorratung und auch auf die Stückkosten der Teile aus
 und trägt somit zur effizienteren Produktion bei.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Erfassungsfaktor"></a>Q:
+Wozu dient der Erfassungsfaktor?<br>
+Q: für welche Menge wird eine Stückliste geschrieben?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+die Stückliste dient dazu um eine Mengeneinheit eines Artikels, wer nennen dies
+auch den Stücklisten-Kopf-Artikel zu produzieren. Ist z.B. Der Kopfartikel mit
+einer Mengeneinheit kg definiert, so definiert die Stückliste wieviel von
+welchem Material Sie benötigen um ein kg des Kopfartikels erzeugen zu können.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dem Erfassungsfaktor definieren Sie eine eventuelle Umrechnung auf eine andere
+Erfassung. Beispiele dazu sind:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+In der Küche sind die Rezepte in aller Regel für vier Portionen ausgelegt.
+Also ein Erfassungsfaktor von 4.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Denken Sie ihr Produkt z.B. in Gebindegrößen, so sind hier die Gebindemengen
+angegeben. Z.B. hat das Fass in dem das Kunststoffgranulat abgefüllt wird immer
+100 kg, das Granulat selbst wird aber in kg Mengengeführt, in den
+Stücklistenpositionen aber immer der Inhalt von einem Fass angegeben, so muss
+der Erfassungsfaktor auf 100 (kg) stehen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel aus dem veredelnden Handel:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aufgabe:
+Es wird Kunststoffmaterial das lose geschüttet angeliefert wird gemahlen und in
+Fässern zu 100kg abgefüllt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sowohl
+das Rohmaterial als auch das gemahlene werden in kg bewirtschaftet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Artikel sind angelegt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Rohmaterial ungemahlen, Mengeneinheit kg</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Material gemahlen, Mengeneinheit kg</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Gebinde, Fass für 100kg</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+gibt eine Stückliste um das Material gemahlen zu produzieren.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Stücklistenpositionen sind eingetragen:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">100
+kg Rohmaterial ungemahlen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1Stk
+Gebinde</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Würde
+nun bei dieser Stückliste der Erfassungsfaktor auf den default Wert 1 belassen,
+so würde dies bedeuten: Um ein kg Material gemahlen zu erzeugen werden 100kg
+Rohmaterial benötigt. D.h. für die Denkweise in produzierten Fässern (beim
+Schreiben der Stückliste), stellen Sie den Erfassungsfaktor, passend zu unserem
+Beispiel auf 100. Das bedeutet also mit den Materialpositionen der Stückliste
+werden 100 Mengeneinheiten des Fertigproduktes erzeugt, in unserem Falle also
+100kg.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dass
+der Erfassungsfaktor auch für die Arbeitspläne gilt ist für uns
+selbstverständlich. Siehe dazu auch die nachfolgende Beschreibung.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie sind die Stücklisten in der Kunststofffertigung richtig anzulegen.</p>
 
