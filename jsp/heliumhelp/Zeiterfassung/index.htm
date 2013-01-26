@@ -765,6 +765,28 @@ Mitarbeiter erst nach seinem Eintritt ein Zeitmodell zugeordnet, so erfolgen die
 Abrechnungen wie wenn der Mitarbeiter erst mit dem Zeitmodell eingetreten wäre.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Die Monatsabrechnung dauert (viel zu lange)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade in Installationen bei denen bestehende Daten von anderen Systemen
+übernommen wurden kommt es manchmal vor, dass (anfänglich) die
+Monatsabrechnung deutlich länger dauert als man dies erwarten würden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hintergrund
+ist folgender:<br>
+In der Monatsabrechnung muss auch der aktuelle Urlaubsanspruch berechnet und
+gegebenenfalls aufgerollt werden. Die Urlaubsaufrollung funktioniert nun wie
+folgt:<br>
+Ist im aktuellen Jahr kein Urlaub eingetragen, so wird der Urlaubsanspruch vom Vorjahr verwendet. Ist auch hier kein Anspruch eingetragen so wird wiederum das
+Vorjahr verwendet. Es wird hier bis zum Eintrittdatum des Mitarbeiters zurückgesucht
+und von da weg der Urlaub aufgerollt. Ist nun, z.B. bei übernommenen Daten noch überhaupt
+kein Urlaubsanspruch eingetragen, so wird immer der gesamte Buchungszeitraum aufgerollt,
+da ja kein Anspruch in den Übertragsbuchungen eingetragen werden kann. Dies kann bei großen Zeiträumen
+(zig-Jahre), also bei langgedienten Mitarbeitern doch einige Zeit in Anspruch nehmen.<br>
+Sorgen Sie daher dafür, dass die Urlaubsansprüche bei allen Mitarbeitern ab dem
+Eintrittsdatum eingetragen ist. Bei Datenübernahmen korrigieren Sie gegebenenfalls den
+Anspruch zum Datenübernahmestichtag (Urlaubsjahreswechsel) und setzen Sie für diesen
+Eintrag das eingefroren Flag.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wieso wird unter Anspruch aliqout etwas anderes angezeigt als unter Ende des
 Jahres ?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:</p>

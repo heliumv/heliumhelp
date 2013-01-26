@@ -274,7 +274,8 @@ herauszustreichen. Inhaltlich sind für uns Lagerplatz und Lagerort identisch.</p
 Lagerstände bei Mehrlagerverwaltung zusammengezählt ?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Jein. D.h. in der
 Artikel Auswahlliste und in der Schnellinfo im Artikeldetail werden die Lagerstände
-für die Anzeige zusammengezählt. Wenn Sie jedoch in den&nbsp;Reiter Lager
+für die Anzeige zusammengezählt, mit Ausnahme der Lager bei denen
+Konsignationslager angehakt ist. Wenn Sie in den&nbsp;Reiter Lager
 wechseln, so sehen Sie die Lagerstände je Lager detailliert auch mit den
 Gestehungspreisen je Lager.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Gibt es einen
@@ -1401,6 +1402,14 @@ Stichtag auszudrucken und entsprechend aufzubewahren. Werden diese Listen
 später ausgedruckt, so kann es, wegen des oben beschriebenen Mechanismus zu
 Abweichungen kommen. Um die Aufbewahrung der Lagerstandslisten etwas zu
 erleichtern nehmen wir diese nun in die automatische Dokumentenablage mit auf.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Bewertung von Artikeln deren Gestehungspreis 0,00 ist hängt zusätzlich noch
+vom Parameter LAGERSTANDSLISTE_EKPREIS_WENN_GESTPREIS_NULL ab.&nbsp;Steht dieser
+auf 1, so bedeutet dies, dass wenn der Gestehungspreis 0,00 ist, wird anstatt
+dessen der Einkaufspreis des bevorzugten Lieferanten verwendet. Damit wird Ihre
+Lagerware gegebenenfalls eben zu Einkaufskonditionen bewertet.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Zentraler Artikelstamm"></a>Zentraler
 Artikelstamm</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
