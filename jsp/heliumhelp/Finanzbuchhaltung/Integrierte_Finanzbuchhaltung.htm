@@ -2366,6 +2366,45 @@ neuer Konten. Welches Finanzamt für welches Konto gilt, wird direkt beim
 jeweiligen Konto definiert.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Anzahlungs- und Schlussrechnungen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für die Verbuchung von Anzahlungs- und Schlussrechnungen müssen in den
+Buchungsparametern des Haupt-Finanzamtes die Konten der Anzahlungsrechnungen
+definiert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+bei der Verbuchung einer Anzahlungsrechnung die Fehlermeldung mit dem Hinweis: Verrechnungskonto Erhaltene Anzahlungen nicht definiert für Anzahlungsrechnung
+jj/nnnnnnn erscheint, so ist das Konto Verr.Erhalten (Verrechnete
+Anzahlungsrechnungen Erhalten) nicht definiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Logik der Verbuchung der Anzahlungsrechnungen ist folgende:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">....</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Umsatzsteuerkonten werden anhand der Erlöskonten ermittelt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass in einer Anzahlungsrechnung in aller Regel nur eine Position,
+die des Anzahlungsbetrages, üblicherweise ist diese eine Handeingabe, enthalten
+ist. Grundsätzlich dürfen in eine Anzahlungsrechnung keine Lieferscheine
+enthalten sein. Weiters darf es nur eine werthaltige Position geben. Sollten
+diese Vorgaben nicht erfüllt sein, erscheint eine entsprechende Fehlermeldung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+gleicher Logik werden die Anzahlungs- und Schlussrechnungen der Eingangsrechnung
+verbucht. Für die Parametrierung werden die Definitionen der Verr.Geleistet und
+Geleistet verwendet.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Buchungsjournal</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -2397,7 +2436,7 @@ Buchungsjournal stehen drei obere Reiter zur Verfügung:</p>
         Detailbewegungen.<br>
         Neben den Direktfiltern Beleg und Text steht hier aus die Suche nach
         Betrag zur Verfügung. Beachten Sie bitte, dass der eingegebene Betrag
-        mit einer Toleranz von in der Regel 10% gesucht wird und unabhängig vom
+        mit einer Toleranz von in der Regel 10% gesucht wird, unabhängig vom
         Vorzeichen. Die Toleranz kann im Mandantenparameter TOLERANZ_SUCHE_NACH_BETRAG
         eingestellt werden.</td>
     </tr>
