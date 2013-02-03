@@ -303,6 +303,82 @@ Das Journal der offenen Aufträge beinhalten alle Aufträge, welche am Stichtag od
 oder zum Stichtag erledigt wurden.
 </p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Offene Auftragsdetails"></a>Q:
+Offene Auftragsdetails?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Unter, Journal offene Details können, neben weiteren anderen Auswertungen,
+die offenen Positionen der Aufträge detaillierte ausgewertet werden. Das hier vorgeschlagene
+Stichtagsdatum (Liefertermin bis) wird anhand des Parameters AUFTRAG_JOURNAL_OFFENE_POSITIONEN_STICHTAG
+errechnet.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+stehen neben den Sortierungen nach Belegnummer, Kunde, Artikel, Projekt die
+Untersortierung nach Liefertermin zur Verfügung, sowie verschiedene Filter.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+Besonderheit ist hier die Lagerstandsdetailauswertung mit enthalten.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="offene_Detail_auswertung.gif" width="168" height="23">
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+Auswertung bewirkt zwei zusätzliche Betrachtungen.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+es werden die Lagerstände nach Lagerarten aufgeführt und in folgender
+Reihenfolge fiktiv verbraucht.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a1.)
+Hauptlager und gleichberechtigt die Normallager
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a2.)
+Lieferantenlager
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a3.)
+Halbfertiglager
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ergeben
+sich hier noch immer Fehlmengen, so werden diese in die eventuell nachfolgende
+Lagerstandsdetailauswertung der Stückliste als offene Menge (= Bedarf) mit
+übergeben.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+fiktiver Verbrauch bedeutet, dass die (Stücklistenkopf-)Artikel nach Termin
+sortiert betrachtet werden und die vorhandenen Lagermengen zuerst vom ersten zu
+liefernden Artikel und dann vom nächsten usw. verbraucht werden. Somit erhalten
+Sie auch eine Sicht, wie weit ihr aktueller Lagerstand, ev. mit den
+Halbfertigkomponenten noch reicht.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+für die Stücklistenartikel bei denen in Lagerstandsdetailauswertung
+berücksichtigen in den Stücklistenkopfdaten angehakt ist, werden, nur für
+eine Unterebene, die Stücklistenpositionen mit den Detaillagermengen errechnet
+und die Lagerstände ebenfalls nach Lagerarten angeführt und in obiger
+Reihenfolge fiktiv verbraucht.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="in_Detailauswertung_beruecksichtigen.gif" width="257" height="21">
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bedeutet, dass Sie nicht nur die Lagersituation der fertig produzierten
+Stücklisten sehen, sondern für ausgewählte Stücklisten auch die Situation
+der Unterkomponenten. Damit kann sehr rasch entschieden werden, ob z.B. der
+Zusammenbau, das Assembling einer Baugruppe vorgenommen werden kann um ein
+Fertigprodukt zu liefern.
+</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Offene Auftragspositionen?</p>
 
