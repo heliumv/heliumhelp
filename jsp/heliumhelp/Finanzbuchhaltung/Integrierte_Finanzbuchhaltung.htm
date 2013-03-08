@@ -2374,7 +2374,8 @@ jeweiligen Konto definiert.</p>
 Anzahlungs- und Schlussrechnungen</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Für die Verbuchung von Anzahlungs- und Schlussrechnungen müssen in den
+Für die Verbuchung von Anzahlungs- und Schlussrechnungen und der automatischen
+Eröffnungsbuchungen müssen in den
 Buchungsparametern des Haupt-Finanzamtes die Konten der Anzahlungsrechnungen
 definiert werden.</p>
 
@@ -2382,16 +2383,6 @@ definiert werden.</p>
 bei der Verbuchung einer Anzahlungsrechnung die Fehlermeldung mit dem Hinweis: Verrechnungskonto Erhaltene Anzahlungen nicht definiert für Anzahlungsrechnung
 jj/nnnnnnn erscheint, so ist das Konto Verr.Erhalten (Verrechnete
 Anzahlungsrechnungen Erhalten) nicht definiert.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
-Logik der Verbuchung der Anzahlungsrechnungen ist folgende:</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">....</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
-Umsatzsteuerkonten werden anhand der Erlöskonten ermittelt.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 beachten Sie, dass in einer Anzahlungsrechnung in aller Regel nur eine Position,
@@ -2402,12 +2393,124 @@ diese Vorgaben nicht erfüllt sein, erscheint eine entsprechende Fehlermeldung.</
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
 gleicher Logik werden die Anzahlungs- und Schlussrechnungen der Eingangsrechnung
 verbucht. Für die Parametrierung werden die Definitionen der Verr.Geleistet und
 Geleistet verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Buchungsparameter</b> </p>
+
+<div align="left">
+  <table border="1" width="629" height="6">
+    <tr>
+      <td width="177" height="6">EB Konten</td>
+      <td width="463" height="6"></td>
+      <td width="1247" height="6">Konten für die automatischen
+        Eröffnungsbuchungen</td>
+    </tr>
+    <tr>
+      <td width="177" height="6">Sachkonten</td>
+      <td width="463" height="6"></td>
+      <td width="1247" height="6">Geben Sie hier das EB-Konto für die
+        Eröffnungsbuchungen der Sachkonten an</td>
+    </tr>
+    <tr>
+      <td width="177" height="6">Debitoren</td>
+      <td width="463" height="6"></td>
+      <td width="1247" height="6">Geben Sie hier das EB-Konto für die
+        Eröffnungsbuchungen der Debitoren an.<br>
+        Hinweis: Wir raten für diese drei Arten unterschiedliche Konten zu
+        verwenden um bei Unstimmigkeiten rascher diese Buchungs- /
+        Definitionsfehler zu finden. Theoretisch können auch gemeinsame Konten
+        verwendet werden.</td>
+    </tr>
+    <tr>
+      <td width="177" height="6">Kreditoren</td>
+      <td width="463" height="6"></td>
+      <td width="1247" height="6">EB-Konto für die Eröffnungsbuchungen der
+        Kreditoren</td>
+    </tr>
+    <tr>
+      <td width="177" height="6"></td>
+      <td width="463" height="6"></td>
+      <td width="1247" height="6"></td>
+    </tr>
+    <tr>
+      <td width="177" height="6">Anzahlungen</td>
+      <td width="463" height="6">Kontoart</td>
+      <td width="1247" height="6"></td>
+    </tr>
+    <tr>
+      <td width="177" height="6"><a name="Anzahlung_Verr.Erhalten"></a>Verr.Erhalten</td>
+      <td width="463" height="6">Aktives Bestandskonto</td>
+      <td width="1247" height="6">Verrechnungskonto gelegte Anzahlungen Konto
+        der an Ihre Kunden gelegten (geleisteten) Anzahlungsrechnungen</td>
+    </tr>
+    <tr>
+      <td width="177" height="6"><a name="Anzahlung_Erhalten"></a>Erhalten</td>
+      <td width="463" height="6">Passives Bestandskonto</td>
+      <td width="1247" height="6">Konto mit den Zahlbeträgen der gelegten
+        Anzahlungen.<br>
+        Konto ist mit einem Bankkonto vergleichbar.<br>
+        Das ist treuhändisches erhaltenes Geld. Das bedeutet: Im schlimmsten
+        Fall, wenn z.B. das Projekt nicht realisiert werden kann, ist dieses
+        Geld wieder zurückzuzahlen.</td>
+    </tr>
+    <tr>
+      <td width="177" height="6"><a name="Anzahlung_Verr.Geleistet"></a>Verr.Geleistet</td>
+      <td width="463" height="6">Passives Bestandskonto</td>
+      <td width="1247" height="6">Verrechnungskonto der von Ihren Lieferanten
+        erhaltenen (und als ER eingebuchten) Anzahlungsrechnungen</td>
+    </tr>
+    <tr>
+      <td width="177" height="6"><a name="Anzahlung_Geleistet"></a>Geleistet</td>
+      <td width="463" height="6">Aktives Bestandskonto</td>
+      <td width="1247" height="6">Konto mit den Zahlbeträgen der erhaltenen
+        Anzahlungen.<br>
+        Konto ist mit einem Bankkonto vergleichbar.<br>
+        Hinweis: Dies ist treuhändisch an Ihren Lieferanten bezahltes Geld. Das
+        bedeutet, eigentlich gehört das noch Ihnen.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ablauf
+bei der Verbuchung von Anzahlungs- / Schlussrechnungen:&nbsp; </p>
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+    wird eine Anzahlungsrechnung erstellt.&nbsp;<br>
+    Es wird Debitor gegen <a href="#Anzahlung_Verr.Erhalten">Verr.Erhalten</a>
+    gebucht</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kunde
+    zahlt die Anzahlungsrechnung oder einen Teil davon<br>
+    Bank bucht gegen Debitor und macht eine Umbuchung von <a href="#Anzahlung_Verr.Erhalten">Verr.Erhalten</a>
+    gegen <a href="#Anzahlung_Erhalten">Erhalten</a> mit dem Teil-Zahlungsbetrag</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Schlussrechnung
+    wird erstellt.<br>
+    Es wird Debitor gegen Erlöse und <a href="#Anzahlung_Erhalten">Erhalten</a>
+    gegen Debitor gebucht<br>
+    Damit sind alle Zahlungseingänge, also auch die auf die
+    Anzahlungsrechnungen direkt dem Debitor zugeordnet.<br>
+    Mit der Schlussrechnung haben die Konten <a href="#Anzahlung_Verr.Erhalten">Verr.Erhalten</a>
+    und <a href="#Anzahlung_Erhalten">Erhalten</a>, für dieses Projekt, wieder
+    einen Null-Saldo</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Rest
+    der Schlussrechnung wird bezahlt. Wird wie eine übliche Ausgangsrechnung
+    gebucht. (Bank gegen Debitor)</li>
+</ol>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Umsatzsteuerkonten werden anhand der Erlöskonten ermittelt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Buchungsjournal</p>
@@ -2505,6 +2608,12 @@ Im Ust/Vorsteuerkonto 3602 sind Buchungen mit Gegenkonto 2000 enthalten. </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
 das Sachkonto 3602 jedoch als </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 </body>
 
