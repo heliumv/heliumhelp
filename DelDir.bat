@@ -58,6 +58,9 @@ cd ..
 cd Installation
 RMDIR %1 /S /Q
 cd ..
+cd Instandhaltung
+RMDIR %1 /S /Q
+cd ..
 cd Kueche
 RMDIR %1 /S /Q
 cd ..
