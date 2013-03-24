@@ -55,6 +55,9 @@ cd ..
 cd images
 RMDIR %1 /S /Q
 cd ..
+cd Inseratenverwaltung
+RMDIR %1 /S /Q
+cd ..
 cd Installation
 RMDIR %1 /S /Q
 cd ..
