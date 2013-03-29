@@ -17,7 +17,7 @@ Helium V auch mit eigenen &quot;Clients&quot; nutzen zu können, stellen wir
 eine Anzahl von Webservices zur Verfügung. Diese können z.B. für eigene
 Zeiterfassungsclients, oder für Webshops oder für Abrechnungssysteme verwendet
 werden. Sie können direkt auf unsere Web-Services zugreifen oder diese über
-einen Enterprice Service Bus (ESB, z.B. Mule) realisieren.</p>
+einen Enterprice Service Bus (ESB, z.B. Mule oder Talend) realisieren.</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Wir
 gehen davon aus, dass Sie mit der grundsätzlichen Erstellung und Verwendung von
@@ -27,8 +27,7 @@ Web-Services vertraut sind.</p>
 finden Sie eine Liste der von Helium V zur Verfügung gestellten
 Funktionalitäten.</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
-<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Der
-grundsätzliche Zugriff erfolgt über: http://<a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER</a>:8080/jbossws/services</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Der Zugriff erfolgt über: http://HELIUMV_SERVER:8080/jbossws/services</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Um
 eine grundsätzliche Übersicht zu ermöglichen haben wir dies ähnlich der in
@@ -42,6 +41,128 @@ Helium V verwendeten Modulstruktur aufgeführt.</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Zeiterfassung</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<h1><a name="Webshop"></a>Webshop Verbindung / Anbindung</h1>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+Idee hinter der Helium V Webshopanbindung ist, dass die wesentlichen / alle
+Daten, die Sie für Ihren Webshop benötigen über Ihr ERP System Helium V
+gesteuert werden.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Aus
+dieser Aufgabenstellung ergeben sich folgende Bereiche:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Artikeldaten</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Kundendaten</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Kundenbestellungen,
+    also die Überleitung von der Bestellung Ihres WebShop-Kunden in die
+    Auftragsbestätigung in Helium V</li>
+</ul>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+Datenübertragung erfolgt nach der BMEcat® 2005 Spezifikation Version 1.2.
+Siehe dazu auch <a href="http://www.bme.de">http://www.bme.de</a>
+für die Artikelstammdaten, sowie nach openTRANS® Version 2.1 <a href="http://www.iao.fhg.de">http://www.iao.fhg.de</a>
+für&nbsp;den Austausch der Bestellungs- / Auftragsdaten.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+Verbindung zwischen Webshop und Helium V ist so, dass immer der Webshop die
+Daten abfrägt bzw. nach Helium V überträgt. Dass dafür eine entsprechend
+gesicherte Verbindung erforderlich erklärt sich von selbst.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Vom
+Ablauf her gehen wir davon aus, dass nach der erfolgten Basis Datenabfrage
+regelmäßig, z.B. täglich um 01:00, die Veränderungsdaten des Artikels
+abgeholt werden.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+Bestellungsdaten werden aktuell, also annähernd sofort, nach Helium V
+übertragen. Von der Importfunktion werden die Kundenbestellungen (aus dem Shop)
+in Helium V als angelegte Aufträge oder gegebenenfalls auch als
+Angebot(sanforderungen) hinterlegt. Diese Aufträge (bzw. Angebot) müssen von
+Ihnen überprüft und freigegeben werden.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Der
+Webshop selbst sollte offline fähig sein, d.h. auch ohne ständiger Verbindung
+zum Helium V Server funktionieren und hier eben gegebenenfalls die Daten
+zwischenspeichern.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Der
+Ablauf im Webshop entspricht den heutzutage üblichen Abläufen.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Eine
+wichtige Einschränkung ist derzeit, dass wir davon ausgehen, dass entweder per
+Nachnahme geliefert wird, oder dass es sich um registrierte und bekannte Kunden
+handelt, deren Bestellungen durch ein zusätzliches Vertragswerk geregelt /
+gesichert sind.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Als
+Beispiel für die Einbindung in einen OpenSource Standard Shop haben wir einen
+Connector für den <a href="http://www.magentocommerce.com/">Magento Shop</a>
+entwickelt. Der Magento Connector kann von unserem <a href="http://demo.heliumv.at/public/HeliumV/AenderungsProtokoll/Magento_Connector.htm">Helium
+V Änderungsprotokoll herunter geladen</a> werden.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="question" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Artikeldaten</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+Definition welche Artikel mit welchen Preisen, Beschreibungen, Bildern in
+welchem Shop dargestellt werden wird im Artikelmodul vorgenommen. Dazu ist
+folgender Zusammenhang gegeben:</p>
+
+<ol>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Webshop<br>
+    Definieren Sie Ihre verwendeten Webshops.<br>
+    Siehe dazu Artikel, Grunddaten, Webshop<br>
+    <b>Hinweis:</b><br>
+    Der hier eingetragene Name muss auch vom abfragenden Webshop als
+    Webshopname, in Magento = shopname, in der richtigen Groß/Kleinschreibung
+    verwendet werden.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Shopgruppen<br>
+    Definieren Sie im Modul Artikel, unterer Modulreiter Shopgruppe Ihre
+    Shopgruppen, in Magento Kategorien genannt, in die Ihre Artikel im Webshop
+    erscheinen sollten.<br>
+    Die Shopgruppen sind hierarchisch aufgebaut. D.h. für jede Shopgruppe kann:<br>
+    - die Vatershopgruppe (also die übergeordnete Shopgruppe)<br>
+    - ein Referenzartikel um z.B. weitere Beschreibungen und Bilder für diese
+    Gruppe hinterlegen zu können<br>
+    - eine Liste von Webshops, für die diese Shopgruppe gültig ist<br>
+    definiert werden.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Preislisten<br>
+    Definieren welche Preisliste für welchen Webshop angewandt werden sollten</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Kommentarart<br>
+    Auch hier definieren Sie, ob eine bestimmte Kommentarart, mit der dann die
+    Langtexte und die Bilder hinterlegt werden, für die Webshops zur Verfügung
+    stehen.<br>
+    D.h. damit können Sie eigene Webshop-Beschreibungen für den jeweiligen
+    Artikel erstellen.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Verwendung
+    der Artikel für den jeweiligen Webshop durch die Shopgruppe<br>
+    Dazu definieren Sie im Artikeldetail in welche Shopgruppe der Artikel
+    fällt.</li>
+</ol>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Um
+die vom Anwender in Helium V gepflegten Daten in den Shop zu übertragen frägt
+der Shop die Daten bei Helium V über die Webserviceschnittstelle <a href="http://HELIUMV_SERVER:8080/lpserver-ejb/ArtikelFacBeanRest?WSDL">http://HELIUMV_SERVER:8080/lpserver-ejb/ArtikelFacBeanRest?WSDL</a>
+ab. Die Regelmäßige Abfrage ist im Server des Shops z.B. durch einen Cronejob
+einzurichten. Wir empfehlen, aus Sicherheitsgründen regelmäßig z.B. einmal
+wöchentlich alle Artikeldaten neu von Ihrem Helium V Server für den jeweiligen
+Webshop zu holen.</p>
 
 </body>
 

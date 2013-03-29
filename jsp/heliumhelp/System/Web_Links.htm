@@ -23,16 +23,16 @@ Wir unterscheiden dabei drei verschiedene Kommunikations/Darstellungsformen.</p>
     </tr>
     <tr>
       <td width="245" height="25">Online Datenerfassung</td>
-      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http://HELIUMV_SERVER:8080/ze/ze?cmd=bdestation</a></td>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=bdestation</td>
     </tr>
     <tr>
       <td width="245" height="25"><a name="Anwesenheitsliste"></a>Anwesenheitsliste</td>
-      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste</a></td>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste</td>
     </tr>
     <tr>
       <td width="245" height="25"><a name="QuickZE Start"></a>Quick-Auftrags-<br>
         zeiterfassung</td>
-      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER:</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">8080/ze/ze?cmd=quickze<br>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=quickze<br>
         </a>Zur erstmaligen Erfassung der Login Informationen.&nbsp;<br>
         Die Logindaten werden in einem Cookie abgespeichert.<br>
         Löschen der Cookies <a href="#Loeschen von Cookies">siehe</a>.</td>
@@ -40,29 +40,33 @@ Wir unterscheiden dabei drei verschiedene Kommunikations/Darstellungsformen.</p>
     <tr>
       <td width="245" height="25">Quick-ZE<br>
         Direkt Start</td>
-      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER:</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">8080/ze/ze?cmd=quickzeiterfassung<br>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=quickzeiterfassung<br>
         </a>Nach Erfassung der Logindaten kann auch direkt mit diesem Link
         gestartet werden.</td>
     </tr>
     <tr>
       <td width="245" height="25"><a name="QuickZE neue Login Daten"></a>Quick-ZE<br>
         neue Login Daten</td>
-      <td width="1269" height="25"><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">http</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER:</a><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">8080/ze/ze?</a>cmd=quickze&amp;reenter=true<br>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/ze/ze?cmd=quickze&amp;reenter=true<br>
         Um die Logindaten dieses Users neu zu erfassen</td>
     </tr>
     <tr>
       <td width="245" height="25"><a name="WebClient_Kueche"></a>WebClients,<br>
         Küchenmodul</td>
-      <td width="1269" height="25"><a href="http://rhodium:8080/lpkueche/AppKueche.html">http://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER</a><a href="http://rhodium:8080/lpkueche/AppKueche.html">:8080/lpkueche/AppKueche.html</a></td>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/lpkueche/AppKueche.html</td>
     </tr>
     <tr>
       <td width="245" height="25">Integrierte<br>
         Onlinehilfe</td>
-      <td width="1269" height="25"><a href="http://rhodium:8080/lpkueche/AppKueche.html">http://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER</a><a href="http://rhodium:8080/lpkueche/AppKueche.html">:8080/heliumhelp</a></td>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/heliumhelp</td>
     </tr>
     <tr>
-      <td width="245" height="25">Web-Services</td>
-      <td width="1269" height="25">http://<a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER</a>:8080/jbossws/services</td>
+      <td width="245" height="25"><a href="Web_Services.htm">Web-Services</a></td>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/jbossws/services</td>
+    </tr>
+    <tr>
+      <td width="245" height="25"><a href="Web_Services.htm#Webshop">WebShop-Interface</a></td>
+      <td width="1269" height="25">http://HELIUMV_SERVER:8080/lpserver-ejb/ArtikelFacBeanRest?WSDL</td>
     </tr>
   </table>
 </div>
@@ -71,10 +75,10 @@ in Windowsumgebungen, die verwendeten Ports in der Firewall freigeschaltet sein.
 Wenden Sie sich dazu bitte an Ihren Systembetreuer.</p>
 <p>Um den Internetexplorer direkt ohne Bedienungsmenü zu starten legen Sie
 folgende Verknüpfung an:<br>
-"C:\Programme\Internet Explorer\iexplore.exe" -k <a href="http://localhost:8080/lpkueche/AppKueche.html">http://</a><a href="http://HELIUMV_SERVER:8080/ze/ze?cmd=anwesenheitsliste">HELIUMV_SERVER</a><a href="http://localhost:8080/lpkueche/AppKueche.html">:8080/lpkueche/AppKueche.html<br>
+"C:\Programme\Internet Explorer\iexplore.exe" -k http://HELIUMV_SERVER:8080/lpkueche/AppKueche.html<br>
 </a>Das -k bedeutet ohne Bedienelemente, dahinter folgt die URL der gewünschten
 Funktion.</p>
-<p>Um die HTML BDE-Station ohen dem Aufruf des zusätzlichen Fenster zu starten,
+<p>Um die HTML BDE-Station ohne dem Aufruf des zusätzlichen Fenster zu starten,
 geben Sie bitte nach ....cmd=bedestation&amp;done=true an.</p>
 <p>&nbsp;</p>
 <p>b.) im WAP-Browser (Mobile) darstellbar:</p>
@@ -85,8 +89,7 @@ geben Sie bitte nach ....cmd=bedestation&amp;done=true an.</p>
   </tr>
   <tr>
     <td width="291" height="25">Zeitbuchung</td>
-    <td width="1223" height="25"><a href="http://localhost:8080/ze/ze?cmd=quickzeiterfassung&amp;ausweis=555">http://HELIUMV_SERVER:8080/heliumv/heliumv
-        </a></td>
+    <td width="1223" height="25">http://HELIUMV_SERVER:8080/heliumv/heliumv</td>
   </tr>
 </table>
 <p>c.) vom Zeiterfassungsterminal der Firma MECS aufrufbar:</p>
