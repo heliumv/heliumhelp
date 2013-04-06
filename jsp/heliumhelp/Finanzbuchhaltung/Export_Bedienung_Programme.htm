@@ -317,6 +317,85 @@ Raffung gerafft. (Das bedeutet, pro Rechnung nur eine Zeile)<br>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Seit
+ca. 2012 gibt es eine neues Version von Datev, mit der die zu exportierenden
+Felder frei definiert werden können/müssen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+wir für den Import der offenen Posten bestimmte Felder in einer bestimmten
+Reihenfolge erwarten, hier eine komprimierte Beschreibung wie diese
+Einstellungen vorzunehmen sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>HINWEIS:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
+die Default-Einstellungen von Datev verwendet, so führt dies unter Umständen
+dazu, dass die noch offenen Rechnungen nicht erkannt werden. Daher werden diese
+fälschlicherweise als bezahlt verbucht, obwohl dem laut Ihrer Buchhaltung nicht
+so ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Vorgehensweise zur Definition eines neuen Exportformates ist daher wie folgt:</p>
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+    Sie in der Buchführung bei den Debitoren die OPOS-Liste<br>
+    <img border="0" src="Datev_OPOS_Liste.jpg" width="222" height="196"></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+    wählen Sie aus der Menüleiste: Bestand, Export, ASCII</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+    geben Sie als (neues) Exportformat z.B. Helium V an und klicken unten auf
+    Weiter</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+    Sie die grundsätzlichen Exporteinstellungen wie folgt ein und klicken Sie
+    dann auf weiter:<br>
+    <img border="0" src="Datev_Exportdefinition1.jpg" width="754" height="322"><br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+    Sie nun die zu exportierenden Felder und stellen Sie diese auch in der
+    entsprechenden Reihenfolge zusammen.<br>
+    <img border="0" src="Datev_Exportdefinition2.jpg" width="978" height="409"><br>
+    Achten Sie darauf, dass die Reihenfolge der Felder wie angegeben ist.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Klicken
+    Sie nun unten auf die Diskette <img border="0" src="Datev_Exportdefinition3.gif" width="25" height="23">
+    um die Formatdefinition zu speichern.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+    wählen Sie Exportieren (unten neben der Diskette) um die Daten zu erzeugen.
+    Akzeptieren Sie den Vorschlagswert.<img border="0" src="Datev_Exportdefinition4.jpg" width="824" height="436"><br>
+  </li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+    wechseln Sie in Ihr Helium V, in das Modul Finanzbuchhaltung, unterer Reiter
+    Export und wählen in der Menüleiste Export, Offene Posten Import.<br>
+    Geben Sie den obigen Pfad an, welchen Sie in der Regel im vorgeschlagenen
+    Pfad (Dokumente) und dann in den Unterverzeichnissen Daten, RWDAT, Export
+    finden.<br>
+    Wählen Sie hier die oben angegebene Datei aus. In unserem Fall die op.csv</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+    Sie die eventuell ausgegebenen Warnungen</li>
+</ol>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Beim Import werden alle Rechnungen als bezahlt verbucht?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Siehe oben. Mit ziemlicher Sicherheit wurde die op.csv Datei falsch aus dem
+Datev exportiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
 </body>
 
 </html>

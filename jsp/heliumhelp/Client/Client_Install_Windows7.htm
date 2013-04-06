@@ -109,6 +109,81 @@ z.B. HeliumV.local lauten. Sollte Ihr IT-Betreuer dies für ein internes
 Netzwerk behaupten, so suchen Sie sich bitte einen Betreuer der sich auch bei
 Netzwerkkonfigurationen auskennt.</p>
 
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Ich kann meinen
+Client nicht starten, er meldet: javaw nicht gefunden</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Es passiert leider
+immer wieder, dass Javainstallationen nicht wie gedacht ablaufen. Dadurch kommt
+es beim Start des Helium V Clients zu unten angeführter Fehlermeldung.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Java_nicht_gefunden.jpg" width="574" height="142"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">D.h. es wurde zwar
+Java vollständig installiert, jedoch wurde die Path Umgebungsvariable nicht
+entsprechend erweitert.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Technisch gesprochen
+muss nur die Environment-Variable Path entsprechend erweitert werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im Windows 7 gehen
+Sie bitte in die Eigenschaften des Arbeitsplatzes. Also: Start, und Rechtsklick
+auf Computer und dann Eigenschaften.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Win7_System.gif" width="195" height="212"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Dann Klick auf
+Erweiterte Systemeinstellungen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Win7_Systemeigenschaften.gif" width="418" height="481"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun sind Sie in den
+Systemeigenschaften, klicken Sie im Reiter Erweitert auf den Knopf unten,
+Umgebungsvariablen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In den
+Umgebungsvariablen:</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Win7_Umgebungsvariable.gif" width="384" height="423"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">wählen Sie die Path
+Systemvariable und klicken auf Bearbeiten.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ergänzen Sie nun die
+Path Systemvariable am Ende um den Pfad zu Ihrem Java-Bin-Verzeichnis. Beachten
+Sie dabei, dass der bestehende String mit einem ; Struckpunkt/Semikolon
+abgeschlossen sein muss.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ihr Java-Bin
+Verzeichnis finden Sie z.B. mit Hilfe des Windows-Explorers unter
+c:\Programme\Java\JRE?\Bin</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Win7_Java_finden.jpg" width="301" height="146"></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Finden sich hier
+mehrere Javaversionen, so raten wir, möglichst nur eine Version, in der Regel
+die neueste zu verwenden. Klären Sie dies mit Ihrem IT-Betreuer.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Klicken Sie nun oben
+in die Pfad-Zeile und übernehmen Sie den String in die Path-Variable.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Schließen Sie nun
+die Definition der Systemeigenschaften durch mehrfachen Klick auf die OKs
+entsprechend ab.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun starte auch Ihr
+Helium V Client, indem auch Java gefunden wird.</p>
+
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 </body>
