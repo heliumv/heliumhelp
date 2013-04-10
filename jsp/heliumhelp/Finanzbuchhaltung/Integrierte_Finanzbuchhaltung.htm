@@ -18,8 +18,11 @@ Finanzbuchhaltung in Helium V zur Verfügung.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
-Modul ist derzeit für Soll-Versteuerer / Bilanzierer gedacht. Bitte beachten
-Sie dazu auch die Beschreibung <a href="Einnahmen-Ausgaben_rechner.htm">Einnahmen-Ausgaben-Rechner</a>.</p>
+Modul ist derzeit für Soll-Versteuerer / Bilanzierer bzw. für die Verrechnung
+nach vereinbarten Umsätzen gedacht. Bitte beachten
+Sie dazu auch die Beschreibung <a href="Einnahmen-Ausgaben_rechner.htm">Einnahmen-Ausgaben-Rechner</a>.
+Ab der Version 74xx steht auch die direkte Verbuchung für <a href="#EA-Rechner">Einnahmen-Ausgaben-Rechner
+</a>zur Verfügung.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -2917,6 +2920,132 @@ auch immer, eine automatische Übernahme nicht gemacht werden, so müssen die
 entsprechenden Konten manuell eröffnet werden. <a href="#Start_mit_EB_Buchungen">Siehe
 oben</a>. </p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Finanzamtssammelbuchungen </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Neben den üblichen Buchungsarbeiten auf die einzelnen Aufwands und Erlöskonten
+sind monatliche Sammelbuchungen erforderlich. Das Verhalten der Sammelbuchungen
+wird über die Kontoart des jeweiligen Kontos gesteuert. Die Sammelbuchungen
+selbst werden vor jeder UVA-Auswertung durchgeführt, falls die UVA für diese
+Periode noch nicht verprobt ist. Das bedeutet auch, dass es einen großen
+Unterschied darstellt, ob Sie die UVA nur in die große Druckvorschau drucken,
+damit wird keine UVA Verprobung gemacht, oder ob Sie aus dem
+Druck-Vorschau-Fenster direkt die UVA ausdrucken, da bei diesem Ausdruck die
+gewählte Periode verprobt wird. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Buchungen selbst sind als Automatikbuchungen gekennzeichnet und können so vom
+Helium V eindeutig identifiziert werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+bei der UVA die Sammelbuchungen durchgeführt werden, ist es zwingend
+erforderlich, dass die erforderlichen Kontoarten definiert sind. Ist dies nicht
+der Fall, werden entsprechende Fehlermeldungen ausgegeben. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden für die Sammelbuchungen folgende Kontoarten verwendet: </p>
+
+<div align="left">
+  <table border="1" width="568" height="22">
+    <tr>
+      <td width="368" height="22">Kontoart</td>
+      <td width="768" height="22">Beschreibung</td>
+      <td width="768" height="22">Typ</td>
+    </tr>
+    <tr>
+      <td width="368" height="22">Ust Konto</td>
+      <td width="768" height="22">Umsatzsteuerkonto, also ein Konto das die
+        Umsatzsteuerbuchungen z.B. 20% beinhaltet</td>
+      <td width="768" height="22">Steuerkonten</td>
+    </tr>
+    <tr>
+      <td width="368" height="22">Vst Konto</td>
+      <td width="768" height="22">Vorsteuerkonto, also ein Konto das die
+        Vorsteuerbuchungen z.B. 20% beinhaltet.</td>
+      <td width="768" height="22">Steuerkonten</td>
+    </tr>
+    <tr>
+      <td width="368" height="22">Ust Sammelkonto</td>
+      <td width="768" height="22">Umsatzsteuer Sammelkonto<br>
+        Hier werden alle Umsatzsteuerkonten aufsaldiert</td>
+      <td width="768" height="22">Steuer-Sammelkonten</td>
+    </tr>
+    <tr>
+      <td width="368" height="22">Vst Sammelkonto</td>
+      <td width="768" height="22">Vorsteuer Sammelkonto<br>
+        Hier werden alle Vorsteuerkonten aufsaldiert</td>
+      <td width="768" height="22">Steuer-Sammelkonten</td>
+    </tr>
+    <tr>
+      <td width="368" height="22">UST- oder Erwerbssteuerkonto</td>
+      <td width="768" height="22">Hier werden alle Steuer-Sammelkonten
+        aufsaldiert</td>
+      <td width="768" height="22">Finanzamt Steuer-Verrechnungskonto</td>
+    </tr>
+    <tr>
+      <td width="368" height="22">Abgabenkonto</td>
+      <td width="768" height="22">Konten in denen Abgaben enthalten sind. Z.B.
+        Lohnsteuer, DB, DZ</td>
+      <td width="768" height="22">Abgabenkonto</td>
+    </tr>
+    <tr>
+      <td width="368" height="22">FA Zahllastkonto</td>
+      <td width="768" height="22">Das Finanzamtzahllastkonto</td>
+      <td width="768" height="22"></td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Derzeit
+ist folgender Ablauf für die Finanzamtssammelbuchungen programmiert: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden die Periodensalden aller Konten der Kontoart Ust Konto auf das Ust
+Sammelkonto saldiert. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden die Periodensalden aller Konten der Kontoart Vst Konto auf das Vst
+Sammelkonto saldiert. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden die Periodensalden aller Konten der Kontoart Ust Sammelkonto auf das UST- oder Erwerbssteuerkonto
+saldiert. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden die Periodensalden aller Konten der Kontoart Vst Sammelkonto auf das UST- oder Erwerbssteuerkonto
+saldiert. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden die Periodensalden des UST- oder Erwerbssteuerkonto auf das FA Zahllastkonto
+saldiert. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+werden die Periodensalden aller Konten der Kontoart Abgabenkonto auf das FA Zahllastkonto
+saldiert. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Oder
+in anderer Form: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ust
+Konten -&gt; Ust Sammelkonto </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Vst
+Konten -&gt; Vst Sammelkonto </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ust
+Sammelkonto + Vst Sammelkonto -&gt; UST- oder Erwerbssteuerkonto </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">UST- oder Erwerbssteuerkonto
++ alle Abgabenkonten -&gt; FA Zahllastkonto </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kontenarten </p>
@@ -2997,6 +3126,58 @@ kompakte Zusammenfassung, die wir als sehr hilfreich empfunden haben: </p>
     </tr>
   </table>
 </div>
+
+<h1><a name="EA-Rechner"></a>Einnahmen- / Ausgabenrechner</h1>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist-Versteuerer
+bzw. Einnahmen- / Ausgabenrechner bzw. Verrechnung nach vereinnahmten Umsätzen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Realisierung der verminderten Funktionalität für die EA-Rechner ist in Helium
+V so umgesetzt, dass bei der Bankbuchung immer zwei Buchungen durchgeführt
+werden.<br>
+a.) Die Buchung Erlöse gegen Debitor und gleichzeitig</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+die Buchung Debitor gegen Bank</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+beiden Buchungen sind zusätzlich noch miteinander gekoppelt, sodass
+sichergestellt ist, dass bei Änderungen auch immer wieder beide Buchungen
+gelöscht werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass es bei den EA-Rechnern in der Fibu keinen Skontoaufwand,
+keine offene Postenliste gibt. Diese Daten sind, dank Ihrer Helium V Rechnungs-
+/ Eingangsrechnungsverwaltung trotzdem verfügbar. Jedoch auf Basis der
+Rechnungsmodule (siehe Journale) und nicht in der Fibu.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">UVA,
+Sachenkonten Saldenliste usw. funktionieren gleich wie in der Fibu für die
+Sollversteuerer.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wozu nun Debitoren-, Kreditoren-Konten wenn es doch ein EA-Rechner ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Hintergrund ist, dass auf den Debitoren- / Kreditorenkonten auch die Definition
+der Steuerkategorien hinterlegt sind. D.h. es wird damit bestimmt welcher
+Debitor in welche Steuerkategorie fällt und somit werden auch die
+Buchungsregeln bestimmt. Für die Übergabe Ihrer Daten an Ihren Steuerberater
+genügt die Übergabe der Saldenliste.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wieso sind einige Rechnungen, obwohl noch aus dem alten Geschäftsjahr nicht in
+der Fibu?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn diese Rechnungen noch nicht (teil-) bezahlt sind, so wurden diese, da wir
+hier ja von EA-Rechnern sprechen auch noch nicht in die Fibu übernommen und
+können so jederzeit geändert werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie vorgehen bei der Umstellung von EA-Rechner auf Sollversteuerer?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Diese Umschaltung muss von Ihrem Helium V Betreuer vorgenommen werden. Für die
+Abstimmung der Eingangs-/Ausgangsrechnungen müssen die Eröffnungsbuchungen
+manuell / per Hand nachgebucht werden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie kann die Funktionalität des EA-Rechners aktiviert werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bitten Sie Ihren Helium V Betreuer diese Funktion für Sie freizuschalten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 
