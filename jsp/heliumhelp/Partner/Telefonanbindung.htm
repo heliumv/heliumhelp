@@ -102,6 +102,10 @@ eingestellt sind.</p>
 
 
 
+<h2 align="left">Tapi</h2>
+
+
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
 die Einrichtung der Tapi Schnittstelle sind einige Voraussetzungen und
 Parametrierungen durchzuführen, welche in Abstimmung mit Ihrem
@@ -188,30 +192,22 @@ bei Anruf sollte das Telefon neben ihrem Rechner die Verbindung aufbauen.</p>
 
 
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Http-Request</p>
+<h2 align="left">Http-Request</h2>
 
 
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
 dem Http-Request werden die Daten für den Telefonanruf per http-Aufruf direkt
 an Ihr Telefon übergeben. Üblicherweise sind dies VoIP (Voice over IP)
-Telefone, wie z.B. snom.</p>
+Telefone, wie z.B. snom. Wir haben dafür den Arbeitsplatzparameter <a href="TELEFONWAHL_HTTP_REQUEST">TELEFONWAHL_HTTP_REQUEST</a>
+geschaffen.</p>
 
 
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
-Aufruf für snom (3er Serie) sieht üblicherweise wie folgt aus.</p>
-
-
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
-Idee dahinter ist, dass neben jedem Arbeitsplatz auch ein dazugehörendes
-Telefon steht. Das bedeutet, dass dieser Aufruf als Arbeitsplatzparameter, im
-Modul System, für den jeweiligen Rechner definiert werden muss.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
+hier ist die
+Idee, dass neben jedem Arbeitsplatz ein dazugehörendes
+Telefon steht.&nbsp;</p>
 
 
 
@@ -274,6 +270,101 @@ Bereich ###NUMMER### wird von Helium V durch die zu wählende Nummer ersetzt.</p>
 der Aufrufstring frei definiert werden kann, können selbstverständlich alle
 anderen Telefone / Telefonanlagen, welche mit einem derartigen Request gesteuert
 werden können von Helium V angesteuert werden.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<h2 align="left">Http-Request mit Telefonanlage</h2>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ergänzend,
+erweiternd zu obigem, ist bei einer Einbindung der Telefone in eine
+Telefonanlage (z.B. Starface) ein Zugriff auf das Telefon in Abstimmung mit der
+Telefonanlage erforderlich. Hier muss man sich üblicherweise mit den Parametern
+passend zur Anlage anmelden.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+der Aufrufstring für die vorgelagerte Anmeldung sieht wie folgt aus:</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="|admin|0000|http:/192.168.8.17/command.htm?NUMBER=0###NUMMER###&amp;DIAL=Wählen">|Benutzer|Password|http://</a><a href="http://Snom-IP-Adresse/index.htm?NUMBER=###NUMMER###&amp;DIAL=Wählen">Snom-IP-Adresse</a><a href="|admin|0000|http:/192.168.8.17/command.htm?NUMBER=0###NUMMER###&amp;DIAL=Wählen">/command.htm?NUMBER=###NUMMER###&amp;DIAL=Wählen</a></p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Snom-IP-Adresse
+ersetzen Sie bitte durch die IP-Adresse des jeweiligen Telefons,</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">der
+Bereich ###NUMMER### wird von Helium V durch die zu wählende Nummer ersetzt.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Benutzer
+ersetzen Sie bitte durch einen auf dem Telefon eingerichteten Benutzer</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Password
+ist das Password des Benutzers auf dem Telefon</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+
+
+<h2 align="left">Pimphony</h2>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Telefonanlagen von Alcatel bzw. NextiraOne werden oft über die sogenannte
+Pimphony Schnittstelle angesteuert. Bis zu Windows-XP 32Bit emuliert diese auch
+eine Tapi-Schnittstelle. Ab Windows7 64Bit müssen folgende Voraussetzungen
+gegeben sein, damit die Pimphony direkt angesprochen werden kann.</p>
+
+
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Pimphony
+    Version 6.6., Build 2710 vom 5.10.2012 oder höher (vermutlich) muss
+    installiert sein.<br>
+    Für die Installation zuerst alle alten Pimphony Programme deinstallieren
+    und danach den Tapi Treiber 64Bit (install_tsp_64.exe) und dann das
+    Install.exe ausführen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Den
+    Pfad auf das Pimphony Programm = aocphone.exe herausfinden. Ist
+    üblicherweise: c:\Program Files (x86)\Alcatel_PIMphony\aocphone.exe</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diesen
+    im Helium V, System, Arbeitsplatzparameter, PFAD_MIT_PARAMETER_TAPITOOL für
+    den jeweiligen Rechner eintragen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+    Amtsleitungsvorwahl(en) harmonisieren. Entweder aus Helium V verwenden oder
+    den der Pimphony. Wenn aus dem Pimphony, dann im Helium V, System,
+    Parameter, AMTSLEITUNGSVORWAHL_TELEFON auf ein Leerzeichen (Space) stellen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stellen
+    Sie sicher, dass das Pimphony beim Start von Windows mitgestartet wird.</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:&nbsp;</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Neu-Installation werden die Telefonpasswörter benötigt.</p>
 
 
 
