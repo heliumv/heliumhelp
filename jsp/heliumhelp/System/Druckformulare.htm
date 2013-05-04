@@ -626,6 +626,12 @@ Etikettendruck nicht wie gewünscht funktioniert:</p>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bei
     Verwendung von dedizierten Etikettendruckern, stellen Sie unbedingt in den
     Druckereigenschaften des Etikettendruckers das eingelegte Etikett ein.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bei
+    Verwendung von CUPS Treibern achten Sie unbedingt darauf, dass die
+    Etikettendefinition im iReport in das Etikett passt. Schon geringe
+    Abweichungen (1 Pixel) führen dazu dass das Etikette gedreht oder gar nicht
+    gedruckt wird.</li>
 </ul>
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
 Ausdrucken aller Bearbeiter Daten</p>
@@ -917,6 +923,36 @@ stehen in den unten angeführten Vorlagen folgende Variablen zur Verfügung. </p>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bitte
 beachten Sie auch die unter Ergebnisklasse Textfeld erforderliche
 Typ-Definition.</p>
+
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><a name="Editor Breiteneinstellung"></a>Q:
+Können die Breiten der Editoren passend zu den Texten eingestellt werden?</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">A:
+Ja. Seit der Version 7436 können für verschiedene Arten von Texteingaben auch
+die Breiten im Texteditor angepasst werden.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
+Anpassung wird im System, Parameter mit dem Parameternamen Breite vorgenommen.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="Editorbreite.jpg" width="374" height="210"></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
+Standardwerte sind so, dass diese zu den Formularen passen.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Editor_Breite_Kommentar
+... wird für die Kommentare aus den Artikeln verwendet</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Editor_Breite_Texteingabe
+... wird für die Texteingaben in den offiziellen belegen verwendet</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Editor_Breite_Textmodul
+... wird für die Breite der Texteingaben in die Textmodule (System, Medien)
+verwendet</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Editor_Breite_Sonstige
+... wird für alle anderen Texteingaben verwendet.</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
 
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Q:
 Können auch direkte Datenbankabfragen mit dem Reportgenerator durchgeführt
