@@ -887,6 +887,23 @@ einer Unterstückliste werden.</p>
 und Stückliste müssen jedoch klar von einander getrennt werden. Siehe dazu
 oben.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Bei der Gesamtkalkulation sehe ich die Hilfsstückliste, wird nun das Los
+aufgelöst fehlt die Hilfsstückliste</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Genau dieses Verhalten ist mit der Hilfsstückliste beabsichtigt.<br>
+Ein extremes Beispiel ist, wenn in einer Stückliste eine leere Hilfsstückliste
+enthalten ist. So wird bei der Gesamtkalkulation diese als Info noch angezeigt.
+Bei der Überleitung in das Fertigungslos wird der Inhalt der Hilfsstückliste
+anstatt derselben in die Stückliste eingefügt. Oder in anderen Worten die
+(Material-) Positionen und die Arbeitsgänge der Hilfsstückliste werden in der
+Ebene der Stückliste hinzugefügt und der Kopf der Hilfsstückliste wird
+entfernt (sonst wäre er ja doppelt und damit keine Hilfsstückliste mehr). Aus
+obigem Beispiel ergibt sich damit, dass der Kopf der Hilfsstückliste aus dem
+Los verschwindet und da keine Inhalt da sind, ist die gesamte Hilfsstückliste
+verschwunden. Tragen Sie in diesem Falle entweder Artikel in die
+Hilfsstückliste ein, oder ändern Sie die Art des Artikels / der Stückliste
+entsprechend ab.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Hilfsstückliste, Stückliste und Ebene</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Oft werden die Ebenen mit der Anzahl der Stücklisten verwechselt. Daher hier
