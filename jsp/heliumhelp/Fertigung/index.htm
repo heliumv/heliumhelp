@@ -145,7 +145,7 @@ eines Auftrags mit Stücklistenauflösung.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
 neu Anlegen eines Loses kann zwischen zwei Losarten unterschieden werden.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ident:
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Artikel:
 Dies bedeutet, dass die Basis (Solldaten) des Loses aus einer Stückliste kommen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Materialliste:
@@ -260,10 +260,10 @@ eines Loses</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
 der Helium V Losverwaltung können mehrere Läger für ein Los definiert werden.
-Dies bewirkt, dass bei der Losausgabe zuerst das Material zuerst von ersten
+Dies bewirkt, dass bei der Losausgabe zuerst das Material vom ersten
 Lager entnommen wird. Ist auf diesem Lager kein Material mehr verfügbar, so
 wird versucht Material vom nächsten Lager zu entnehmen. Bis hin zum letzten dem
-Los zugeordneten Lager.&nbsp;</p>
+Los zugeordneten Lager.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dadurch
 können Sie z.B. Material von Kundenlägern, welches aber von&nbsp; Ihnen
@@ -437,6 +437,78 @@ der Dialog der Nachträglichen Materialentnahme aufgerufen. Hier ist jedoch
 unabhängig auf welcher Zeile der Materialentnahme der Cursor steht, die
 Sollposition nicht vorbesetzt und somit die zusätzliche Entnahme von Material
 deutlich einfacher.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wir haben eine lebende Stücklistenentwicklung, wie vorgehen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In einigen Branchen / Unternehmen werden die Stücklisten praktisch durch die
+Produktion z.B. eines Schaltschrankes bestimmt. D.h. in der Regel werden die
+wichtigsten Komponenten in die Stückliste geschrieben und eine grobe Schätzung
+was an üblichem Material wie Kabel, Stecker, Klemmen usw. verbraucht wird. Die
+tatsächliche Menge ergibt sich aus der Verdrahtung, der Montage des Schrankes.
+D.h. der Ablauf ist, gerade bei Kabeln, Leitungen so, dass das Material
+Bundweise z.B. 100m vom Lager entnommen und auf das Los gebucht wird. Der
+verbleibende Rest wird dann am Ende der Produktion wieder gemessen und die
+Restmenge vom Los wieder ans Lager zurückgebucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+es meistens erwünscht ist, dass diese nachträglichen Änderungen ersichtlich
+sind, oft auch kein Bezug zu Sollpositionen herstellbar ist, verwenden Sie
+dafür bitte die die Funktion:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nachträgliche
+Materialentnahme ohne Sollposition <img border="0" src="NachtraeglicheMat_Entnahme_ohne_Sollposition.gif" width="31" height="26">
+<br>
+Diese Zeilen werden durch die (Buchungs-)Art N(achträglich) in den
+Materialpositionen angezeigt</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
+zusätzliche Positionen benötigt, welche nicht auf Lager sind, so tragen Sie
+diese bitte mit <img border="0" src="Neue_Sollposition.gif" width="31" height="27"> 
+Neu ein. Bei einem Los In Produktion werden die Fehlmengen dadurch entsprechend
+aktualisiert, was wiederum zur Berücksichtigung im Bestellvorschlag führt. Da
+auch dies eine Änderung der Solldaten gegenüber der Stückliste ist, wird die
+Buchungsart ebenfalls auf Nachträglich gesetzt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sollte
+sich eine Materialentnahme auf eine Sollposition beziehen, so verwenden Sie
+dafür <img border="0" src="Nachtraegliche_Mat_Entnahme.gif" width="30" height="24"> 
+ Nachträgliche Materialentnahme. Diese Buchung, wird bei einem Ausgegebenen Los
+ebenfalls zusätzlich in die Materialpositionen eingefügt, da sie aber einen
+Bezug zur Sollposition hat, wird als Buchungsart S(ollposition) angezeigt.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>ACHTUNG:</b>
+Das Verhalten dieser Funktion ist von der Auswahl <img border="0" src="Fehlmenge_reduzieren.gif" width="129" height="19">
+abhängig.</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+    Fehlmenge reduzieren angehakt, so wird diese Buchung als die verspätete
+    Entnahme auf die Sollposition betrachtet, die Fehlmenge reduziert und in den
+    Losmaterialpositionen keine weitere Zeile mehr eingefügt.<br>
+    Hinweis: Auch wenn eine Entnahme durchgeführt wird, die größer als die
+    tatsächliche Fehlmenge ist, wird dies als Entnahme mit direktem Bezug auf
+    die Sollposition betrachtet.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+    Fehlmenge reduzieren nicht angehakt bzw. abgehakt, so wird dies als
+    zusätzliche Materialentnahme betrachtet und die Buchung ohne Sollmenge,
+    aber mit Bezug auf die Sollposition eingetragen.</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Info:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Denken
+Sie auch an die Möglichkeit der Buchung mittels Funkscanner direkt in der
+Produktion, was die Handhabung deutlich vereinfacht und immer richtige
+Lagerstände bewirkt.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Buchung
 zusätzlicher Kosten ins Los</p>
