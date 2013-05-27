@@ -75,12 +75,12 @@ für&nbsp;den Austausch der Bestellungs- / Auftragsdaten.</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
 Verbindung zwischen Webshop und Helium V ist so, dass immer der Webshop die
 Daten abfrägt bzw. nach Helium V überträgt. Dass dafür eine entsprechend
-gesicherte Verbindung erforderlich erklärt sich von selbst.</p>
+gesicherte Verbindung erforderlich ist, erklärt sich von selbst.</p>
 
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Vom
 Ablauf her gehen wir davon aus, dass nach der erfolgten Basis Datenabfrage
-regelmäßig, z.B. täglich um 01:00, die Veränderungsdaten des Artikels
-abgeholt werden.</p>
+regelmäßig, z.B. täglich um 01:00, die Veränderungsdaten des Artikels und
+der Kunden abgeholt werden.</p>
 
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
 Bestellungsdaten werden aktuell, also annähernd sofort, nach Helium V
@@ -159,10 +159,129 @@ folgender Zusammenhang gegeben:</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Um
 die vom Anwender in Helium V gepflegten Daten in den Shop zu übertragen frägt
 der Shop die Daten bei Helium V über die Webserviceschnittstelle <a href="http://HELIUMV_SERVER:8080/lpserver-ejb/ArtikelFacBeanRest?WSDL">http://HELIUMV_SERVER:8080/lpserver-ejb/ArtikelFacBeanRest?WSDL</a>
-ab. Die Regelmäßige Abfrage ist im Server des Shops z.B. durch einen Cronejob
+ab. Die Regelmäßige Abfrage ist im Server des Shops z.B. durch einen Cron-Job
 einzurichten. Wir empfehlen, aus Sicherheitsgründen regelmäßig z.B. einmal
 wöchentlich alle Artikeldaten neu von Ihrem Helium V Server für den jeweiligen
 Webshop zu holen.</p>
+
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Zusammenführen
+von Magento-HeliumV-Connector und HELIUM V</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0"><img border="0" src="Webshop1.jpg" width="1029" height="827"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.)
+Benutzer</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Damit
+der Shop Daten von HELIUM V abholen bzw. übermitteln kann muss er sich mit
+Benutzer und Passwort an Helium V anmelden.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">User
+in Benutzer im HV anlegen z.B. webshop1. Diesen beim Magento, mit PW unter .....
+User Name und Password eintragen</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Der
+Benutzer muss die Rechte haben um seinen Job erledigen zu können.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">D.h.
+Artikel lesen inkl. VK-Preisen lesen</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Kunde
+anlegen</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Aufträge
+anlegen ... wir schlagen vor hier das Aufträge aktivieren definitiv wegzulassen</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Dem
+Benutzer ist über Benutzermandant der &quot;WebShop&quot;-Mitarbieter
+zugeordnet. Hier wird wiederum für die neuen Kunden der Provisionsempfänger
+vorbesetzt. Für das Anlegen der Aufträge ist dies dieser User</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+Ausweisnummer des Mitarbeiter-Webshops wird als API Key verwendet, welcher
+wiederum in der Magento HELIUM V Connector Config zu hinterlegen ist.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Ist
+der API Key nicht definiert, können keine Aufträge angelegt werden.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Erforderliche
+Definitionen im Artikel</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Webshop
+.... Die in den Artikel Grunddaten Webshop hinterlegte Bezeichnung des Webshops
+muss mit dem Shop Name im Magento HELIUM V Connector übereinstimmen (Case
+Sensitive)</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Shopgruppen
+... müssen dem obigen Webshop zugeordnet werden. Nur diese werden für den
+jeweiligen Webshop übertragen bzw. deren Artikel</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Referenzartikel ... Liefert Beschreibung und Bilder für die Shopgruppe, im
+Magento Category genannt</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Preislisten:
+Hier wird definiert welche Preisliste in welchem Webshop erscheinen darf.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Preise
+aus den Kunden Sonderkonditionen. Steht KUNDEN_SONDERKONDITIONEN_IN_WEBSHOP = 0
+... Die Soko-Preise werden nicht übertragen -&gt; hier nur mehr die Preisliste
+aus Kunde Konditionen = Artikelpreisliste</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">...
+1 es wird für jeden Kunden eine eigene Preisliste übertragen. In dieser sind
+die für den Kunden passenden Verkaufspreise enthalten, welche durchaus eine
+Mischung aus &quot;normaler&quot; Preisliste und den SoKo Preisen des Kunden
+sein können.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">In
+beiden Fällen werden Mengenstaffeln unterstützt.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+Preise werden in Mandantenwährung übermittelt. Sollte eine VK-Preisliste in
+einer anderen Währung sein, wird auf Mandantenwährung umgerechnet</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Beim
+Artikel</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">-
+unter Detail die Haupt-Shopgruppe zuordnen. Wird der Artikel in weiteren
+Shopgruppen = Catalog benötigt, so fügen Sie im Reiter Shopgruppen weitere
+Shopgruppen hinzu. Bitte beachten: Die Auswertungen z.B. unter Journal gehen nur
+auf die Haupt-Shopgruppe.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">-
+Kommentar:</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;
+Eine der Kommentararten muss für den Webshop freigeschaltet sein (Boolean)</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;
+Es können beim Artikel je Kommentarart (Webshop) und Typ je ein Datensatz =
+Bild, Langtext usw. hinterlegt werden. Wichtig: Der Text hat keine
+Formatierungszeichen und muss vom Inhalt her zu Ihrem Shop passen. Gleiches gilt
+für die Bilder.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Kundenselektionen</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Damit
+wird definiert, welche Kunden an den Shop übertragen werden. Dafür ist in den
+Partner, Grunddaten, Selektionen bei den gewünschten Selektionen das Webshop
+anzuhaken.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Zusätzlich
+muss eine gültige EMail-Adresse in den Detaildaten hinterlegt haben. Ist diese
+nicht gegeben, wird er nicht an den Shop übermittelt.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Kundepreisliste
+bei mehreren Partnern. Es greift hier immer die Preisliste des letzten Partners.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Info:
+Sollte bei der Einstellung der Preislisten in der Überleitung in die HELIUM V
+Auftragsbestätigung (= Kundenbestellung aus dem Shop) ein Fehler in den Preisen
+festgestellt werden, so wird dies im Auftrag entsprechend durch eine
+Textposition angezeigt.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
+Übermittlung der Kundenbestellung erfolgt vom Shop aus gesehen sofort. Es wird
+dadurch umgehen ein neuer Kundenauftrag angelegt. Dieser Auftrag ist im Status
+angelegt und muss vom HELIUM V Anwender aktiviert werden.</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Updatezyklus</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;&nbsp;
+Vom Magento-HELIUM V-Connector werden in einem Cron-Job regelmäßig (stündlich
+/ täglich) die geänderten Helium V Artikelstammdaten abgefragt. Von HELIUM V
+werden diese Änderungen ermittelt und an den Shop übertragen. Somit sparen Sie
+sich ...</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;&nbsp;
+Artikelstammdaten: Diese sind Artikelnummer, Bezeichnungen (3x), Bild,
+Kommentar, VK-Preise der WebShop Preislisten, Änderungen der Shop Zuordnungen</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Dies
+gilt auch für die Kundenstammdaten, diese sind. Adressen inkl.
+Rechnungsadresse, EMail-Adresse, Tel, Fax, Url, EMail, Preislistenzuordnung und
+gegebenenfalls Soko</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">ServerUrl</p>
+<p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">&nbsp;</p>
 
 </body>
 
