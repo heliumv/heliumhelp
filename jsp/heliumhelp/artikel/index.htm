@@ -1715,7 +1715,7 @@ Shopgruppe angewandt werden soll. </p>
 nächsten Schritt definieren Sie die Artikel die in der jeweiligen Shopgruppe
 erscheinen sollten direkt in den Kopfdaten der Artikel. </p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Automatisch
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Artikelnummerngenerator"></a>Automatisch
 neue Artikelnummern generieren</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
 die Erzeugung von Artikelnummern ist es oftmals praktisch diese von Helium V
@@ -2366,6 +2366,86 @@ Werbeabgabepflichtig?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Dieser Artikel ist Werbeabgabepflichtig. Zur Beschreibung dieser Spezialität
 des österreichischen Steuerrechtes <a href="../Rechnung/index.htm#Werbeabgabe">siehe</a>. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Prüfmittelverwaltung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es ist immer wieder erforderlich, dass die eingesetzten Messmittel
+entsprechenden Eichungen unterzogen werden, dass diese kalibriert werden bzw.
+entsprechende Wartungen durchgeführt werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+ist oft damit kombiniert, dass diese Artikel auf eigenen Lagern / Lagerplätzen
+liegen und eben intern oder extern geeicht werden. Zusätzlich sollte
+ersichtlich sein, welche, meistens externen Arbeiten, an diesen Messmitteln
+durchgeführt wurden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+Helium V können Sie diese Aufgabe wie folgt lösen: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
+Sie im Modul Artikel, Grunddaten, Artikelgruppe eine Gruppe für diese Art von
+Produkten. Diese Definition dient nur der einfacheren Bedienung und hat auf die
+eigentliche Funktion keinen Einfluss. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie für jedes Messmittel einen eigenen Artikel an. Verwenden Sie dafür einen
+sprechenden Artikelnummernkreis z.B. MM (für Messmittel). Vergeben Sie beim
+ersten Artikel z.B. eine fünfstellig Nummer um danach den <a href="#Artikelnummerngenerator">Artikelnummerngenerator</a>
+verwenden zu können. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+erfolgter Definition des Messmittels wechseln Sie in den Reiter Sonstiges und
+definieren das Wartungsintervall in Monaten. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dadurch
+erscheint der Artikel automatisch im Journal nächste Wartungen. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+die Kalibrierung / Wartung für das Messmittel durchgeführt, so tragen Sie dies
+beim kalibrierten Messmittel im Reiter Sonstiges unter Letzte Wartung mit dem
+Kalibrierdatum ein. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+der Speicherung erscheint neben dem letzten Wartungsdatum auch das Kurzzeichen
+der Person die das Wartungsdatum eingetragen hat. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+hier ist die letzte Wartung ersichtlich. Für die Anzeige der davor liegenden
+Wartungsdatum verwenden Sie bitte Info, Änderungen. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+Kalibrierungsprotokoll sollte als Dokument dieses Artikels in der
+Dokumentenablage, <a href="../System/Dokumentenablage.htm#Belegart">Belegart</a>
+Kalibrierung, abgelegt werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:&nbsp;</b> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+hier verwendete Begriff Messmittel gilt natürlich für jegliche Art von
+Betriebsmitteln, wiederholenden Prüfungen usw. </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wann genau erscheint ein Artikel im Journal nächste Wartungen ? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Dies ist ein Journal für die bereits durchzuführenden Wartungen. D.h. in
+diesem Journal erscheinen diejenigen Artikel, die anhand dem Datum der Letzten
+Wartung plus dem Wartungsintervall in Monaten zum Zeitpunkt des Drucks des
+Wartungsjournals gewartet werden sollen. Das bedeutet: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+ist bei einem Artikel zwar ein Wartungsintervall aber kein Datum der letzten
+Wartung hinterlegt, so wird er in der Liste angeführt. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Ist bei einem Artikel das nächste Wartungsintervall überfällig, so wird er
+ebenfalls in der Liste mit angeführt. </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
