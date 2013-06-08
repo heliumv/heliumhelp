@@ -1244,6 +1244,43 @@ benötigt.</p>
 die Stückzeiten läuft üblicherweise die Maschine alleine. Nutzen Sie hier
 bitte Nur Maschinenzeit.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Bestimmte Artikel sollten immer früher oder später bestellt werden</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In einigen Fertigungsbereichen ist es vorteilhaft, wenn verschiedene Artikel
+später als zum Fertigungslosbeginn und in anderen Bereichen, wenn diese früher
+als zum Losbeginn bestellt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+dies auf der einzelnen Stücklistenposition steuern zu können, gibt es den
+Eintrag <img border="0" src="Beginnterminoffset.gif" width="149" height="24">
+Beginnterminoffset in Tagen auf der einzelnen Stücklistenposition.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+bewirkt, dass beim Anlegen eines Loses bei der Berechnung des
+Reservierungstermines dieser Versatz zum Losbeginntermin dazugezählt wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieses
+Feld steht daher auch im Reiter Material im Los zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Sonderform für sofortige Bestellung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In manchen Unternehmen geht es vor allem darum, dass bestimmte, sehr schwer zu
+beschaffende Artikel Idealerweise bereits zu Beginn der Produktentwicklung
+bestellt werden. Mit dem Parameter FRUEHZEITIGE_BESCHAFFUNG kann definiert werden, dass anstelle des Versatzes nur die Checkbox <img border="0" src="Sofortige_Bestellung.gif" width="118" height="18">
+Sofortige Bestellung angehakt werden muss. Dies bewirkt, dass als
+Beginnterminoffset ein Eintrag von -999 Tagen gesetzt wird, was wiederum dazu
+führt, dass bei der Berechnung des nächsten Bestellvorschlages diese
+Stücklistenposition, wenn sie in einem aktuellen Los enthalten ist, mit einem
+Liefertermin von heute bestellt wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
