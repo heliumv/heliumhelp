@@ -72,14 +72,17 @@ der Preise und Rabatte</a>.</p>
 Kann der Bestellpreis automatisch in den Artikel zurückgepflegt werden?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Ja. Beachten Sie
 dazu die Einstellung der Auswahl: Preise für den Lieferanten nachpflegen.</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Bestellpreis_zurückpflegen.gif" width="738" height="27"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Bestellpreis_zurückpflegen.gif" width="459" height="69"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier gibt es drei
 Möglichkeiten:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nicht nachpflegen</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Einzelpreis</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Staffelpreis
-eintragen</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Staffelpreis
-korrigieren / aktualisieren</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">als Staffelpreis
+unter Angabe der gewählten Staffelmenge. Bei Angabe der Positionsmenge wird
+diese Menge für die Staffelmenge verwendet und gegebenfalls als neuer
+Staffelmengeneintrag in die Einkaufsstaffel des Artikellieferanten eingetragen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Basiseinstellung
 ob die Preise zurückgepflegt werden oder nicht sind von der Einstellung des
 Parameters DEFAULT_EINKAUFSPREIS_ZURUECKPFLEGEN abhängig.&nbsp;</p>
@@ -90,25 +93,21 @@ zurückpflegen</p>
 rückpflegen oder nicht</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;&nbsp;&nbsp; 2
 ... immer nur als Einzelpreis zurückpflegen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Info: werden die
+Einzelpreise zurückgepflegt, so werden auch die Fixkosten, die Mindestmenge und
+die Verpackungseinheit gegebenfalls in den Artikellieferanten nachgepflegt.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Was bedeuten die
 Felder im unteren Bereich der Bestellpositionen?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Mit diesen Feldern
 erhalten Sie zusätzliche Infos über den Artikel, weshalb diese auch mit Akt.
 LF-Daten (aktuelle Lieferanten Daten) gekennzeichnet sind.</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Bes_Position.gif" width="745" height="50"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Bes_Position.gif" width="181" height="68"></p>
 <div align="left">
   <table border="1" width="626" height="15">
     <tr>
       <td width="184" height="15">Fixkosten</td>
       <td width="1068" height="15">Fixkosten auf dieser Position. Diese werden
         aufgrund des Artikellieferanten vorgeschlagen.</td>
-    </tr>
-    <tr>
-      <td width="184" height="15">Staffel&nbsp;</td>
-      <td width="1068" height="15">Hier werden die hinterlegten Mengenstaffeln
-        und Einzelpreise dazu angezeigt. Durch Klick auf den jeweiligen Knopf
-        Staffel wird die Menge und der Preis in die Menge bzw. in den Nettopreis
-        übernommen</td>
     </tr>
     <tr>
       <td width="184" height="15">Verpackungseinheit</td>
@@ -123,6 +122,12 @@ LF-Daten (aktuelle Lieferanten Daten) gekennzeichnet sind.</p>
   </table>
 </div>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ein
+anderer Staffelpreis verwendet werden?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: wählen Sie neben
+dem Punkt als Staffelpreis die gewünschte Staffelmenge aus der Combobox aus <img border="0" src="Staffelpreis_auswaehlen.gif" width="196" height="26">.
+Mit Klick auf den Button <img border="0" src="Staffelpreis_uebernehmen.gif" width="32" height="25">
+wird der zur Staffelmenge gehörende Preis in den Bestellpreis übernommen.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Welche Rolle spielt das
 LS-Datum
   im Reiter Wareneingang&nbsp;in der (dazugehörenden) Bestellung?</p>
@@ -226,7 +231,7 @@ einer Bestellung eine Eingangsrechnung zuordnen?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Dieser wird beim
 Rückeintragen nicht berücksichtigt.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Können
-Bestellpositionen mit negativen Mengen oder Preise eingegeben werden?</p>
+Bestellpositionen mit negativen Mengen eingegeben werden?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Nein. Sie erhalten
 ja von Ihrem Lieferanten keine Gutschrift, wenn Sie ihm Ware abkaufen.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Manche Anwender
@@ -238,6 +243,17 @@ Rabatt in den Konditionen.</p>
 wird auch in den Wareneingang übertragen und dort vorgeschlagen. Somit wirkt er
 bei der Warenzubuchung und es ergeben sich somit geänderte Einstandspreise, was
 ja für die Deckungsbeitragsrechnung Ihres Unternehmens wesentlich ist.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Können
+Bestellpositionen mit negativen Preisen eingegeben werden?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Ja. Dies wird
+gerne für Preisreduktionen welche transparent dargestellt werden müssen
+verwendet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bedenken Sie bitte
+dass dies unter Umständen aus Sicht der Erfolgsrechnung, der
+Deckungsbeitragsbetrachtung nicht durchgängig ist.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Es bewirkt auch, dass
+negative Werte in Ihrem Lager liegen könnten, wenn der Reduktinosartikel nicht
+umgehend wieder ausgeliefert / vom Lager abgebucht wird.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Was hat die
 Rechnungsadresse für eine Bedeutung?</p>
 
