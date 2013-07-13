@@ -633,8 +633,14 @@ Sie hier:</p>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
     Kreditlimit Ihres Bankkontos.</li>
   <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+    Betrachtung nach Zahlungsmoral oder Zahlungsziel</li>
+  <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ob
     eventuell eine Planungsdatei zusätzlich berücksichtigt werden soll</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">welche
+    zusätzlichen Informationen nach ausgewertet werden sollen</li>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
 aktualisieren erhalten Sie eine Liste alle offenen Ein- und Ausgangsrechnungen
@@ -727,6 +733,61 @@ Eingangsrechnung) an der ersten Stelle des Beleges angeführt sein.</p>
 in diesen zusätzlichen Plankosten oft auch weitere Berechnungen hinterlegt
 werden, wurde dies so definiert, dass das erste Blatt des Spreadsheets für die
 Plankosten ausgewertet wird. Die weiteren Blätter stehen zu Ihrer Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">An
+weiteren Auswertungen können berücksichtigt werden:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Liq_mit_offenen_Auftraegen.gif" width="131" height="18"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden die offenen Auftragspositionen mit berücksichtigt. Als
+Zahlungseingangsdatum wird der Finaltermin des Auftrages zuzüglich der
+Einstellung der Berechnung der Zieltage (Zahlungsmoral oder Zahlungsziel)
+verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich
+werden hier auch noch die Wiederholenden Aufträge in der Form berücksichtigt,
+dass angenommen wird, dass der Auftrag in seinem Wiederholungsintervall bis zum
+Ende des Betrachtungszeitraumes erhalten bleibt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Liq_mit_offenen_Angeboten.gif" width="134" height="19">
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden die gewichteten Hoffnungsfälle zum Realisierungstermin berücksichtigt.
+D.h. der Angebotswert multipliziert mit der Auftragswahrscheinlichkeit zum
+Realisierungstermin. Als Zahlungseingangsdatum wird zum Realisierungstermin die
+Berechnung der Zieltage hinzugezählt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Liq_mit_offenen_Bestellungen.gif" width="143" height="21"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+werden:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+die offenen Bestellpositionen so berücksichtigt, dass angenommen wird, diese
+werden gleichzeitig mit dem Liefertermin bzw. dem hinterlegen AB-Termin vom
+Lieferanten fakturiert. Hier wird noch das bei der Bestellung hinterlegte
+Zahlungsziel zur Errechnung der Fälligkeit der Zahlung hinzugezählt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+die offenen Wareneingangspositionen so berücksichtigt, dass diejenigen, die
+noch keine Eingangsrechnung hinterlegt haben so betrachtet werden, dass zum
+Wareneingangsdatum das Zahlungsziel aus der Bestellung hinzugerechnet wird um
+den Fälligkeitstermin zu errechnen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+beiden Punkten gibt es von der Betrachtung her keine Liefertermine /
+Wareneingangstermine vor dem Auswertezeitpunkt. D.h. Sie finden die
+Fälligkeiten der Bestellungen immer erst nach dem Zeitraum des Zahlungszieles.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 

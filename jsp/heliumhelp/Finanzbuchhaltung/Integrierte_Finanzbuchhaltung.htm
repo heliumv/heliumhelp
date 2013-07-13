@@ -2296,7 +2296,19 @@ Soll und Haben die gleiche Summe, ist also der Saldo 0,00 </p>
 ist der Haken für die eigentliche Verbuchung freigeschaltet. Klicken Sie auf <img border="0" src="Splittbuchung7.gif" width="31" height="24">.
 Damit wird Ihre Buchung komplett übernommen.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Können in Splittbuchungen auch 0,00 Beträge eingegeben werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Gerade wenn Splittbuchungen für eine Reihe von Buchungen durchgeführt werden,
+so ist es manchmal praktisch, dass immer die gleichen Konten eingetragen bleiben
+und die für diese eine Splittbuchung nicht benötigten Konten mit einem 0,00
+Betrag versehen werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+wird von HELIUM V in der Form unterstützt, dass diese Beträge zwar eingegeben
+werden können. Bei der Überleitung in die eigentliche Buchungsroutine werden
+diese Zeilen jedoch unterdrückt.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Splittbuchung Reisekosten</p>
@@ -2613,6 +2625,29 @@ bei der Verbuchung von Anzahlungs- / Schlussrechnungen:&nbsp; </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Umsatzsteuerkonten werden anhand der Erlöskonten ermittelt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Bei der Verbuchung einer Schlussrechnung kommt eine Fehlermeldung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Erhalten Sie beim Drucken / Belegübernahme einer Schlussrechung eine
+Fehlermeldung wie die nachfolgende,&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">class com.lp.client.frame.ExceptionLP<br>
+java.lang.Exception: !summeHaben.equals(summeSoll)<br>
+so prüfen Sie bitte ob:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+alle Anzahlungs- und Schlussrechnungen wirklich auf den gleichen Debitor lauten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+bei Anzahlungsrechnungen ob diese im Jahr der Schlussrechnung sind bzw. dass
+diese im Geschäftsjahr der Schlussrechnung eröffnet wurden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+prüfen Sie dies sowohl in den Kundendaten als auch in den Debitor-Konten.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
