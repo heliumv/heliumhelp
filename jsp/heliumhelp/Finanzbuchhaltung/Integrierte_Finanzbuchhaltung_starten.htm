@@ -46,10 +46,16 @@ Sie die Konten in der Fibu so schlank wie irgend möglich. Auswertungen finden
 Sie in den ERP Modulen von HELIUM V, z.B. Hitliste im Modul Artikel, Kunden
 Umsatzstatistik mit Deckungsbeitragsauswertung im Modul Kunden, usw.. Siehe dazu
 auch Abgrenzungen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Ablauf der Grundeinstellung der Integrierten Finanzbuchhaltung von HELIUM V</b></p>
 <ol>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
-    Sie Ihr Standard Finanzamt.</li>
+    Sie Ihr Standard Finanzamt.<br>
+    In dem Modul Finanzbuchhaltung unterer Reiter Finanzamt: Neu und tragen dieses in System, unterer Reiter Mandant, oberer Reiter Vorbelegungen 2 ein.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen Sie die MwSt Sätze.<br>
+    Sie finden die Steuersätze in System, unterer Reiter Mandant, Mwst Stellen Sie diese gegebenenfalls richtig und entfernen Sie nicht benötigte Steuersätze.&nbsp;</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
     Sie den Kontenrahmen in Abstimmung mit Ihrem Steuerberater.<br>
@@ -68,12 +74,9 @@ auch Abgrenzungen.</p>
     Völlig unsinnige Konten löschen Sie bitte. Wenn Konten eventuell in der
     Zukunft verwendet werden könnten, so setzen Sie diese auf versteckt, damit
     bei der täglichen Arbeit nur die Konten angesprochen werden die benötigt
-    werden.</li>
-  <li>
-    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
-    Sie die MwSt Sätze.<br>
-    Stellen Sie diese gegebenenfalls richtig und entfernen Sie nicht benötigte
-    Steuersätze.</li>
+    werden.<br>
+    Details zur Kontendefinition siehe <a href="#Welche Sachkonten">Beispiel
+    für die Stardefinition von Sachkonten</a></li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
     Sie die UVA Art jedes einzelnen Sachkontos und gegebenenfalls ein
@@ -83,7 +86,8 @@ auch Abgrenzungen.</p>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
     Sie die Steuerkategorien und die Steuerkategoriekonten<br>
-    Definieren Sie hier nur die Zuordnungen die Sie erwarten, das bringt
+    Im unteren Reiter Finanzamt, oberer Reiter Steurkategorie können Sie die Konten nach
+    den geforderten Kriterien auswählen. Definieren Sie hier nur die Zuordnungen die Sie erwarten, das bringt
     deutlich Sicherheit.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
@@ -107,11 +111,17 @@ auch Abgrenzungen.</p>
     - AUTOMATISCHE_KREDITORENNUMMER</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
-    Sie den Zeitraum der UVA ob monatlich (default) oder quartalsweise.</li>
+    Sie den Zeitraum der UVA ob monatlich (default) oder quartalsweise.<br>
+    - FINANZ_UVA_ABRECHNUNGSZEITRAUM</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
     Sie den Zahlenraum und die Stellenanzahl der Debitoren- und
     Kreditorennummern</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+    DEBITORENNUMMER_VON<br>
+    - DEBITORENNUMMER_BIS<br>
+    - KONTONUMMER_STELLENANZAHL_DEBITORENKONTEN (4 Stellen = 1000) und entsprechende für Kreditoren&nbsp;</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
     Sie gegebenenfalls ob es fortlaufende oder strukturiert nummerierte
@@ -132,7 +142,8 @@ auch Abgrenzungen.</p>
     Sie für alle Artikel die Artikelgruppen und für alle Artikelgruppen die Erlöskonten</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
-    Sie die entsprechenden Länderartübersetzungen der Erlöskonten</li>
+    Sie die entsprechenden Länderartübersetzungen der Erlöskonten: im Reiter Sachkonten Konto-Länderart Übersetzung. Das bewirkt, dass wenn eine Buchung aus dem
+    Ausland kommt, die entsprechend angelegten Sachkonten bebucht werden.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
     Sie mit der Funktion Belegübernahme ob Sie alle Rechnungen, Gutschriften
@@ -140,7 +151,7 @@ auch Abgrenzungen.</p>
     a.) Prüfen Sie aus der Finanzbuchhaltung heraus Monat für Monat ob die
     Übernahme funktioniert.<br>
     &nbsp;&nbsp;&nbsp;&nbsp; Geht diese nicht, so gehen Sie bitte zum einzelnen
-    Beleg<br>
+    Beleg und beheben die Ursache der Fehlermeldung<br>
     b.) Unter bearbeiten Belegübernahme kann jeder Beleg eigenständig in die
     Finanzbuchhaltung erneut übernommen werden.<br>
     &nbsp;&nbsp;&nbsp;&nbsp; Hier werden entsprechende Fehlermeldungen unter
@@ -342,6 +353,31 @@ Wer von uns kann schon mit &quot;Minderung der Entnahmen § 4 (4a) EStG (Haben)&q
 gerade am Beginn der unternehmerischen Tätigkeit etwas anfangen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Also:
 <b>Weniger ist mehr.</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Ein Beispiel für die Startdefinition von Sachkonten:</b><br>
+<br>
+1. Erlöskonto „Erlöse Inland“ Bereich 4...<br>
+2. UST Konto 20% (Kontoart: Ust Konto) Bereich 3...&nbsp;<br>
+3. VST Konto 20% (Kontoart: Vst Konto) Bereich 2...<br>
+4. IG Erwerb / IG Erlös&nbsp;<br>
+5. Skontoaufwand Bereich 4... (10%, 20%)<br>
+6. Skontoerlös Bereich 5... (10%, 20%)<br>
+7. Wareneinsatz Bereich 5... (Bsp. Material, IG Erwerbe, Fremdleistung)<br>
+8. Kreditoren / Debitoren automatisch (aber Sammelkonten dazu)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. 2000 Kundenforderungen Inland (mitlaufende Konten)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. 2001 Kundenforderungen EU (mitlaufende Konten)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. 3301 Lieferantenverbindlichkeiten Inland<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. 3302 Lieferantenverbindlichkeit EU<br>
+9. Kontendefinition UVA<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finanzamt Zahllastkonto Bereich 3...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Verrechnung Finanzamt Bereich 3...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vst Sammelkonto Bereich 2... Art Vst. Sammelkonto<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ust. Sammelkonto Bereich 3... Art Ust. Sammelkonto<br>
+    10.	Verrechnungskonten für Anzahlungen<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2...Gegebene Anzahlungen<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3...Erhaltene Anzahlungen</p>
 
 </body>
 
