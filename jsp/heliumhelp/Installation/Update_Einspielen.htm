@@ -11,9 +11,9 @@
 
 <body>
 
-<h1>Einspielen Helium V Update</h1>
+<h1>Einspielen HELIUM V Update</h1>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Üblicherweise
-werden Updates Ihrer Helium V Installation von unseren Support-Team per
+werden Updates Ihrer HELIUM V Installation von unseren Support-Team per
 Fernwartung eingespielt. Sollte es z.B. aus Gründen einer fehlenden Fernwartung
 nicht möglich sein, können Sie von uns eine kostenpflichtige Update-CD
 anfordern oder alternativ die aktuelle Version von unserem öffentlichen FTP
@@ -30,17 +30,17 @@ aller ersten Schritt lesen Sie bitte diese Beschreibung vollständig durch und
 stellen Sie sicher, dass alle Voraussetzungen erfüllt sind und Sie auch in der
 Lage sind die notwendigen Schritte durchzuführen.</p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Wir gehen hier davon aus,
-dass Sie mit der Administration derartiger System vertraut sind.</p>
+dass Sie mit der Administration derartiger Systeme vertraut sind.</p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">&nbsp;</p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Zum
 Einspielen des Updates wird grundsätzlich wie folgt vorgegangen:</p>
 <ol>
   <li>Prüfen der Verwendbarkeit der übermittelten CD / Daten</li>
-  <li>Beenden der Verwendung von Helium V</li>
-  <li>Stoppen des Helium V Dienstes</li>
+  <li>Beenden der Verwendung von HELIUM V</li>
+  <li>Stoppen des HELIUM V Dienstes</li>
   <li>Sichern der Datenbank und der Installation</li>
   <li>Update der Datenbank</li>
-  <li>Zur Verfügung-Stellung des Clients für das automatische Clientupd</li>
+  <li>Zur Verfügung-Stellung des Clients für das automatische Clientupdate</li>
   <li>Update des Applikation Servers</li>
   <li>Zur Verfügung-Stellung des Client-Updates für die User</li>
   <li>Start des Applikation Servers (Log prüfen)</li>
@@ -59,8 +59,8 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
         <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Administratorrechte auf dem Server</li>
       <li>
         <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Liste
-    der Pfade zu Helium V.<br>
-    Helium V wird üblicherweise auf einem Datenvolume (z.B. D:\) installiert.
+    der Pfade zu HELIUM V.<br>
+        HELIUM V wird üblicherweise auf einem Datenvolume (z.B. D:\) installiert.
     Hier finden Sie ein Unterverzeichnis Helium_V. In einigen älteren
     Installationen sind Daten und Verzeichnis des Applikationservers getrennt.
     D.h. hier finden Sie zusätzlich, meistens auf C:\ ein Verzeichnis jboss-4.2.2.GA.</li>
@@ -83,18 +83,18 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     Daten auf der CD auf einem Unterverzeichnis in welchem das Deploy-Datum und
     die Versionsnummer ersichtlich ist. Z.B. deploy08_06_18_3918. D.h. die
     Version ist vom 18.Juni 2008 und hat die Build Nummer 3918.<br>
-    Kopieren Sie am Besten dieses Verzeichnis in das HeliumV Verzeichnis unter
+    Kopieren Sie am Besten dieses Verzeichnis in das HELIUM V Verzeichnis unter
     Update.<br>
   </li>
-  <li>Beenden der Verwendung von Helium V<br>
-    Sorgen Sie dafür, dass alle Helium V Benutzer die Arbeit mit Helium V
-    beendet haben und sich auch von Helium V abgemeldet haben. Sie können unter
+  <li>Beenden der Verwendung von HELIUM V<br>
+    Sorgen Sie dafür, dass alle HELIUM V Benutzer die Arbeit mit HELIUM V
+    beendet haben und sich auch von HELIUM V abgemeldet haben. Sie können unter
     System, unterer Modulreiter gesperrt, oberer Modulreiter Logged In
     nachsehen, wer noch angemeldet ist. Hinweis: Der Benutzer lpwebappzemecs
     meldet sich nie ab und braucht daher auch nicht berücksichtigt werden.<br>
   </li>
-  <li>Stoppen des Helium V Dienstes<br>
-    Stoppen Sie nun den Helium V Dienst, in der Diensteverwaltung (Start,
+  <li>Stoppen des HELIUM V Dienstes<br>
+    Stoppen Sie nun den HELIUM V Dienst, in der Diensteverwaltung (Start,
     Einstellungen, Systemsteuerung, Verwaltung, Dienste). Wählen Sie <img border="0" src="Update_HV_Stopp.gif" width="156" height="19">&nbsp;
     und stoppen Sie den Dienst <img border="0" src="Update_HV_Stopp_Knopf.gif" width="19" height="15">.<br>
   </li>
@@ -119,7 +119,7 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     Backupverzeichnis ab.<br>
     <br>
     Kopieren Sie nun das Verzeichnis \Helium_V\jboss-4.2.2.GA\server\helium in
-    das Helium V Backupverzeichnis.<br>
+    das HELIUM V Backupverzeichnis.<br>
   </li>
   <li>Update der Datenbank<br>
     Starten Sie nun aus dem Deploy-Verzeichnis aus dem Unterverzeichnis full\lpdbupd
@@ -133,7 +133,7 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     <br>
     Erscheint hier<br>
     <img border="0" src="Update_DB_failed.gif" width="204" height="37"> so konnte keine Verbindung zur
-    Datenbank hergestellt werden. Bitte wenden Sie sich an Ihren Helium V
+    Datenbank hergestellt werden. Bitte wenden Sie sich an Ihren HELIUM V
     Betreuer.<br>
     <br>
     Konnte die Verbindung zur Datenbank aufgebaut werden, so klicken Sie bitte
@@ -200,7 +200,7 @@ bei Verwendung von Microsoft Betriebssystemen (Windows 2000, Windows XP, Windows
     haben. Wird diese Datei sehr schnell sehr viel größer, so konnte der
     Applikationserver nicht ordnungsgemäß gestartet werden. Versuchen Sie
     bitte den gesamten Server neu zu starten. Bringt auch dies keine besseren
-    Ergebnisse, so wenden Sie sich bitte an Ihren Helium V Betreuer.<br>
+    Ergebnisse, so wenden Sie sich bitte an Ihren HELIUM V Betreuer.<br>
   </li>
   <li>Update des Clients am Server<br>
     Starten sie den bestehenden alten Client am Server. Es muss der automatische
@@ -225,13 +225,13 @@ ist. Benennen Sie dazu bitte das jeweilige anwender Verzeichnis um. Damit wird
 erreicht, dass die Standard Formulare verwendet werden. Funktioniert nun der
 Ausdruck, so wurden größere Änderungen in der Report-Schnittstelle
 durchgeführt. Bitte wenden Sie sich unter Angabe des Namens der Reportvorlage
-an Ihren Helium V Betreuer.</p>
+an Ihren HELIUM V Betreuer.</p>
 <p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
 <p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><b>Hinweis
 zum FTP Download</b></p>
 <p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Verwenden
 Sie für den FTP Download am Besten den Totalcommander (zu finden auf der
-Original Helium V CD unter Tools Totalcmd). Stellen Sie hier unter Netz, Neue
+Original HELIUM V CD unter Tools Totalcmd). Stellen Sie hier unter Netz, Neue
 Verbindung die entsprechenden Zugangsdaten ein.</p>
 <p class="answer" STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Sollte
 der Totalcommander nicht zur Verfügung stehen, so achten Sie bitte auf passiven
@@ -241,7 +241,7 @@ bei Verwendung von Linux/Mac Betriebssystemen</b></p>
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="answer">Diese
 ist der oben beschriebenen Vorgehensweise sehr ähnlich. Da hier zusätzlich
 entsprechende Linux/Mac-Kenntnisse vorausgesetzt werden, wird das Update von
-Ihrem Helium V Betreuer durchgeführt.
+Ihrem HELIUM V Betreuer durchgeführt.
 <p STYLE="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0" class="question"><b><a name="Update von Betriebssystem und Datenbankversionen"></a>Update
 von Betriebssystem und Datenbank-Versionen</b></p>
 
