@@ -14,7 +14,7 @@
 <h1>Einrichten interner Versanddienst</h1>
 <p class="answer">Mit dem internen Versanddienst steht Ihnen aber Version 5956
 eine direkte SMTP und IMAP Anbindung für den Versand Ihrer EMails und
-gegebenfalls auch Faxe direkt integriert im Helium V Applikation Server zur
+gegebenfalls auch Faxe direkt integriert im HELIUM V Applikations Server zur
 Verfügung. D.h. der Umweg über Windows wird hiermit nicht benötigt. Für eine
 schematische Darstellung des Versanddienstes <a href="Einbindung_EMail_Fax_IMap.htm">siehe
 bitte</a>.<br>
@@ -25,9 +25,9 @@ Parametrierung des internen Versanddienstes erfolgt im Modul System. Geben Sie
 hier unter Kategorie Versand ein, so werden die erforderlichen Parameter für
 den internen Versanddienst gelistet.</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Sollten Sie
-in Ihrer Installation diese Parameter nicht vorfinden, so ist in Ihrer Helium V
+in Ihrer Installation diese Parameter nicht vorfinden, so ist in Ihrer HELIUM V
 Installation dieses Modul nicht freigeschaltet. Bitte wenden Sie sich an Ihren
-Helium V Betreuer.</p>
+HELIUM V Betreuer.</p>
 <p class="question" style="word-spacing: 0; text-indent: 0; margin: 0">Einrichten
 des SMTP Servers:</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Durch die
@@ -186,28 +186,28 @@ Benutzerdaten</p>
 </table>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">Q: Der IMAP Server ist
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="question">Q: Der IMAP Server ist
 definiert, es werden aber keine EMails versandt?</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">A: Der interne Versanddienst
-von Helium V funktioniert so, dass zuerst das EMail per SMTP Server versandt
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">A: Der interne Versanddienst
+von HELIUM V funktioniert so, dass zuerst das EMail per SMTP Server versandt
 wird. Hat dies funktioniert, so wird, wenn der IMAP Server definiert ist, eine
 Kopie davon in das IMAP Konto des Benutzers abgelegt.</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">Das bedeutet: Bitte
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">&nbsp;</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">Das bedeutet: Bitte
 prüfen Sie ob der Zugriff auf den SMTP Server mit den Parametern SMPTSERVER, SMTPSERVER_BENUTZER,
 SMTPSERVER_KENNWORT richtig konfiguriert ist.</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">Sie sehen im System,
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">Sie sehen im System,
 unterer Modulreiter Versandauftrag, beim jeweiligen Versandauftrag unten den
 Status. Interpretieren Sie diesen entsprechend.</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">Werden Parameter am
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">Werden Parameter am
 Versandauftrag verstellt / neu gesetzt, so sollte ein im Postausgang wartender
 Auftrag mit dem grünen Haken <img border="0" src="../Bilder/Versanddienst_triggern.gif" width="30" height="25">
 neu getriggert werden. Es wird dadurch auch die interne Zeitsteuerung neu
 angestoßen.</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">Bei mehreren Mandanten
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">&nbsp;</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">Bei mehreren Mandanten
 achten Sie bitte darauf, dass sowohl alle erforderlichen Parameter sowohl unter
-System, als auch im Personal je Mandant und Mitarbeiter der Versenden darf dies
+System, als auch im Personal je Mandant und Mitarbeiter, der Versenden darf, dies
 definiert werden muss.</p>
 <p class="question" style="word-spacing: 0; text-indent: 0; margin: 0"><a name="EMailversenden Voraussetzungen"></a>Voraussetzungen
 die gegeben sein müssen um EMails richtig weiterreichen zu können</p>
@@ -215,12 +215,12 @@ die gegeben sein müssen um EMails richtig weiterreichen zu können</p>
 deutschsprachigen Raum kommt es immer wieder zur massiven Verwirrung, weil der
 Inhalt von EMails nicht richtig weitergereicht wird. Hier kommt erschwerend
 dazu, dass am EMail-Versand doch einige Systeme beteiligt sind.</p>
-<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- Helium V
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- HELIUM V
 -&gt; übergibt das EMail an den SMTP Server</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- SMTP
 Server reicht das EMail an den Empfänger weiter und bestätigt dass das EMail
 versandt werden konnte</p>
-<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- Helium V
+<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- HELIUM V
 legt eine Kopie im IMAP Ordner des Versenders ab</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">-
 Empfänger öffnet das EMail mit seinem Client</p>
@@ -232,7 +232,7 @@ unterschiedlich.</p>
 <ul>
   <li>
     <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Derzeit
-    wird EMail Text welcher von Helium V generiert wird als reiner ASCII Text
+    wird EMail Text welcher von HELIUM V generiert wird als reiner ASCII Text
     übergeben. Dieser Text ist nach UTF-8 codiert.</li>
   <li>
     <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
@@ -240,7 +240,7 @@ unterschiedlich.</p>
     Servers eingestellten Sprache</li>
   <li>
     <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Plain
-    Text EMails, wie sie von Helium V gesendet werden, werden in den Clients oft
+    Text EMails, wie sie von HELIUM V gesendet werden, werden in den Clients oft
     unterschiedlich interpretiert / dargestellt.</li>
 </ul>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Daher
@@ -278,7 +278,7 @@ für Faxmaker</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">Der Faxversand über den
 Faxmaker ist ebenfalls möglich.</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">Angeblich ist die für
-Helium V zu verwendende Option immer verfügbar. D.h. es ist für den Faxversand
+HELIUM V zu verwendende Option immer verfügbar. D.h. es ist für den Faxversand
 lediglich bei SMTPSERVER_FAXDOMAIN FAXMAKER.COM einzutragen.</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">In aller Regel mach die
 Telefonanlage / der Faxmaker die Amtsholung selbst, daher muss der Parameter
