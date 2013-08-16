@@ -207,6 +207,21 @@ sicher, dass die JBoss Console (\\Helium_Server\Helium_V\jboss-4.2.2.GA\server\h
 abgschaltet ist. D.h. diese darf in Ihrem Helium V Deploy Verzeichnis nicht
 eingetragen sein.</p>
 
+<p class="question" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0; margin-bottom: 0">Q:
+Die Quickzeiterfassung liefert beim Start immer Fehler</p>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0; margin-bottom: 0">A:
+Oft liegt das an einer falsch eingegebenen URL. Haben Sie z.B. direkt aus dem
+WebLink die Url kopiert und sofort die Abfrage gestartet, so wird logischerweise
+der angegebene Server nicht gefunden. Die aktuellen Browser versuchen daher die
+richtige URL zu erraten und ändern den Link entsprechend ab, z.B. auf <a href="http://www.heliumv_server.com:8080/ze/ze?cmd=quickze">http://www.heliumv_server.com:8080/ze/ze?cmd=quickze</a>.
+Wird nun nur der Servername korrigiert, so gibt es diesen trotzdem nicht. D.h.
+es muss darauf geachtet werden, dass nur <a href="http://DerNameIhresHeliumVServers:8080/ze/ze?cmd=quickze">http://DerNameIhresHeliumVServers:8080/ze/ze?cmd=quickze</a>
+eingegeben wird und die automatischen Korrekturen die viele Browser vornehmen
+ignoriert werden.</p>
+
+<p class="answer" style="line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
 </body>
 
 </html>

@@ -2134,6 +2134,20 @@ Wie können die Bestellung eines Loses herausgefunden werden ?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 <a href="../Bestellung/index.htm#Lose einer Bestellung">Siehe dazu.</a></p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wieso haben manche Los-Materialpositionen eine Sollmenge von 0?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Hintergrund ist, dass es für das Los die Funktion &quot;Los aktualisieren
+anhand Stückliste&quot; gibt. Bei dieser Funktion werden alle Sollmengen
+aktualisiert. Danach wird versucht die Positionen mit Sollmenge 0,00 zu
+entfernen. Sind mit dieser Position jedoch weitere Datensätze verbunden, z.B.
+Bestellpositionen, so kann aus datentechnischer Sicht diese Position, auf die
+sie sich ja bezieht, nicht mehr gelöscht werden. Daher bleiben manchmal
+Positionen mit 0,00 in der Sollmenge in den Losmaterialpositionen enthalten.
+Gerade bei Stücklistenänderungen von sehr dynamischen Stücklisten kommt dies
+gerne vor.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Los Stornieren"></a>Q:
 Worauf ist beim Storno eines Loses zu achten?</p>
 
