@@ -890,6 +890,23 @@ einer Unterstückliste werden.</p>
 und Stückliste müssen jedoch klar von einander getrennt werden. Siehe dazu
 oben.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie kann nun der Unterschied zwischen Stückliste und Hilfsstückliste erklärt
+werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Da von den Anwender immer wieder die Frage nach dem Unterschied zwischen den
+beiden Arten der Stückliste kommt hier eine etwas pragmatische Erklärung.</p>
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erklärung für Elektriker: Denken Sie an eine rote Signalleuchte die Sie in einen Schaltschrank einbauen. Von der Denke her, ein Teil. Von der Materialwirtschaft besteht die rote Signalleuchte aus Fassung, Anschlussdrähten, Bohrarbeiten,
+    Lämpchen, Kappe usw.. In den Stücklisten will ich nur die rote Signalleuchte stehen haben (so wird ja gedacht) im Los, also im Materialbedarf muss ich aber die Fassung, die Anschlussdrähte, die Bohrarbeiten, das
+    Lämpchen, die Kappe usw. haben, weil ja alle Teile aus dem Lager entnommen werden. Einen Lagerstand für die rote Signalleuchte hat es nie gegeben, es wurde diese auch nie produziert.
+    Also ist die rote Signalleuchte die Hilfsstückliste.<br>
+    Oder in anderen Worten, ein Makro.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erklärung aus der Welt der Küche: Für jeden Kuchen gibt es einen Basis Teig. Dieser besteht aus Mehl, Zucker, Eier, Bearbeitungsanweisung usw.. Will ich aber z.B. einen Früchtetorte mit köstlichen Erdbeeren backen, so brauche ich den Basis Teig und die Erdbeeren und das Gelee usw.. Also steht im Rezept (= Stückliste) Basis Teig plus Erdbeeren plus Gelee usf.. Beginne ich nun mit dem Kuchenbacken, dann nehme ich Mehl, Zucker, Eier, Erdbeeren, Gelee und menge dies alles zu einer köstlichen Erdbeertorte zusammen. Einen Lagerstand für den Basisteig hat es nie gegeben, er wurde ja gleichzeitig mit den anderen Zutaten verarbeitet.
+    Also ist der Basis Teig die Hilfsstückliste.</li>
+</ul>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Bei der Gesamtkalkulation sehe ich die Hilfsstückliste, wird nun das Los
 aufgelöst fehlt die Hilfsstückliste</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1278,6 +1295,60 @@ Beginnterminoffset ein Eintrag von -999 Tagen gesetzt wird, was wiederum dazu
 führt, dass bei der Berechnung des nächsten Bestellvorschlages diese
 Stücklistenposition, wenn sie in einem aktuellen Los enthalten ist, mit einem
 Liefertermin von heute bestellt wird.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie lange kann eine Stückliste und damit das Fertigungslos aktualisiert werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+HELIUM V wurde für KMUs entwickelt. Eine der wesentlichsten Eigenschaften der
+KMUs ist, dass sie sehr flexibel sind. Das spiegelt sich daher auch in der
+Stücklistenverwaltung wieder. Darum ist es bei vielen HELIUM V Anwendern so,
+dass die Stückliste erst stimmt, wenn die Anlage beim Kunden ist. D.h. solange
+bis das Fertigungslos tatsächlich vollständig erledigt ist, kann das
+Fertigungslos geändert werden und es gibt selbstverständlich die Möglichkeit
+das Los immer wieder anhand der Stückliste zu aktualisieren.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+beginnt man nun wenn ein neuer Auftrag angelegt wurde und man erst mit der
+Konstruktion der Anlage beginnt, also keine wie immer gearteten Details einer
+Anlage, eines Gerätes, eines Produktes bekannt sind.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gehen
+Sie hier ganz pragmatisch vor.</p>
+
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erstellen
+    Sie die Auftragsbestätigung an den Kunden. In dieser sind die vom Kunden
+    bestellten Artikel enthalten. Es ist von Vorteil wenn diese bereits
+    Stücklisten sind, dies kann aber auch nach der Erstellung und Versendung
+    der Auftragsbestätigung gemacht werden.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+    Konstrukteur kann unmittelbar nach dem Versenden der Auftragsbestätigung
+    (genauer nach dem diese im Status offen ist) mit seiner Konstruktionsarbeit beginnen und seine Zeit
+    direkt auf den AUFTRAG buchen.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn die grobe Struktur der Stücklisten mit
+    den Haupteilen, den lieferkritischen Teilen stimmt können Sie die (Basis-) Lose dafür anlegen. Wenn Sie diese Lose gleich ausgeben, können die Mitarbeiter darauf buchen, auch wenn noch keine wirklichen Inhalte, keine
+    echten Solldaten gegeben sind.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun wird die Stückliste vervollständigt und aktualisiert. Wenn eine Stückliste in HELIUM V (teilweise) fertig ist, so kann diese entweder im Stücklistenmodul mit Bearbeiten, Lose aktualisieren oder im Los-Modul mit Bearbeiten anhand Stückliste bzw. anhand Arbeitsplan aktualisieren auf den aktuellen Stand gebracht werden. Üblicherweise werden hier die Materialkorrekturbuchungen mit dieser Aktualisierung durchgeführt. Es gibt jedoch auch eine Einstellung, dass nur die Solldaten aktualisiert werden.</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">So
+ergänzen Sie währen der Herstellung der Anlage laufend die Stücklisten und
+erhalten zum Schluss, faktisch gemeinsam mit der Fertigstellung der Anlage auch
+die fertige Stückliste. Denken Sie bei dieser Vorgehensweise auch daran, dass
+es auch die gegenteilige Denkweise, die gegenteilige Herangehensweise gibt und
+dass diese genauso von HELIUM V unterstützt wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+es werden nur die benötigten Lose anhand der Stücklisten angelegt. Diese
+beinhalten meist nur die allerwesentlichsten Komponenten. Der Mitarbeiter baut
+anhand von Montagezeichnungen die Anlage zusammen und bucht das vom Lager
+entnommene Material mittels <a href="../Installation/Einbindung_zusaetzlicher_Hardware.htm#Losmaterialbuchung">Funkscanner
+</a>direkt ins Los. Somit entspricht zum Fertigstellungszeitpunkt das Los dem
+tatsächlich entnommenen Material. Nun kann über die Zwischenablage der Soll
+oder Ist-Inhalt des Loses in die Stückliste übernommen werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
