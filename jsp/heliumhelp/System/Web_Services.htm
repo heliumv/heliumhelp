@@ -35,8 +35,8 @@ Funktionalitäten.</p>
 <h1><a name="Webshop"></a>Webshop Verbindung / Anbindung</h1>
 
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Die
-Idee hinter der Helium V Webshopanbindung ist, dass die wesentlichen / alle
-Daten, die Sie für Ihren Webshop benötigen über Ihr ERP System Helium V
+Idee hinter der HELIUM V Webshopanbindung ist, dass die wesentlichen / alle
+Daten, die Sie für Ihren Webshop benötigen über Ihr ERP System HELIUM V
 gesteuert werden.</p>
 
 <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Aus
@@ -120,8 +120,8 @@ folgender Zusammenhang gegeben:</p>
   <li>
     <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Shopgruppen<br>
     Definieren Sie im Modul Artikel, unterer Modulreiter Shopgruppe Ihre
-    Shopgruppen, in Magento Kategorien genannt, in die Ihre Artikel im Webshop
-    erscheinen sollten.<br>
+    Shopgruppen, in Magento Kategorien genannt, in denen Ihre Artikel im Webshop
+    erscheinen sollen.<br>
     Die Shopgruppen sind hierarchisch aufgebaut. D.h. für jede Shopgruppe kann:<br>
     - die Vatershopgruppe (also die übergeordnete Shopgruppe)<br>
     - ein Referenzartikel um z.B. weitere Beschreibungen und Bilder für diese
@@ -137,7 +137,8 @@ folgender Zusammenhang gegeben:</p>
     Langtexte und die Bilder hinterlegt werden, für die Webshops zur Verfügung
     stehen.<br>
     D.h. damit können Sie eigene Webshop-Beschreibungen für den jeweiligen
-    Artikel erstellen.</li>
+    Artikel erstellen. Zusätzlich können hier mit&nbsp; Kommentararten auch
+    SEO-relevante Informationen hinterlegt werden.</li>
   <li>
     <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Verwendung
     der Artikel für den jeweiligen Webshop durch die Shopgruppe<br>
@@ -212,7 +213,13 @@ Sensitive)</li>
 jeweiligen Webshop übertragen bzw. deren Artikel
     <ul>
       <li>
-        <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Referenzartikel ... Liefert Beschreibung und Bilder für die Shopgruppe, im
+        <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Im
+        Detail des Artikels hinterlegen Sie die Hauptshopgruppe. Im Reiter
+        Webshopgruppen können Sie dem Artikel weitere zusätzliche Shopgruppen
+        zuweisen.</li>
+      <li>
+        <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Referenzartikel ... Liefert Beschreibung und Bilder für die
+        Shopgruppe im Allgemeinen, im
 Magento Category genannt.</li>
     </ul>
   </li>
@@ -258,12 +265,33 @@ Shopgruppen hinzu. Bitte beachten: Die Auswertungen z.B. unter Journal gehen nur
 auf die Haupt-Shopgruppe.</li>
       <li>
         <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Kommentar:<br>
-        Eine der Kommentararten muss für den Webshop freigeschaltet sein (Boolean).<br>
+        Eine der Kommentararten muss für den Webshop freigeschaltet sein (Boolean).
+        Das erfolgt in den Grunddaten - Reiter Kommentarart hier bei Webshop
+        einen Haken setzen.<br>
         Es können beim Artikel je Kommentarart (Webshop) und Typ je ein Datensatz =
 Bild, Langtext usw. hinterlegt werden.<br>
         <b><u>Wichtig:</u></b> Der Text hat keine
 Formatierungszeichen und muss vom Inhalt her zu Ihrem Shop passen. Gleiches gilt
 für die Bilder.</li>
+      <li>
+        <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Referenzartikel:
+        Mit dem Refernzartikel können Sie entweder einen Artikel als Beispiel
+        für weitere Artikel der Kategorie anlegen und diesen auch im Webshop
+        anzeigen lassen, oder nur für die allgemeinen Informationen (wie zum
+        Beispiel Text und Bild) für eine Webshopgruppe (Kategorie in Magento)
+        hinterlegen. Die Entscheidung ob der Artikel auch in der Liste der zu
+        kaufenden Artikel angeführt wird, erfolgt über den Preis. Sobald der
+        Preis 0 ist, wird dieser nur als Vorlage bzw. Beispiel verwendet und
+        kann über den Webshop nicht bestellt werden.</li>
+      <li>
+        <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">Mehrwertsteuer:
+        Hinterlegen Sie im Artikel die Mehrwertsteuer, dann wird diese auch im
+        Webshop übernommen</li>
+      <li>
+        <p class="answer" style="word-spacing: 0; text-indent: 0; line-height: 100%; margin: 0">SEO
+        Informationen: Mit den Kommentararten SEODescription, SEOKeywords,
+        SEOTitle werden Inhalte für die Suchmaschinenoptimierung des Webshops
+        hinterlegt.&nbsp;</li>
     </ul>
   </li>
 </ul>
