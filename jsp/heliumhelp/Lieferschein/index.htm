@@ -189,7 +189,7 @@ Was passiert beim Stornieren eines Lieferscheines?</p>
 Wenn ein Lieferschein storniert wird, werden alle Buchungen, die gemacht wurden, rückgängig gemacht. Das betrifft Lagerbuchungen,
 Auftragreservierungen und die offenen Mengen in den zugehörigen Auftragpositionen. Die Lieferscheinpositionen behalten dabei ihre
 Informationen (Menge, Preis,...), der Status des Lieferscheins wechselt auf storniert. Der Storno eines Lieferscheins kann nicht rückgängig gemacht
-werden.</p>
+werden. Wenn ein Lieferschein storniert wird, dann kommt eine deutliche Meldung, das dies nicht rückgängig gemacht werden kann.&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
@@ -334,10 +334,12 @@ Bezieht sich der Lieferschein auf einen Auftrag so wird dieses Feld automatisch
 durch den Auftrag vorbesetzt. Ist der Lieferschein das erste Papier in diesem
 Geschäftsfall, hat also der Lieferschein keinen Auftragsbezug, so kann die
 Bestellnummer hier direkt eingetragen werden. Die Bestellnummern werden in die
-Rechnung übernommen. </p>
+Rechnung übernommen.&nbsp; </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
 in der Rechnung steht dieser Bezug zur Kundenbestellnummer zur Verfügung. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Projekt und Bestellnummer werden in der Auswahlliste mit | getrennt angezeigt. </p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Nach dem Druck des&nbsp; Lieferscheines kann ich die Positionen nicht mehr
@@ -348,7 +350,9 @@ diesem Status dürfen die Lieferscheinpositionen nicht verändert werden. Zum
 Ändern des Lieferscheines wechseln Sie bitte in die Kopfdaten und Klicken Sie
 auf Ändern. Speichern Sie nun und beantworten Sie die Frage nach dem
 Zurücknehmen des Statuses mit Ja. Nun ist der Lieferschein wieder im Status
-angelegt und Sie können die Positionen wieder ändern.</p>
+angelegt und Sie können die Positionen wieder ändern. Der Status 'Geliefert' kann
+nun auch aus den Positionen heraus zurückgenommen werden, wenn eine neue hinzugefügt, eine bestehende
+bearbeitet bzw. eine Position gelöscht wird.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann auch ein Lieferschein an einen Lieferanten gesandt werden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
