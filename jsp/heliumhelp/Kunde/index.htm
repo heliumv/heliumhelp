@@ -152,8 +152,8 @@ Es kann jederzeit eine neue Debitorennummer zugewiesen werden. Das Debitorenkont
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Hinweis:</b> Der Bereich
-der Debitorennummern kann im Modul System, Parameter, Debitorennummern von und
-bis eingestellt werden und die Länge der Nummer (maximal 6stellig) wird über
+der Debitorennummern kann im Modul System, Parameter, DEBITORENNUMMER_VON und DEBITORENNUMMER_BIS
+eingestellt werden und die Länge der Nummer (maximal 6stellig) wird über
 den Parameter KONTONUMMER_STELLENZAHL_DEBITORENKONTEN eingestellt.&nbsp;Achten
 Sie darauf, dass die Definition des Debitorennummernbereiches und die
 Stellenanzahlen übereinstimmen.</p>
@@ -179,7 +179,7 @@ sonstigen Zeichen werden auf 27 zusammengefasst.</p>
 Debitorennummern Vergabe</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit dem Parameter
-AUTOMATISCHE_DEBITORENNUMMER=1 kann eingestellt werden, dass ab dem Zeitpunkt ab
+AUTOMATISCHE_DEBITORENNUMMER (=1) kann eingestellt werden, dass ab dem Zeitpunkt ab
 dem die Rechnungsadresse benötigt wird, für diesen Kunden eine Debitorennummer
 automatisch erzeugt wird. D.h. Wird ein Kunde als Rechnungsadresse im Auftrag
 oder im Lieferschein oder als Rechnungsempfänger verwendet, so wird
@@ -283,7 +283,8 @@ von 50 % der Kunden kommen nur 5 % des Umsatzes (C-Kunden = geringe Bedeutung).<
 <a href="http://de.wikipedia.org/wiki/ABC-Analyse">http://de.wikipedia.org/wiki/ABC-Analyse</a></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
 HELIUM V können Sie die Schwellwerte der A und B Verteilung in den
-Mandantenparametern ändern. Der Umsatzwert für die C Beurteilung ergibt sich
+Mandantenparametern ändern (LIEFERANTENBEURTEILUNG_PUNKTE_KLASSE_A,
+LIEFERANTENBEURTEILUNG_PUNKTE_KLASSE_B). Der Umsatzwert für die C Beurteilung ergibt sich
 aus dem Rest von A und B auf 100%.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Journal Umsatzstatistik</p>
@@ -1012,8 +1013,7 @@ Unternehmen ist, können Sie den Zessionsfaktor hinterlegen. Geben Sie hier den
 Prozentsatz ein, zu dem der Zessionsgeber Ihre Forderung an den Kunden
 akzeptiert.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dazu
-gehört auch: Definition des Zessionstextes, siehe dazu System, Parameter,
-Zessionstext.</p>
+gehört auch: Definition des Zessionstextes, siehe dazu System, Parameter, ZESSIONSTEXT.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kunde kann nicht gespeichert werden.</p>
 
@@ -1229,7 +1229,8 @@ offenen Posten aus der FiBu Schnittstelle verwenden, ist die Anzeige der offenen
 Ausgangsrechnungen selbstredend falsch. Daher sollte in diesen Unternehmen die
 Warnung abgeschaltet werden, also bei den einzelnen Kunden kein Kreditlimit
 eingetragen werden. Damit für neu angelegte Kunden kein Kreditlimit eingetragen
-wird, tragen Sie bitte im System unter Parameter für das Kundenkreditlimit -1
+wird, tragen Sie bitte im System unter Parameter für das KREDITLIMIT in der
+Kategorie KUNDE -1
 (minus eins) ein.</p>
 
 

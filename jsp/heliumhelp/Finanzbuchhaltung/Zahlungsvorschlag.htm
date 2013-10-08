@@ -89,7 +89,12 @@ Klick auf <img border="0" src="Zahlungsvorschlag_Bearbeiten_aendern.gif" width="
 der zu überweisende Betrag geändert werden.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Rechts
 unten wird unter Gesamtwert die Summe der für die Überweisung freigegebenen
 Beträge angezeigt.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b><p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
-Skonto berechnet, so werden auch die Beträge um den Skontobetrag reduziert.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b><p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
+Skonto berechnet, so werden auch die Beträge um den Skontobetrag reduziert.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Parameter ZAHLUNGSVORSCHLAG_MIT_SKONTO definiert, dass beim Zahlungsvorschlag
+Skonto berücksichtigt wird.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Parameter ZAHLUNGSVORSCHLAG_SKONTOUEBERZIEHUNGSFRIST können Sie einstellen wie
+lange Skonto noch berücksichtig werden soll (Eingabe in Tagen).<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ZAHLUNGSVORSCHLAG_PERIODE
+gibt den Zeitraum zwischen den Zahlungsläufen in Tagen an.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b><p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
 z.B. Vorauszahlungen nicht exportiert, so sind sehr wahrscheinlich Skontotage
 definiert, aber keine Netto-Zahlungstage.<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Korrigieren
 Sie daher das <a href="../Rechnung/Gemeinsamkeiten_der_Bewegungsmodule.htm#Zahlungsziel">Zahlungsziel</a>
@@ -103,7 +108,7 @@ Exportieren des Zahlungsvorschlages</p>
 Für den Export der zur Zahlung markierten Rechnungen wählen Sie den oberen
 Modulreiter Zahlungsvorschlagsläufe. Durch einen Klick auf <img border="0" src="Zahlungsvorschlag_Exportziel.gif" width="31" height="27"> wird der
 Zahlungsvorschlag exportiert. Der Pfad des Exportes kann unter System,
-Parameter, Mandantenparameter, Zahlungsvorschlag_Exportziel eingestellt werden.
+Parameter, Mandantenparameter, ZAHLUNGSVORSCHLAG_EXPORTZIEL eingestellt werden.
 Dieser Exportpfad muss mit Ihren Elba Einstellungen übereinstimmen (siehe
 unten).<br>
 Bitte beachten Sie, dass der Exportlauf beliebig oft vorgenommen werden kann.</p>
