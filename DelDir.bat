@@ -37,6 +37,9 @@ cd ..
 cd Client
 RMDIR %1 /S /Q
 cd ..
+cd CRM
+RMDIR %1 /S /Q
+cd ..
 cd css
 RMDIR %1 /S /Q
 cd ..
