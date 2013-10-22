@@ -339,7 +339,7 @@ MAXIMALELAENGE_DURCHWAHL_ZENTRALE&nbsp;</td>
       <td width="357" height="25">
 MENGE_UI_NACHKOMMASTELLEN&nbsp;</td>
       <td width="78" height="25">	ALLGEMEIN&nbsp;</td>
-      <td width="52" height="25">0-3</td>
+      <td width="52" height="25">0/1/§</td>
       <td width="528" height="25">Anzahl der Nachkommastellen für Mengenfelder im
         User Interface (UI)</td>
     </tr>
@@ -363,20 +363,20 @@ POSTVERSENDUNGSLAND&nbsp;</td>
       <td width="357" height="25">
 PREISERABATTE_UI_NACHKOMMASTELLEN&nbsp;</td>
       <td width="78" height="25">	ALLGEMEIN&nbsp;</td>
-      <td width="52" height="25">0-4</td>
+      <td width="52" height="25">2/4</td>
       <td width="528" height="25">Anzahl der Nachkommastellen für Preis- und Rabattfelder im UI</td>
     </tr>
   <tr>
       <td width="357" height="25">
 PREISERABATTE_UI_NACHKOMMASTELLEN_EK&nbsp;</td>
       <td width="78" height="25">	ALLGEMEIN&nbsp;</td>
-      <td width="52" height="25">0-4</td>
+      <td width="52" height="25">2/4</td>
       <td width="528" height="25">Anzahl der EK-Nachkommastellen für Preis- und Rabattfelder im UI</td>
     </tr>
   <tr>
       <td width="357" height="25">PREISERABATTE_UI_NACHKOMMASTELLEN_VK</td>
       <td width="78" height="25">	ALLGEMEIN&nbsp;</td>
-      <td width="52" height="25">0-4</td>
+      <td width="52" height="25">2/4</td>
       <td width="528" height="25">Anzahl der VK-Nachkommastellen für Preis- und Rabattfelder im UI</td>
     </tr>
   <tr>
@@ -514,7 +514,7 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
   <tr>
       <td width="357" height="25">ANGEBOT_AG_STKL_AUFLOESUNG_TIEFE&nbsp;</td>
       <td width="78" height="25">	ANGEBOT&nbsp;	</td>
-      <td width="52" height="25">0-7</td>
+      <td width="52" height="25"></td>
       <td width="528" height="25">Tiefe der Stücklistenauflösung am AG Druck.<br>
         0 = die Stückliste wird ohne Positionen angedruckt<br>
         1 = die Positionen der Stückliste werden ohne weitere Auflösung
@@ -531,7 +531,7 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
   <tr>
       <td width="357" height="25">ANGEBOT_AGVORKALK_STKL_AUFLOESUNG_TIEFE&nbsp;</td>
       <td width="78" height="25">	ANGEBOT&nbsp;	</td>
-      <td width="52" height="25">0-7</td>
+      <td width="52" height="25"></td>
       <td width="528" height="25">Tiefe der Stücklistenauflösung am AG Vorkalkulation Druck.<br>
         0 = die Stückliste wird ohne Positionen angedruckt,<br>
         1 = die Positionen der Stückliste werden ohne weitere Auflösung
@@ -725,7 +725,7 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="357" height="25">ARTIKELWIEDERBESCHAFFUNGSZEIT&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="52" height="25"></td>
-      <td width="528" height="25">Artikel- Wiederbeschaffungszeit in Kalenderwochen oder Tagen. Zulässige Werte: Kalenderwochen und Tage.</td>
+      <td width="528" height="25">Artikel-Wiederbeschaffungszeit in Kalenderwochen oder Tagen. Zulässige Werte: Kalenderwochen und Tage.</td>
     </tr>
   <tr>
       <td width="357" height="25">CHARGENNUMMER_BEINHALTET_MINDESTHALTBARKEITSDATUM&nbsp;</td>
@@ -818,25 +818,29 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="357" height="25">ERLAUBTE_ABWEICHUNG_INVENTURLISTE&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="52" height="25"></td>
-      <td width="528" height="25">Bringt eine Warnung, wenn Abweichung des Inventurstand größer als Wert ist.</td>
+      <td width="528" height="25">Bringt eine Warnung, wenn Abweichung des Inventurstand größer als
+        der Wert ist</td>
     </tr>
   <tr>
       <td width="357" height="25">GERINGEREN_VKPREIS_VORSCHLAGEN&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="52" height="25">0/1</td>
-      <td width="528" height="25">Wenn aufgrund der hinterlegten Preisinformationen ein geringerer VK-Preis für einen Artikel möglich wäre, als die VK-Preisfindung liefert, erhält der Benutzer einen entsprechenden Hinweis.</td>
+      <td width="528" height="25">Wenn aufgrund der hinterlegten Preisinformationen ein geringerer VK-Preis für einen Artikel möglich wäre, als die VK-Preisfindung liefert, erhält der Benutzer einen entsprechenden
+        Hinweis</td>
     </tr>
   <tr>
       <td width="357" height="25">GESTEHUNGSPREISABWERTEN_AB_MONATE&nbsp;</td>
       <td width="78" height="25">	</td>
       <td width="52" height="25"></td>
-      <td width="528" height="25">Ab wievielen Monaten wird der Gestehungspreis abgewertet.</td>
+      <td width="528" height="25">Ab wievielen Monaten wird der Gestehungspreis
+        abgewertet</td>
     </tr>
   <tr>
       <td width="357" height="25">GESTEHUNGSPREISABWERTEN_PROZENT_PRO_MONAT</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="52" height="25"></td>
-      <td width="528" height="25">Um wieviele Prozent wird der Gestehungspreis pro Monat abgewertet.</td>
+      <td width="528" height="25">Um wieviel Prozent wird der Gestehungspreis pro Monat
+        abgewertet</td>
     </tr>
   <tr>
       <td width="357" height="23">HANDLAGERBUCHUNG_MENGE_OBERGRENZE&nbsp;</td>
