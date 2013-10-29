@@ -963,11 +963,361 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="52" height="25"></td>
       <td width="528" height="25">Prozent- Wert der Werbeabgabe</td>
     </tr>
-  <tr>
+    <tr>
       <td width="357" height="25">WERBEABGABE_VOM_EINZELPREIS&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="52" height="25">0/1</td>
       <td width="528" height="25">Werbeabgabe vom Einzelpreis anstatt vom Nettopreis</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ABRUFE_DEFAULT_ABRUFART_AUFTRAG&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">DIVISOR/ MANUELL/ REST</td>
+      <td width="528" height="25">Vorbesetzung für die <a href="../Bestellung/index.htm#Divisor"> Abrufart</a> beim
+        Erstellen eines neuen Abrufauftrags</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ADRESSVORBELEGUNG&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0 = nach Häufigkeit<br>
+        1 = Auftragsadresse = Lieferadresse und Rechnungsadresse anhand Auftragsadresse</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ALLE_LOSE_BERUECKSICHTIGEN&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">In der Nachkalkulation werden alle Lose berücksichtigt
+        (1)</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_ABVORKALK_STKL_AUFLOESUNG_TIEFE&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Tiefe der Stücklistenauflösung am AB Vorkalkulation
+        Druck.<br>
+        0 = die Stückliste wird ohne Positionen angedruckt,<br>
+        1 = die Positionen der Stückliste werden ohne weitere Auflösung
+        angedruckt,&nbsp;<br>
+ 2 = die Positionen der Stückliste werden mit der ersten Ebene der Unterpositionen angedruckt, usw.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_ANSPRECHPARTNER_ANDRUCKEN&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Ansprechpartner im Adressblock andrucken</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_ANSPRECHPARTNER_VORBESETZEN&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Den Ansprechpartner nach Auswahl des Kunden
+        vorbesetzen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_BELEGNUMMERSTARTWERT&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Startwert der Belegnummer im neuen Geschäftsjahr</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_JOURNAL_OFFENE_POSITIONEN_STICHTAG&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Die Vorbesetzung des Stichtages beim Druck von Auftrag
+        Journal Offene Positionen in Wochen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_KOPIEREN_LIEFERDATUM_UEBERNEHMEN&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Gibt an ob beim Kopieren von Aufträgen das Lieferdatum und der Finaltermin berechnet wird oder aus dem zu kopierenden Auftrag
+        übernommen wird</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_LIEFERADRESSE_ANSP_VORBESETZEN&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1/2</td>
+      <td width="528" height="25">0 = nicht vorbesetzen, 1 = erster Ansp. aus Lieferadresse, 2 = Ansp aus Auftragsadresse übernehmen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_RECHNUNGSADRESSE_ANSP_VORBESETZEN</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0 = nicht vorbesetzen, 1 = erster Ansp. aus Rechnungsadresse, 2 = Ansp aus Auftragsadresse übernehmen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAGSERIENNUMMERN_MIT_ETIKETTEN&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Auftrags Seriennummer fortlaufend ab Start mit
+        Etiketten</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_LIEFERZEIT_AUFTRAG&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default- Lieferzeit im Auftrag in Tagen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_UNVERBINDLICH&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Default-Wert für -unverbindlich- in den
+        Auftragskopfdaten</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">KONDITIONEN_DES_BELEGS_BESTAETIGEN&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Konditionen müssen vor dem erstmaligen Aktivieren des Auftrags bestätigt werden</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LIEFERADRESSE_IST_AUFTRAGSADRESSE&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Wenn Lieferadresse = Auftragsadresse, dann diese nicht
+        drucken</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">MINDESTSTANDSWARNUNG&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Lagermindeststandswarnung im Auftrag</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">WIEDERHOLENDER_AUFTRAG_VERSTECKT&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Wenn ein wiederholender Auftrag neu angelegt wird, ist dieser per Default
+        versteckt</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ZUSATZSTATUS_VERRECHENBAR&nbsp;</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0 = RoHs wird angezeigt, 1 = Verrechenbar anstatt RoHs</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FRACHTIDENT&nbsp;</td>
+      <td width="78" height="25">	AUSGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Sonderkreis für Frachtartikel</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">RECHNUNG_ANSPRECHPARTNER_VORBESETZEN&nbsp;</td>
+      <td width="78" height="25">	AUSGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Den Ansprechpartner nach Auswahl des Kunden
+        vorbesetzen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">RECHNUNG_BELEGNUMMERSTARTWERT&nbsp;</td>
+      <td width="78" height="25">	AUSGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Startwert der Rechnungsnummer im neuen Geschäftsjahr</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">WA_NUR_MIT_LS&nbsp;</td>
+      <td width="78" height="25">	AUSGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25"> Warenausgang darf ausschließlich mit LS gebucht
+        werden</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ABRUFE_DEFAULT_ABRUFART_BESTELLUNG&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">DIVISOR/ MANUELL/ REST</td>
+      <td width="528" height="25">Vorbesetzung für die <a href="../Bestellung/index.3.gif#Divisor"> Abrufart</a> beim erstellen eines neuen
+        Abrufs</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">BESTELLUNG_ANSPRECHPARTNER_ANDRUCKEN&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Ansprechpartner im Adressblock andrucken</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">BESTELLUNG_ANSPRECHPARTNER_VORBESETZEN&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Den Ansprechpartner nach Auswahl des Lieferanten
+        vorbesetzen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">BESTELLUNG_BELEGNUMMERSTARTWERT&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Startwert der Belegnummer im neuen Geschäftsjahr</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">BESTELLVORSCHLAG_VERDICHTUNGSZEITRAUM_TAGE&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Vorschlagswert für den Verdichtungszeitraum des
+        <a href="../Bestellung/Bestellvorschlag.htm"> Bestellvorschlags</a> in
+        Tagen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_ARTIKELAUSWAHL&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0 = Lieferant der Bestellung, 1 = Alle</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_EINKAUFSPREIS_ZURUECKPFLEGEN&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1/2</td>
+      <td width="528" height="25">0 = nicht <a href="../Bestellung/index.htm#Bestellpreis zurückpflegen"> zurückpflegen</a><br>
+        1 = Staffelpreis zurückpflegen per default angehakt<br>
+        2 = immer nur Einzelpreiszurückpflegen per default angehakt</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_EMPFANGSBESTAETIGUNG&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Empfangsbestätigung im Bestellungsdruck (???)</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_LIEFERZEITVERSATZ&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Lieferterminversatz in den Kopfdaten
+        in Tagen&nbsp;<br>
+        (-1 = Kein Vorschlag)</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_TEILLIEFERUNG&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Default ob Haken bei Teillieferung gesetzt ist
+        oder nicht</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_VORLAUFZEIT_AUFTRAG&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"><a href="../Bestellung/Bestellvorschlag.htm#Vorlaufzeit">Default Vorlaufzeit</a>
+        für den Auftrag in Tagen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">IN_WEP_TEXTEINGABEN_ANZEIGEN&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Texteingaben in den Wareneingangspositionen
+        anzeigen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">KONDITIONEN_DES_BELEGS_BESTAETIGEN&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Konditionen müssen vor dem erstmaligen Aktivieren der Bestellung bestätigt werden</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LIEFERANTEN_AUTOMATISCH_SORTIEREN&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Gibt an ob beim Statuswechsel der Bestellung von Angelegt auf Offen der ausgewählte Lieferant als bevorzugter Lieferant hinterlegt wird</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">MAHNUNG_AUTO_CC&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Absender des Versandauftrages bekommt eine Kopie</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">MAHNUNGSABSENDER&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Absender der Mahnung: 0= Administrator, 1=Anforderer</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">MONATSBESTELLUNGSART&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1/2</td>
+      <td width="528" height="25">0 = mit automatischem Wareneingang<br>
+        1 = ohne automatischem Wareneingang,&nbsp;<br>
+ 2 = Bestellungsimport</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">OFFSET_LIEFERZEIT_IN_TAGEN&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der Tage ab Bestelldatum bis zur Lieferung</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">PREISUEBERWACHUNG&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Preisüberwachung in der Liste der
+        Bestellpositionen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">PROJEKT_STATT_ORT_IN_AUSWAHLLISTE&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Projekt statt Ort in Auswahlliste</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">TOLERANZFRIST_BESTELLVORSCHLAG&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Die <a href="../Bestellung/Bestellvorschlag.htm#Toleranz"> Toleranzfrist</a> in Tagen die bei der Erstellung eines Bestellvorschlages berücksichtigt wird. Gibt an wie viele Tage zu spät eine Lieferung eintreffen darf.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">URSPRUNGSTERMIN_FUER_LIEFERANTENBEURTEILUNG&nbsp;</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Aktiviert den <a href="../Bestellung/index.htm#Ursprungstermin"> Ursprungstermin</a> bei der AB-Eingabe von
+        Bestellpositionen unter Sicht Lieferantentermine</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">EINGANGSRECHNUNG_BELEGNUMMERSTARTWERT&nbsp;</td>
+      <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Startwert der ER-Nummer im neuen Geschäftsjahr</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">EINGANGSRECHNUNG_LIEFERANTENRECHNUNGSNUMMER_LAENGE&nbsp;</td>
+      <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Länge der Lieferantenrechnungsnummer</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">EINGANGSRECHNUNG_ZAHLUNG_MIT_KURSEINGABE&nbsp;</td>
+      <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Kurseingabe bei Zahlung Eingangsrechnung</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">SCHECKNUMMER&nbsp;</td>
+      <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1/-1</td>
+      <td width="528" height="25">Schecknummer wird bei ER-Druck um 1 erhöht. In ER-Druck nicht sichtbar bei -1</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ZAHLUNGSVORSCHLAG_EXPORTZIEL&nbsp;</td>
+      <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Default Export-Zieldatei Zahlungen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ZAHLUNGSVORSCHLAG_MIT_SKONTO&nbsp;</td>
+      <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Default mit Skonto bezahlen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ZAHLUNGSVORSCHLAG_PERIODE&nbsp;</td>
+      <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Default Zeitraum zwischen den Zahlungsläufen in Tagen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ZAHLUNGSVORSCHLAG_SKONTOUEBERZIEHUNGSFRIST&nbsp;</td>
+      <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Skontoüberziehungsfrist in Tagen</td>
     </tr>
   </table>
 </div>

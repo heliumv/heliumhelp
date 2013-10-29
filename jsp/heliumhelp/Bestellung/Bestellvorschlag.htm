@@ -84,7 +84,7 @@ die Berechnung des Wunsch-Liefertermines, welcher in den Bestellvorschlag
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
 </p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Vorlaufzeit für
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b><a name="Vorlaufzeit"></a>Vorlaufzeit für
 die Aufträge in Tagen</b></p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Aufgrund der
@@ -103,7 +103,7 @@ bitte Parameter: DEFAULT_VORLAUFZEIT_AUFTRAG
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
 </p>
 
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Toleranz</b></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b><a name="Toleranz"></a>Toleranz</b></p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Dies gibt die
 Toleranzfrist für geplante Wareneingänge aus Bestellungen an, welche eventuell
@@ -238,8 +238,21 @@ erstellen.&quot; verwendet wird geschieht Folgendes:</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wird der Bedarf anhand der Endprodukte gesteuert, so definieren Sie bei den relevanten eigengefertigten Produkten einen Lagermindeststand. Damit wird die "immer" auf Lager frei verfügbare Menge definiert. Wenn der
 Lagerbestand + in Fertigung + offene Bestellungen kleiner als der Lagermindestbestand ist, ist ein Bedarf gegeben. Für diesen Bedarf wird die komplette Stücklistenauflösung gerechnet, mit allen Unterstücklisten.
-Davon werden die offenen Bestellungen, Mengen in Fertigung und lagernden Mengen abgezogen. Das Ergebnis sind die Mengen die tatsächlich zu bestellen sind.&nbsp;<br>
+Davon werden die offenen Bestellungen, Mengen in Fertigung und lagernden Mengen abgezogen. Das Ergebnis sind die Mengen die tatsächlich zu bestellen sind.&nbsp;
 </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Verdichtungszeitraum</b>
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Als
+Verdichtungszeitraum für die Verdichtung des Bestellvorschlags wird der Wert
+des Mandantenparameters BESTELLVORSCHLAG_VERDICHTUNGSZEITRAUM_TAGE verwendet.
+</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Q: Welche
 Lieferanten werden verwendet?</b></p>
