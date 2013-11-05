@@ -1319,6 +1319,306 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="52" height="25"></td>
       <td width="528" height="25">Default Skontoüberziehungsfrist in Tagen</td>
     </tr>
+  <tr>
+      <td width="357" height="25">ABLIEFERUNG_BUCHT_ENDE&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Los-Ablieferung von Terminal bucht automatisch ein ENDE</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ABLIEFERUNGSPREIS_IST_DURCHSCHNITTSPREIS&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Der Preis der Losablieferung ist der
+        Durchschnittspreis</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ANZEIGE_IN_ARBEITSPLAN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0 = h - ms (Stunden bis Milisekunden)<br>
+        1 = t - m (Tage bis Minuten)</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUFTRAG_STATT_ARTIKEL_IN_AUSWAHLLISTE&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Auftrag statt Artikel in Losauswahlliste.<br>
+ Der Parameter KUNDE_STATT_BEZEICHNUNG_IN_AUSWAHLLISTE ist unwirksam, wenn = 1</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">AUSGABE_EIGENER_STATUS&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Es gibt den &quot;Ausgegeben&quot; Status vor
+        &quot;In Produktion&quot;</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">BEGINN_ENDE_IN_AUSWAHLLISTE&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Los-Beginn und Ende in Auswahlliste buchbar</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">BEI_LOS_ERLEDIGEN_MATERIAL_NACHBUCHEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Bei Erledigung eines Loses wird das <a href="../Fertigung/index.htm#Materialnachbuchen"> fehlende Material
+        nachgebucht</a></td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_VORLAUFZEIT_INTERNEBESTELLUNG&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Vorbesetzung des Feldes <a href="../Fertigung/Interne_Bestellung.htm#Vorlaufzeit"> Vorlaufzeit in der internen Bestellung
+        </a>in Tagen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ENDE_TERMIN_ANSTATT_BEGINN_TERMIN_ANZEIGEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Ende-Termin anstatt des Beginn-Termins
+        anzeigen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FEHLMENGE_ENTSTEHEN_WARNUNG&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Warnung bei der Los-Ausgabe wenn Fehlmengen entstehen würden</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FEHLMENGE_STATT_PREIS_IN_LOSMATERIAL&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Fehlmenge statt Preis in Los-Material anzeigen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FEHLMENGEN_LOSBEZOGEN_SOFORT_AUFLOESEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Losbezogene Fehlmengen sofort aufloesen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FERTIGUNG_FERTIGUNGSBEGLEITSCHEIN_MIT_SOLLDATEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Fertigungsbegleitschein mit Solldaten drucken</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FERTIGUNG_KAPAZITAETSVORSCHAU_ANZAHL_GRUPPEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der dargestellten Tätigkeitsgruppen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FERTIGUNG_KAPAZITAETSVORSCHAU_ZEITRAUM&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Darstellungszeitraum der Kapazitätsvorschau
+        in Tagen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FERTIGUNGSBEGLEITSCHEIN_MIT_MATERIAL&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Fertigungsbegleitschein Material mit andrucken</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">GANZE_CHARGEN_VERWENDEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Nach Möglichkeit immer ganze Chargen im Los
+        verwenden</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">INTERNE_BESTELLUNG_MIT_AUFTRAGSPOSITIONSBEZUG&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Lose aus interner Bestellung mit
+        Auftragspositionsbezug</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">INTERNEBESTELLUNG_DEFAULTDURCHLAUFZEIT&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default-Durchlaufzeit in Tagen (für die interne Bestellung)</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">INTERNEBESTELLUNG_VERDICHTUNGSZEITRAUM&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"><a href="../Fertigung/Interne_Bestellung.htm#verdichten">Verdichtungszeitraum</a> in
+        Tagen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ISTZEITEN_GLEICH_SOLLZEITEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Für die Nachkalkulation werden die Istzeiten den Sollzeiten
+        gleichgesetzt.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">KDC_BUCHT_ARBEITSGANG&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">KDC Losbuchung auf Arbeitsgang</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">KEINE_AUTOMATISCHE_MATERIALBUCHUNG&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Grundsätzlich keine automatische Materialentnahmen, weder bei Losausgabe noch bei
+        Erledigung</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">KOMMENTAR_AM_FERTIGUNGSBEGLEITSCHEIN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Kommentar am Fertigungsbegleitschein drucken</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">KUNDE_IST_PFLICHTFELD&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Kunde im Los ist Pflichtfeld</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">KUNDE_STATT_BEZEICHNUNG_IN_AUSWAHLLISTE&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Kunde statt Artikelbezeichnung in der Los-Auswahlliste
+        anzeigen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LOS_BEI_AUSGABE_GESTOPPT&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Das Los ist nach der Ausgabe automatisch
+        gestoppt</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LOS_BELEGNUMMERSTARTWERT_FREIE_LOSE&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Startwert der Losnummer im neuen Geschäftsjahr</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LOSAUSGABE_AUTOMATISCH&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Losausgabe ohne Snr/Chnr-Ausgabedialog. Serien-/Chargennummer werden der Reihe nach verwendet.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LOSAUSGABELISTE2_AUTOMATISCH_DRUCKEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Losausgabeliste2 bei Los-Ausgabe automatisch
+        drucken</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LOSBUCHUNG_NUR_SOLLTAETIGKEIT&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Losbuchung vom Terminal nur auf gültige Solltätigkeit
+        zulassen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LOSNUMMER_AUFTRAGSBEZOGEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1/2</td>
+      <td width="528" height="25">0= Losnummer fortlaufend<br>
+        1= Auftragsbezogene Losnummer<br>
+        2= Auftragsbezogene Losnummer nach Bereichen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">MASCHINENBEZEICHNUNG_ANZEIGEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Im Lossollarbeitsplan die Maschinenbezeichnung statt Artikelbezeichnung anzeigen.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">NEGATIVE_SOLLMENGEN_BUCHEN_AUF_ZIELLAGER&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Negative Sollmengen werden auf Ziellager gebucht. Wenn 0, dann wird das erste Lager der Los-Lagerentnahme verwendet.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">NUR_TERMINEINGABE&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Termineingabe ohne Durchlaufzeit</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">PARAMETER_KDC_KEINE_MASCHINENPRUEFUNG&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0 = Prüfung der gebuchten Maschine im
+        Arbeitsgang<br>
+        1 = keine Prüfung</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">RAHMENAUFTRAEGE_IN_FERTIGUNG_VERWENDBAR&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">In den Los-Kopfdaten können auch Rahmenaufträge ausgewählt werden.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">RANKINGLISTE_ZUSATZSTATUS&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">I_ID des Zusatzstatus für Rankingsliste</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">SERIENNUMMERNGENERATOR&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0= kein Seriennummerngenerator<br>
+        1 = fortlaufende <a href="../Fertigung/Geraeteseriennummern.htm"> Seriennummern</a> bei Losablieferung</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">SOLLSATZGROESSE_PRUEFEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Prüfung der Sollsatzgröße bei der Ablieferung am
+        Terminal</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">TOLERANZFRIST_INTERNE_BESTELLUNG&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Die Toleranzfrist in Tagen die bei der Erstellung einer internen Bestellung berücksichtigt wird.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">TRIGGERT_TRUMPF_TOPS_ABLIEFERUNG&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Arbeitszeitartikel für <a href="../Fertigung/TrumpfTops.htm"> TOPS-Ablieferung</a> in HTML-BDE (Artikelnummer)</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">VERKNUEPFTE_BESTELLDETAILS_ANZEIGEN&nbsp;</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Verknüpfte Bestelldetails in Losmaterial
+        anzeigen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25"></td>
+      <td width="78" height="25">	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
+  <tr>
+      <td width="357" height="25"></td>
+      <td width="78" height="25">	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
+  <tr>
+      <td width="357" height="25"></td>
+      <td width="78" height="25">	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
   </table>
 </div>
 
