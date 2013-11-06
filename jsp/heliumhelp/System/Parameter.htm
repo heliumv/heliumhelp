@@ -1602,6 +1602,610 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         anzeigen</td>
     </tr>
   <tr>
+      <td width="357" height="25">AUSZUGSNUMMER_BEI_BANK_ANGEBEN&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">1 = Auszugsnummer muss eingegeben werden<br>
+        0 = wird automatisch generiert</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">BUCHUNGEN_NUR_OFFENE_DEFAULT&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Die Standardbelegung der Checkbox "nur offene" in den Buchungen.<br>
+        1 = aktiviert, 0 = deaktiviert (Standard)</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FIBU_EXPORT_ASCII&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Gibt an ob FIBU-Export Dateien im ASCII Zeichensatz gespeichert werden sollen</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_DEBITORENNUMMER_FORTLAUFEND&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0 = Anfangsbuchstabe des Partners wird für 2+3. Stelle
+        verwendet<br>
+        1 = fortlaufend, gilt für Debitoren und Kreditoren</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_ARTIKELGRUPPEN_DEFAULT_KONTO_AR&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default-Konto für Positionen ohne Artikelgruppe
+        (Rechnung/Gutschrift)</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_ARTIKELGRUPPEN_DEFAULT_KONTO_ER&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default-Konto für Positionen ohne Artikelgruppe
+        (Eingangsrechnung)</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_BMD_BENUTZERNUMMER&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Benutzernummer in BMD (2 Ziffern)</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_MIT_BELEGEN&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Gibt an ob der FIBU-Export die zugehörigen Belege mit im Exportverzzeichnis speichert</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_UEBERSCHRIFT&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Die Spalten-Überschriften in der Exportdatei
+        angeben</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_UEBERSTEUERTE_MANDANTENWAEHRUNG&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Währung, die die Mandantenwährung für FIBU-Exporte übersteuert. z.B. EUR oder CHF</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_UST_IGERWERB_NORMALSATZ_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Umsatzsteuer-Kontonummer für IG-Erwerb
+        Normalsteuersatz</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_UST_IGERWERB_REDUZIERTSATZ_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Umsatzsteuer-Kontonummer für IG-Erwerb reduzierter
+        Steuersatz</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_UST_REVERSECHARGE_NORMALSATZ_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Umsatzsteuer-Kontonummer für Reverse Charge
+        Normalsteuersatz</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FINANZ_EXPORT_UST_REVERSECHARGE_REDUZ_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Umsatzsteuer-Kontonummer für Reverse Charge reduz.
+        Steuersatz</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FINANZ_EXPORT_VARIANTE&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Definiert die Art des Exports.&nbsp;<br>
+ z.B. Kostenstellen oder Artikelgruppen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FINANZ_EXPORT_VST_IGERWERB_NORMALSATZ_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Vorsteuer-Kontonummer für IG-Erwerb
+        Normalsteuersatz</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FINANZ_EXPORT_VST_IGERWERB_REDUZIERTSATZ_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Vorsteuer-Kontonummer für IG-Erwerb reduzierter
+        Steuersatz</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">FINANZ_EXPORT_VST_REVERSECHARGE_NORMALSATZ_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Vorsteuer-Kontonummer für Reverse Charge
+        Normalsteuersatz</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_VST_REVERSECHARGE_REDUZ_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Vorsteuer-Kontonummer für Reverse Charge reduz.
+        Steuersatz</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_ZIELPROGRAMM&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Ziel-Buchhaltungssoftware. z.B. RZL oder BMD</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORTZIEL_DEBITORENKONTEN&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Export-Zieldatei Debitorenkonten (zb.
+        c:\...)</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORTZIEL_EINGANGSRECHNUNG&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Export-Zieldatei Eingangsrechnung</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORTZIEL_GUTSCHRIFT&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Export-Zieldatei Gutschrift</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORTZIEL_KREDITORENKONTEN&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Export-Zieldatei Kreditorenkonten</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORTZIEL_RECHNUNG&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Export-Zieldatei Rechnung</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORTZIEL_SACHKONTEN&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Export-Zieldatei Sachkonten</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_OP_PREFIX_RECHNUNG&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Prefix Rechnungsnummer bei Import
+        Offene-Posten - Werte: ?</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_RABATT_KONTO&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Allgemeiner Rabatt wird auf dieses Konto gebucht&nbsp;<br>
+ (wenn definiert)</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_RECHNUNG_WERT0_ERLAUBT&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">1 ... Rechnung mit Wert 0 erlaubt</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_UVA_ABRECHNUNGSZEITRAUM&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Abrechnungszeitraum der UVA<br>
+        Mögliche Einstellungen: Monatlich, Quartal, Jährlich.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">IMPORT_PLANKOSTEN_DATEI&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Dateiname zu XLS-Spreadsheet mit
+        Plankostendaten</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">INTRASTAT_EXPORTZIEL_EINGANG&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Export-Zieldatei Intrastat-Eingang</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">INTRASTAT_EXPORTZIEL_VERSAND&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default Export-Zieldatei Intrastat-Versand</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KONTONUMMER_STELLENANZAHL_DEBITORENKONTEN&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der Stellen der Kontonummer für Debitorenkonten</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KONTONUMMER_STELLENANZAHL_KREDITORENKONTEN&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der Stellen der Kontonummer für Kreditorenkonten</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KONTONUMMER_STELLENANZAHL_SACHKONTEN&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der Stellen der Kontonummer für Sachkonten</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">LF_RE_NR_BUCHUNGSTEXT&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">0 = Name des Lieferanteranten<br>
+        1 = Lieferantrechnungsnummer als Buchungstext</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">MAHNUNG_AB_RECHNUNGSBETRAG&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Ab welchem Rechnungsbetrag werden Rechnungen gemahnt (in Mandantenwährung)</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">MAHNUNG_ZAHLUNGSFRIST&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Zahlungsfrist ab heute in Tagen</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">TOLERANZ_BETRAGSUCHE&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Toleranz der Betragssuche im Buchungsjournal (in
+        %)</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">TOLERANZ_SUCHE_NACH_BETRAG&nbsp;</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Toleranz in Prozent, wenn nach Beträgen gefiltert
+        wird</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">GUTSCHRIFT_BELEGNUMMERSTARTWERT&nbsp;</td>
+      <td width="78" height="25">	GUTSCHRIFT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Startwert der Belegnummer im neuen Geschäftsjahr</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">GUTSCHRIFT_VERWENDET_NUMMERNKREIS_DER_RECHNUNG&nbsp;</td>
+      <td width="78" height="25">	GUTSCHRIFT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Gutschriften und Rechnungen verwenden denselben Nummernkreis</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">PFAD_KASSENIMPORTDATEIEN_ADS&nbsp;</td>
+      <td width="78" height="25">	KÜCHE&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Pfad zu den ADS- Kassenimport- Dateien des Küchenmoduls</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">PFAD_KASSENIMPORTDATEIEN_OSCAR&nbsp;</td>
+      <td width="78" height="25">	KÜCHE&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Pfad zu den OSCAR- Kassenimport- Dateien des Küchenmoduls</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">WARENEINGANG_IN_BESTELLEINHEIT&nbsp;</td>
+      <td width="78" height="25">	KÜCHE&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Wareneingang in Bestellmengeneinheit im WebClient&nbsp;<br>
+ (0 ... in Artikeleinheit, 1 ... in Bestelleinheit)</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">BONITAETSWARNUNGSZEITRAUM&nbsp;</td>
+      <td width="78" height="25">	KUNDE	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Bonitätswarnungszeitraum in Monaten</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEFAULT_LIEFERDAUER&nbsp;</td>
+      <td width="78" height="25">	KUNDE	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Default- Lieferdauer</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">ZAHLUNGSMORAL_ANZAHL_RECHNUNGEN&nbsp;</td>
+      <td width="78" height="25">	KUNDE	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der Rechnungen, die für die Berechnung der
+        <a href="../Kunde/index.htm#Zahlungsmoral"> Zahlungsmoral</a> berücksichtigt
+        werden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">ZAHLUNGSMORAL_MONATE&nbsp;</td>
+      <td width="78" height="25">	KUNDE	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der Monate, die für die Berechnung der
+        <a href="../Kunde/index.htm#Zahlungsmoral"> Zahlungsmoral</a> berücksichtigt
+        werden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">AUTOMATISCHE_DEBITORENNUMMER&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Debitorennummer bei Ausgangsbelegen automatisch anlegen, wenn nicht
+        vorhanden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">BONITAETSWARNUNGSZEITRAUM&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Bonitätswarnungszeitraum in Monaten</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEBITORENNUMMER_BIS&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Definition der Debitorennummern</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEBITORENNUMMER_VON&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Definition der Debitorennummern</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEFAULT_ARTIKEL_ARTIKELART&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEFAULT_KUNDE_AKZEPTIERT_TEILLIEFERUNGEN&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Default-Wert für Option -Akzeptiert Teillieferungen- in
+        Kundenkonditionen</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEFAULT_KUNDENAUSWAHL&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">1/2/3</td>
+      <td width="528" height="25">1 = Alle, 2 = Kunde, 3 = Interessent</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEFAULT_LIEFERDAUER&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Default- Lieferdauer</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KREDITLIMIT&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KUNDE_ERWERBSBERECHTIGUNG_ANZEIGEN&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Gibt an ob Das Feld Erwerbsberechtigung im Kunden angezeigt wird und die eingetragenen Werte beim
+        Speichern von Belegen überprüft werden.</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KUNDE_MIT_NUMMER&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Kunden haben eine <a href="../Kunde/index.htm#Kundennummer">Kundennummer</a></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KUNDEN_POSITIONSKONTIERUNG&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25"> Postionskontierung wenn 1 (ja) Artikel bestimmt MWST, wenn 0 (nein) gilt MWST des Kunden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KUNDENBEWERTUNG_WERT_A&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Prozent- Wert für die <a href="../Kunde/index.htm#ABC"> Einteilung</a> in Klasse A</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KUNDENBEWERTUNG_WERT_B&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Prozent- Wert für die <a href="../Kunde/index.htm#ABC"> Einteilung</a> in Klasse B</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KUPFERZAHL&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"><a href="../artikel/Materialzuschlag.htm">Kupferzahl</a>
+        für VK-Belege</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KURZWAHL_BIS&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KURZWAHL_VON&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">NETTOPREISE&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">NUMMER&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">OFFENER WE</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">PREISBASIS_VERKAUF&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1/2</td>
+      <td width="528" height="25">Definition für den <a href="../artikel/Verkaufspreis.htm">Verkaufspreis</a><br>
+        0 = Verkaufspreisbasis<br>
+        1 = Preisbasis lt. Kundenpreisliste (Es wird als Preisbasis der lt. Preisliste berechnete Betrag
+        verwendet)<br>
+        2 = Verkaufspreisbasis mit Mengenstaffelrabatt im Zusatzrabatt</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">REVERSE_CHARGE_VERWENDEN&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Reverse Charge verwenden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">TOURSTATISTIK&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">ZAHLUNGSMORAL_ANZAHL_RECHNUNGEN&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der Rechnungen, die für die Berechnung der
+        <a href="../Kunde/index.htm#Zahlungsmoral"> Zahlungsmoral</a> berücksichtigt
+        werden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">ZAHLUNGSMORAL_MONATE&nbsp;</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der Monate, die für die Berechnung der
+        <a href="../Kunde/index.htm#Zahlungsmoral"> Zahlungsmoral</a> berücksichtigt
+        werden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">AUTOMATISCHE_KREDITORENNUMMER&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Kreditorennummer bei Belegen automatisch anlegen, wenn nicht
+        vorhanden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KREDITLIMIT&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Betrag, der das Kreditlimit des Lieferanten
+        definiert</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KREDITOREN_BIS&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Definition der Kreditorennummern</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KREDITOREN_VON&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Definition der Kreditorennummern</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KURZWAHL_BIS&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KURZWAHL_VON&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">LIEFERANTENBEURTEILUNG_PUNKTE_KLASSE_A&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der benötigten Punkte für die Beurteilungsklasse A</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">LIEFERANTENBEURTEILUNG_PUNKTE_KLASSE_B&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der benötigten Punkte für die Beurteilungsklasse B</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">LIEFERANTENBEURTEILUNG_PUNKTE_KLASSE_C&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25">Anzahl der benötigten Punkte für die Beurteilungsklasse C</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">NUMMER&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">ARTIKELBEZEICHNUNG_IN_LS_EINFRIEREN&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Bei LS-Erfassung auf -Sicht Auftrag- Artikelbezeichnungen
+        einfrieren</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">KONDITIONEN_DES_BELEGS_BESTAETIGEN&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Konditionen müssen vor dem erstmaligen Aktivieren des Lieferscheins bestätigt werden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">LIEFERSCHEIN_ANSPRECHPARTNER_ANDRUCKEN&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Ansprechpartner im Adressblock andrucken</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">LIEFERSCHEIN_ANSPRECHPARTNER_VORBESETZEN&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Den Ansprechpartner nach Auswahl des Kunden
+        vorbesetzen</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">LIEFERSCHEIN_BELEGNUMMERSTARTWERT&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Startwert der Belegnummer im neuen Geschäftsjahr</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">MINDESTSTANDSWARNUNG&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Lagermindeststandswarnung im Lieferschein</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">OFFENE_MENGE_IN_SICHT_AUFTRAG_VORSCHLAGEN&nbsp;</td>
+      <td width="78" height="25">	LIEFERANT&nbsp;	</td>
+      <td width="52" height="25">0/1</td>
+      <td width="528" height="25">Die offene Menge in -Sicht Auftrag- als Positionsmenge
+        vorschlagen.</td>
+    </tr>
+    <tr>
+      <td width="357" height="25"></td>
+      <td width="78" height="25">	</td>
+      <td width="52" height="25"></td>
+      <td width="528" height="25"></td>
+    </tr>
+    <tr>
       <td width="357" height="25"></td>
       <td width="78" height="25">	</td>
       <td width="52" height="25"></td>
