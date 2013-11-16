@@ -1270,6 +1270,96 @@ für die Erlöse bzw. der Vorsteuer für den Aufwand.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="UVA_Fehlermeldung2.jpg" width="399" height="195"></p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Nach welchen Regeln wird die Prüfung der Steuerkonten für die UVA Verprobung
+durchgeführt?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+wie oben bereits beschrieben wird vor dem Ausdruck der UVA eine Prüfung auf
+gültige Buchungen durchgeführt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erhalten
+Sie daher z.B. eine Fehlermeldung wie:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+java.lang.Exception: Buchung: Rechnung 13/0000085, Buchung, 2013-09-16<br>
+Ungültiges Konto 2000 in Buchung auf Steuerkonto 3519<br>
+<br>
+oder<br>
+<br>
+java.lang.Exception: Buchung: Rechnung 13/0000088, Buchung, 2013-10-02
+Ungültiges Konto 3519 in Buchung auf Steuerkonto 4020
+so sind Konten falsch definiert.
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><br>
+Die
+Reihenfolge der Prüfung ist wie folgt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+jedes Konto, welches in den Steuerkategorien für den Verkauf definiert ist,
+werden für das gewählte Finanzamt folgende Buchungen analysiert:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Alle Buchungsdetails im gewählten Zeitraum die nicht storniert und die keine
+Automatikbuchungen sind</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Ist das Konto ein Sachkonto, dann wird beurteilt</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Ist es eines der Ausnahmekonten (siehe unten) --&gt; OK</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Ist es ein Bankkonto --&gt; OK</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Ist es ein Kassenkonto --&gt; OK</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Ist die UVA Art &quot;nicht definiert&quot; --&gt; Fehler</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Ist die UVA Art &quot;Zahllastkonto&quot; --&gt; Fehler</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Ist es eine Buchung mit der Buchungsart Eröffnungsbuchung --&gt; OK</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+Ausnahmekonten, je Steuerkategorie, sind</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Alle Konten mit Kontoart UST-Sammelkonto</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Konto Forderungen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Konto Kursgewinn</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Konto Kursverlust</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Konto Anzahlung verrechnet</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
+- Konto Anzahlung erhalten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+mitlaufende Konto Forderungen (z.B. 2000) muss zu den in der Steuerkategorie
+definierten UST-Konten passen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Aufgrund der UVA-Verprobung ist für den Zeitraum keine Buchung erlaubt.</p>
 
