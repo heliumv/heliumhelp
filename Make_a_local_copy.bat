@@ -5,23 +5,24 @@ rem Daran denken, dass der hv_help nur hinzufügt, das bedeutet, dass wenn Dateie
 rem die .# Dateien sollten vorher aus dem Source entfernt werden
 
 rem die Pfade sind fix festgelegt
+rem 2013-11-16 geändert auf w: wegen VM
 
 echo "kopieren des Source"
-d:
-cd \GIT_HV\heliumhelp\jsp\
+w:
+cd \heliumhelp\jsp\
 c:
 cd \jbproject\heliumhelp\jsp\
-xcopy d:*.* /v/s/y
+xcopy w:*.* /v/s/y
 pause
 
 echo "Entfernen aller nicht benötigten Dateien und Ordner"
 c:
 cd \jbproject\heliumhelp\jsp\heliumhelp\
-call d:\GIT_HV\heliumhelp\DelDir.bat _vti_cnf\
-call d:\GIT_HV\heliumhelp\DelDir.bat _vti_pvt\
-call d:\GIT_HV\heliumhelp\DelDir.bat CVS\
-call d:\GIT_HV\heliumhelp\DelDir.bat _derived\
-call d:\GIT_HV\heliumhelp\DelDir.bat backup\
+call w:\heliumhelp\DelDir.bat _vti_cnf\
+call w:\heliumhelp\DelDir.bat _vti_pvt\
+call w:\heliumhelp\DelDir.bat CVS\
+call w:\heliumhelp\DelDir.bat _derived\
+call w:\heliumhelp\DelDir.bat backup\
 del .cvsignore /s
 del Thumbs.db /s
 del *.bak /s
