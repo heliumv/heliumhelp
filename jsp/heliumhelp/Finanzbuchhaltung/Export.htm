@@ -1069,6 +1069,24 @@ ist insbesonders, dass zwischen dem Export der offenen Postenliste (4) und dem
 Import (5) kein Export (1) der Fibu-Daten gemacht wird. Dies würde zur falsch
 Interpretation der in der offenen Postenliste nicht vorhandenen Rechnungen
 führen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Datenaufbau
+für den Import der offenen Postenliste:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den Import gehen wir von folgendem Datenaufbau aus:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">CSV-Format,
+d.h. der Datensatztrenner ist das Semikolon (;)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kontonummer;Rechnungs-Nr;Rechnungsdatum;Fälligkeit;Gegenkonto;Betrag Soll;Betrag
+Haben;Saldo</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+dem Saldo können noch weitere Daten folgen. Diese Daten werden ignoriert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Rechnungsnummer muss im HELIUM V enthalten sein, beachten Sie dazu den Parameter FINANZ_OP_PREFIX_RECHNUNG bzw. FINANZ_OP_PREFIX_GUTSCHRIFT für
+die Gutschriften.</p>
+Es werden nur die Felder Rechnungs-Nr und Saldo ausgewertet.
+Werden zu einer Rechnung mehrere Einträge gefunden, so wird nur der erste in der Reihenfolge der Daten verwendet.
+Der Dezimaltrenner für den Saldo ist der Punkt (.).
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zurzeit
 steht der offene Posten-Import für folgende Programme zur Verfügung:</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
