@@ -39,7 +39,7 @@ wirklich ernst. Die Anzahlungs- und Schlussrechnung ist im Projektgeschäft üblic
 und stellt eine gänzlich andere Vorgehensweise als die Teilrechnung, siehe
 unten, dar. Üblich sind z.B. 1/3, 1/3, 1/3. D.h. 1/3 Zahlung bei
 Auftragserteilung, 1/3 Zahlung bei Lieferung und der Rest nach Abnahme des
-Projektes, jedoch spätestens nach 6Wochen nach Lieferung. Diese Punkte sind natürlich
+Projektes, jedoch spätestens 6Wochen nach Lieferung. Diese Punkte sind natürlich
 immer Verhandlungssache.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gesetzlich ist es so, dass Anzahlungsrechnungen getrennt zu
 behandeln sind, da ja das Projekt noch nicht abgerechnet ist. Das bedeutet:</p>
@@ -54,7 +54,14 @@ behandeln sind, da ja das Projekt noch nicht abgerechnet ist. Das bedeutet:</p>
     Anzahlungsrechnungen sind daraufhin aus der FiBu zu stornieren und nur die
     Schlussrechnung in die FiBu zu übernehmen. Da die Zahlungen auf die
     Anzahlungsrechnungen ja beim Debitor(Kunden) bleiben, ergibt sich somit die
-    offene Forderung aus der Schlussrechnung.</li>
+    offene Forderung aus der Schlussrechnung.<br>
+    <b>Wichtige Info:</b> Rechtlich gesehen ist eine Anzahlungszahlung des
+    Kunden nur ein &quot;leihen von Geld&quot;. D.h. dieses Geld gehört nicht
+    Ihnen, sondern wird nur vom Kunden zur Verfügung gestellt. Erst bei der
+    Schlussrechnung wird die Leistung erbracht und damit haben Sie erst
+    wirklichen Anspruch auf die Bezahlung Ihrer Leistung. Dies ist der große
+    Unterschied zur Teilrechnung, wo bei jeder Teilrechnung(-slegung) dieser
+    Teil als erbracht / geleistet angesehen wird.</li>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um eine eindeutige Zuordnung zu einem Projekt zu erreichen,
 ist es erforderlich, dass sowohl Anzahlungs- als auch Schlussrechnungen einem
@@ -207,6 +214,24 @@ berücksichtigt werden müssen und führt diese nach dem Rechnungsendbetrag mit
 am Ausdruck an.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann eine Schlussrechnung auch für offene Anzahlungsrechnungen erstellt werden
+?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+leider nein, dies ist aus finanzrechtlichen Gründen nicht erlaubt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">§ 11 Abs. 1 UStG besagt zur Schlussrechnung Folgendes:<br>
+„Wird eine Endrechnung erteilt, so sind in ihr die vor Ausführung der Lieferung oder sonstigen Leistung vereinnahmten Teilentgelte und die auf sie entfallenden Steuerbeträge abzusetzen,
+wenn über die Teilentgelte Rechnungen ... ausgestellt wurden.“&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Leider
+verstehen viele Kunden nicht, dass alleine aus diesem Titel auf eine
+Anzahlungsrechnung kein Skonto abgezogen werden dürfte (und ziehen sich dieses
+trotzdem ab). Richtig wäre, da ja die Anzahlung nur eine andere Form der
+Geldbeschaffung ist, dass erst bei der Schlussrechnung ein entsprechendes Skonto
+vom Rechnungsbetrag abgezogen wird.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie werden Anzahlungsrechnungen einer Schlussrechnung zugeordnet</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -215,7 +240,35 @@ Anzahlungsrechnungen die sich auf den Auftrag der Schlussrechnung beziehen
 zugeordnet. D.h. es reicht die Angabe des Auftrags um damit auch die
 Anzahlungsrechnungen auf der Schlussrechnung anzuführen.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Welche Alternativen gibt es, die Anzahlungs-, Teilrechnungs-,
+Schlussrechnungsthematik selbst zu steuern?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die einfachste Lösung ist, wenn Sie einen sogenannten Anzahlungsartikel
+definieren, der nicht Lagerbewirtschaftet ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinterlegen
+Sie für den Artikel eine eigene Artikelgruppe, z.B. Anzahlung, welche wiederum
+auf das Konto der erhaltenen Anzahlungen bucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+den Anzahlungsrechnungen schreiben Sie den Wert des Anzahlungsbetrages in den
+Verkaufswert der Artikelposition.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der dann auszustellenden Schlussrechnung ziehen Sie manuell die
+Artikelpositionen durch Angabe eines negativen Verkaufspreises wieder ab.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Ausweis des Steuersatzes ist durch den Ausweis der kleinen 20% am rechten Rand
+der Rechnung gegeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+auch den Andruck des Rechnungstextes mit Anzahlungs- und Schlussrechnung zu
+steuern, kann z.B. der Eintrag Betrifft durch eine spezielle Formularanpassung
+verwendet werden. Wenden Sie sich dazu vertrauensvoll an Ihren HELIUM V
+Betreuer.</p>
 
 </body>
 
