@@ -20,12 +20,72 @@ Die passende Version finden Sie auf Ihrer HELIUM V Installations-CD. Sie können
 die erforderliche iReport Version auch von unserer Homepage, www.HeliumV.com
 herunterladen. Bitte beachten Sie die Versionszuordnungen zwischen iReport und
 HELIUM V.</p>
-<p class="answer">Nachfolgend Hinweise zu den Eigenheiten von iReport welche bei der Gestaltung
+<p class="answer">Nachfolgend Hinweise zu der Arbeitsweise und den Eigenheiten von iReport welche bei der Gestaltung
 der Reports beachtet werden sollten.</p>
 
 <p class="answer"><b>Hinweis:</b> Für das Arbeiten mit iReport sollte
 mindestens eine Zwei-Tasten Maus zur Verfügung stehen. Eine Bearbeitung der
 Druckformulare mit nur eine Maustaste (MAC) ist nicht möglich.</p>
+
+<p class="answer"><b>Achtung:</b> Wenn Sie Druckformulare selbst bearbeiten wollen, müssen Sie diese als Anwenderreport ablegen,
+da ansonsten die bearbeiteten Reports bei einem Update der HELIUM V Version gelöscht werden!!<br>
+Die Hierachie der Verzeichnissstruktur können Sie unter &quot;<a href="Druckformulare.htm">System ->
+Druckformulare</a>&quot; entnehmen.<br>
+</p>
+
+<p class="answer">Vor dem ersten Einsatz des iReport sollten Sie unter Optionen Plugins konfigurieren Check for iReport Updates ausschalten und '''wichtig''' unter Optionen, Optionen Register Compiler '''Reportverzeichnis zum Compilieren verwenden''' anhacken. Der Haken bei keep.java kann entfernt werden.<br>
+<br>
+Das Sie auf das Verzeichnis der Reports ein Schreibrecht haben müssen ist selbstverständlich.</p>
+
+<p class="question">Grundsätzliche Vorgangsweise beim Bearbeiten eines Reports</p>
+
+<p class="answer">1. Wenn nicht vorhanden, ein Verzeichnis für Anwederreport anlegen, und Originalreports hineinkopieren.<br>
+2. Bei bereits vorhandenem Anwenderreport: Backup des Anwenderreport-Verzeichnis erstellen.<br>
+3. Textfelder (Felder oder Parameter) im iReport anpassen.<br>
+4. Änderung speichern und mit "Build - Compilieren" werden ihre Änderungen im laufenden System übernommen.<br>
+5. Änderung mit Helium Client ansehen (den entsprechenden Report Druck aufrufen).</p>
+
+<p class="question">Feldnamen der Reports</p>
+
+<p class="answer">Starten sie das Programm iReport. Gehen Sie auf "Datei -> Öffnen" und laden Sie den
+entsprechenden Report.<br>
+<br>
+Unter "Ansicht -> Report Felder" und "Ansicht -> Report Parameter" finden Sie die Feldnamen und die Parameter Namen des Report.<br>
+<br>
+"Felder" werden nur im Detailabschnitt des Reports verwendet. Für jede z.B Rechnungsposition wird eine Zeile im Detailabschnitt des Reports gedruckt.&nbsp;<br>
+Zugriff auf ein Feld mit dem Namen Gesamtpreis ist über $F{Gesamtpreis} möglich.<br>
+<br>
+"Parameter" sind nur einmal im ganzen Report vorhanden.<br>
+Zugriff auf einen Parameter mit dem Namen P_KOPFTEXT  ist über $P{P_KOPFTEXT} möglich.<br>
+<br>
+Die Namen sind sprechend gewählt z.B im Anwenderreport der Rechnung unter:<br>
+im Dateiverzeichnis Ihres HELIUM V-Server (...)<a href="file:///c:/Helium_V/jboss-4.2.2.GA/server/helium/report/rechnung/anwender/rech_rechnung.jrxml">
+\Helium_V\jboss-4.2.2.GA\server\helium\report\rechnung\anwender\rech_rechnung.jrxml</a>&nbsp;<br>
+finden Sie den Parameter P_KOPFTEXT, dieser enthält den Kopftext der Rechnung.<br>
+<br>
+Wollen Sie z.B P_KOPFTEXT ändern gehen Sie im Report auf das entsprechende Feld, klicken
+mit der rechten Maustaste darauf und wählen "Eigenschaften".<br>
+<br>
+Unter "Textfeld -> Ausdruck für Textfeld" sehen Sie den Wert des Feldes.<br>
+Wenn Sie unten Rechts auf "Expression Editor öffnen" klicken können Sie leicht verschiedene Felder oder Parameter auswählen und mit "Anwenden" übernehmen.<br>
+<br>
+Unter "Allgemein -> Drucken wenn" wird angegeben, wann der Inhalt des Feldes angedruckt werden soll.&nbsp;<br>
+Z.B new Boolean($F{Positionsart}.equals("Stuecklistenpos"))<br>
+gibt an das das Feld nur gedruckt werden soll, wenn der Wert des Feldes Positionsart gleich "Stuecklistenpos" ist.<br>
+<br>
+In Textfeld und Allgemein können Sie einige Konstrukte der Java Programmiersprache verwenden, die Datentypen der Felder und Parameter
+entsprechen Java Datentypen, weitere Informationen dazu finden Sie in der Java Dokumentation.<br>
+<br>
+Wenn Sie Änderungen durchgeführt haben, gehen Sie auf "Build -> Compilieren" und ihre Änderungen werden im laufenden System übernommen.<br>
+<br>
+Bevor Sie Änderungen machen empfehlen wir ein Backup des Reportverzeichnises zu erstellen, dadurch können fehlerhafte Änderungen zurückgenommen werden.<br>
+<br>
+<b>Weiterführende Dokumentation:</b><br>
+Kostenpflichtige iReport Dokumentation zu beziehen unter: <a href="http://www.jasperforge.org/sf/wiki/do/viewPage/projects.ireport/wiki/HomePage">http://www.jasperforge.org/sf/wiki/do/viewPage/projects.ireport/wiki/HomePage</a>&nbsp;<br>
+iReport Hilfen und Dokumentation sind über Suchmaschine im Internet auffindbar<br>
+<br>
+Dies ist nur eine Kurzanleitung wie iReport mit Helium V Drucken eingesetzt werden kann und stellt keine ausführlich iReport Anleitung dar.<br>
+</p>
 
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin-left: 0; margin-right: 0; margin-bottom: 0"><a name="Breite der Barcodes"></a>Breite
 der Barcodes:</p>
