@@ -406,6 +406,11 @@ dies möglichst einfach zu machen haben wir dies in der Barcodeerfassung der
 Inventur hinterlegt. Die Barcodeerfassung für die Inventur steht unter <img border="0" src="Inventur_Barcodeerfassung.gif" width="31" height="25"> 
 zur Verfügung.</p>
 
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Im bestehenden Inventurliste-Schnelleingabe-Dialog können auch mehrere Seriennummern eingegeben werden: (z.B.: 10000-10010).&nbsp;</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Sollten schon Seriennummern dieser Liste inventiert worden sein, dann
+erscheint eine Abfrage, ob diese bereits inventierten Seriennummern ausgelassen werden sollen.</p>
+
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Sind
@@ -417,6 +422,25 @@ Seriennummern aufgeführt, die bisher noch nicht erfasst wurden.</p>
 Sie alle Artikel, die es tatsächlich gibt nach und führen Sie dann die
 Inventur durch. Hier sollte die Funktion: <img border="0" src="Inventur_Lagerstand_Null_setzen.gif" width="304" height="17">
 verwendet werden. Aber ACHTUNG: dies gilt für alle Artikel.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Inventurliste CSV Import</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">In der Inventurliste gibt es
+den Button 'CSV-Import'<img border="0" src="csv_import.PNG" width="30" height="26">.
+Hier können Sie Teile der Inventur per csv-Import übernehmen.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Die CSV-Datein muss 2 Spalten haben:&nbsp;</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">1.) Artikelnummer</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">2.) Menge (Dezimaltrenner
+muss ein Punkt sein)</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Wenn Die Artikelnummer nicht vorhanden ist oder die Menge nicht konvertiert werden kann oder es bereits einen Eintrag in der Inventurliste gibt, dann wird die Zeile ausgelassen und geloggt.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Der Import kann nur für eine Inventur eines einzelnen Lagers gemacht werden.</p>
 
 </body>
 
