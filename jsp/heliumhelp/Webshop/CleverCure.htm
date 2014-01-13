@@ -1,0 +1,225 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Anbindung CleverCure</title>
+</head>
+
+<body>
+
+<h1>Anbindung Clever Cure</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit der Anbindung an
+CleverCure (siehe dazu auch <a href="http://curecomp.com">CureComp.com</a>)
+haben wir eine praktische Schnittstelle für einen Teil der Supplychain
+geschaffen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die im wesentlichen
+abgebildeten Funktionen sind:</p>
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Übertragen einer
+    Bestellung aus dem Kundensystem in Ihr HELIUM V</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Senden der
+    Auftragsbestätigung aus Ihrem HELIUM V an den Kunden</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Senden eines
+    Lieferavisos</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Abfrage
+    Kanbanstatus (in Vorbereitung)</li>
+</ul>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Voraussetzungen:</p>
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">HELIUM V
+    Webservices</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">HELIUM V RestAPI
+    Server (HV-Tomcat)</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">HTTPS Zugang
+    bidirektional, abgesichert durch Zertifikate. Eine entsprechende
+    Parametrierung der Firewall ist erforderlich.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Parameterdaten
+    wie Kundennummern, Lieferantennummern usw.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Kunden-Sonderkonditionen
+    zur Pflege der Kundenartikelnummern</li>
+</ul>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ablauf:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach erfolgter
+Parametrierung und Einrichtung des Systems sieht der Ablauf wie folgt aus:</p>
+<ol>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Vom Kundensystem
+    wird eine Bestellung mit Auftrags-, Rechnungs- und Lieferadresse und den
+    inhaltlichen Positionen gesandt.<br>
+    Von der HELIUM V CleverCure Schnittstelle werden diese Daten, soweit sie
+    technisch (Achtung: Nicht inhaltlich) in Ordnung sind gültig entgegen
+    genommen.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Diese Daten
+    werden konvertiert und als Auftragsbestätigung in Ihrem HELIUM V angelegt.
+    Zugleich wird ein EMail an den CleverCure EMail-Empfänger über den
+    Auftragseingang gesandt.<br>
+    Details zur Datenzuordnung siehe unten.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Von Ihnen wird
+    die Auftragsbestätigung geprüft und gegebenenfalls korrigiert.<br>
+    Bitte achten Sie darauf, dass --&gt; Positionensplitt ....</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Drucken Sie nun
+    Auftragsbestätigung, zumindest in die Vorschau, aus. Entspricht die AB
+    Ihren Vorstellungen, so</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">senden Sie diese
+    per CleverCure an Ihren Kunden, durch Klick auf den Knopf Auftrag
+    übermitteln <img border="0" src="Clever1.gif" width="32" height="27"> in den Auftrags-Kopfdaten.<br>
+    Wurden bereits Daten an Ihren Kunden gesandt, so:<br>
+    - wird dies durch einen grünen Hintergrund im Knopf angezeigt <img border="0" src="Clever2.gif" width="32" height="25">.<br>
+    - sollte die Auftragsbestätigung erneut an den Kunden gesandt werden, so
+    wird nach dem Klick auf den Auftrag übermitteln Knopf die Meldung <img border="0" src="Clever3.gif" width="414" height="115">
+    angezeigt, welche mit Ja bestätigt werden muss. Bitte beachten Sie, dass
+    damit eine entsprechende Änderung der Auftragsdaten auch bei Ihrem Kunden
+    vorgenommen wird.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach erfolgter
+    Beschaffung / Produktion erfolgt die Lieferung der Ware, in der in HELIUM V
+    üblichen Art und Weise, Auftragsbezogener Lieferschein, Sicht Auftrag.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ist die Lieferung
+    fertig zusammengestellt und der Lieferschein ausgedruckt, so senden Sie
+    Ihrem Kunden eine Lieferaviso. Klicken Sie dazu im Lieferschein, Kopfdaten
+    auf Lieferaviso übermitteln <img border="0" src="Clever1.gif" width="32" height="27">. Auch hier
+    gilt, wenn ein Lieferaviso bereits versandt wurde, wird dies durch den
+    grünen Hintergrund im Lieferaviso Knopf angezeigt. Auch das Lieferaviso
+    kann erneut versandt werden.</li>
+</ol>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zuordnung der Daten
+zwischen CleverCure und HELIUM V</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<div align="left">
+  <table border="1" width="772" height="21">
+    <tr>
+      <td width="772" height="21">Clever Cure</td>
+      <td width="772" height="21">HELIUM V</td>
+      <td width="772" height="21">Bemerkung</td>
+    </tr>
+    <tr>
+      <td width="772" height="21"></td>
+      <td width="772" height="21">Auftragsadresse</td>
+      <td width="772" height="21"></td>
+    </tr>
+    <tr>
+      <td width="772" height="21"></td>
+      <td width="772" height="21">Lieferadresse</td>
+      <td width="772" height="21">Es muss dazu die Adresse im Wortlaut
+        übereinstimmen. D.h. die ersten beiden Zeilen der Adresse und die
+        Straße.<br>
+        Gegebenenfalls nicht konvertierbare Zeichen werden ignoriert</td>
+    </tr>
+    <tr>
+      <td width="772" height="21"></td>
+      <td width="772" height="21">Rechnungsadresse</td>
+      <td width="772" height="21">Dies ist zugleich auch die Basis für die
+        Zuordnung der Kundenartikelnummern zu Ihren eigenen Artikelnummern</td>
+    </tr>
+    <tr>
+      <td width="772" height="21"></td>
+      <td width="772" height="21">Kundenartikelnummer</td>
+      <td width="772" height="21">In der Rechungsadresse werden in den Soko die
+        Kundenartikelnummern gesucht. Parallel zur Zuordnung wird auch die
+        Revision zwischen CC und dem Feld Revision im HELIUM V Artikelstamm
+        geprüft.</td>
+    </tr>
+    <tr>
+      <td width="772" height="21"></td>
+      <td width="772" height="21">Mengeneinheit</td>
+      <td width="772" height="21">Diese muss mit der in HELIUM V eingetragenen
+        Kennung übereinstimmen. Siehe dazu: System, Sprache, Einheit.</td>
+    </tr>
+    <tr>
+      <td width="772" height="21"></td>
+      <td width="772" height="21">Lieferart</td>
+      <td width="772" height="21">Auch die Lieferart muss mit der in HELIUM V
+        eingetragenen Kennung übereinstimmen. Siehe dazu Lieferadresse,
+        Konditionen, Lieferart bzw. System, Mandant, Lieferart, Kennung.<br>
+        Siehe dazu auch <a href="../Allgemeine_Stammdaten/index.htm#Incoterms">Incoterms</a></td>
+    </tr>
+    <tr>
+      <td width="772" height="21"></td>
+      <td width="772" height="21">Nettopreis&nbsp;</td>
+      <td width="772" height="21">Der erhaltene Preis, welcher mit dem im
+        Artikelstamm / Kundensonderkonditionen für diese Rechnungsadresse
+        hinterlegten Preis übereinstimmen muss.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Infos /
+Fehlermeldungen beim Auftragsimport:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Werden
+Unstimmigkeiten zwischen den in Ihrem System hinterlegten Daten und den
+erhaltenen Daten festgestellt, so werden entsprechende Info: Texteingaben in die
+Auftragsbestätigung eingefügt. Prüfen Sie diese Fehler, beseitigen Sie diese
+im Auftrag und vor allem in der Definition Ihrer Daten. So erhalten Sie sehr
+rasch ein zu / mit Ihrem Kunden abgestimmtes System.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Welche Daten werden
+von der Schnittstelle in der Dokumentenablage des jeweiligen Auftrages abgelegt?</p>
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Import Clevercure XML Orderresponse<br>
+    Dies sind die Original Daten die HELIUM V von CleverCure erhalten hat</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Export Clevercure XML Orderresponse osd<br>
+    Diese Daten wurden als Auftragsbestätigung an CleverCure gesandt</li>
+</ul>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Daten die zum Export
+des Lieferavisos abgelegt werden sind:</p>
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</li>
+</ul>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ergänzende Infos in
+den Formularen zu CleverCure</p>
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auftragsbestätigung
+    <ul>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Parameter</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Field</li>
+    </ul>
+  </li>
+</ul>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Lieferschein
+    <ul>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Parameter</li>
+      <li>
+        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Field</li>
+    </ul>
+  </li>
+</ul>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+</body>
+
+</html>
