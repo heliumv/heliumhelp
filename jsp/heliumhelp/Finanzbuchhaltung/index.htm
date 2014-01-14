@@ -221,7 +221,47 @@ Aufbau der Exportformate kann über eine eigene Definition (XSL) gesteuert
 werden und ist in weiten Grenzen anpassbar.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
 dazu <a href="Export.htm">Fibu-Export</a>.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Export
+des Buchungsjournals in ein fremdes Finanzbuchhaltungsprogramm</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit diesem Export des gesamten Buchungsjournals werden die Daten an die Buchhaltungssoftware Ihres Steuerberaters übergeben. Er, als Ihr steuerlicher Berater, übergibt, nach den erforderlichen Abstimmungsarbeiten, die Daten an die Finanz usw.
+Das Ziel ist, dass nach dem Exportlauf alle Daten in der Buchhaltung des Steuerberaters sind.
+Ein wichtiges Kriterium ist, dass nach der Übernahme die Saldenlisten übereinstimmen müssen. Also die von
+HELIUM V aus ausgedruckte Saldenliste muss mit der des Steuerberaters unmittelbar nach der Übernahme ausgedruckten Saldenliste übereinstimmen.<br>
+<br>
+DATEV Export</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der Mandant des Buchungsjournals wird über das Pflichtfeld Kostenstelle definiert.<br>
+Der Mandant greift natürlich auch beim Export des jeweiligen Journals.<br>
+<br>
+Es werden alle Buchungen des Buchungsjournals im CSV Format (Strichpunkt getrennt) exportiert.<br>
+Der Datensatzaufbau ist&nbsp;<br>
+Lfd_Nr.;WKZ;Umsatz;S/H;BU;Gegenkonto;Belegfeld 1;Belegfeld 2;Datum;Konto;Skonto;Buchungstext;EU-Informationen;Umsatz-BW;Kurs;WKZ-BW;Storniert<br>
+</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">WKZ= Währungskennzeichen<br>
+BU=Buchungsschlüssel<br>
+S=Soll, bezogen auf die Spalte Konto<br>
+H=Haben, bezogen auf die Spalte Konto<br>
+</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ergänzt um weitere Informationen wie Stornierte Buchung usw.<br>
+Splittbuchungen werden so übergeben, dass für jeden Steuersatz / jedes Konto ein eigener Datensatz übergeben wird&nbsp;<br>
+Der Export erfolgt immer für alle Finanzämter für einen ausgewählten Zeitraum des Buchungsdatums (Belegdatum).</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><br>
+Eine Verriegelung der exportierten Daten erfolgt NICHT.<br>
+Es MÜSSEN die Saldenlisten (HELIUM V und die des Steuerberaters nach dem Import) übereinstimmen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Tun sie dies nicht, müssen die Überleitungsfehler warum auch immer gesucht und beseitigt werden. Wir benötigen dafür die Unterstützung des Steuerberaters.<br>
+Es werden in den Export zusätzlich drei Filter eingebaut:<br>
+a.) Unterdrückung der Übergabe der automatischen Eröffnungsbuchungen<br>
+b.) Unterdrückung der Übergabe der mit Eröffnungsbuchung gekennzeichneten manuellen Buchungen<br>
+c.) Ünterdrückung der Übergabe der Automatik-Buchungen<br>
+Dies deshalb, da anzunehmen ist, dass diese Buchungen vom Finanzbuchhaltungsprogramm Ihres Steuerberaters ebenfalls auch automatisch gemacht wird.<br>
+Zusätzlich weden auch die stornierten Buchungen exportiert um den GDPDU Forderungen zu entsprechen.<br>
+<br>
+Parameter die hierfür je nach Installation eingestellt werden müssen:<br>
+Kategorie FINANZ<br>
+EXPORT_DATEV_BERATER =&nbsp;<br>
+EXPORT_DATEV_MANDANT=&nbsp;<br>
+EXPORT_DATEV_KONTOKLASSEN_OHNE_BU_SCHLUESSEL =&nbsp;<br>
+EXPORT_DATEV_MITLAUFENDES_KONTO =</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Import
 von OP-Listen</b></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
