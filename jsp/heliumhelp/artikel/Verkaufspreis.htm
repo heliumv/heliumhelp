@@ -417,9 +417,44 @@ Richtigstellung der Handbuchung ist vorzuziehen, da dadurch die Verknüpfung der
 Lagerbewegungen (Zugang mit Abgang) erhalten bleibt. Bei der Korrektur des
 Gestehungspreises muss ein Lagerdurchgang gebucht werden, daher ergibt sich,
 dass alle lagernden Artikel abgebucht und dann neu zugebucht werden müssen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Preispflege in HELIUM V über Export/Import</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Preispflege über mehrere Artikel hinweg ist in HELIUM V durch einen Export und darauffolgenden Import gelöst. So können Sie schnell Preise aktualisieren ohne jeden Artikel einzeln zu bearbeiten.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Preispflege_Menue.JPG" width="194" height="118"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln Sie dazu in das Modul Artikel oberere Menüleiste Pflege und hier Preispflege-Export (wenn die Berechtigung VK-Preise sehen/ändern vorhanden sind).&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Preispflege_Export.JPG" width="425" height="184"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Nun wählen Sie die gewünschte Artikelgruppe / etc. aus und speichern die Exportdatei. Hier sind Export Filter nach: Artkelgruppen oder Artikelklasse oder ArtNr von-bis, sowie der Zusatz versteckte j/n umgesetzt.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der Aufbau der Datei beinhaltet Ident, Bezeichnung, Zusatzbez, Zusatzbez2, Lief1preis als Einzelpreis, Rabatt, Nettopreis, Verkaufspreisbasis, alle (aktiven) Verkaufspreislisten mit Fixpreis und Rabatt und gültig ab - immer zum aktuell gültigen Preis.
+Beim Export werden alle gewählten Artikel als XLS-File exportiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In diesem File kann nun die VK-Preisbasis und das Gültigkeitsdatum der Basis verändert werden. Außerdem können die Fixpreise/Rabatte und Gültigkeit jeder Preise verändert werden. Wenn in einer Preisliste ein Fixpreis hinterlegt wird, dann hat dieser vor dem Rabattsatz Vorrang.
+Alle anderen Spalten sind für den Import irrelevant.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um einzelne Preislisten nicht zu ändern, entfernen Sie dazu die 5 Spalten Fixpreis / Rabatt / Errechneter Preis / Gültig ab/Währung. Einzelne Spalten einer Preisliste können nicht gelöscht werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sobald Sie mit der Überarbeitung fertig sind, speichern Sie die Datei ab.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Importieren Sie die bearbeitete Datei im Modul Artikel oberere Menüleiste Pflege, Preispflege-Import.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Preispflege_Import.JPG" width="267" height="114"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Achtung</b>: Die VKPreisbasis und das Gültigkeitsdatum müssen in Spalte J und K eingetragen sein. Wenn die Datentypen in den Spalten nicht korrekt sind, erscheint eine Fehlermeldung und der Import wird abgebrochen und alle Änderungen verworfen. Am besten verwenden Sie die exportierte Datei für den Import also: exportieren der gewünschten Artikel – speichern die Datei ab – nehmen die Änderungen vor – speichern die Datei ab – importieren diese Datei.<br>
+</p>
 
 </body>
 
