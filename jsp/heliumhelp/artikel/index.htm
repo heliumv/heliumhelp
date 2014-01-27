@@ -2729,6 +2729,33 @@ Wartung hinterlegt, so wird er in der Liste angeführt. </p>
 Ist bei einem Artikel das nächste Wartungsintervall überfällig, so wird er
 ebenfalls in der Liste mit angeführt. </p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Zubuchungsautomatik"></a>Lagerzubuchungsautomatik bei unzureichendem Lagerstand </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Besonders
+beim Start des Einsatz von HELIUM V stellt sich die Frage, wie damit umgegangen
+wird, dass man Lieferscheine / Rechnungen schreiben muss, die Lagerstände in
+HELIUM V aber noch nicht stimmen. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Einerseits
+können Sie per Handlagerbuchung die benötigten Artikel zubuchen, den
+Gestehungspreis dafür festlegen und so den Lagerstand korrigieren. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+andere Möglichkeit ist, dass diese Lagerzubuchung automatisch erfolgt. Hierzu
+wird der Parameter LAGER_IMMER_AUSREICHEND_VERFUEGBAR auf 1 gesetzt. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+bewirkt, dass wenn kein ausreichender Lagerstand gegeben ist, im Hintergrund der Lagerstand entsprechend
+angepasst wird.&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achtung: Bei der Zubuchung wird der aktuelle Gestehungspreis verwendet, dieser weicht
+wahrscheinlich vom tatsächlichen Gestehungspreis ab. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Ab dem Zeitpunkt ab dem die Lagerwirtschaft
+aktiv verwendet wird, wird dieser wieder abgeschaltet indem der Parameter auf 0
+gestellt wird..<br>
+ </p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
@@ -2883,6 +2910,19 @@ Wie wird im Lagercockpit mit nicht lagerbewirtschafteten Artikel umgegangen? </p
 Wenn der Parameter NICHT_LAGERBEWIRTSCHAFTETE_SOFORT_AUSGEBEN auf 1 gesetzt ist,
 so werden bei der Materialumlagerung die nicht lagerbewirtschafteten Artikel
 ausgeblendet. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+gibt nun einen neuen Parameter NICHT_LAGERBEWIRTSCHAFTETE_SOFORT_AUSGEBEN =0<br>
+<br>
+-&gt; Nicht lagerbewirtschaftete Artikel werden sofort ausgeben, wenn
+'Materialbuchung bei Ablieferung' in der Stueckliste angehakt ist. Im
+Lagercockpit werden bei der Materialumlagerung die nicht lagerbewirtschafteten
+Artikel ein/ausgeblendet.<br>
+<br>
+Wenn die Lose per Stückliste aktualisiert werden, dann werden die
+nichtlagerbewirtschafteten Artikel trotzdem nachgebucht, auch wenn der Parameter
+BEI_LOS_AKTUALISIERUNG_MATERIAL_NACHBUCHEN = 0 ist</p>
 
 </body>
 
