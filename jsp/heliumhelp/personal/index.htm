@@ -24,7 +24,8 @@ Muss man das Gehalt jedes Monat neu eingeben?</p>
 vereinbart. Deshalb kann eine Gehaltsänderung auch nur auf Monatsbasis
 eingegeben werden. Sie wirkt dann immer ab dem 1. des eingegebenen Monates.
 Vereinbarte / Eingetragene Gehälter / Löhne gelten so lange, bis eine neue
-Vereinbarung eingegeben wurde.&nbsp;</p>
+Vereinbarung eingegeben wurde.&nbsp;Siehe dazu bitte auch <a href="#Gehalts-/Lohnkosten Definition.">Gehalts-/Lohnkosten
+Definition</a>.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Was ist der Unterschied zwischen Heimatkostenstelle und Abteilung?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1184,7 +1185,9 @@ folgende Möglichkeiten zur Verfügung:</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 beachten Sie, dass die Berechnung der Kosten der Sollzeiten <b>immer</b> anhand
-der bei der entsprechenden Tätigkeit hinterlegten Gestehungspreise basiert.</p>
+der bei der entsprechenden Tätigkeit hinterlegten Gestehungspreise basiert. Zu
+Personalkosten siehe bitte auch <a href="#Gehalts-/Lohnkosten Definition.">Gehalts-/Lohnkosten
+Definition</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Leistungswert"></a>Leistungswert</p>
 
@@ -1297,6 +1300,149 @@ wider erwarten eine Bereitschaft tatsächlich um 24:00 enden, so tragen Sie
 bitte als Ende 00:00 des darauf folgenden Tages ein. Technisch gesehen gibt es
 24:00 nicht und 23:59 würde dem Mitarbeiter 0,02Std seiner Bereitschaft
 abziehen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Gehalts-/Lohnkosten Definition."></a>Gehalts-/Lohnkosten
+Definition</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ab der Version 8039 stehen zur Erfassung / Berechnung des kalkulatorischen
+Lohnmittelstundensatzes zwei Versionen zur Verfügung.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Beaufschlagung des eingetragenen Lohnmittelstundensatzes mit einem Faktor</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Errechnung des Lohnmittelstundensatzes aus den Brutto-Brutto Lohnkosten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Unterscheidung welche Berechnung verwendet wird, wird durch den Parameter LOHNSTUNDENSATZKALKULATION_KALENDERWOCHEN
+definiert. Steht dieser auf 0, so wird nur die Beaufschlagung des eingetragenen
+Lohnmittelstundensatzes mit einem Faktor für die Bestimmung des
+kalkulatorischen Lohnmittelstundensatzes verwendet. In diesem Falle dienen die
+Felder des monatlichen Gehaltes Ihrer Information.&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinter
+beiden Berechnungen steckt auch die Idee, dass eine größtmögliche Transparenz
+erzielt ersichtlich sein sollte.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>
+Beaufschlagung des eingetragenen Lohnmittelstundensatzes mit einem Faktor</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie hier die Position des Radio-Buttons. Steht dieser bei Faktor, so
+wird für die Berechnung der Faktor verwendet. Steht dieser bei Kalk.Stundensatz,
+so wurde dieser manuell eingegeben und der Faktor wird nur zu Ihrer Information
+angezeigt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Errechnung
+des Lohnmittelstundensatzes aus den Brutto-Brutto Lohnkosten</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dieser Funktion wird aus den Brutto-Brutto Gehaltskosten der kalkulatorische
+Lohnmittelstundensatz errechnet, unter der Annahme von Kalenderwochen,
+Feiertagswochen, Krankenstandswochen, sowie der Angabe der zusätzlichen
+monatlichen Sonderzahlungen (die ja doch in jedem Land / Unternehmen anders
+gehandhabt werden).&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Die Berechnung des Lohnmittelstundensatz aus den monatlichen
+Brutto-Brutto Lohnkosten erfolgt nach folgender Formel:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Brutto-Brutto-Lohnkosten
+* (12+Sonderzahlungen) / theoretische Jahres-Ist-Stunden</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Berechnung der theoretischen Jahres-Ist-Stunden erfolgt nach folgender Formel:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+(52Kalenderwochen – Urlaubswochen – Krankenwochen – Feiertagswochen) * Summe der Wochensollstunden
+=&nbsp;<br>
+ theoretische Jahres-Ist-Stunden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Basis für die Sollstunden pro Woche sind die Sollstunden aus dem
+Zeitmodell welches zum 1. des ausgewählten Monates gültig ist.<br>
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Es ist dies die vereinfachte Berechnung der voraussichtlichen Jahres-Ist-Stunden, mit einer Schwankungsbreite von ca. 1-2Tagen pro Jahr (wegen Feiertagen), was für die
+Kalkulation ausreichend genau ist. Es wird daher auch die Wochenbetrachtung für
+diese Berechnung verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+dies zu erreichen müssen folgende Parameter eingestellt werden:</p>
+
+<div align="left">
+  <table border="1" width="600" height="11">
+    <tr>
+      <td width="600" height="11">Parameter</td>
+      <td width="600" height="11">Beschreibung</td>
+      <td width="600" height="11">empfohlener Wert</td>
+    </tr>
+    <tr>
+      <td width="600" height="11">LOHNSTUNDENSATZKALKULATION_KALENDERWOCHEN</td>
+      <td width="600" height="11">Anzahl der Wochen eines Kalenderjahres</td>
+      <td width="600" height="11">52</td>
+    </tr>
+    <tr>
+      <td width="600" height="11">LOHNSTUNDENSATZKALKULATION_FEIERTAGSWOCHEN</td>
+      <td width="600" height="11">Anzahl der Feiertage eines Kalenderjahres
+        umgelegt auf Kalenderwochen&nbsp;</td>
+      <td width="600" height="11">2 in A</td>
+    </tr>
+    <tr>
+      <td width="600" height="11">LOHNSTUNDENSATZKALKULATION_KRANKWOCHEN</td>
+      <td width="600" height="11">Anzahl der Kranktage eines Kalenderjahres
+        umgelegt auf Kalenderwochen&nbsp;</td>
+      <td width="600" height="11">1</td>
+    </tr>
+    <tr>
+      <td width="600" height="11">LOHNSTUNDENSATZKALKULATION_SONDERZAHLUNGEN</td>
+      <td width="600" height="11">Anzahl der Sonderzahlungen auf Monatsbasis pro
+        Jahr</td>
+      <td width="600" height="11">2 in A (oder mehr)<br>
+        0,1,2 in D</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Als
+zusätzlicher Wert wird die Anzahl der Urlaubswochen aus dem Urlaubsanspruch
+(Jahresanspruch in Wochen) verwendet. Somit ergibt sich, bei obiger Einstellung,
+für einen Mitarbeiter mit einer 38,5Std Woche an theoretischen
+Jahres-Ist-Stunden:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(52
+- 5 - 1 - 2) * 38,5 = 1.694 Std.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Abweichung gegenüber dem tatsächlichen Wert kann im Modul Zeiterfassung, Info,
+Zeitsaldo überprüft werden. Passen Sie die Daten gegebenenfalls entsprechend
+an.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Kalk_Ist_Jahresstunden.gif" width="454" height="168"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Somit
+ergibt sich (Jänner 2014 in Österreich) für ein Bruttogehalt von 2.000,- €
+ein Lohnmittelstundensatz von 21,70 € und mit einem Korrekturfaktor, z.B. für
+Stillstandszeiten, Verteilungs- und Ausbildungszeiten und ähnlichem von 20% ein
+kalkulatorischer Stundensatz von 26,04 €, von denen der Mitarbeiter ca.
+8,65€ netto ausbezahlt bekommt (auch während seines Urlaubs usw.)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Info:
+An der Anzeige des Feldes der Kalk.Ist-Jahresstunden sehen Sie, dass die
+Berechnung anhand des Brutto-Brutto-Gehaltes und den Kalk.Ist-Jahresstunden
+erfolgt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
+nun mit Neu ein weiterer Datensatz zu einem anderen Monat angelegt, so werden
+die Daten der jüngsten Gehaltsdefinition als Vorschlagswert übernommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der Anzeige werden die Kalk.Ist-Jahresstunden in Rot dargestellt, wenn die bei
+der Erfassung gespeicherten Stunden mit den nun aktuell berechneten Stunden
+nicht übereinstimmen. Sollten diese aktualisiert werden, so kann durch Ändern
+und Speichern der nun gültige Wert übernommen werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass eine Änderung des Kalk.Stundensatzes in den Berechnungen,
+z.B. Ablieferwert der Lose, erst durch eine erneute Nachkalkulation
+gegebenenfalls aktualisiert wird.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
