@@ -219,7 +219,54 @@ den Formularen zu CleverCure</p>
   </li>
 </ul>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Konfiguration zu
+Beginn</p>
+
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>HELIUM V
+    Webservices</b> - in der Standard-Installation von HELIUM V enthalten.&nbsp;
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>HELIUM V RestAPI
+    Server (HV-Tomcat)</b>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">siehe
+    Grundeinstellung und Definition RestAPI (Link)<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zusätzlich
+gibt es einen HELIUM V Benutzer, der die Interaktion von HELIUM V und dem
+RestAPI-Webserver durchführt. Dieser muss auf beiden Seiten definiert
+werden.&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im
+HV-Tomcat passen Sie die Definition restapi.xml nach folgendem Vorbild an:<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="user_restapi_definition.JPG" width="737" height="58"><p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Weitere
+Definitionen in HELIUM V</b><p class="answer" style="margin:0cm;margin-bottom:.0001pt">Legen
+Sie dazu im Modul Benutzer einen neuen Benutzer an und geben Sie ihm eine
+Benutzerrolle und hinterlegen den Mandanten. Die Benutzerrolle muss die Rechte AUFT_AUFTRAG_CUD,
+AUFT_AUFTRAG_R,&nbsp; PART_LIEFERANT_R, PART_PARTNER_R, WW_ARTIKEL_R besitzen. Hinterlegen Sie beim Benutzer je
+nach Anforderung eine neue Person (Modul Personal Neu) oder eine
+bestehende.&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Geben
+Sie im Modul Personal oberer Reiter Daten jene E-Mail Adresse ein, an die eine
+Nachricht gesendet wird, wenn in HELIUM V ein neuer Auftrag angelegt wurde. Um
+die Nachricht an mehrere E-Mail Adressen zu verschicken, geben Sie die Adressen
+mit einem Semikolon (;) getrennt ein.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im
+oberen Reiter Detail muss im Feld Ausweis die Identifikationsnummer für das
+Clevercure-Portal eingegeben werden.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im
+Modul Artikel unterer Reiter Grunddaten legen Sie im oberen Reiter Webshop einen
+neuen Webshop an. Der Name muss ebenso der Definition im restapi.xml
+entsprechen.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im Modul
+System unterer Reiter Sprache, oberer Reiter Einheiten legen Sie die Einheiten
+PCE (Stück) und KGM (kg) an. Bitte bedenken Sie, falls weitere Übersetzungen
+der Einheiten aus der Auftragsübermittlung nötig sind, diese hier anzulegen.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>HTTPS Zugang
+    bidirektional, abgesichert durch Zertifikate. Eine entsprechende
+    Parametrierung der Firewall ist erforderlich.</b>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Parameterdaten
+    wie Kundennummern, Lieferantennummern usw.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für
+die Definition für welche Kunden Sie die Clevercure-Schnittstelle verwenden,
+wenden Sie sich an Ihren HELIUM V Betreuer.&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für
+die Definition im Clevercure-Portal, für welchen Kunden Sie ein
+Auftragsbestätigung/Lieferaviso schicken, geben Sie im Modul Kunde, oberer
+Reiter Konditionen Ihre eigene Kundennummer im Feld Lieferantennummer ein.&nbsp;
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Kunden-Sonderkonditionen
+    zur Pflege der Kundenartikelnummern<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 
 </body>
 
