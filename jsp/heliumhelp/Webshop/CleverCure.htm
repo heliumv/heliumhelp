@@ -33,7 +33,8 @@ abgebildeten Funktionen sind:</p>
     Kanbanstatus (in Vorbereitung)</li>
 </ul>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Voraussetzungen:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Voraussetzungen: </b><a href="#Konfiguration">(Konfiguration
+siehe unten)</a></p>
 <ul>
   <li>
     <p class="answer" style="margin:0cm;margin-bottom:.0001pt">HELIUM V
@@ -53,7 +54,7 @@ abgebildeten Funktionen sind:</p>
     zur Pflege der Kundenartikelnummern</li>
 </ul>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ablauf:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Ablauf:</b></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach erfolgter
 Parametrierung und Einrichtung des Systems sieht der Ablauf wie folgt aus:</p>
 <ol>
@@ -105,121 +106,182 @@ Parametrierung und Einrichtung des Systems sieht der Ablauf wie folgt aus:</p>
 </ol>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zuordnung der Daten
-zwischen CleverCure und HELIUM V</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Zuordnung der Daten
+zwischen CleverCure und HELIUM V</b></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <div align="left">
-  <table border="1" width="772" height="21">
+  <table border="1" width="1134" height="21">
     <tr>
-      <td width="772" height="21">Clever Cure</td>
-      <td width="772" height="21">HELIUM V</td>
-      <td width="772" height="21">Bemerkung</td>
+      <td width="577" height="21">Clever Cure</td>
+      <td width="456" height="21">HELIUM V</td>
+      <td width="1645" height="21">Bemerkung</td>
     </tr>
     <tr>
-      <td width="772" height="21"></td>
-      <td width="772" height="21">Auftragsadresse</td>
-      <td width="772" height="21"></td>
+      <td width="577" height="21">&lt;BUYER_PARTY> &lt;PARTY_ID></td>
+      <td width="456" height="21">Auftragsadresse</td>
+      <td width="1645" height="21">Diese muss im Kunden als Lieferantennummer
+        hinterlegt sein. Bitte überprüfen Sie auch die im Kunden hinterlegten
+        UID.
+        <p>Dies ist zugleich auch die Basis für die
+        Zuordnung der Kundenartikelnummern zu Ihren eigenen Artikelnummern.</td>
     </tr>
     <tr>
-      <td width="772" height="21"></td>
-      <td width="772" height="21">Lieferadresse</td>
-      <td width="772" height="21">Es muss dazu die Adresse im Wortlaut
+      <td width="577" height="21">&lt;SHIPMENT_PARTIES> &lt;DELIVERY_PARTY></td>
+      <td width="456" height="21">Lieferadresse</td>
+      <td width="1645" height="21">Es muss dazu die Adresse im Wortlaut
         übereinstimmen. D.h. die ersten beiden Zeilen der Adresse und die
         Straße.<br>
         Gegebenenfalls nicht konvertierbare Zeichen werden ignoriert</td>
     </tr>
     <tr>
-      <td width="772" height="21"></td>
-      <td width="772" height="21">Rechnungsadresse</td>
-      <td width="772" height="21">Dies ist zugleich auch die Basis für die
-        Zuordnung der Kundenartikelnummern zu Ihren eigenen Artikelnummern</td>
+      <td width="577" height="21">&lt;INVOICE_PARTY></td>
+      <td width="456" height="21">Rechnungsadresse</td>
+      <td width="1645" height="21">Dazu muss im Kunden die UID Nummer hinterlegt
+        sein. Wenn diese UID nicht übereinstimmt, so wird die Auftragsadresse
+        verwendet.</td>
     </tr>
     <tr>
-      <td width="772" height="21"></td>
-      <td width="772" height="21">Kundenartikelnummer</td>
-      <td width="772" height="21">In der Rechungsadresse werden in den Soko die
+      <td width="577" height="21">&lt;CC_DRAWING_NR> &lt;CC_INDEX_NR></td>
+      <td width="456" height="21">Kundenartikelnummer + Revisions- nummer</td>
+      <td width="1645" height="21">In der Rechungsadresse werden in den Soko die
         Kundenartikelnummern gesucht. Parallel zur Zuordnung wird auch die
         Revision zwischen CC und dem Feld Revision im HELIUM V Artikelstamm
         geprüft.</td>
     </tr>
     <tr>
-      <td width="772" height="21"></td>
-      <td width="772" height="21">Mengeneinheit</td>
-      <td width="772" height="21">Diese muss mit der in HELIUM V eingetragenen
-        Kennung übereinstimmen. Siehe dazu: System, Sprache, Einheit.</td>
+      <td width="577" height="21">&lt;LINE_ITEM_ID></td>
+      <td width="456" height="21">Positions-ID</td>
+      <td width="1645" height="21">Essentielle Nummer für die Zuordnung der
+        Position zwischen den CC-Partnern. Für die Durchgängigkeit des Ablauf
+        von Bestellun bis zum Lieferaviso. Diese muss genau übereinstimmen! Sie
+        finden die Information in der Texteingabe zur Position in HELIUM V.</td>
     </tr>
     <tr>
-      <td width="772" height="21"></td>
-      <td width="772" height="21">Lieferart</td>
-      <td width="772" height="21">Auch die Lieferart muss mit der in HELIUM V
+      <td width="577" height="21">&lt;CC_ORDER_UNIT></td>
+      <td width="456" height="21">Mengeneinheit</td>
+      <td width="1645" height="21">Diese muss mit der in HELIUM V eingetragenen
+        Kennung übereinstimmen. Siehe dazu: System, Sprache, Einheit. Wenn
+        diese Kennung hier nicht vorhanden ist, so wird die Mengeneinheit Stk.
+        verwendet. Die Information welche Mengeneinheit bestellt wurde finden
+        Sie in der darüberliegenden Information. Ändern Sie diese entsprechend
+        ab um im Lieferavisio eine Übereinsstimmung zu erzielen.</td>
+    </tr>
+    <tr>
+      <td width="577" height="21">&lt;TRANSPORT> &lt;INCOTERM&gt;</td>
+      <td width="456" height="21">Lieferart</td>
+      <td width="1645" height="21">Auch die Lieferart muss mit der in HELIUM V
         eingetragenen Kennung übereinstimmen. Siehe dazu Lieferadresse,
         Konditionen, Lieferart bzw. System, Mandant, Lieferart, Kennung.<br>
-        Siehe dazu auch <a href="../Allgemeine_Stammdaten/index.htm#Incoterms">Incoterms</a></td>
+        Siehe dazu auch <a href="../Allgemeine_Stammdaten/index.htm#Incoterms">Incoterms</a>
+        im Modul System unterer Modulreiter Mandant oberer Reiter Lieferart.</td>
     </tr>
     <tr>
-      <td width="772" height="21"></td>
-      <td width="772" height="21">Nettopreis&nbsp;</td>
-      <td width="772" height="21">Der erhaltene Preis, welcher mit dem im
-        Artikelstamm / Kundensonderkonditionen für diese Rechnungsadresse
-        hinterlegten Preis übereinstimmen muss.</td>
+      <td width="577" height="21">&lt;DELIVERY_START_DATE> &lt;DELIVERY_END_DATE&gt;<br>
+        &lt;ORDER_DATE></td>
+      <td width="456" height="21">Auftragstermine</td>
+      <td width="1645" height="21">In den Kopfdaten des Auftrags in HELIUM V
+        wird in den Liefertermin der früheste Positionstermin und in den
+        Finaltermin der späteste Positionstermin eingefügt. Das Bestelldatum
+        entspricht der Information, die im Order-Date.&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="577" height="21">&lt;DELIVERY_START_DATE></td>
+      <td width="456" height="21">Positionstermin</td>
+      <td width="1645" height="21">Dieser Termin ist der
+        &quot;Wunschtermin&quot; aus der Bestellung des Kunden und kann der
+        Liefersituation entsprechend für das Lieferavisio angepassst werden.</td>
+    </tr>
+    <tr>
+      <td width="577" height="21">&lt;PRICE_AMOUNT></td>
+      <td width="456" height="21">Nettopreis&nbsp;</td>
+      <td width="1645" height="21">Der erhaltene Preis, welcher mit dem im
+        Artikelstamm / Kundensonderkonditionen für diese Auftragsadresse hinterlegten Preis übereinstimmen muss.</td>
     </tr>
   </table>
 </div>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Infos /
-Fehlermeldungen beim Auftragsimport:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Infos /
+Fehlermeldungen beim Auftragsimport:</b></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Werden
 Unstimmigkeiten zwischen den in Ihrem System hinterlegten Daten und den
 erhaltenen Daten festgestellt, so werden entsprechende Info: Texteingaben in die
-Auftragsbestätigung eingefügt. Prüfen Sie diese Fehler, beseitigen Sie diese
+Auftragsbestätigung vor der jeweiligen Ident/Handeingabe eingefügt. Prüfen Sie diese Fehler, beseitigen Sie diese
 im Auftrag und vor allem in der Definition Ihrer Daten. So erhalten Sie sehr
 rasch ein zu / mit Ihrem Kunden abgestimmtes System.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Welche Daten werden
-von der Schnittstelle in der Dokumentenablage des jeweiligen Auftrages abgelegt?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ein Beispiel hierfür
+ist, dass eine Artikelnummer in HELIUM V gefunden wird, aber keine der
+CC-Bestellung entsprechende Revisionsnummer vorhanden ist. Diese Information
+wird als Texteingabe in den Auftrag geschrieben. Eine Vorgehensweise dazu wäre,
+dass Sie nun einen neuen Artikel anlegen mit der aktuellen Revisionsnummer und
+diesen in der Position im Auftrag abändern.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn eine Position
+(Ident) über die Sonderkonditionen nicht gefunden wird, so wird nach der
+Artikelnummer gesucht, wenn auch hier keine Übereinstimmung besteht, so wird
+eine neue Position mit der Art Handeingabe angelegt, die alle Informationen zur
+Bestellposition enthält (Bezeichnung, Menge, Mengeneinheit, LINE_ITEM_ID,
+Mwst-Sätze, gesuchte Artikelnummer).</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">ACHTUNG: Die
+LINE_ITEM_ID muss in jeder Position des Auftrags als Texteingabe in folgender
+Form {"lineitemid" : "1"} enthalten sein!</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Welche Daten werden
+von der Schnittstelle in der Dokumentenablage des jeweiligen Auftrages abgelegt?</b></p>
 <ul>
   <li>
-    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Import Clevercure XML Orderresponse<br>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Import Clevercure XML
+    Import_Clevercure<br>
     Dies sind die Original Daten die HELIUM V von CleverCure erhalten hat</li>
   <li>
-    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Export Clevercure XML Orderresponse osd<br>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Export Clevercure XML
+    Auftragbestätigung_osa_Clevercure<br>
     Diese Daten wurden als Auftragsbestätigung an CleverCure gesandt</li>
 </ul>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Daten die zum Export
-des Lieferavisos abgelegt werden sind:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Daten die zum Export
+des Lieferavisos abgelegt werden sind:</b></p>
 <ul>
   <li>
-    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Export Clevercure XML
+    Lieferaviso_Clevercure<br>
+    Diese Daten wurden als Lieferaviso an CleverCure gesandt</li>
 </ul>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ergänzende Infos in
-den Formularen zu CleverCure</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Ergänzende Infos in
+den Formularen zu CleverCure</b></p>
 <ul>
   <li>
-    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auftragsbestätigung
-    <ul>
-      <li>
-        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Parameter</li>
-      <li>
-        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Field</li>
-    </ul>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auftragsbestätigung<br>
+    <br>
+    Parameter java.lang.String P_VERSANDWEG_BESTAETIGUNG_TERMIN, der Zeitpunkt
+    (Datum&amp;Uhrzeit) an dem die Bestätigung gesendet wurde als Datum
+    formatiert. Null wenn noch nicht bestaetigt<br>
+    Parameter java.lang.Boolean P_VERSANDWEG, &quot;true&quot; wenn für diesen
+    Auftrag ein Versandweg (Clevercure) festgelegt ist, &quot;false&quot; wenn
+    nicht
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+  </li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Lieferschein<br>
+    <br>
+    Parameter java.lang.String P_VERSANDWEG_AVISO_TERMIN, der Zeitpunkt
+    (Datum&amp;Uhrzeit) an dem das Aviso gesendet wurde als Datum formatiert.
+    Null wenn noch nicht avisiert
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Parameter
+    java.lang.Boolean P_VERSANDWEG, &quot;true&quot; wenn für diesen Auftrag
+    ein Versandweg (Clevercure) festgelegt ist, &quot;false&quot; wenn nicht
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Feld
+    java.lang.String F_AUFTRAG_BESTAETIGUNG_TERMIN der Zeitpunkt
+    (Datum&amp;Uhrzeit) an dem die Bestätigung gesendet wurde als Datum
+    formatiert. Null wenn noch nicht bestätigt
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Feld
+    java.lang.BOOLEAN F_AUFTRAG_VERSANDWEG &quot;true&quot; wenn für diesen
+    Auftrag ein Versandweg (Clevercure) festgelegt worden ist, ansonsten
+    &quot;false&quot;
   </li>
 </ul>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<ul>
-  <li>
-    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Lieferschein
-    <ul>
-      <li>
-        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Parameter</li>
-      <li>
-        <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Field</li>
-    </ul>
-  </li>
-</ul>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
-<p class="question" style="margin:0cm;margin-bottom:.0001pt">Konfiguration zu
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Konfiguration"></a>Konfiguration zu
 Beginn</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
@@ -257,16 +319,25 @@ der Einheiten aus der Auftragsübermittlung nötig sind, diese hier anzulegen.<p c
     bidirektional, abgesichert durch Zertifikate. Eine entsprechende
     Parametrierung der Firewall ist erforderlich.</b>
     <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
-    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Parameterdaten
-    wie Kundennummern, Lieferantennummern usw.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Parameterdaten
+    wie Kundennummern, Lieferantennummern usw.</b><p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für
 die Definition für welche Kunden Sie die Clevercure-Schnittstelle verwenden,
-wenden Sie sich an Ihren HELIUM V Betreuer.&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für
+wenden Sie sich dazu derzeit an Ihren HELIUM V Betreuer.&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für
 die Definition im Clevercure-Portal, für welchen Kunden Sie ein
 Auftragsbestätigung/Lieferaviso schicken, geben Sie im Modul Kunde, oberer
 Reiter Konditionen Ihre eigene Kundennummer im Feld Lieferantennummer ein.&nbsp;
     <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
-    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Kunden-Sonderkonditionen
-    zur Pflege der Kundenartikelnummern<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Kunden-Sonderkonditionen
+    zur Pflege der Kundenartikelnummern</b><p class="answer" style="margin:0cm;margin-bottom:.0001pt">Tragen
+Sie die Artikelnummern für die Kunden jeweils im Modul Kunde - oberer Reiter
+Sonderkondition ein. Klicken Sie dazu auf neu, wählen Ihren Artikel aus und
+geben die kundenspezifische Ident ein. </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achtung: Beachten Sie
+das Feld Gültig ab und tragen hier das gewünschte Datum ein. </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zusätzlich
+definieren Sie im Modul Artikel bei diesem Artikel die Revisions-Nummer.</p>
 
 </body>
 
