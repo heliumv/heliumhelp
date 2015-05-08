@@ -15,189 +15,487 @@
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
 diesem&nbsp;zusätzlichen Modul steht ein strukturierter Import anhand
-verschiedenen Textformate in die Stücklisten zur Verfügung.</p>
+verschiedener Textformate in die Stücklisten zur Verfügung. Dies ist gerade in
+der Elektronik Industrie mit einerseits vielen Positionen je Stückliste /
+Baugruppe und andererseits doch der relativ klaren Zuordnung zu
+Herstellernummern eine wesentliche Funktion.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Grundidee ist, dass Sie von Ihrem Kunden / Ihrer Konstruktion / Ihrer
+Entwicklung eine Stückliste erhalten, in der:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kundenartikelnummer</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Herstellernummer</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ihre
+    Artikelnummer</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">eindeutige
+    Bezeichnung</li>
+</ul>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">enthalten
+sind.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
-Funktionalität benötigt <a href="http://neon/wiki/index.php/Intelligenter_StÃ¼cklisten_Import"> erweiterte SQL Funktionen</a> und
-steht derzeit nur unter PostgreSql zur Verfügung.<br> </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+wesentlicher Punkt für den Import ist, dass eine Stückliste einem Kunden
+zugeordnet werden kann / sollte. D.h. wenn Sie Stücklisten von Ihren Kunden
+erhalten, so sollten Sie möglichst die Artikelnummern Ihres jeweiligen Kunden
+in den Sonderkonditonen des jeweiligen Kunden hinterlegen. Durch die Zuordnung
+der Stückliste zu diesem Kunden weiß HELIUM V welche Übersetzungen von der
+Kundenartikelnummer zu Ihrer eigenen Kundennummer vorgenommen wird. Bei
+wiederholenden Aufträgen von Ihren Kunden für die Lohnfertigung sparen Sie
+sich somit ab der zweiten Stückliste eine Menge Zeit um die Daten verlässlich
+von Ihrem Kunden zu übernehmen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
-dem Anlegen der Stücklisten Kopfdaten wechseln Sie in den oberen Modulreiter
-Positionen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Welche
+Datenformate können importiert werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Formate mit Trennzeichen und flexiblen Spaltenbreiten wie z.B.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a1.)
+CSV Format (Comma Separated Value)</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a2.)
+Text Tabs getrennt</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Formate mit festen Spaltenbreiten</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">WICHTIG:
+Um die Mengenangaben richtig interpretieren zu können, müssen die Daten im
+Locale Ihrer Anmeldung angeliefert werden. D.h. wenn Sie z.B. in der Schweiz
+sind, so müssen die Mengenangaben der Schweizer Schreibweise (' als
+Tausendertrenner und . als Dezimaltrenner) entsprechen. Um Daten in Ihrer nicht
+Standard Sprache importieren zu können, müssen Sie sich gegebenenfalls in
+einer anderen Sprache in HELIUM V anmelden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
-die Importfunktion zu starten klicken Sie auf den Knopf <img border="0" src="IntStklImp1.gif" width="30" height="26">
+mit einer hohen Wahrscheinlichkeit den richtigen Artikel finden zu können, wird
+beim Import in folgender Reihenfolge vorgegangen:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+gibt es die Kundenartikelnummer? Wenn ja wird diese verwendet. Es werden hier
+auch mehrfache Zuordnungen unterstützt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+gibt es Herstellerartikelnummer? Wenn ja wird diese verwendet. Auch hier werden
+mehrfache Zuordnungen unterstützt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">c.)
+aus den Bezeichnungen des Datenimports wird eine Entsprechung in den
+Bezeichnungen des Artikels gesucht.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Import werden gleiche Zeilen optisch zu einer zusammengefasst um die Bedienung
+zu vereinfachen. D.h. in der Regel wird ein Artikel nur einmal in der
+Importliste angezeigt. Mehrfache gleiche Artikel werden jedoch als diese
+mehrfachen Positionen importiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Anzeige des Importes ist farblich gestaltet und stellt die gefundenen
+Entsprechungen dar.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Bedeutung ist wie folgt:</p>
+
+<div align="left">
+  <table border="1" width="382" height="9">
+    <tr>
+      <td width="62" height="9">grün&nbsp;</td>
+      <td width="702" height="9">es wurde exakt eine Entsprechung gefunden</td>
+    </tr>
+    <tr>
+      <td width="62" height="9">gelb&nbsp;</td>
+      <td width="702" height="9">es wurden mehrere Entsprechungen gefunden</td>
+    </tr>
+    <tr>
+      <td width="62" height="9">rot&nbsp;</td>
+      <td width="702" height="9">es wurde keine Entsprechung gefunden</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der Spalte der Artikel können auch andere Artikel bzw. Handeingaben ausgewählt
+werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Ablauf des Imports ist wie folgt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>1.)
+Auswahl der Stückliste</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Legen
+Sie eine entsprechende Stückliste an bzw. wählen Sie eine bereits bestehende
+Stückliste aus.&nbsp;<br>
+Bei Kundenspezifischen Stücklisten achten Sie darauf, dass in
+den Kopfdaten der richtige Kunden mit den Sonderkonditionen, also den
+Artikelnummernübersetzungen, angegeben ist.<br>
+Bei einer bestehenden Stückliste werden die importierten Positionen nach den vorhandenen Positionen
+eingefügt. Gegebenenfalls muss die Stückliste vorher komplett
+gelöscht bzw. bereinigt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>2.)
+Import starten</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Importfunktion zu starten wechseln Sie in den Reiter Positionen der
+gewählten Stückliste und klicken Sie auf den Knopf <img border="0" src="IntStklImp1.gif" width="30" height="26">
 Import.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
-nun erscheinenden Dialog</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">wählen
-Sie eine Textdatei <img border="0" src="IntStklImp2.gif" width="509" height="31"> mit den
-Stücklistendaten durch Klick auf <img border="0" src="IntStklImp3.gif" width="53" height="26"> aus.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(Bitte beachten Sie, dass hierzu auch die SI-Wert Zusatzfunktion verfügbar sein muss, sollte das Icon bei Ihnen nicht sichtbar sein, so kontaktieren Sie bitte Ihren HELIUM V
+Betreuuer.)</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
-erhalten Sie eine entsprechende Vorschau der Textdaten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>3.)
+Nun erscheint die erste Seite des Import-Assistenten</u></b></p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
-Sie nun anhand der Vorschau die Positionen der Felder</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="IntStklImp2.jpg" width="438" height="219"></p>
 
-<div align="left">
-  <table border="1" width="583" height="11">
-    <tr>
-      <td width="211" height="11">Bauteil</td>
-      <td width="955" height="11">Die Bezeichnung des Artikels bzw. dessen
-        Artikelnummer in Ihrem HELIUM V Artikelstamm<br>
-        Die dafür im Artikelstamm durchsuchten / zugeordneten Felder sind: </td>
-    </tr>
-    <tr>
-      <td width="211" height="11">Bauform</td>
-      <td width="955" height="11">Hier wird in HELIUM V das Feld Bauform (Reiter
-        Technik)&nbsp; durchsucht</td>
-    </tr>
-    <tr>
-      <td width="211" height="11">Menge</td>
-      <td width="955" height="11">Der numerische Wert dieser Spalte wird als
-        Menge übernommen</td>
-    </tr>
-    <tr>
-      <td width="211" height="11">Positionsnummer</td>
-      <td width="955" height="11">Der Inhalt dieser Spalte wird unter
-        Positionsnummer eingetragen.</td>
-    </tr>
-  </table>
-</div>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+Sie hier durch Klick auf Datei die zu importierende Datei aus.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
-dem Dateiauswahldialog definieren Sie</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte die Auswahl der Spezifikation (des Stücklistenimports).</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="IntStklImp4.gif" width="466" height="25"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+klick auf Neue Spezifikation, erstellen Sie eine neue Spezifikation.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Um eine bestehende Spezifikation zu laden, wählen Sie Gespeicherte
+Spezifikation aus der Liste aus. So kann die gleiche Spezifikation, z.B. für
+immer den gleichen Kunden, als Voreinstellung verwendet werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<div align="left">
-  <table border="1" width="581" height="15">
-    <tr>
-      <td width="291" height="15">Anzahl der Kopfzeilen</td>
-      <td width="871" height="15">&nbsp;Nach der Anzahl dieser Zeilen beginnen
-        die echten Daten</td>
-    </tr>
-    <tr>
-      <td width="291" height="15">Trennzeichen</td>
-      <td width="871" height="15"></td>
-    </tr>
-    <tr>
-      <td width="291" height="15">Kopfzeile mit Feldnamen</td>
-      <td width="871" height="15">D.h. aus der Kopfzeile können die Feldnamen
-        herausgelesen werden. Die erwarteten Feldnamen sind:<br>
-      </td>
-    </tr>
-  </table>
-</div>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
-Sie nun die Positionen der Felder im unteren Teil des Dialoges.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
-markieren Sie z.B. das Feld Positionsnummer mit der Maus und klicken Sie dann <br>
-<img border="0" src="IntStklImp5.gif" width="335" height="29"> auf die beiden doppelten Pfeile.<br>
-Damit werden Beginn und Ende der Markierung als die Position in der Textdatei
-für das gewählte Feld, in unserem Falle die Positionsnummer, übernommen.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
-klicken Sie auf Vorschau <img border="0" src="IntStklImp6.gif" width="106" height="33"> um im unteren
-Teil die aufgesplitteten Daten zu sehen.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
-diese so wie von Ihnen gewünscht, so klicken Sie bitte auf Import <img border="0" src="IntStklImp7.gif" width="104" height="26"></p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
-wird versucht anhand der angegebenen Daten aus Bauteil und Bauform den je Zeile
-am besten passenden Artikel in Ihrem Artikelstamm zu finden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
-einigen Sekunden, abhängig von der Menge der Daten erhalten Sie die
-Import-Liste in der Sie die Übersetzungen zu Ihren Artikeln sehen. Beachten Sie
-dabei bitte die Spalte <b>gefunden</b>. Hier wird angezeigt wieviele passenden
-Artikel zu diesem Text gefunden wurden. Wurden mehr wie 1 Artikel gefunden, so
-kann durch Klick in das Feld Artikel aus den weiteren gefundenen Artikeln
-ausgewählt werden. <img border="0" src="IntStklImp8.gif" width="123" height="43"></p>
+Auswahl der Datei und der Spezifikation klicken Sie auf weiter. Dadurch wird die ausgewählte Datei
+geladen und die ersten 100 Zeilen der zu importierenden Datei angezeigt.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
-prüfen Sie die Liste und passen Sie die Ergebnisse so an, dass der richtige
-Artikel (aus Ihrem Artikelstamm) bei der jeweiligen Position eingetragen ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
-oft viele gleichlautende Positionen&nbsp; (=Zeilen) gegeben sind, gibt es links
-unten den Knopf Übernehmen. Damit wird die von ihnen getroffene
-Artikeldefinition in die gleichlautenden Positionen übernommen. Gleichlautend
-bedeutet, dass, ausgehend von der selektierten Zeile alle Zeilen aktualisiert
-werden, bei denen Bauteil und Bauform den Werten der gewählten Zeile
-entsprechen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>4.)
+Definition des Importformates und Zuordnung der Spalten</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+einer neuen Spezifikation muss das Importformat (Trennzeichen oder Fixe (Spalten-) Breite)) und danach die Zuordnung der Spalten definiert werden. Geben
+Sie hier auch an, ab welcher Zeile tatsächlich Daten vorliegen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="IntStklImp3.jpg" width="920" height="175"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Trennzeichen:</b>
+geben Sie hier das in der Datei verwendete Trennzeichen an.</p>
+
+<div align="left">
+  <table border="1" width="632" height="13">
+    <tr>
+      <td width="261" height="13">CSV</td>
+      <td width="1003" height="13"> ; (die im deutschsprachigen Raum übliche Form für
+        CSV)</td>
+    </tr>
+    <tr>
+      <td width="261" height="13">Text
+Tabs getrennt</td>
+      <td width="1003" height="13"> \t</td>
+    </tr>
+  </table>
+</div>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn kein Trennzeichen verwendet wurde, so nutzen Sie bitte folgende Funktion:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Fixe
+Breite:</b> definieren Sie mittels Maus die entsprechenden Spalten. Bewegen Sie
+dazu die Maus im unteren Zeilen Fenster und klicken Sie auf die jeweils linken
+Spaltenränder.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+ein Spaltenrand falsch definiert, so klicken Sie erneut auf die Spalte und die
+Markierung wird wieder entfernt. Bitte beachten Sie, dass zwischen allen
+Bereichen eine Trennung eingefügt ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Montageart:</b>
+Definieren Sie die für die zu importierenden Positionen zu verwendende
+Montageart</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Bedeutung
+der Felder, der Spaltenüberschriften:</b></p>
+
+<div align="left">
+  <table border="1" width="629" height="12">
+    <tr>
+      <td width="179" height="12">Name</td>
+      <td width="1015" height="12">Bedeutung</td>
+    </tr>
+    <tr>
+      <td width="179" height="12"><a name="Kundenartikelnummer"></a>Kundenartikelnummer</td>
+      <td width="1015" height="12">Artikelnummer des Bauteiles ihres Kunden. Es
+        wird die Entsprechung in den Sonderkonditionen des im Kopf der
+        Stückliste definierten Kunden gesucht.<br>
+        <b>Hinweis:<br>
+        </b>Wird die Spaltenüberschrift Kundenartikelnummer nicht angezeigt, so
+        wurde die Stückliste keinem Kunden zugeordnet. Definieren Sie in diesem
+        Falle den Kunden in den Kopfdaten der Stückliste.</td>
+    </tr>
+    <tr>
+      <td width="179" height="12">Herstellerartikelnummer</td>
+      <td width="1015" height="12">Artikelnummer des Herstellers des Bauteils.
+        Dies wird im Artikelstamm im Reiter Bestelldaten, Herstellernummer
+        erfasst.</td>
+    </tr>
+    <tr>
+      <td width="179" height="12">Herstellerbezeichnung</td>
+      <td width="1015" height="12">Bezeichnung des Herstellers für den Artikel.
+        Dies wird im Artikelstamm im Reiter Bestelldaten, Herstellerbezeichnung
+        erfasst.</td>
+    </tr>
+    <tr>
+      <td width="179" height="12">SI-Wert</td>
+      <td width="1015" height="12">Spalte die den Wert des Bauteiles hält. Z.B.
+        100k (100 Kilo Ohm). Siehe dazu auch SI-Wert.</td>
+    </tr>
+    <tr>
+      <td width="179" height="12">Bezeichnung</td>
+      <td width="1015" height="12">Bezeichnung des Bauteils, des Artikels</td>
+    </tr>
+    <tr>
+      <td width="179" height="12">Bauform</td>
+      <td width="1015" height="12"></td>
+    </tr>
+    <tr>
+      <td width="179" height="12">Artikelnummer</td>
+      <td width="1015" height="12">Ihre eigene Artikelnummer</td>
+    </tr>
+    <tr>
+      <td width="179" height="12">Menge</td>
+      <td width="1015" height="12">Die Menge für den Artikel dieser Zeile</td>
+    </tr>
+    <tr>
+      <td width="179" height="12">Position</td>
+      <td width="1015" height="12">Positionsbezeichnung(en) dieser Zeile. Wird
+        nach Position in der Stückliste übernommen. Sollte diese zu lang sein,
+        wird in Kommentar fortgesetzt.</td>
+    </tr>
+    <tr>
+      <td width="179" height="12">&lt;undefined&gt;</td>
+      <td width="1015" height="12">Zuordnung um eine Spalte wieder auf
+        undefiniert zu setzen.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>4a.)
+Zuordnung der Spalten:</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ziehen
+Sie mit der Maus die freien gelben Spaltenüberschriften aus dem Kopfbereich auf
+die entsprechende Spalte. Sollten Sie versehentlich die falsche Spalte
+ausgewählt haben, verwenden Sie bitte einfach die Spaltenüberschrift <img border="0" src="IntStklImp4.gif" width="68" height="18">
+und ziehen Sie diese auf die falsch definierte Spalte bzw. ziehen Sie einfach
+die richtige Spaltenüberschrift auf die falsche Spalte.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="IntStklImp5.jpg" width="985" height="311"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
+nun alle Spalten definiert, so klicken Sie bitte auf weiter. Die Definitionen können im weiteren Verlauf unter einem Namen abgespeichert werden, um diese für den nächsten Import wiederverwenden zu können. Bei bestehenden Spezifikationen werden die gespeicherten Informationen des jeweiligen Imports geladen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>5.)
+Errechnung der Zuordnung der Artikeln zu den Zeilen:</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ja
+nach Umfang der zu analysierenden Zeilen wird ein Fortschrittsbalken angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+die Analyse beendet, wird das Ergebnis des Vergleichs der Inhalte der Spalten mit dem Artikelstamm in HELIUM V
+mit den entsprechend zugeordneten Artikel,
+z.B. wie folgt angezeigt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="IntStklImp6.jpg" width="1322" height="240"></p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
-können einfach auch Artikelnummern in der Artikelnummernspalte eingegeben
-werden. Öffnen Sie dazu gegebenenfalls einen zweiten HELIUM V Client um den
-richtigen Artikel zu finden.</p>
+sehen Sie wiederum die in der Importdatei definierten Zeilen und als rechteste
+Spalte den daraus errechneten Artikel, mit Artikelnummer und Artikelbezeichnung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+farbliche Gestaltung ist so, dass</p>
+
+<table border="1" width="382" height="9">
+  <tr>
+    <td width="62" height="9">grün&nbsp;</td>
+    <td width="702" height="9">es wurde exakt eine Entsprechung gefunden</td>
+  </tr>
+  <tr>
+    <td width="62" height="9">gelb&nbsp;</td>
+    <td width="702" height="9">es wurden mehrere Entsprechungen gefunden</td>
+  </tr>
+  <tr>
+    <td width="62" height="9">rot&nbsp;</td>
+    <td width="702" height="9">es wurde keine Entsprechung gefunden</td>
+  </tr>
+  <tr>
+    <td width="62" height="9">weiss&nbsp;</td>
+    <td width="702" height="9">diese Zeile wird als Handartikel übernommen</td>
+  </tr>
+</table>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+gelb bzw. rot sollten Sie den jeweils richtigen Artikel auswählen bzw.
+zuordnen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Klicken
+Sie dazu in der zu ändernden Zeile in die Spalte des Artikels. In der nun
+erscheinenden Auswahlbox</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="IntStklImp6.gif" width="370" height="99"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">können
+neben Handartikel, der Auswahl aus dem Artikelstamm, auch die anderen gefundenen
+Artikel ausgewählt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Handartikel
+bedeutet, dass kein Artikel aus dem Artikelstamm zugeordnet wird und dieser nur
+mit Menge und Bezeichnung in die Stückliste übernommen wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dem Klick auf Artikel auswählen wird der Artikelauswahldialog mit seinen
+Möglichkeiten aufgerufen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Um einen neuen Artikel anzulegen, wechseln Sie wie gewohnt in das Modul Artikel, legen den Artikel an, nun erscheint dieser auch
+im Artikelauswahldialog.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit dem Haken bei „Zusammengefasst“ (per default angehakt) werden alle Positionen der Stückliste auf eine Position zusammengefasst. Entfernen Sie den Haken um  jede einzelne Zeile des Imports zu sehen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
-nun alle Zeilen richtig eingestellt, so wird durch Klick auf <img border="0" src="IntStklImp7.gif" width="104" height="26">
-die Übertragung in die Stücklistenpositionen gestartet. Es werden dabei alle
-Positionen für die anhand der Artikelnummer (der Import-Liste) ein Artikel
-gefunden wurde als Ident-Nummern Position übernommen. Alle anderen Positionen
-(bei denen das gefunden auf 0 steht) werden so übernommen, dass wenn unter
-Bezeichnung (rechte Spalte) etwas eingegeben wurde, wird diese Eingabe in die
-Bezeichnung der Handeingabe übernommen. Ansonsten wird der Inhalt von Bauteil
-und Bauform in die Bezeichnung der Handeingabe eingetragen.</p>
+nun alle zuordenbaren Artikel zugeordnet und es sind eventuell noch Positionen
+übrig geblieben, die nicht zugeordnet werden konnten, so klicken Sie oben auf <img border="0" src="IntStklImp7.gif" width="193" height="23">.
+Dadurch werden alle noch nicht definierten Zeilen auf übernehmen als
+Handartikel gestellt.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
-wird das Fenster geschlossen und Sie sehen die übernommenen Daten in Ihrer
-Stückliste.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>6.)
+Übernehmen der Daten in die Stückliste</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch
+einen erneuten Klick auf weiter werden die Artikel in die Stückliste
+übernommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auch
+hier wird ein Fortschrittsbalken angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="IntStklImp8.jpg" width="465" height="243"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zum
+Abschluss des Importes wird eine kleine Zusammenfassung angezeigt. Hier haben
+Sie auch die Möglichkeit die Importdefinition unter einem für Sie sprechenden
+Namen, z.B. Name des Kunden und der CAD Lösung, abzuspeichern um sie beim
+nächsten Import wieder komfortabel als Vorlage zu verwenden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Falls
+Sie die Vorlage nicht speichern möchten, so bitte nicht speichern wählen, oder
+gegebenenfalls überschreiben Sie eine bereits vorhandene Definition.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dem Klick auf Beenden ist der Stücklistenimport beendet. Sie werden wiederum in
+den Positionenreiter der Stückliste geführt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte, dass der Import die Daten immer an das Ende einer bestehenden
+Stückliste hinzufügt. Gegebenenfalls muss die Stückliste vorher komplett
+gelöscht bzw. bereinigt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b><u>Hinweis:</u></b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch die Zuordnung
+(z.B. bei gelben Zeilen) von Artikel für den Import werden etwaige Einträge in der Herstellerbezeichnung/Herstellernummer im Artikel ergänzt bzw. überschrieben. Wenn ein Kunde hinterlegt ist und noch keine Sonderkondition besteht, so wird die Kundenartikelnummer im Modul Kunde zum aktuellen Zeitpunkt nachgetragen (hier werden vorhandene SOKOs nicht aktualisiert). Dies dient dem Ziel, dass beim darauffolgenden Import schneller Artikel-Treffer erzielt werden.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Wie wird gesucht?</p>
+Bei meinem Import wird die Spaltenüberschrift Kundenartikelnummer nicht
+angezeigt?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Es werden im Artikel die Felder Bezeichnung und Artikelnummer nach den Feldern
-aus Bauteil und Bauform durchsucht.</p>
+Definieren Sie einen Kunden für diese Stückliste in den Kopfdaten derselben. <a href="#Kundenartikelnummer">Siehe</a>.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
-Texte in Bezeichnung haben eine höhere Wertigkeit.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie können Sonderkondtionen (Rabatte) für die importierte Stückliste
+eingestellt werden?</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
-zutreffenden Werte die in der Bezeichnung weiter links stehen haben eine höhere
-Wertigkeit.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Nutzen Sie hierzu den Parameter INTEL_STKL_IMPORT_RABATT um fixe Rabatte/Aufschläge
+zu definieren. Geben Sie den Rabatt in Prozent ein, welcher für, durch den Intelligenten Stücklistenimport neu angelegte, Kundensonderkonditionen verwendet wird.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
-bedeutet: Damit die Suche gute Daten findet, ist es wichtig dass:</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was&nbsp; passiert, wenn unterschiedliche Kundenartikelnummern auf den gleichen
+Artikel in HELIUM V verweisen?</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-die Bezeichnungen in Ihrem Artikelstamm immer in der gleichen Art und Weise
-bezeichnet werden</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn ein Artikel in HELIUM V für mehr als eine Kundenartikelnummer verwendet
+wird, so werden keine Änderungen vorgenommen. Die Kundenartikelnummer wird nur
+ergänzt, wenn zu dem Artikel in HELIUM V noch keine Kundenartikelnummer
+eingetragen ist.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
-dass die wichtigen Daten (z.B. 10nF) weiter links stehen als nicht so wichtige
-Daten (z.B. Toleranz).</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie kann man defnieren, ob die Kundensonderkonditionen aktualisiert werden
+sollen?</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bei der Zuordnung der Artikel, definieren Sie, ob die Kunden-Sonderkonditionen
+für den Artikel aktualsiert werden sollen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="soko_update.JPG" width="345" height="89"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Sie den Haken rechts oben setzen, so gilt die Vorbelegung für alle Artikel
+(außer Handeingaben). Die schnellste Zuordnung ist, wenn Sie übern den Haken
+am Beginn der Spalte definieren, ob alle oder keine Sonderkonditionen
+aktualsiert werden sollen und danach pro Zeile individuell entscheiden, ob in
+diesem Fall die Sonderkonditionen des Kunden aktualsiert werden sollen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sobald
+bei manchen Zeilen ein Haken gesetzt ist und bei anderen nicht, so ändert sich
+der Haken <img border="0" src="soko_update_icon.JPG" width="21" height="20"> in ein Viereck um die
+Abweichung anzuzeigen.</p>
 
 </body>
 

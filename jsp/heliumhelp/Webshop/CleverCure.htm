@@ -87,7 +87,9 @@ Parametrierung und Einrichtung des Systems sieht der Ablauf wie folgt aus:</p>
     - wird dies durch einen grünen Hintergrund im Knopf angezeigt <img border="0" src="Clever2.gif" width="32" height="25">
     und der Zeitpunkt des Versands wird in der Fußzeile angezeigt.<br>
     - sollte die Auftragsbestätigung erneut an den Kunden gesandt werden, so
-    wird nach dem Klick auf den Auftrag übermitteln Knopf die Meldung <img border="0" src="Clever3.gif" width="414" height="115">
+    wird nach dem Klick auf den Auftrag übermitteln Knopf die Meldung&nbsp;<br>
+ <img border="0" src="Clever3.gif" width="414" height="115">
+    &nbsp;<br>
     angezeigt, welche mit Ja bestätigt werden muss. Bitte beachten Sie, dass
     damit eine entsprechende Änderung der Auftragsdaten auch bei Ihrem Kunden
     vorgenommen wird.</li>
@@ -223,10 +225,13 @@ eine neue Position mit der Art Handeingabe angelegt, die alle Informationen zur
 Bestellposition enthält (Bezeichnung, Menge, Mengeneinheit, LINE_ITEM_ID,
 Mwst-Sätze, gesuchte Artikelnummer).</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn keine Preise/Verkaufspreisbasis
+für einen Artikel hinterlegt sind, wird der Betrag &quot;0.00&quot; für die Auftragsposition verwendet. Zusätzlich gibt es eine Textposition mit der Mitteilung, dass der Preis nicht ermittelt werden konnte und deshalb auf 0 gestellt wurde.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">ACHTUNG: Die
 LINE_ITEM_ID muss in jeder Position des Auftrags als Texteingabe in folgender
 Form {"lineitemid" : "1"} enthalten sein!</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Welche Daten werden
 von der Schnittstelle in der Dokumentenablage des jeweiligen Auftrages abgelegt?</b></p>
@@ -256,7 +261,7 @@ den Formularen zu CleverCure</b></p>
     <br>
     Parameter java.lang.String P_VERSANDWEG_BESTAETIGUNG_TERMIN, der Zeitpunkt
     (Datum&amp;Uhrzeit) an dem die Bestätigung gesendet wurde als Datum
-    formatiert. Null wenn noch nicht bestaetigt<br>
+    formatiert. Null wenn noch nicht bestätigt<br>
     Parameter java.lang.Boolean P_VERSANDWEG, &quot;true&quot; wenn für diesen
     Auftrag ein Versandweg (Clevercure) festgelegt ist, &quot;false&quot; wenn
     nicht

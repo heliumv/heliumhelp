@@ -1,0 +1,125 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Funktionen Mehrmandanten</title>
+</head>
+
+<body>
+
+<h1 style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mehrmandanten</h1>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Zentraler Artikelstamm"></a>Zentraler
+Artikelstamm</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+HELIUM V steht für Anwender mit mehreren Mandanten auch das Modul Zentraler
+Artikelstamm zur Verfügung. Damit können die Artikeldaten und vor allem die
+Lagerstände zentral verwaltet werden. Alle anderen Module bleiben nach wie vor
+Mandantenabhängig.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Grundgedanke dieser Funktionalität ist, dass Artikeldefinition, Lagerwirtschaft
+und Wareneinkauf vom Hauptmandanten gemacht wird. Lediglich der Verkauf wird,
+aus steuerlichen oder aus organisatorischen Gründen, auf verschiedene Mandanten
+aufgeteilt. Daher ist die Verkaufspreisdefinition trotz der zentralen
+Artikelstammdefinition für jeden Mandanten getrennt ausgeführt. Wird diese
+zusätzliche Funktion verwendet, so erfolgt der Zugriff für die Artikel und
+für die Lagerbuchungen immer auf den Hauptmandanten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass in der Anzeige der Artikellieferanten auch bei den anderen
+Mandanten immer die&nbsp; Artikellieferanten des Hauptmandanten angezeigt
+werden, auch wenn keine neuen Lieferanten hinzugefügt werden können. Daher
+können die Daten der Artikellieferanten und der EK-Staffelpreise nur im
+Hauptmandanten geändert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
+Bei Mandanten mit zentralem Artikelstamm erfolgt die Definition der
+Artikellieferanten und die Warenbeschaffung vom Hauptmandanten aus. D.h. hier
+sollten keine echten Warenzubuchungen erfolgen. Stellen Sie bitte die
+Benutzerrechte des Mandanten entsprechend ein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+immer wieder gewünscht wird, dass nur der Artikelstamm selbst zentral ist, aber
+auch der Einkauf für den jeweiligen Mandanten eigenständig erfolgen sollte,
+wurde ermöglicht, dass auch in den nicht Hauptmandanten Artikellieferanten
+angelegt werden können. Um nun deutlich darzustellen, für welchen Mandanten
+die Definition des Artikellieferanten ist, wird auch der Mandant des
+Artikellieferanten angezeigt.&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="ArtikellieferantBeiZentralerArtikelstamm.gif" width="766" height="28">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+trotz zentralem Artikelstamm die Trennung der Lieferanten in die Mandanten
+aufrecht bleibt, jedes Unternehmen (= Mandant) hat seine eigenen
+Preisvereinbarungen mit dem Lieferanten, muss beachtet werden, dass, trotz
+eventuell gleichlautender Lieferantennamen, die Lieferanten nach Mandanten
+getrennt verwaltet sind. Daher werden bei Bestellungen NUR die Lieferantendaten
+des Lieferanten des gleichen Mandanten verwendet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Verwendung des Bestellvorschlages bedenken Sie bitte, dass hier der
+bevorzugte Lieferant nur dann verwendet wird / werden kann, wenn dieser dem
+angemeldeten Lieferanten entspricht.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+die Lagerbuchung bei zentralem Artikelstamm zu ermöglichen, werden immer nur
+die Lager des Hauptmandanten angezeigt. Das Wesen des zentralen Artikelstamms
+ist ja auch, dass gemeinsame Lager verwendet werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zur
+Übersicht über die einzelnen Lagerstände können Sie den Parameter LAGERSTAND_DES_ANDEREN_MANDANTEN_ANZEIGEN
+aktivieren. Dieser bewirkt, dass in der Auswahlliste des Artikel-Moduls auch die
+Lagerstände der anderen Mandanten angeführt wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Achtung:
+</b>Wenn sich die Buchhaltungssysteme der Mandanten unterscheiden (zb. bei
+abweichenden Ländern), so ist eine Verwendung des zentralen Artikelsstamms in
+Kombination mit der Integrierten Finanzbuchhaltung oder
+Finanbuchhaltungs-Exporte nicht möglich.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zentraler
+Artikelsstamm und Bestellvorschlag</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+man mit einem zentralen Artikelstamm arbeitet, so kann auch der Bestellvorschlag
+mandantenübergreifen durchgeführt werden.&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Danach
+wird in der Bewegungsvorschau, in der Auswahlliste des Bestellvorschlags und dem
+Druck zur Information der Mandant angeführt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn ein neuer Bestellvorschlag erzeugt wird, dann werden in der
+Bewegungsvorschau die Lagerstände aller Mandanten bzw.die Bedarfe aller Mandanten berücksichtigt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beim
+Überleiten in Bestellungen werden nur Bestellvorschlags-Einträge des aktuellen Mandanten berücksichtigt
+und bestellt wird bei dem Lieferanten, bei dessen Mandanten man angemeldet ist.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fehlmengenauflösung
+bei anderem Mandanten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+Hilfe des Menüpunkts im Lieferschein: Bearbeiten/ Fülle Fehlmengen eines anderen Mandanten
+nach, wird:<br>
+Wenn die Summe der Fehlmengen des ZielMandanten größer als der Lagerstand des Hauptlagers des Zielmandanten ist und beim Quellmandanten ein Lagerstand >0 ist,
+das fehlende vorhandene Material per Ziellager-Lieferschein vom Quell zum Ziel-Mandanten gebucht (Quell-Lager ist Hauptlager des Quell-Mandanten, Ziellager ist das
+Hauptlager der Ziel-Mandanten).</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../System/fehlmengen_mandant_aufloesen.JPG" width="476" height="117"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies geschieht für alle Fehlmengen des Ziel-Mandanten, unanbhängig davon, ob das Material in Zukunft aufgrund der
+Bewegunsvorschau des Quell-Madnanten selbst benötigt wird.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zentraler
+Artikelstamm und unterschiedliche Mandantenwährungen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+der Verwendung des zentralen Artikelstammes ist grundsätzlich darauf zu achten,
+dass, wenn sich die Anwender aus einem gemeinsamen Lager bedienen, die
+Währungen der beteiligten Mandanten gleich sind.&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hintergrund:</b>
+Die Gestehungspreisberechnung der einzelnen Artikel erfolgt immer in <a href="../System/index.htm#Mandantenwährung">Mandantenwährung</a>.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Ihre Mandanten unterschiedliche Währungen haben, so muss unbedingt die
+zusätzliche Funktion Getrennte_Lager aktiviert werden. Wenden Sie sich dazu an
+Ihren HELIUM V Betreuer.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zentraler
+Artikelstamm und getrennte Lager</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gerade
+bei unterschiedlichen Mandantenwährungen ist es wesentlich, dass entgegen oben
+gesagtem trotz des zentralen Artikelstammes die Lager getrennt verwaltet werden.
+D.h. hier reduziert sich der zentrale Artikelstamm auf die gemeinsame Verwendung
+der Definition des Artikels. Verkaufspreise, Gestehungspreise,
+Einkaufskonditonen, Lager und Lagerstände, sowie Lagerplätze sind in jedem
+Fall getrennt.</p>
+
+</body>
+
+</html>

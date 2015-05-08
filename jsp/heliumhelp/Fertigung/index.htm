@@ -68,23 +68,6 @@ Stücklistenverwaltung</a></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Aus
 diesem Grunde können auch unechte Stücklisten beim Neuanlegen der Lose
 ausgewählt werden.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zweite
-Art der Losausgabebuchung</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
-manchen Betrieben gibt es kein wirkliches (physikalisches) Lager. Vielmehr wird
-dort das eingehende Material direkt in der Fertigung gelagert. Wenn nun der
-klassische Produktionsprozess: anlegen, ausgeben, rückmelden zum Einsatz kommt,
-ist der optische (offensichtliche) Lagerstand falsch, da ja keine Trennung
-zwischen Material in Fertigung und Material im Lager möglich ist.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
-gibt es nun ein anhand der Stückliste definiertes anderes Verhalten (<a href="../Stueckliste/index.htm#Materialbuchung bei Ablieferung">Materialbuchung
-bei Ablieferung</a>), in
-dem von HELIUM V das Material erst bei der Erledigungsmeldung vom Lager in das
-Los abgebucht wird.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
-hat den Vorteil dass das offensichtlich verfügbare Material auch dem datentechnischen Lagerstand entspricht. Es hat den Nachteil, dass keine
-Halbfertigfabrikatsinventur möglich ist, was aber in Betrieben dieser Art auch
-nicht gewünscht wird.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wozu
 Losklassen</p>
 
@@ -198,7 +181,8 @@ Ausgabe eines Loses bedeutet, dass alle Materialpositionen des Loses in der
 entsprechenden Menge vom Lager/den Lägern abgebucht werden. Ist nicht
 ausreichend Material am Lager vorhanden, so erfolgt jeweils ein Eintrag in die
 Fehlmengenliste. Durch die Statusänderung des Loses ist es ab diesem Zeitpunkt
-auch für die Zeitwirtschaft bebuchbar.</p>
+auch für die Zeitwirtschaft bebuchbar. Bei der Losausgabe gibt es im SNR-Dialog einen Haken 'Automatik'. Wenn dieser angehakt ist, werden, wenn die ausgewählte Menge gleich der benötigten Menge ist, die Seriennummern
+automatisch übernommen.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mehrere
 Lose zugleich ausgeben</p>
@@ -212,6 +196,33 @@ werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 beachten Sie, dass dabei derzeit keine Fertigungspapiere ausgedruckt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+dem Menüpunkt Bearbeiten/mehrere Lose ausgeben/enthaltene Stücklisten werden
+alle Lose, zu den entsprechenden Stücklisten des Loses ( incl. Kopflos) vorhanden sind (unabhängig vom Auftrag) einzeln ausgegeben. Zum Schluss können die einzelnen
+Fertigungsbegleitscheine der ausgegebenen Lose gedruckt werden. Wenn ein Fehler auftritt,
+kann die Los-Augabe abgebrochen werden (alle bis dahin ausgegebenen Lose bleiben jedoch
+ausgegeben).</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zweite
+Art der Losausgabebuchung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+manchen Betrieben gibt es kein wirkliches (physikalisches) Lager. Vielmehr wird
+dort das eingehende Material direkt in der Fertigung gelagert. Wenn nun der
+klassische Produktionsprozess: anlegen, ausgeben, rückmelden zum Einsatz kommt,
+ist der optische (offensichtliche) Lagerstand falsch, da ja keine Trennung
+zwischen Material in Fertigung und Material im Lager möglich ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+gibt es nun ein anhand der Stückliste definiertes anderes Verhalten (<a href="../Stueckliste/index.htm#Materialbuchung bei Ablieferung">Materialbuchung
+bei Ablieferung</a>), in
+dem von HELIUM V das Material erst bei der Erledigungsmeldung vom Lager in das
+Los abgebucht wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dies
+hat den Vorteil dass das offensichtlich verfügbare Material auch dem datentechnischen Lagerstand entspricht. Es hat den Nachteil, dass keine
+Halbfertigfabrikatsinventur möglich ist, was aber in Betrieben dieser Art auch
+nicht gewünscht wird.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wo sehe ich ob am Los schon gearbeitet wird</p>
@@ -326,10 +337,17 @@ Das bedeutet, Sie können ein Los bereits ausgeben, wenn noch nicht das gesamte
 Material für diesen Fertigungsauftrag verfügbar ist.<br>
 Das hat den entscheidenden Vorteil, dass Sie frühzeitig mit der Produktion
 beginnen können. Ist ein Los im Status ausgegeben, so können Zeiten und
-Material darauf gebucht werden. Wird nun auf einem Fehlmengenbehafteten Artikel
+Material darauf gebucht werden. Wird nun auf einem fehlmengenbehafteten Artikel
 Ware zugebucht, so erhalten Sie eine entsprechenden Hinweis, dass diese Ware in
 der Fertigung benötigt wird und Sie können diese wiederum sofort auf den
 Fertigungsauftrag ausbuchen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
+Information über die Auslöser der Fehlmenge erhalten Sie über den Druck der
+Fehlteile. Wechseln Sie dazu im Los in den Reiter Fehlmengen und klicken auf das
+Druckersymbol. Hier erfolgt eine Auflösung in die jeweiligen Unterlose, so
+können Sie erkennen, welche Materialposition auslöst, dass die einzelnen Lose
+nicht gefertigt können.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b>
 Der Termin der Fehlmenge entspricht immer dem Produktionsstart des Loses.</p>
@@ -341,6 +359,23 @@ Bitte beachten Sie, dass bei der Auflösungsbuchung der Fehlmenge immer nur die
 gerade zugebuchte Menge weiter in das/die Los(e) gebucht werden. Die Buchung von
 bereits lagerndem Material muss mit der <a href="#Nachträgliche Materialentnahme">nachträglichen
 Material-Entnahme</a> durchgeführt werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fehlmengen
+nachträglich Auflösen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
+weitere Möglichkeit ist, alle Fehlmengen über den Menüpunkt <img border="0" src="alle_fehlmengen_aufloesen.png" width="186" height="23">
+im Modul Fertigung aufzulösen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="frage_fehlmengen_aufloesen.JPG" width="418" height="114"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+Klick auf den Menüpunkt erfolgt noch die Abfrage, ob man wirklich alle
+Fehlemengen auflösen will, danach wird die Fehlmengenauflösung durchgeführt
+und ein Ausdruck dazu angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ausgeschlossen
+hiervon sind Artikel, die serien- oder chargennummerntragend sind.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Solldaten
 nachträglich ändern</p>
@@ -381,7 +416,7 @@ Nachträgliche
 Klick auf diese Knopf erscheint eine Liste der Detailbuchungen der Buchungen
 dieser Position von Lager ins Los. Wählen Sie eine entsprechende
 Ausgabeposition aus&nbsp;<br>
-<img border="0" src="../Fertigung/Nachtraegliche_Entnahmeliste.jpg" width="462" height="327"><br>
+<img border="0" src="Nachtraegliche_Entnahmeliste.jpg" width="462" height="327"><br>
 und ändern Sie im unteren Dialog die Entnahmemenge auf die gewünschte
 Stückzahl. Nach der Bearbeitung aller Positionen schließen Sie dieses Fenster
 durch Klick auf das rechte obere X.</p>
@@ -538,8 +573,6 @@ Vorgehensweise ist wie folgt:</p>
     weiterführende Bezeichnung, damit Sie später noch wissen welche Kosten das
     tatsächlich waren.</li>
 </ul>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Material
 ans Lager zurückgeben</p>
@@ -803,6 +836,15 @@ gebucht werden darf, für die letzte Ablieferung ein Zeitaufwand von 295Minuten.<
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
 Sie daher auf möglichst richtige Sollzeiten nur dann machen die
 Soll-/Ist-Vergleiche wirklich Sinn.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+der ParameterLOSABLIEFERUNG_GESAMTE_ISTZEITEN_ZAEHLEN gesetzt ist, so zählen
+für den Ablieferwert nur die Zeiten bis zum Abliefzeitpunkt. Das bedeutet, dass
+die erste Loasblieferung alle Zeiten bis zum ersten Ablieferzeitpunkt enthält
+und alle weiteren Ablieferungen jeweils die Zeiten ab dem vorherigen Ablieferzeitpunkt bis zum aktuellen Ablieferzeitpunkt
+beinhalten. Die letzte Ablieferung (Wenn das Los erledigt ist) enthält die Zeiten ab der vorletzten Ablieferung + Zukunft (=Nachträglich gebuchte Zeiten).</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Ändern der Gestehungspreise eine bereits abgelieferten Loses</p>
@@ -1392,7 +1434,11 @@ einzelnen Fertigungsauftrag erwünscht. Üblicherweise wird dies
 Arbeitsplatzabhängig erfasst.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daher
 steht in HELIUM V folgende Möglichkeit der Erfassung zusätzlicher Stati im
-Fertigungsauftrag zur Verfügung.</p>
+Fertigungsauftrag zur Verfügung. Bitte beachten Sie, dass falls sie das Los
+bearbeiten wollen, jeweils die Zusatzstati zurückgesetzt werden müssen.
+Klicken Sie dazu auf Bearbeiten und beantworten Sie die Frage entsprechend und
+führen dieses Vorgehen bei Bedarf erneut durch.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Voraussetzungen
 für die Erfassung</b></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stati
@@ -1659,6 +1705,19 @@ beachten Sie dazu auch die <a href="Lagerabstimmung.htm">Lagerabstimmung</a> und
 <a href="../artikel/index.htm#Gestehungspreisberechnung zum Stichtag">Gestehungspreisberechnung
 zum Stichtag</a>.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sie
+finden im Journal der Halbfertigfabrikatsinventur verschiedene
+Sortierungsmöglichkeiten:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="HFI_Sortierungen.JPG" width="314" height="76"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich
+erhalten Sie eine Auswertung nach Fertigungsgruppen, wenn Sie den Haken bei
+Sortiert nach Fertigungsgruppe <img border="0" src="sortiert_Fertigungsgruppe.JPG" width="173" height="19">
+setzen.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie wirkt sich eine Rücknahme der Losausgabe auf die
 Halbfertigfabrikatsinventur zum Stichtag aus ?</p>
@@ -1730,9 +1789,10 @@ Los kann nur auf die bereits abgelieferte Menge reduziert werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
-die Losgröße erhöht, so wird das zusätzlich erforderliche Material als
-Fehlmenge eingetragen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn die Losgröße erhöht wird, der Parameter KEINE_AUTOMATISCHE_MATERIALBUCHUNG=0 und in der
+Stückliste l "Materialbuchung bei Ablieferung" =0 ist, dann wird Material gemäß
+der Sollsatzgröße nachgebucht. Bei SNRS/CHNRS      erscheint der
+SNR/CHNR-Dialog (gleich, wie bei der Los-Ausgabe).</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Rückgabe von Lospositionen ans Lager</p>
@@ -2017,6 +2077,18 @@ bei einem Los geplante Materialkosten definiert, so werden damit die
 Soll-Materialkosten in den Materialpositionen für die Nachkalkulationen
 deaktiviert und anstatt dessen nur die Soll-Materialkosten verwendet.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Weiters
+haben Sie die Möglichkeit im Reiter Material für jede einzelne Position einen
+Sollpreis zu definieren. Wenn ein Kalk-Preis aus der Stückliste vorhanden ist,
+wird dieser verwendet, auch wenn dieser 0 ist.&nbsp; Wenn kein Kalkpreis vorhanden ist, dann wird der Lief1Preis unter Berücksichtigung der Mengenstaffel verwendet.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zur
+Aktualisierung der Preise gibt es den Button Sollpreise neu kalkulieren <img border="0" src="sollpreise_neukalkulieren.JPG" width="30" height="25">.
+Nach Klick auf das Icon werden die Preise gemäß der Informationen aus derm
+Artikellieferant aktualisieren.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Seriennummern Generator"></a>Q:
 Seriennummern Generator</p>
 
@@ -2041,7 +2113,6 @@ Parameter, SERIENNUMMERNGENERATOR.</p>
     </tr>
   </table>
 </div>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Können automatisch Lose für Unterstücklisten angelegt werden ?</p>
@@ -2051,11 +2122,12 @@ Ja. Dies ist eine der extrem nützlichen Funktionen von HELIUM V. Siehe dazu
 bitte die Beschreibung zur <a href="Interne_Bestellung.htm">Internen Bestellung</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Journal offene Arbeitsgänge</p>
+Gibt es auch einen Ausdruck zu den offenen Arbeitsgängen?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Damit steht Ihnen eine übersichtliche Darstellung alle offenen Arbeitsgänge
-zur Verfügung.</p>
+Ja, das Journal offene Arbeitsgänge. Damit steht Ihnen eine übersichtliche Darstellung alle offenen Arbeitsgänge
+zur Verfügung. <a href="#offene AGs">Siehe dazu auch unterer Modulreiter offene 
+AGs</a>.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Journal_offene_Arbeitsgaenge.gif" width="469" height="120"></p>
 
@@ -2426,14 +2498,161 @@ Grunddaten, oberer Modulreiter Fehler.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich
 können bei der Erfassung der Gut-/Schlechtstück auf dem Zeiterfassungsterminal
 auch die Fehlernummern angegeben werden.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind
 auf einem Los Fehler erfasst, so wird in der Nachkalkulation <img border="0" src="Fehler_vorhanden.gif" width="128" height="36">
 angezeigt.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich
 werden im Ausdruck der Nachkalkulation die Fehler detailliert aufgeführt.</p>
 
+<p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Besonderheiten in der Kunststofffertigung"></a>Besonderheiten
+in der Kunststofffertigung</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In der
+Kunststofffertigung hat sich folgende Herangehensweise herausgebildet. Zu den
+Einstellungen in den Stücklisten <a href="../Stueckliste/index.htm#Kunststofffertigung">siehe
+bitte dort</a>.</p>
+<ul>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ausschussmengen /
+    Überproduktion<br>
+    Üblicherweise werden ausgehend von der vom Kunden gewünschten Stückzahl
+    eine Übermenge produziert um mit großer Wahrscheinlich die gewünschte
+    Stückzahl zu erreichen. Dies wird üblicherweise durch die Erhöhung der
+    Losgröße gegenüber der Auftragsmenge um den Ausschussfaktor vorgenommen.
+    Sind in den Stücklisten auch Verpackungen enthalten, so sind diese von der
+    Erhöhung ebenfalls betroffen.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Rückmelden der
+    tatsächlich gefertigten/gespritzen Stückzahlen<br>
+    Oft wird nicht nur die benötigte Stückzahl gefertigt sondern das Granulat
+    vollständig verbraucht, da ja der Kunde in der Zukunft sicher wieder Teile
+    benötigt. Es ist daher nach dem Spritzen der Teile die Losgröße auf die
+    tatsächlich gefertigte Menge zu korrigieren (Siehe Los, Bearbeiten,
+    Losgröße ändern). Damit wird das benötigte / verbrauchte Material
+    entsprechend korrigiert.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Erfassung der
+    tatsächlich verwendbaren Stückzahlen nach der Qualitätsprüfung.<br>
+    Bei der Prüfung der Teile werden Teile aussortiert werden müssen, welche
+    nicht den Vorgaben entsprechen. Dadurch werden zum&nbsp; Schluss weniger
+    Teile abgeliefert als produziert wurden. Setzen Sie hier bei der letzten
+    Buchung der Losablieferung den Haken bei Vollständig erledigt, so werden
+    die Material- und Arbeitszeit-Kosten auf die reduzierte
+    Ablieferungsgesamtmenge umgerechnet, da der Mehraufwand sich ja auf die
+    Gutteile verteilen muss.</li>
+</ul>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann man ein Los
+als nicht mehr zu verändern kennzeichnen?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Besonders bei
+einer laufenden Aktualisierung und Änderung von Stücklisten, gibt es im
+Unternehmensprozess den Zeitpunkt, bei dem die Stückliste freigegeben ist. Das
+bedeutet, dass ab diesem Zeitpunkt keine Änderungen der Materialpositionen und
+Mengen der Lose mehr gemacht werden dürfen. Um diesen Status in HELIUM V abzubilden gibt
+es im Reiter Kopfdaten das Icon <img border="0" src="Material_vollstaendig.JPG" width="30" height="25">
+(Material vollständig).</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Klick auf das
+Icon wird protokolliert <img border="0" src="Material_vollstaendig_meldung.JPG" width="287" height="23">.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nach Klick auf dieses
+Icon, kann keine Änderung der Soll-Materialien am Los mehr durchgeführt werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="fehler_nicht_aendern_material.JPG" width="653" height="108"></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann in der Losauswahlliste auch nach der Bezeichnung gesucht werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn der Parameter LOSNUMMER_AUFTRAGSBEZOGEN >=1, dann wird in den Los-Auswahllisten anstatt der Auftragsnummer die Erweiterte Artikelsuche angezeigt (hier ist zusätzlich noch der Parameter TEXTSUCHE_INKLUSIVE_ARTIKELNUMMER möglich.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<a name="offene AGs"></a>Q:
+Wie erhält man eine schnelle Übersicht über alle offenen Arbeitsgänge?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für die Planung und Steuerung der Fertigung ist das Wissen über die offenen
+Arbeitsgänge essentiell. Einen Überblick über alle offenen Arbeitsgänge
+aller Lose erhalten Sie im Modul Fertigung, im unteren Reiter Offene
+AGs (Arbeitsgänge). Um Informationen über spezielle Arbeitsgänge zu erhalten,
+nutzen Sie die Filtereingabemöglichkeiten und die Sortiermöglichkeiten der
+einzelnen Spalten. Mit dem GoTo-Button können Sie direkt zu dem ausgewählten
+Arbeitsgang wechseln.</p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="offeneag.jpg" width="1082" height="228"></p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie können die einzelnen Arbeitsschritte gesteuert werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Um die einzelnen Arbeitschritte umzureihen, finden Sie im unteren Reiter Offene
+AG eine CheckBox Reihen <img border="0" src="offeneAG_reihen.JPG" width="56" height="21">, wenn Sie
+hier einen Haken setzen, so ändert sich die Sortierung.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab
+diesem Zeitpunkt erfolgt die Anordnung nach Maschine, AG-Beginn, Versatz-MS, Losnummer sortiert und es  erscheinen die AUF/AB Pfeile
+<img border="0" src="offeneAG_Pfeile.JPG" width="130" height="26">.&nbsp;<br>
+Wenn Sie den aufwärtsgerichteten Pfeil anklicken, so wird zum Versatz 1ms
+hinzugefügt.&nbsp;<br>
+Wenn Sie den aufwärtsgerichteten Pfeil anklicken, so wird zum Versatz 1ms
+abgezogen, solange bis Versatz-MS >=0 ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+beachten Sie, dass die Grenze für die Verschiebung der Kalendertag ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Einen
+schnellen Überblick über die nächsten Schritte in der Fertigung erhalten Sie
+über das Journal Maschine+Material. So können Sie zum Beispiel steuern, dass
+in der nächsten Zeit, alle Arbeitsgänge mit dem bestimmten Material und der
+bestimmten Maschine gefertigt werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="offeneAG_Journal.png" width="136" height="44"><br>
+Bitte beachten Sie dazu auch die Reihung welche durch die
+<a href="grafische%20Auslastungsplanung.htm#Reihung der Arbeitsgänge">grafische 
+Auslastungsplanung</a> erfolgt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was ist der Eintrefftermin?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Im Reiter Fehlmengen finden Sie die Spalte Eintrefftermin. Hier wird das Datum
+eingetragen, zu dem Zeitpunkt man den Lagerzugang erwartet. Dieser früheste Eintrefftermin berücksichtigt zusätzlich zu den Bestellpositionen auch
+die&nbsp; zu erwartenden Losablieferung (= frühester Ende-Termin eines offenen Loses).
+So erhalten Sie schnell Überblick über die Engstellen oder zu kritischen
+Terminen, Lagerständen&nbsp; zum Beispiel in Unterlosen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Zusätzliche Informationen aus der Stückliste bei der Ausgabeliste des Loses
+andrucken?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für den Ausdruck der Ausgabeliste stehen unter anderem auch die Felder
+Stückliste Kommentar und Stückliste Position zur Verfügung.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn Artikel/Menge und Montageart
+gleich sind, wird der Kommentar/Position aus Stkl-Position angezeigt, beim Verdichten werden die Positionen/Kommenare mit , getrennt angeführt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
+wenden Sie sich zur Anpassung Ihres Reports an Ihren HELIUM V Betreuuer.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Losbewertung"></a>Q:
+Kann der Fortschritt eines Loses angegeben werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Unter dem Menüpunkt Bearbeiten finden Sie mit Bewertung/Kommentar die
+Möglichkeit zum Beispiel den Fortschritt des Loses zu erfassen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Losfortschritt_Bewertung.JPG" width="299" height="200"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geben
+Sie hier in Prozent den Fortschritt an und hinterlegen Sie einen Kommentar um
+die Einschätzung zu begründen. Wenn der Parameter BEWERTUNG_IN_AUSWAHLLISTE
+auf 1 gesetzt ist, so wird nun in der Auswahlliste der Lose die Bewertung
+angeführt. So erhalten Sie einen schnellen Überblick über den Status und
+Fortschritt der einzelnen Lose. Zusätzlich können die Informationen in der <a href="../auftrag/Nachkalkulation.htm#Nachkalkulation_Fortschritt">
+Auftragsnachkalkulation</a> berücksichtigt und zu verschiedenen Auswertungen
+hinzugefügt werden - kontaktieren Sie hierzu Ihren HELIUM V Betreuuer.</p>
 
 </body>
 

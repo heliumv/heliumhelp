@@ -60,6 +60,10 @@ werden.&nbsp;</p>
     </tr>
   </table>
 </div>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um eine Bezeichnung
+in den Artikelkommentaren zu finden, verwenden Sie bitte den Knopf <img border="0" src="Kommentarsuche_artikel.JPG" width="31" height="25">
+Suche nach Kommentar. Danach öffnet sich ein Fenster indem Sie nach Wörtern in
+den Kommentaren suchen können.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Sortierung nach
 SI-Wert</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Gerade in der
@@ -80,6 +84,17 @@ Sortierung nach SI-Werten gibt es natürlich auch Anzeigen wie die folgende:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="SI_sortiert2.gif" width="146" height="49">
 D.h. die Werte werden, egal welche Schreibweise für Sie die richtige ist,
 entsprechend dem absoluten Werten eingereiht.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann direkt auf 
+einzelne SI Werte zugegriffen werden?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Manchmal ist es 
+wünschenswert, dass nur spezifische Werte angezeigt werden. Dies wird ab Build 
+8770 unterstützt. D.h. abhängig von der Einstellung ob die Suche mit oder ohne 
+SI-Werten erfolgen sollte, wird der Bereich des Textes entsprechend 
+interpretiert.<br>Suche nach einem Widerstand mit 0,086k Ohm.<br>Ergebnis 1 mit 
+SI-Wert Suche:<br><img alt="" src="Suche_mit_SI-Wert.gif" width="771" height="88"><br><br>Ergebnis 2 
+ohne SI-Wert Suche:<br><img alt="" src="Suche_ohne_SI-Wert.gif" width="772" height="93"><br>Da die 
+textliche Bezeichnung ja 0k086 lautet.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Welche SI-Einheiten
 werden unterstützt, wie erfolgt die Ermittlung des Wertes?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für die Ermittlung
@@ -211,20 +226,46 @@ Notierungen unterstützt.</p>
     </tr>
   </table>
 </div>
-Bei der Angabe der Zehnerpotenzen beachten Sie bitte generell die
-Gro/Kleinschreibung. So liefern Werte wie 22K keine Ergebnisse, da das
+<span class="answer">Bei der Angabe der Zehnerpotenzen beachten Sie bitte generell die
+Groß-/Kleinschreibung. So liefern Werte wie 22K keine Ergebnisse, da das
 Großbuchstaben K nicht definiert ist. 22k hingegeben genau diesen Wert.<br>
 In der Sortierung werden die Werte die nicht errechnet werden konnten am Ende
 der Tabelle angeführt.<br>
 D.h. finden Sie eine Sortierung vor wie z.B. die nachfolgende<br>
-<img border="0" src="SI_falsch.gif" width="73" height="63"><br>
+</span>
+<img border="0" src="SI_falsch.gif" width="73" height="63" class="answer"><span class="answer"><br>
 so liegt die Ursache darin, dass ein nicht definiertes Zeichen für die SI-Wert
 Berechnung / die Zehnerpotenz angegeben wurde.<br>
 Damit bei der Eingabe der Bezeichnungen, welche ja immer inkl. der Werte ist,
 auch erkannt wird, wird der ermittelte Wert direkt angezeigt.<br>
 Wird z.B. der Artikel laut obigem Beispiel von 1K auf 1k korrigiert, so
 erscheint der SI Wert rechts neben der Bezeichnung.<br>
-<img border="0" src="SI-Wert_Eingabe.gif" width="245" height="49">
+</span>
+<img border="0" src="SI-Wert_Eingabe.gif" width="245" height="49" class="answer"><span class="answer"><br>
+</span><br><span class="question"><a name="SI-Wert"></a>Q: Wie 
+wird bei den SI-Werten mit m für Meter usw. umgegangen?<br></span>
+<span class="answer"><br>Es kann mit den Parametern SI_EINHEITEN, SI_OHNE_EINHEIT gesteuert 
+werden, wie sich HELIUM V verhalten sollte.<br>Üblicherweise steht
+SI_OHNE_EINHEIT auf 1. Das bedeutet, dass z.B. 3k3 
+bedeutet es sind 3.300 (Ohm, Meter, Amper, Volt, Gramm, usw.)<br>Durch das 
+Abschalten von SI_OHNE_EINHEIT (= setzen auf 0) müssen die von 
+Ihnen gewünschten / benötigten Einheiten im Parameter SI_EINHEITEN definiert 
+werden (SI = 
+wissenschaftliche Einheiten wie Meter, Volt, Farad, Gramm, usw.) .<br>Das bedeutet: verwenden Sie z.B. Werte wie nm (Nano-Meter) so sind 
+die beiden Parameter wie folgt zu definieren:<br>SI_OHNE_EINHEITEN ... 0<br>
+SI_EINHEITEN ... R,F,H,m<br>Dies bewirkt, dass auch 
+die Wellenlänge des Lichts, z.B. für LEDs angegeben werden kann.<br>
+<img alt="" src="SI_WERT_mit_Einheiten.gif" width="357" height="78"></span>
+<p>SI_EINHEITEN:Folgende Buchstaben sind bereits als Si-Prefixe in Verwendung, und können nur als Einheit genutzt werden,
+wenn der Parameter SI_OHNE_EINHEIT auf 0 steht:<br>
+Y, Z, E, P, T, G, M, k, m, µ, u, n, p, f, a, z, y<br>
+Es wird zwischen Groß- und Kleinschreibung unterschieden.</p>
+<p>
+<span class="answer">SI_OHNE_EINHEIT: Ist dieser Parameter auf 1 gestellt, werden auch Si-Werte erkannt, welche keine Einheit haben (zB.: 3k, 3m3).<br>
+Bei der Einstellung 0 werden nur noch Werte erkannt, welche eine Einheit nach dem optionalen Si-Prefix haben.Dadurch können Einheiten im Parameter SI_EINHEITEN definiert werden,welche sich mit einem Si-Prefix den gleichen Buchstaben teilen (zB.: m = Meter &amp; m = milli).<br>
+Zusammenfassung:<br>
+1 erkennt: 3k, 5M, 3nF, 18H, 3k3, 3m = 0,003<br>
+0 erkennt: 3kF, 5MR, 3nF, 18H, 3,3kR, 3m = 3 Meter (wenn "m" als Einheit definiert ist, sonst wird nichts erkannt)</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Alternative
 Artikelsuche</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: In manchen
@@ -233,7 +274,9 @@ Auswahlliste der Artikel auf Artikelgruppen bzw. Artikelklassen einzuschränken.<
 Stelle Sie dazu unter System den Parameter
 DIREKT_FILTER_GRUPPE_KLASSE_STATT_REFERENZNUMMER auf 1 und starten Sie das
 Artikelmodul neu. Nun kann anstelle der Referenznummer die Artikelklasse bzw.
-Gruppe als einschränkendes Direktfilter eingegeben werden.</p>
+Gruppe als einschränkendes Direktfilter eingegeben werden. Bitte beachten Sie,
+dass hier nur die Vatergruppen (also übergeordneten) der Artikelgruppen
+angeführt werden für eine bessere Übersichtlichkeit. Wenn eine Vatergruppe ausgewählt wird, werden alle Artikel mit der Vatergruppe bzw. dessen Artikelgruppe die Vatergruppe als Ursprung haben, angezeigt.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Gültige Zeichen
 der Artikelnummern</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Definieren Sie die
@@ -277,7 +320,7 @@ richtigen Nummer geändert werden.</p>
 Auswahlliste des Artikelmoduls auf <img border="0" src="Artikel_kopieren.gif" width="32" height="26">
 geklickt, so starten Sie damit das Kopieren eines fast gleichlautenden Artikels.
 Wählen Sie nun den zu kopierenden Artikel aus.</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Artikel_kopieren.jpg" width="800" height="500"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Artikel_kopieren.jpg" width="798" height="446"></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im nun erscheinenden
 Dialog geben Sie die neue Artikelnummer oder wählen &quot;G&quot; um
 automatische eine neuen Artikelnummer zu erzeugen. In der aufgelisteten Tabelle
@@ -289,6 +332,12 @@ Kopiervorgang die gleichen Felder zum Kopieren vorgeschlagen.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wurde &quot;mit
 Kommentar&quot; ebenfalls angehakt, so werden zusätzlich noch die
 Kommentardateien des Artikels mitkopiert.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn Sie den Haken
+bei Eigenschaften setzen, so werden die Artikeleigenschaften kopiert, wenn der
+Haken nicht gesetzt ist, so werden die Basiswerte (Einstellung für das
+jeweilige Feld in den Artikeleigenschaften) bei den Artikeleigenschaften
+eingetragen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie behalte ich
 beim Anlegen neuer Artikel die Übersicht über die Artikelnummernstruktur.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Dieses Thema ist
@@ -303,8 +352,7 @@ aufgefordert. Zugleich wird damit die Artikelnummer des bestehenden Artikels
 vorgeschlagen. So können Sie die gewünschte Artikelnummer sehr einfach
 definieren.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Im
-Artikel besteht die Möglichkeit Hersteller anzulegen.&nbsp;<br>
- Welchen Sinn / Funktion
+Artikel besteht die Möglichkeit Hersteller anzulegen. Welchen Sinn / Funktion
 erfüllt die zusätzliche Eingabe des Partners beim Hersteller?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: In HELIUM V wird
 klar zwischen Hersteller und Lieferant(en) eines Artikels unterschieden. Gerade
@@ -313,7 +361,9 @@ her identisch sind, aber Ihr Kunde schreibt einen bestimmten Hersteller vor.
 Durch die Angabe des Herstellers können auch diese Artikel unterschieden
 werden. D.h. für jeden gleichlautenden Artikel wird für jeden Hersteller ein
 eigener Artikel angelegt. Bitte beachten Sie dazu auch die Ersatztypenverwaltung
-im Modul Stücklisten.</p>
+im Modul Stücklisten. Unabhängig davon hinterlegen Sie für die einzelnen
+Artikel jeweils Lieferanten, hier kann der Hersteller auch Lieferant sein, meist
+gibt es jedoch einen Hersteller und X Lieferanten.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Länge der
 Herstellerbezeichnung können Sie mit dem Parameter ARTIKEL_LAENGE_HERSTELLERBEZEICHNUNG
 definieren.</p>
@@ -475,7 +525,10 @@ Dies dient der Information und hat sonst keine weiteren Auswirkungen.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Lager definieren"></a>Q: Wo kann ich
 weitere Lager definieren, wo lege ich ein neues Lager an?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Lager können im
-Module Artikel, unterer Modulreiter Grunddaten definiert werden.</p>
+Module Artikel, unterer Modulreiter Grunddaten definiert werden.&nbsp;<br>
+Bitte beachten Sie, bei den relevanten Benutzerrollen Rechte, auf dem jeweiligen
+Lager zu buchen eingetragen sein müssen (<a href="../benutzer/index.htm#Lager-Recht">zur
+Beschreibung</a>).</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Lager_Definieren.gif" width="559" height="95"><br>
 Hier können folgende
 Definitionen vorgenommen werden:</p>
@@ -770,6 +823,22 @@ dazu auch die automatische Preisrückpflege durch das Bestellmodul.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"> Um
 einen neuen Artikellieferanten anlegen zu können, ist auch das Recht
 LP_DARF_PREISE_SEHEN_EINKAUF erforderlich.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie definiert
+man Verpackungseinheiten eines Lieferantens?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Im Artikellieferant kann nun, wenn keine Bestellmengeneinheit in den Kopfdaten definiert ist, eine Verpackungsmengeneinheit ausgewählt werden, welche als Umrechungsfaktor die Verpackungseinheit verwendet.
+So kann zum Beispiel abgebildet werden, dass 1 Verpackung gekauft wird und nicht
+100Stk., die einer Packung entsprechen.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie definiert
+man Verpackungseinheiten für die Fertigung?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Im Reiter
+Bestelldaten finden sie das Feld Fertigungs-VPE <img border="0" src="Fertigungs_VPE.JPG" width="92" height="27">geben
+Sie hier die Verpackungseinheit ein.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn Sie hier zum
+Beispiel 2 eintragen und im Los wird eine Menge des Artikels von 2,1 benötigt,
+so wird die Menge auf die VPE aufgerechnet. Das bedeutet, dass die Menge im Los
+auf ein Vielfaches der Fertigungsverpackungseinheit gerechnet wird, in diesem
+Beispiel auf 4. Verwendet wird diese Eingabe zum Beispiel für Schachteln oder
+andere Verpackung.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie können von
 bis Mengen für die Staffelmengen definiert werden?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Im Reiter
@@ -992,7 +1061,7 @@ Fertigung, ..) diese mitgedruckt werden. Für das Erzeugen von mehrseitigen
 Ausdrucken steht das MultiPage Tiff Format zur Verfügung. <a href="../Installation/Installation_Tiff_Drucker.htm">Siehe
 dazu auch</a>.</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Artikelkommentar"></a>Q:
 Artikelhinweise hinterlegen?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1007,6 +1076,9 @@ gewählt werden.</p>
     Es können dies sowohl Texte als auch Bilder sein.<br>
     Bitte beachten Sie, dass jeweils nur das chronologisch erste Bild, der
     chronologisch erste Text ausgedruckt wird.<br>
+    Für Fertigungsbegleitscheine kann das PDF mitgedruckt werden, die
+    Druckauflösung kann hierzu eingestellt werden - wenden Sie sich dazu bitte
+    an Ihren HELIUM V Berater.
   </li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis bei Artikelauswahl<br>
@@ -1032,6 +1104,19 @@ Artikeln einen neuen Kommentar mit dieser Kommentarart hinzufügen. Wenn Sie nun
 in der Artikelauswahlliste mit der Maus über die Zeile des Artikels fahren,
 wird der dort eingegebenen Text als Tooltip angezeigt.
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="tooltip_artikelauswah_beispiell.JPG" width="608" height="94"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Einstellung, welche Dateigröße angehängt werden kann verwenden Sie bitte
+den Parameter DOKUMENTE_MAXIMALE_GROESSE. Bitte beachten Sie, dass für die Art
+&quot;unbekannt&quot; eine fixe Maximalgröße von 1MB festgelegt ist.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Woher erkennt man, dass Artikelkommentare, Bilder, Hinweise hinterlegt sind?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn Kommentare beim Artikel hinterlegt sind, egal welcher Art, wird im Reiter
+Detail des Artikels dies durch das Icon <img border="0" src="artikelkommentar_vorhanden.JPG" width="147" height="27">
+angezeigt.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="uebersteuerbar"></a>Q:
 Können die Artikeltexte übersteuert werden?</p>
@@ -1065,11 +1150,15 @@ entsprechenden Mitzudrucken bei an. Denken Sie daran, dass die Bilder von der
 Idee her kleine Abbildungen des Produktes sein sollten um Ihren Kunden /
 Lieferanten entsprechend zu informieren. Lediglich für die Fertigung sind auch
 Zeichnungen angedacht. Bilder können nur bei der Einstellung &quot;Mitzudrucken
-bei&quot; hinterlegt werden.</p>
+bei&quot; hinterlegt werden. Wenn von einem Bild die Breite größer als die Höhe ist, dann wird dies um 90 Grad gedreht.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
 <img border="0" src="Default-Bild.gif" width="78" height="21"> Default-Bild mit angehakt, so wird
 dieses Bild in der Detailansicht des Artikels ebenfalls angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es kann
+bei Bildern ein Kommentar hinterlegt werden. Dieser Artikelkommentar wird in der Auswahlliste der Kommentare
+angezeigt, sodass man den Bildinhalt auch textlich beschreiben kann.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wozu unterschiedliche Artikelkommentararten?</p>
@@ -1106,6 +1195,13 @@ Es steht jedoch trotzdem die Möglichkeit zur Verfügung, die
 Warenverkehrsnummer bei jedem Artikel <img border="0" src="Warenverkehrnummer2.gif" width="107" height="26">
 einzugeben. Diese werden, da nicht in der Warenverkehrsnummerntabelle enthalten
 in Rot angezeigt, werden jedoch trotzdem mitgedruckt.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+ECCN?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Die Export Control Classification Number für Exportgüter für
+US-amerikanischen Ursprungs kann im Artikel Reiter Sonstiges über der Warenverkehrsnummer
+erfasst werden.&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Pflegefunktionen im Artikel</p>
@@ -1647,78 +1743,8 @@ dessen der Einkaufspreis des bevorzugten Lieferanten verwendet. Damit wird Ihre
 Lagerware gegebenenfalls eben zu Einkaufskonditionen bewertet.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Zentraler Artikelstamm"></a>Zentraler
 Artikelstamm</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
-HELIUM V steht für Anwender mit mehreren Mandanten auch das Modul Zentraler
-Artikelstamm zur Verfügung. Damit können die Artikeldaten und vor allem die
-Lagerstände zentral verwaltet werden. Alle anderen Module bleiben nach wie vor
-Mandantenabhängig.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
-Grundgedanke dieser Funktionalität ist, dass Artikeldefinition, Lagerwirtschaft
-und Wareneinkauf vom Hauptmandanten gemacht wird. Lediglich der Verkauf wird,
-aus steuerlichen oder aus organisatorischen Gründen, auf verschiedene Mandanten
-aufgeteilt. Daher ist die Verkaufspreisdefinition trotz der zentralen
-Artikelstammdefinition für jeden Mandanten getrennt ausgeführt. Wird diese
-zusätzliche Funktion verwendet, so erfolgt der Zugriff für die Artikel und
-für die Lagerbuchungen immer auf den Hauptmandanten.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
-beachten Sie, dass in der Anzeige der Artikellieferanten auch bei den anderen
-Mandanten immer die&nbsp; Artikellieferanten des Hauptmandanten angezeigt
-werden, auch wenn keine neuen Lieferanten hinzugefügt werden können. Daher
-können die Daten der Artikellieferanten und der EK-Staffelpreise nur im
-Hauptmandanten geändert werden.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hinweis:
-Bei Mandanten mit zentralem Artikelstamm erfolgt die Definition der
-Artikellieferanten und die Warenbeschaffung vom Hauptmandanten aus. D.h. hier
-sollten keine echten Warenzubuchungen erfolgen. Stellen Sie bitte die
-Benutzerrechte des Mandanten entsprechend ein.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
-immer wieder gewünscht wird, dass nur der Artikelstamm selbst zentral ist, aber
-auch der Einkauf für den jeweiligen Mandanten eigenständig erfolgen sollte,
-wurde ermöglicht, dass auch in den nicht Hauptmandanten Artikellieferanten
-angelegt werden können. Um nun deutlich darzustellen, für welchen Mandanten
-die Definition des Artikellieferanten ist, wird auch der Mandant des
-Artikellieferanten angezeigt.&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="ArtikellieferantBeiZentralerArtikelstamm.gif" width="766" height="28">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
-trotz zentralem Artikelstamm die Trennung der Lieferanten in die Mandanten
-aufrecht bleibt, jedes Unternehmen (= Mandant) hat seine eigenen
-Preisvereinbarungen mit dem Lieferanten, muss beachtet werden, dass, trotz
-eventuell gleichlautender Lieferantennamen, die Lieferanten nach Mandanten
-getrennt verwaltet sind. Daher werden bei Bestellungen NUR die Lieferantendaten
-des Lieferanten des gleichen Mandanten verwendet.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
-der Verwendung des Bestellvorschlages bedenken Sie bitte, dass hier der
-bevorzugte Lieferant nur dann verwendet wird / werden kann, wenn dieser dem
-angemeldeten Lieferanten entspricht.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hinweis:</b></p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
-die Lagerbuchung bei zentralem Artikelstamm zu ermöglichen, werden immer nur
-die Lager des Hauptmandanten angezeigt. Das Wesen des zentralen Artikelstamms
-ist ja auch, dass gemeinsame Lager verwendet werden.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Siehe
-dazu auch nachfolgende Überlegung.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zentraler
-Artikelstamm und unterschiedliche Mandantenwährungen</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
-der Verwendung des zentralen Artikelstammes ist grundsätzlich darauf zu achten,
-dass, wenn sich die Anwender aus einem gemeinsamen Lager bedienen, die
-Währungen der beteiligten Mandanten gleich sind.&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Hintergrund:</b>
-Die Gestehungspreisberechnung der einzelnen Artikel erfolgt immer in <a href="../System/index.htm#Mandantenwährung">Mandantenwährung</a>.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
-Ihre Mandanten unterschiedliche Währungen haben, so muss unbedingt die
-zusätzliche Funktion Getrennte_Lager aktiviert werden. Wenden Sie sich dazu an
-Ihren HELIUM V Betreuer.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zentraler
-Artikelstamm und getrennte Lager</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gerade
-bei unterschiedlichen Mandantenwährungen ist es wesentlich, dass entgegen oben
-gesagtem trotz des zentralen Artikelstammes die Lager getrennt verwaltet werden.
-D.h. hier reduziert sich der zentrale Artikelstamm auf die gemeinsame Verwendung
-der Definition des Artikels. Verkaufspreise, Gestehungspreise,
-Einkaufskonditonen, Lager und Lagerstände, sowie Lagerplätze sind in jedem
-Fall getrennt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Mehrmandenten.htm">siehe
+Mehrmandanten</a></p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bedeutung
 der einzelnen Informationsfelder im Artikeldetail:</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="ArtikelLagerstandInfo.gif" width="369" height="125"></p>
@@ -2141,7 +2167,77 @@ Sie Fehlermeldungen wie: </p>
 prüfen Sie bitte unbedingt die Feldtrenner. Diese müssen auf ; (Semikolon)
 gestellt sein. </p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Gibt es eine Alternative zum CSV Import der Artikeldaten? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Anstelle des CSV-Imports kann eine Datei des weitverbreiteten
+Tabellenverarbeitungsprogramms (.xls) genutzt werden. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Folgende Felder können im XLS-File vorhanden sein, wobei zumindest die Artikelnummer vorhanden sein muss: (Alle Werte/Zahlen müssen auch als solche formatiert sein)<br>
+<br>
+Artikelnummer&nbsp;&nbsp;&nbsp; Artikelart&nbsp;&nbsp;&nbsp; Kurzbezeichnung&nbsp;&nbsp;&nbsp;
+Bezeichnung&nbsp;&nbsp;&nbsp; Zusatzbezeichnung&nbsp;&nbsp;&nbsp; Zusatzbezeichnung2&nbsp;&nbsp;&nbsp;
+Referenznummer&nbsp;&nbsp;&nbsp; Index&nbsp;&nbsp;&nbsp; Revision&nbsp;&nbsp;&nbsp;
+Hersteller&nbsp;&nbsp;&nbsp; Mengeneinheit&nbsp;&nbsp;&nbsp; UmrechnungsfaktorBestellmengeneinheit&nbsp;&nbsp;&nbsp;
+Bestellmengeneinheit&nbsp;&nbsp;&nbsp; Artikelklasse&nbsp;&nbsp;&nbsp; Artikelgruppe&nbsp;&nbsp;&nbsp;
+Verkaufspreisbasis&nbsp;&nbsp;&nbsp; Artikellieferant&nbsp;&nbsp;&nbsp; ArtikelnummerLieferant&nbsp;&nbsp;&nbsp;
+ArtikelbezeichnungLieferant&nbsp;&nbsp;&nbsp; EinkaufspreisLieferant&nbsp;&nbsp;&nbsp;
+RabattLieferant&nbsp;&nbsp;&nbsp; NettopreisLieferant&nbsp;&nbsp;&nbsp; LagerplatzHauptlager&nbsp;&nbsp;&nbsp;
+Breite&nbsp;&nbsp;&nbsp; Hoehe&nbsp;&nbsp;&nbsp; Tiefe&nbsp;&nbsp;&nbsp; Gewicht&nbsp;&nbsp;&nbsp;
+Materialgewicht&nbsp;&nbsp;&nbsp; Material&nbsp;&nbsp;&nbsp; LagerMindeststand&nbsp;&nbsp;&nbsp;
+LagerSollstand </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Fertigungssatzgroesse&nbsp;&nbsp;&nbsp;
+Verschnittfaktor&nbsp;&nbsp;&nbsp; Ueberproduktion&nbsp;&nbsp;&nbsp; Mindestdeckungsbeitrag&nbsp;&nbsp;&nbsp;
+Warenverkehrsnummer&nbsp;&nbsp;&nbsp; Chargennummerngefuehrt&nbsp;&nbsp;&nbsp; Seriennummerngefuehrt&nbsp;&nbsp;&nbsp;
+Lagerbewirtschaftet<br>
+Wiederbeschaffungszeit&nbsp;&nbsp;&nbsp; Mindestbestellmenge&nbsp;&nbsp;&nbsp; Verpackungseinheit&nbsp;&nbsp;&nbsp;
+Standardmenge </p>
+
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kommentarart&nbsp;&nbsp;&nbsp;
+Kommentar&nbsp;&nbsp;&nbsp; MitdruckenAngebot&nbsp;&nbsp;&nbsp; MitdruckenAnfrage&nbsp;&nbsp;&nbsp;
+MitdruckenStueckliste&nbsp;&nbsp;&nbsp; MitdruckenAuftrag&nbsp;&nbsp;&nbsp; MitdruckenBestellung&nbsp;&nbsp;&nbsp;
+MitdruckenFertigung&nbsp;&nbsp;&nbsp; MitdruckenLieferschein&nbsp;&nbsp;&nbsp; MitdruckenWareneingang&nbsp;&nbsp;&nbsp;
+MitdruckenRechnung&nbsp;&nbsp;&nbsp; MitdruckenEingangsrechnung </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gestehungspreis </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achtung:
+der Gestehungspreis kann nur importiert werden, wenn der Lagerstand des Artikels
+aller Läger
+0&nbsp; ist. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Preiseinheit&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">VK-Preis/EK-Preis +
+Gestehungspreis wird durch diese Preiseinheit dividiert </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; 
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+BreiteText RasterStehend RasterLiegend StromverbrauchTypisch 
+StromverbrauchMaximal AufschlagBetrag AufschlagProzent Bauform Verpackungsart 
+Hochsetzen Hochstellen Polarisiert AntistaticMassnahmen Reach Rohs Automotive 
+Medical UL Farbcode ECCN</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Anordnung der Spalten hat keinen Einfluss auf den Import. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
+Spalte die nicht definiert ist, bewirkt keine Änderung im Artikelmodul. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+der Inhalt einer Spalte leer ist, erfolgt kein Import, eventuell vorhandenen
+Daten werden nicht überschrieben. </p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Können Artikellieferanten importiert werden </p>
@@ -2153,7 +2249,18 @@ Ja, <a href="../Lieferant/index.htm#Artikellieferanten-Import">siehe</a>. </p>
 Wo sehe ich Renner und Penner, Hitliste, die meist verkauften Artikel? </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Unter Journal, Hitliste finden Sie die entsprechende Auswertung. </p>
+Unter Journal, Hitliste finden Sie die entsprechende Auswertung.<br>Damit steht 
+Ihnen auch annähernd die sogenannte ABC Analyse der Artikel zur Verfügung. Siehe 
+dazu auch <a href="http://de.wikipedia.org/wiki/ABC/XYZ-Analyse">Wikipedi<em>a</em></a>. 
+Hier wird wiederum die Parettoregel angewandt. A-Artikel sind jene die einen 
+Wertanteil im Einkauf von 70-80% haben. B-Artikel einen von 15-20%, C-Artikel 
+einen von 5-10%.<br>Die XYZ Artikel, also die Unterscheidung auf Dauerartikel, 
+Saisonartikel bzw. Sonderangebote ist in unserem Umfeld bei einer guten 
+Stücklistenabdeckung nicht erforderlich, da die tatsächlichen Bedarfe sich aus 
+den Kundenaufträgen und der daran angehängten Stücklistenauflösung in den 
+Fertigungsaufträgen (Lose) ergeben. Das Ziel einer guten Fertigungssteuerung 
+muss sein, bei relativ niedrigem Lagerstand eine optimale Verfügbarkeit der 
+Produkte zu erreichen.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wo finde ich die Auswertung nach Artikelgruppen? </p>
@@ -2544,6 +2651,14 @@ Handeingabe auf versteckt. </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Info:</b> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+Funktion wird automatisch aktiviert, wenn die Artikelgruppe als Pflichtfeld
+(Parameter: ARTIKELGRUPPE_IST_PFLICHTFELD) aktiviert ist. Das bedeutet, dass
+damit bei jedem Wareneingang erzwungen wird, dass ein Artikel einer
+Artikelgruppe zugewiesen ist. </p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Die Artikelliste wird teilweise in blau angezeigt, was bedeutet das?</p>
 
@@ -2768,13 +2883,113 @@ wird der Parameter LAGER_IMMER_AUSREICHEND_VERFUEGBAR auf 1 gesetzt. </p>
 bewirkt, dass wenn kein ausreichender Lagerstand gegeben ist, im Hintergrund der Lagerstand entsprechend
 angepasst wird.&nbsp; </p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achtung: Bei der Zubuchung wird der aktuelle Gestehungspreis verwendet, dieser weicht
-wahrscheinlich vom tatsächlichen Gestehungspreis ab. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achtung: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Reihenfolge der Einstandspreispreisfindung, wenn ein Artikel aufgrund des Parameters IMMER_AUSREICHEND_VERFUEGBAR zugebucht wird, ist wie folgt: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.) Es wird der
+Gestehungspreis zum Belegdatum (des LS gesucht) und nur dann verwendet, wenn dieser weder NULL(=Nicht vorhanden) oder 0 ist.&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.)
+Wenn kein Gestehungspreis zum Zeitpunkt gefunden wird, dann wird der aktuelle
+Gestehungspreis verwendet. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.) Wenn der Gestpreis NULL oder 0 ist, dann dann wird der Lief1Preis  zum Belegdatum
+gesucht. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">4.)
+Wenn dieser wieder NULL oder 0 ist, dann wird der VK-Preis verwendet. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Ab dem Zeitpunkt ab dem die Lagerwirtschaft
-aktiv verwendet wird, wird dieser wieder abgeschaltet indem der Parameter auf 0
-gestellt wird..<br>
+aktiv verwendet wird, wird die Lagerzubuchungsautomatik wieder abgeschalten indem der Parameter auf 0
+gestellt wird.
  </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Q: Wo kann eine Überproduktion
+bzw. Ausschuss definiert werden ?&nbsp;
+ </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> A:
+Bei der Produktion muss ein gewisser Faktor von Ausschuss berücksichtig werden
+um die vom Kunden bestellte Menge fertigen und im weiteren Verlauf die Stückzahl liefern
+zu können.&nbsp;
+ </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> Somit
+muss die bestellte Menge um einen Faktor erhöht werden. Diese Überproduktion
+definieren Sie im Modul Arikel, oberer Reiter Bestelldaten.
+ </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> <img border="0" src="ueberproduktion_definieren.JPG" width="209" height="22">
+ </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> &nbsp;Der
+hier eingegebene Faktor wirkt bei der Überleitung bei der Berechnung der Mengen in der internen Bestellung.
+Hier wird die Losgröße um den eingegebenen Faktor erhöht.&nbsp;
+ </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo erhält man einen Überblick über den Wareneinsatz? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Sie finden im Modul Artikel im Menü Journal den Report Indirekte Wareneinsatzstatistik,
+diese Auswertung zeigt den kundenbezogenen Materialeinsatz.&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Arbeitszeitartikel sind nicht enthalten, da
+dies Zeiten sind und keine Ware. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Somit
+beinhaltet die Statistik alle Materialien, die über Fertigung und Lieferscheinen
+für diesen Kunden gebucht wurden. Die Gegenüberstellung von Einkaufspreis,
+Gestehungspreis und Kunden-Verkaufspreis auf Basis 1Stk ermöglicht Ihnen einen
+schnellen Überblick über die Werte. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zur
+Nachverfolgbarkeit wird der Wareneingangsbeleg (Bestellug, Losablieferung)
+angeführt. Wenn der Ursprung eines Artikels in LS/RE/GS eine Losablieferung ist, dann wird das gesamte Material des Loses
+auf dessen Ursprung geprüft. Hier erfolgt eine Auflösung über alle Ebenen der
+Lose, sobald ein Artikel aus einem Los kommt, wird auch die Ebene tiefer
+überprüft.&nbsp; </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie kennzeichnet man Vorzugsteile? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+A: Zur Kennzeichnung von Artikel als Vorzugsteil definieren Sie im unteren 
+Reiter Artikelgrunddaten, oberer Reiter Vorzugsteil die Grundeinstellungen. 
+Somit erhalten Sie eine Combo-Box in den Artikel-Kopfdaten. Wenn Sie hier nun 
+Vorzugsteile definiert haben, so wird in der Auswahlliste der Artikel eine 
+Spalte mit den Informationen angezeigt.<br><strong>Wozu wird diese Kennzeichnung 
+benötigt, wo wirkt sie?</strong><br>Die Kennzeichnung von Artikeln als 
+Vorzugsteile dient vor allem Ihrer internen Steuerung der Verwendung der 
+Artikel.<br>D.h. wenn neue Stücklisten von der Technik / Entwicklung erstellt 
+werden, so hat man oft die Qual der Wahl aus mehreren annähernd gleichwertigen 
+Artikeln den &quot;richtigen&quot; auszuwählen. Hier kann die Vorzugsteile Definition 
+helfen. D.h. wann immer möglich sollten die Vorzugsteile zum Einsatz kommen.<br>
+So könnte z.B. auch bei der <a href="../Webshop/Webportal_Kundenstueckliste.htm">
+Kundenstückliste</a> die Kommunikation an Ihre Kunden so vereinbart sein, dass 
+Vorzugsartikel mit einer bestimmten Kennzeichnung von Ihnen jederzeit 
+zurückgenommen werden, andere Artikel hingegen muss bei Beschaffung der Kunde in 
+jedem Falle bezahlen.</p>
+
+<span class="answer"><p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie findet man am schnellsten die Kundenartikelnummern zu einem Artikel? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+A: Im Reiter Detail von Artikel finden Sie in der Icon-Leiste das einen GoTo
+Button <img border="0" src="goto_kundenartikelnummer.png" width="30" height="25">.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+Sie nun auf diesen Button klicken, so wechseln Sie in den Reiter
+Kd.Artikelnummer und die Artikelnummer des vorherigen Artikels ist als Filter
+vorhinterlegt. So erhalten Sie sofort eine Liste der Artikel, die eine
+Kundenartikelnummer zu dem Artikel hinterlegt haben.</span></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
@@ -2924,8 +3139,6 @@ Fehlmengen im Reiter Materialumlagerung sichtbar werden.<br>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie wird im Lagercockpit mit nicht lagerbewirtschafteten Artikel umgegangen? </p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
-
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Wenn der Parameter NICHT_LAGERBEWIRTSCHAFTETE_SOFORT_AUSGEBEN auf 1 gesetzt ist,
 so werden bei der Materialumlagerung die nicht lagerbewirtschafteten Artikel
@@ -2943,6 +3156,14 @@ Artikel ein/ausgeblendet.<br>
 Wenn die Lose per Stückliste aktualisiert werden, dann werden die
 nichtlagerbewirtschafteten Artikel trotzdem nachgebucht, auch wenn der Parameter
 BEI_LOS_AKTUALISIERUNG_MATERIAL_NACHBUCHEN = 0 ist</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Auftrags Nachkalkulation über Lagercockpit hinweg? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn das Lagercockpit verwendet wird, wird bei der Auftragsnachkalkulation die
+Handumbuchung entsprechend aufgelöst, d.h. es wird bei einer Handlagerbewegung  nach dem allerersten Urpsrung gesucht.
+Dies wird in der Auftragsnachkalkulation und in der Warenzugangsreferenz      (welche die Los-Gesamtkalkulation verwendet) berücksichtigt. </p>
 
 </body>
 

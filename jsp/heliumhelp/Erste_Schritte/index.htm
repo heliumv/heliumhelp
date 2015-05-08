@@ -183,6 +183,153 @@ raschen Einstieg in HELIUM V empfehlen wir folgende Vorgehensweise:</p>
     dazu auch.</a></li>
 </ol>
 
+    <p class="question" style="margin:0cm;margin-bottom:.0001pt">Konfiguration
+    Ihrer HELIUM V - Installation<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Neben
+der Konfiguration von HELIUM V entsprechend Ihrer Basisinstallation durch Ihren
+HELIUM V Betreuuer stehen Ihnen weitere Einstellungen zur Verfügung. <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit
+diesen Einstellungen können Sie Ihre Installation an die Anforderungen in Ihrem
+Unternehmen anpassen.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Grunsätzlich
+unterscheidet HELIUM V in Arbeitsplatz- und Mandantenparameter. Eine Liste der
+Mandantenparameter und deren Wirkung finden Sie <a href="../System/Parameter.htm">hier</a>.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Gerade
+zu Beginn ist es essentiell u.a. Belegnummern und das Geschäftsjahr zu
+definieren.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Verwenden
+Sie für die Definition des Geschäftsjahres die Parameter:<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">GESCHAEFTSJAHRBEGINNMONAT</font><p class="answer" style="margin:0cm;margin-bottom:.0001pt">GESCHAEFTSJAHRPLUSEINS<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hiermit
+definieren Sie den Aufbau der Belegnummern, wieviele Stellen die Jahreszahlen
+und die fortlaufende Nummer erhalten soll:<p class="answer" style="margin:0cm;margin-bottom:.0001pt">BELEGNUMMERNFORMAT_STELLEN_BELEGNUMMER<p class="answer" style="margin:0cm;margin-bottom:.0001pt">BELEGNUMMERNFORMAT_STELLEN_GESCHAEFTSJAHR<p class="answer" style="margin:0cm;margin-bottom:.0001pt">BELEGNUMMER_MANDANTKENNUNG<p class="answer" style="margin:0cm;margin-bottom:.0001pt">BELEGNUMMERNFORMAT_TRENNZEICHEN<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit
+den folgenden Parametern können Sie die Startwerte der Belegnummern für den
+Jahresbeginn / den Start mit HELIUM V bestimmen. Bitte achten Sie darauf
+eventuell im folgenden Jahr den Parameter wieder auf den Wert 1
+zurückzustellen.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ANFRAGE_BELEGNUMMERSTARTWERT<br>
+ANGEBOT_BELEGNUMMERSTARTWERT<br>
+AUFTRAG_BELEGNUMMERSTARTWERT<br>
+BESTELLUNG_BELEGNUMMERSTARTWERT<br>
+EINGANGSRECHNUNG_BELEGNUMMERSTARTWERT<br>
+GUTSCHRIFT_BELEGNUMMERSTARTWERT<br>
+LIEFERSCHEIN_BELEGNUMMERSTARTWERT<br>
+LOS_BELEGNUMMERSTARTWERT_FREIE_LOSE<br>
+PROJEKT_BELEGNUMMERSTARTWERT<br>
+RECHNUNG_BELEGNUMMERSTARTWERT<br>
+REKLAMATION_BELEGNUMMERSTARTWERT</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>ACHTUNG:</b> Änderungen an
+der Struktur der Belegnummern dürfen nur bei einer Neuinstallation vorgenommen werden. Änderungen in laufenden Systemem müssen auch auf die bestehenden Daten Rücksicht nehmen und sollten daher nicht durchgeführt werden. Für Änderungen in laufenden Systemen wenden Sie sich bitte an Ihren
+HELIUM V Betreuer.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für
+die Anpassung von Reports, also Ausdrucken aus HELIUM V finden Sie <a href="../System/Druckformulare.htm"> hier</a> eine umfangreiche Beschreibung, sowie
+ein Schulungsvideo auf unserer <a href="http://www.heliumv.com/heliumv-Schulungsvideos-5.html">Website</a>.
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um
+die Konditionen der Lieferanten und Kunden vor dem Versenden von Belegen zu
+überprüfen, ist in der Basisinstallation der Parameter KONDITIONEN_DES_BELEGS_BESTAETIGEN
+für die Belege aktiviert. Dadurch erscheint eine Meldung, sobald die
+Konditionen eines Beleges nicht bestätigt wurden. Gerne können Sie den
+Parameter auf 0 stellen und so diese Meldung deaktivieren.<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Definieren
+Sie unternehmensintern und unternehmensweit eine Struktur für Artikelnummern.
+Je nach Bedarf kann diese sprechend mit Abkürzungen oder fortlaufend ohne Bezug
+zum Artikel selbst gestaltet werden. Um die Zeichen der Artikelnummer
+festzulegen verwenden Sie den Parameter ARTIKELNUMMER_ZEICHENSATZ, besonders bei
+der Verwendung von Barcodes achten Sie bitte darauf keine Sonderzeichen
+anzuführen.<p class="question" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Q:Was
+ist bei der Einführung von HELIUM V zu beachten?</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: <font size="2">
+Was ist aus Fertigungs-, Stücklisten, Kunden - Sicht zu beachten, wenn HELIUM V
+eingeführt wird:<br>
+Trotz aller Vorbereitung wird man als klein und mittelständischer Unternehmer
+nicht alle Strukturen, die man in Zukunft haben wird abbilden / vorhersehen können.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Das
+bedeutet: Ja, Gedanken machen, aber nicht den Kopf zerbrechen. Einfach beginnen.
+Man sieht es im Laufe des Prozesses was passend ist.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Kontaktdaten /
+Adressen</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Anlegen
+der Kunden-, Lieferanten Stammdaten. So dass Adressen, Telefonnummern,
+Ansprechpartner stimmen.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Wenn
+an Fibu ooder Fibuüberleitung gedacht ist und es schon bestehende Debitoren-
+Kreditorenkonten gibt, so bitte auch diese einpflegen.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Artikel</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Beim
+Artikelstamm raten wir zu grob strukturieren Artikelnummer, es kann dies auch über
+Artikelgruppen dargestellt werden. Es hängt dies ganz von persönlichen
+/firmen-Vorlieben ab.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Wird
+die Fibu / Fibuexport eingesetzt, so sollten die Artikelgruppen soweit definiert
+werden, dass dies auch zur Erlöskontenstruktur passt.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Und es
+sollten die Artikelbezeichnungen, nur die ersten beiden Zeilen, so definiert</font>
+<font size="2">werden, dass es für Inhaus Verwendung eindeutig ist.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Definieren
+Sie gegebenenfalls auch die Art und Weise, wie die Artikelbezeichnung
+geschrieben wird. </font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Was
+kommt zuerst, welche Infos sind die wichtigsten, werden von</font> <font size="2">links
+nach rechts geschrieben.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2"><b>Warum
+hat HELIUM V keine Eigenschaften Felder?</b></font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Solche
+Felder sind auf den ersten Blick faszinierend. Auf den zweiten zeigt sich,</font>
+<font size="2">dass diese sehr dynamisch an die unterschiedlichen Artikelarten
+angepasst werden müssten, was dann im Endeffekt immer wieder zu Unklarheiten
+bei der Artikelerfassung führen würde. Wir sehen daher die kurze und prägnante
+Erfassung direkt in den</font> <font size="2">zwei Zeilen der Artikelbezeichnung
+in Kombination mit der komfortablen Textsuche</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">als
+zielführender an, was uns unsere Anwender auch immer wieder bestätigen. Wenn
+Sie im Laufe der Arbeit mit HELIUM V feststellen, dass diese Felder nicht
+ausreichend sind, so kann ein eigener Reiter mit Artikeleigenschaften mit frei
+definierbaren, individuellen Feldern, aktiviert werden.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2"><b>Stücklisten</b></font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Denken
+Sie daran, dass die Stücklisten Strukturen, Kopfstücklisten, Unterstücklisten,
+Baugruppen usw. auch die Art und Weise der Fertigung abbilden.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Verwenden
+Sie dazu aber auch die Montageart um Stücklisteninhalte(Positionen) so zu
+gruppieren, dass z.B. SMD Bestückung oben, SMD Bestückung unten sauber
+getrennt werden kann und so der Fertigungsprozess entsprechend gesteuert werden
+kann.</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Weitere
+Definitionen</b></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">In den
+Grunddaten</font> <font size="2">Die Kopf und Fußzeilen aller Module von der
+Anfrage bis zu Gutschrift eintragen</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Eigentumsvorbehalt
+und Lieferbedingungen im System Medien definieren</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">Im
+Angebot die Erledigungsgründe hinterlege</font></p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><font size="2">In der
+Projektverwaltung ev. die Stati, welchen dann (System, Sprache, Status) auch
+Icons hinterlegt werden sollen.</font></p>
+
 </body>
 
 </html>

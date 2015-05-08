@@ -104,6 +104,17 @@ für die Chargennummern</p>
 bis z, 0 bis 9, Punkt(.), Schrägstrich (/), Prozent (%), kaufmännisches Und
 (&amp;), Unterstrich (_)</p>
 
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Eineindeutige
+Serien-/Chargennummern</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit dem Parameter LAENGE_CHARGENNUMMER_EINEINDEUTIG
+definieren Sie, ob Chargennummern eineindeutig sind. Wenn der Parameter gesetzt ist, dann wird bei einer neuen Losablieferung die nächste gültige Chargennummer vorgeschlagen      und bei der Zubuchung sichergestellt, dass nur numerische Chargennummern verwendet werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit dem Parameter SERIENNUMMER_EINEINDEUTIG
+definieren Sie, dass Seriennummern eindeutig über das ganze Unternehmen hinweg
+sind. Setzen Sie zum Generieren von Seriennummern zusätzlich den Parameter
+SERIENNUMMER_NUMERISCH auf 1, somit wir die nächste gültige Seriennummer
+vorgeschlagen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Mindesthaltbarkeit:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei vielen Produkten,
 vor allem der Lebensmittelbranche, ist zusätzlich zur Chargennummer auch das
@@ -230,6 +241,30 @@ die Erfassung der Seriennummern können auch sogenannte Wedge CCD Scanner
 eingesetzt werden. Diese werden in die Tastatur eingeschliffen und senden als
 Scanncode immer Seriennummer+CR. Somit scannen Sie einfach die Seriennummern der
 erhaltenen Geräte ab und erhalten so die Liste der erhaltenen Seriennummern.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wo kann ich Seriennummern bzw. Chargennummern korrigieren?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn bei der Eingabe von Seriennummern ein Fehler passiert ist, so können Sie
+diese Buchung zurücknehmen und neu erfassen. Sollte das nicht mehr möglich
+sein, da weiter Buchungen erfolgt sind, gibt es die Möglichkeit im Modul
+Artikel, Menüpunkt Pflege die Seriennummer zu korrigieren. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wählen
+Sie dazu in der Auswahl den zu ändernden Artikel aus und klicken auf
+Serien-/Chargennummern ändern.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Durch
+Klick auf <img border="0" src="snr.jpg" width="159" height="23"> öffnet sich die Auswahl der
+vorhandenen Seriennummern (plus deren etwaigen Versionen)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+der folgenden Erfassungsmaske sehen Sie die aktuelle Seriennummer und Version.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die ursprüngliche SNR/CHNR wird bei Auswahl als Vorschlag in die zu ändernde SNR/CHNR übertragen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geben
+Sie im darunterliegenden Feld die korrigierte Seriennummer und Version ein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="snr_vers_aendern.JPG" width="754" height="103"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dem klick auf speichern Sie die Änderungen ab und Sie erhalten eine Information
+wieviele Buchungen geändert wurden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Buchungen_geaendert.JPG" width="299" height="114"></p>
 
 </body>
 

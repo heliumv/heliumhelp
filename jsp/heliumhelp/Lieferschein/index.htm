@@ -20,11 +20,11 @@ eines Lieferscheins</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 einen neuen Lieferschein anzulegen gehen Sie bitte wie folgt vor:<br>
 Klicken Sie auf das Modul Lieferschein <img border="0" src="Lieferschein.JPG" width="35" height="37">
-in der nun offenen Auswahl klicken Sie auf Daten aus einem bestehenden Angebot <img border="0" src="angebot_neu.PNG" width="30" height="25">
-oder aus einem bestehenden Auftrag <img border="0" src="auftrag_neu.PNG" width="28" height="22">
+in der nun offenen Auswahl klicken Sie auf Daten aus einem bestehenden Angebot <img border="0" src="angebot_neu.PNG" width="30" height="25">, bestehenden Auftrag <img border="0" src="auftrag_neu.PNG" width="28" height="22">
+ oder aus einem bestehenden Lieferschein <img border="0" src="Lieferschein_uebernehmen.gif" width="30" height="25">
 übernehmen.</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
-Sie eine Bestellung ohne Angebots-/Auftrags-Bezug erstellen wollen, so klicken
+Sie einen Lieferschein ohne Angebots-/Auftrags-Bezug erstellen wollen, so klicken
 Sie auf Neu <img border="0" src="../Anfrage/Inventur_Neue_Position.gif" width="32" height="26">.</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
 geben Sie in den Kopfdaten die allgemeinen Informationen zum Beleg ein. Das
@@ -49,25 +49,21 @@ abweichen und ändern ev. die Texte für diesen einen Lieferschein ab.&nbsp;<br>
 </p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
 Klick auf <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24"> Drucken (oder oberes Menü
-Lieferschein - Drucken...) aktivieren Sie den Lieferschein, der<a href="Statusuebergaenge.htm">
-Status</a> ändert sich von angelegt in offen. Nun können Sie entscheiden, ob der
-Lieferschein ausgedruckt, gespeichert oder per E-Mail verschickt wird.&nbsp;</p>
-
-<p>&nbsp;</p>
+Lieferschein - Drucken...) erhalten Sie eine Voransicht des Ausdrucks. Mit dem
+Ausdruck <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24">, der Druckvorschau
+<img border="0" src="../Angebot/druckvorschau.JPG" width="29" height="24">, dem Versenden per E-Mail <img border="0" src="../auftrag/e-mail.jpg" width="31" height="26">oder
+speichern <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25">, aktivieren Sie den Lieferschein, der<a href="Statusuebergaenge.htm">
+Status</a> ändert sich von angelegt in offen.&nbsp;</p>
 
 <p><b>Q: Statuswechsel im Lieferschein</b></p>
 <ol>
-  <li>Angelegt (nach anlegen des Lieferschein)</li>
-  <li>Offen (nachdem der Lieferschein das erste Mal gedruckt wurde); dieser
-    Status wird nur erreicht, wenn der Mandantenparameter XY definiert: Angelegt
-    -&gt; Drucken -&gt; Offen. Wird derzeit nicht unterstützt. D.h. ein
-    Lieferschein wird beim Drucken sofort von Angelegt auf Geliefert geändert.
-  <li>Geliefert (nachdem der Lieferschein manuell auf geliefert gesetzt wurde
-    oder nachdem gedruckt wurde); wann dieser Status erreicht wird, wird durch
-    den Mandantenparameter XY festgelegt.
-  <li>Verrechnet (nachdem der gesamte Lieferschein verrechnet wurde)
-  <li>Erledigt (der Lieferschein wurde manuell auf erledigt gesetzt)
-  <li>Storniert (der Lieferschein wurde manuell storniert) -&gt; alle Positionen
+  <li><img border="0" src="angelegt.jpg" width="19" height="19"> Angelegt (nach Anlegen des Lieferschein)</li>
+  <li>der Lieferschein wird beim Drucken sofort von Angelegt auf Geliefert geändert.
+  <li><img border="0" src="geliefert.JPG" width="16" height="16"> Geliefert (nachdem der Lieferschein manuell auf geliefert gesetzt wurde
+    oder nachdem gedruckt wurde)
+  <li><img border="0" src="verrechnet.JPG" width="16" height="17"> Verrechnet (nachdem der gesamte Lieferschein verrechnet wurde)
+  <li><img border="0" src="erledigt.jpg" width="19" height="15"> Erledigt (der Lieferschein wurde manuell auf erledigt gesetzt)
+  <li><img border="0" src="storniert.JPG" width="19" height="15"> Storniert (der Lieferschein wurde manuell storniert) -&gt; alle Positionen
     wurden ans Lager zurückgebucht.</li>
 </ol>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt"><a name="Auftragspositionen übernehmen"></a>Q: Wie kann ich
@@ -103,6 +99,16 @@ geführt sind. </p>
 bzw. Chargennummern müssen diese Zuordnungen ja eingegeben werden. D.h. diese
 sind einzeln durch den Knopf Ändern <img border="0" src="Liefermenge_aendern.gif" width="30" height="27">
 zu übernehmen. </p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was passiert, wenn ein Lieferschein aus einem vorhandenen Lieferschein erstellt
+wird, ein Lieferschein kopiert wird?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn der Lieferschein ein &quot;Freier Lieferschein&quot; war, so werden die
+Kopfdaten und Positionen des Lieferscheins kopiert. Ein auftragsbezogener
+Lieferschein wird zu einem Freien Lieferschein umgewandelt und auftragsbezogene Positionen werden nicht kopiert.
+Wenn im Lieferschein ein Projekt (Projektklammer) hinterlegt ist, so bleibt der
+Projektbezug erhalten.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Ich kann meinen Auftrag bei der Auswahl aus dem Lieferschein nicht finden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -423,8 +429,8 @@ Lieferscheinen unterschieden werden.</p>
 Sie dafür in den Konditionen des Lieferscheins die Checkbox <img border="0" src="LS_Verrechenbar.gif" width="87" height="18">.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
-ist die Checkbox nicht angehackt, so rechnen Sie auch nicht damit, dass dieser
-Lieferschein verrechnet werden wird.</p>
+ist die Checkbox nicht angehakt, so rechnen Sie auch nicht damit, dass dieser
+Lieferschein verrechnet werden wird. (Siehe dazu auch den Parameter LS_DEFAULT_VERRECHENBAR).</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 nun eine Auswertung über nur Verrechenbare bzw. nicht verrechenbare
@@ -519,6 +525,13 @@ auf die gleiche Rechnungsadresse zeigen. </p>
 sich aus einer eventuellen Änderung der Lieferadresse eine andere
 Rechnungsadresse so wird diese nach Rückfrage übernommen. <a href="../Kunde/index.htm#Rechnungsadresse">Siehe
 dazu auch</a>. </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann die
+Rechnungsadresse geändert werden?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Sie finden Sie im
+Menü Bearbeiten den Punkt Rechnungsadresse ändern. Hiermit können Sie die
+Rechnungsadresse ändern solange der Status des Lieferscheins angelegt oder
+offen ist.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Was definiert welche Konditionen und Verkaufspreise verwendet werden?</p>
@@ -699,11 +712,6 @@ sein Abbuchungslager das Hauptlager ist. Also wird das Hauptlager als
 Abbuchungslager für einen Lieferantenlieferschein vorgeschlagen.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Kann ein Lieferschein von verschiedenen Lagern abbuchen?</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Nein, es kann nur von dem einen, in den Kopfdaten definiertem, Lager abgebucht
-werden.</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann der Lieferschein auch für Umbuchungen verwendet werden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Ja.</p>
@@ -747,6 +755,16 @@ der Artikel dem Ziellager zugebucht wird. Bei der Zubuchung muss ein
 Gestehungspreis angegeben werden. Für diesen Gestehungspreis wird der aktuelle
 Gestehungspreis des Abbuchungslagers zum Zeitpunkt der Buchung verwendet. Damit
 ist über die beiden Lager betrachtet, die Wertänderung gleich Null.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann bei einer Position das Lager übersteuert werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja, Sie können in der Eingabe der Position nun ein Lager auswählen, dass die
+Eingabe in den Kopfdaten übersteuert. Das bedeutet, dass in den Lieferscheinpositionen und
+unter Sicht-Auftrag kann unter dem Artikel das zu übersteuernde Lager ausgewählt werden
+(nur, wenn der Parameter LV_POSITION=0).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="uebersteuertes_Lager.JPG" width="255" height="46"></p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Können die Lieferkonditonen für einen Lieferanten für den Lieferschein
 definiert werden?</p>
@@ -800,8 +818,34 @@ Wie ist für den Druck von Chargenreinen Etiketten vorzugehen?</p>
 Unter der Voraussetzung, dass dies alles auf einmal ausgedruckt werden sollte
 und dass der Druck Versandetiketten verwendet wird, muss lediglich je Charge
 eine eigene Lieferscheinposition angelegt werden.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Abbildung der Nachweispflicht für EU-Lieferungen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+In Deutschland gelten neue Nachweispflichten für IG-Erwerb Lieferungen. Mit der
+Gelangensbestätigung muss der Empfänger der Lieferung bestätigen, dass dieser
+die Produkte erhalten hat. Hierzu wurde in HELIUM V der Ausdruck des
+Lieferscheins erweitert, so dass je nach Länderart der Lieferadresse das
+Formular auch die Bestätigung des Erhalts beinhaltet. Wenden Sie sich bitte an
+Ihren HELIUM V Betreuuer, wenn auch für Sie die Nachweispflicht gültig ist.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum wird der Lieferrest für eine Auftragsposition nicht angeführt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Der Lieferrest wird für Positionen mit offenen Mengen aus dem Auftrag
+angeführt. Sobald eine Position des Auftrags in den Lieferschein über Sicht
+Auftrag übernommen wird, wird diese Information angeführt. Positionen, die
+nicht im Lieferschein geliefert werden, werden auch nicht als Position mit der
+Lieferrest (=Auftragsmenge) angezeigt.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann die Information über einen etwaigen Lieferrest am Lieferschein angedruckt
+werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Der Ausdruck des Lieferscheins kann um die Informationen zum Lieferrest ergänzt
+werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Lieferschein-Report finden Sie den Parameter P_TEILLIEFERUNG (0=keine Teillieferung, 1= Teillieferung Auftragsumfang nicht vollständig, 2= Teillieferung, dies ist die letzte Lieferung des Auftrags).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gerne
+passt Ihr HELIUM V Betreuuer den Report und dessen Texte für Sie an.</p>
 
 </body>
 

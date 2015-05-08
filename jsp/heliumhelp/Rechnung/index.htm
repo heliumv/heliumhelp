@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Language" content="de">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 <title>Rechnung</title>
@@ -58,9 +58,11 @@ abweichen und ändern ev. die Texte für diese eine Rechnung ab.&nbsp;<br>
 </p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
 Klick auf <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24"> Drucken (oder oberes Menü
-Rechnung - Drucken...) aktivieren Sie die Rechnung, der<a href="Statusuebergaenge.htm">
-Status</a> ändert sich von angelegt in offen. Nun können Sie entscheiden, ob die
-Rechnung ausgedruckt, gespeichert oder per E-Mail verschickt wird.</p>
+Rechnung - Drucken...) erhalten Sie eine Voransicht des Ausdrucks. Mit dem
+Ausdruck <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24">, der Druckvorschau <img border="0" src="file:///C:/workspace/heliumhelp/jsp/heliumhelp/Angebot/druckvorschau.JPG" width="29" height="24">,
+dem Versenden per E-Mail <img border="0" src="file:///C:/workspace/heliumhelp/jsp/heliumhelp/auftrag/e-mail.jpg" width="31" height="26">oder
+speichern <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25">, aktivieren Sie die Rechnung, der<a href="Statusuebergaenge.htm">
+Status</a> ändert sich von angelegt in offen.&nbsp;</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zum
 Thema <a href="Elektronische_Rechnung.htm">elektronische Rechnung siehe bitte</a>.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
@@ -71,7 +73,11 @@ Ihre Rechnungen inkl. Zahlungserfassung und Umsatzübersicht.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Gutschrift.htm">Gutschrift</a></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
 unteren Modulreiter <img border="0" src="Gutschrift.gif" width="69" height="20"> 
-erfassen Sie die Gutschriften.</p>
+erfassen Sie die Gutschriften. <a href="Gutschrift.htm">Zu Gutschrift siehe 
+bitte</a>.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kunden-Eingangsgutschrift</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+die Behandlung von Gutschriften aufgrund von Warenlieferungen an Ihre Kunden <a href="Kunden_Eingangsgutschrift.htm">siehe</a>.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Proforma-Rechnung</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Proformarechnung.htm">Siehe</a>.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mahnwesen</p>
@@ -220,6 +226,15 @@ eingetragen. </p>
 dem Parameter LIEFERSCHEIN_UEBERNAHME_NACH_ANSPRECHPARTNER kann eingestellt
 werden, dass diese automatisch nach den Ansprechpartnern der Lieferscheine
 sortiert. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab
+der Version 8743 können in einer Rechnung Lieferscheine unterschliedlicher Rechnungsadressen verrechnet werden.
+Dazu muss das Land des Lieferscheins gleich sein. In den Rechnungspositionen können Lieferscheine unterschiedlicher Rechnungsadressen ausgewählt
+werden, setzen Sie bei der Auswahl dazu den Haken bei alle Rechnungsadressen <img border="0" src="alle_RE_adressen.JPG" width="139" height="17">. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Bei der Verrechnung kommt die Meldung &quot;nicht verrechenbar&quot; </p>
@@ -1309,6 +1324,64 @@ Warum werden beim Kopieren von Rechnungen nicht alle Artikel übernommen?</p>
 Wenn eine Rechnung per 'Daten aus bestehender Rechnung übernehmen' kopiert wird, werden alle Positionen, die auftragsbezogen sind, ausgelassen.
 Da diese Positionen schon im vorhergehenden Auftrag verrechnet wurden, werden
 diese nicht nocheinmal in die neue Rechnung übernommen.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann ich erkennen, ob die Mehrwertsteuersätze von der Definition im Kunden
+abweichen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Um Sicherheit, vor allem bei der Verbuchung in der Finanzbuchhaltung, zu
+schaffen, wird nun eine Fehlermeldung ausgegeben, wenn die Mehrwersteuersätze
+aus dem Kunden nicht mit den Mehrwertsteuersätzen aus der Rechnung
+übereinstimmen.&nbsp; Die Situation kann durch Kopieren von Rechnungen zb.
+eines Kunden aus dem Inland und dem anschließenden Abändern in einen Kunden
+aus dem Ausland vorkommen. Sollte eine, der folgenden Fehlermeldungen bei Ihnen
+auftreten, so überprüfen Sie bitte die Mehrwertsteuersätze der Positionen und
+nehmen gegegebenfalls die Änderungen gemäß der Definition im Kunden vor. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="mwst_warnung2.JPG" width="471" height="115">
+<img border="0" src="mwst_warnung.JPG" width="445" height="114"></p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Welche Beträge werden verwendet, wenn eine Rechnung aus einer Rechnung in
+Fremdwährung erstellt wird?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn eine Fremdwährungsrechnung kopiert wird, bleiben die damaligen Fremdwährungspreise erhalten.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In den Kopfdaten kann die Währung
+nur mehr dann geändert werden, wenn keine mengenbehafteten Positionen vorhanden sind.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie argumentiert man 0 Preise in der Rechnung für das Finanzamt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Oftmals werden Positionen zu dem Zeitpunkt verrechnet, bei dem ein Lieferschein
+an das Kundenlager geschrieben wurde. Der Abruf aus dem Kundenlager jedoch wird
+nicht mehr verrechnet. So kann es vorkommen, dass auf einer Rechnung Positionen
+von unterschiedlichen Lagern abgebucht werden. Somit sind auf der Rechnung
+Positionen mit Preisen und ohne Preisen gemischt vorhanden. Zur klaren
+Dokumentation für das Finanzamt und Nachvollziehbarkeit für Ihren Kunden, kann
+das Abbuchungslager angedruckt werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Sicht Auftrag und Lieferschein</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ab der HELIUM V Version 8763 wurden die Reiter Aufträge, Sicht Auftrag und
+Sicht Lieferschein wie folgt geändert:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">"Sicht Lieferschein" wird
+aktiv (klickbar) sobald eine Lieferschein-Position selektiert wird. Diese Aktivierung bleibt aufrecht, solange die Selektion einer Lieferschein-Position nicht aufgehoben wird.<br>
+Reiter "Aufträge" und "Sicht Auftrag" sind aneinander gekoppelt. Der Reiter "Aufträge" wird grundsätzlich aktiviert, wenn eine Rechnung ausgewählt wurde, die mindestens einen Auftrag beinhaltet. "Sicht Auftrag"
+ist klickbar, wenn ein Auftrag selektiert wurde.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Man kann dabei drei Fälle unterscheiden:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1) Rechnung hat keinen Auftrag: "Aufträge" und "Sicht Auftrag" deaktiviert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2) Rechnung hat nur einen Auftrag: "Aufträge" ist aktiviert, der einzig vorhandene Auftrag wird vorselektiert. Somit ist auch "Sicht Auftrag" automatisch aktiviert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3) Rechnung hat mehr als einen Auftrag: "Aufträge" ist aktiviert, kein Auftrag vorselektiert. Somit ist auch "Sicht Auftrag" deaktiviert, bis der
+ein Auftrag selektiert wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 

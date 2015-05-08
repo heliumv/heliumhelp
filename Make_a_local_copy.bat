@@ -4,15 +4,24 @@ rem Daran denken, dass der hv_help nur hinzufügt, das bedeutet, dass wenn Dateie
 
 rem die .# Dateien sollten vorher aus dem Source entfernt werden
 
+rem >>>>>>>>>>>>> Es müssen alle Dateien lesbar sein, sonst geht der XCOPY nicht <<<<<<<<<<<<<<<<<<<<
+rem >>>>>>>>>>>>> Dateiattribute mit Totalcommander setzen <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+rem >>> ACHTUNG: die Roadmap muss auf die Original Verzeichnisse zeigen <<<
+
 rem die Pfade sind fix festgelegt
 rem 2013-11-16 geändert auf w: wegen VM
+rem 2014-12-27wh
 
 echo "kopieren des Source"
 w:
 cd \heliumhelp\jsp\
 c:
 cd \jbproject\heliumhelp\jsp\
-xcopy w:*.* /v/s/y
+rem da anscheinend von Win7 weg der xcopy nicht mehr richtig geht, die Inhalte auf c: ab heliumhelp löschen
+rmdir heliumhelp /S /Q
+mkdir heliumhelp
+xcopy w:*.* /V/S/Y/D
 pause
 
 echo "Entfernen aller nicht benötigten Dateien und Ordner"

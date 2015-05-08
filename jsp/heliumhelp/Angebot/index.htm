@@ -21,7 +21,7 @@ eines Angebots</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 ein neues Angebot anzulegen gehen Sie bitte wie folgt vor:<br>
 Klicken Sie auf das Modul Angebot <img border="0" src="Angebot.JPG" width="33" height="36"> in der nun offenen Auswahl klicken Sie auf Neu
-<img border="0" src="index.1.gif" width="32" height="26">
+<img border="0" src="Angebot_Neu.gif" width="32" height="26">
  .<br>
 Nun geben Sie in den Kopfdaten die allgemeinen Informationen zum Beleg ein. Das bedeutet u.a. den
 Kunden, Lieferzeit, Gültigkeit - je nach Bedarf.</p>
@@ -29,8 +29,8 @@ Kunden, Lieferzeit, Gültigkeit - je nach Bedarf.</p>
 <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25"> bestätigen Sie die Eingaben.</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln Sie in den Reiter Positionen und geben hier die Positionen, die Sie
 anbieten möchten ein.&nbsp;<br>
-Um eine neue Position hinzuzufügen klicken Sie auf Neu <img border="0" src="index.2.gif" width="32" height="26">
-wählen im unteren Bereich des Fensters die Art der Position (<a href="../Allgemein/index.htm#Positionsarten">Positionsarten</a>), geben die Informationen (u.a. Menge) ein und klicken auf
+Um eine neue Position hinzuzufügen klicken Sie auf Neu
+<img border="0" src="Angebot_Neu.gif" width="32" height="26"> wählen im unteren Bereich des Fensters die Art der Position (<a href="../Allgemein/index.htm#Positionsarten">Positionsarten</a>), geben die Informationen (u.a. Menge) ein und klicken auf
 <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25"> Speichern. Gehen Sie für alle gewünschten Positionen wie oben
 beschrieben
 vor.</p>
@@ -42,9 +42,11 @@ abweichen und ändern ev. die Texte für dieses eine Angebot ab. <br>
 </p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit Klick auf
 <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24"> Drucken  (oder oberes Menü
-Angebot - Drucken...) aktivieren Sie
-das Angebot, der <a href="Statusuebergaenge.htm"> Status</a> ändert sich von angelegt in offen. Nun können Sie entscheiden, ob
-das Angebot ausgedruckt, gespeichert oder per E-Mail verschickt wird. </p>
+Angebot - Drucken...) erhalten Sie eine Voransicht des Ausdrucks. Mit dem
+Ausdruck <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24">, der Druckvorschau
+<img border="0" src="druckvorschau.JPG" width="29" height="24">, dem Versenden per E-Mail <img border="0" src="../auftrag/e-mail.jpg" width="31" height="26">oder
+speichern <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25">, aktivieren Sie
+das Angebot, der <a href="Statusuebergaenge.htm"> Status</a> ändert sich von angelegt in offen.&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 Q: Können Positionen aus Stücklisten auch auf offiziellen Belegen angedruckt
@@ -75,6 +77,20 @@ bereits angelegte Angebotsstückliste ausgewählt werden, die damit diesem Angebot
 Von HELIUM V wird der kalkulatorische Wert der Angebotsstückliste ermittelt und
 in der Preiseingabe angezeigt. Sie können nun den Positionspreis manuell eingegeben, der Vorschlagswert für den kalkulatorischen
 Wert der Position kann übersteuert werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Lieferant_angeben">Q:</a>
+Wie kann der Lieferantenpreis, der Einkaufspreis für einen Artikel schon im
+Angebot dokumentiert werden?</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
+Wenn Parameter LIEFERANT_ANGEBEN in der
+Kategorie Angebot gesetzt ist (Wert des Parameters=1), so kann im Angebot
+und im Auftrag je Artikel-(Ident-)Position auch der Lieferant angegeben werden.
+Zusätzlich kann der geplante Einkaufspreis mit angegeben werden. Dies bewirkt
+im weiteren Verlauf, dass wenn die Position kopiert wird (ZWA), der Preis als Nettopreis im Bestellvorschlag und in der Bestellung aus dem Angebot (EK-Preis) verwendet
+wird. Wenn in dem Feld Lieferantenpreis keine Information eingegeben wird, so
+wird die übliche Logik (Preise und Bezeichnungen aus dem Artikelllieferanten)
+verwendet.<img border="0" src="lieferant_angeben.JPG" width="745" height="104"></p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie / wann kann die Währung eines Angebotes geändert werden?</p>
@@ -173,6 +189,20 @@ In der Angebots Vorkalkulation werden der aktuelle Gestehungspreis, der
 Lieferantenstaffelpreis und der (Kunden-) Verkaufspreis angedruckt. Für die
 Findung des Lieferantenstaffelpreis werden auch die angebotenen Mengen, wie in
 der Stücklistengesamtkalkulation, mit berücksichtigt.</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Beachten
+Sie bitte den Parameter LIEFERANT_ANGEBEN in der
+Kategorie Angebot. Steht hier der Wert des Parameters auf 1, so kann im Angebot
+und im Auftrag je Artikel-(Ident-)Position auch der Lieferant angegeben werden.
+Zusätzlich kann der geplante Einkaufspreis mit angegeben werden. Der Andruck
+der Lieferantenpreise ist so gelöst, dass:</p>
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">a.)
+wenn kein spezifischer Lieferant auf der Angebotsposition eingegeben ist, so
+wird bei der Vorkalkulation der bevorzugte Lieferant aus dem Artikel verwendet<br>
+b.) ist die Position eine Handeingabe, so wird als Lieferantenpreis der
+eingegebene Gestehungspreis verwendet.<br>
+In der Deckungsbeitragsberechnung für die Lieferanten werden auch die
+Transportkosten des Lieferanten berücksichtigt. Diese können im jeweiligen
+Lieferanten im Reiter Konditionen eingegeben werden.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie kann ich Lagerstände In der Angebots Vorkalkulation andrucken?</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
@@ -451,8 +481,6 @@ Zusammenfassung gedruckt werden sollten.</p>
 <p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Q:
 Wie füge ich Einzelpositionen eines Set-Artikels (über die Zwischenablage) in ein Angebot ein?</p>
 
-<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
-
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
 Um im Angebot mit Set-Artikel zu arbeiten muss mind. ein Set-Artikel eingefügt werden.
 Fügen Sie einen Set-Artikel in das Angebot ein, es werden auch die Einzelpositionen übernommen.<br>
@@ -465,11 +493,131 @@ Positionen im Set-Artikel hinzuzufügen haben Sie 2 Möglichkeiten:</p>
   <li>
     <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Kopieren Sie die gewünschten Positionen in die Zwischenablage, danach wechseln Sie zum Angebot, markieren eine Position des Sets und klicken auf „einfügen aus der Zwischenablage“ (Icon). Bei dem nun folgenden Dialog klicken Sie auf „vor der aktuellen Cursorposition“ somit werden die Positionen in den Set-Artikel im Angebot eingefügt.</li>
 </ul>
-<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Weitere Positionen außerhalb des Set-Artikels können Sie wie gewohnt durch klick auf
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Weitere Positionen außerhalb des Set-Artikels können Sie wie gewohnt durch
+Klick auf
 neu hinzufügen.<br>
 <br>
 Wichtig: Bitte überprüfen Sie den Preis des Set-Artikels vor dem Versand des
 Angebots! </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp; </p>
+
+<p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Q:
+Angebotspositionen zusammenfassen</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
+Mit der Positionsart intelligente Zwischensumme steht die Möglichkeit der
+Zusammenfassung von mehreren Angebotspositionen zur Verfügung. <a href="../Rechnung/Gemeinsamkeiten_der_Bewegungsmodule.htm#Intelligente Zwischensumme">Siehe
+dazu bitte auch</a>.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Hier
+steht nun auch die Möglichkeit <img border="0" src="ZWS_Positionspreise.gif" width="140" height="20">
+die Anzeige der Positionspreise abzuschalten. Damit wird erreicht, dass für die
+Positionen die innerhalb der Zwischensumme sind, keine Einzelpreise angedruckt
+werden. In anderen Worten, es wird damit ein frei konfigurierbarer Setartikel
+zur Verfügung gestellt.</p>
+
+<p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Q:
+Verwendung des Angebotes für reinen Handel</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
+Im (IT-) Handel hat man oft die Situation, dass von der Idee her zwar standard
+Artikel geliefert werden, diese aber immer in einer (Kunden-)spezifischen
+Konfiguration, die beim Lieferanten auch bestellt werden muss, angeboten und
+geliefert werden. Die Vorgehensweise dazu ist wie folgt:</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">a.)
+Der Kunde sendet / meldet einen Bedarf. Erfassen Sie dies bitte im Modul
+Projekte</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">b.)
+Sie (der HELIUM V Anwender) senden Anfrage(n) an Ihre Lieferanten</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">c.)
+Sie erhalten entsprechende Angebote und entwickeln / erstellen daraus Angebote
+in HELIUM V</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">d.)
+Kunde erteilt Auftrag</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">e.)
+Sie bestellen nun die genau richtigen Artikel bei Ihren Lieferanten</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Wichtig
+zu wissen:</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">-
+Das Angebot enthält natürlich mehrere Positionen die einerseits Standard sind,
+die aber immer individuell für den Kunden konfiguriert werden. D.h. es wird ein
+standard Artikel verwendet. Die Zusatz-Beschreibung wird als Texteingabe
+individuell im Angebot hinterlegt.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">-
+Es wird nicht für jeden Artikel (PC, Server) in seiner Spezialkonfiguration ein
+neuer Artikel erstellt. Trotzdem muss das konkrete Angebot des Lieferanten bei
+der einzelnen Angebotsposition hinterlegt werden können und auch die
+Einkaufspreise dazu. Dazu werden die Lieferanten Angebotsdaten in der
+Ident-Texteingabe eingetragen.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">-
+Bei welchem Lieferanten bestellt wird, wird in der Angebotsposition und damit
+auch in der Auftragsposition hinterlegt.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">-
+Der geplante Einkaufspreis wird in der Angebots- und in der Auftragsposition
+hinterlegt.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">-
+Damit ist auch die Vorkalkulation des Angebotes in der Deckungsbeitragsrechnung
+richtig. Es werden die definierten Einkaufspreise herangezogen.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">-
+Nun wird aus dem Angebot ein Auftrag erstellt (Auftrag aus Angebot). Dabei
+werden die Daten aus dem Auftrag übernommen, also der Lieferant, der
+Einkaufspreis und der ergänzende Ident-Text. Somit hat man, Lieferantenpreise,&nbsp;
+bei welchem Lieferanten, die genaue Spezifikation und die erklärenden,
+beschreibenden Texteingaben für den Kunden</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">-
+Sodann wird entweder</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;
+- ein Bestellvorschlag (für alle) gemacht</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;
+- manuell eine Bestellung gemacht</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;
+- der Bestellvorschlag über die Zwischenablage aus dem Auftrag befüllt</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">-
+die Bestellung(en)</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;
+- gehen an den richtigen Lieferanten</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;
+- es sind darin die im Angebot definierten Einkaufspreise enthalten</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;
+- Es steht darin die genaue Beschreibung, so dass die individuelle Konfiguration
+auch so beim Lieferanten bestellt wird. Dafür ist das Bestellformular
+entsprechend für den Andruck der Texteingaben anzupassen.</p>
+
+<p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt"><b>Q:
+Kann man eine Handeingabe in einen Artikel umwandeln?</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja, mit Hilfe des Menüpunkts Bearbeiten - Handartikel in Artikel umwandeln<img border="0" src="../Anfrage/handartikel_in_artikel_umwandeln.png" width="238" height="21">.
+Um zum Beispiel nach Erteilung des Auftrags Handeingaben in Artikel umzuwandeln,
+verwenden Sie diesen Menüpunkt. Nach Klick auf den Menüpunkt, erfolgt eine
+Abfrage, welche Artikelnummer Sie für den Artikel verwenden wollen, hier können
+Sie auch einfach eine neue Artikelnummer generieren.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../Anfrage/gewuenschte_artikelnummer.JPG" width="401" height="151"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+Klick auf OK bestätigen Sie die Artikelnummer, ein neuer Artikel wird angelegt
+und im Angebot hinterlegt. Bitte achten Sie darauf, dass die Umwandlung nur im
+Belegstatus &quot;Offen&quot; möglich ist.</p>
 
 </body>
 

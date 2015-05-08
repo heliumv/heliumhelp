@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Language" content="de">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 <title>Gutschrift</title>
@@ -28,6 +28,42 @@ Warenrücknahme gebucht werden.</p>
 einige Anwender ist es wünschenswert, dass Rechnungen und Gutschriften
 den gleichen Nummernkreis haben. Setzen Sie dazu den Mandantenparameter GUTSCHRIFT_VERWENDET_NUMMERNKREIS_DER_RECHNUNG
 auf <b>1</b> .</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anlegen
+einer Gutschrift</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+eine neue Gutschrift anzulegen gehen Sie bitte wie folgt vor:<br>
+Klicken Sie auf das Modul Rechnung <img border="0" src="Rechnung.JPG" width="35" height="37"> im
+unteren Reiter finden Sie die Gutschriften, in der nun offenen Auswahl klicken
+Sie auf Neu <img border="0" src="../Anfrage/Inventur_Neue_Position.gif" width="32" height="26">.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+geben Sie in den Kopfdaten die allgemeinen Informationen zum Beleg ein. Das
+bedeutet u.a. den die Rechnung, den Kunden, Projekt, Bestellnummer, Termine - je
+nach Bedarf.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+einem Klick auf Speichern <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25"> bestätigen
+Sie die Eingaben.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wechseln
+Sie in den Reiter Positionen und geben hier die Positionen der Gutschrift ein.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+eine neue Position hinzuzufügen klicken Sie auf <img border="0" src="../Anfrage/Inventur_Neue_Position.gif" width="32" height="26">
+Neu wählen im unteren Bereich des Fensters die Art der Position (<a href="file:///C:/workspace/heliumhelp/jsp/heliumhelp/Allgemein/index.htm#Positionsarten">Positionsarten</a>),
+geben die Informationen (u.a. Menge) ein und klicken auf <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25">
+Speichern. Gehen Sie für alle gewünschten Positionen wie oben beschrieben vor.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+die Erfassung der Positionen abgeschlossen ist, dann wechseln Sie in den Reiter
+Konditionen.<br>
+Hier geben Sie die Informationen ein, wenn diese von den Grundeinstellungen
+abweichen und ändern ev. die Texte für diese eine Gutschrift ab.&nbsp;<br>
+</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+Klick auf <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24"> Drucken (oder oberes Menü
+Rechnung - Drucken...) erhalten Sie eine Voransicht des Ausdrucks. Mit dem
+Ausdruck <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24">, der Druckvorschau <img border="0" src="file:///C:/workspace/heliumhelp/jsp/heliumhelp/Angebot/druckvorschau.JPG" width="29" height="24">,
+dem Versenden per E-Mail <img border="0" src="file:///C:/workspace/heliumhelp/jsp/heliumhelp/auftrag/e-mail.jpg" width="31" height="26">oder
+speichern <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25">, aktivieren Sie die
+Gutschrift, der<a href="Statusuebergaenge.htm"> Status</a> ändert sich von
+angelegt in offen.&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Ein
 wichtiger Hinweis:</b></p>
@@ -131,6 +167,34 @@ welchen Kunden Sie welche tatsächliche Deckungsbeiträge erwirtschaften.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bitte
 achten Sie dabei auf den Unterschied zwischen <a href="#Wert/Mengengutschrift">Wert-
 und Mengengutschrift</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Bezeichnung als Gutschrift oder Rechnungskorrektur?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Mit dem Parameter GUTSCHRIFT_NENNT_SICH_RECHNUNGSKORREKTUR steuern Sie, ob die
+Gutschrift als Rechnungskorrektur bezeichnet wird. Derzeit ist es in Deutschland
+so, dass</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">die
+Bezeichnung „Gutschrift“ nur noch in Fällen verwendet werden darf, in denen
+tatsächlich eine Leistung des Empfängers der Gutschrift erbracht wurde (siehe 
+dazu auch <a href="Kunden_Eingangsgutschrift.htm">Kunden Eingangsgutschrift</a>), während
+anderenfalls Bezeichnungen wie „Korrektur zur Rechnung“,
+„Korrekturrechnung“ o.Ä. verwendet werden soll. <span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: DE;">Keinesfalls
+gilt das Wort „Gutschrift“, wenn es sich um eine korrigierte Rechnung oder
+Stornorechnung handelt. Hier ist auch zu berücksichtigen, dass der Wert der 
+Gutschrit negativ ausgewiesen werden muss. Damit dies in sich stimmig ist, 
+werden Menge und Gesamtpreis negativ ausgewiesen. Bitte beachten Sie, dass in 
+Ihren HELIUM V Gutschrifts-Ansichten die Werte, Mengen, Preis positiv 
+dargestellt werden.<br></span>
+<span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Times New Roman; mso-fareast-language: DE">
+Bitte beachten Sie, dass dies derzeit nur für die deutschsprachigen Belege 
+verwendet wird, da im internationalen Gebrauch die Credit-Note üblich ist.<br>
+<br></span></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Times New Roman; mso-fareast-language: DE">Bitte
+wenden Sie sich an Ihren HELIUM V Betreuer, falls Ihre angepassten Belege nicht
+den gewünschten Richtlinien entsprechen.</span></p>
 
 </body>
 

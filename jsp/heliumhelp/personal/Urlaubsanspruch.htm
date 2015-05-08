@@ -1,0 +1,577 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Urlaubsanspruch</title>
+</head>
+
+<body>
+
+<h1 style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Urlaubsanspruch</h1>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie wird der Urlaub richtig eingegeben?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Urlaubsanspruch Ihrer Mitarbeiter wird im Personal im Reiter Urlaubsanspruch
+definiert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Grundsätzlich
+ist der Urlaubsanspruch Jahresweise anzugeben. Aufgrund der derzeitigen
+gesetzlichen Regelungen rechnet HELIUM V den Urlaubsanspruch immer im
+Kalenderjahr.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+eingetragene Urlaubsanspruch wird immer automatisch in das nächste Kalenderjahr
+übertragen, wenn nicht für das &quot;nächste&quot; (oder das übernächste)
+Kalenderjahr der Urlaubsanspruch neu definiert wird. Auch wenn es sich bei dem
+ersten erfassten Jahr von der Erfassung her um ein Rumpfjahr handelt, so wird
+von HELIUM V der für das (Rumpf-)Jahr angegebene Urlaubsanspruch so wie er
+definiert ist für die Berechnung verwendet. Eine Aliquotierung wird NICHT
+vorgenommen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<b>Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte, das die Urlaubsabrechnung von HELIUM V auf der derzeit aktuellen
+gesetzlichen Abrechnung des Jahresurlaubs aufbaut. Das bedeutet der
+Urlaubsanspruch entsteht immer zum 1.1. des Kalenderjahres.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<b>Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Softwareversionen ab 2009 wird der Urlaubsanspruch bei Eintritten während
+des Kalenderjahres aliquotiert, um auch für diese Mitarbeiter während des
+ersten Jahres eine richtige Anzeige des aliquoten Anspruches zu erreichen. Siehe
+dazu unten Berechnungsbeispiel.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<b>Hinweis:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Softwareversionen ab 2009 erfolgt für die Ansprüche ab 2009 die Berechnung
+der Urlaubsanspruchsstunden automatisch anhand der hinterlegten Zeitmodelle und
+der Urlaubstage. D.h. es wird nur mehr der Urlaubsanspruch in Tagen für das
+gesamte Kalenderjahr eingegeben. Von HELIUM V wird bei jeder Urlaubsberechnung
+der Anspruch von Tagen auf Stunden anhand der hinterlegten Zeitmodelle für das
+Berechungsjahr umgerechnet. Um die vor Einführung dieser Rechenmethode manuell
+eingegebenen Stunden nicht zu verändern, wird diese Berechnung erst ab dem Jahr
+2009 durchgeführt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte den Mandantenparameter URLAUBSTAGE_PRO_WOCHE. Mit diesem wird
+definiert, wieviele Urlaubstage eine Urlaubswoche hat. Per default steht dieser
+Wert auf 5 Tage.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie bitte auch, dass für Mitarbeiter die z.B. nur drei Arbeitstage in der Woche
+arbeiten, trotzdem 25Tage (wenn der URLAUBSTAGE_PRO_WOCHE auf 5 Tage steht) für
+fünf Wochen Urlaub definiert werden müssen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>WICHTIG:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
+gleichzeitige Betrachtung von Urlaubstagen und Urlaubsstunden ist nur für
+Zeitmodelle gültig, welche die gleiche Anzahl an Arbeitstagen haben, wie im
+Mandantenparameter URLAUBSTAGE_PRO_WOCHE definiert. Bei allen anderen
+Zeitmodellen müssen Sie festlegen, ob für Sie die Auswertung nach Urlaubsstunden
+oder nach Urlaubstagen relevant ist. Anhand dieser Festlegung sind dann entweder
+die Urlaubsanspruchstage anhand der Wochen (25Tage) oder anhand der Arbeitstage
+je Zeitmodell einzugeben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Beispiel:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mandantenparameter
+URLAUBSTAGE_PRO_WOCHE steht auf 5 Tage / Woche.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+ist ein Urlaubsanspruch von 25Tagen eingetragen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter hat ein Zeitmodell mit 25Std pro Woche, verteilt auf 3 Arbeitstage.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Stundenweise Urlaubsabrechnung ergibt die richtige Stundenzahl, anhand des
+Jahresanspruches von 125Std.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Tageweise Urlaubsabrechnung ergibt eine falsche Anzahl, da ja ein Anspruch von
+25Tagen / Kalenderjahr definiert wurde. Wenn Tageweise abgerechnet werden
+sollte, so müssen 15 Urlaubstage als Anspruch definiert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter hat ein Zeitmodell mit 25Std pro Woche, jedoch verteilt auf 5
+Arbeitstage.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Stundenweise Urlaubsabrechnung ergibt die richtige Stundenzahl, anhand des
+Jahresanspruches von 125Std.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Tageweise Urlaubsabrechnung ergibt die richte Tagesanzahl, da auch der Anspruch
+von 25Tagen / Kalenderjahr richtig definiert ist.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Urlaubsanspruch"></a>Urlaubsanspruch
+Stundenweise, Tageweise oder Wochenweise?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+bereits oben ausgeführt ist der Urlaub um den bezweckten Wert der Erholung zu
+haben laut Gesetzgeber Tagesweise zu geben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Urlaubsanspruch wird jedoch in unterschiedlichen Ländern unterschiedlich
+gehandhabt. Das bedeutet:</p>
+<div align="left">
+  <table border="1" width="700" height="17">
+    <tr>
+      <td width="700" height="17">Land</td>
+      <td width="700" height="17">Berechnungsart</td>
+      <td width="700" height="17">Anspruch / Kalenderjahr</td>
+    </tr>
+    <tr>
+      <td width="700" height="17">Österreich</td>
+      <td width="700" height="17">Wochenweiser Urlaubsanspruch</td>
+      <td width="700" height="17">5 Wochen</td>
+    </tr>
+    <tr>
+      <td width="700" height="17">Deutschland, Schweiz</td>
+      <td width="700" height="17">Tageweiser Urlaubsanspruch</td>
+      <td width="700" height="17">24 Tage</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+grundsätzliche Aufgabenstellung für alle beteiligten Personen ist, wie wird
+mit wechselnden Zeitmodellen umgegangen, also wieviele Tage Urlaubsanspruch hat
+ein Mitarbeiter im gesamten Kalenderjahr, wenn er einige Zeit ein Zeitmodell mit
+drei Arbeitstagen hat und dann z.B. eines mit fünf Arbeitstagen. Hier hilft die
+wöchentliche Betrachtung.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daher
+wird in HELIUM V nur mehr der Jahresurlaubsanspruch auf Wochenbasis
+abgespeichert. Die angezeigten und eingebbaren Urlaubstage sind eine reine
+Rechenhilfe, welche auf einer fünf Tage Woche beruhen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daraus
+ergibt sich, dass z.B. für 24 Urlaubstage pro Jahr eine Wochenbasis von 4,8
+Wochen angezeigt und auch als Grundlage verwendet wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab
+dem Urlaubsanspruch für 2009 wird dieser, aber der Build-Version 5763 wie folgt
+berechnet:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>a.)
+Stundenweise-Betrachtung:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Relevante
+Datenfelder:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a1.)
+Anzahl der Urlaubsanspruchs-Wochen des zu berechnenden Jahres (Kommt aus
+Personal/Urlaubsanspruch des zu berechnenden Jahres) (im Normalfall 5 Wochen)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a2.)
+Die Sollstunden der jeweiligen Zeitmodelle (von Montag bis Sonntag ohne
+Feiertage)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+einfachste Fall ist hiermit folgender: Wenn jemand das ganze Jahr keinen
+Eintritt/Austritt hat und immer das gleiche Zeitmodell hat, dann ist der
+Jahresurlaubsanspruch wie folgt:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Jahresurlaub in Wochen (a1.) * Sollstunden des Zeitmodells (a2.) = z.B.
+5*38,5=192,5</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+der Eintritt nun nach dem 1. Jänner erfolgt, bzw. mehrere Zeitmodelle während
+eines Jahres verwendet werden, dann werden die Urlaubsansprüche anteilsmäßig
+addiert:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Beispiel:</u></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eintritt
+am 1.Mai mit Zeitmodell 38,5 Stunden, Zeitmodellwechsel am 8. August mit 30
+Stunden:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(Jahresurlaub
+in Wochen (a1.) * Anzahl der Tage des Zeitmodells / Anzahl der Tage im Jahr) *
+Sollstunden des Zeitmodells (a2.)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">ergibt:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zeitraum
+1: 31.Mai&nbsp; bis 7.Aug. (5*&nbsp; 69/365)*38,5 = 36,39<br>
+Zeitraum 2: 8.Aug. bis 31.Dez. (5*145/365)*30&nbsp;&nbsp;&nbsp; = 59,58<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 95,97 Stunden Urlaubsanspruch für dieses Kalenderjahr</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>b.)&nbsp;
+Tagesweise-Betrachtung:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+wird analog zur Stundenweisen Betrachtung berechnet. Es wird jedoch ein weitere
+Datenfelder aus der Definition des Zeitmodels herangezogen:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Relevante
+Datenfelder:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b1.)
+Urlaubstage pro Woche</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Formel lautet nun:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(Jahresurlaub
+in Wochen (a1.) * Anzahl der Tage des Zeitmodells / Anzahl der Tage im Jahr) *
+Urlaubstage pro Woche (b1.)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u>Beispiel:</u></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eintritt
+am 1.Mai mit 5 Tagen Urlaub pro Woche, Zeitmodellwechsel am 8. August mit 4
+Tagen Urlaub pro Woche</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zeitraum
+1: 31.Mai&nbsp; bis 7.Aug. (5*&nbsp; 69/365)*5 = 4,72<br>
+Zeitraum 2: 8.Aug. bis 31.Dez. (5*145/365)*4 = 7,94<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=12,66 Tage Urlaubsanspruch für dieses Kalenderjahr</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Anzahl
+der Tage des Zeitmodells zu obigem Beispiel: 31.5. - 7.8. = 1+30+31+7=69</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Urlaubsanspruch
+und vorübergehende Entlassung von Mitarbeitern?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werden
+Mitarbeiter zeitweise (5Wochen) abgemeldet und danach wieder im Unternehmen
+beschäftigt, so ist in aller Regel der Mitarbeiter bei Austritt vollständig
+abzurechnen. D.h. es werden auch alle Urlaubs- und Gleitzeitansprüche
+ausbezahlt. Tritt der Mitarbeiter wieder ins Unternehmen ein, so hat er ein
+neues Eintrittsdatum. Durch die aliquote Berechnung des Urlaubsanspruches ergibt
+sich daraus, dass sein Urlaubsanspruch für das Rumpfjahr eben aliquot zum neuen
+Eintritt errechnet wird.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Halbtag"></a>Q:
+Wie ist der Urlaub für Weihnachten und Silvester richtig einzugeben?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Für diese Tage (24.12 &amp; 31.12.) sind, zumindest in Österreich, einige
+Regeln zu beachten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+sehr vielen Unternehmen wird dieser Tag gänzlich freigeben und für die, über
+die vom Unternehmen freizugebenden Stunden hinaus, anfallenden Stunden wird
+Urlaub oder Zeitausgleich genommen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+vielen Kollektivverträgen ist definiert: es ist ab 12:00 frei zugeben.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+Mitarbeitern mit festen Zeiten ist dies noch relativ einfach, bei Mitarbeitern
+mit Gleitzeitmodellen, stellt sich die Frage, von welchem Stundenausmaß
+auszugehen ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Von
+den Unternehmen wird dies üblicherweise so gehandhabt, dass für diesen Tag ein
+halber Urlaubstag (ab)gebucht wird und die andere Hälfte des Tages wird vom
+Unternehmen als bezahlte Nichtanwesenheit gebucht.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
+sehr pragmatische Lösung ist, dass z.B. für den 24.12. ein ganzer Feiertag
+eingetragen wird und für den 31.12. ein ganzer Urlaubstag gebucht wird.
+Betrachtet man beide Tage gemeinsam, ist unabhängig auf welchen Wochentag diese
+beiden Tage fallen, die Abrechnung zum 31.12. richtig. Muss taggenau gebucht
+werden, so ist Folgendes zu beachten, wobei es darum geht, dass sowohl die
+Urlaubstage als auch die tatsächlich freigegebenen Stunden richtig verwaltet
+werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Voraussetzung:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Tagesart Halbtag ist in den <a href="#Tagesarten">Tagesarten</a> definiert und
+im Betriebskalender sind die Feiertage mit der Tagesart Halbtag eingepflegt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
+den Sonderzeiten des jeweiligen Mitarbeiters ist ein Eintrag mit einem halben
+Tag Urlaub gebucht.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Halbtag ist von den Sollzeiten her so definiert, dass er exakt die halben
+Sollstunden eines sonst üblichen Arbeitstages (z.B. des Montags) hat.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Halbtagsurlaub2009.gif" width="946" height="67"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Haben
+alle Tage der Arbeitswoche (des Gleitzeitmodells) eine gleiche Sollzeit, so
+werden, wie oben dargestellt, die Urlaubsstunden, die Urlaubstage und auch die
+Sollstunden dieses Tages entsprechend richtig dargestellt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kompliziert
+wird es, wenn die beiden Tage z.B. auf einen Freitag fallen, an dem
+normalerweise kürzer gearbeitet wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Meistens
+kommt hier der Wunsch / die Forderung dazu, dass bis Mittag gearbeitet werden
+sollte, trotzdem ein halber Urlaubstag gebucht werden sollte und dass die
+Gleitzeit und Urlaubsstunden auch noch stimmen sollten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+nur der Halbtag mit einem halben Urlaubstag für diesen Tag eingetragen, so
+stellt sich die Zeitabrechnung wie folgt dar:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Halbtagsurlaub2010.gif" width="947" height="79"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+aus obiger Darstellung ersichtlich, wird die Tagesart Halbtag speziell
+behandelt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+es werden die Sollstunden der Tagesart (hier 4,25) mit den Sollstunden eines
+gleichen Wochentages (hier 4,50) verglichen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Stunden die über die Sollstunden des Halbtages hinaus gehen, werden als
+Feiertagsstunden gewertet und entsprechend gutgeschrieben. Da für diesen Tag
+zusätzlich ein halber Urlaubstag gebucht wurde, wird der halbe Tag aufgrund des
+Tages (in diesem Falle Freitag mit 4,50 Sollstunden) als Urlaubsverbrauch
+eingetragen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Üblicherweise
+wird in vielen Unternehmen gedanklich dieser Tag nur ein halber Urlaubstag
+betrachtet. D.h. dass die Differenz der Urlaubsstunden zu den nicht geleisteten
+Sollstunden (bis 12:00) ebenfalls gutzuschreiben ist.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel
+zu obiger Darstellung:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mitarbeiter
+arbeitet am Freitag üblicherweise von 8:00-12:30</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Am
+Hl. Abend ist ab 12:00 freizugeben.</p>
+<div align="left">
+  <table border="1" width="498" height="9">
+    <tr>
+      <td width="816" height="9">Halbtags Sollstunden</td>
+      <td width="105" height="9">4,25</td>
+    </tr>
+    <tr>
+      <td width="816" height="9">abzgl. Ftg. Stunden&nbsp;</td>
+      <td width="105" height="9">0,25</td>
+    </tr>
+    <tr>
+      <td width="816" height="9">abzgl. Urlaubsstd.</td>
+      <td width="105" height="9">2,25</td>
+    </tr>
+    <tr>
+      <td width="816" height="9">Noch einzutragende Gutstunden<br>
+        Diese werden vom Unternehmen dem Mitarbeiter geschenkt.</td>
+      <td width="105" height="9">1,75 Std</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Buchen
+Sie diese Gutstunden im Modul Personal, Auswahl des jeweiligen Mitarbeiters in
+der Auswahlliste und dann im Reiter Stundenabrechnung.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann auch Zeitausgleich an 24./31. Dezember eingegeben werden?&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+den 24./31. wird in der Regel die Tagesart Halbtag verwendet und dies im
+Betriebskalender definiert. In den Zeitmodellen muss nun als Sollzeit für den
+Halbtag 4Std an Sollzeit hinterlegt sein (siehe oben).<br>
+Das bedeutet nun, wenn für das Datum ein (ganzer) Tag Zeitausgleich definiert
+wird, so werden nur die Sollstunden, die ja mit den vier Stunden nur dem halben
+Tag entsprechen, an Zeitausgleichsstunden (oder auch andere Sondertätigkeit an
+dem Tag eingetragen ist) gebucht.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Es wurde der Urlaubsanspruch geändert, diese Änderungen wirken jedoch nicht?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wurden im Personal, Urlaubsanspruch neue Daten für die Person hinzugefügt,
+bzw. bestehende geändert, so werden die daraus abgeleiteten Daten erst bei der
+nächsten Berechnung des Urlaubsanspruches aktualisiert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
+wenn z.B. der Jahresanspruch geändert wurde, aber der ermittelte Anspruch noch
+nicht aktualisiert wurde, so muss die Aktualisierung durchgeführt werden. Diese
+Aktualisierung = Neuberechnung des Urlaubsanspruches erfolgt immer dann, wenn
+Sie entweder im Personal auf <img border="0" src="Urlaubsanspruch_jetzt_berechnen.gif" width="232" height="22">
+Anspruch aliquot (anteilig) bzw. Ende des Jahres klicken oder wenn in der
+Zeiterfassung unter Info, Monatsabrechnung eine Monatsabrechnung für das
+jeweilige Jahr ausgedruckt wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erst
+danach stimmt die Anzeige mit den tatsächlich hinterlegten Werten überein.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Nachträgliche Aufrollung / Änderung von Urlaubsansprüchen über den
+Jahreswechsel hinweg?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Es kommt manchmal vor, dass man erst bei der Abrechnung der Mitarbeiter
+feststellt, dass der Jahresübertrag nicht wie gewünscht ausfällt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Meistens
+ist die Situation die, dass bei einem Nachdruck der Monatsabrechnung des alten
+Jahres eine Differenz zum Ausdruck im nun aktuellen Jahr festgestellt wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+könnten die Daten dazu z.B. wie folgt aussehen:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ausdruck
+im aktuellen Jahr:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaubsanspruch_falsch1.gif" width="367" height="141"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ausdruck
+(zum faktisch gleichen Zeitpunkt) für das vergangene Jahr:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaubsanspruch_falsch2.gif" width="367" height="138"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+man sieht, ergibt sich bei der Dezemberabrechnung ein Rest von 29,5
+Urlaubstagen. Im Ausdruck des Folgejahres steht aber 31 Tage. Die Ursache dafür
+ist, dass im Reiter Urlaubsanspruch der &quot;früher&quot; errechnete
+Resturlaub bis Ende des Jahres auf gesperrt (Gefroren) gesetzt wurde. Das
+bedeutet, dass, egal welche Werte HELIUM V ausrechnet, es ist für die weitere
+Berechnung der (manuell) hinterlegte Wert zu verwenden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaubsanspruch_falsch3.gif" width="720" height="175"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+ist nun für die Korrektur vorzugehen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.)
+entfernen Sie die Haken bei Gesperrt (Ändern, Haken raus, speichern)</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">2.)
+Drucken Sie die Monatsabrechnung zum Ende des alten Jahres zumindest in die
+Vorschau.<br>
+Klicken Sie für die Aktualisierung auf die oberen Aktualisierungspfeile <img border="0" src="Urlaubsanspruch_falsch4.gif" width="48" height="36">.<br>
+Sie finden nun den erwarteten Wert unter Resturlaub.<br>
+<img border="0" src="Urlaubsanspruch_falsch5.gif" width="725" height="172"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.)
+Drucken Sie die Monatsabrechnung des aktuellen Jahres. Nun finden Sie auch hier
+den entsprechenden Übertrag.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaubsanspruch_falsch6.gif" width="367" height="139"></p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann solch eine Situation auch auftreten, ohne dass das Gesperrt angehakt ist:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja und zwar immer dann, wenn im alten Jahr Änderungen, in diesem Falle beim
+Urlaub gemacht werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beachten
+Sie, das generell bei Änderungen in alten Zeiten, für die die Monatsabrechnung
+bereits gemacht wurde, immer zwingend erfordern, dass jede einzelne
+Monatsabrechnung von der Änderung bis hin zur aktuellen Monatsabrechnung in der
+chronologisch richtigen Reihenfolge, also die älteste zuerst und danach die
+jeweils unmittelbar darauf folgende zumindest in die Druckvorschau gedruckt
+werden. Nur dadurch wird der monatliche Zwischenstand aktualisiert.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Was bedeuten die einzelnen Zeilen in der Urlaubsabrechnung:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Urlaubsanspruch.gif" width="304" height="173"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<div align="left">
+  <table border="1" width="758" height="20">
+    <tr>
+      <td width="331" height="20">Ab Jahr</td>
+      <td width="1168" height="20">Der Urlaubsanspruch wird ab diesem Jahr
+        gerechnet und automatisch beim Jahreswechsel in das neue Jahr
+        übertragen.</td>
+    </tr>
+    <tr>
+      <td width="331" height="20">Jahresanspruch in Wochen</td>
+      <td width="1168" height="20">Angabe des Urlaubsanspruches in Wochen.
+        Daneben finden Sie die Angabe des Urlaubsanspruches in Tagen. Beachten
+        Sie für diese wechselseitige Umrechnung dass wir hier von fix 5Tagen
+        für eine Urlaubswoche ausgehen.<br>
+        Geben Sie hier immer den vollen Urlaubsanspruch für das ganze
+        Kalenderjahr ein.</td>
+    </tr>
+    <tr>
+      <td width="331" height="20">Ermittelter Anspr. lt. ZM. in Tagen</td>
+      <td width="1168" height="20">Ermittelter Urlaubsanspruch laut Zeitmodell
+        in Tagen<br>
+        Aufgrund des Eintrittsdatums des Mitarbeiters und seines / seiner
+        Zeitmodelle(s) werden die tatsächlichen Urlaubstage berechnet.<br>
+        Beachten Sie dazu:&nbsp;<br>
+        - im Zeitmodell, Detail, Urlaubstage pro Woche<br>
+        - Parameter: ERWEITERTER_URLAUBSANSPRUCH</td>
+    </tr>
+    <tr>
+      <td width="331" height="20">Tage zusätzlich</td>
+      <td width="1168" height="20">Definieren Sie hier die Urlaubstage, welche
+        dem Mitarbeiter zusätzlich gewährt werden. Diese Zahl kann, z.B. bei
+        Datenübernahmen, auch negativ sein.</td>
+    </tr>
+    <tr>
+      <td width="331" height="20">Ermittelter Anspr. lt. ZM. in Stunden</td>
+      <td width="1168" height="20">Ermittelter Urlaubsanspruch laut Zeitmodell
+        in Stunden<br>
+        Analog zu ermittelter Urlaubsanspruch in Tagen, jedoch unter
+        Berücksichtigung der Stunden des / der Zeitmodelle(s) für das
+        entsprechende Jahr</td>
+    </tr>
+    <tr>
+      <td width="331" height="20">Stunden zusätzlich</td>
+      <td width="1168" height="20">Definieren Sie hier die Urlaubsstunden,
+        welche dem Mitarbeiter für das Jahr zusätzlich gewährt werden. Auch
+        diese Zahl kann negativ sein.</td>
+    </tr>
+    <tr>
+      <td width="331" height="20">Eintritt</td>
+      <td width="1168" height="20">Hier wird zu Ihrer Information das letzte
+        Eintrittsdatum des Mitarbeiters angezeigt.</td>
+    </tr>
+  </table>
+</div>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+In der Monatsabrechnung wird der Resturlaub nicht richtig übernommen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Im Reiter Urlaubsanspruch des jeweiligen Mitarbeiters im Modul Personal wird im
+Detail, neben den Anspruchsdaten der zum Jahresende errechnete Urlaubsanspruch
+angezeigt.&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Personal_Urlaub_gefroren.jpg" width="416" height="76"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
+Daten werden bei jeder Monatsabrechnung und bei jedem Klick auf Anzeige des
+Urlaubsanspruches neu berechnet. Diese Daten sind die jeweilige Ausgangsbasis
+für den Urlaubsrest des Folgejahres, also der Urlaubsübertrag für das
+nächste Jahr.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+das darunter angeführte Gesperrt (gefroren) nicht angehakt, so werden diese
+Daten bei jeder Berechnung (siehe oben) aktualisiert. Sind diese als Gesperrt
+markiert, so werden diese Daten von HELIUM V nicht aktualisiert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
+kann dazuführen, dass ein eventueller Urlaubsübertrag nicht wie erwartet
+durchgeführt wird.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Bei
+den Monatsabrechnungen wird immer der aktuell errechnete Wert angedruckt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Überträge werden jedoch von den gespeicherten (und eventuell eingefrorenen und
+daher möglicherweise falschen Werten) genommen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Der Mitarbeiter hat zuwenig Urlaubstage?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ausgangsbasis:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter ist am 2.11. eingetreten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Er
+hat einen Jahres-Urlaubsanspruch von 5Wochen</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Er
+arbeitet immer kurze / lange Woche abwechselnd. D.h. kurze Woche = 4Arbeitstage,
+lange Woche = 5Arbeitstage</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Daraus
+ergibt sich ein Urlaubsanspruch von 3,70 Tagen. Warum ?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nach
+obiger Formel 5 x 5 / 365 * 5 = 0,3425 Tage pro langer Woche und 5x5/365*4 =
+0,2740</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wir
+haben 5 lange und 4 kurze Wochen = 5x0,3425 + 4x0,2740 = 2,80 Tage</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">(Jahresurlaub
+in Wochen (a1.) * Anzahl der Tage des Zeitmodells / Anzahl der Tage im Jahr) *
+Urlaubstage pro Woche (b1.)</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Erweiterter Urlaubsanspruch</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Parameter ERWEITERTER_URLAUBSANSPRUCH wird die Art der Berechnung des Urlaubes
+definiert:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>0
+... Standard</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Steht
+dieser Parameter auf 0, was der Standard Wert ist, so gilt die oben beschriebene
+Berechnung des Urlaubsanspruches, welche mit dem Kalenderjahr harmoniert</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>1
+... Erweiterter Urlaubsanspruch</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In manchen Unternehmen ist es noch immer üblich, dass Mitarbeiter bei einem
+Eintritt während der ersten Jahreshälfte für dieses Jahr den vollen
+Urlaubsanspruch erhalten. Das bedeutet es wird im Eintrittsjahr bei einem Eintritt bis inkl. 30.6.
+des Eintrittsjahres der volle Anspruch gerechnet. Bei einem Eintritt ab dem 1.7.
+wird der Urlaub wie üblich aliquotiert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Tritt
+ein Mitarbeiter in der ersten Jahreshälfte ein, so ist zur richtigen Berechnung
+der Urlaubstage die Definition des Zeitmodells für den Mitarbeiter ab 1.1. des
+Jahres zwingend erforderlich.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>2
+... Urlaubsanspruch nach TVÖD</b></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Berechnung
+des Urlaubsanspruches nach dem Tarifvertrag des öffentlichen Dienstes in
+Deutschland.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dieser
+besagte, dass ein Mitarbeiter xx Tage Urlaubsanspruch für ein ganzes Jahr hat.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Tritt
+der Mitarbeiter während des Jahres ein, so erhält er 1/12tel des
+Jahresurlaubsanspruches für jedes volle(!!) Monat, welches er im Unternehmen
+ist. Der errechnete Anspruch wird kaufmännisch auf eine ganze Zahl gerundet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Beispiel:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter hat 29Tage Jahresurlaub</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Er
+tritt am 1.5. ein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+gebühren ihm 29/12*8 Urlaubstage = 19,33 Tage. Ergibt gerundet 19Tage</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Mitarbeiter tritt erst am 2.5. ein.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es
+gebühren ihm 19/12*7 Urlaubstage = 19,91 Tage. Ergibt gerundet 17Tage</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+
+</body>
+
+</html>

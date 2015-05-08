@@ -1,0 +1,205 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>grafische Auslastungsplanung</title>
+</head>
+
+<body>
+
+<h1>grafische Auslastungsplanung</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zusätzlich neben den 
+vielen zur Planung der Fertigung direkt in HELIUM V integrierten Werkzeugen 
+steht auch die grafische Auslastungsplanung zur Verfügung. Damit können die 
+Arbeitsgänge der Fertigungsaufträge / Lose direkt im Browser quasi mit der Maus 
+geplant / verteilt / eingeteilt werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Es können alle HTML5 
+fähigen Browser verwendet werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Geschwindigkeit 
+von Datenabruf, Aufbau der Grafiken und dem zurückspeichern der geänderten 
+Arbeitsgänge hängt von der Leistungsfähigkeit der beteiligten Rechner ab. Für 
+eine vernünftige Darstellung raten wir Bildschirme mit mindestens 1920 x 1080 zu 
+verwenden. Eine Darstellung auf kleineren Bildschirmen ist durchaus möglich, ob 
+damit die Planungsarbeit vernünftig machbar ist, muss die Praxis zeigen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie, 
+dass in der Regel das Verschieben der Arbeitsgänge, also der eigentliche 
+Planungsvorgang nur an einem Arbeitsplatz, von einer Person, gemacht werden 
+sollte.<br>Ein gemeinsamer Planungsvorgang, in dem z.B. jeder Mitarbeiter nur 
+seine Maschinengruppe behandelt ist vorstellbar.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Wie funktioniert 
+die Auslastungsplanung?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beim Start werden 
+nach der Anmeldung die Daten per WebService Schnittstelle vom HELIUM V Server 
+geholt und mittels Browser-App dargestellt. Nun können Sie die Arbeitsgänge mit 
+der Maus sowohl zeitlich als auch zwischen den Maschinen verschieben.<br>
+Wichtig: Ab dem Abruf der Daten findet aus Geschwindigkeitsgründen keine 
+Interaktion mehr mit dem HELIUM V Server statt. D.h. wenn in der Zwischenzeit 
+z.B. Lose storniert werden oder erledigt werden oder es sind neue Lose / 
+Arbeitsgänge hinzugekommen, so wird dies erst nach dem nächsten Refresh 
+entsprechend dargestellt. Beim Speichern der verschobenen Arbeitsgangtermine 
+werden eventuell nicht mehr änderbare Daten erkannt und es wird eine 
+entsprechende Hinweisliste ausgegeben. In diesem Falle gehen wir davon aus, dass 
+die von Ihnen durchgeführte Planung, z.B. durch einen Refresh überprüft wird.<br></p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Start der 
+grafischen Auslastungsplanung</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">wählen Sie Ihren 
+bevorzugten HTML5 Browser und geben Sie in die Adressleiste
+<a href="http://HELIUMV_SERVER:8280/hvcapacity/">
+http://HELIUMV_SERVER:8280/hvcapacity/</a> ein. Ersetzen Sie bitte 
+HELIUMV_SERVER durch den Namen des bei Ihnen installierten HELIUM V Servers.<br>
+Nun erscheint der Anmeldedialog. Geben Sie bitte Ihren Benutzernamen und 
+Kennwort ein und klicken Sie anschließend auf anmelden.<br>
+<img alt="" src="Grafische_Auslastung1.gif" width="254" height="148"><br><br>Nun werden die Daten 
+geladen, was durch<br><img alt="" src="Grafische_Auslastung2.gif" width="417" height="240"><br>und dem 
+Fortschrittsbalken unten angezeigt wird.<br><br>Je nach Menge der zu 
+verarbeitenden Daten erscheint nach einigen Sekunden / Minuten die grafische 
+Auslastungsplanung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Die Bedienelemente 
+der grafischen Auslastungsplanung</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="Grafische_Auslastung3.gif" width="1055" height="143"><br><br>Im oberen Bereich können das 
+Datum und der bearbeitet Zeitraum gewählt werden.<br>Mit speichern können die 
+geänderten Arbeitsgänge in Ihrem HELIUM V Datenbank zurückgeschrieben werden, 
+bzw. mit Rückgängig können einzeln die verschobenen Arbeitsgänge wieder an ihren 
+ursprünglichen Platz zurückgesetzt werden.<br>Durch einen Klick auf Account 
+(rechts oben) kommen Sie in den Abmelde-Dialog. Bitte beachten Sie, dass die 
+Anmeldung mit der grafischen Auslastung so wie jeder HELIUM V Client einen 
+Benutzer in ihrem Benutzerzähler verbraucht. Melden Sie sich daher immer 
+entsprechend ab, wenn die grafische Auslastungsplanung nicht benötigt wird.<br>
+<br>Beim Start der grafischen Auslastung wird das aktuelle Datum vorgeschlagen. 
+Um das Startdatum zu ändern, klicken Sie bitte mit der Maus in das Datumsfeld 
+und wählen Sie das gewünschte Datum. Wenn man eine Übersicht über z.B. die in 
+der letzten Woche noch nicht vollständig abgeschlossenen Arbeitsgänge bekommen 
+möchte, so kann ein Datum in der Vergangenheit durchaus von Vorteil sein. Siehe 
+dazu bitte auch unten Farben.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Verschieben der 
+Arbeitsgänge</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Um einen Arbeitsgang 
+zu verschieben, klicken Sie diesen bitte mit der linken Maustaste an und 
+schieben Sie diesen auf die neue Position.<br>Um einen Arbeitsgang auf eine 
+andere Maschine zu verschieben, reichts es diesen in die andere Zeile zu 
+verschieben. Ob dies fachlich vernünftig ist, muss von Ihnen entschieden werden.<br>
+Sollte ein Arbeitsgang am Beginn des jeweiligen Tages eingereiht werden, so 
+drücken Sie bitte vor dem Fallen-lassen (dem Loslassen der Maustaste) die 
+Großschreib-Taste (Shift).</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Werden die 
+Maschinenzeitmodelle berücksichtigt?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ja. D.h. es wird ein 
+Tag immer mit der gleichen Breite dargestellt. Die tatsächlich verfügbaren 
+Produktions-/Maschinenstunden für den jeweiligen Kalendertag hängen für jede 
+Maschine vom hinterlegten Maschinenzeitmodell ab.
+<a href="../Zeiterfassung/Maschinenzeiterfassung.htm#Maschinenzeitmodell">Siehe 
+dazu auch</a>. Das bedeutet, dass die Balkenbreite des Arbeitsganges massiv 
+variieren kann, da sich diese Breite ja aus den verfügbaren Stunden ergibt.<br>
+Hinweis: Für den Bereich der noch nicht Maschinen zugeordneten Arbeitsgänge, 
+wird ein Zeitmodell von 8Std je Kalendertag, inkl. Sa, So, Feiertag angenommen, 
+da diese Arbeitsgänge sowieso eingeplant werden müssen.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Werden von HELIUM V 
+fachlich logische Zusammenhänge zwischen den Arbeitsgängen geprüft?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei der grafischen 
+Auslastungsplanung gehen wir davon aus, dass ein entsprechend geschulter und 
+fachlich kompetenter Mitarbeiter diese Arbeiten durchführt. Da es sehr viele 
+Kombinationsmöglichkeiten in der Reihenfolge von Arbeitsgängen gibt, haben wir 
+keine wie immer gearteten Verriegelungen vorgenommen. Es werden nur sehr grobe 
+Überschreitungen von Terminen angezeigt (siehe Farben).</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Markieren aller 
+Arbeitsgänge eines Loses</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Klicken Sie dazu 
+einen der Arbeitsgänge an und klicken Sie dann auf die angezeigte Losnummer. Nun 
+werden die entsprechenden Arbeitsgänge in einer etwas dunkleren Farbe 
+dargestellt.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Farben und deren 
+Bedeutung für die Arbeitsgänge</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">grün ... normale 
+Darstellung</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">blau ... dieser 
+Arbeitsgang hätte in der Vergangenheit, vor dem Beginn der Darstellung bereits 
+begonnen werden sollen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">rot ... dieser 
+Arbeitsgang überschreitet den Ausliefertermin des zugehörigen Kundenauftrages.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">gepunktete Umrandung 
+... dies bedeutet, dass der Arbeitsgang gegenüber dem original Zeitpunkt bereits 
+verschoben wurde. D.h. wird die Planung zurück-gespeichert, so wird der 
+Starttermin des Arbeitsganges verändert.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Anzeige der 
+Maschinengruppen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">am linken Rand wird 
+die interne Nummer der Maschinengruppe angezeigt. Um die Bezeichnung zu sehen, 
+bewegen Sie bitte die Maus direkt auf die interne Nummer und warten kurz. Es 
+wird der Name als Tooltip angezeigt.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Was bedeutet die 
+unterschiedliche Höhe der Maschinen?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Damit wird die 
+Auslastung / Überlastung der Maschinen signalisiert.<br>
+<img alt="" src="Grafische_Auslastung4.gif" width="727" height="358"><br><br>D.h. ist eine Maschine so 
+verplant, dass keine Überlast gegeben ist, so ist diese nur eine Zeile hoch (so 
+wie Stanze bzw. Trockenanlage).<br>Sind jedoch terminliche Kollissionen, so 
+werden die Überlappenden Arbeitsgänge übereinander dargestellt und die Höhe der 
+Maschine als auch der gesamten Maschinengruppe wird entsprechend größer. D.h. 
+wenn alle Maschinen richtig eingeplant sind, so hat jede Maschine nur die Höhe 
+von einer Zeile.<br>Hinweis: Diese Betrachtung gilt nur für den ausgewählten 
+Zeitraum.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Wo werden Daten zu 
+den Arbeitsgängen angezeigt?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bewegen Sie die Maus 
+über einen Arbeitsgang. Nach ca. einer Sekunde erscheinen weitere Details zu 
+diesem Arbeitsgang. Diese bedeuten:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Los</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Stückliste</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Artikel(nr der 
+Tätigkeit)</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Tätigkeit ... 
+Beschreibung der Tätigkeit</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Dauer [min]: ... 
+Offset (innerhalb des Tages)</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Verfügbar [min]: 
+Verfügbare Arbeitszeit (der Maschine) für den ersten Tag des Arbeitsganges 
+anhand des zu diesem Tag gültigen Maschinenzeitmodells</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">geplanter Beginn: 
+(Datum)</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Aktueller Beginn: 
+(Datum)</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Tag (Spalte): Offest 
+zur Darstellung</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">PlanItemId: Interne 
+Verwaltungsnummer</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Änderung des 
+Betrachtungszeitraumes</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wichtig: Wird während 
+der Planung der Betrachtungszeitraum geändert, so werden die bisher geplanten 
+Daten verworfen.&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Wie kann man 
+Arbeitsgänge ausserhalb des angezeigten Bereiches hinausschieben?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Arbeitsgänge können 
+im gewählten Zeitbereich, z.B. ein Monat, frei hin und her bewegt werden. Der im 
+Browser angezeigte Bereich ist oft kleiner. Um nun einen Arbeitsgang aus diesem 
+Zeitraum hinauszuschieben, ziehen Sie den Arbeitsgang an den rechten Rand. Wenn 
+Sie damit sehr nahe an den Rand kommen, bewegt sich das Fenster selbsttätig nach 
+links bzw. rechts, sodass Sie den Arbeitsgang, im gewählten Zeitbereich 
+einlasten können.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Mit welchen 
+Browsern wurde die grafische Auslastungsplanung geprüft:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">- Firefox Version 
+36.x<br>- Google Chrome Version <br>- Safari Version</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><strong>Hinweis:</strong> 
+Die grafische Auslastungsplanung wird, auch wenn sie auf einem Rechner und mit 
+einem Benutzer gestartet wird, auf dem HELIUM V bereits als Client läuft, als 
+eigener User gezählt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><strong>
+<a name="Reihung der Arbeitsgänge"></a>Hinweis:</strong> Die Reihung der 
+Arbeitsgänge innerhalb des Tages wird unter Versatz MS, im unteren Modulreiter 
+offene AGs abgespeichert. Ein Umreihen, eine Veränderung dieses Wertes wirkt 
+entsprechend für die Anzeige der Tagesauslastung. Das bedeutet, in der Regel 
+wird die Reihenfolge durch die grafische Auslastungsanzeige gegeben.&nbsp;</p>
+
+</body>
+
+</html>

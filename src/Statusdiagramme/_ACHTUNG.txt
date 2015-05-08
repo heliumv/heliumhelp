@@ -1,1 +1,2 @@
 Nur mit DIAW.exe V0.97.1 (oder höher?) bearbeiten.
+Exportieren als PNG geglättet

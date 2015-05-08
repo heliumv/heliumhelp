@@ -7,6 +7,11 @@
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 <title>Artikel</title>
+<style type="text/css">
+.auto-style1 {
+	text-decoration: underline;
+}
+</style>
 </head>
 
 <body>
@@ -67,13 +72,15 @@ ausschlaggebend sind.</p>
   </li>
 </ol>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"> Inventurprotokoll
-und Inventurstand können ausdruckt werden.&nbsp;</p>
+und Inventurstand können ausdruckt werden.&nbsp;Hier stehen Ihnen vielfältige
+Sortiermöglichkeiten, wie zum Beispile nach Lagerplatz zur Verfügung.</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Der
 Inventurstand kann auch manuell verändert werden. Beachten Sie dazu bitte, dass
 dies KEINE Rückwirkungen auf den tatsächlichen Lagerstand hat.</p>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">
+&nbsp;</p>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Wichtig:</b>
 Die oben beschriebene Buchung wird auch zeitrichtige Buchung der Inventur
@@ -161,7 +168,8 @@ eventuelle Korrekturen usw. anzubringen. Hierbei ist zu beachten, dass
 Korrekturen in Inventurpreis und Menge <b>NICHT</b> auf den aktuellen Lagerstand
 wirken.</p>
 
-<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Möglichkeit
 den Zählaufwand zu reduzieren:</p>
@@ -259,9 +267,25 @@ Durchführung der Abwertung klicken Sie im oberen Modulreiter Inventurstand auf <
 Inventur-Preise abwerten.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Für
 die Betrachtung der Abwertungen werden alle Lagerbewegungen mit Ausnahme der
 Handlagerbewegung und der Inventurbuchungen berücksichtigt. Also nicht nur
-Abbuchungen sondern auch Zubuchungen.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Neuberechnung
+Abbuchungen sondern auch Zubuchungen.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Eine
+zusätzliche Variante der Abwertung ist über die Abwertung einzelner Positionen
+umgesetzt.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Wechseln
+Sie in den Reiter Inventurstand, markieren die Zeile des Artikels, den Sie
+abwerten wollen.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Im
+unteren Bildschirmbereich befindet sich die Eingabe des Prozentsatz für die
+Abwertung und klicken auf Speichern.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="abwertung_prozent.JPG" width="163" height="24"><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Zur
+Dokumentation erfassen Sie die Begründung für die Abwertung im Kommentarfeld.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Im
+Anschluss daran wird in der Inventurstand-Liste der Basispreis, die Abwertung
+und der daraus resultierende Inventurpreis angeführt.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="darstellung_abwertung.JPG" width="253" height="43"><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Achtung:
+Wenn die Inventur durchgeführt wird, dann wird die Abwertung der vorherigen Inventur
+(siehe obere Beschreibung, allgemein Abwertung aller Artikel) übernommen (ausser sie ist 0 oder NULL)  und der Inventurpreis sofort abgewertet.
+Wenn nach der
+Inventurdurchführung die Preise abgewertet weren, dann werden hierbei nur Einträge berücksichtigt, bei denen die Abwertung(%)
+geändert wurde, da der Rest bei 'Inventur durchführen' schon abgewertet wurde.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Neuberechnung
 der Inventurpreise<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Bei
-der Durchführung der Inventur wird der aktuelle Gestehungspreis als
+der Durchführung der Inventur wird je nach Einstellung des Parameters INVENTUR_BASISPREIS
+(Gestehungspreis = 0, EK-Preis = 1) wird der aktuelle Preis als
 Inventurpreis in den Inventurstand übernommen. Liegt nun z.B. zwischen dem
 Stichtag der Inventur und der tatsächlichen Durchführung ein zu langer
 Zeitraum, oder wurde die Abwertung mit falschen Parametern durchgeführt, so
@@ -281,9 +305,19 @@ Gestehungspreis ist wird dieser Ablieferungs = Fertigungspreis als Inventurpreis
 Schluss wird die Sperre der Inventurabwertung wieder entfernt, damit der
 Abwertungslauf erneut gestartet werden kann.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Bitte
 beachten Sie, dass mit dieser Funktion alle bisherigen Inventurpreise der
-gewählten Inventur überschrieben werden.
-
-<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">FAQ
+gewählten Inventur überschrieben werden.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">
+Welche Preise werden für die Inventurbewertung verwendet?<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+Grundsätzlich wird für die Bewertung der Inventur der Gestehungspreis als 
+Preisbasis verwendet, da dies der lagertechnisch richtig Preis ist. In einigen 
+Unternehmen ist es üblich, dass die Inventur zum letzten bekannten Einkaufspreis 
+bewertet wird. Dies wird mit dem Parameter INVENTUR_BASISPREIS definiert. Wird 
+dieser auf 1 gestellt, so wird für die Errechnung des Inventurpreises der 
+aktuell gültige Lief1Preis (= aktuell hinterlegter Einkaufspreis des bevorzugten 
+Lieferanten) verwendet. Wenn kein Einkaufspreis hinterlegt ist, wird der
+Gestehungspreis verwendet. Dies wird NUR für Einkaufsartikel und nicht selbst 
+gefertigte Stücklisten angewandt. Für eigen gefertigte Stücklisten wird trotzdem 
+der Gestehungspreis herangezogen.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">FAQ
 zur Inventur:<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Bei
 der Durchführung einer Inventur gilt es alle Waren exakt zu erfassen. Hier ist
 die Trennung zwischen Waren in der Fertigung (Halbfertigfabrikate) und lagernden
@@ -314,7 +348,8 @@ Wechseln Sie in den Reiter Inventurliste, wählen Sie den Artikel aus und
 klicken Sie unten auf ändern.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Geben
 Sie nun die richtige Menge ein.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Ist
 eine Reduktion der Menge nicht mehr möglich, so wurde in der Zwischenzeit der
-Artikel bereits wieder verbraucht.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><b>Hinweis:</b><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Beachten
+Artikel bereits wieder verbraucht.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><b>Hinweis:</b><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Beachten
 Sie, dass bei der Erfassung immer der aktuelle Lagerstand einzugeben ist.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Ein
 Beispiel:<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Inventurstichtag
 31.12.2011<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Durchführung
@@ -326,7 +361,9 @@ dazu, dass vom Inventurstichtag bis zum 23.1. bereits 5 Stk. verbraucht wurden.<
 es ist der heutige Lagerstand zu erfassen, also nicht die 11 Stk. zum 20.12.
 sondern die 6Stk. zum 23.1..<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Beachten
 Sie dazu auch die Anzeige des voraussichtlichen Inventurstandes unter der
-Inventur Erfassungsmenge.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="Voraussichtlicher_Inventurstand.gif" width="298" height="45"><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><b>Hinweis:</b><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Wird
+Inventur Erfassungsmenge.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="Voraussichtlicher_Inventurstand.gif" width="298" height="45"><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><b>Hinweis:</b><p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Wird
 der Fehler erst nach der Durchführung der Inventur festgestellt, so muss der
 Lagerstand per Hand (Handlagerbewegung) korrigiert werden und der Inventurstand
 gleichlautend angepasst werden.<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;
@@ -381,7 +418,8 @@ in der der Ergänzungsdialog deutlich einfacher abgehandelt ist. Gegebenenfalls
 verwenden Sie bitte ergänzend die Inventurerfassung per <a href="LagerbuchungMemor.htm">mobilem
 Barcodescanner</a>.</p>
 
-<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Um
 zum Ende des (Geschäfts-)Jahres sicher zu sein, dass alle Artikel inventiert
@@ -389,8 +427,6 @@ wurden, drucken Sie unter Journal, nichterfasste&nbsp;Artikel eine Liste der
 noch nicht inventierten Artikel mit Lagerstand, oder auch Artikel die keinen
 Lagerstand haben, aus. Siehe dazu auch <a href="#Schritte der Inventur">Schritte
 der Inventur</a> ab Punkt 4.</p>
-
-<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
 Wie werden Seriennummern tragende Artikel erfasst?</p>
@@ -411,17 +447,34 @@ zur Verfügung.</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Sollten schon Seriennummern dieser Liste inventiert worden sein, dann
 erscheint eine Abfrage, ob diese bereits inventierten Seriennummern ausgelassen werden sollen.</p>
 
-<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Sind
 alle Artikel erfasst, also auch jeder einzelne Seriennummern-tragende-Artikel,
 so verwenden Sie bitte das Journal nicht erfasste Artikel. Hier sind auch die
-Seriennummern aufgeführt, die bisher noch nicht erfasst wurden.</p>
+Seriennummern aufgeführt, die bisher noch nicht erfasst wurden. Sind hier noch 
+Seriennummern angeführt, so prüfen Sie bitte ob diese nicht versehentlich 
+übersehen wurden. Sind diese tatsächlich nicht lagernd, so müssen diese mit der 
+Inventurmenge von 0 erfasst und damit vom Lager ausgebucht werden. Die Funktion 
+&quot;Setze Lagerstand der nicht inventierten Artikel auf 0&quot; wird für Serien- und 
+Chargengeführte Artikel aus Sicherheitsgründen nicht angewandt.</p>
 
-<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Erfassen
-Sie alle Artikel, die es tatsächlich gibt nach und führen Sie dann die
-Inventur durch. Hier sollte die Funktion: <img border="0" src="Inventur_Lagerstand_Null_setzen.gif" width="304" height="17">
-verwendet werden. Aber ACHTUNG: dies gilt für alle Artikel.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Wie werden Chargen geführte Artikel erfasst?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Die Inventur von Chargen geführten Artikel geht im wesentlichen nach der 
+gleichen Logik wie die Erfassung der Seriennummern tragenden Artikeln. Auch hier 
+geht es darum jede einzelne Charge zu erfassen. daraus ergibt sich auch, dass 
+Mengenkorrekturen bei vorhandenen Chargen sofort durchgebucht werden. Beachten 
+Sie bitte auch hier, dass vor der Durchführung der Inventur die nicht erfassten 
+Artikel und damit die nicht erfassten Chargen geprüft und gegebenenfalls 
+ausgebucht werden müssen. Die Darstellung zum Beispiel bei der Artikelstatistik
+wird pro Charge angeführt, ist zum Beispiel die Menge der Charge A von 3 auf 2
+geändert worden, so finden Sie den Eintrag -1 in der Artikelstatistik.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Inventurliste CSV Import</p>
 
@@ -436,11 +489,127 @@ Hier können Sie Teile der Inventur per csv-Import übernehmen.</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">2.) Menge (Dezimaltrenner
 muss ein Punkt sein)</p>
 
-<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">&nbsp;</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Wenn Die Artikelnummer nicht vorhanden ist oder die Menge nicht konvertiert werden kann oder es bereits einen Eintrag in der Inventurliste gibt, dann wird die Zeile ausgelassen und geloggt.</p>
 
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Der Import kann nur für eine Inventur eines einzelnen Lagers gemacht werden.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Lagerauswahl
+bei der Inventur</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Bei
+der Erfassung der Einträge, wird das Lager in folgender Form vorbesetzt: Bei der Schnellerfassung ist, wenn die Iventur nur für ein Lager definiert ist, nur dieses
+Lager auswählbar.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">In der
+Inventurliste wird immer das zuletzt verwendete Lager vorbesetzt. Wenn eine
+Inventur für ein Lager durchgeführt wird, so wird dieses Lager vorbelegt, der
+Parameter DEFAULT_LAGER wird nicht berücksichtigt.</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Kann die Durchführung der Inventur zurückgenommen werden?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Wenn Sie versehentlich auf Inventur durchführen geklickt haben, finden Sie im
+Reiter Pflege die Möglichkeit diese zurückzunehmen. </p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="inverntur_zurücknehmen.png" width="304" height="64"></p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Um
+anschließend auch die mit der Durchführung der Inventur entstandenen
+Protokoll-Einträge zurückzunehmen, klicken Sie auf diesen Menüpunkt.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">Im
+Anschluss geben Sie das gewünschte Datum an, ab welchem die Einträge wieder
+zurückzunehmen sind.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer"><img border="0" src="protokolleintraege_zuruecknehmen.JPG" width="298" height="81"></p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">ACHTUNG:
+diese Pflege ist nur innerhalb kurzer Zeit nach der Durchführung der Inventur
+möglich! Sobald Materialien verbraucht wurden, kann die Inventur nicht mehr
+zurückgenommen werden!</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Im Inventurstand werden negative Mengen angezeigt</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+Trotz aller eingebaut Sicherheitsmaßnahmen ist es möglich im Endeffekt negative 
+Inventurstände zu erreichen. Hier eine kurze Beschreibung wie es dazu kommt, 
+damit Sie diese Situationen möglichst vermeiden und wie diese korrigiert werden 
+können.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+<img border="0" src="inventurstand_negativ.JPG" width="470" height="121"></p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+&nbsp;</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+Beispiel:</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+Es wird ein Artikel z.B. NT001 </p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+zum 27.11. 9:25:30 mit einer Menge von 0 in die Inventur aufgenommen.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+am 28.11. 7:15:29 werden 40 aus der Bestellung mit einem Wareneingangsdatum vom 
+27.11. zugebucht<br>am 08.12. 11:25:11 werden 40 abgebucht.<br>Diese Buchung 
+bedeutet, dass zwar am 27.11. null Stück gezählt wurden, aber mit der später / 
+zu spät durchgeführten Buchung für den 27.11. wurde eine Menge vor der Iventur 
+dem Lager zugebucht, die laut der danach durchgeführten Inventurbuchung gar 
+nicht auf Lager war. Daher ergibt sich in dieser Situation der negative 
+Inventurstand.<br>Da wir diese Situation nicht vermeiden können, haben wir uns 
+entschlossen, die so zu belassen und die ehrlich sich daraus ergebende negative 
+Menge zu buchen.<br>Für die Korrektur gehen Sie bitte wie folgt vor. Wir nutzen 
+dafür obiges Beispiel:</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+In der Artikelstatistik wird angezeigt:</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+<img alt="" src="Statistik_fuer_Inventur.gif" width="506" height="88"></p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+Hieraus ist ersichtlich, dass zwischen vermeintlicher Buchung, welche für alle 
+Betrachtungen herangezogen werden muss und tatsächlicher Buchung ein Tag 
+Unterschied liegt. Wenn genau zwischen diesen Datum eine Inventurbuchung gemacht 
+wurde kann es zu diesem Verhalten kommen.<br> </p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+In unserem Beispiel lautet die 
+Korrektur, Änderung des Warenzugangsdatums auf den 28.11., da ja die 40Stk erst 
+NACH der Inventur zugebucht wurden.<br>Da die zugebucht Menge bereits wieder 
+verbraucht wurde, müsste die Losausgabe zurückgenommen werden. Dies könnte 
+mühsam werden. </p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+Die Alternative ist:</p>
+<ul>
+	<li>
+	<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+	Rücknahme des Inventurlaufes</p>
+	</li>
+	<li>
+	<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+	Wechsel in den Reiter Inventurliste</p>
+	</li>
+	<li>
+	<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+	Positionierung auf den Artikel. Hier sehen Sie nun, dass unten als 
+	voraussichtlicher Inventurstand -40 angezeigt wird (diese Information stand 
+	zum Zeitpunkt der Erfassung noch nicht zur Verfügung). </p>
+	</li>
+	<li>
+	<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+	Klicken Sie nun auf ändern und geben Sie den <span class="auto-style1">
+	<strong>JETZT</strong></span> gültigen Inventurstand ein. Damit wird dieser 
+	mit dem heutigen Datum (genauer Zeitpunkt) gespeichert und so der 
+	Inventurstand korrigiert.</p>
+	</li>
+</ul>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+Um alle netroffenen Artikel zu finden, klicken Sie bitte im Reiter Inventurstand 
+auf die Spalte Menge und gehen (bei aufsteigender Sortierung) ganz an den Anfang 
+der Tabelle.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">
+Sind alle Artikel korrigiert, führen Sie die Inventur erneut durch.</p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
+Kann das Inventurdatum geändert werden?</p>
+
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="answer">A:
+So lange die Inventur noch nicht durchgeführt wurde, kann das Datum der
+Inventur angepasst werden. So können Sie den Stichtag der Inventur auch nach
+dem Anlegen der Inventur nochmals ändern.</p>
 
 </body>
 

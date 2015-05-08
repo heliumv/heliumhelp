@@ -32,7 +32,9 @@ gewünschten Auftrag aus.</p>
 erhalten Sie eine Liste der Lose die aufgrund des Inhaltes des Auftrags angelegt
 werden sollten.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="Lose_anhand_Auftrag3.jpg" width="689" height="234"></p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">ab der HELIUM V
+Version 8442 wird die Liste der anzulegenden Lose folgend dargestellt:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="lose_anh_ab_liste.JPG" width="1035" height="78"></p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die angeführten
 Stücklisten ergeben sich aus den im Auftrag enthaltenen Positionen und den
 dazugehörenden Unterstücklisten.</p>
@@ -52,7 +54,10 @@ aktuelle Lagerstand aller Läger des Artikels die bei der interne Bestellung
     <p class="answer" style="margin:0cm;margin-bottom:.0001pt">die derzeit reservierten Mengen&nbsp;</li>
   <li>
     <p class="answer" style="margin:0cm;margin-bottom:.0001pt">die Fehlmenge auf
-dem jeweiligen Artikel angezeigt.</li>
+dem jeweiligen Artikel&nbsp;</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">und die
+    verfügbaren Mengen angezeigt.</li>
 </ul>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Losgröße der
 Kopf- (= übergeordneten) Stücklisten entspricht der Auftragsmenge.</p>
@@ -82,6 +87,9 @@ ein Beginntermin vor dem heutigen Tage errechnet, so werden alle Termine um die
 höchste Differenz (zu heute) nach hinten verschoben, also auf
 Vorwärtsterminierung umgeschaltet. Dass auf Vorwärtsterminierung umgeschaltet
     wurde, wird in Rot angezeigt.</li>
+  <li>
+    <p class="answer" style="margin:0cm;margin-bottom:.0001pt">In der Spalte in
+    AB-Los erkennen Sie, dass für diesen Auftrag schon Lose angelegt wurden.</li>
 </ul>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"><b>Wichtig:</b> In
 den reservierten Mengen der Kopfstücklisten werden die aufgrund des gewählten
@@ -89,10 +97,14 @@ Auftrags reservierten Mengen nicht mitgerechnet, da diese Darstellung sonst ja
 doppelt mitgerechnet werden würde.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei der Berechnung
-des Vorschlagswertes Losgröße werden Lagerstände usw. NICHT berücksichtigt.</p>
+des Vorschlagswertes Losgröße werden Lagerstände usw. NICHT berücksichtigt. Die neue Losgröße ist
+die berechnete Losgröße abzüglich der bereits gefertigten Menge.<br>
+Im Tool-Tip der Artikelnummer (bewegen Sie dazu den Mauszeiger auf die
+Artikelnummer und warten einen Moment) werden die bereits vorhandenen Lose angezeigt (ausser
+das Los befindet sich im Status storniert).</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ändern Sie die
-Produktionswerte wie gewünscht benötigt ab.</p>
+Produktionswerte wie gewünscht und benötigt ab.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf <img border="0" src="Lose_anhand_Auftrag4.jpg" width="30" height="25">
 speichern werden die Lose entsprechend angelegt.</p>
@@ -105,10 +117,14 @@ gezählt.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Positionen bei denen
 bei der Losgröße 0,00 eingetragen wurde werden nicht angelegt.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hinweis:</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für Handeingaben aus
 den Auftragspositionen wird für die Berechnung des Beginntermines der Wert des
 Parameters INTERNEBESTELLUNG_DEFAULTDURCHLAUFZEIT verwendet.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ab der Version 8442
+können mehrere Lose zu einer Auftragsposition angelegt werden, auch wenn
+auftragsbezogene Losnummern verwende werden (ab dem zweiten Los wird eine Nummer &lt;999 verwendet).</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie werden
 Handeingaben des Kundenauftrags behandelt?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Handeingaben des
@@ -126,8 +142,7 @@ finden Sie neben der Anzeige / Auswahl des Auftrags den Knopf <img border="0" sr
 Lose für Auftragspositionen anlegen. Damit werden für alle Auftragspositionen eines Auftrags
 entsprechende Lose angelegt. Die Beginn- und Endetermine werden, entgegen Lose
 anhand Kundenauftrag aus den Vorgaben genommen. Eine Auflösung der
-Auftragspositionen in die Unterstücklisten findet nicht statt.</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+Auftragspositionen in die Unterstücklisten findet nicht statt</p>
 
 </body>
 

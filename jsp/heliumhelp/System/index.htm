@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Language" content="de">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 <title>System</title>
@@ -49,10 +49,18 @@ unbedingt der HELIUM V Server neu gestartet werden.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><u><b>Hinweis:</b></u>
  Für Verbindungen von extern raten wir dringend gesicherte Verbindungen (VPN =
 Virtual Private Network) zu verwenden.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Welche Portadressen werden von HELIUM V für die Kommunikation benötigt?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+A: Siehe dazu bitte oben.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Grundaufbau</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">HELIUM
 V ist in der sogenannten Dreischicht-Architektur realisiert. Besteht also aus
-Datenbank-Server, Applikations-Server und dem eigentlichen Client.</p>
+Datenbank-Server, Applikations-Server und dem eigentlichen Client. Zusätzlich 
+steht als vierte Schicht (Multi-Tier-Model) der Zugriff über Webservices 
+Rest-API, JSon bzw. SOAP zur Verfügung. Für weitere Dokumentation dazu
+<a href="Web_Links.htm">siehe</a>, bzw. wenden Sie sich dazu bitte an Ihren 
+HELIUM V Betreuer.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Kann
 man HELIUM V mehrfach starten?</p>
@@ -105,7 +113,24 @@ Funkverbindung dauernd abbricht ist die Qualität der Datenübertragung nicht
 gegeben und Sie werden auch mit HELIUM V nicht zufriedenstellend arbeiten
 können.&nbsp;</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
+sollen Firewall und Antiviren-Programme am HELIUM V-Server eingestellt werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
+Sie bitte auf die Konfiguration der Firewall und der Antivirus-Programme.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+für die Kommunikation zwischen Client und Server unterschiedliche Ports
+verwendet werden, müssen diese in der Firewalleinstellung freigeschalten
+werden. Kontaktieren Sie für die individuelle Einstellung der Ports bitte Ihren
+HELIUM V-Betreuer. Wenn ein Antivirusprogramm verwendet wird, so ist es wichtig
+die Verzeichnisse des HELIUM V Servers von Scans auszunehmen, da es hier zu
+erheblichen Geschwindigkeitseinschränkungen kommen kann. Im Idealfall setzen
+Sie die Scans zu Zeitpunkten fest, wo keine Mitarbeiter mit HELIUM V arbeiten
+und deaktiveren die laufenden Scans.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="../Client/tipps_und_tricks.htm">Siehe
+dazu auch</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Druckformulare.htm">Druckformulare</a></p>
 

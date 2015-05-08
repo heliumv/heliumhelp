@@ -490,8 +490,18 @@ $-</td>
     </tr>
     <tr>
       <td width="207" height="19">
+$GROESSEAENDERN</td>
+      <td width="2192" height="19"> Losgrößen Ändern auf Stückzahl am Terminal</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
+    </tr>
+    <tr>
+      <td width="207" height="19">
 $PLUS</td>
-      <td width="2192" height="19"> Dient der Zusammenfassung von Mehreren Losen
+      <td width="2192" height="19"> Dient der Zusammenfassung von mehreren Losen
         zu einer Zeiterfassung. Bei der Endebuchung dieser Mehrfachen Lose, wird
         die Arbeitszeit zu gleichen Teilen auf die angegebenen Lose gebucht.<br>
         Nur für die Erfassung von Fertigungs-Losen möglich.</td>
@@ -500,6 +510,17 @@ $PLUS</td>
       <td width="20" height="19" align="center"> </td>
       <td width="20" height="19" align="center"> </td>
       <td width="93" height="19" align="center"> F630 </td>
+    </tr>
+    <tr>
+      <td width="207" height="19">
+$G</td>
+      <td width="2192" height="19"> Einzelbuchung auf Los mit Arbeitsgang anstelle der Tätigkeit.&nbsp;<br>
+        Code für Arbeitsgang: $Gxx.yy  ... xx Arbeitsgang numerisch, yy Unterarbeitsgang numerisch</td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> x </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="20" height="19" align="center"> </td>
+      <td width="93" height="19" align="center"> </td>
     </tr>
   </table>
 </div>
@@ -517,22 +538,25 @@ Dies sind immer nur einzelne Buchstaben mit führendem $</p>
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><a name="Von den Barcodes unterstützte Zeichen"></a>Von
 den Barcodes unterstützte Zeichen:</p>
 <div align="left">
-  <table border="1" width="741" height="14">
+  <table border="1" width="778" height="14">
     <tr>
-      <td width="268" height="16">Barcode</td>
-      <td width="1052" height="16">Unterstützte Zeichen</td>
+      <td width="306" height="16">Barcode</td>
+      <td width="1051" height="16">Unterstützte Zeichen</td>
     </tr>
     <tr>
-      <td width="268" height="16">Code 39</td>
-      <td width="1052" height="16">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-.$/+%Space</td>
+      <td width="306" height="16">Code 39</td>
+      <td width="1051" height="16">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-.$/+%Space</td>
     </tr>
     <tr>
-      <td width="268" height="14">Code 128</td>
-      <td width="1052" height="14">!#$%'()0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</td>
+      <td width="306" height="14">Code 128</td>
+      <td width="1051" height="14">!#$%'()0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</td>
     </tr>
   </table>
 </div>
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wenn
+nun ein Barcode nicht gedruckt werden kannn, so überprüfen Sie bitte die
+Artikelbezeichnung bzw. den zu druckenden Text auf nicht angeführte Zeichen -
+vor allem Umlaute.</p>
 
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Drucken
 von Barcodes aus anderen Programmen:</b></p>

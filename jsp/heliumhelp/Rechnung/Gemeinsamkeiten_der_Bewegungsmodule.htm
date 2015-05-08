@@ -322,7 +322,7 @@ Endsumme gesetzt werden kann. </p>
 beachten Sie, dass nach der Endsumme keine Positionen mit Mengen und oder
 Preisen angeführt werden dürfen. </p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Intelligente Zwischensumme"></a>Q:
 Wie ist die Positionsart &quot;Intelligente Zwischensumme&quot; zu verstehen?</p>
 
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
@@ -371,6 +371,34 @@ wo die Position Intelligente Zwischensumme eingegeben wurde, wird diese
 gegebenenfalls mit den Rabatten in Klammern angedruckt, da ja der Wert der
 Zwischensumme in der Gesamtbetrachtung der Rechnung nicht mitgerechnet werden
 dürfen. </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp; </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Wenn
+nun eine Position &quot;Intelligente Zwischensumm&quot; von einem Auftrag in den
+Lieferschein übernommen werden soll, so verwenden Sie Sicht Auftrag. Die Zwischensummenposition wird aus Sicht Auftrag dann in die Positionen übernommen,  wenn alle von der Zwischensumme umschlossenen Positionen
+&quot;erledigt&quot; werden können. Als &quot;erledigt&quot; betrachtet werden: </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">a) mengenbehafteten Positionen mit dem Status
+erledigt (Ident, Handeingabe) die lieferbar sind. </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">b) nicht mengenbehaftete Positionen (Texteingabe, Textbaustein, Endsumme, ...) </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Die
+Anordnung der Positionen wird bei der Übernahme beibehalten, so lange wie alle
+Positionen übernommen werden können. Sobald eine Beginn- oder Endposition
+einer Zwischensumme nicht in den Liefschein übernommen werden kann, müss die
+Intelligente Zwischensumme im Lieferschein angepasst werden. </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp; </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Wenn die
+Zwischenumme über einen Bereich&nbsp; der alternative Positionen ernthält,
+definiert ist, werden diese Positionen nicht für die Preisberechnung herangezogen.&nbsp; </p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Achtung:
+Wenn das VON oder BIS einer Intelligente Zwischensummen eine alternative Position ist, fehlen die Start- bzw. Endpositionen und damit
+erfolgt keine Berechnung mehr. </p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stornieren
 von Bewegungsdaten</p>
@@ -837,7 +865,27 @@ dafür 2% Skonto abziehen.</p>
 Sie diese Einstellung bitte insbesondere für den Zahlungsvorschlagslauf im
 Modul Finanzbuchhaltung.</p>
 
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Um
+ein Zahlungsziel beim Zahlungsvorschlag zu berücksichtigen, setzen Sie den
+Haken bei <img border="0" src="../Eingangsrechnung/zahlungsvorschlag_beruecksichtigen.JPG" width="203" height="18">
+in Zahlungsvorschlag berücksichtigen.</p>
+
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">&nbsp;</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Um
+einen Stichtag anstelle der Anzahl Tage Netto für ein Zahlungsziel zu
+definieren, klicken Sie auf Stichtag.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt"><img border="0" src="../Allgemeine_Stammdaten/zahlungsziel_stichtag.JPG" width="252" height="99"></p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Nun
+können Sie im Feld den Fälligkeitstag und das Monat angeben. Wenn Sie im Monat
+0 eingeben, so wird das aktuelle Monat verwendet, bei 1 das nächste Monat und
+entsprechend weiter.</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Wenn
+Sie den Haken bei Monatsletzter setzen, so wird der letzte Tag des definierten
+Monats verwendet.</p>
 
 <p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt"><a name="Zahlungsziel"></a>Q:
 Zahlungsziel &quot;Sondervereinbarung&quot;</p>
@@ -853,7 +901,7 @@ und setzen unter Bearbeiten eine Mahnsperre. Geben Sie hier das gewünschte Datum
 einzurichten.</p>
 
 <p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt"><a name="Rundung des Bruttowertes"></a>Q:
-Rund des Bruttobetrages</p>
+Runden des Bruttobetrages</p>
 
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
 In manchen Ländern sind die Bruttobeträge der Rechnungen auf Werte größer
@@ -921,6 +969,15 @@ Auswertungen des Warenausgangsjournals verwendet.</p>
 <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Die
 zur Verfügung stehenden Kostenträger werden im System, Mandant, Kostenträger
 definiert.</p>
+
+<p class="question" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">Q: Die
+Zahlungsziele sind verschwunden</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: 0pt">A:
+Ursache ist, dass
+bei den Bezeichnungen der Zahlungsziele in Ihrer Client-Sprache Leerzeichen als
+Bezeichnung eingegeben wurden. Löschen Sie entweder die Leerzeichen oder besser:
+Geben Sie den sprachlich richtigen Text zum Zahlungsziel ein.</p>
 
 </body>
 

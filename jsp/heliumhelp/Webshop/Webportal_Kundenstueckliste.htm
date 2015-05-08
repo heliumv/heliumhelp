@@ -1,0 +1,415 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Kundenspezifische Stückliste im Web-Portal</title>
+</head>
+
+<body>
+
+<h1>Kundenspezifische Stückliste im Web-Portal</h1>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ab der Version 8712 
+steht auch die Bearbeitung Kundenspezifischer Stücklisten über einen 
+Browserclient zur Verfügung.<br>Die Idee hinter dieser Funktion ist, dass man 
+als HELIUM V Anwender seinen ausgewählten Kunden die Möglichkeit geben möchte 
+selbst die Stücklisten zu pflegen, einzusehen, auszudrucken, zu kalkulieren. 
+D.h. damit ist es für einen berechtigten User möglich, seine Stücklisten in 
+Ihrem HELIUM V, mit seinen Artikelnummern und seinen Preisen einzusehen und 
+gegebenfalls auch zu pflegen.<br>Neben der technischen Voraussetzung (Modul 
+vorhanden, Ports eingerichtet usw.) müssen auch die Kunden / Ansprechpartner / 
+Stücklisten entsprechend eingerichtet sein, um den Kunden diese Funktion zur 
+Verfügung stellen zu können.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Folgende Module 
+sind darin involviert:</p>
+<ul>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Kunden<br>Beim 
+	Kunden werden:</p>
+	<ul>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">die 
+		Ansprechpartner freigeschaltet die Zugriff auf die eigenen Stücklisten 
+		und die Artikel bekommen</p>
+		</li>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">die 
+		Kundenartikelnummern (SoKo) hinterlegt</p>
+		</li>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">die 
+		Kundenpreisliste definiert</p>
+		</li>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">der für den 
+		Kunden zuständige Verkäufer = Provisionsempfänger definiert</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Stücklisten<br>
+	Bei den Stücklisten werden:</p>
+	<ul>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Diese den 
+		Kunden zugeordnet<br>Hinweis: Eine Stückliste die keinem Kunden 
+		zugeordnet ist, kann von allen Kunden eingesehen werden. Es wird hier 
+		keine Unterscheidung zwischen Stückliste, Hilfsstückliste und Setartikel 
+		gemacht.</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Fertigung<br>Sind 
+	Stücklisten in Fertigungsaufträgen (Losen) enthalten die einen anderen 
+	Status als Angelegt haben, werden diese Stücklisten zwar angezeigt aber als 
+	in Produktion markiert und können somit über dieses Modul nicht mehr 
+	geändert werden.</p>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Artikel<br>
+	Definition des Artikels selbst mit seinen Verkaufspreisen.<br>Versteckte 
+	Artikel werden nicht angezeigt.</p>
+	</li>
+</ul>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Technische 
+Voraussetzungen:</p>
+<ul>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Es muss das Modul 
+	mit seinen Webservices in Ihrem HELIUM V Server eingerichtet sein.<br>Bitten 
+	Sie Ihren HELIUM V Betreuer dies für Sie einzurichten.</p>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Über den https 
+	Port (oder einen anderen Port, aber mit dem https Protokoll) muss der Dienst 
+	erreichbar sein. Bitten Sie Ihren IT-Betreuer dies (Portforwarding) für Sie 
+	einzurichten<br>Hinweis: Durch diesen Zugriff wird HELIUM V, der 
+	vorgelagerte Tomcat-Server, von aussen erreichbar und somit angreifbar.</p>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für den Zugriff 
+	können alle aktuellen Browser verwendet werden. Wir weisen darauf hin, dass 
+	für ein vernünftiges Arbeiten eine Auflösung von ca. 1280x1024 erforderlich 
+	ist.</p>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für den Zugriff 
+	sollte das deutlich sicherere HTTPS Protokoll verwendet werden. Dafür muss 
+	ein entsprechendes Zertifikat auf Ihrem HELIUM V Server eingerichtet werden. 
+	Wenden Sie sich dazu an Ihren HELIUM V Betreuer.<br>Info: Auch das HTTPS 
+	Protokoll wurde bereits geknackt. Da ein Angriff auf ein HTTPS Protokoll 
+	innerhalb der laufenden Kommunikation mit etwas Aufwand verbunden ist und 
+	unter Bedachtnahme der Anwenderfreundlichkeit haben wir auf (derzeit) nicht 
+	knackbare Verbindungen verzichtet.</p>
+	</li>
+</ul>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Welche 
+Einstellungen sind zu treffen, damit Ihre Kunden Zugriff bekommen?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Im Kunden, 
+Ansprechpartner muss</p>
+<ul>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">eine eindeutige 
+	EMail-Adresse hinterlegt sein (diese darf es genau nur einmal im gesamten 
+	HELIUM V Datenbestand geben, was auch die Regel sein sollte)</p>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">es muss für den 
+	Ansprechpartner ein Kennwort hinterlegt werden. Wird ein Kennwort 
+	hinterlegt, so wir auf die Eindeutigkeit der EMail-Adresse geprüft und es 
+	erscheint gegebenenfalls eine Warnung</p>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Es muss 
+	Stücklisten geben, bei denen in den Kopfdaten der Kunde eingetragen ist. Der 
+	Kunde kann selbst keine Stücklisten anlegen, sondern diese nur ergänzen.</p>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hinweis: Es 
+	werden die für den Kunden gültigen Verkaufspreise jedes einzelnen Artikels 
+	angezeigt. Achten Sie daher auf die Definition der gültigen Preisliste für 
+	den Kunden bzw. auf die Preise in den Sonderkonditionen.</p>
+	</li>
+</ul>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Zugriff:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beachten Sie beim 
+Zugriff bitte den Unterschied ob in Ihrem internen Firmennetzwerk oder von 
+extern zugegriffen wird.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zugriff von außen: 
+https://Ihre öffentliche IP-Adresse/Name:8443/hvpartlist/ Hinweis: Welcher Port 
+tatsächlich verwendet wird hängt von der Konfiguration Ihrer Firewall und Ihres 
+HELIUM V Servers ab. Wurde kein Zertifikat installiert, so siehe bitte unten:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zugriff von intern:
+<a href="http://HELIUMV_SERVER:8280/hvpartlist/">
+http://HELIUMV_SERVER:8280/hvpartlist/</a></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Beschreibung der 
+Bedienung des Browserclients</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Verbindung für Ihre 
+Kunden:</p>
+<ul>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit Firefox<br>
+	Bitte verwenden Sie immer die aktuellste Version des Browsers.</p>
+	<ul>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In die 
+		Adresszeile geben Sie bitte <a href="https://Name:8443/hvpartlist/">
+		https://Name:8443/hvpartlist/</a> (Die Entsprechung des Names bitte 
+		Ihren Kunden mitteilen) ein</p>
+		</li>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ohne 
+		Zertifikat kommt beim ersten Mal: <strong>Dieser Verbindung wird nicht 
+		vertraut.</strong></p>
+		</li>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Klicken Sie 
+		auf: <strong>Ich kenne das Risiko.</strong></p>
+		</li>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun wählen 
+		Sie <strong>Ausnahmen hinzufügen </strong>und bestätigen das Hinzufügen 
+		der Ausnahmeregel durch Klick auf <strong>Sicherheits-Ausnahmeregel 
+		bestätigen</strong>.</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit 
+	Internetexplorer<br>Bitte verwenden Sie immer die aktuellste Version des 
+	Browsers.</p>
+	<ul>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In die 
+		Adresszeile geben Sie bitte <a href="https://Name:8443/hvpartlist/">
+		https://Name:8443/hvpartlist/</a> (Die Entsprechung des Names bitte 
+		Ihren Kunden mitteilen) ein</p>
+		</li>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ohne 
+		Zertifikat kommt: <strong>Es besteht ein Problem mit dem 
+		Sicherheitszertifikat der Website</strong>.</p>
+		</li>
+		<li>
+		<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Klicken Sie 
+		nun auf: <strong>Laden dieser Website fortsetzen</strong></p>
+		</li>
+	</ul>
+	</li>
+</ul>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_Anmeldung.gif" width="277" height="145"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Geben Sie hier Ihre 
+EMail-Adresse und das mitgeteilte / hinterlegte Kennwort ein und klicken Sie auf 
+Anmelden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun werden die für 
+Sie / den Kunden definierten Stücklisten geladen, dies kann ja nach Umfang und 
+Leitungsgeschwindigkeit ein bisschen dauern. Die Zeit des Ladens wird durch
+<img alt="" src="KndStkl_1.gif" width="56" height="20"> angezeigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Danach erscheint die 
+Liste der Ihnen zugeordneten Stücklisten.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><strong>Auswahl:</strong></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;<img alt="" src="KndStkl_7.gif" width="1104" height="243"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit den Symbolen kann 
+in der Liste geblättert werden</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_2.gif" width="19" height="18"> Damit springen Sie an den ersten Datensatz</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_3.gif" width="18" height="18"> Damit wird um eine Seite nach vorne geblättert</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_4.gif" width="89" height="17"> Position innerhalb der Liste der Daten</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_5.gif" width="17" height="16"> Um eine Seite nach hinten blättern</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_6.gif" width="17" height="17"> An das Ende der Daten springen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zusätzlich finden Sie 
+in der Stücklistenübersicht oben ein Suchfeld im dem innerhalb der Stücklisten 
+nach Artikelnummern und Stücklistenbezeichnungen gesucht werden kann.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ist eine Stückliste 
+mit <strong>in Produktion</strong> gekennzeichnet, so kann diese nicht verändert 
+werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf die 
+Spaltenüberschriften kann danach sortiert werden. Eine Kombinierte Sortierung 
+ist derzeit nicht möglich. Ein erneuter Klick auf die Spaltenüberschrift dreht 
+die Sortierung um.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Stückliste wird 
+durch Anklicken markiert und damit ausgewählt. </p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für die Bearbeitung 
+wechseln Sie in den Reiter Positionen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für Druck, 
+Preisberechnung und um Informationen an den für Sie zuständigen Kundenbetreuer 
+zu senden, wählen Sie Kopfdaten.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><strong>Kopfdaten:</strong></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_8.gif" width="191" height="107"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier wird, nach der 
+Preisberechnung, der für Sie errechnet Preis anhand der Kundenpreisdefinitionen 
+und den erfassten Stücklsitenpositionen angezeigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf das 
+Druckersymbol wird eine PDF Datei mit einem Filenamen der der 
+Stücklistenartikelnummer entspricht erzeugt und angezeigt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf das 
+EMail Symbol können Sie eine EMail Nachricht an den für Sie zuständigen Betreuer 
+senden. Eine Kopie wird an Sie gesandt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><strong>Positionen:</strong></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wird hier</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_9.gif" width="907" height="48"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">angezeigt, so kann 
+die Stückliste nur mehr betrachtet werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Der Reiter der 
+Positionen gliedert sich in zwei Bereiche. Oben die Auswahlliste der Positionen 
+in denen auch in den Positionen geblättert und gesucht werden kann.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_12.gif" width="1112" height="170"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Auch in den 
+Positionen ist die grundsätzliche Struktur der Darstellung gleich. Das bedeutet 
+durch Klick auf eine der Spaltenüberschriften kann danach sortiert werden.<br>In 
+dem über der Artikelnummer angeordneten Suchfeld wird innerhalb der Stückliste 
+in den Feldern Artikelnummer, Bezeichnung und Position gesucht und die ersten 
+passenden 20Zeilen angezeigt.<br><img alt="" src="KndStkl_13.gif" width="393" height="91"><br>Durch 
+Doppelklick auf die gewünschte Zeile wird dieser Datensatz ausgewählt.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><strong>Detailsicht</strong></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Unten finden Sie die 
+Detailsicht, mit der ein einzelner Eintrag bearbeitet wird.<br></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bearbeiten eines 
+Eintrages</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf Neu
+<img alt="" src="KndStkl_14.gif" width="36" height="33"> kann ein neuer Datensatz erzeugt werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit Klick auf Ändern
+<img alt="" src="KndStkl_15.gif" width="42" height="35"> wird ein bestehender Datensatz verändert. 
+Wichtiger Hinweis: Im Gegensatz zu HELIUM V kann hier kein pesimistik Locking 
+angewandt werden. Es wird hingegen beim Speichern des Datensatzes geprüft ob</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">dieser von einem 
+anderen Benutzer gerade bearbeitet wird und daher gesperrt ist.<br>Hier würde 
+die Fehlermeldung <img alt="" src="KndStkl_16.gif" width="330" height="139"> erscheinen.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn dieser vorher / 
+in der Zwischenzeit von einer anderen Person verändert wurde, so erscheint.
+<img alt="" src="KndStkl_17.gif" width="209" height="117"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf
+<img alt="" src="KndStkl_18.gif" width="39" height="33"> wird der Datensatz gelöscht.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf
+<img alt="" src="KndStkl_19.gif" width="40" height="34"> wird die Stückliste neu vom Server geholt und 
+die Anzeige entsprechend aktualisiert.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Beim Klick auf Ändern 
+bzw. Neu erscheint der Eingabedialog</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Die Eingabe wird 
+durch Klick auf <img alt="" src="KndStkl_20.gif" width="38" height="33"> gültig direkt in der HELIUM V 
+Datenbank abgespeichert, wobei obige Prüfungen durchgeführt werden.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf
+<img alt="" src="KndStkl_21.gif" width="40" height="35"> verwerfen werden die erfasst Daten verworfen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><strong>Finden von 
+Artikeln in der Detailansicht.</strong></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für das Finden von 
+Artikeln&nbsp;stehen in der Detailsicht zwei Möglichkeiten zur Verfügung.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">a.) Direkte Suche im 
+Artikelfenster</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Geben Sie hier Ihre 
+Suchbegriffe ein, es werden die möglichst passenden Artikel, genauer die ersten 
+20 davon angezeigt, mit einer Info wieviele weitere Artikel diesem Suchkriterium 
+entsprechend würden. Ist in der angeführten Liste der gewünschte Artikel 
+enthalten, dso übernehmen Sie diesen mit einem Klick auf den jeweiligen Artikel</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" height="131" src="KndStkl_22.png" width="810">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">b.) Kann mit obiger 
+Direktsuche kein zufriedenstellendes Ergebnis erzielt werden, so steht durch 
+Klick auf Artikel <img alt="" src="KndStkl_23.gif" width="67" height="33"> die erweiterte Suche nach 
+Artikeln zur Verfügung.<br></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_24.gif" width="1205" height="106"><br>Links (Alle) kann die Suche auf 
+Artikelgruppen eingeschränkt werden<br>Artikelnummer sucht in der Artikelnummer 
+von links beginnend<br>Textsuche ... sucht in den Bezeichnungen der Artikel 
+sollten mehrere Begriffe kombiniert werden, so diese als getrennte Wörter 
+eingeben<br>Kundenartikelnummer ... sucht nach den eingegebenen Artikelnummern 
+von links beginnend<br>Zum Auslösen der Suche klicken Sie bitte auf 
+aktualisieren <img alt="" src="KndStkl_25.gif" width="40" height="35"><br>Hinweis: Das in HELIUM V 
+übliche aktualisieren mit F5 bewirkt in den Browsern ein aktualisieren des 
+Browserfensters, was in diesem Falle zu einer Neuanmeldung führt. Daher bitte 
+nur den aktualisieren Knopf verwenden.<br>Auch in dieser Liste werden nur die 
+ersten 20 der gefundenen Artikel angezeigt, sollten weitere Artikel aufgelistet 
+werden, so bitte die Knöpfe zum Blättern verwenden. Je nach Menge der Artikel 
+und Leistungsfähigkeit der Internetverbindung kann das nachladen der Artikel ein 
+wenig Zeit in Anspruch nehmen.<br>Sollte die Suche ohne Auswahl abgebrochen 
+werden, so klicken Sie bitte einfach auf einen Bereich ausserhalb des 
+Suchdialoges.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Abmelden, Kennwort 
+ändern&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf ihre 
+Kontodaten, welche durch die Anzeige er angemeldeten EMail Adresse dargestellt 
+werden, erscheint folgender Dialog:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">
+<img alt="" src="KndStkl_11.gif" width="153" height="84"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf 
+Abmelden melden Sie sich von der Verbindung mit dem HELIUM V Server ab und geben 
+auch eine Benutzerlizenz frei.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Durch Klick auf 
+Kennwort ändern, kann das zugeteilte Kennwort entsprechend geändert werden. 
+Info: Das Kennwort wird innerhalb des https-Protokolls im Klartext übertragen. 
+Es wird verschlüssel in der HELILUM V Datenbank abgespeichert und kann durch 
+einen berechtigten HELIUM V Benutzer wieder geändert werden.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Automatische 
+Abmeldung</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn ca. 30Minuten 
+keine Aktivitäten durchgeführt werden, werden Sie automatisch abgemeldet um so 
+auch entsprechende Benutzerlizenzen freizugeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<img alt="" src="KndStkl_10.gif" width="398" height="177"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Hinweise für den HELILUM V Anwender:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Mandant = DefaultMandant des Benutzers KuStkListe<br>Rolle ist manuell zu 
+vergeben, Rechte greifen wie üblich<br>Benutzer muss manuell genau in der 
+Schreibweise (KuStkListe) angelegt werden.<br>EMail an aus den Kopfdaten geht an 
+den Provisionsempfänger des Kunden, wobei dessen EMailadresse wiederum im 
+Personal im Reiter Daten, im Bereich Absenderdaten definiert wird.<br><br>Status 
+in Produktion bedeutet es gibt mindestens ein Los darauf, welches eine höheren 
+Status als Angelegt hat. Auch stornierte Lose werden als &quot;in Prduktion&quot; 
+betrachtet<br><br>Beim Klick in Kopfdaten wird automatisch die Preisberechnung 
+zur Basis des definierten Kunden-Verkaufspreises jeder Stücklistenposition 
+durchgeführt.<br>Ev. Arbeitspläne werden NICHT berücksichtigt<br>Anzeige des 
+Preises in Mandantenwährung = Währung des Anwenders<br><br>Positionen<br>- Im 
+Detail wird KndArtNr aus der Soko angezeigt<br>- der angezeigte Preis ist 
+wiederum der Kunden-preis<br>- Löschen löscht sofort<br><br>- Neu / Ändern<br>&nbsp; 
+- direkte Eingabe im Feld neben Button Artikel sucht im gesamten Artikelstamm, 
+ausgenommen versteckte Artikel und Stkl anderer Kunden<br>&nbsp;&nbsp;&nbsp;&nbsp; 
+Hinweis: Bei den Stücklisten werden die undefinierten (= Stkl ohne Kunden) und 
+die des angemeldeten Kunden angezeigt<br>&nbsp; - Mengeneingaben mit , Komma als 
+Dezimaltrenner. Tausenderpunkte werden akzeptiert aber ignoriert<br>&nbsp; - 
+Kommentar / Positionen sind auf die Länge in HV begrenzt (beim Speichern)<br>- 
+Bei der Verwendung / Berechnung für Kundenartikelnummer und KundenPreis wird 
+immer das jeweilige Gültig ab bzw. Gültig bis berücksichtigt.<br><br>- Drucken 
+der Stkl aus den Kopfdaten<br>Es wird eine PDF Vorschau des Druckes Stückliste 
+Mit Preis laut HELIUM V Reportvorlage angezeigt. Diese kann gespeichert werden. 
+Der Dateiname der Stückliste ist die Ident der Stückliste ohne die 
+Betriebssystem Spezialzeichen.<br></p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Verbindung</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Wir raten sehr dazu https zu verwenden. Dafür ist ein Zertifikat erforderlich, 
+welches bei Ihrem Web-Provider beantragt werden muss. Es fallen dafür Kosten von 
+ca. 100,- € / Jahr an.<br>Alternativ kann ein selbst ausgestelltes Zertifikat 
+verwendet werden. Dieses wird z.B. beim Internetexplorer immer als ungültig 
+angezeigt (siehe oben).</p>
+
+</body>
+
+</html>

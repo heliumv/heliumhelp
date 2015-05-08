@@ -11,20 +11,57 @@
 
 <body>
 
-<h1>Einrichten interner Versanddienst</h1>
-<p class="answer">Mit dem internen Versanddienst steht Ihnen aber Version 5956
-eine direkte SMTP und IMAP Anbindung für den Versand Ihrer EMails und
-gegebenfalls auch Faxe direkt integriert im HELIUM V Applikations Server zur
-Verfügung. D.h. der Umweg über Windows wird hiermit nicht benötigt. Für eine
+<h1 style="word-spacing: 0; margin: 0">Interner Versanddienst</h1>
+
+<p style="word-spacing: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; margin: 0">Integriert im HELIUM V Applikations Server
+steht Ihnen eine direkte SMTP und IMAP Anbindung für den Versand Ihrer E-Mails und
+gegebenfalls auch Faxe&nbsp; zur
+Verfügung. Für eine
 schematische Darstellung des Versanddienstes <a href="Einbindung_EMail_Fax_IMap.htm">siehe
-bitte</a>.<br>
-Für die Voraussetzungen zur richtigen Übergabe der EMails siehe bitte.</p>
+bitte</a>.</p>
+<p class="question" style="word-spacing: 0; margin: 0"><b>Voraussetzungen</b></p>
+<p class="answer" style="word-spacing: 0; margin: 0">HELIUM V	Interner VersanddienstE-Mail
+SMTP und gegebenenfalls IMAP Server mit den entsprechenden Zugangsdaten<br>
+Personal	IMAP Zugangsdaten (Reiter 3) und E-Mail-Absenderdaten sind
+eingestellt<br>
+Personal	IMAP Abholungsdaten (Inbox) ist eingerichtet</p>
+<p class="question" style="word-spacing: 0; margin: 0">Funktionsweise des
+internen Versanddienstes / Mailversand</p>
+<p class="answer" style="word-spacing: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; margin: 0">a.) E-Mail Versand<br>
+</p>
+<p class="answer" style="word-spacing: 0; margin: 0">Das E-Mail wird mit einem der HELIUM V Module erzeugt und durch den Klick auf Senden in den Versandauftrag übertragen.&nbsp;</p>
+<p class="answer" style="word-spacing: 0; margin: 0"> Hier ist üblicherweise (Parameter DELAY_E_MAILVERSAND) ein Zeitversatz von 5 Minuten eingetragen.&nbsp;</p>
+<p class="answer" style="word-spacing: 0; margin: 0">Nach dem Ablauf der Zeit wird das
+E-Mail mit den eingestellten SMTP Parametern per SMT versandt.</p>
+<p class="answer" style="word-spacing: 0; margin: 0">War der SMPT-Versand verfolgreich wird das
+E-Mail in den gesendet Ordner des jeweiligen  Sendenden abgelegt.</p>
+<p class="answer" style="word-spacing: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; margin: 0">Also:</p>
+<p class="answer" style="word-spacing: 0; margin: 0">a1.) Versandauftrag erzeug</p>
+<p class="answer" style="word-spacing: 0; margin: 0">a2.) SMPT Versand</p>
+<p class="answer" style="word-spacing: 0; margin: 0">a3.) IMAP Ablage in gesendete Objekte</p>
+<p class="answer" style="word-spacing: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; margin: 0">b.) E-Mail Empfang</p>
+<p class="answer" style="word-spacing: 0; margin: 0">Start des E-Mail Clients <img border="0" src="E-Mail-Client.JPG" width="36" height="38">
+und Klick auf Neue Nachrichten vom E-Mail Server laden <img border="0" src="empfangen.JPG" width="29" height="25">
+oder automatisch abholen ist angehakt.</p>
+<p class="answer" style="word-spacing: 0; margin: 0">Es werden die E-Mails aus dem hinterlegten IMAP Verzeichnis abgeholt. Dieses geht von der Standard Inbox des jeweiligen Benutzers aus. Wir raten hier z.B. ein (Imap) Verzeichnis ToHeliumV anzulegen und dieses entsprechend beim Personal des jeweiligen Benutzers unter Daten, IMAP-Inbox einzutragen.</p>
+<p class="answer" style="word-spacing: 0; margin: 0">Bei der Übernahme der IMAP Daten aus dem IMAP Server wird darauf geachtet, dass von den Dateninhalten keine
+Duplikate übernommen werden. Das bedeutet E-Mails mit gleicher Message-ID werden nur einmal übernommen.</p>
+<p class="answer" style="word-spacing: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; margin: 0">Also:</p>
+<p class="answer" style="word-spacing: 0; margin: 0">b1.) IMAP – Inbox-Verzeichnis pollen</p>
+<p class="answer" style="word-spacing: 0; margin: 0">b2.) Daten nach HELIUM V E-Mail-Datenbank kopieren</p>
+<p class="question" style="word-spacing: 0; margin: 0">Konfiguration&nbsp;</p>
 <p><img border="0" src="../Bilder/Parameter_interner_Versanddienst.gif" width="563" height="166"></p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
-Parametrierung des internen Versanddienstes erfolgt im Modul System. Geben Sie
-hier unter Kategorie Versand ein, so werden die erforderlichen Parameter für
-den internen Versanddienst gelistet.</p>
-<p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Sollten Sie
+Parametrierung des internen Versanddienstes erfolgt im Modul System, unterer
+Reiter Parameter. Geben Sie
+hier zur Einschränkung der Suchergebnisse unter Kategorie Versand ein, so werden die erforderlichen Parameter für
+den internen Versanddienst gelistet. Sollten Sie
 in Ihrer Installation diese Parameter nicht vorfinden, so ist in Ihrer HELIUM V
 Installation dieses Modul nicht freigeschaltet. Bitte wenden Sie sich an Ihren
 HELIUM V Betreuer.</p>
@@ -88,12 +125,12 @@ Parametrierung des SMTP Servers, wird der interne Versanddienst aktiviert.</p>
 zum Faxgateway / Faxweiterleitung:</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
 Faxnummern werden beim Versand eines Faxes automatisch um diese Domain ergänzt
-und das Fax wird als Email an den SMTP Postausgangsserver versandt. Der
+und das Fax wird als E-Mail an den SMTP Postausgangsserver versandt. Der
 eigentliche Versand des Faxes muss durch den Faxgateway erfolgen.</p>
 <p class="question" style="word-spacing: 0; text-indent: 0; margin: 0">Einrichten
 der IMAP Anbindung:</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Durch die
-IMAP Anbindung, wird nach erfolgtem SMTP Versand eine Kopie des EMails im IMAP
+IMAP Anbindung, wird nach erfolgtem SMTP Versand eine Kopie des E-Mails im IMAP
 Postfach des Benutzers abgelegt. Wenn diese Funktion nicht benötigt wird, sind
 die Parameter leer zu lassen.</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
@@ -187,9 +224,9 @@ Benutzerdaten</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">&nbsp;</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0" class="question">Q: Der IMAP Server ist
-definiert, es werden aber keine EMails versandt?</p>
+definiert, es werden aber keine E-Mails versandt?</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">A: Der interne Versanddienst
-von HELIUM V funktioniert so, dass zuerst das EMail per SMTP Server versandt
+von HELIUM V funktioniert so, dass zuerst das E-Mail per SMTP Server versandt
 wird. Hat dies funktioniert, so wird, wenn der IMAP Server definiert ist, eine
 Kopie davon in das IMAP Konto des Benutzers abgelegt.</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0" class="answer">&nbsp;</p>
@@ -210,20 +247,20 @@ achten Sie bitte darauf, dass sowohl alle erforderlichen Parameter sowohl unter
 System, als auch im Personal je Mandant und Mitarbeiter, der Versenden darf, dies
 definiert werden muss.</p>
 <p class="question" style="word-spacing: 0; text-indent: 0; margin: 0"><a name="EMailversenden Voraussetzungen"></a>Voraussetzungen
-die gegeben sein müssen um EMails richtig weiterreichen zu können</p>
+die gegeben sein müssen um E-Mails richtig weiterreichen zu können</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Gerade im
 deutschsprachigen Raum kommt es immer wieder zur massiven Verwirrung, weil der
-Inhalt von EMails nicht richtig weitergereicht wird. Hier kommt erschwerend
-dazu, dass am EMail-Versand doch einige Systeme beteiligt sind.</p>
+Inhalt von E-Mails nicht richtig weitergereicht wird. Hier kommt erschwerend
+dazu, dass am E-Mail-Versand doch einige Systeme beteiligt sind.</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- HELIUM V
--&gt; übergibt das EMail an den SMTP Server</p>
+-&gt; übergibt das E-Mail an den SMTP Server</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- SMTP
-Server reicht das EMail an den Empfänger weiter und bestätigt dass das EMail
+Server reicht das E-Mail an den Empfänger weiter und bestätigt dass das E-Mail
 versandt werden konnte</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">- HELIUM V
 legt eine Kopie im IMAP Ordner des Versenders ab</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">-
-Empfänger öffnet das EMail mit seinem Client</p>
+Empfänger öffnet das E-Mail mit seinem Client</p>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Abhängig
 von dem was gesandt wurde verhalten sich die Systeme zum Teil sehr
 unterschiedlich.</p>
@@ -232,7 +269,7 @@ unterschiedlich.</p>
 <ul>
   <li>
     <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Derzeit
-    wird EMail Text welcher von HELIUM V generiert wird als reiner ASCII Text
+    wird E-Mail Text welcher von HELIUM V generiert wird als reiner ASCII Text
     übergeben. Dieser Text ist nach UTF-8 codiert.</li>
   <li>
     <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Die
@@ -240,11 +277,11 @@ unterschiedlich.</p>
     Servers eingestellten Sprache</li>
   <li>
     <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Plain
-    Text EMails, wie sie von HELIUM V gesendet werden, werden in den Clients oft
+    Text E-Mails, wie sie von HELIUM V gesendet werden, werden in den Clients oft
     unterschiedlich interpretiert / dargestellt.</li>
 </ul>
 <p class="answer" style="word-spacing: 0; text-indent: 0; margin: 0">Daher
-müssen, damit Ihre EMails
+müssen, damit Ihre E-Mails
 mit Umlauten auch richtig beim Empfänger ankommen, alle beteiligten Komponenten
 mit den Vorschriften <a href="http://tools.ietf.org/html/rfc2047">RFC 2047</a>
 und <a href="http://tools.ietf.org/html/rfc6152">RFC 6152</a> richtig umgehen
@@ -255,15 +292,15 @@ muss für Windows und Linux auf UTF8 erfolgen, für MAC auf ISO-8859-1 (Ansi).
 Achten Sie darauf diese XSL Dateien ausschließlich mit geeigneten Editoren zu
 bearbeiten, wie z.B. Notepad++. Zum Thema SMTP Versand <a href="http://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">siehe
 auch</a>.</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0" class="question">Fax -
-EMail Gateway</p>
+<p style="word-spacing: 0; text-indent: 0; margin: 0" class="question">Fax - E-Mail
+Gateway</p>
 
 <p style="word-spacing: 0; text-indent: 0; margin: 0">Alternativ zur oben
-beschriebenen Faxweiterleitung ist auch der Versand eines EMails an einen
-Fax-Mail Gateway möglich. Auch hier wird ein EMail mit PDF Anhang an eine
+beschriebenen Faxweiterleitung ist auch der Versand eines E-Mails an einen
+Fax-Mail Gateway möglich. Auch hier wird ein E-Mail mit PDF Anhang an eine
 bestimmte Adresse versandt, es sind jedoch im Betreff die entsprechenden Daten
 enthalten. Der Aufbau ist wie folgt:</p>
-<p style="word-spacing: 0; text-indent: 0; margin: 0">EMail Empfängeradresse,
+<p style="word-spacing: 0; text-indent: 0; margin: 0">E-Mail Empfängeradresse,
 so wie unter  SMTPSERVER_FAXDOMAIN angegeben.</p>
 <p style="word-spacing: 0; text-indent: 0; margin: 0">Betreffzeile: Passwort
 internationaleNummer; Rückmeldungstext für Bestätigung</p>

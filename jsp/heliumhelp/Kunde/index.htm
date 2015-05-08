@@ -35,9 +35,22 @@ Kunden ändern, so werden, da dies nur unterschiedliche Sichten auf die gleichen
 Daten sind, auch die Partnerdaten und damit die Lieferantendaten mitgeändert.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Für ein Kopieren des
 Kunden ist die Funktion nicht geeignet.</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><a href="../Partner/index.htm#Kund, Partner, Lieferant wie gehört das alles zusammen">Siehe</a>
-dazu bitte auch <a href="../Partner/index.htm#Kunde, Partner Lieferant, wozu">und</a>,
-<a href="../Partner/index.htm#Partner in Kunde umwandeln">und</a>.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Siehe
+dazu bitte auch <a href="../Partner/index.htm#Kund, Partner, Lieferant wie gehört das alles zusammen">Zusammenhang
+Kunde, Partner, Lieferant, </a><a href="../Partner/index.htm#Kunde, Partner Lieferant, wozu">Kunde,
+Partner, Lieferant wozu</a>&nbsp; und <a href="../Partner/index.htm#Partner in Kunde umwandeln">Partner
+in Kunden umwandeln</a>.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn Sie einen Kunden
+anlegen wollen, der bereits besteht, erfolgt folgende Abfrage:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="kunde_besteht_bereits.JPG" width="397" height="115"></p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei "Ja" wird eine Kopie
+mit den jeweiligen Daten erstellt.&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei &quot;Überschreiben&quot; wird der bestehende
+Kunde mit den neu eingegebenen Daten überschrieben.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bei "Verwerfen"
+bleibt der bestehende Kunde unverändert und die aktuell eingegebenen Daten
+werden verworfen.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Kommentar_versus_Bemerkung"></a>Q:
 Unterschied zwischen Kommentar und Bemerkung</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -55,6 +68,18 @@ Konditionen das Editorfeld Kommentar zur Verfügung.</p>
 Beachten Sie die <a href="../Allgemein/freieTexte.htm#Größe der Texteingaben">Größenbeschränkung</a>
 der Bemerkungs-Kommentar-Felder. Verwenden Sie gegebenenfalls anstatt dessen das
 Modul Projekte <img border="0" src="Projekte_als_Verkaufs_Aufgabe.jpg" width="25" height="26"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Weiters
+finden Sie im oberen Modulreiter Kommentar eine Möglichkeit Kunden-Kommentare
+vergleichbar mit <a href="../artikel/index.htm#Artikelkommentar">Artikelkommentaren</a>
+zu erfassen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
+Kommentarart kann in den Partner-Grunddaten definiert werden. Je nach Definition
+werden bei der Auswahl des Kundens in den Belegen diese Hinweise angezeigt (auch Bilder/PDF).</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ebenso
+können die Kommentare in den Belegen angedruckt werden. Sollte dies bei Ihren
+spezifischen Reports noch nicht möglich sein, wenden Sie sich bitte an Ihren
+HELIUM V Betreuer.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Interessent / Kunde</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -123,6 +148,15 @@ Defaultwerte automatisch von HELIUM V eingepflegt.</p>
       <td width="897" height="22">Die erste Preisliste aus dem Artikel,
         Preislistendefinition.<br>
         Üblicherweise die Preisliste mit dem höchsten Preis.</td>
+    </tr>
+    <tr>
+      <td width="472" height="22">LS-Kopien&nbsp;</td>
+      <td width="897" height="22">Anzahl Kopien aus dem Parameter DEFAULT_KOPIEN_LIEFERSCHEIN</td>
+    </tr>
+    <tr>
+      <td width="472" height="22">RE-Kopien</td>
+      <td width="897" height="22">Anzahl Kopien aus dem Parameter
+        DEFAULT_KOPIEN_RECHNUNG</td>
     </tr>
     <tr>
       <td width="472" height="22">Kreditlimit</td>
@@ -405,7 +439,7 @@ den Kunden-Kopfdaten sehen Sie unten die Umsatzanzeige.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Kunden_Umsatz_Anzeige.gif" width="598" height="55"></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
 dieser Darstellung sehen Sie den aktuellen Umsatz des Kunden des laufenden
-Jahres und des Vorjahres. Zugleich wird die Anzahl der gelegten Rechnungen
+Kalenderjahres und des Vorjahres. Zugleich wird die Anzahl der gelegten Rechnungen
 angezeigt. Zusätzlich können Sie wählen, ob die Umsatzbetrachtung auf Basis
 der tatsächlichen Rechnungsadresse (Kundenadresse in der Rechnung) oder der
 Statistikadresse ermittelt wird. Im Umsatz sind alle Ausgangsrechnungen jedoch
@@ -1336,7 +1370,26 @@ werden können.</p>
 
 
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie können Sonderkonditionen nur für die Artikelnummer und Bezeichnung
+verwendet werden?</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn die Sonderkonditionen nicht zur Preisgestaltung verwendet werden, sondern
+zur Zuordnung der Kundenartikelnummern zu Ihren Artikelnummern, so finden Sie
+bei jedem Eintrag in dern Sonderkonditionen die Möglichkeit einen Haken bei <img border="0" src="wirkt_nicht_Preis.JPG" width="142" height="15">
+wirkt nicht in Preisfindung setzen.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn dies angehakt ist, wird der Eintrag von der Preisfindung ausgeschlossen, die Kundenartikenummer + Bezeichnung in den Belege
+jedoch trotzdem angezeigt. Für die Grundeinstellung des Hakens nutzen Sie bitte
+den Parameter DEFAULT_KUNDESOKO_WIRKT_NICHT_IN_PREISFINDUNG und setzen diesen
+auf 1, falls Sie die Haken automatisch setzen wollen. Bitte beachten Sie jedoch,
+dass diese Funktion erst ab der HELIUM V Version 8845 verfügbar ist - eventuell
+schon vorher bestehenden Einträge müssen entsprechend angepasst werden.</p>
 
 
 
@@ -1347,6 +1400,48 @@ Abbuchungs- und Ziellager</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 <a href="../Lieferschein/index.htm#Abbuchungslager">siehe Lieferschein</a>.</p>
+
+
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Lieferdauer</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Das ist die Zeit die die Ware von der Fertigstellung bis zum Eintreffen beim Kunden benötigt. D.h. der angegebene Liefertermin im Auftrag ist der	Eintrefftermin, abzüglich der üblichen Lieferdauer ergibt dies den Termin wann
+die Produktion fertig sein muss - also den Endetermin des Loses. Hinterlegen Sie
+zum Beispiel bei Kunden aus dem Ausland die längere Lieferdauer um zum Beispiel
+den Postweg in der Planung berücksichtigen zu können.</p>
+
+
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Warum unterscheiden sich die Ergebnisse der Kundenumsatzstatistik und der
+Ausgangsrechnungsstatistik?</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Unterschiede kommen wie folgt zustande:<br>
+In der Kundenumsatzsatistik ist für den Datumsbereich das Datum der Rechnung auschlaggebend, d.h. Wenn ein LS am 30.4. erstellt wurde und am 5.5. verrechnet wurde, ist dieser im Datumsberech 1-31.5
+enthalten und zählt noch nicht zum Umsatz von April hinzu.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im Artikelgruppen-Journal wird der Lieferschein nur
+berücksichtigt, wenn das LS-Datum im Datums-Filter-bereich liegt.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Außerdem enthält die Kundenumsatzstatistik keine 'noch nicht verrechneten'- Lieferscheine, das Artikelgrupen-Journal jedoch schon.</p>
+
+
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+man diese Unterschiede (und etwaige kleine Rundungsbeträge) vorneweg nimmt
+(bzw. herausrechnet), dann müssen die Beträge des Ausgangsrechnungsstatistik,
+Warenausgangsjournal, die Kundenumsatzstatistik und die Artikelgruppenstatistik
+übereinstimmen.</p>
 
 
 

@@ -11,7 +11,7 @@
 
 <body>
 
-<h1 class="answer" align="left">Lagerbuchung mittels Memor&nbsp;</h1>
+<h1 class="answer" align="left"><a name="Memor"></a>Lagerbuchung mittels Memor&nbsp;</h1>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Mit
 dem Gerät Datalogic&nbsp; Memor zur mobilen Erfassung für HELIUM V&nbsp;können Sie effizient Materialentnahmen am Los buchen. Ebenso vereinfacht der
@@ -32,7 +32,35 @@ Memor ist über WLAN mit Ihrem HELIUM V-Webserver verbunden und greift online
 auf die Daten zu. Somit erreichen Sie, dass aktuelle Daten abgefragt und
 übertragen werden.</p>
 
-<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="memor_mini.gif" width="144" height="252"><img border="0" src="memor_mini.gif" width="144" height="252"></p>
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b><a href="../Installation/Einbindung_zusaetzlicher_Hardware.htm#Konfiguration">Parametrierung
+/ Konfiguration des Memors</a></b></p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;
+</p>
+
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;
+</p>
+
+<p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0">Voraussetzungen:</p>
+
+<ul>
+  <li>
+    <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0">WLan
+    damit Sie mit dem Memor mobil unterwegs sein können</li>
+  <li>
+    <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0">Artikeletiketten
+    mit Barcode</li>
+  <li>
+    <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0">Fertigungsscheine
+    mit eigenen Losnummern Barcodes</li>
+  <li>
+    <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0">Das
+    Memor selbst mit der Los-Materialbuchungs-Software</li>
+  <li>
+    <p class="answer" style="text-indent: 0; line-height: 100%; word-spacing: 0; margin: 0">Freigeschaltene
+    RESTful API</li>
+</ul>
+<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="memor_mini.gif" width="144" height="252"></p>
 
 <p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Bedienung
 des Memor</b></p>
@@ -82,6 +110,10 @@ des Memor</b></p>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Geben
     Sie Ihren Benutzernamen und das Passwort ein und klicken auf Anmelden.
     Danach steht Ihnen das Menü mit der Funktionsauswahl zur Verfügung.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bitte
+    beachten Sie hier den Zusammenhang zwischen dem <a href="../Installation/Einbindung_zusaetzlicher_Hardware.htm#Benutzerrechte">Benutzer
+    der Anmeldung am Memor und dessen Rechte in HELIUM V</a>.</li>
 </ul>
 
 <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Materialbuchung:</b><p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="memor_funktionsauswahl_material.gif" width="240" height="320">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -91,6 +123,10 @@ des Memor</b></p>
   <li>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Kurz
     zusammengefasst: Los-Nummer Scan &#8594;  Artikel-Nummer Scan &#8594; Stückzahl (+ Materialentnahme / - Rückgabe) &#8594; Bestätigen</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Sollte
+    der Artikel Serien- oder Chargennummern tragend sein, so scannen Sie bitte
+    auch diese ein.</li>
   <li>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Mittels
     Memor können Sie die "nachträgliche Materialentnahme ohne Bezug zur Soll Position"
@@ -108,6 +144,11 @@ des Memor</b></p>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Geben
     Sie die Stückzahl ein. Eine positive Zahl bedeutet Materialentnahme ("Lagerabgang")
     und mit einer negativen Zahl buchen Sie eine Rückgabe ("Lagerzugang")&nbsp;</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bei
+    der Rückgabe können Sie entscheiden, ob dadurch für die Menge keine
+    Fehlmenge entsteht, oder die zurückgegebene Menge wieder als Fehlmenge eingebucht
+    wird</li>
   <li>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Abschließend
     bestätigen Sie die Eingabe mit Buchen.</li>
@@ -133,6 +174,10 @@ des Memor</b></p>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
     darauffolgende Erfassung der Buchung selbst erfolgt über den Scan der
     Artikelnummer.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Sollte
+    der Artikel Serien- oder Chargennummern tragend sein, so scannen Sie bitte
+    auch diese ein.</li>
   <li>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Daraufhin
     wechselt die Erfassung in das Mengenfeld.</li>
@@ -172,7 +217,7 @@ des Memor</b></p>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wählen
     Sie diese Funktion aus</li>
   <li>
-    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">so
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">nun
     können Sie mit einem Scan die Artikelnummer eingeben.</li>
   <li>
     <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Falls
@@ -186,42 +231,77 @@ des Memor</b></p>
     hat.</li>
 </ul>
 
-<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Parametrierung
-des Memors</b></p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Losablieferung:</b>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="cezoom12.bmp" width="240" height="320">&nbsp;&nbsp;
+<img border="0" src="cezoom13.bmp" width="240" height="320">&nbsp;&nbsp; <img border="0" src="cezoom15.bmp" width="240" height="320">
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Im Ordner \Program Files\HeliumV_ME befindet sich die Konfigurationsdatei settings.ini<br>
-Hier sind die Einträge entsprechend einzustellen.</p>
+<ul>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
+    vierte Funktionsauswahl &quot;Fertigung&quot; ermöglicht die Buchung einer
+    Losablieferung und die Losgrößenänderung</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wählen
+    Sie diese Funktion aus</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">beim
+    zweiten Fenster wählen Sie die Funktion Ablieferung aus</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">nun
+    können Sie mit einem Scan die Losnummer eingeben.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Falls
+    diese Losnummer nicht gefunden wird, wird ein Fehler ausgegeben,</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">ansonsten
+    erhalten Sie die Möglichkeit die Menge der Ablieferung zu erfassen.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Mit
+    der Bestätigung durch den Button Buchen erzeugen Sie eine neue Ablieferung
+    für das Los mit der angegebenen Menge.</li>
+</ul>
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;</p>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Losgröße
+ändern:</b>
+<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">&nbsp;<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><img border="0" src="cezoom12.bmp" width="240" height="320">&nbsp;&nbsp;
+<img border="0" src="cezoom13.bmp" width="240" height="320">&nbsp;&nbsp; <img border="0" src="cezoom16.bmp" width="240" height="320">&nbsp;&nbsp;
+<img border="0" src="cezoom17.bmp" width="240" height="320">&nbsp;&nbsp; <img border="0" src="cezoom18.bmp" width="240" height="320">
 
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">[Settings]<br>
-server= Ihr HELIUM V Server<br>
-port=8280<br>
-defaultuser=<br>
-locale=deAT (je nach Ihrem Standort)<br>
-mandant=001 (je nach dem gewählten Mandant)<br>
-device=ME-9df2*****eb15282 (nicht ändern)</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><br>
-Der Eintrag "defaultuser" kann auch leer bleiben, somit muss der Benutzername bei der Anmeldung ebenfalls eingegeben werden.<br>
-Der Eintrag "device" ist mit dem entsprechend verschlüsselten Gerätecode zu ergänzen.<br>
-Ist alles richtig eingestellt muss diese Datei auch in den Ordner BACKUP\Program Files\HeliumV_ME\ kopiert werden, damit bei einem Cold-Boot die geänderten Einstellungen wieder hergestellt werden.<br>
-<br>
-Um die Einstellungsdatei am Gerät zu bearbeiten das Wordpad verwenden.&nbsp;<br>
-Achtung: Beim Öffnen das Format auf "Alle Dateien" einstellen.&nbsp;<br>
-Hinweis: Wenn die Datei schon mal bearbeitet wurde kann unter Datei - Recent diese wieder geöffnet werden.<br>
-</p>
-
-<p class="question" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0"><b>Pflege
-/ Richtige Behandlung</b></p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bitte
-beachten Sie um eine möglichst lange Lebensdauer des Geräts zu gewährleisten
-die Informationen des beiliegenden Handbuchs.</p>
-
-<p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Im
-Handbuch finden Sie auch nähere Informationen zum Einrichten der Verbindung mit
-dem WLAN.</p>
+<ul>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Die
+    vierte Funktionsauswahl &quot;Fertigung&quot; ermöglicht die Buchung einer
+    Losablieferung und die Losgrößenänderung</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wählen
+    Sie diese Funktion aus</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">beim
+    zweiten Fenster wählen Sie die Funktion Losgröße ändern aus</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">nun
+    können Sie mit einem Scan die Losnummer eingeben.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Falls
+    diese Losnummer nicht gefunden wird, wird ein Fehler ausgegeben,</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">ansonsten
+    erhalten Sie die Möglichkeit die Menge der Losgrößenänderung zu
+    erfassen.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Mit
+    der Bestätigung durch den Button Durchführen andern Sie die Losgröße
+    für das ausgewählte Los auf die angegebene Menge.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Bitte
+    beachten Sie: eine Losgrößenänderung ist nur möglich, wenn die Menge der
+    Ablieferungen kleiner, als die gewünschte Losgröße ist.</li>
+  <li>
+    <p class="answer" style="word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0">Wenn
+    die abgelieferte Anzahl größer als die Losgröße wäre, erscheint einer
+    Fehlermeldung.</li>
+</ul>
 
 </body>
 

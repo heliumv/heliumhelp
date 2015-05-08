@@ -60,6 +60,41 @@ die Verteilungsberechnung ist gegeben, dass bei einer Änderung des
 Einstandspreises der gleiche Preis auf die einzelne Position des Setartikels
 durchgereicht wird.</p>
 
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein Setartikel
+(Artikelset), dient der Abbildung zusammengestellter Komponenten die als Verkaufsset ausgeliefert
+werden (z.B. Bohrmaschine im Koffer mit Netzteil und Bohrerset).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Es wird in der Stückliste ein Artikelset definiert.<br>
+Nun wird dieses Set in das Angebot -> Rechnung, Gutschrift übernommen.<br>
+Die Auswahl des Sets bewirkt dass:<br>
+- der Setartikel (nur) als Überschrift eingetragen wird, dieser definiert den Preis des Produktes<br>
+- die durch die Artikelset-Stückliste definierten Komponenten werden als eigene Positionen eingetragen und vom Lager
+abgebucht</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">-
+der Verkaufspreis, für die Statistik, definiert sich aus dem Setartikel. ACHTUNG: dieser kann auch manuell verändert werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Sind in den Set-Positionen Lagerbewirtschaftet, Chargen-/Seriennummern geführte Artikel enthalten, so müssen in LS, RE, GS diese
+erfasst werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn ein Setartikel
+in LS oder RE ausgewählt wurde, dann kann anstatt des Lagers 'KEIN_LAGER' ein
+Lager ausgewählt werden. Somit werden alle Set-Positionen von dem gewählten Lager abgebucht.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hilfreich
+ist der Set-Artikel vor allem für die Abbildung von Handelsgeschäften oder
+wenn einzelne kombinierte Komponenten ohne den Zwischenschritt einer Fertigung
+an den Kunden geliefert werden.<br>
+Sobald der Preis des Set-Artikels festgelegt wurde, werden die Preise der
+einzelnen Positionen anteilig aufgeteilt.<br>
+Im jeweiligen Beleg können einzelne Komponenten je nach Anforderung angepasst
+/abgeändert werden (zb. der schwarze Koffer für die Borhmaschine ist nicht auf
+Lager, der blaue schon).<br>
+</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Berechnung
 des Wertes einer Position für das Bewegungsmodul:</p>
 
@@ -140,9 +175,16 @@ berücksichtigt.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Diese
 Vorgehensweise wird auch für die Erzeugung der Fibu-Exportdaten verwendet.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann auch definiert werden, dass die einzelnen Positionen den Setpreis ergeben?</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Bei Händlern kommt es oft dazu, dass ganze Produktgruppen zusammengestellt werden und dass es dafür einen Pauschalpreis gibt.<br>
+Eigentlich ist es so, dass der Pauschalpreis eine reine Preisauszeichnung ist und sich automatisch von unten nach oben
+rechnet (Summe aus den eingegebenen Positionen). Für diesen Anwendungsfall
+verwenden Sie bitte die<a href="../Rechnung/Gemeinsamkeiten_der_Bewegungsmodule.htm#Intelligente Zwischensumme">
+Intelligente Zwischensumme</a> (Positionsart). Um bei den Positionen keine Preise
+anzudrucken, setzen Sie den Haken bei [] Positionspreise anzeigen.</p>
 
 </body>
 

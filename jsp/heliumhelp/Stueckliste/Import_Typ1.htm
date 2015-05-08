@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Language" content="de">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 <title>Stücklisten-Import Typ1</title>
@@ -121,7 +121,7 @@ für den Import definiert werden.
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 für die Stücklisten auch entsprechende Arbeitspläne effizient erzeugen zu
 können, sollten Sie in den Mandantenparametern auch den Parameter
-ARBEITSPLAND_DEFAULT_STUECKLISTE
+ARBEITSPLAN_DEFAULT_STUECKLISTE
 definiert haben.<br>
 </p>
 
@@ -160,22 +160,8 @@ Der Trenner für die Ebenendefinition ist der Punkt "."<br>
 </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn eine Stkl-Position bereits vorhanden ist (= Artikelnummer/Einheit/Dimensionen stimmen zusammen), wird
-diese mit den erhaltenen Daten aktualisiert, ansonsten wird die Position neu angelegt. Eventuelle nicht mehr vorhandene Positionen werden gelöscht. Wenn das Löschen aufgrund von Abhängigkeiten nicht möglich ist,
+diese mit den erhaltenen Daten aktualisiert, ansonsten wird die Position neu angelegt. Eventuell nicht mehr vorhandene Positionen werden gelöscht. Wenn das Löschen aufgrund von Abhängigkeiten nicht möglich ist,
 wird die Pos-Menge auf 0 gesetzt.
-</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
-&nbsp;
-</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
-Wenn ein importierter Artikel neu versioniert wird, dann wird in angelegten/offenen/teilerledigten Aufträge der bereits vorhandene Artikel gegen die neue Version&nbsp;<br>
-ausgetauscht. Ebenso in angelegten Losen. Bereits vorhandene Kopf-Artikel (Stücklisten) werden nicht
-aktualisiert (Einheit usw.)
-</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
-Ein Artikel wird nur dann Versioniert, wenn dieser eine Stückliste ist und aktuellere Anhänge hat.
 </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
@@ -192,8 +178,8 @@ vorgenommen.
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
 </p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
-Dateiaufbau ist auf folgendes Format als XLS Datei festgeschrieben.<img border="0" src="Solid_Works.JPG" width="1068" height="127">
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt; width: 924px;">Der
+Dateiaufbau ist auf folgendes Format als XLS Datei festgeschrieben.<img border="0" src="Solid_Works.JPG" width="958" height="127">
 </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
@@ -209,6 +195,10 @@ müssen die Felder Menge und Gewicht in der Datei als Zahl definiert sein.
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
 die Stücklistenposition werden nur diejenigen Zeilen übernommen, bei denen
 auch eine Menge &lt;&gt; 0 eingetragen ist.
+</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+keine Maßeinheit definiert ist, wird als Mengeneinheit Stück verwendet.
 </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die

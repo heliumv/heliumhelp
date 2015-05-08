@@ -25,7 +25,7 @@ werden.&nbsp;</p>
 <b>Parameter Mandant</b>
 </p>
 <div align="left">
-  <table border="1" width="1045" height="4">
+  <table border="1" width="1045" height="3">
     <tr>
       <td width="357" height="25"><b>Bezeichnung</b></td>
       <td width="78" height="25"><b>Kategorie</b></td>
@@ -340,7 +340,7 @@ MAXIMALELAENGE_DURCHWAHL_ZENTRALE&nbsp;</td>
       <td width="357" height="25">
 MENGE_UI_NACHKOMMASTELLEN&nbsp;</td>
       <td width="78" height="25">	ALLGEMEIN&nbsp;</td>
-      <td width="54" height="25">0/1/§</td>
+      <td width="54" height="25">0/1/3</td>
       <td width="526" height="25">Anzahl der Nachkommastellen für Mengenfelder im
         User Interface (UI)</td>
     </tr>
@@ -379,6 +379,20 @@ PREISERABATTE_UI_NACHKOMMASTELLEN_EK&nbsp;</td>
       <td width="78" height="25">	ALLGEMEIN&nbsp;</td>
       <td width="54" height="25">2/4</td>
       <td width="526" height="25">Anzahl der VK-Nachkommastellen für Preis- und Rabattfelder im UI</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">
+PREISERABATTE_UI_NACHKOMMASTELLEN_WE</td>
+      <td width="78" height="25">	ALLGEMEIN&nbsp;</td>
+      <td width="54" height="25">2/4</td>
+      <td width="526" height="25">Anzahl der WE-Nachkommastellen für Preis- und Rabattfelder im UI</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">
+PROJEKT_IST_PFLICHTFELD</td>
+      <td width="78" height="25">	ALLGEMEIN</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Das Projekt ist in den VK-Belegen ein Pflichtfeld.</td>
     </tr>
   <tr>
       <td width="357" height="25">
@@ -604,11 +618,23 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Konditionen müssen vor dem erstmaligen Aktivieren des Angebots bestätigt werden</td>
     </tr>
   <tr>
+      <td width="357" height="25">LIEFERANT_ANGEBEN</td>
+      <td width="78" height="25">	ANGEBOT	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Lieferant in Angebots- und Auftragsposition angebbar.</td>
+    </tr>
+  <tr>
       <td width="357" height="25">ANGEBOTSSTUECKLISTE_ANSPRECHPARTNER_VORBESETZEN&nbsp;</td>
       <td width="78" height="25">	ANGEBOTSSTUECKLISTE&nbsp;	</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">Ansprechpartner nach Auswahl des Kunden
         vorbesetzen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">EK_PREISBASIS</td>
+      <td width="78" height="25">	ANGEBOTSSTUECKLISTE&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">0=Lief1Preis, 1=Nettopreis</td>
     </tr>
   <tr>
       <td width="357" height="25">KALKULATIONSART&nbsp;</td>
@@ -664,6 +690,18 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Lagerplaetze in Artikelauswahl anzeigen</td>
     </tr>
   <tr>
+      <td width="357" height="25">ANZEIGEN_REFERENZNUMMER_IN_AUSWAHLLISTE</td>
+      <td width="78" height="25">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Referenznummer in der Artikel-Auswahlliste anzeigen.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ANZEIGEN_ZUSATZBEZ2_IN_AUSWAHLLISTE</td>
+      <td width="78" height="25">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Zusatzbezeichnung2 in der Artikel-Auswahlliste anzeigen.</td>
+    </tr>
+  <tr>
       <td width="357" height="25">ARTIKEL_DEFAULT_CHARGENNUMMERNBEHAFTET&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -713,11 +751,25 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         Pflichtfeld (besonders für Erlöskontenfindung bei der Fibu wichtig)</td>
     </tr>
   <tr>
+      <td width="357" height="25">ARTIKELGRUPPE_NUR_VATERGRUPPEN_ANZEIGEN</td>
+      <td width="78" height="25">	ARTIKEL	</td>
+      <td width="54" height="25">0/1/2</td>
+      <td width="526" height="25">0 - Alle Artikelgruppen anzeigen<br>
+        1 - Nur Vatergruppen anzeigen<br>
+        2 - Alle Artikelgruppen anzeigen, Kindgruppen eingerueckt</td>
+    </tr>
+  <tr>
       <td width="357" height="25">ARTIKELGRUPPE_STATT_ZUSATZBEZ_IN_AUSWAHLLISTE&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">Artikelgruppe statt Zusatzbezeichnung in der Artikel-Auswahlliste anzeigen. Wirkt nur, wenn
         Parameter ABMESSUNGEN_STATT_ZUSATZBEZ_IN_AUSWAHLLISTE=0</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ARTIKELNUMMER_AUSWAHL_ABSCHNEIDEN</td>
+      <td width="78" height="25">	ARTIKEL	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Vorbesetzte Artikelnummer bei der Artikelauswahl um eine best. Anzahl von Stellen abschneiden.</td>
     </tr>
   <tr>
       <td width="357" height="25">ARTIKELNUMMER_ZEICHENSATZ&nbsp;</td>
@@ -728,6 +780,13 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         0123456789<br>
         -_@+</td>
       <td width="526" height="25">Bestimmt die in einer Artikelnummer verwendbaren Zeichen</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">ARTIKELSUCHE_MIT_HERSTELLER</td>
+      <td width="78" height="25">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Textsuche inkl. Hersteller (Bezeichnung und
+        Nummer)</td>
     </tr>
   <tr>
       <td width="357" height="25">ARTIKELWIEDERBESCHAFFUNGSZEIT&nbsp;</td>
@@ -830,6 +889,13 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         der Wert ist</td>
     </tr>
   <tr>
+      <td width="357" height="25">GENERIERE_ARTIKELNUMMER_ZIFFERNBLOCK</td>
+      <td width="78" height="25">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Gibt an, welcher Ziffernblock beim generieren herangezogen wird:
+        0 = der Erste, 1 = der Letzte</td>
+    </tr>
+  <tr>
       <td width="357" height="25">GERINGEREN_VKPREIS_VORSCHLAGEN&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -871,6 +937,18 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Herstellerkurzzeichen wird automatisch vergeben</td>
     </tr>
   <tr>
+      <td width="357" height="25">INVENTUR_BASISPREIS</td>
+      <td width="78" height="25">	ARTIKEL	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Inventurbasispreis des Inventurstand kommt aus: Gestehungspreis = 0, EK-Preis = 1</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LAENGE_CHARGENNUMMER_EINEINDEUTIG</td>
+      <td width="78" height="25">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Wenn die Laenge > 0, dann werden in der Losablieferung eineindeutige CHNrs vorgeschlagen.</td>
+    </tr>
+  <tr>
       <td width="357" height="25">KUNDESONDERKONDITIONEN_WEBSHOP_VERWENDEN&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -908,7 +986,7 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="357" height="25">NEUER_ARTIKEL_IST_LAGERBEWIRTSCHAFTET&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="54" height="25">0/1</td>
-      <td width="526" height="25">Defaukt für Lagerbewirtschaftung bei neuen
+      <td width="526" height="25">Default für Lagerbewirtschaftung bei neuen
         Artikel</td>
     </tr>
   <tr>
@@ -926,11 +1004,30 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Eindeutige Seriennumer über alle Artikel</td>
     </tr>
   <tr>
-      <td width="357" height="25">SERIENNUMMERN_FUEHRENDE_NULLEN_ENTFERNEN&nbsp;</td>
+      <td width="357" height="25">SERIENNUMMER_NUMERISCH</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="54" height="25">0/1</td>
-      <td width="526" height="25">Beim Speichern einer SNR werden führende Nullen
+      <td width="526" height="25">Seriennummern sind numerisch</td>
+    </tr>
+  <tr>
+      <td width="357" height="16">SERIENNUMMERN_FUEHRENDE_NULLEN_ENTFERNEN&nbsp;</td>
+      <td width="78" height="16">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="16">0/1</td>
+      <td width="526" height="16">Beim Speichern einer SNR werden führende Nullen
         entfernt</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">SI_EINHEITEN</td>
+      <td width="78" height="25">	ARTIKEL	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25"><a href="../artikel/index.htm#SI-Wert">Einheiten
+        für Si-Wert-Erkennung.</a></td>
+    </tr>
+  <tr>
+      <td width="357" height="25">SI_OHNE_EINHEIT</td>
+      <td width="78" height="25">	ARTIKEL	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25"><a href="../artikel/index.htm#SI-Wert">Si-Wert-Erkennung ohne Einheiten verwenden.</a></td>
     </tr>
   <tr>
       <td width="357" height="25">STARTWERT_ARTIKELNUMMER</td>
@@ -944,6 +1041,33 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="78" height="25">	ARTIKEL&nbsp;	</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">Kurzbezeichnung+ Revision statt Verpackungsart+ Bauform in Statuszeile</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">TEXTSUCHE_INKLUSIVE_INDEX_REVISION</td>
+      <td width="78" height="25">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Artikeltextsuche inklusive der Felder Index/Revision</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">TEXTSUCHE_INKLUSIVE_ARTIKELNUMMER</td>
+      <td width="78" height="25">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Bei der Textsuche wird auch die Artikelnummer
+        inkludiert</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">VERKAUFSPREIS_RUECKPFLEGE</td>
+      <td width="78" height="25">	ARTIKEL&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Wenn der Parameter aktiviert ist (1), so wird
+        beim Speichern der Auftragsposition die VK-Basis des Artikels zum Auftragsdatum aktualisiert.</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">VERSION_BEI_SNR_MITANGEBEN</td>
+      <td width="78" height="25">	ARTIKEL	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Version bei SNR-Lagerbuchung mitangeben
+        möglich</td>
     </tr>
   <tr>
       <td width="357" height="25">VKPREIS_STATT_GESTPREIS_IN_ARTIKELAUSWAHL&nbsp;</td>
@@ -1001,9 +1125,10 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
   <tr>
       <td width="357" height="25">ADRESSVORBELEGUNG&nbsp;</td>
       <td width="78" height="25">	AUFTRAG&nbsp;	</td>
-      <td width="54" height="25">0/1</td>
+      <td width="54" height="25">0/1/2</td>
       <td width="526" height="25">0 = nach Häufigkeit<br>
-        1 = Auftragsadresse = Lieferadresse und Rechnungsadresse anhand Auftragsadresse</td>
+        1 = Auftragsadresse = Lieferadresse und Rechnungsadresse anhand Auftragsadresse<br>
+        2 = Lieferadresse anhand Häufigkeit und Rechnungsadresse anhand Auftragsadresse</td>
     </tr>
   <tr>
       <td width="357" height="25">ALLE_LOSE_BERUECKSICHTIGEN&nbsp;</td>
@@ -1116,6 +1241,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Lagermindeststandswarnung im Auftrag</td>
     </tr>
   <tr>
+      <td width="357" height="25">TRENNZEICHEN_ARTIKELGRUPPE_AUFTRAGSNUMMER</td>
+      <td width="78" height="25">	AUFTRAG&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Trennzeichen zwischen Artikelgruppe und Auftragsnummer. z.B. bei Auftragsschnellanlage.</td>
+    </tr>
+  <tr>
       <td width="357" height="25">WIEDERHOLENDER_AUFTRAG_VERSTECKT&nbsp;</td>
       <td width="78" height="25">	AUFTRAG&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -1175,6 +1306,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         vorbesetzen</td>
     </tr>
   <tr>
+      <td width="357" height="25">BESTELLUNG_AUS_BESTVOR_POSITIONEN_MIT_LOSZUORDNUNG</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Bestellvorschlag Loszuordnungen erzeugen (1)</td>
+    </tr>
+  <tr>
       <td width="357" height="25">BESTELLUNG_BELEGNUMMERSTARTWERT&nbsp;</td>
       <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -1193,6 +1330,16 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">0 = Lieferant der Bestellung, 1 = Alle</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">DEFAULT_BESTELLVORSCHLAG_UEBERLEITUNG</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="54" height="25">1/2/3/4/5</td>
+      <td width="526" height="25"><a href="../Bestellung/Bestellvorschlag.htm#Bestellungen_erzeugen">1 = für jeden Lieferant + gl. Termin eine Bestellung</a><br>
+        2 = je Lieferant eine Bestellung anlegen<br>
+        3 = ein Lieferant und ein Termin<br>
+        4 = ein Lieferant und alle Positionen des LF in einer BS<br>
+        5 = Abruf zu vorhandenen Rahmen erzeugen</td>
     </tr>
   <tr>
       <td width="357" height="25">DEFAULT_EINKAUFSPREIS_ZURUECKPFLEGEN&nbsp;</td>
@@ -1262,10 +1409,10 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Absender der Mahnung: 0= Administrator, 1=Anforderer</td>
     </tr>
   <tr>
-      <td width="357" height="25">MONATSBESTELLUNGSART&nbsp;</td>
-      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
-      <td width="54" height="25">0/1/2</td>
-      <td width="526" height="25">0 = mit automatischem Wareneingang<br>
+      <td width="357" height="24">MONATSBESTELLUNGSART&nbsp;</td>
+      <td width="78" height="24">	BESTELLUNG&nbsp;	</td>
+      <td width="54" height="24">0/1/2</td>
+      <td width="526" height="24">0 = mit automatischem Wareneingang<br>
         1 = ohne automatischem Wareneingang,&nbsp;<br>
  2 = Bestellungsimport</td>
     </tr>
@@ -1295,11 +1442,23 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Die <a href="../Bestellung/Bestellvorschlag.htm#Toleranz"> Toleranzfrist</a> in Tagen die bei der Erstellung eines Bestellvorschlages berücksichtigt wird. Gibt an wie viele Tage zu spät eine Lieferung eintreffen darf.</td>
     </tr>
   <tr>
+      <td width="357" height="25">WARENEINGANG_LAGERPLATZ_NUR_DEFINIERTE</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Beim Druck des WEP-Etiketts koennen nur mehr Lagerplaetze, welche im Artikel definiert sind, ausgewaehlt werden</td>
+    </tr>
+  <tr>
       <td width="357" height="25">URSPRUNGSTERMIN_FUER_LIEFERANTENBEURTEILUNG&nbsp;</td>
       <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">Aktiviert den <a href="../Bestellung/index.htm#Ursprungstermin"> Ursprungstermin</a> bei der AB-Eingabe von
         Bestellpositionen unter Sicht Lieferantentermine</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">WEP_PREIS_ZURUECKSCHREIBEN</td>
+      <td width="78" height="25">	BESTELLUNG&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">WEP-Preis automatisch in Artikellieferant zurueckschreiben.</td>
     </tr>
   <tr>
       <td width="357" height="25">EINGANGSRECHNUNG_BELEGNUMMERSTARTWERT&nbsp;</td>
@@ -1310,8 +1469,9 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
   <tr>
       <td width="357" height="25">EINGANGSRECHNUNG_LIEFERANTENRECHNUNGSNUMMER_LAENGE&nbsp;</td>
       <td width="78" height="25">	EINGANGSRECHNUNG&nbsp;	</td>
-      <td width="54" height="25">0/1</td>
-      <td width="526" height="25">Länge der Lieferantenrechnungsnummer</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Länge der Lieferantenrechnungsnummer,
+        -1=Buchstaben</td>
     </tr>
   <tr>
       <td width="357" height="25">EINGANGSRECHNUNG_ZAHLUNG_MIT_KURSEINGABE&nbsp;</td>
@@ -1397,6 +1557,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         nachgebucht</a></td>
     </tr>
   <tr>
+      <td width="357" height="25">BEWERTUNG_IN_AUSWAHLLISTE</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Bewertung in Auswahlliste anzeigen.</td>
+    </tr>
+  <tr>
       <td width="357" height="25">DEFAULT_VORLAUFZEIT_INTERNEBESTELLUNG&nbsp;</td>
       <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
       <td width="54" height="25"></td>
@@ -1441,10 +1607,10 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Anzahl der dargestellten Tätigkeitsgruppen</td>
     </tr>
   <tr>
-      <td width="357" height="25">FERTIGUNG_KAPAZITAETSVORSCHAU_ZEITRAUM&nbsp;</td>
-      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
-      <td width="54" height="25"></td>
-      <td width="526" height="25">Darstellungszeitraum der Kapazitätsvorschau
+      <td width="357" height="26">FERTIGUNG_KAPAZITAETSVORSCHAU_ZEITRAUM&nbsp;</td>
+      <td width="78" height="26">	FERTIGUNG&nbsp;	</td>
+      <td width="54" height="26"></td>
+      <td width="526" height="26">Darstellungszeitraum der Kapazitätsvorschau
         in Tagen</td>
     </tr>
   <tr>
@@ -1459,6 +1625,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">Nach Möglichkeit immer ganze Chargen im Los
         verwenden</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">INT_BEST_VERDICHTEN_RAHMENPRUEFUNG</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Interne Bestellung verdichten mit Rahmenpruefung</td>
     </tr>
   <tr>
       <td width="357" height="25">INTERNE_BESTELLUNG_MIT_AUFTRAGSPOSITIONSBEZUG&nbsp;</td>
@@ -1531,6 +1703,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
       <td width="54" height="25"></td>
       <td width="526" height="25">Startwert der Losnummer im neuen Geschäftsjahr</td>
+    </tr>
+  <tr>
+      <td width="357" height="25">LOSABLIEFERUNG_GESAMTE_ISTZEITEN_ZAEHLEN</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Für den Ablieferwert zählen nur die Zeiten bis zum Abliefzeitpunkt.</td>
     </tr>
   <tr>
       <td width="357" height="25">LOSAUSGABE_AUTOMATISCH&nbsp;</td>
@@ -1606,13 +1784,6 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">I_ID des Zusatzstatus für Rankingsliste</td>
     </tr>
   <tr>
-      <td width="357" height="25">SERIENNUMMERNGENERATOR&nbsp;</td>
-      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
-      <td width="54" height="25">0/1</td>
-      <td width="526" height="25">0= kein Seriennummerngenerator<br>
-        1 = fortlaufende <a href="../Fertigung/Geraeteseriennummern.htm"> Seriennummern</a> bei Losablieferung</td>
-    </tr>
-  <tr>
       <td width="357" height="25">SOLLSATZGROESSE_PRUEFEN&nbsp;</td>
       <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -1639,6 +1810,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         anzeigen</td>
     </tr>
   <tr>
+      <td width="357" height="25">ZUSATZBEZEICHNUNG_IN_AUSWAHLLISTE</td>
+      <td width="78" height="25">	FERTIGUNG&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Zusatzbezeichnung in Auswahlliste (Wenn Parameter AUFTRAG_STATT_ARTIKEL_IN_AUSWAHLLISTE=0)</td>
+    </tr>
+  <tr>
       <td width="357" height="25">AUSZUGSNUMMER_BEI_BANK_ANGEBEN&nbsp;</td>
       <td width="78" height="25">	FINANZ&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -1653,6 +1830,30 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         1 = aktiviert, 0 = deaktiviert (Standard)</td>
     </tr>
     <tr>
+      <td width="357" height="35">EXPORT_DATEV_BERATER</td>
+      <td width="78" height="35">	FINANZ&nbsp;	</td>
+      <td width="54" height="35"></td>
+      <td width="526" height="35">Beraternummer für DATEV-Export, nicht zu verwechseln mit Mandantennummer</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">EXPORT_DATEV_KONTOKLASSEN_OHNE_BU_SCHLUESSEL</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Die erste Stelle der Sachkontonummern, bei welchen der Buchungsschlüssel nicht gesetzt werden darf. Mehrere durch Komma getrennt.</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">EXPORT_DATEV_MANDANT</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Mandantennummer für DATEV-Export, nicht zu verwechseln mit Beraternummer</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">EXPORT_DATEV_MITLAUFENDES_KONTO</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Das Konto darf in der HELIUM V FiBu nicht existieren, es findet nur beim Exportieren von Splittbuchungen Einsatz. Der Saldo dieses Kontos muss in DATEV 0 sein.</td>
+    </tr>
+    <tr>
       <td width="357" height="25">FIBU_EXPORT_ASCII&nbsp;</td>
       <td width="78" height="25">	FINANZ&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -1665,6 +1866,14 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">0 = Anfangsbuchstabe des Partners wird für 2+3. Stelle
         verwendet<br>
         1 = fortlaufend, gilt für Debitoren und Kreditoren</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">FINANZ_EXPORT_ANZAHLUNGSRECHNUNG</td>
+      <td width="78" height="25">	FINANZ	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">0= Anzahlungsrechnungen werden nicht
+        exportiert<br>
+        1= Anzahlungsrechnungen sind im Export enthalten</td>
     </tr>
     <tr>
       <td width="357" height="25">FINANZ_EXPORT_ARTIKELGRUPPEN_DEFAULT_KONTO_AR&nbsp;</td>
@@ -1812,6 +2021,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Default Export-Zieldatei Sachkonten</td>
     </tr>
     <tr>
+      <td width="357" height="25">FINANZ_OP_PREFIX_GUTSCHRIFT</td>
+      <td width="78" height="25">	FINANZ&nbsp;	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Prefix Gutschriftnummer bei Import Offene-Posten.</td>
+    </tr>
+    <tr>
       <td width="357" height="25">FINANZ_OP_PREFIX_RECHNUNG&nbsp;</td>
       <td width="78" height="25">	FINANZ&nbsp;	</td>
       <td width="54" height="25"></td>
@@ -1915,6 +2130,13 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Startwert der Belegnummer im neuen Geschäftsjahr</td>
     </tr>
   <tr>
+      <td width="357" height="25">GUTSCHRIFT_NENNT_SICH_RECHNUNGSKORREKTUR</td>
+      <td width="78" height="25">	GUTSCHRIFT&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Bezeichnung von Gutschriften als
+        Rechnungskorrektur</td>
+    </tr>
+  <tr>
       <td width="357" height="25">GUTSCHRIFT_VERWENDET_NUMMERNKREIS_DER_RECHNUNG&nbsp;</td>
       <td width="78" height="25">	GUTSCHRIFT&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -1993,10 +2215,22 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Definition der Debitorennummern</td>
     </tr>
     <tr>
-      <td width="357" height="25">DEFAULT_ARTIKEL_ARTIKELART&nbsp;</td>
+      <td width="357" height="25">DEFAULT_BELEGDRUCK_MIT_RABATT</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Default- Einstellung der Option -Belegdrucke mit Rabatt-</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEFAULT_KOPIEN_LIEFERSCHEIN</td>
       <td width="78" height="25">	KUNDEN	</td>
       <td width="54" height="25"></td>
-      <td width="526" height="25"></td>
+      <td width="526" height="25">Anzahl der Kopien für Lieferscheine</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEFAULT_KOPIEN_RECHNUNG</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Anzahl der Kopien für Rechnungen</td>
     </tr>
     <tr>
       <td width="357" height="25">DEFAULT_KUNDE_AKZEPTIERT_TEILLIEFERUNGEN&nbsp;</td>
@@ -2010,6 +2244,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="78" height="25">	KUNDEN	</td>
       <td width="54" height="25">1/2/3</td>
       <td width="526" height="25">1 = Alle, 2 = Kunde, 3 = Interessent</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">DEFAULT_KUNDESOKO_WIRKT_NICHT_IN_PREISFINDUNG</td>
+      <td width="78" height="25">	KUNDEN	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Default- Einstellung der Option -wirkt nicht in Preisfindung- in der Kunden-Soko eines Artikels</td>
     </tr>
     <tr>
       <td width="357" height="25">DEFAULT_LIEFERDAUER&nbsp;</td>
@@ -2224,6 +2464,13 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Startwert der Belegnummer im neuen Geschäftsjahr</td>
     </tr>
     <tr>
+      <td width="357" height="25">LS_DEFAULT_VERRECHENBAR</td>
+      <td width="78" height="25">	LIEFERSCHEIN&nbsp;	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Default-Wert für -Verrechenbar- in den
+        Lieferschein-Konditionen (1= Verrechenbar, 0=nicht verrechenbar)</td>
+    </tr>
+    <tr>
       <td width="357" height="25">MINDESTSTANDSWARNUNG&nbsp;</td>
       <td width="78" height="25">	LIEFERSCHEIN&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -2236,10 +2483,26 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Die offene Menge in -Sicht Auftrag- als Positionsmenge vorschlagen.</td>
     </tr>
     <tr>
+      <td width="357" height="25">POSITIONSREIHENFOLGE_AUS_AUFTRAG_ERHALTEN</td>
+      <td width="78" height="25">	LIEFERSCHEIN	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Positionsreihenfolge des Auftrags erhalten, wenn LS-Position aus
+        Sicht Auftrag erzeugt wird</td>
+    </tr>
+    <tr>
       <td width="357" height="25">PARTNERSUCHE_WILDCARD_BEIDSEITIG&nbsp;</td>
       <td width="78" height="25">	PARTNER	</td>
       <td width="54" height="25">0/1</td>
-      <td width="526" height="25">Beidseitige Wildcard im Filterkriterium Firma in der Kunden/Partner/Lieferantenauswahlliste.</td>
+      <td width="526" height="25">Beidseitige Wildcard im Filterkriterium Firma in der
+        Kunden/Partner/Lieferantenauswahlliste - das bedeutet, dass Teile des
+        Namens eingegeben werden können und bei der Suche nach rechts und links
+        gesucht wird.</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">SELEKTIONEN_MANDANTENABHAENGIG</td>
+      <td width="78" height="25">	PARTNER	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Selektionen sind mandantenabhaengig</td>
     </tr>
     <tr>
       <td width="357" height="25">ANWESENHEITSLISTE_TELEFON_PRIVAT_ANZEIGEN&nbsp;</td>
@@ -2253,6 +2516,13 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">Arbeitszeitartikel für Zeiterfassung kommen aus der
         <a href="../personal/index.htm#Verfügbarkeit"> Personalverfügbarkeit</a></td>
+    </tr>
+    <tr>
+      <td width="357" height="25">AUTOMATISCHE_PAUSEN_NUR_WARNUNG</td>
+      <td width="78" height="25">	PERSONAL	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Automatische Pausen nur Warnung anzeigen, wenn
+        zu wenig gebucht.</td>
     </tr>
     <tr>
       <td width="357" height="25">AUTOMATISCHE_PAUSEN_AB_ERLAUBTEM_KOMMT&nbsp;</td>
@@ -2345,6 +2615,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Maximale Einträge an Zeitdaten, die für die Sollzeitprüfung vorhanden sein dürfen</td>
     </tr>
     <tr>
+      <td width="357" height="25">PARAMETER_ZEITBUCHUNG_AUF_ANGELEGTE_LOSE_MOEGLICH</td>
+      <td width="78" height="25">	PERSONAL	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">1= Zeitbuchungen sind auch auf angelegte Lose möglich</td>
+    </tr>
+    <tr>
       <td width="357" height="25">PERSONALKOSTEN_QUELLE&nbsp;</td>
       <td width="78" height="25">	PERSONAL	</td>
       <td width="54" height="25">0/1/2</td>
@@ -2354,10 +2630,10 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         2= Stundensatz aus Personalgehalt</td>
     </tr>
     <tr>
-      <td width="357" height="25">PERSONALNUMMER_ZEICHENSATZ&nbsp;</td>
-      <td width="78" height="25">	PERSONAL	</td>
-      <td width="54" height="25"></td>
-      <td width="526" height="25">Bestimmt die in einer Personalnummer verwendbaren Zeichen. ACHTUNG: Terminals unterstützen nur die Ziffern 0 bis 9!</td>
+      <td width="357" height="23">PERSONALNUMMER_ZEICHENSATZ&nbsp;</td>
+      <td width="78" height="23">	PERSONAL	</td>
+      <td width="54" height="23"></td>
+      <td width="526" height="23">Bestimmt die in einer Personalnummer verwendbaren Zeichen. ACHTUNG: Terminals unterstützen nur die Ziffern 0 bis 9!</td>
     </tr>
     <tr>
       <td width="357" height="25">PERSONALZEITDATENEXPORT_FIRMENNUMMER&nbsp;</td>
@@ -2398,6 +2674,24 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Theoretische Ist-Zeit Rechnung bei Umspann/Rüstzeiten</td>
     </tr>
     <tr>
+      <td width="357" height="25">URAUBSTAGE_RUNDUNG</td>
+      <td width="78" height="25">	PERSONAL	</td>
+      <td width="54" height="25">0/1/2/3</td>
+      <td width="526" height="25">0 = keine Rundung, 1 = kaufmännisch runden, 2 = generell abrunden, 3 = generell aufrunden</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">URLAUBSANTRAG</td>
+      <td width="78" height="25">	PERSONAL	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Ablauf des Urlaubsantrag mit Genehmigung.</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">VON_BIS_ERFASSUNG</td>
+      <td width="78" height="25">	PERSONAL	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Belege können mit Von-Bis-Zeit erfasst werden.</td>
+    </tr>
+    <tr>
       <td width="357" height="25">ZEITBUCHUNG_AUF_ERLEDIGTE_MOEGLICH&nbsp;</td>
       <td width="78" height="25">	PERSONAL	</td>
       <td width="54" height="25">0/1</td>
@@ -2436,23 +2730,29 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="526" height="25">Default- <a href="../Zutritt/index.htm#Zutrittdefinition"> Zutrittsklasse</a></td>
     </tr>
     <tr>
+      <td width="357" height="25">INTERN_ERLEDIGT_BEBUCHBAR</td>
+      <td width="78" height="25">	PROJEKT	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Wenn der Parameter auf 1 gestellt ist, dann
+        ist die Zeiterfassung auf intern erledigte Projekte möglich.</td>
+    </tr>
+    <tr>
       <td width="357" height="25">KURZBEZEICHNUNG_STATT_ORT_IN_AUSWAHLLISTE</td>
       <td width="78" height="25">	PROJEKT	</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">In der Projekt-Auswahl wird anstatt des Ortes die Kurzbezeichnung des Partners angezeigt.</td>
     </tr>
     <tr>
+      <td width="357" height="25">PROJEKT_ANSPRECHPARTNER_VORBESETZEN</td>
+      <td width="78" height="25">	PROJEKT	</td>
+      <td width="54" height="25">0/1</td>
+      <td width="526" height="25">Den Ansprechpartner nach Auswahl des Partners vorbesetzen.</td>
+    </tr>
+    <tr>
       <td width="357" height="25">PROJEKT_BELEGNUMMERSTARTWERT&nbsp;</td>
       <td width="78" height="25">	PROJEKT&nbsp;	</td>
       <td width="54" height="25">0/1</td>
       <td width="526" height="25">Startwert der Projekt-Nummer im neuen Geschäftsjahr</td>
-    </tr>
-    <tr>
-      <td width="357" height="25">PROJEKT_IST_PFLICHTFELD</td>
-      <td width="78" height="25">	PROJEKT	</td>
-      <td width="54" height="25">0/1</td>
-      <td width="526" height="25">Das Projekt ist in den VK-Belegen ein
-        Pflichtfeld.</td>
     </tr>
     <tr>
       <td width="357" height="25">PROJEKT_MIT_UMSATZ&nbsp;</td>
@@ -2510,6 +2810,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
       <td width="78" height="25">	RECHNUNG&nbsp;	</td>
       <td width="54" height="25"></td>
       <td width="526" height="25">Geschäftsjahr, ab dem gemahnt wird.</td>
+    </tr>
+    <tr>
+      <td width="357" height="25">MINDEST_MAHNBETRAG</td>
+      <td width="78" height="25">	RECHNUNG&nbsp;	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Mindestmahnbetrag, ab der eine Sammelmahnung versendet wird.</td>
     </tr>
     <tr>
       <td width="357" height="25">MAXIMALE_ABWEICHUNG_SUMMENAUSDRUCK&nbsp;</td>
@@ -2604,6 +2910,12 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
         1= Checkbox für <a href="../Stueckliste/index.htm#frühzeitige_Beschaffung"> frühzeitige Beschaffung</a></td>
     </tr>
     <tr>
+      <td width="357" height="25">INTEL_STKL_IMPORT_RABATT</td>
+      <td width="78" height="25">	STUECKLISTE&nbsp;	</td>
+      <td width="54" height="25"></td>
+      <td width="526" height="25">Der Rabatt in Prozent, welcher für, durch den Intelligenten Stücklistenimport neu angelegte, Kundensonderkonditionen verwendet wird.</td>
+    </tr>
+    <tr>
       <td width="357" height="25">LOSE_AKTUALISIEREN&nbsp;</td>
       <td width="78" height="25">	STUECKLISTE&nbsp;	</td>
       <td width="54" height="25">0/1</td>
@@ -2614,14 +2926,16 @@ ZUSAETZLICHER_DOKUMENTENSPEICHERPFAD&nbsp;</td>
     <tr>
       <td width="357" height="25">STRUKTURIERTER_STKLIMPORT&nbsp;</td>
       <td width="78" height="25">	STUECKLISTE&nbsp;	</td>
-      <td width="54" height="25">0/1/2</td>
-      <td width="526" height="25">0 = Abgeschaltet, 1 = <a href="../Stueckliste/Import_Typ1.htm"> Solid
-        Works</a>, 2 = <a href="../Stueckliste/Import_Typ2.htm"> Siemens NX</a></td>
+      <td width="54" height="25">0/1/2/3</td>
+      <td width="526" height="25">0 = Abgeschaltet,&nbsp;<br>
+ 1 = <a href="../Stueckliste/Import_Typ1.htm"> Solid
+        Works</a>, 2 = <a href="../Stueckliste/Import_Typ2.htm"> Siemens NX</a>,
+        3= <a href="../Stueckliste/Import_INFRA.htm">INFRA</a></td>
     </tr>
     <tr>
       <td width="357" height="25">STUECKLISTE_ARBEITSPLAN_ZEITEINHEIT&nbsp;</td>
       <td width="78" height="25">	STUECKLISTE&nbsp;	</td>
-      <td width="54" height="25">h/m/s</td>
+      <td width="54" height="25">h/min/s</td>
       <td width="526" height="25">Legt fest, in welcher Einheit die Stückzeit und Rüstzeit angezeigt werden soll.</td>
     </tr>
     <tr>

@@ -44,10 +44,13 @@ abweichen und ändern ev. die Texte für diese eine Bestellung ab.&nbsp;<br>
 </p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
 Klick auf <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24">
-Drucken (oder oberes Menü Bestellung - Drucken...) aktivieren Sie die
+Drucken (oder oberes Menü Bestellung - Drucken...) erhalten Sie eine Voransicht
+des Ausdrucks. Mit dem Ausdruck <img border="0" src="../Anfrage/drucken.JPG" width="28" height="24">,
+der Druckvorschau <img border="0" src="druckvorschau.JPG" width="29" height="24"> ,
+dem Versenden per E-Mail <img border="0" src="e-mail.jpg" width="31" height="26"> oder
+speichern <img border="0" src="../Anfrage/speichern.JPG" width="29" height="25">, aktivieren Sie die
 Bestellung, der<a href="Statusuebergaenge.htm"> Status</a> ändert sich von
-angelegt in offen. Nun können Sie entscheiden, ob die Bestellung ausgedruckt,
-gespeichert oder per E-Mail verschickt wird.&nbsp;</p>
+angelegt in offen.&nbsp;</p>
 <p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt" class="question">Q:
 Wie wird aus einer Bestellung mit Status &quot;angelegt&quot; eine mit dem
 Status &quot;offen&quot;?</p>
@@ -111,9 +114,9 @@ dazu die Einstellung der Auswahl: Preise für den Lieferanten nachpflegen.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Hier gibt es drei
 Möglichkeiten:</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nicht nachpflegen</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Einzelpreis</p>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">als Staffelpreis
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">1.) Nicht nachpflegen</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">2.) Einzelpreis</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">3.) als Staffelpreis
 unter Angabe der gewählten Staffelmenge. Bei Angabe der Positionsmenge wird
 diese Menge für die Staffelmenge verwendet und gegebenfalls als neuer
 Staffelmengeneintrag in die Einkaufsstaffel des Artikellieferanten eingetragen.</p>
@@ -157,7 +160,13 @@ LF-Daten (aktuelle Lieferanten Daten) gekennzeichnet sind.</p>
     </tr>
   </table>
 </div>
-<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie erhalte ich
+schnell einen Überblick über die Warenbewegungen und den Bedarf der zu
+bestellenden Artikel?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Markieren Sie eine
+Zeile in den Bestellpositionen, mit Klick auf das Icon Monatsstatistik <img border="0" src="Monatsstatistik_anzeigen.JPG" width="28" height="24">
+wird die Statistik über Warenzu- und abgänge dieses Artikels aufgerufen und
+angezeigt.</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ein
 anderer Staffelpreis verwendet werden?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: wählen Sie neben
@@ -245,16 +254,39 @@ gelieferte Menge</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bestellnettopreis ...
 Zu diesem Preis wurde die Bestellposition, dieser Wareneingangsposition
 bestellt.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie kann ich
+zwischen einzelnen Wareneingängen wechseln?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A:&nbsp;Ab der
+Version 8845 können Sie mittels der Pfeile <img border="0" src="wechsel_wareneingaenge.JPG" width="63" height="25">
+im Reiter Wareneingangspositionen zwischen den einzelnen Wareneingängen
+wechseln.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Zur Information, auf
+welchen Wareneingang sich die Wareneingangspositionen beziehen, welcher
+Wareneingang gerade angezeigt wird, finden Sie in der Mitte der Darstellung eine
+Zeile mit Informationen zum Wareneingang wie zum Beispiel&nbsp; <img border="0" src="info_wareneingang.JPG" width="407" height="17">.&nbsp;</p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann der
 gelieferte Preis als Einzel-/Staffelpreis sofort beim jeweiligen
 Artikellieferant zurückgepflegt werden?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Ja, verwenden Sie
-dazu die Icons <img border="0" src="rueckpflegen_wareneingang.JPG" width="66" height="28"> um den
-gelieferten Preis als Einzelpreis (links) bzw. als Einzel- und Staffelpreis beim
+dazu die Icons <img border="0" src="rueckpflegen_wareneingang.JPG" width="63" height="25"> um den
+gelieferten Preis als Einzelpreis (links) bzw. als Staffelpreis (rechts) beim
 Artikellieferanten zu hinterlegen. Das Belegdatum wird als Gültig ab Datum
 eingetragen. Wenn der Artikellieferant im Artikel noch nicht hinterlegt ist, so
 wird auch dieser bei der Rückpflege des Preises als Artikellieferant
 angelegt.&nbsp;</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn ein Preis aus der WEP zurückgepflegt wird und der Einzelpreis in der Bestellposition 0 ist, dann wird anstelle des Einzeplreises der Nettopreis verwendet. Weiters kommt in der EK-Staffel eine Warnung, wenn der Einzelpreis sowohl NULL als auch 0 ist.</p>
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann der Wert
+der Position des Wareneingangs erfasst werden?</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In dem Feld
+Gelieferter Preis können Sie den Preis für 1 Stück eingeben. Im Feld
+Gelieferter Wert können Sie für die Menge der gelieferten Menge (im Bild 10
+Stk) den Gesamtpreis der Lieferungsposition eingeben. Besonders hilfreich ist
+diese Funktion bei Artikel, die kleine Preise, Kommazahlen und hohe
+Bestellmengen besitzen.<br>
+Da Lieferanten oft falsche Einzelpreise angeben, ist es möglich sein, bei der Wareneingangsposition für die eine Zulieferung den (Zeilen-) Gesamtpreis anzugeben.<br>
+Dieser wird dann durch die Liefermenge dividiert und somit ergibt sich der Geliefert Preis,
+welcher abgespeichert wird.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="wep_preis.JPG" width="737" height="52"></p>
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie hängen
 Wareneingang, Wareneingangsposition und Bestellposition zusammen?</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Beim Wareneingang
@@ -318,6 +350,16 @@ von Eindhoven (Holland) aus.</p>
 Überleitung der Bestellung, über den Wareneingang, in die
 Eingangsrechnungsverwaltung richtig zu machen (EU-Ausland), muss die
 Rechnungsadresse auf den tatsächlich Beliefernden definiert sein.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Kann die
+Rechnungsadresse geändert werden?</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Sobald ein
+Wareneingang erfasst ist, können die Kopfdaten der Bestellung nicht mehr
+geändert werden. Wenn Sie jedoch erst bei der Rechnung bemerken, dass der
+Lieferant eine andere Rechnungsadresse besitzt, so finden Sie im Menü
+Bearbeiten den Punkt Rechnungsadresse ändern. Hiermit können Sie die
+Rechnungsadresse ändern solange bis Preise im Wareneingang erfasst sind.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wareneingangskommentar?</p>
@@ -509,9 +551,8 @@ Ja. Wählen Sie im Menüpunkt Bearbeiten, Storno aufheben.</p>
 Wie wird der Wareneingang / die Anlieferung richtig verbucht?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Im Panel Wareneingang wird die Lieferscheinnummer des Lieferanten eingetragen,
-der Rabatt kann noch verändert werden. Das Zubuchungs-Lager wird für die gesamte
-Bestellung festgelegt. Es können mehrere Teillieferungen unabhängig voneinander
-verbucht werden, allerdings nur auf dasselbe Lager.</p>
+der Rabatt kann noch verändert werden. Das Zubuchungs-Lager wird für diesen
+Wareneingang festgelegt.&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
 den Wareneingangspositionen scheinen alle Positionen auf. Diese müssen einzeln
 verbucht werden, da sich in der Lieferung Abweichungen ergeben können.</p>
@@ -523,6 +564,17 @@ angeliefert, so verändern Sie bitte die Menge entsprechend. </p>
 Einstandspreis ergibt sich aus dem Nettopreis - Rabattsätze der Lieferung plus
 anteilige Transportkosten. Der
 Nettopreis der Bestellposition wird als Information ausgegeben.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann man einen weiteren Wareneingang direkt aus der Wareneingangsposition
+erfassen?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ja, klicken Sie auf <img border="0" src="neuerWareneingang.JPG" width="29" height="23">, danach
+erscheint ein Dialog in dem Sie die Informationen zum Wareneingang selbst
+erfassen. Geben Sie hier die Lieferscheinnummer und Datum, sowie das Lager an.
+Mit Klick auf OK wird der neue Wareneingang angelegt und Sie stehen im Reiter
+Wareneingangspositionen dieses Wareneingangs und können somit weitere
+Positionen erfassen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="neuerWareneingangErfassung.JPG" width="399" height="215"></p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Können alle Bestellpositionen auf einmal verbucht werden ?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -540,6 +592,16 @@ Ist für alle Wareneingänge die Preis erfasst Information eingetragen, so wird
 der Status der Bestellung auf erledigt gesetzt. Daher ist es erforderlich, dass <b>vorher</b>
 eventuelle Transportkosten eingetragen werden.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann eine Bestellposition nachträglich hinzugefügt werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn eine Position geliefert wurde, die nicht Teil der HELIUM V Bestellung war,
+so klicken Sie im Reiter Wareneingangsposition auf das Icon <img border="0" src="neu.jpg" width="28" height="23">.
+Wenn man in den Wareneingangspositionen eine neue Position hinzufügt, kann man rechts
+vom der Artikelicon einen Handartikel anlegen und zuordnen. Das Hinzufügen
+einer Position bewirkt, dass eine neue Bestellposition und Wareneingangspostion angelegt
+wird. Dieser Button kann nur ausgewählt werden, wenn noch keine
+Eingangsrechnung für den Wareneingang definiert ist.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie werden mehrere Chargen auf einen Wareneingang zugebucht?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:&nbsp;Derzeit
 kann pro Wareneingang nur eine Charge zugebucht werden.</p>
@@ -548,6 +610,12 @@ Sie mit einer Lieferung mehrere unterschiedliche Chargen der selben
 Bestellpositionen erhalten, so ist es erforderlich, trotzdem mehrere
 Wareneingänge (der gleichen Lieferung) anzulegen und so die unterschiedlichen
 Chargen zuzubuchen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab
+der Version 8523 sind nun mehrere Chargeinformationen pro Warenzugang möglich.
+Wenn im Chargendialog auf das '+'-Zeichen geklickt wird, bzw. auf Übernehmen geklickt wird, dann werden die Chargeninformatioenn abgefragt.
+Bei vorhandenen Chargen können per Doppelklick auf die Zeile die
+Chargeninformationen geändert werden.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kann ein Wareneingang auf unterschiedliche Läger gebucht werden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:&nbsp;Nein.
@@ -658,7 +726,32 @@ entsprechend höhere Menge an.&nbsp;</p>
 Fehlmengenauflösung?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Siehe <a href="../Fertigung/index.htm#Fehlmengen bei der Warenzubuchung auflösen">nachträglich
-Fehlmengen bei der Zubuchung auflösen</a>.</p>
+Fehlmengen bei der Zubuchung auflösen</a>.&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Neben
+der Auflösung der Fehlmengen der Lose, gibt es die Möglichkeit auch
+Reservierungen aus Aufträgen bei Warenzubuchung automatisch zu buchen. Diese
+Zusatzfunktion kann von Ihrem HELIUM V Betreuuer aktiviert werden. Wird nun ein
+Artikel mit Reservierung zugebucht, so erscheint die Fehlmengenauflösung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="fehlmengen_reservierungen.JPG" width="798" height="161"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+können Sie erkennen, dass neben der Auftragsreservierung auch Lose diesen
+Artikel benötigen würden. Das R in der Spalte Typ signalisiert, dass es sich
+um Reservierungen handelt und F steht für Fehlmengen. Reservierungen von Losen
+können über die Fehlmengenbuchung nicht aufgelöst werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Markieren
+Sie nun die gewünschte Zeile und klicken Sie auf das Icon <img border="0" src="fehlmenge_markierte_zeile_aufloesen.JPG" width="29" height="25">
+um die markierte Zeile aufzulösen bzw. auf bearbeiten und ändern die Menge auf
+die gewünschte Menge ab.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+wird ein Lieferschein, wenn er schon besteht und im Status angelegt ist ergänzt
+oder ein neuer LS angelegt und die Position eingebucht.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Warum kann man das Lager im Wareneingang nicht mehr verändern?</p>
@@ -766,8 +859,6 @@ dazu gehörende Mindestbestellmenge. Dadurch werden bei der Eingabe der
 Bestellmenge die Daten auf ein ganzzahliges Vielfaches der Verpackungseinheiten
 überprüft. Ist die Bestellmenge kein ganzzahliges Vielfaches, so erscheint ein
 entsprechender Hinweis.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie mit Verpackungseinheiten des Artikellieferants und der Lagerbewirtschaftung
@@ -1908,8 +1999,15 @@ erledigte Wareneingänge erhalten. Das ist ja der zusätzliche Sinn dahinter,
 damit haben Sie eine gewisse Kontrolle, was denn so alles verrechnen wird.</p>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;
-</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Informationen für den Lieferanten bei Handeingabe anführen</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Auch bei Handeingaben haben Sie die Möglichkeit die Artikelnummer und
+Bezeichnung des Lieferantens anzuführen. Verwenden Sie dazu die entsprechenden
+Felder.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="bestellung_handeingabe_artikellieferant.JPG" width="280" height="48"></p>
 
 </body>
 

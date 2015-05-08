@@ -1,0 +1,85 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>Stücklisten-Import aus XLS Datei</title>
+</head>
+
+<body>
+
+<h1>Stücklistenimport<br>
+INFRA</h1>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn
+der Parameter STRUKTURIERTER_STKLIMPORT= 3 gesetzt ist, so wird für den
+Import die INFRA-Definition verwendet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Beim Import können in einem Lauf mehrere Dateien eingelesen werden. Das bedeutet 
+für den eigentlichen Import wird im
+Stücklistenmodul unter Stückliste/Import nur ein Verzeichnis ausgewählt. In 
+diesem müssen sich die XLS/PDF-Dateien nach nachfolgender Beschreibung befinden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Datensatzaufbau</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Der aus dem INFRA exportierte Datenbestand sollte wie folgt aufgebaut sein:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<img alt="" src="INFRA_Import_Spaltendefinition.gif" width="1002" height="35"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Der Dateiname entspricht der Artikelnummer der bestehenden Stückliste. Gibt es 
+für die Stückliste PDF Dateien, z.B. für Zeichnungen, Arbeitspläne oder 
+ähnlichem so müssen die PDF-Dateien den gleichen Dateinamen wie die Stückliste 
+tragen, jedoch mit der Endung PDF.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Bitte beachten Sie dass nur XLS Dateien importiert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Umsetzung der Ebene</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+In der Spalte Ebene werden diese mit ..(Punkten) und Zahl hochgezählt. Hier ist 
+die Definition so, dass beim Ebenenwechsel der Kopf-Stücklisten Artikel erkannt 
+wird. Zusätzlich wird gegebenenfalls eine Bemerkung, welche für den Kopfartikel 
+mit dazugegeben wurde (und keine Artikelnummer hat) als diese erkannt und der 
+Kopfartikel aus der Zeile davor übernommen.<br>D.h. alle Artikel der Ebene 2 
+werden in die Kopfstückliste importiert.<br>Die Anzahl der Ebenen ist nicht 
+begrenzt.&nbsp;<br><img alt="" src="INFRA_Import_Spaltendefinition2.gif" width="712" height="108"><br></p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+XLS oder XLSX?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Bitte beachten Sie, dass nur XLS Dateien importiert werden. Beachten Sie bitte 
+auch, dass die Spalte E als Zahl formatiert sein muss. Alle anderen Spalten 
+sollten als String/Text formatiert sein.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die PDF-Files müssen gleich
+benannt sein und werden in der Dokumentenablage bei der Stückliste hinterlegt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+weitere Infos:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Handeingaben
+werden ebenso importiert.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Nicht vorhandene Artikel werden angelegt, ebenso Stücklisten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Die Spalte B, PosNr wird unter Position importiert.<br>
+<br>
+Die Spalten G,H,I werden ignoriert.<br>
+Die Spalten J + K werden mit | als Trennzeichen in die Spalte kommentar 
+übernommen.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Bitte beachten Sie, dass die Mengeneinheiten gegeben sein müssen.</p>
+
+</body>
+
+</html>

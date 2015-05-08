@@ -25,9 +25,9 @@ geschaffen.</p>
 Kontierung der Eingangsrechnung?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 Um die für die Verbuchung der in der Finanzbuchhaltung steuerlich relevanten
-Kontierung zu erhalten definieren&nbsp; Sie die Kontierung. Die Konten müssen im Modul
+Kontierung zu erhalten definieren&nbsp;Sie die Kontierung. Die Konten müssen im Modul
 Finanzbuchhaltung angelegt werden. Für die steuerrechtlich richtige Kontierung
-stimmen Sie sich mit Ihrem Steuerberater ab.</p>
+stimmen Sie sich bitte mit Ihrem Steuerberater ab.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Splittbuchung, Mehrfachkontierung</p>
@@ -44,7 +44,8 @@ In der Anzeige der Kopfdaten erscheint solange die Info <img border="0" src="Spl
 bis im Reiter Kontierung die Eingangsrechnung vollständig auf die verschiedenen
 Konten bzw. Kostenstellen aufgeteilt ist.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Unter
 Kontierung geben Sie nun</p>
@@ -59,6 +60,19 @@ Kontierung übernommen.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Achten
 Sie darauf, dass die Eingangsrechnung vollständig kontiert wird.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab
+der Version 8434 kann bei der Splittbuchung auch der Nettobetrag verwendet
+werden, somit wird der Steueranteil automatisch errechnet.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="brutto_netto_er.JPG" width="503" height="99"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Geben
+Sie dazu im Feld Nettobetrag den gewünschten Betrag ein und wählen den
+Steeuersatz.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie wird eine Eingangs-Gutschrift richtig eingetragen?</p>
@@ -130,11 +144,27 @@ Finanzbuchhaltung von HELIUM V verwendet, so kann der Text in einem durch
 eingegeben werden. Dieser wird vollständig in den Finanzbuchhaltungsteil
 übernommen.</p>
 
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn der Parameter EINGANGSRECHNUNG_LIEFERANTENRECHNUNGSNUMMER_LAENGE
+auf -1 gestellt wird, so können im Feld der Lieferantenrechnungsnummer auch
+Buchstaben und nicht nur Zahlen eingegeben werden.</p>
+
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Eingabe des
 Textes</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Hier sollten Sie
-vermerken, was mit der Eingangsrechnung bezahlt wurde.&nbsp;</p>
+vermerken, was mit der Eingangsrechnung bezahlt wurde.&nbsp;Die Idee dahinter 
+teilt sich in zwei Bereiche:</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">a.) Viele Lieferanten 
+haben nicht rein nummerische Rechnungsnummern. Wie oben beschrieben, ist in 
+gewissen Fällen in HELIUM V nur eine nummerische Erfassung der 
+Lieferantenrechnungsnummern wegen der weiterführenden Buchhaltungssysteme 
+möglich. Tragen Sie gegebenenfalls die vollständige Lieferantenrechnungsnummer 
+mit allen Zeichen in dieser Zeile ein.</p>
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">b.) Sie sollten nach 
+7 bzw. 10Jahren immer noch auf Anhieb wissen, warum Sie die Eingangsrechnung 
+erhalten und auch bezahlt haben. Je eindeutiger und klarer Sie hier die Texte 
+angeben, desto klare können Sie oder auch Ihre NachfolgerInnen die Fragen einer 
+eventuellen Finanzprüfung beantworten.</p>
 
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Ich kann keine
 Mehrwertsteuersätze auswählen.</p>
@@ -172,7 +202,7 @@ Freigabedatum ist das Datum ab dem Sie die Eingangsrechnung akzeptieren. Denken
 Sie z.B. daran, dass Sie Ware vor dem gewünschten Liefertermin erhalten oder
 Sie erhalten eine Eingangsrechnung mit einem gänzlich falschen / viel zu
 frühen Datum. Hier geben Sie mit dem Freigabedatum an, ab wann Sie die ER
-akzeptieren. Am Freigabedatum hängt das Zahlungsziel.</p>
+akzeptieren. Ab dem Freigabedatum wird das Zahlungsziel gerechnet.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Wie wird das Zieldatum einer Eingangsrechnung ermittelt?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
@@ -246,7 +276,7 @@ tatsächlich offen sind. Zusätzlich werden die Umrechnungskurse angezeigt.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Kundendaten für E-Banking?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Wenn Sie den Zahlungsvorschlag aus HELIUM V nutzen, so sollten / können für
+Wenn Sie den <a href="../Finanzbuchhaltung/Zahlungsvorschlag.htm"> Zahlungsvorschlag</a> aus HELIUM V nutzen, so sollten / können für
 jede Eingangsrechnung / für jeden Zahlungsvorgang Ihre Kundendaten an den
 Zahlungsempfänger übermittelt werden. Tragen Sie dafür die auf den
 Lieferantenbelegen angegebenen Daten in das Feld <img border="0" src="Kundendaten_ELBA.gif" width="332" height="24">
@@ -307,10 +337,12 @@ von reinen Mehrwertsteuer-Rechnungen</p>
 Einnahmen Ausgabenrechner wollen / müssen auch Ihre reinen
 Steuervorschreibungen z.B. für Einfuhr Umsatzsteuer erfassen können. Dafür
 ist es erforderlich, dass der exakte Steuerbetrag eingebucht werden kann.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Gehen
 Sie in dazu bitte wie folgt vor:</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">1.
 Definition der Handeingabe-Mehrwertsteuer</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
@@ -325,12 +357,14 @@ Starten Sie nun das Eingangsrechnungsmodul (neu) <img border="0" src="Hand_Mwst2
 Sie eine neue Eingangsrechnung an und definieren Sie Mehrfach / Splittbuchung. <img border="0" src="Hand_Mwst3.gif" width="151" height="19"></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erfassen
 Sie Rechnungsnummer und vollen Betrag und speichern Sie die Eingangsrechnung ab.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">3.
 Wählen Sie Kontierung <img border="0" src="Hand_Mwst4.gif" width="67" height="23"> und legen Sie mit
 neu einen neuen Datensatz für die (Splitt-)Kontierung an. Beim
 Mehrwertsteuersatz kann nun die definierte Handeingabe ausgewählt werden.</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">4.
 Geben Sie nun unter MwSt den gesamten bzw. den gewünschten Mehrwertsteueranteil
 an.</p>
@@ -343,7 +377,8 @@ Beim Abspeichern wird abweichendes Umsatzsteuerland gemeldet.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="UST_unstimmig.gif" width="644" height="105"></p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
 obige Meldung beim Speichern der Eingangsrechnung ausgegeben, so besagt diese,
@@ -365,7 +400,8 @@ Finanzamt des Kontos (Finanzbuchhaltung, Konten, Kopfdaten, Finanzamt)</p>
 Das Länderkennzeichen des Finanzamtes, Partner, Finanzamt (= Name des
 Partners), Detail, Ort</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
 durch den Ort des Finanzamtes definierte Land und das Abweichende
@@ -400,7 +436,9 @@ Formulare bedruckt werden.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
 kann ein Zusatztext und ein Betrag angegeben werden. Diese beiden Werte werden <b>nicht</b>
-abgespeichert. Sie dienen lediglich dem Druck des Zahlscheines.</p>
+abgespeichert. Sie dienen lediglich dem Druck des Zahlscheines.<br>Bitte 
+beachten Sie, dass für den Druck der Überweisungsbelege in der Regel die maschinenlesbare Schrift OCR-A am Server und Client installiert sein 
+müssen.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Können auch Schecks gedruckt werden?</p>
@@ -472,6 +510,43 @@ der Wareneingänge</a> und vermeiden Sie, dass die Kosten einmal auf dem Weg der
 Materialzubuchung und zusätzlich auf dem Weg der &quot;zusätzlichen&quot;
 Kostenbuchung auf die Aufträge über die Eingangsrechnung erfolgt.</p>
 
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann eine Eingangsrechnung auf einen bereits erledigten Auftrag zugeordnet
+werden?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Ab der Version 8039 kann eine Eingangsrechnung keinem vollständig erledigten
+Auftrag mehr zugeordnet werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
+Hintergrund ist, dass wenn ein Auftrag vollständig erledigt ist, so ist davon
+auszugehen, dass auch keine Kosten mehr auf diesen Auftrag gebucht werden
+dürfen. Es würde sich dadurch ja auch die Deckungsbeitragsrechnung verändern.
+Dies wird damit verhindert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ausnahme:
+Wenn das Recht AUFT_DARF_AUFTRAG_ERLEDIGEN vorhaden ist, dann können Eingangsrechnungen auch erledigten Aufträgen auf Nachfrage zugeordnet werden.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Kann jeder Benutzer einen Auftrag erledigen, werden Aufträge automatisch
+erledigt?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Dies hängt von der Einstellung des Parameters AUFTRAG_AUTOMATISCH_VOLLSTAENDIG_ERLEDIGEN
+ab. Steht dieser auf 1 so werden Aufträge automatisch, wenn sie vollständig
+geliefert wurden erledigt und es kann auch jeder, der eine schreibende
+Berechtigung für die Aufträge hat, einen Auftrag erledigen oder auch
+enterledigen (Erledigung wieder aufheben).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ist
+dieser Parameter AUFTRAG_AUTOMATISCH_VOLLSTAENDIG_ERLEDIGEN abgeschaltet (steht
+auf 0), so werden grundsätzlich Aufträge nicht vollständig erledigt. Dies hat
+den Hintergrund, dass gerade umfangreichere Aufträge vor der vollständigen
+Erledigung einer Prüfung unterzogen werden. Die Erledigung eines Auftrages ist
+in diesem Falle mit dem Rollenrecht AUFT_DARF_AUFTRAG_ERLEDIGEN
+verbunden. D.h. nur Benutzer die Mitglieder einer Systemrolle sind, die dieses
+Recht besitzt können Aufträge erledigen bzw. enterledigen.</p>
+
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="abweichende Umsatzsteuerländer"></a>Q:
 Buchen von Eingangsrechnungen mit abweichenden Umsatzsteuerländern usw.</p>
 
@@ -485,12 +560,14 @@ beauftragt werden, Lieferungen für Sie durchzuführen. Diese Speditionen
 stellen dann entsprechende Rechnungen für die erbrachten Leistungen, welche
 auch sehr oft gemischte Vorgänge beinhalten.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
 hier ein etwas extremes Beispiel, welches in der Praxis durchaus vorkommt.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Spediteur
 R. mit Sitz in Deutschland</p>
@@ -498,7 +575,8 @@ R. mit Sitz in Deutschland</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">HELIUM
 V Anwender mit Sitz in der Schweiz</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Rechnung beinhaltet:</p>
@@ -534,7 +612,8 @@ Rechnung beinhaltet:</p>
   </table>
 </div>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:</p>
 
@@ -549,7 +628,8 @@ Bern ......... Ihr standard Finanzamt in der Schweiz</p>
 Konstanz ... Ihr Finanzamt für die Abwicklung der deutschen /
 innergemeinschaftlichen Warenbewegungen.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 in den Auswertungen klar die Trennung zwischen den beiden Bereichen zu haben,
@@ -558,7 +638,8 @@ welche über das Schweizer Finanzamt abzuwickeln sind und die Geschäfte, die
 über das deutsche Finanzamt abzuwickeln sind, klar unterschieden werden. D.h.
 hier sind z.B. zwei Kostenstellen mit Inland und Ausland angelegt.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich:</p>
 
@@ -573,7 +654,8 @@ Zuordnung (abweichendes Umsatzsteuerland) zum Finanzamt Bern und einmal mit der
 Zuordnung zum Finanzamt Konstanz angelegt werden. Beachten Sie, dass für die
 Prüfung die beim jeweiligen Finanzamt hinterlegten Länder verwendet werden.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
 wird nun gebucht:</p>
@@ -590,7 +672,8 @@ Kontierung Umsatzsteuer CH mit Finanzamt Bern</p>
 ... EUST Lieferant mit Ust-Land CH auf Kostenstelle Inland und Kontierung
 Vorsteuer CH mit Finanzamt Bern</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wichtig:</p>
 
@@ -607,7 +690,8 @@ bedeutet, dass das beim Lieferanten hinterlegte (abweichende) Umsatzsteuerland
 nicht mit dem Finanzamt des Kontos übereinstimmt. Bitte gleichen Sie die
 Einstellungen entsprechend ab.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Warum
 ist das so strickt getrennt?</p>
@@ -711,8 +795,8 @@ durch Klick auf den Knopf Gutschrift <img border="0" src="ER_Gutschrift_Zahlung2
 die gewünschte Eingangsrechnung aus.</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
-reduziert sich der offene Wert der Eingangsrechnung und wird auch im
-Zahlungsvorschlag nur mit dem reduzierten Wert vorgeschlagen.</p>
+reduziert sich der offene Wert der Eingangsrechnung und wird auch im <a href="../Finanzbuchhaltung/Zahlungsvorschlag.htm">
+Zahlungsvorschlag</a> nur mit dem reduzierten Wert vorgeschlagen.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Reverse Charge, IG-Erwerb"></a>Q:
 Reverse Charge, IG-Erwerb</p>
@@ -763,14 +847,16 @@ des Erhalts der Zollpapiere, oft auch Gelber Schein genannt, geschaffen.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
 Klick darauf setzt das Datum wieder zurück.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
 nicht für alle Lieferanten diese Papiere erforderlich sind, muss im Lieferanten
 unter Konditionen <img border="0" src="ER_Zollimportpapiere_erforderlich.gif" width="171" height="25">
 Zollimportpapiere erforderlich angehakt werden.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 nun festzustellen für welche Eingangsrechnungen noch die Zollpapiere fehlen,
@@ -828,25 +914,138 @@ abgebildet werden.</p>
     auch die integrierte Finanzbuchhaltung eingesetzt und sind die
     Vorauszahlungen ein seltener Sonderfall, so kann so vorgegangen werden, dass
     es ein Zwischenkonto gibt, auf das die Vorauszahlung gegen Bank gebucht
-    wird. Von diesem Konto wird dann die Zahlung der schlussendlichen Rechnung
+    wird. Von diesem Konto (<a href="../Finanzbuchhaltung/index.htm#Eigene Bankverbindungen">als
+    Bankkonto definiert</a>) wird dann die Zahlung der schlussendlichen Rechnung
     gebucht und somit das Zwischenkonto wieder ausgeglichen. Diese
     Vorgehensweise ist nur für sehr wenige Vorauszahlungsbuchungen zu
-    empfehlen. Steuerlich richtig ist obige Version.</li>
+    empfehlen. Steuerlich richtig ist obige Version. Um bei mehreren Lieferanten
+    mehr Übersicht zu gewinnen kann pro Lieferant ein eigenes geleistete
+    Anzahlungen - Konto angelegt werden, auf das die Buchungen erfolgen.&nbsp;</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Eine
     weitere Möglichkeit ist, dass die Vorauszahlung als Umbuchung Bank an Debitor bzw. Kreditor an Bank manuell
     gebucht wird. Bei der Zahlung der Rechnung/Eingangsrechnung kann bei Zahlungsart Vorauszahlung aus den
     &quot;Offenen Posten&quot; mit Buchungsart Umbuchung und Buchungsart
-    Bankbuchung des jeweiligen Debitor/Kreditor gewählt werden.<br>
+    Bankbuchung des jeweiligen Debitor/Kreditor gewählt werden. Achtung: Die
+    Vorgehensweise in diesem Fall ist, dass die ursprüngliche Buchung um den
+    Betrag der Zahlung reduziert und somit geändert wird.
       Ist die Vorauszahlung höher als der Rechnungsbetrag wird der Rest als neue Vorauszahlungs-Umbuchung
     gebucht. <a href="../Rechnung/Zahlung.htm#vorauszahlung">Weitere
     Informationen</a></li>
 </ol>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Druck der Eingangsrechnung</p>
+Wie wird mit Schlussrechnungen umgegangen, deren Wert niedriger als die Summe
+der Anzahlungsrechnungen ist?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
-Um eine Eingangsrechnung drucken zu könenn muss die maschinenlesbare Schrift OCR-A am Server und Client installiert sein.</p>
+Ehrlich gesagt: Eigentlich sollte es so etwas nicht geben. Soweit die Theorie.
+Die Praxis lehrt uns, dass es auch das gibt. Also:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ein
+Lieferant stellt ihnen eine oder mehrere Anzahlungsrechnungen. Mit der
+übermittelten Schlussrechnung stellt sich heraus, dass Sie zuviel angezahlt
+haben. Wie ist nun vorzugehen?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wichtig:</b>
+Durch die zu niedrige Schlussrechnung leihen Sie weiterhin ihrem Lieferanten
+Geld (siehe oben). D.h. der aus der Schlussrechnung noch offene Betrag muss
+über das Konto der geleisteten Anzahlungen (1800) gebucht werden. Definieren
+Sie dafür das Anzahlungskonto als <a href="../Finanzbuchhaltung/index.htm#Eigene Bankverbindungen">sichtbare
+Bankverbindung</a>.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>WICHTIG:</b></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Da
+durch das Verhalten des Lieferanten die Anzahlungs-/Schlussrechnungs-Thematik
+noch nicht abgeschlossen ist, sollten Sie die Schlussrechnung erst dann als
+bezahlt verbuchen, wenn klar ist, was mit dem überschüssigen Betrag zu
+geschehen hat. Bis dahin muss die Schlussrechnung offen bleiben. Buchen Sie die
+Differenz, die ja zu Ihren Gunsten besteht, erst aus, wenn eine weitere
+Verwendung dafür gegeben ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+sehen Sie jederzeit am Lieferanten/Kreditorenkonto, dass hier noch offene
+Beträge zu Ihren Gunsten bestehen. Wir raten dazu, die Lieferanten sehr
+eindringlich dazu aufzufordern, hier ordentlich zu arbeiten, sodass es zu diesen
+Konstellationen erst gar nicht kommt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wurde
+die Verwendung der Gelder die Sie noch vom Lieferanten bekommen definiert, so
+ist der Buchungsverlauf wie folgt:</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
+Erfassen Sie die nachfolgende Eingangsrechnung</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
+Gehen Sie auf der Schlussrechnung auf den Reiter Zahlungen und buchen Sie den
+negativen Zahlbetrag auf das (Bank-)Konto geleistete Anzahlungen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">c.)
+Gehen Sie in die nachfolgende Eingangsrechnung und buchen Sie hier den gleichen
+Betrag, nun aber positiv, als Zahlung vom Konto geleistete Anzahlungen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Damit
+ist, für diese Rechnungen das geleistete Anzahlungen-Konto ausgeglichen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zugleich
+erhalten Sie durch diese späte Buchung auch die Übersicht über den
+tatsächlichen Offenen Postenstand am Kreditor. Das Konto der geleisteten
+Anzahlungen sollte sowieso immer im Auge behalten werden, dass dieses in aller
+Regel ausgeglichen ist.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<a name="ER erfassen"></a>Q:
+Wie wird eine Eingangsrechnung richtig erfasst?</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Um eine Eingangsrechnung richtig zu erfassen sind folgende Dinge notwendig:</p>
+<ul>
+	<li>
+	<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+	Erfassung der Eingangsrechnung in HELIUM V. Dass alle Daten richtig und 
+	wahrheitsgemäß angegeben werden erklärt sich von selbst. Achten Sie auch auf 
+	das Eingangsrechnungsdatum.</p>
+	</li>
+	<li>
+	<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+	Anbringen der HELIUM V Eingangsrechnungsnummer und der Kontierung per 
+	handschriftlich oder mit Stempel auf der &quot;Papier&quot;-Rechnung (des Lieferanten)<br>
+	Beispiel1: handschriftliche Erfassung<br>
+	<img alt="" src="ER_Erfassung_handschriftlich.jpg" width="384" height="56"><br><br>Beispiel2: Erfasssung mittels 
+	Stempelunterstützung<br><img alt="" src="ER_Stempel.gif" width="157" height="63"><br>Denken Sie 
+	daran, bei Splittbuchungen die unterschiedlichen Kontierungen mit den 
+	gebuchten Beträgen zu versehen</p>
+	</li>
+	<li>
+	<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+	Erst nun sollten Sie die Eingangsrechnung einscannen</p>
+	</li>
+	<li>
+	<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+	Bei Rechnungen die Sie per EMail bekommen haben, sollten Sie auch an den
+	<a href="../Rechnung/Elektronische_Rechnung.htm#Prüfung elektronischer Rechnungen">
+	dokumentierten Prüfablauf</a> denken.</p>
+	</li>
+</ul>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Q: Wie gehts dann weiter?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Wenn die Eingangsrechnung bezahlt wurde, empfiehlt sich dies ebenfalls auf den 
+Papieren mit Buchungsdatum und gegebenenfalls auch von welchem Bankkonto aus 
+dies bezahlt wurde direkt unter der Kontierung festzuhalten. Wenn Sie einen 
+Stempel verwenden wollen, denken Sie bei der Bestellung dieser Stempel auch an 
+ein Feld für die Zahlung.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
 
 </body>
 

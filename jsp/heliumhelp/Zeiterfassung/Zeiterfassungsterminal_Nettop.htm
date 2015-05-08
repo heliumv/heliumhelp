@@ -170,6 +170,14 @@ dem Zeitpunkt wenn Sie auf den grünen Haken tippen.</p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte beachten Sie
 dazu auch die <a href="../Stueckliste/Arbeitsplan.htm">Arbeitsgang Arten</a>.</p>
 
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn die Funktion
+offene Menge anzeigen aktiviert ist, so wird bei der Arbeitsgangbeginnbuchung
+die offene Menge angezeigt.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"><img border="0" src="terminal_offene_Menge.JPG" width="500" height="377"></p>
+
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Automatische
 Laufzeitbuchungen</p>
 
@@ -193,6 +201,51 @@ auf Ihrem Server liegt angezeigt (Unterordner und PDF-Dateien).<br>
 Nun wählen Sie das gewünschte Unterverzeichnis (Touch-Bedienung) je nach Ebene, und danach das darin liegende PDF zur Anzeige.&nbsp;</p>
 
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt"> Nach 10Minuten Untätigkeit wird die Datei automatisch geschlossen.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Losgrößenänderung
+am Terminal buchen</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">In der Kunsstofffertigung ist es oft so, dass das Material fertig gespritzt
+wird. D.h. der Mitarbeiter geht am Ende des Spriztvorganges zur Maschine und liest die gespritzte Menge ab.&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"> Da damit nur bekannt ist wieviel Teile die Maschine gemacht und damit Material, Zeit, Energie verbraucht hat, ist das die Ausgangsbasis für die weiteren Betrachtungen.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Mit dem Barcode $GROESSEAENDERN (eigentlich
+AusweisNr, LosNr, $GROESSEAENDERN) erscheint ein nummerisches Eingabefenster in dem die neue Losgröße
+angeben wird.&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt"> Wird die Losgröße reduziert, so wird das überschüssige Material zurück gegeben. Wird die Losgröße erhöht wird das
+Mehr-Material, soweit möglich entnommen, der Rest wird zur Fehlmenge.&nbsp;</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Maschinenänderung am Terminal buchen</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn eine andere
+Maschine, als definiert verwendet werden soll, so buchen Sie bitte wie
+folgt:&nbsp;</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Scannen Sie wie
+gewohnt Ihre Ausweisnummer, danach den Maschinencode ($M+Maschinennummer). Eine
+Liste der Maschinen finden Sie im Modul Zeiterfassung, unterer Reiter Maschinen,
+oberer Menüpunkt Journal. Falls hier keine Barcodes angedruckt werden, wenden
+Sie sich bitte an Ihren HELIUM V Betreuer um dies für Sie einzurichten.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Nun können Sie wie
+gewohnt den kombinierten Code ($V+Daten) von Ihrem Fertigungsbegleitschein
+scannen und die Zeit wird auf die gewünschte Kombination aus Losnummer,
+Arbeitsgang und Maschine gebucht.</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Istzeiten am Terminal buchen</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wenn keine Modul Stückrückmeldung vorhanden ist kann vom Terminal eine Losbuchung mit Tätigkeit (Code
+$W) ohne Positionsbezug gebucht werden.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">So können Sie die Istzeiten auf gewissen Tätigkeiten je Los
+buchen und erhalten damit eine Zeitmessung mit der Aufteilung auf einzelne
+Tätigkeiten.</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Bitte wenden Sie sich
+an Ihren HELIUM V Betreuer um die jeweiligen Tätigkeiten im Fertigungsbegeltischein&nbsp;
+im kombinierten Code für das Los zu hinterlegen.</p>
 
 <p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Können auch
 Barcodes für Kommt und Geht verwendet werden?</p>
@@ -972,6 +1025,40 @@ Artikelnummer. </p>
 <p class="answer" style="margin:0cm;margin-bottom:.0001pt">Achtung: Für die
 etwaige Änderung der Belegnummer wenden Sie sich bitte an Ihren HELIUM V
 Betreuer!</p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Zeitbuchungen
+mit Zeiterfassungsstift KDC100</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Mit dem
+Zeitbuchungsstift KDC100, der von uns mit einer speziellen Funktion ausgestattet
+werden muss, können sehr komfortable Zeiterfassungen übertragen werden. </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">Wichtig: Der Stift
+muss vor der ersten Verwendung einmal mit dem Terminal und damit mit HELIUM V
+verbunden sein, damit die Uhrzeiten synchron sind. <a href="../Kueche/Inst_KDC100.htm">Siehe
+dazu auch</a>. </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Fehlermeldung
+bei der Übertragung von Zeitbuchungen mit Zeiterfassungsstift KDC100</p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Kommt es bei der
+Übertragung zur Fehlermeldung: <i>No entity found for query</i>, so ist
+vermutlich der Parameter KDC_BUCHT_ARBEITSGANG nicht aktiviert. Stellen Sie
+diesen bitte im System, Parameter auf 1.&nbsp; </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Was passiert
+wenn eine GEHT-Buchung vergessen wurde? </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: Wenn es bei einer Kommtbuchung davor Buchungen gibt und die letzte Buchung davor kein
+Geht ist, so wird am Terminal eine Meldung angezeigt. Somit kann der buchende
+Mitarbeiter die Personalabteilung informieren und um Abänderung bitten. </p>
+
+<p class="question" style="margin:0cm;margin-bottom:.0001pt">Q: Wie wird das
+Terminal an der Wand montiert? </p>
+
+<p class="answer" style="margin:0cm;margin-bottom:.0001pt">A: </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Montage_Terminal.jpg" width="700" height="464"></p>
 
 </body>
 

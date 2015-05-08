@@ -112,5 +112,8 @@ cd ..
 cd Zutritt
 RMDIR %1 /S /Q
 cd ..
+cd Webshop
+RMDIR %1 /S /Q
+cd ..
 
 pause

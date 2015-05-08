@@ -141,7 +141,35 @@ jeweils bearbeiten und anpassen. </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
 Gesamtaufschlag je Material und Arbeitszeit, wie in der Kalkulationsart 2
-beschrieben, ist ebenso in der Kalkulationsart 3 verfügbar. </p>
+beschrieben, ist ebenso in der Kalkulationsart 3 verfügbar. Ist der Parameter
+DEFAULT_AUFSCHLAG auf -1 gestellt, dann wird vom Kunden-VK-Preis der Aufschlag rückgerechnet.
+Die VK-Maschinenkosten können in den Maschinenkosten definiert werden (Modul
+Personal, unterer Reiter Maschinen, oberer Reiter Kosten). </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie kann die Angebotsstückliste als detailierte Kalkulation verwendet werden? </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn diese Zusatzfunktion bei Ihnen freigeschalten ist, so erhalten Sie einen
+zusätzlichen Reiter Arbeitsplan <img border="0" src="agstkl_arbeitsplan.JPG" width="76" height="21">in
+der Angebotsstückliste.&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hier
+hinterlegen Sie die Positionen mit Rüst-und Stückzeit. Im weiteren Reiter
+Mengenstaffeln <img border="0" src="agstkl_mengenstaffel.JPG" width="93" height="23"> können Sie nun
+mit Klick auf Neu Mengenstaffeln erstellen. Sobald Sie auf Speichern klicken,
+werden die Kosten und dadurch die möglichen Verkaufspreise errechnet.&nbsp; </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="agstkl_mengenstaffeln.JPG" width="700" height="81"> </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dem Ausdruck der Angebotsstückliste, erhalten Sie somit eine umfangreiche
+Dokumentation der Kalkulation der Angebotsstückliste mit den Auswirkungen auf
+den Preis je nach produzierter Menge. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
 
@@ -203,11 +231,11 @@ Kann eine Einkaufs-Angebotsstückliste importiert werden? </p>
 Ja. </p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Auf
-für die Einkaufsangebotsstückliste steht mit dem Icon <img border="0" src="EK-Ang-Stkl-Import.gif" width="32" height="25">
+für die Einkaufsangebotsstückliste steht mit dem Icon <img border="0" src="csv_import.PNG" width="30" height="26">
 ein CSV Import zur Verfügung.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Der
 Datenaufbau dafür ist folgender:</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ident;Menge;Bezeichnung;Mengeneinheit;Position</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ident;Menge;Bezeichnung;Mengeneinheit;Position;<font size="2">Referenzbemerkung</font></p>
 <div align="left">
   <table border="1" width="646" height="19">
     <tr>
@@ -231,8 +259,12 @@ Datenaufbau dafür ist folgender:</p>
         wenn Handeingaben importiert werden</td>
     </tr>
     <tr>
-      <td width="172" height="19">Position</td>
-      <td width="1120" height="19">Text für das Feld Position</td>
+      <td width="172" height="19" class="answer">Position</td>
+      <td width="1120" height="19" class="answer">Text für das Feld Position</td>
+    </tr>
+    <tr>
+      <td width="172" height="19" class="answer"><font size="2">Referenzbemerkung</font></td>
+      <td width="1120" height="19" class="answer">Text für das Feld <font size="2">Referenzbemerkung</font></td>
     </tr>
   </table>
 </div>
@@ -240,6 +272,12 @@ Datenaufbau dafür ist folgender:</p>
 Die zu übernehmenden Artikel müssen im Artikelstamm angelegt sein. Ist dem
 nicht so, so wird die Position trotzdem übernommen und als Handeingabe
 eingetragen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ab
+der HELIUM V Version 8916 steht Ihnen als Import-Möglichkeit auch der <a href="../Stueckliste/Import_Intelligent.htm">Intelligente
+Stücklisten-Import </a>zur Verfügung.</p>
 
 </body>
 

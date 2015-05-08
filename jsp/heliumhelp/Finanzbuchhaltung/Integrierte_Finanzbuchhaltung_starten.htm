@@ -3,10 +3,31 @@
 <head>
 <meta http-equiv="Content-Language" content="de">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 <title>Integrierte Finanzbuchhaltung starten</title>
+<style type="text/css">
+.auto-style1 {
+	border-right: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style2 {
+	border: 1px solid #C0C0C0;
+}
+.auto-style3 {
+	border-left: 1px solid #C0C0C0;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top: 1px solid #C0C0C0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+</style>
 </head>
 
 <body>
@@ -83,6 +104,9 @@ auch Abgrenzungen.</p>
     abweichendes Finanzamt.<br>
     Prüfen Sie die Definition durch Ausdruck des Kontenrahmens im Journal,
     Konten.</li>
+	<li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+	Beachten Sie die Anmerkungen zur Definition von Sachkonten.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Definieren
     Sie die Steuerkategorien und die Steuerkategoriekonten<br>
@@ -164,7 +188,8 @@ auch Abgrenzungen.</p>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Prüfen
     Sie die UVA in Gegenüberstellung mit dem Ausgangsrechnungsjournal und dem
-    ER-Kontierungsjournal<br>
+    ER-Kontierungsjournal und soweit vorhanden dem 
+	Zusatzkosten-Kontierungsjournal.<br>
     Es muss dies fachlich zusammenstimmen.</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Buchen
@@ -173,9 +198,235 @@ auch Abgrenzungen.</p>
     <a href="Integrierte_Finanzbuchhaltung.htm#Übernahme Eröffnungsbuchungen">Siehe
     dazu auch Übernahme bei bestehender Finanzbuchhaltung</a>.</li>
 </ol>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Unterlagen für den Steuerberater"></a>Q:
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<a name="Definition der Sachkonten"></a>Q:
+Definition der Sachkonten</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+A: Beschreibung der Punkte die bei der Definition eines Sachkontos zu beachten 
+sind:</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<img alt="" src="Kontodefinition.jpg" width="856" height="576"></p>
+<table class="auto-style1" style="width: 100%">
+	<tr>
+		<td class="auto-style3">Feldname</td>
+		<td class="auto-style3">Beschreibung</td>
+	</tr>
+	<tr>
+		<td class="auto-style2">Kontonr.</td>
+		<td class="auto-style3">Die Kontonummer des Sachkontos inkl. führender 
+		Null (0).<br>Die Stellenanzahl kann mit dem Parameter
+		KONTONUMMER_STELLENANZAHL_SACHKONTEN definiert werden.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Bezeichnung</td>
+		<td class="auto-style3">Textliche Bezeichnung des Kontos. Achten Sie auf 
+		die Eindeutigkeit der Bezeichnung. Sowohl für Sie selbst als auch für 
+		Ihren Steuerberater.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Kontoart</td>
+		<td class="auto-style3">Die Kontoart ist vor allem für die 
+		Automatikbuchungen im Rahmen der UVA relevant.<br>Für eine Darstellung 
+		der Zusammenhänge siehe bitte
+		<a href="Integrierte_Finanzbuchhaltung.htm#Finanzamtsammelbuchungen">
+		Finanzamtsammelbuchungen</a>.<br>Als zusätzliche Kontoart steht hier 
+		Eröffnungskonto (Saldenvortrag) zur Verfügung.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Kostenstelle</td>
+		<td class="auto-style3">Für Ihre interne Definition. Hat im Rahmen der 
+		integrierten Buchhaltung in HELIUM V derzeit keine weitere Bedeutung</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Ergebnisgruppe</td>
+		<td class="auto-style3">Wenn dieses Konto ein G&amp;V Konto ist, so 
+		hinterlegen Sie hier die gewünschte Ergebnisgruppe.
+		<a href="Integrierte_Finanzbuchhaltung.htm#KER">Zur Definition von 
+		Ergebnisgruppen siehe bitte dort</a>.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Bilanzgruppe</td>
+		<td class="auto-style3">Ist das Konto ein Bilanzkonto, so kann hier die 
+		zutreffende Bilanzgruppe hinterlegt werden.<br>
+		<a href="Integrierte_Finanzbuchhaltung.htm#Bilanzgruppe">Zur Definition 
+		von Bilanzgruppen siehe bitte dort.</a><br>Da Kontokorruentkonten sich 
+		je nach deren Kontostand entweder im Eigenkapital oder im Fremdkapital 
+		abgebildet werden sollten, zumindest sind einige Steuerberater dieser 
+		Meinung, gibt es die Bilanzgruppe positiv und dafür auch die 
+		Bilanzgruppe negativ.<br>Wurde eine &quot;Bilanzgruppe positiv&quot; ausgewählt, 
+		so muss auch eine &quot;Bilanzgruppe negativ&quot; angegeben werden.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Finanzamt</td>
+		<td class="auto-style3">Bei welchem Finanzamt wirkt dieses Konto für die 
+		UVA Verprobung.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">UVA Art</td>
+		<td class="auto-style3">Bei welcher UVA Kennzahl wird, falls zutreffend, 
+		dieses Konto berücksichtigt.<br>Beachten Sie dazu bitte auch
+		<a href="Integrierte_Finanzbuchhaltung.htm#Definition Steuerkategorien">
+		Definition Steuerkategorien</a> und
+		<a href="Integrierte_Finanzbuchhaltung.htm#Definition UVA Arten">
+		Definition UVA Arten</a> und
+		<a href="Integrierte_Finanzbuchhaltung.htm#Definition UVA Kontenzuordnung">
+		Definition UVA Kontenzuordnung</a></td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Steuerkatagorie</td>
+		<td class="auto-style3">Wenn dieses Konto auch bei manuellen Buchungen 
+		Mehrwertsteuer bzw. Vorsteuer mit berechnen und buchen sollte, so geben 
+		Sie hier bitte die gewünschte Steuerkategorie an. Definieren Sie in 
+		diesem Falle zusätzlich
+		<img alt="" src="Steuerkategorie-am_Sachkonto.gif" width="633" height="27"> ob Vorsteuer oder 
+		Umsatzsteuer gebucht werden sollte.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Gültig ab</td>
+		<td class="auto-style3">ab diesem Datum, in der Regel der 1. des 
+		Geschäftsjahres im Anlage-Jahr steht das Konto zur Verfügung</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Automatische Eröffnungsbuchung</td>
+		<td class="auto-style3">Bei Sachkonten nicht wirksam. Siehe dazu auch
+		<a href="Integrierte_Finanzbuchhaltung.htm#Periodenübernahme">
+		Periodenübernahme</a>.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Ohne Ust./Vst.</td>
+		<td class="auto-style3">Dient Ihrer ER-Erfassungssicherheit. D.h. ist 
+		dieses Feld angehakt, so erscheint bei der Erfassung einer 
+		Eingagnsrechnung mit Vorsteuer und Buchung auf dieses Konto eine 
+		entsprechende Warnung.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">(Gültig) bis</td>
+		<td class="auto-style3">Dieses Konto sollte ab dem Datum nicht mehr 
+		bebucht werden.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">allgemein sichtbar</td>
+		<td class="auto-style3">Ist dies nicht angehakt, so ist das Konto nur 
+		mit Chefbuchhalterrecht sichtbar</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Sortierung</td>
+		<td class="auto-style3">Definieren Sie hier die für das Konto gewünschte 
+		Sortierung. Z.B. nach Auszugsnummer für Bankkonten</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">manuell bebuchbar</td>
+		<td class="auto-style3">Darf dieses Konto auch durch manuelle 
+		Umbuchungen / Splittbuchungen bebucht werden. So dürfen z.B. die 
+		mitlaufenden Konten nicht manuell bebucht werden.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Währung Druck</td>
+		<td class="auto-style3">Wenn definiert, wird das Konto beim Druck in der 
+		gewählten Fremdwährung ausgedruckt.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">versteckt</td>
+		<td class="auto-style3">Konten die bisher bebucht wurden, nun aber nicht 
+		mehr benötigt werden, können hier versteckt werden. Damit sind sie in 
+		der üblichen Auswahlliste nicht sichtbar.</td>
+	</tr>
+	<tr>
+		<td class="auto-style3">Bemerkung</td>
+		<td class="auto-style3">Gerade für den SKR03 und SKR04 gibt es lange 
+		Beschreibungen der Bedeutung der verschiedenen Konten. Für diese 
+		Beschreibungen und sonstigen Anmerkungen ist dieses Feld gedacht.</td>
+	</tr>
+</table>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+Q: Muss für jede Umsatzsteuerart ein eigenes Konto definiert werden ?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+A: Ja. Dies bedingt zwar auf der einen Seite, dass mehr Konten angelegt werden 
+müssen, erhöht aber auf der anderen Seite die Transparenz und die 
+Nachvollziehbarkeit deutlich. So können Kontrollrechnungen z.B. für die UVA sehr 
+einfach anhand der Saldenliste gemacht werden (Erlöse mit 20% müssen die 
+abzuführende Umsatzsteuer ergeben), was in dem Falle der gemischten 
+Umsatzsteuersätze auf einem Konto faktisch unmöglich ist, bzw. nur mit 
+speziellen Auswertungen erfolgen kann.<br>Zusätzlich wird durch die intergrierte 
+Verwendung die Aussage über Erlösgruppen usw. im ERP System dargestellt, woraus 
+deutlich bessere und detailliertere Aussagen getroffen werden können, als mit 
+einer noch so gut gepflegten Fibu möglich wären.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<a name="Prüfen der Kontendefinition"></a>Q: Wie kann die Kontendefinition rasch 
+überprüft werden?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+A: Um die getroffenen Kontendefinitionen überprüfen zu können gehen wir in der 
+Regel wie folgt vor:</p>
+<ol>
+	<li>
+	<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+	Druck des Kontenjournals (unterer Modulreiter Sachkonten, Journal, alle 
+	Konten)<br>Hier wird geprüft ob:</p>
+	<ul>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		Stimmen die Kontenarten zu den Konten</p>
+		</li>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		Stimmen die UVA Arten (Stimmen jeweils im Sinne des oben beschriebenen, 
+		bei der UVA Art achten Sie bitte besonders auf die indirekte Definition 
+		für die reine Inlands-Vorsteuer)</p>
+		</li>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		Stimmen die Ergebnisgruppen-Zuordnungen bzw. Bilanzgruppen Zuordnungen.<br>
+		Sind alle Konten jeweils einer der beiden zugeordnet</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+	Druck einer aktuellen Saldenliste mit der Druckvariante quer<br>Hier werden 
+	erneut die unter 1. angeführten Prüfungen vorgenommen. Man hat hier unter 
+	Umständen eine bessere Übersicht ob dies schon richtig zugeordnet ist.<br>
+	<strong>Hinweis:</strong> Die bei den Sachkonten angedruckte Steuerkategorie 
+	wirkt NUR bei der manuellen Buchung</p>
+	</li>
+	<li>
+	<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+	Prüfung der Definitionen des Finanzamtes (unterer Modulreiter Finanzamt)</p>
+	<ul>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		Sind Steuernummer und gegebenenfalls Referatsnummer eingetragen</p>
+		</li>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		ist die Formularnummer richtig definiert und ist gegebenenfalls Umsätze 
+		Runden angehakt</p>
+		</li>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		Sind die Steuerkategorien definiert. Definieren Sie nur die für Sie 
+		zutreffenden Steuerkategorie, nur so verhindern Sie eventuell 
+		Buchungsfehler</p>
+		</li>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		Definieren Sie die Buchungsparameter, insbesondere die EB-Konten</p>
+		</li>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		Wenn mehrere Finanzämter eingerichtet werden mussten, so definieren / 
+		prüfen Sie dies bitte für jedes Finanzamt</p>
+		</li>
+		<li>
+		<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+		Eine Gesamtübersicht über die Steuerkategorien erhalten Sie im Journal 
+		Steuerkategorie</p>
+		</li>
+	</ul>
+	</li>
+</ol>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Welche Arbeiten sind erforderlich, bevor Daten an Ihren Steuerberater übergeben
 werden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:

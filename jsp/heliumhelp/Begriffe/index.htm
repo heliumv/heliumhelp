@@ -155,6 +155,7 @@ Gestehungspreis / gleitender Durchschnittspreis
 </p>
 
 <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">A:
+Der Gestehungspreis ist der gleitende Lagerdurchschnittspreis der bei jeder Warenzubuchung gebildet wird.
 In HELIUM V wird der Begriff Gestehungspreis verwendet, welcher von den
 Gestehungskosten eines Produktes herrührt. Für den Bereich des Einkaufes kann
 dieser gleichbedeutend mit dem gleitenden Durchschnittspreis verwendet werden.
@@ -227,6 +228,52 @@ folgenden Gebieten eine Rolle:</p>
 </ul>
 <p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Von
 „<a href="http://de.wikipedia.org/wiki/Gleitender_Durchschnittspreis">http://de.wikipedia.org/wiki/Gleitender_Durchschnittspreis</a>“</p>
+
+<p style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Gestehungspreisbuchung
+über mehrere Läger</p>
+
+<p style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><font size="2">Grundsätzlich
+wird der Gestehungspreis eines Artikels bei jeder Lagerzubuchung aktualisiert.<br>
+</font></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><font size="2">Das
+bedeutet:</font></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><font size="2">Wird
+ein Artikel z.B. auf das Hauptlager zugebucht, so wird für diesen Artikel der
+nun gültige Gestehungspreis errechnet. Zugleich wird der Einstandspreis dieses
+Artikels bei dieser Lagerzubuchungsbewegung mit abgespeichert.</font></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><font size="2">Wird
+nun der gleiche Artikel vom Hauptlager in ein anderes Lager umgebucht, so wird
+er zum aktuellen Gestehungspreis entnommen und mit diesem Preis als
+Einstandspreis dem anderen Lager (z.B. Halle 2) zugebucht, wodurch sich ein
+neuer Gestehungspreis auf diesem Lager für den Artikel ergibt.<br>
+<br>
+Warum ist das so?</font></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><font size="2">Eigentlich
+haben wir es hier mit einer Wertewanderung zu tun. D.h. der Artikel wird mit
+Menge und Einstandspreis als Wert dem Lager (Wareneingang) zugebucht. Daraus
+ergibt sich (Alter Lagerwert + neu hinzugekommener Wert) / nun aktueller
+Lagerstand der neue Gestehungspreis. Hintergrund dieser Durchschnittsberechnung
+ist, dass die Artikel die nun im Lager liegen kein &quot;Mascherl&quot; mehr
+haben und man daher bei der Lagerentnahme nur mehr den Durchschnittspreis,
+genauer den Wert, entnehmen kann.<br>
+D.h. nun wandert der Wert, der aus der ersten Zubuchung eben nicht mehr der
+Einstandswert sonder der Gestehnungswert ist, in das zweite Lager (z.B. Halle 2)
+und wird dort wieder zugebucht.</font></p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">&nbsp;</p>
+
+<p class="answer" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0"><font size="2">Diese
+Vorgehensweise, insbesondere die Bildung des gleitenden
+Lagerdurchschnittspreises wurde bereits von mehreren Wirtschaftstreuhändern
+geprüft und für richtig befunden.</font></p>
 
 <p class="question" style="text-indent: 0; word-spacing: 0; line-height: 100%; margin: 0">Q:
 Merkmale am Kunden / Partner</p>

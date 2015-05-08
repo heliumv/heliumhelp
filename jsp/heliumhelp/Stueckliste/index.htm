@@ -33,6 +33,11 @@ Da die Stücklisten sich immer auf Artikel beziehen und die Artikel
 Mengeneinheiten haben, können mit der Helium V Stücklistenverwaltung auch
 Rezepturen abgebildet werden. Hier sind dann die gefertigten Produkte ein
 &quot;Mengeneinheit&quot; (z.B. kg, l) des Artikels. Siehe dazu auch <a href="#Erfassungsfaktor">Erfassungsfaktor</a>.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
+<a href="../Webshop/Webportal_Kundenstueckliste.htm">Erfassung von 
+Kundenspezifischen Stücklisten im Web-Portal</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Erklärung
 der <a href="../Fertigung/Stueckliste_Fertigung.htm">Zusammenhänge Stückliste
@@ -208,7 +213,8 @@ Bestellvorschlag (siehe Fertigung).</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">D.h.
 Es wird zwar ein Artikel definiert, aber an diesen Artikel keine
 Stücklisteneigenschaften angefügt. Um nun aber trotzdem die gesamte
-Funktionalität der Losverwaltung nützen zu können, werden von HELIUM V
+Funktionalität der Losverwaltung nützen zu können, werden von&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"> HELIUM V
 automatisch vordefinierte Mindestdaten beim Anlegen in das Los übernommen.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Einlesen
 von Stücklisten</p>
@@ -379,6 +385,8 @@ Mengen werden bei den verschiedenen Stücklistendrucken angedruckt?</p>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In
     der Gesamtkalkulation und in der Ausgabestückliste werden zusätzlich zur
     Dimensionsumrechnung auch die <a href="../artikel/index.htm#Verschnittbasis / Verschnittfaktor"> Verschnittfaktoren</a> berücksichtigt.</p></li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">In der Berechnung der Zielmenge wird auch der Fertigungs-Verpackungseinheit sowie die Verschnittfaktoren mit berücksichtigt. Es können sich daraus höhere Zielmengen ergeben. Die Mengenbasis der Berechnung ist eine ME (Satz) des zu fertigenden Produktes.</p></li>
 </ul>
 
     <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">kg,
@@ -402,7 +410,7 @@ der Artikel in seiner Lagermengeneinheit entsprechend definiert, so kann in der
 Stücklistenposition die Positionsmengeneinheit entsprechend umgerechnet
 eingegeben werden. z.B. mm². Für
 den Einkauf / das Bestellwesen muss nun im Artikel noch die Umrechnung auf die
-Bestellmengeneinheit angegeben werden. Z.B. kg. <font color="#C0C0C0"> So kommen Sie ausgehend von</font></p>
+Bestellmengeneinheit angegeben werden. Z.B. kg.&nbsp;</p>
 <div align="left">
   <table border="1" width="374" height="25">
     <tr>
@@ -519,6 +527,25 @@ diese Betrachtung von Ihnen verwendet, so sollten Sie dies in der Praxis auch
 entsprechend umsetzen und bei der Internen Bestellung auch die Funktion der
 Verdichtung verwenden, welche auch die Fertigungssatzgrößen entsprechend mit
 einrechnet.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="unterstuecklisten_verdichten.JPG" width="155" height="18"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+der Option 'Unterstücklisten verdichten' in der Gesamtkalkulation werden die Positionen der Unterstücklisten nicht
+im Detail angeführt, es erfolgt keine weitere Auflösung der Stücklistentiefe.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Kosten der Unterstücklisten
+werden in die übergeordnete Position summiert. Somit erhält man eine übersichtliche Darstellung der Kalkulation und zugleich sind trotzdem die Änderungen in den
+Unterstücklisten enthalten.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zusätzlich
+kann die Gesamtkalkulation um die Felder des größten und kleinsten Lief1-Preis
+der letzten 2 Jahre erweitert werden. <img border="0" src="kl_gr_Lief1Preis.JPG" width="265" height="18"></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Mit
+dem Button Lief1Preis übernehmen <img border="0" src="dokuablage_uebernehmen.JPG" width="346" height="25">
+werden die kalkulierten Preise zurückgschrieben und der Report als PDF in der Dokumentenablage abgelegt.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Weiters
+kann der Ausdruck der Gesamtkalkulation durch die Felder Arbeitsgang Unterarbeitsgang
+und Kommentar erweitert werden.</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wie
 wird die benötigte Menge für die Gesamtkalkulation errechnet?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="#Zielmengeneinheit">Siehe
@@ -582,7 +609,10 @@ Verfügung:</p>
     Sie dass dies eine rein theoretische Betrachtung ist. Bei diesem Druck
     werden keinerlei Lagerbuchungen bzw. Verfügbarkeitsberechnungen
     durchgeführt. Sie dienen lediglich für eine eventuelle Abschätzung für
-    weitere Planungen.</li>
+    weitere Planungen. Eine Option im Ausgangstücklistendruck ist&nbsp; 'nur Abbuchungsläger'.
+    In diesem Fall wird im Feld Lagerstand die Summe der Lagerstände der Abbuchungsläger angezeigt.
+    Im Feld Lagerort werden alles Lagerorte der Abbuchungsläger angezeigt. Der Lager-Auswahl-Button
+    ist deaktiviert, ausserdem kann nur eine Stücklisten ausgewählt werden.</li>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="Stkl_Druck_Unterstueckliste.gif" width="189" height="99"></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
@@ -687,7 +717,7 @@ auch die Staffelpreise.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
 Kann eine Stückliste importiert werden?</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">
-Ja. Es stehen derzeit insgesamt fünf Arten von Stücklistenimport zur
+Ja. Es stehen derzeit insgesamt mehrere Arten von Stücklistenimport zur
 Verfügung.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">CSV
 Import, siehe unten</p>
@@ -699,6 +729,7 @@ NX CSV Import</a></p>
 aus XLS Datei</a> (Tabellenkalkulation, Spreadsheet)</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Import_Intelligent.htm">Intelligenter
 Import</a></p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a href="Import_INFRA.htm">INFRA</a></p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>CSV
 Import</b></p>
@@ -796,6 +827,13 @@ benötigte Sollsatzgröße wenn vorhanden vom Lager in das Los gebucht und dann
 die Ablieferungsbuchung durchgeführt. Sind die benötigten Sollsatzgrößen
 nicht ins Los gebucht so erscheint eine entsprechende Fehlermeldung. <a href="../Fertigung/index.htm#Los erledigen, abliefern">Siehe
 dazu bitte auch</a>.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Abbuchungsläger</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
+Reiter Abbuchungsläger <img border="0" src="abbuchungslaeger.JPG" width="109" height="23"> können Sie
+für die Stückliste die Reihenfolge der Läger festlegen, von denen das
+Material im Los abgebucht wird. Diese Abbuchungsläger haben Vorrang vor der Losa-Abbuchungslägern
+und der Definition in den Artikel-Grunddaten.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Veredelung"></a>Wie bildet man die Veredelung bzw.
 Fremdvergabe einzelner Arbeitsschritte bzw. Lohnfertigung eines Artikels in
@@ -896,7 +934,10 @@ Fertigungsset bzw. als Phantomstückliste.</p>
 Stücklisten mit Hilfsstücklisten in die Fertigung(Los) übernommen, so werden
 bis zu 10 Hierarchieebenen der Hilfsstücklisten aufgelöst (flachgedrückt).
 Dies kann z.B. für die Abbildung einfacher Variantenstücklisten verwendet
-werden.</p>
+werden. Bitte beachten Sie jedoch, dass eine Hilfsstückliste nicht als
+Soll-Position in ein bestehendes Los einfügen können, die Auflösung erfolgt
+nur als Teil einer Stückliste. Wenn eine Hilfsstücklist in ein bestehendes Los
+eingefügt wird, so erhalten Sie eine Fehlermeldung.</p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Unterstückliste"></a>Q:
 Hilfsstückliste oder Stückliste und was ist dann eine Unterstückliste.</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1110,8 +1151,7 @@ FERT_TECHNIKER_BEARBEITEN_ERLAUBT. </p>
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Stücklisten
 im Projektumfeld</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Im
-Umfeld des Projektfeldes gibt es immer wieder massiven Schulungsbedarf, wie denn
-die Stücklisten in Kombination mit den Hilfsstücklisten verwendet werden
+Umfeld des Projektfeldes stellt sich die Frage wie Stücklisten in Kombination mit den Hilfsstücklisten verwendet werden
 sollten. </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Hintergrund
 ist meistens, dass in erster Betrachtung jedes Projekt ein Unikat darstellt.
@@ -1129,10 +1169,10 @@ Beantwortung zweier einfacher Fragen: </p>
 <ul>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">wird
-    dieser Artikel, z.B. als Ersatzteil, verkauft ?</li>
+    dieser Artikel, z.B. als Ersatzteil, verkauft?</li>
   <li>
     <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">hat
-    der Artikel einen Lagerstand bzw. einen Gestehungspreis ?</li>
+    der Artikel einen Lagerstand bzw. einen Gestehungspreis?</li>
 </ul>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wird
 eine der oben angeführten Fragen mit Ja beantwortet, so sollte davon
@@ -1149,8 +1189,9 @@ lagerbewirtschaftete Stückliste geführt werden. </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Fertigung einer Stückliste bedingt immer das anlegen eines eigenen Loses um
 dieses Teil zu produzieren. </p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wieso
-so kompliziert ? </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp; </p>
+<p style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Wieso
+so kompliziert ?</b> </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ja,
 in erster Betrachtung klingt das kompliziert. </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
@@ -1158,8 +1199,8 @@ ein Gerät / Produkt herzustellen sind gewisse Schritte erforderlich. Wenn Sie
 diese nachhaltig, planbar und wiederholbar haben wollen, müssen diese geplant
 werden und gegebenenfalls auch über den Lebenszeitraum des Produktes angepasst
 werden. Genau diese Möglichkeiten haben Sie mit der Stücklistenverwaltung. </p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ich
-kriege doch alle Daten aus meiner CAD raus. </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Ich
+kriege doch alle Daten aus meiner CAD raus.</b> </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Das
 stimmt meistens für die Material-Stücklisten. Im Bereich der Elektronik /
 Elektrotechnik stimmt selbst das nicht exakt, da oft nur Platzhalter für
@@ -1174,8 +1215,8 @@ aus den Einzelteilen, dem Rohmaterial, ein neues Ganzes herzustellen. In der
 Stückliste wird definiert, welche Tätigkeiten durchgeführt werden müssen um
 das Produkt herzustellen. Diese Arbeitsschritte werden im <a href="Arbeitsplan.htm">Arbeitsplan</a>
 durch die Auflistung der Arbeitsgänge definiert. Der Arbeitsplan ist in HELIUM V ein Teil der Stückliste. </p>
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Ich
-habe doch meinen Projektplan </p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><b>Ich
+habe doch meinen Projektplan</b> </p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die
 Denke in Projektschritten mit den Forderungen der Fertigung / der
 Produktionsabläufe in Einklang zu bringen, ist sicher eine wesentliche
@@ -1265,8 +1306,8 @@ werden 100 Mengeneinheiten des Fertigproduktes erzeugt, in unserem Falle also
 der Erfassungsfaktor auch für die Arbeitspläne gilt ist für uns
 selbstverständlich. Siehe dazu auch die nachfolgende Beschreibung.</p>
 
-<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
-Wie sind die Stücklisten in der Kunststofffertigung richtig anzulegen.</p>
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><a name="Kunststofffertigung"></a>Q:
+Wie sind die Stücklisten in der Kunststofffertigung anzulegen?</p>
 
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
 In der Kunststofffertigung ist in der Regel die Schusszahl die Basis für die
@@ -1280,21 +1321,38 @@ abgebildet. Bitten Sie Ihren HELIUM V Betreuer dies entsprechend zu benennen.</p
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
 Material und Arbeitszeit richtig zu erfassen ist folgendes zu beachten.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">a.)
-Material. Geben Sie beim Rohmaterial das Gesamtgewicht pro Schuss ein, inkl.
+<ol>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Material<br>
+    Geben Sie beim Rohmaterial das Gesamtgewicht pro Schuss ein, inkl.
 einem verworfenen Anguss. Üblicherweise wird dies in g (Gramm) eingegeben
-werden. Nutzen Sie dazu die Positionsmengeneinheit für die Umrechnung.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">b.)
-Arbeitszeit:</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+werden. Nutzen Sie dazu die Positionsmengeneinheit für die Umrechnung.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Arbeitszeit:<br>
+    Für
 die Rüstzeiten werden in der Regel sowohl Mitarbeiter als auch Maschine
-benötigt.</p>
-
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Für
+benötigt.<br>
+    Für
 die Stückzeiten läuft üblicherweise die Maschine alleine. Nutzen Sie hier
-bitte Nur Maschinenzeit.</p>
+bitte Nur Maschinenzeit.</li>
+  <li>
+    <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Werkzeug<br>
+    Hier ist meistens die Forderung, dass nur bekannt sein sollte ob das
+    Werkzeug im Hause ist, oder ob es beim Kunden, beim Werkzeugmacher o.ä.
+    ist. D.h. das Werkzeug wird&nbsp;<br>
+    - Lagerbewirtschaftet<br>
+    - Wenn es außer Haus geht wird dies durch einen Lieferschein dokumentiert.
+    Kommt es zurück, wird auch dies durch einen Lieferschein mit negativer
+    Menge festgehalten.<br>
+    - Die ursächliche Anlieferung wird wie für jedes &quot;Material&quot; im
+    Wareneingang einer Bestellung gebucht<br>
+    - Damit Sie das Werkzeug auch finden, hinterlegen Sie entsprechend den
+    Lagerort für jedes Werkzeug<br>
+    - Jedes Werkzeug ist ein eigener Artikel</li>
+</ol>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Zum
+weiteren Ablauf siehe bitte <a href="../Fertigung/index.htm#Besonderheiten in der Kunststofffertigung">Besonderheiten
+in der Kunststofffertigung</a>.</p>
 
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Bestimmte Artikel sollten immer früher oder später bestellt werden</p>
@@ -1385,8 +1443,6 @@ entnommene Material mittels <a href="../Installation/Einbindung_zusaetzlicher_Ha
 tatsächlich entnommenen Material. Nun kann über die Zwischenablage der Soll
 oder Ist-Inhalt des Loses in die Stückliste übernommen werden.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Verwendungsnachweis
 in der Stückliste</p>
 
@@ -1406,8 +1462,6 @@ Auswahldialog in dem man entscheiden kann in welche Stückliste gewechselt wird.<
 können Sie schnell überprüfen in welchen Stücklisten die aktuell
 ausgewählte/bearbeitete Stückliste enthalten ist.</p>
 
-<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
-
 <p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
 Protokollierung der Änderungen im Arbeitsplan und bei den Positionen</p>
 <p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
@@ -1416,6 +1470,64 @@ beim Arbeitsplan durchgeführt wurden. Diese Protokollierung ermöglicht eine
 wesentliche Zeitersparnis beim Such-/Prüfaufwand bei eventuellen
 Ungereimtheiten. Die Aufzeichnung der Änderungen ermöglicht das Nachvollziehen
 und schafft Transparenz über die Entwicklung der Stückliste.</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Wie signalisiere ich der Produktion, dass die Stückliste für die Fertigung
+freigegeben ist?</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Wenn die Zusatzfunktion Stücklistenfreigbe und das zugehörige Recht STK_FREIGABE_CUD
+gegeben ist, so kann die Stückliste mit der Information &quot;Freigegeben&quot;
+gekennzeichnet werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Dazu
+klicken Sie auf den grünen Haken, nun erscheint die Information mit Datum und
+der Person, die die Freigabe durchgeführt hat.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="freigegeben.JPG" width="248" height="28"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn eine Stückliste
+freigegeben ist, kann auf die Stückliste nur mehr lesend zugegriffen werden.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Um
+eine Stückliste nochmals bearbeiten zu können, klicken Sie erneut auf Menü -
+Bearbeiten - Freigeben.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Personen,
+die das das Recht STK_FREIGABE_CUD nicht besitzen, können Freigaben nicht
+durchführen oder entfernen.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Wenn eine Stückliste nicht freigegeben ist, können Lose nur nach Rückfrage angelegt werden
+(dies gilt auch für Lose aus Aufträgen).</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="nicht_freigegeben.JPG" width="415" height="116"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Die Freigabe wird als grüner
+Haken in der Stücklisenauswahl bzw. in der internen Bestellung signalisiert.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="freigabe_auswahl.JPG" width="72" height="42"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Weiters
+könen die Ausdrucke der Stückliste (zum Beispiel Andruck des Datums und der
+Person, die die Stückliste freigegeben hat für Rückfragen) angepasst werden.
+Wenden Sie sich dazu gerne an Ihren HELIUM V Betreuuer.&nbsp;</p>
+
+<p class="question" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Q:
+Auswahl der Artikel-Positionen der Stückliste nach den Kunden-Artikelnummern</p>
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">A:
+Um einen Artikel nach der beim Kunden in den Sonderkonditionen hinterlegten
+kundenspezifischen Artikelnummern auszuwählen, so klicken Sie auf das Icon
+Kunde links neben der Artikelauswahl. </p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../Bestellung/kundenartikelnummer.JPG" width="265" height="22"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">Nun
+erhalten Sie eine Liste aller Artikel des im Los definierten Kunden. Wenn in den
+Kopfdaten des Loses kein Kunde definiert ist, so werden alle Artikel mit
+Kundenartikelnummen in der Auswahl angezeigt.</p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><img border="0" src="../Bestellung/stueckliste_kundenartikelnummer.JPG" width="708" height="127"></p>
+
+<p class="answer" style="margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt">&nbsp;</p>
 
 </body>
 
